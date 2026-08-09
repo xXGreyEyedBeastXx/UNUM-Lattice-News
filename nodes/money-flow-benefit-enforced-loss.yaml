@@ -1,0 +1,115 @@
+schema: unum-lattice-news/node/v0.1
+id: money-flow-benefit-enforced-loss
+title: Money-flow benefit versus enforced loss
+family: causal_ethical_field
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: >-
+    A distributional operator for tracing who receives money, subsidy, tax advantage,
+    service expansion, asset appreciation, or institutional capacity, and who is
+    compelled to absorb revenue loss, fixed costs, reduced service, risk, debt,
+    displacement, or diminished future capacity. It distinguishes voluntary cost,
+    ordinary tradeoff, and enforced loss created through law, taxation, funding
+    formulas, contract structure, or policy design.
+  posture: working_framework
+core_question: >-
+  Does one participant's benefit depend upon another participant or public system
+  being forced to absorb a loss, and who had authority to impose that transfer?
+benefit_fields:
+  - direct_payment
+  - subsidy
+  - tax_credit_or_tax_expenditure
+  - increased_revenue
+  - reduced_cost
+  - asset_appreciation
+  - market_access
+  - administrative_fee
+  - political_or_institutional_capacity
+  - future_growth_capture
+loss_fields:
+  - direct_revenue_loss
+  - foregone_tax_revenue
+  - reduced_future_funding_growth
+  - stranded_or_fixed_costs
+  - service_reduction
+  - staffing_loss
+  - infrastructure_underuse
+  - debt_or_deficit_transfer
+  - increased_user_cost
+  - exclusion_or_access_loss
+  - transferred_risk
+  - diminished_future_capacity
+enforced_loss_test:
+  examine:
+    - who made the decision
+    - whether affected participants consented
+    - whether exit was realistic
+    - whether the loss was avoidable
+    - whether law or policy compelled the transfer
+    - whether fixed obligations remained after revenue moved
+    - whether the beneficiary could externalize costs
+    - whether the affected system retained universal service duties
+    - whether the transfer was transparent and reviewable
+    - whether repair or compensation existed
+causal_pattern:
+  - public_or_collective_resource
+  - policy_or_contract_routing_decision
+  - beneficiary_receives_gain
+  - affected_participant_or_system_absorbs_loss
+  - accountability_or_compensation_returns_or_fails_to_return
+relation_types:
+  - RECEIVES_BENEFIT_FROM
+  - IMPOSES_LOSS_ON
+  - EXTERNALIZES_COST_TO
+  - RETAINS_FIXED_OBLIGATION_AFTER_REVENUE_LOSS
+  - CAPTURES_FUTURE_GROWTH_FROM
+  - RECEIVES_TAX_EXPENDITURE
+  - FORGOES_REVENUE_FOR
+  - COMPENSATES_FOR_LOSS
+  - FAILS_TO_COMPENSATE_FOR_LOSS
+  - BENEFIT_DEPENDS_ON_ENFORCED_LOSS
+  - BENEFIT_COEXISTS_WITH_LOSS_WITHOUT_PROVEN_DEPENDENCE
+application_to_tennessee_education:
+  working_hypothesis: >-
+    Private-school subsidy beneficiaries may receive portable public fiscal capacity
+    while public districts retain fixed and universal obligations and may lose future
+    funding growth. The existence, magnitude, distribution, and enforceability of that
+    loss must be measured district by district rather than assumed from statewide totals.
+  trace:
+    - taxpayers_and_public_revenue
+    - state_or_federal_routing_mechanism
+    - family_private_school_or_scholarship_intermediary_benefit
+    - district_revenue_and_growth_effect
+    - fixed_cost_and_service_obligation_retention
+    - affected_students_workers_and_communities
+    - compensation_hold_harmless_or_unrepaired_loss
+safeguards:
+  - Do not treat every benefit as proof of another party's loss.
+  - Do not treat every loss as enforced; distinguish voluntary exchange, shared sacrifice, and coercive transfer.
+  - Do not hide tax expenditures by describing them as private donations when public revenue is forgone.
+  - Do not equate hold-harmless floors with full compensation for future growth, fixed costs, or service obligations.
+  - Preserve gross benefit, gross loss, net effect, timing, and affected population separately.
+  - Trace both direct and opportunity-cost effects.
+relations:
+  - type: EXTENDS
+    target: harm-domination-protection-weighting
+    posture: working_framework
+  - type: APPLIES_TO
+    target: tennessee-education-funding-system
+    posture: working_framework
+  - type: APPLIES_TO
+    target: tennessee-education-freedom-scholarships
+    posture: working_framework
+unresolved_questions:
+  - Which Tennessee districts lose future TISA growth under scholarship expansion, and by how much?
+  - Which costs remain fixed or increase as enrollment and revenue shift?
+  - Which private schools, vendors, scholarship organizations, donors, and families capture the largest benefits?
+  - What proportion of subsidy spending expands access versus replacing private tuition families would otherwise have paid?
+  - How do disability access, rural access, segregation, staffing, and transportation costs change?
+locks:
+  - Benefit and loss must be traced as separate but potentially coupled flows.
+  - Policy-created opacity does not erase public causation.
+  - Net statewide balance must not erase concentrated local loss.
