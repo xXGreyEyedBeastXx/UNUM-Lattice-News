@@ -1,0 +1,128 @@
+version: 0.1
+status: seed
+purpose: >-
+  Human-readable discovery routes across stories and nodes. Tags organize neighborhoods;
+  they do not establish guilt, causation, coordination, agreement, or conspiracy.
+
+namespaces:
+  person:
+    description: Identifiable people.
+  institution:
+    description: Governments, agencies, companies, universities, NGOs, media organizations, and other institutions.
+  movement:
+    description: Political, social, cultural, ideological, or advocacy movements.
+  technology:
+    description: Technologies and technical capability families.
+  policy:
+    description: Laws, regulations, executive actions, institutional policies, and policy programs.
+  domain:
+    description: Broad subject domains used for discovery.
+  right:
+    description: Rights, liberties, and protected human capacities implicated by evidence.
+  mechanism:
+    description: Causal or institutional mechanisms under examination.
+  harm:
+    description: Documented or assessed harm classes; tagging a harm does not itself establish culpability.
+  ecology:
+    description: Ecological systems, resources, habitats, and life-support conditions.
+  population:
+    description: Affected populations when relevant and responsibly scoped.
+  geography:
+    description: Geographic scope.
+  evidence:
+    description: Evidence or claim posture useful for discovery.
+  status:
+    description: Review, dispute, correction, or uncertainty state.
+
+seed_tags:
+  - tag: AntiWoke
+    namespace: movement
+    description: Public rhetoric, organizing, policies, or institutions self-described or widely documented as anti-woke.
+  - tag: AI
+    namespace: technology
+    description: Artificial intelligence systems and deployments.
+  - tag: MilitaryAI
+    namespace: technology
+    description: AI used in military, targeting, intelligence, command, surveillance, or weapons contexts.
+  - tag: Neurotechnology
+    namespace: technology
+    description: Technologies that record, decode, stimulate, or otherwise interface with nervous systems.
+  - tag: Surveillance
+    namespace: mechanism
+    description: Systematic observation, collection, tracking, or monitoring of people or populations.
+  - tag: PopulationClassification
+    namespace: mechanism
+    description: Classification, ranking, scoring, or categorization of people or populations.
+  - tag: InstitutionalCapture
+    namespace: mechanism
+    description: Concentrated influence that degrades the independence or accountability of an institution.
+  - tag: EmergencyAuthority
+    namespace: mechanism
+    description: Expansion or concentration of authority justified by emergency conditions.
+  - tag: LaborRights
+    namespace: right
+    description: Worker organization, bargaining, workplace protections, and related rights.
+  - tag: CognitiveLiberty
+    namespace: right
+    description: Freedom of thought, mental privacy, and meaningful control over interventions into cognition.
+  - tag: Privacy
+    namespace: right
+    description: Privacy interests and protections.
+  - tag: DemocraticAccountability
+    namespace: right
+    description: Public accountability, contestability, representation, review, and institutional restraint.
+  - tag: HumanDignity
+    namespace: right
+    description: Human dignity and protection against dehumanizing treatment.
+  - tag: SelfSovereignty
+    namespace: right
+    description: Bodily, mental, relational, and decisional self-sovereignty.
+  - tag: EcologicalContinuity
+    namespace: ecology
+    description: Conditions supporting durable ecosystems and plural life.
+  - tag: LifeSupportSystems
+    namespace: ecology
+    description: Water, air, soil, climate, habitat, energy, and other material systems sustaining life.
+  - tag: InformationIntegrity
+    namespace: domain
+    description: Reliability, provenance, manipulation, and contestability of public information.
+  - tag: AutonomousWeapons
+    namespace: technology
+    description: Weapon systems with autonomous functions relevant to target selection or application of force.
+  - tag: FacialRecognition
+    namespace: technology
+    description: Automated identification or comparison using facial imagery.
+  - tag: BrainComputerInterface
+    namespace: technology
+    description: Interfaces translating signals between nervous systems and computing systems.
+  - tag: DreamEngineering
+    namespace: technology
+    description: Research or systems intended to observe, cue, influence, or reconstruct dream-related states.
+  - tag: DigitalAfterlife
+    namespace: technology
+    description: Posthumous avatars, griefbots, mindfiles, digital replicas, or related continuity claims.
+  - tag: Dehumanization
+    namespace: mechanism
+    description: Rhetoric or practice that denies or diminishes the humanity, dignity, or moral standing of people or populations.
+  - tag: CollectivePunishment
+    namespace: harm
+    description: Harm imposed on a group for acts attributed to members or representatives of that group.
+  - tag: EcologicalDegradation
+    namespace: harm
+    description: Damage to ecosystems or sustaining material conditions.
+  - tag: Disputed
+    namespace: status
+    description: Credible sources materially disagree.
+  - tag: CorrectionPending
+    namespace: status
+    description: A material claim or relation is undergoing correction review.
+  - tag: Unknown
+    namespace: evidence
+    description: Available evidence is insufficient for a responsible conclusion.
+
+rules:
+  - A hashtag is a discovery route, not a verdict.
+  - Co-occurrence does not create an evidenced relation.
+  - Tags may be added, split, renamed, or deprecated as the lattice learns.
+  - Avoid ideological tags that silently encode guilt or innocence.
+  - Affected-population tags must not substitute collective identity for the actions of specific people or institutions.
