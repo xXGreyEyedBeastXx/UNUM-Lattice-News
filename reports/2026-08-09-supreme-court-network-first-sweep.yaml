@@ -1,0 +1,60 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-supreme-court-network-first-sweep
+title: Supreme Court network and accountability: first sweep
+as_of: 2026-08-09
+status: developing
+question: Which selection, donor, ideological, religious, and ethics relationships help explain the current Supreme Court's power and accountability structure?
+current_members:
+  - John Roberts
+  - Clarence Thomas
+  - Samuel Alito
+  - Sonia Sotomayor
+  - Elena Kagan
+  - Neil Gorsuch
+  - Brett Kavanaugh
+  - Amy Coney Barrett
+  - Ketanji Brown Jackson
+initial_findings:
+  - The current Court has a six-member conservative majority; three members were appointed by Donald Trump.
+  - Clarence Thomas, Samuel Alito, Neil Gorsuch, Brett Kavanaugh, and Amy Coney Barrett have disclosed Federalist Society connections.
+  - Leonard Leo served as a major bridge among judicial selection, confirmation advocacy, wealthy conservative donors, and private access to justices.
+  - Clarence Thomas received extensive travel and other financial benefits from Harlan Crow and other wealthy benefactors, with significant items omitted from earlier disclosures and later amended or disputed.
+  - Samuel Alito took an undisclosed Alaska trip organized through Leonard Leo and financed in part by donor Paul Singer; Alito maintained disclosure was not required.
+  - The Court adopted an ethics code only in 2023, and it lacks an independent enforcement or complaint mechanism.
+  - Network relation, ideological alignment, or a gift does not by itself prove that a particular vote was purchased; the proper test is repeated access, disclosure, recusal, litigant interest, timing, and decision pattern.
+priority_nodes:
+  first_tier:
+    - clarence-thomas
+    - samuel-alito
+    - leonard-leo
+    - harlan-crow
+    - federalist-society
+    - us-supreme-court
+  second_tier:
+    - john-roberts
+    - amy-coney-barrett
+    - neil-gorsuch
+    - brett-kavanaugh
+    - alliance-defending-freedom
+    - people-of-praise
+    - judicial-crisis-network
+    - marble-freedom-trust
+    - teneo-network
+  comparison_tier:
+    - sonia-sotomayor
+    - elena-kagan
+    - ketanji-brown-jackson
+method:
+  - trace nomination and confirmation pipeline
+  - trace organizations and ideological training networks
+  - trace gifts, travel, reimbursements, property transactions, and spousal income
+  - trace recusals and cases involving connected actors
+  - trace rulings on executive power, voting rights, reproductive rights, regulation, religion, labor, immunity, and civil rights
+  - separate disclosed relationship from inferred influence and proven conflict
+claim_locks:
+  - Do not infer corruption solely from ideological voting.
+  - Do not erase financial or access relationships merely because direct quid pro quo evidence is absent.
+  - Apply the same disclosure, recusal, and conflict tests to liberal and conservative justices.
+sources:
+  - source-supreme-court-current-members
+  - source-supreme-court-ethics-network
