@@ -1,0 +1,158 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-actor-relation-sweep
+title: "Causal and relational sweep: Trump administration, Israel policy, autism policy, and enforcement power"
+as_of: "2026-08-09"
+status: draft_review
+
+scope:
+  focal_nodes:
+    - donald-trump
+    - pete-hegseth
+    - stephen-miller
+    - robert-f-kennedy-jr
+    - us-department-health-human-services
+    - benjamin-netanyahu
+    - government-of-israel
+    - us-environmental-protection-agency
+  exclusions:
+    - private motive without evidence
+    - guilt by association
+    - unsupported criminal allegations
+
+established_relations:
+  - from: donald-trump
+    relation_type: APPOINTED
+    to: pete-hegseth
+    posture: observed
+    evidence:
+      - source-white-house-cabinet-appointments-2025
+    notes: Appointment establishes authority and political responsibility, not personal responsibility for every military act.
+  - from: donald-trump
+    relation_type: APPOINTED
+    to: robert-f-kennedy-jr
+    posture: observed
+    evidence:
+      - source-white-house-cabinet-appointments-2025
+  - from: donald-trump
+    relation_type: AUTHORIZED
+    to: make-america-healthy-again-commission
+    posture: observed
+    evidence:
+      - source-white-house-maha-commission-2025
+  - from: robert-f-kennedy-jr
+    relation_type: CHAIRS
+    to: make-america-healthy-again-commission
+    posture: observed
+    evidence:
+      - source-white-house-maha-commission-2025
+  - from: donald-trump
+    relation_type: JOINTLY_ANNOUNCED
+    to: hhs-autism-initiatives-2025
+    posture: observed
+    evidence:
+      - source-hhs-trump-kennedy-autism-actions-2025
+  - from: robert-f-kennedy-jr
+    relation_type: DIRECTS
+    to: us-department-health-human-services
+    posture: observed
+    evidence:
+      - source-white-house-cabinet-appointments-2025
+  - from: donald-trump
+    relation_type: EMPLOYS_AS_DEPUTY_CHIEF_OF_STAFF
+    to: stephen-miller
+    posture: observed
+    evidence:
+      - source-white-house-kirk-administration-roster-2025
+    notes: Role establishes proximity to executive policy formation; individual policy authorship requires issue-specific evidence.
+  - from: pete-hegseth
+    relation_type: LEADS
+    to: us-department-of-defense
+    posture: observed
+    evidence:
+      - source-white-house-cabinet-appointments-2025
+  - from: donald-trump
+    relation_type: SUPPORTS_AND_ARMS
+    to: government-of-israel
+    posture: supported_assessment
+    evidence:
+      - source-un-gaza-genocide-inquiry-2025
+    notes: Record weapons, financing, diplomacy, intelligence, and operational support separately when source packets are recovered.
+  - from: benjamin-netanyahu
+    relation_type: LEADS
+    to: government-of-israel
+    posture: observed
+    evidence:
+      - source-reuters-netanyahu-rejects-trump-gaza-plan-2026
+  - from: benjamin-netanyahu
+    relation_type: DISAGREES_WITH
+    to: donald-trump
+    posture: observed
+    evidence:
+      - source-reuters-netanyahu-rejects-trump-gaza-plan-2026
+    scope: sequencing of Hamas disarmament and Israeli military withdrawal
+    notes: Preserves independent agency; alliance does not imply total control or identity.
+  - from: us-environmental-protection-agency
+    relation_type: POLICY_TENSION_WITH
+    to: make-america-healthy-again-commission
+    posture: supported_assessment
+    evidence:
+      - source-ap-epa-maha-deregulation-2026
+    notes: EPA environmental-health promises and broad deregulation create a documented governance tension; this does not establish that EPA actions cause autism.
+
+causal_paths_for_review:
+  - path:
+      - donald-trump
+      - appointment_and_executive_authority
+      - pete-hegseth
+      - military_command_and_targeting_policy
+      - civilian_harm
+    status: requires_event_specific_attribution
+  - path:
+      - donald-trump
+      - executive_policy_authority
+      - stephen-miller
+      - immigration_policy_design_and_enforcement
+      - detention_deportation_exclusion
+    status: requires_policy_specific_sources
+  - path:
+      - donald-trump
+      - appointment_and_joint_rhetoric
+      - robert-f-kennedy-jr
+      - hhs_autism_research_and_prevention_agenda
+      - autistic_people_and_public_health
+    status: partially_established
+  - path:
+      - donald-trump
+      - us_support_for_israel
+      - benjamin-netanyahu_and_government_of_israel
+      - ongoing_genocide_in_gaza
+    status: support_and_foreseeability_require_packetized_trace
+
+floating_claims:
+  - Whether particular military targets were intentionally removed from no-strike protection before attack.
+  - Whether specific immigration actions were personally designed by Stephen Miller or merely aligned with his known policy role.
+  - Whether HHS autism research has preregistered disconfirmation criteria or is structured around predetermined conclusions.
+  - Whether EPA deregulation materially increases exposure to specific developmental neurotoxicants in defined populations.
+  - The degree to which U.S. material and diplomatic support was necessary, substitutable, or decisive for particular Israeli operations.
+
+blocked_claims:
+  - claim: Pete Hegseth raped and killed LaVena Lynn Johnson.
+    reason: No credible primary or corroborated source linkage has been recovered.
+  - claim: Every action of the Israeli government was ordered or controlled by Donald Trump.
+    reason: Alliance and support do not erase independent Israeli command and decision-making.
+
+reporter_rules:
+  - Appointment creates an authority relation but does not by itself prove authorship of every subordinate action.
+  - Material support, knowledge, leverage, and persistence after notice are separately traceable accountability relations.
+  - Disagreement between allied actors must be retained rather than flattened into one node.
+  - Harm attribution must distinguish direct action, command, authorization, enablement, financing, benefit, defense, and institutional shielding.
+  - Unsupported allegations remain visible only as blocked claim records when their circulation is itself relevant.
+
+sources:
+  - source-white-house-cabinet-appointments-2025
+  - source-white-house-maha-commission-2025
+  - source-hhs-trump-kennedy-autism-actions-2025
+  - source-white-house-kirk-administration-roster-2025
+  - source-ap-epa-maha-deregulation-2026
+  - source-reuters-netanyahu-rejects-trump-gaza-plan-2026
+  - source-un-gaza-genocide-inquiry-2025
