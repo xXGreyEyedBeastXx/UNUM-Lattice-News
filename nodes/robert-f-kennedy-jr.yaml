@@ -1,0 +1,63 @@
+schema: unum-lattice-news/node/v0.1
+id: robert-f-kennedy-jr
+title: Robert F. Kennedy Jr.
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+
+summary:
+  text: U.S. Secretary of Health and Human Services whose autism policy rhetoric and actions materially shape federal research, public-health framing, data use, treatment priorities, and public understanding.
+  posture: observed
+
+aliases: [RFK Jr., Robert F. Kennedy Jr.]
+hashtags: [RFKJr, HHS, AutismPolicy, AutismRhetoric, MAHA]
+
+current_evidence:
+  observed:
+    - As HHS Secretary, publicly framed autism as an epidemic and preventable disease and asserted an environmental cause.
+    - Directed or supported federal initiatives focused on autism etiology, prevention, treatment pathways, and large-scale data analysis.
+  stated:
+    - Says HHS seeks root causes, prevention, treatment, care, gold-standard science, and answers for families.
+  supported_inferences:
+    - The public rhetoric gives prevention and causal discovery greater emphasis than accommodation, rights, services, or autistic self-determination.
+  disputed:
+    - Claims that rising identified prevalence proves an epidemic caused by an environmental toxin.
+  unknowns:
+    - How final research priorities, grant allocations, privacy safeguards, and autistic participation will be implemented.
+  counterevidence:
+    - CDC and independent experts attribute much of the rise in identified prevalence to broader recognition, diagnostic criteria, screening, and service access; autism has multiple known and suspected contributors, including substantial genetic influence.
+
+timeline:
+  - 2025-04-16: Publicly characterized autism as a real epidemic, preventable disease, and environmentally caused.
+  - 2025-05-07: HHS announced NIH-CMS data partnership focused first on autism root-cause research.
+  - 2025-09-22: HHS announced autism initiatives involving treatment, acetaminophen guidance, and NIH data-science awards.
+  - 2026-01-28: Appointed a new Interagency Autism Coordinating Committee.
+
+relations:
+  - type: LEADS
+    target: us-department-health-human-services
+    posture: observed
+    evidence: [source-hhs-autism-priorities, source-hhs-autism-actions-2025]
+  - type: FRAMES
+    target: autism
+    posture: observed
+    evidence: [source-politifact-rfk-autism-2025]
+    scope: epidemic, preventable disease, presumed environmental cause
+
+stories:
+  - 2025-04-16-rfk-hhs-autism-rhetoric
+
+unresolved_questions:
+  - Will autistic-led organizations and autistic researchers have meaningful decision power in federal autism policy?
+  - Will etiological research be designed to test competing hypotheses or to confirm a predetermined environmental or vaccine narrative?
+corrections: []
+references:
+  - source-hhs-autism-priorities
+  - source-hhs-autism-actions-2025
+  - source-politifact-rfk-autism-2025
+
+locks:
+  - Critique documented statements and actions; do not infer private motive.
+  - Increased research attention is not automatically beneficial if framing, methods, privacy, or goals cause harm.
