@@ -1,0 +1,91 @@
+schema: unum-lattice-news/node/v0.1
+id: marsha-blackburn
+title: Marsha Blackburn
+family: person
+subtype: federal_legislative_leader
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: >-
+    Tennessee federal lawmaker and gubernatorial candidate whose public rhetoric emphasizes limited government, anti-tax policy, parental authority, local control, school choice, conservative moral order, and opposition to bureaucratic or cultural elites. Her record should be traced through federal legislative, tax-code, funding-condition, confirmation, oversight, and coalition gates.
+  posture: observed_with_supported_inference
+claimed_ideals:
+  - limited federal government
+  - anti-tax and fiscal restraint
+  - parental authority and school choice
+  - local control
+  - government accountability
+  - religious-conservative moral order
+  - anti-elite and anti-bureaucracy politics
+institutional_seat:
+  institution: united-states-senate
+  role: senator
+  gate_types:
+    - legislation
+    - committee_and_subcommittee
+    - appropriation_and_tax_code
+    - confirmation
+    - oversight
+    - federal_funding_condition
+    - coalition_and_party_agenda
+  lever_types:
+    - bill_sponsorship
+    - vote
+    - amendment
+    - tax_credit
+    - funding_threat_or_condition
+    - nomination_support_or_opposition
+    - hearing_and_investigation
+    - public_pressure
+historical_policy_domains:
+  - federal education control and Department of Education opposition
+  - scholarship tax credits and private-school subsidies
+  - teacher unions, DEI, CRT, and ideological funding conditions
+  - abortion and reproductive restrictions
+  - telecommunications, broadband, privacy, and net-neutrality policy
+  - pharmaceutical distribution, opioid enforcement, and PBM policy
+  - border and immigration enforcement
+  - judicial nominations and executive power
+  - Israel policy and national-security alignment
+working_pattern:
+  proposition: >-
+    Blackburn frequently condemns federal power when used for public regulation,
+    civil-rights enforcement, labor capacity, or broad public institutions while
+    supporting federal tax expenditures, funding threats, ideological conditions,
+    deregulation, policing, and enforcement when they advantage favored actors or
+    discipline disfavored institutions.
+  status: supported_hypothesis_requires_vote_and_policy_specific_trace
+counterevidence_and_limits:
+  - Some later healthcare legislation targets concentrated intermediary power, including pharmacy-benefit managers.
+  - Sponsorship of a related bill is not equivalent to voting for or causing the final enacted provision.
+  - Party control does not prove personal authorship of every federal rule.
+  - Material-elite status and anti-elite rhetoric are distinct fields; rhetorical contradiction must be demonstrated rather than assumed.
+relations:
+  - type: SERVES_IN
+    target: united-states-senate
+    posture: observed
+  - type: ADVOCATES_FOR
+    target: federal-school-choice-tax-credits
+    posture: observed
+  - type: CONTROLS_GATE_WITHIN
+    target: institutions-gates-leaders-levers
+    posture: supported_inference
+  - type: TESTED_BY
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: TESTED_BY
+    target: harm-domination-protection-weighting
+    posture: working_framework
+research_queue:
+  - full pre-office and early-career platform archive
+  - vote record on enacted federal scholarship tax-credit provisions
+  - committee roles and amendment history
+  - telecom, pharmaceutical, education, and ideological-network donors
+  - lobbying meetings, access patterns, and revolving-door relationships
+  - federal funding conditions later described as external constraints
+  - gubernatorial transition plans and Tennessee opt-in powers
+locks:
+  - Separate campaign rhetoric, bill sponsorship, committee influence, vote, enactment, implementation, and downstream consequence.
+  - Do not infer quid pro quo from donations or policy alignment without stronger evidence.
+  - Do not allow federal jurisdiction to erase named legislative and executive control.
