@@ -1,0 +1,72 @@
+version: v0_1
+status: active_review
+schema: unum-lattice-news/claim-test/v0.1
+
+claim_test_record:
+  id: claim_test_slug
+  claim_text: ""
+  normalized_claim: ""
+  claimant_nodes: []
+  target_nodes: []
+  first_observed: null
+  last_observed: null
+  rhetoric_context:
+    source_ids: []
+    exact_quote_or_paraphrase: ""
+    audience: []
+    policy_context: []
+  claim_type: causal | prevalence | historical | predictive | normative | legal | capability | intent | attribution | identity | classification | other
+  testability: directly_testable | indirectly_testable | partially_testable | not_currently_testable | nonfactual_value_claim
+  scope:
+    population: ""
+    geography: ""
+    time_window: ""
+    conditions: ""
+    exclusions: []
+  burden_of_proof:
+    required_evidence: []
+    disconfirming_evidence: []
+    alternative_explanations: []
+    causal_identification_requirements: []
+  evidence:
+    supports: []
+    contradicts: []
+    contextualizes: []
+    insufficient_or_ambiguous: []
+  reasoning_checks:
+    correlation_vs_causation: not_applicable | passed | failed | unresolved
+    prevalence_vs_incidence: not_applicable | passed | failed | unresolved
+    classification_shift: not_applicable | passed | failed | unresolved
+    base_rate_and_denominator: not_applicable | passed | failed | unresolved
+    temporal_order: not_applicable | passed | failed | unresolved
+    confounding: not_applicable | passed | failed | unresolved
+    selection_bias: not_applicable | passed | failed | unresolved
+    ecological_fallacy: not_applicable | passed | failed | unresolved
+    scope_overreach: not_applicable | passed | failed | unresolved
+    alternative_explanations_addressed: not_applicable | passed | failed | unresolved
+  current_assessment:
+    status: untested | testing | unsupported | weakly_supported | mixed | supported | strongly_supported | falsified | not_testable | value_claim
+    confidence: low | moderate | high
+    summary: ""
+    what_is_established: []
+    what_is_not_established: []
+    unknowns: []
+    evidence_that_would_change_assessment: []
+  downstream_permissions:
+    may_generate_factual_relation: false
+    may_generate_rhetoric_relation: true
+    may_appear_in_public_rendition: false
+    human_review_required: true
+  review:
+    reviewers: []
+    last_reviewed: null
+    conflicts: []
+    corrections: []
+
+locks:
+  - Recording that a claim was made does not establish that the claim is true.
+  - Repetition, prominence, office, institutional authority, and media amplification do not increase evidentiary support by themselves.
+  - A causal claim requires more than temporal association, prevalence change, or correlation.
+  - Failure to disprove a claim is not evidence that the claim is true.
+  - Rhetorical force, emotional salience, and policy usefulness must not substitute for evidence.
+  - Unsupported claims may remain visible as rhetoric when their influence is itself newsworthy, but must not generate factual relations.
