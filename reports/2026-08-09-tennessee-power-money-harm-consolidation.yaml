@@ -1,0 +1,307 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-tennessee-power-money-harm-consolidation
+title: Tennessee power, money, rhetoric, and accountability topology
+as_of: 2026-08-09
+status: draft_review
+purpose: >-
+  Consolidate the Tennessee education and governance thread into one causal subsystem
+  covering taxes, federal and state funding, public-school obligations, private-school
+  subsidies, household and district burden, institutions, gates, named leaders, policy
+  levers, rhetoric, historical conduct, contracts, preferential-treatment risk,
+  beneficiaries, enforced losses, audit, repair, and accountability.
+
+core_operator:
+  source: public_revenue_or_collective_capacity
+  institution: body_holding_authority_money_duties_records_or_enforcement
+  gate: decision_point_controlling_money_eligibility_permission_information_or_review
+  leader: named_officeholder_with_capacity_to_open_close_preserve_or_redesign_gate
+  lever: appropriation_tax_credit_formula_rule_waiver_contract_appointment_veto_or_enforcement_choice
+  benefit: payment_subsidy_tax_advantage_access_revenue_market_or_institutional_capacity
+  enforced_loss: compelled_revenue_loss_fixed_cost_service_loss_risk_or_diminished_future_capacity
+  consequence: material_effect_on_students_households_workers_districts_communities_or_ecology
+  audit: independent_review_of_evidence_process_and_distribution
+  return_path: compensation_repair_amendment_enforcement_sanction_or_impunity
+
+money_routes:
+  public_school_route:
+    source:
+      - state_tax_revenue
+      - local_property_and_sales_tax_revenue
+      - federal_appropriations
+    gates:
+      - TISA_formula
+      - student_need_classification
+      - state_and_local_match
+      - federal_program_eligibility
+      - district_budget
+    recipients:
+      - local_education_agencies
+      - public_schools
+      - students_and_required_services
+    retained_obligations:
+      - facilities
+      - transportation
+      - staffing
+      - disability_services
+      - debt
+      - universal_and_local_access
+  state_private_subsidy_route:
+    source:
+      - state_general_fund
+    gates:
+      - statutory_eligibility
+      - application_and_priority
+      - private_school_registration
+      - payment_authorization
+      - allowable_expense_rules
+    recipients:
+      - participating_families
+      - private_schools
+      - administrators_and_vendors
+    risk:
+      - public_districts_may_lose_future_growth_while_retaining_fixed_obligations
+  federal_tax_credit_route:
+    source:
+      - federal_tax_revenue_forgone
+    gates:
+      - congressional_tax_law
+      - presidential_signature_or_veto
+      - Treasury_and_agency_rules
+      - Tennessee_opt_in_or_implementation
+      - scholarship_granting_organization_selection
+    recipients:
+      - donors_receiving_credit
+      - scholarship_granting_organizations
+      - eligible_families_and_private_providers
+    accountability_issue: >-
+      Tax expenditure remains public fiscal capacity even when routed through a donor
+      and nonprofit intermediary rather than an ordinary appropriation.
+
+burden_and_distribution_fields:
+  households:
+    - tax_or_fee_as_percent_of_gross_income
+    - tax_fee_or_replacement_cost_as_percent_of_disposable_income
+    - subsidy_value_as_percent_of_income
+    - service_loss_and_required_private_replacement_cost
+    - cumulative_multi_year_burden
+  districts:
+    - direct_loss_as_percent_of_total_revenue
+    - loss_as_percent_of_discretionary_revenue
+    - future_growth_loss
+    - fixed_cost_retention
+    - service_and_staffing_effect
+    - rural_and_disability_access_effect
+  beneficiaries:
+    - gross_payment_or_credit
+    - net_benefit_after_private_cost
+    - administrative_fee
+    - future_growth_capture
+    - asset_or_market_access_gain
+  system:
+    - foregone_tax_revenue
+    - concentrated_local_loss_hidden_by_statewide_netting
+    - opportunity_cost
+    - transferred_risk
+    - diminished_public_capacity
+
+institutions:
+  norm_setting:
+    - Tennessee_General_Assembly
+    - United_States_Congress
+    - Tennessee_State_Board_of_Education
+  executive_and_administrative:
+    - Governor_of_Tennessee
+    - Tennessee_Department_of_Education
+    - Tennessee_Department_of_Finance_and_Administration
+    - United_States_Department_of_Education
+    - United_States_Department_of_the_Treasury
+  fiscal_and_local:
+    - local_governments
+    - local_school_boards
+    - Tennessee_Department_of_Revenue
+    - scholarship_granting_organizations
+    - program_vendors_and_payment_administrators
+  audit_and_review:
+    - Tennessee_Comptroller
+    - Office_of_Research_and_Education_Accountability
+    - legislative_fiscal_review
+    - courts
+    - inspectors_general_or_equivalent_review_bodies
+
+named_leaders:
+  bill_lee:
+    seat: Tennessee_governor
+    primary_gates:
+      - budget
+      - signature_or_veto
+      - executive_agenda
+      - appointment
+      - agency_direction
+      - special_session
+      - state_implementation
+      - procurement_and_contract_oversight
+    claimed_ideals:
+      - Christian_faith
+      - family_and_parental_authority
+      - local_and_community_control
+      - business_efficiency
+      - opportunity_for_every_child
+      - skepticism_of_bureaucracy
+    repeated_test: >-
+      Compare claimed local control and limited government with centralized state
+      preemption, enforcement, private routing, and the distribution of retained obligations.
+  marsha_blackburn:
+    seat: United_States_senator_and_Tennessee_gubernatorial_candidate
+    primary_gates:
+      - federal_legislation
+      - tax_code
+      - appropriations_and_funding_conditions
+      - committee_and_oversight
+      - confirmations
+      - coalition_and_party_agenda
+    claimed_ideals:
+      - limited_federal_government
+      - anti_tax_and_fiscal_restraint
+      - parental_authority
+      - local_control
+      - school_choice
+      - anti_elite_and_anti_bureaucracy
+    repeated_test: >-
+      Compare opposition to federal control with support for federal tax expenditures,
+      defunding threats, ideological conditions, deregulation, policing, or enforcement.
+
+rhetoric_to_action_fields:
+  - stated_ideal
+  - moral_frame
+  - named_enemy
+  - promised_beneficiary
+  - office_and_gate
+  - lever_used
+  - actual_beneficiary
+  - actual_loss_bearer
+  - continuity
+  - contradiction
+  - selective_application
+  - reframing_after_consequence
+  - correction_or_repetition
+
+anti_elite_elite_test:
+  material_elite_fields:
+    - wealth
+    - office
+    - access
+    - institutional_control
+    - donor_network
+    - agenda_setting_power
+  rhetorical_elite_fields:
+    - bureaucrat
+    - teacher
+    - professor
+    - journalist
+    - public_health_official
+    - university
+    - urban_or_cultural_opponent
+  diagnostic: >-
+    Compare who is described as powerful in rhetoric with who actually controls money,
+    contracts, appointments, rules, enforcement, and protection in the causal network.
+
+contract_and_preference_risk:
+  trace:
+    - prior_relationship_or_contribution
+    - access_to_leader_or_agency
+    - procurement_or_grant_gate
+    - award_amendment_waiver_or_regulatory_relief
+    - performance_history
+    - enforcement_or_penalty_treatment
+    - beneficiary_gain
+    - competitor_public_or_user_loss
+  questions:
+    - Was the process competitively bid and independently scored?
+    - Did connected and unconnected applicants face equivalent criteria?
+    - Was scope or value expanded without renewed competition?
+    - Were performance failures tolerated or penalties waived?
+    - Which lobbyists donors former_associates ideological_partners or family_linked_entities had access?
+    - Which subcontractors and intermediaries captured value?
+  evidentiary_posture:
+    - access_or_alignment_is_not_quid_pro_quo
+    - contract_risk_requires_procurement_and_decision_specific_evidence
+    - poor_performance_plus_expansion_raises_scrutiny_without_proving_corruption
+
+federal_excuse_attribution:
+  rule: >-
+    Federal describes jurisdiction, not an ownerless force. When an official invokes
+    federal rules or funding as an external constraint, trace the named actors who
+    enacted, voted for, administered, interpreted, waived, preserved, opted into,
+    or declined to change the constraint.
+  fields:
+    - congressional_sponsor_and_vote
+    - president_and_executive_position
+    - agency_rule_and_interpretation
+    - waiver_authority
+    - appropriation_control
+    - state_opt_in_or_implementation
+    - party_control_at_relevant_time
+    - personal_role_and_available_alternatives
+    - preservation_while_blame_is_externalized
+
+harm_and_constraint_alignment:
+  life_serving_direction:
+    - protection_toward_vulnerability
+    - accountability_toward_causal_power
+    - benefit_without_hidden_externalization
+    - transparent_gates
+    - independent_audit
+    - repair_and_compensation
+  domination_direction:
+    - benefit_toward_high_access_nodes
+    - enforced_loss_toward_low_exit_participants
+    - secrecy_and_protection_upward
+    - scrutiny_and_burden_downward
+    - fixed_obligations_left_with_revenue_loser
+    - failed_feedback_and_repetition
+
+current_working_hypotheses:
+  - Public systems may retain universal and fixed obligations while portable public fiscal capacity moves toward selective private providers and intermediaries.
+  - Lee and Blackburn may form a cross-level routing chain through state executive and federal legislative gates without occupying identical roles.
+  - Freedom, family, local control, anti-tax, and anti-elite rhetoric may be selectively applied according to favored beneficiary and disfavored target.
+  - Contract, donor, lobbyist, ideological, and appointment networks may shape access and tolerance, but preference and corruption must be established case by case.
+  - Statewide aggregate balance may conceal concentrated household, district, rural, disability, or service loss.
+
+existing_records_to_integrate:
+  nodes:
+    - tennessee-education-funding-system
+    - tennessee-education-freedom-scholarships
+    - money-flow-benefit-enforced-loss
+    - institutions-gates-leaders-levers
+    - bill-lee
+    - marsha-blackburn
+    - harm-domination-protection-weighting
+    - life-serving-systems
+  reports:
+    - 2026-08-09-tennessee-school-funding-routing-first-sweep
+    - 2026-08-09-bill-lee-marsha-blackburn-education-levers
+    - 2026-08-09-bill-lee-marsha-blackburn-historical-moves
+    - 2026-08-09-bill-lee-marsha-blackburn-rhetoric-to-action
+    - 2026-08-09-tennessee-contracts-preferential-treatment-first-sweep
+
+research_queue:
+  - district_by_district_TISA_and_EFS_effects
+  - household_income_relative_tax_and_subsidy_distribution
+  - enacted_federal_tax_credit_vote_and_implementation_chain
+  - Tennessee_opt_in_and_waiver_records
+  - vendor_contracts_bid_scores_amendments_penalties_and_subcontractors
+  - donor_lobbyist_nonprofit_family_business_and_ideological_access_networks
+  - faith_based_grants_and_crisis_pregnancy_funding
+  - private_school_tuition_changes_admission_disability_and_transportation_practices
+  - public_school_staffing_closure_consolidation_and_service_effects
+  - independent_audit_authority_records_access_and_remedy_power
+  - counterexamples_where_public_capacity_or_vulnerability_protection_increased
+
+locks:
+  - Do not compress federal state local private and intermediary routes into one government node.
+  - Do not confuse gross dollars with income-relative or capacity-relative burden.
+  - Do not infer collective guilt or party-wide authorship from individual acts.
+  - Do not infer corruption from access donations ideology or contract benefit alone.
+  - Do not erase leadership responsibility through delegation.
+  - Do not erase agency constraints or procedural limits when attributing responsibility.
+  - Unknowns and blind spots trigger research rather than premature defense or accusation.
