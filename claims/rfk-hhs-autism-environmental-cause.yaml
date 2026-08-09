@@ -1,0 +1,104 @@
+schema: unum-lattice-news/claim-test/v0.1
+id: rfk-hhs-autism-environmental-cause
+claim_text: "Autism prevalence is evidence of a modern epidemic caused substantially or generally by an environmental toxin or exposure that can be identified and prevented."
+normalized_claim: "A modern environmental exposure is a general causal explanation for autism and its increased identification prevalence."
+claimant_nodes:
+  - robert-f-kennedy-jr
+  - us-department-health-human-services
+target_nodes:
+  - autism
+  - environmental-pollution-exposure
+first_observed: "2025-04-16"
+last_observed: null
+rhetoric_context:
+  source_ids: []
+  exact_quote_or_paraphrase: "Public statements frame autism as an epidemic, preventable disease, and evidence of an environmental exposure requiring identification."
+  audience:
+    - United States public
+    - federal health agencies
+    - autism researchers
+  policy_context:
+    - HHS autism root-cause research agenda
+    - prevention-oriented research priorities
+claim_type: causal
+testability: partially_testable
+scope:
+  population: "Autistic people and populations measured through autism surveillance or diagnosis"
+  geography: "United States, with broader causal implication"
+  time_window: "Modern prevalence increase compared with earlier historical periods"
+  conditions: "Environmental exposures proposed as general or major cause"
+  exclusions:
+    - bounded claims about a specific exposure affecting a defined subgroup
+    - claims about pollution causing other neurodevelopmental harms
+burden_of_proof:
+  required_evidence:
+    - demonstrate a valid increase in biological incidence rather than identification prevalence alone
+    - identify the exposure or exposure class with reproducible dose-response evidence
+    - establish temporal order and plausible mechanism
+    - control for diagnostic expansion, recognition, surveillance, service access, and ascertainment differences
+    - explain autism's historical presence and strong genetic contribution
+    - reproduce findings across independent populations
+  disconfirming_evidence:
+    - historical evidence of autism-like neurodevelopmental patterns before modern industrial exposures
+    - prevalence changes substantially explained by diagnostic and ascertainment changes
+    - failure to identify a general exposure with reproducible causal effect
+    - heterogeneity inconsistent with one general causal pathway
+  alternative_explanations:
+    - expanded diagnostic criteria
+    - greater recognition and screening
+    - service-linked identification
+    - changing surveillance methods
+    - multiple genetic and non-genetic pathways
+    - gene-environment interaction affecting only subsets
+  causal_identification_requirements:
+    - defined exposure
+    - defined outcome
+    - valid comparison population
+    - confounder control
+    - dose-response or natural-experiment evidence where possible
+    - replication
+    - distinction between autism itself and co-occurring impairment
+reasoning_checks:
+  correlation_vs_causation: failed
+  prevalence_vs_incidence: failed
+  classification_shift: unresolved
+  base_rate_and_denominator: unresolved
+  temporal_order: unresolved
+  confounding: unresolved
+  selection_bias: unresolved
+  ecological_fallacy: unresolved
+  scope_overreach: failed
+  alternative_explanations_addressed: failed
+current_assessment:
+  status: unsupported
+  confidence: high
+  summary: "The broad causal claim is not established by current evidence. Environmental exposures may influence neurodevelopment or particular subsets, but rising identified prevalence does not demonstrate that autism generally is a modern toxin-caused epidemic."
+  what_is_established:
+    - the rhetoric and policy agenda have been publicly advanced
+    - some environmental exposures can harm neurodevelopment
+    - autism is heterogeneous and has substantial genetic contribution
+    - measured autism prevalence is affected by recognition, diagnosis, services, and surveillance
+  what_is_not_established:
+    - a single or general modern toxin causing autism
+    - a matching rise in biological incidence equivalent to identified prevalence
+    - that preventing an exposure would eliminate autism generally
+    - that autism itself is injury rather than a heterogeneous neurodevelopmental state
+  unknowns:
+    - whether defined exposures affect defined autism-related outcomes in particular subgroups
+    - how gene-environment interactions operate across heterogeneous presentations
+    - how future HHS studies will prevent predetermined conclusions
+  evidence_that_would_change_assessment:
+    - replicated causal evidence for a defined exposure and defined subgroup
+    - credible incidence reconstruction controlling for ascertainment changes
+    - independent studies with preregistered methods and open data
+    - convergent mechanistic, epidemiological, and dose-response evidence
+downstream_permissions:
+  may_generate_factual_relation: false
+  may_generate_rhetoric_relation: true
+  may_appear_in_public_rendition: true
+  human_review_required: true
+review:
+  reviewers: []
+  last_reviewed: null
+  conflicts: []
+  corrections: []
