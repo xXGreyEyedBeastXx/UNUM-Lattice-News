@@ -1,0 +1,38 @@
+schema: unum-lattice-news/node/v0.1
+id: benjamin-netanyahu
+title: Benjamin Netanyahu
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: Prime Minister of Israel and central political-command node for the Israeli government's Gaza policy, military campaign, alliance with the United States, and documented disagreements with U.S. leadership.
+  posture: observed
+aliases: [Benjamin Netanyahu, Prime Minister Netanyahu]
+hashtags: [Netanyahu, Israel, Gaza, Genocide, USIsraelRelations]
+current_evidence:
+  observed:
+    - Leads the government of Israel.
+    - Maintains a close alliance with Donald Trump and the United States while retaining independent decision-making.
+    - Publicly rejected the sequencing of a Trump-backed Gaza withdrawal and disarmament plan on August 9, 2026.
+  supported_inferences:
+    - Alliance, funding, and diplomatic support create accountability links but do not collapse Israeli and U.S. command structures into one actor.
+  alleged: []
+  disputed:
+    - Personal and command responsibility for specific genocidal acts and policies must be traced through orders, cabinet decisions, military command, and evidence of knowledge and intent.
+  unknowns:
+    - Full decision chain for particular attacks, deprivation policies, and continuation after warnings or legal orders.
+  counterevidence:
+    - Documented disagreement with Trump demonstrates that U.S. support does not equal total U.S. operational control.
+relations:
+  - {type: LEADS, target: government-of-israel, posture: observed, evidence: [source-reuters-netanyahu-rejects-trump-gaza-plan-2026]}
+  - {type: ALLIED_WITH, target: donald-trump, posture: observed, evidence: [source-reuters-netanyahu-rejects-trump-gaza-plan-2026]}
+  - {type: DISAGREES_WITH, target: donald-trump, posture: observed, evidence: [source-reuters-netanyahu-rejects-trump-gaza-plan-2026], scope: Gaza withdrawal and Hamas disarmament sequencing}
+unresolved_questions:
+  - Which genocidal policies and acts were ordered, approved, defended, enabled, or continued by Netanyahu personally?
+  - How did U.S. weapons, financing, intelligence, diplomacy, and political protection alter Israeli capacity or incentives?
+references: [source-bundle-2026-08-09-actor-relation-sweep, source-un-gaza-genocide-inquiry-2025]
+locks:
+  - Criticism of Netanyahu or the Israeli government must not be transferred to Jewish people or Israelis as a collective.
+  - Alliance does not erase independent agency; disagreement does not erase material support or shared responsibility where evidence establishes it.
