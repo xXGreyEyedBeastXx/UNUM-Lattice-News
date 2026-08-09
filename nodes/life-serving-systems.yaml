@@ -1,0 +1,41 @@
+schema: unum-lattice-news/node/v0.1
+id: life-serving-systems
+title: Life-serving systems
+family: causal_ethical_field
+subtype: counter_architecture
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: >-
+    Counter-architecture to domination: systems that distribute agency, preserve self-sovereignty and meaningful difference, move protection toward vulnerability, move accountability toward causal power, support informed consent and coherent contribution, and treat care, repair, rest, play, ecological reciprocity, and relational freedom as infrastructure.
+  posture: working_framework
+principles:
+  - protection scales with vulnerability and exposure
+  - accountability scales with power, agency, causal reach, and foreseeable capacity for harm
+  - contribution respects capacity, baseline sustainability, consent, needs, wants, and reciprocal burden
+  - difference does not require hierarchy
+  - care is infrastructure rather than sentimental residue
+  - repair aims to restore viable relation without reproducing domination
+  - self-sovereignty and informed consent constrain extraction
+  - ecological and multispecies consequences remain inside the accounting boundary
+  - joy, pleasure, play, creativity, spirituality, and meaning are positive system functions rather than mere absence of harm
+relations:
+  - type: COUNTERS
+    target: interlocking-domination
+    posture: working_framework
+  - type: COMPLEMENTS
+    target: harm-domination-protection-weighting
+    posture: working_framework
+  - type: REQUIRES
+    target: situated-relational-analysis
+    posture: working_framework
+unresolved_questions:
+  - How should needs, wants, contribution capacity, baseline sustainability, and protection obligations be balanced across regimes?
+  - Which restorative or transformative accountability mechanisms reliably protect vulnerable participants without recreating punitive domination?
+  - How should nonhuman vulnerability and ecological repair be weighted alongside human claims?
+locks:
+  - Do not equate equality with identical burden under unequal capacity or vulnerability.
+  - Do not demand burnout as contribution from high-capacity participants.
+  - Do not use vulnerability as immunity from accountability for harmful acts.
+  - Do not define liberation only as the absence of domination; preserve positive life-serving functions.
