@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Sample oversight feed</title>
+    <item>
+      <title>Accessible transit review published</title>
+      <link>https://example.gov/reports/accessible-transit</link>
+      <pubDate>Sat, 09 Aug 2026 10:00:00 GMT</pubDate>
+      <description>This body must not enter the intake candidate.</description>
+    </item>
+    <item>
+      <title>Entry without a usable link</title>
+      <guid>not-a-url</guid>
+    </item>
+  </channel>
+</rss>
+
