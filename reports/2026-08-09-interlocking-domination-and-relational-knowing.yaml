@@ -1,0 +1,120 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-interlocking-domination-and-relational-knowing
+title: Interlocking domination and situated relational knowing
+as_of: 2026-08-09
+status: draft_review
+question: >-
+  How should the News lattice represent patriarchy, class, colonialism, ableism,
+  nationalism, authoritarianism, and knowledge practices without collapsing them
+  into one cause or treating them as unrelated silos?
+
+central_working_proposition: >-
+  Patriarchy is a deeply embedded and highly recurrent architecture of domination
+  that often organizes authority, reproduction, violence, knowledge, institutional
+  protection, and downward harm transfer. It operates within a larger interlocking
+  system that can also include class rule, racial hierarchy, settler colonialism,
+  caste, ableism, religious supremacy, extractivism, nationalism, militarism,
+  bureaucratic self-preservation, and technological control.
+
+supporting_architecture:
+  surface_frames:
+    - left versus right
+    - nationalist versus internationalist
+    - religious versus secular
+    - traditional versus progressive
+  recurring_methods:
+    - dehumanization
+    - threat construction
+    - hierarchy
+    - coercion
+    - reproductive and sexual control
+    - institutional self-protection
+    - cover-up culture
+    - conspiracy narratives
+    - punitive legitimacy
+    - downward transfer of harm
+  structural_systems:
+    - patriarchy
+    - class domination
+    - racial hierarchy
+    - colonialism and settler colonialism
+    - ableist productivity regimes
+    - nationalism and militarism
+    - religious authority
+    - extractive capitalism
+    - bureaucratic self-preservation
+  meta_pattern:
+    - subordination of lived dignity to abstract systems
+    - cruelty framed as virtue or necessity
+    - protection of high-power nodes from consequence
+    - demands for transparency flowing downward while secrecy flows upward
+
+required_missing_dimensions:
+  - class and material economy
+  - disability justice and eugenics
+  - Indigenous and First Nations perspectives
+  - Global South feminisms and political economy
+  - technology and surveillance
+  - ecology and multispecies justice
+  - joy, pleasure, play, care, and creativity
+  - spirituality and meaning-making
+  - moderate and liberal complicity
+  - temporal, generational, and trauma dimensions
+  - the analyst's own position and method
+
+knowledge_model:
+  analytic: pattern, distinction, causality, contradiction
+  embodied: pain, sensory reality, capacity, safety, lived consequence
+  relational: consent, reciprocity, trust, responsibility, context
+  historical: lineage, accumulated injury, institutional recurrence
+  material: money, labor, land, weapons, infrastructure, deprivation
+  ecological: interdependence, nonhuman life, externalized costs
+  imaginative: possible worlds, art, play, metaphor, future construction
+  adversarial: counterevidence, failure testing, power scrutiny
+  participatory: affected people help define questions and conclusions
+
+life_serving_inverse:
+  - agency distributed rather than monopolized
+  - protection rises with vulnerability
+  - accountability rises with power
+  - meaningful difference preserved without forced hierarchy
+  - care, consent, repair, rest, play, and ecological continuity treated as infrastructure
+
+claim_status:
+  interlocking_domination:
+    status: strongly_supported_as_framework
+    limits:
+      - not a proof of coordination between every ideologically similar actor
+      - not a claim that patriarchy is the sole cause of every hierarchy
+      - not a substitute for event-specific causal tracing
+  patriarchy_as_recurrent_architecture:
+    status: strongly_supported_as_working_proposition
+    limits:
+      - causal weight must be tested case by case
+  analysis_as_patriarchal:
+    status: supported_only_in_bounded_form
+    bounded_form: >-
+      Analysis becomes patriarchal or domination-oriented when it seeks mastery,
+      erases the analyst's position, objectifies participants, extracts knowledge
+      without reciprocity, or treats classification as control.
+    rejected_overreach: All analysis is inherently patriarchal.
+
+reporter_rules:
+  - Trace methods, institutions, resources, harms, protections, and affected participants separately.
+  - Do not infer identical ideology from shared methods.
+  - Do not infer coordination from rhetorical similarity alone.
+  - Do not treat a single explanatory framework as self-validating.
+  - Preserve affected people's testimony without granting any source automatic causal authority.
+  - Include life-serving alternatives so the lattice does not become only a map of domination.
+
+linked_nodes:
+  - interlocking-domination
+  - situated-relational-analysis
+  - patriarchy
+  - harm-domination-protection-weighting
+
+next_steps:
+  - create distinct nodes for patriarchy, ableist productivity regimes, settler colonialism, care infrastructure, and life-serving systems
+  - attach scholars and traditions as source nodes where useful
+  - test the framework against concrete stories that appear not to fit it
+  - add countermodels and falsification conditions
