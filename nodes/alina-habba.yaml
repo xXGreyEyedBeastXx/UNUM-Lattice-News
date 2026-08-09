@@ -1,0 +1,66 @@
+schema: unum-lattice-news/node/v0.1
+id: alina-habba
+title: Alina Habba
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: >-
+    Donald Trump's former personal attorney and former White House counselor whose attempted and disputed placement as New Jersey's top federal prosecutor illustrates the conversion of personal loyalty into federal prosecutorial authority.
+  posture: observed
+aliases: [Alina Saad Habba]
+hashtags: [Trump, DOJ, ProsecutorialPower, Loyalty, NewJersey]
+current_evidence:
+  observed:
+    - Trump appointed Habba Counselor to the President after praising her loyalty and legal defense of him.
+    - Trump later installed her as interim U.S. attorney for the District of New Jersey.
+    - Her permanent nomination was withdrawn after Senate and judicial resistance.
+    - DOJ attempted procedural maneuvers to retain her; a federal appeals court later ruled the acting appointment unlawful.
+  stated:
+    - Trump described her as unwaveringly loyal and a defender against alleged lawfare.
+  supported_inferences:
+    - Habba is a high-confidence Trump personal-loyalty and prosecutorial-power node.
+    - Her placement is relevant to selective enforcement, retaliation, appointment safeguards, and institutional capture analysis.
+  disputed:
+    - The legality and legitimacy of the appointment maneuvers were contested and litigated.
+  unknowns:
+    - Her current formal DOJ role after the appellate ruling.
+    - Whether she has any material Israel-policy role beyond general alignment with the Trump administration.
+  counterevidence:
+    - Current reviewed sources do not establish a strong direct Israel-policy, Zionist-organizational, or Gaza-policy connection comparable to Huckabee, Graham, Rubio, Witkoff, Kushner, or Hegseth.
+timeline:
+  - date: 2024-12-08
+    event: Trump announced Habba as Counselor to the President.
+  - date: 2025-03-28
+    event: Sworn in as interim U.S. attorney for the District of New Jersey.
+  - date: 2025-07-24
+    event: Permanent nomination withdrawn amid appointment dispute.
+  - date: 2025-12-01
+    event: Federal appeals court ruled the maneuver keeping her as acting U.S. attorney unlawful.
+relations:
+  - type: FORMER_PERSONAL_ATTORNEY_FOR
+    target: donald-trump
+    posture: observed
+  - type: APPOINTED_BY
+    target: donald-trump
+    posture: observed
+  - type: ALIGNED_WITH
+    target: trump-administration
+    posture: observed
+  - type: EXERCISED
+    target: federal-prosecutorial-authority
+    posture: observed
+unresolved_questions:
+  - What is Habba's current lawful office and authority?
+  - Which prosecutions, investigations, or declinations show possible partisan asymmetry?
+  - Is there any source-supported direct role in Israel, Gaza, Iran, or Christian-Zionist policy networks?
+corrections: []
+references:
+  - https://www.presidency.ucsb.edu/documents/statement-president-elect-donald-j-trump-announcing-the-appointment-alina-habba-counselor
+  - https://www.congress.gov/nomination/119th-congress/379/12
+  - https://www.reuters.com/world/us/judges-reject-trumps-pick-top-new-jersey-federal-prosecutor-doj-removes-2025-07-22/
+locks:
+  - Do not infer an Israel-policy relation from Trump loyalty alone.
+  - Appointment controversy does not prove misconduct in every prosecution.
