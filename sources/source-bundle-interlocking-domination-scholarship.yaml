@@ -1,0 +1,65 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-bundle-interlocking-domination-scholarship
+title: Scholarly traditions supporting the interlocking domination and situated-knowledge framework
+accessed: 2026-08-09
+source_type: scholarly_lineage_bundle
+supports:
+  nodes:
+    - interlocking-domination
+    - situated-relational-analysis
+  reports:
+    - 2026-08-09-interlocking-domination-and-relational-knowing
+traditions:
+  patriarchy_as_system:
+    - Sylvia Walby
+    - Heidi Hartmann
+    - Gerda Lerner
+    - Kate Millett
+    - bell hooks
+  intersectional_and_black_feminist_analysis:
+    - Kimberlé Crenshaw
+    - Patricia Hill Collins
+    - bell hooks
+    - Angela Davis
+    - Iris Marion Young
+  nationalism_militarism_and_gender:
+    - Cynthia Enloe
+    - Nira Yuval-Davis
+    - Carol Pateman
+    - Chandra Talpade Mohanty
+    - M. Jacqui Alexander
+  coloniality_and_indigenous_feminisms:
+    - María Lugones
+    - Oyèrónkẹ́ Oyěwùmí
+    - Leanne Betasamosake Simpson
+    - Audra Simpson
+    - Andrea Smith
+    - Aileen Moreton-Robinson
+  disability_justice_and_productivity:
+    - Rosemarie Garland-Thomson
+    - Alison Kafer
+    - Marta Russell
+    - Patty Berne
+    - Sins Invalid
+    - Robert McRuer
+  situated_and_feminist_epistemology:
+    - Sandra Harding
+    - Donna Haraway
+    - Lorraine Code
+    - Evelyn Fox Keller
+    - Carolyn Merchant
+    - Nancy Hartsock
+    - Patricia Hill Collins
+  care_and_relational_ethics:
+    - Carol Gilligan
+    - Nel Noddings
+    - Joan Tronto
+limitations:
+  - This bundle identifies intellectual lineages and does not substitute for work-specific citations.
+  - Inclusion of a scholar does not mean that scholar endorses every proposition in the synthesis.
+  - The framework must still be tested against concrete events, affected participants, competing theories, and disconfirming evidence.
+  - Western academic sources should not displace Indigenous, Global South, embodied, artistic, oral, or community knowledge.
+locks:
+  - Do not use scholarly lineage as automatic proof of an event-specific causal claim.
+  - Do not flatten differences among feminist, Indigenous, Marxist, disability-justice, decolonial, and care traditions.
+  - Recover exact works and passages before quoting or attributing a specific proposition.
