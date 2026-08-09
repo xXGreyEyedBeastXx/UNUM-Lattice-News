@@ -1,0 +1,35 @@
+schema: unum-lattice-news/node/v0.1
+id: stephen-miller
+title: Stephen Miller
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: White House Deputy Chief of Staff and high-priority domestic-policy node for tracing immigration, exclusion, enforcement, detention, deportation, and retaliatory federal-policy design.
+  posture: observed
+aliases: [Stephen Miller]
+hashtags: [StephenMiller, ImmigrationPolicy, Deportation, ExecutivePower, WhiteHouse]
+current_evidence:
+  observed:
+    - Serves as White House Deputy Chief of Staff in the Trump administration.
+  supported_inferences:
+    - His role places him close to executive policy formation, but authorship and causal responsibility must be established policy by policy.
+  alleged: []
+  disputed:
+    - Scope of his personal authorship, operational control, and responsibility for particular policies or enforcement actions.
+  unknowns:
+    - Which current policies he originated, materially shaped, approved, or merely publicly defended.
+  counterevidence:
+    - Role proximity and ideological alignment do not prove authorship of every related action.
+relations:
+  - {type: SERVES_UNDER, target: donald-trump, posture: observed, evidence: [source-white-house-kirk-administration-roster-2025]}
+  - {type: HOLDS_ROLE, target: white-house-deputy-chief-of-staff, posture: observed, evidence: [source-white-house-kirk-administration-roster-2025]}
+unresolved_questions:
+  - For each immigration or retaliation policy, what documentary evidence establishes Miller's authorship, direction, advocacy, or implementation role?
+  - Which agencies operationalized those policies and which officials retained independent discretion?
+references: [source-bundle-2026-08-09-actor-relation-sweep]
+locks:
+  - Repeated ideological alignment increases investigative relevance but does not replace policy-specific evidence.
+  - Distinguish rhetoric, policy design, authorization, implementation, and downstream harm.
