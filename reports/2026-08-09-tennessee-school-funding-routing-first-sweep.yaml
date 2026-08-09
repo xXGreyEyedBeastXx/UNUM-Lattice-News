@@ -1,0 +1,132 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-tennessee-school-funding-routing-first-sweep
+title: Tennessee school systems, taxes, private-school subsidies, and federal funding routing
+as_of: 2026-08-09
+status: draft_review
+question: >-
+  How does public fiscal capacity move through Tennessee's public-school formula, private-school subsidy programs, and federal grant or tax-credit channels, and where do accountability burdens differ?
+
+established_topology:
+  public_school_channel:
+    flow:
+      - Tennessee state revenue
+      - local education revenue
+      - TISA formula
+      - local education agencies and public schools
+      - students, staff, transportation, facilities, special education, and required public services
+    formula_features:
+      - base per-student funding
+      - weighted funding for student and community needs
+      - direct priority funding
+      - outcomes funding
+    2025_26_components:
+      weighted_funding_approx: 1950000000
+      direct_funding_more_than: 482000000
+      outcomes_funding_approx: 94000000
+  state_private_subsidy_channel:
+    flow:
+      - Tennessee General Fund
+      - Tennessee Department of Education
+      - family scholarship account or payment mechanism
+      - registered non-public school and approved expenses
+    2026_27_scholarship_amount: 7530
+    2026_27_maximum_awards: 35000
+    enacted_fiscal_estimate_fy_2026_27: 150600000
+  federal_grant_channel:
+    flow:
+      - federal appropriation
+      - U.S. Department of Education or administering federal agency
+      - Tennessee Department of Education
+      - local education agencies and eligible providers
+    character: restricted program funding rather than unrestricted replacement revenue
+  federal_tax_credit_channel:
+    flow:
+      - taxpayer federal liability
+      - federally credited donation
+      - scholarship-granting organization
+      - eligible education expenses or scholarships
+    Tennessee_status: enacted state implementing framework in 2026
+    character: tax expenditure routed through private nonprofit intermediaries rather than a conventional federal grant appropriation
+
+first_findings:
+  - Public districts carry broad enrollment, access, staffing, transportation, facilities, special-education, and continuity obligations that are not automatically mirrored by private recipients of scholarship payments.
+  - The EFS expansion is a direct General Fund commitment, not merely a transfer of an identical public-school allotment.
+  - Hold-harmless protections preserve a prior-year floor but do not necessarily preserve future TISA growth, compensate for fixed costs, or neutralize enrollment-driven revenue loss.
+  - Tennessee's 2026 fiscal analysis explicitly states that additional private-school transfers may reduce future increases in TISA funding to local education agencies beginning in FY2027-28.
+  - The federal scholarship tax credit creates a second private-routing channel whose fiscal cost appears as foregone federal revenue and whose operational intermediaries are scholarship-granting organizations.
+  - Accountability must compare recipient obligations, not merely dollar amounts.
+
+causal_paths_for_review:
+  - path:
+      - state_tax_and_general_fund_capacity
+      - education_freedom_scholarship_appropriation
+      - private_school_tuition_payment
+      - private_school_revenue_and_enrollment
+    questions:
+      - which schools receive how much
+      - whether tuition rises in response to subsidy availability
+      - whether recipients were already privately enrolled
+  - path:
+      - public_school_student_transfer
+      - reduced_average_daily_membership
+      - reduced_future_TISA_growth
+      - district_fixed_cost_pressure
+      - staffing_program_transportation_or_school_closure_effects
+    status: requires district-level longitudinal data
+  - path:
+      - federal_tax_liability
+      - tax_credit_donation
+      - scholarship_granting_organization
+      - private_or_other_eligible_education_spending
+    questions:
+      - donor concentration
+      - intermediary governance and fees
+      - recipient selection
+      - public disclosure
+  - path:
+      - federal_program_appropriation
+      - Tennessee_department_pass_through
+      - district_allocation
+      - targeted_student_service
+    questions:
+      - allocation formulas
+      - state administrative retention
+      - delays and conditions
+      - compliance and maintenance-of-effort interactions
+
+actors_and_nodes_to_add_or_trace:
+  - Tennessee Department of Education
+  - Tennessee General Assembly
+  - Governor Bill Lee
+  - Tennessee State Board of Education
+  - Tennessee Comptroller Office of Research and Education Accountability
+  - local education agencies
+  - registered non-public schools
+  - scholarship-granting organizations
+  - application and payment vendors
+  - U.S. Department of Education
+  - U.S. Treasury Department
+  - public-school students and families
+  - private-school students and families
+  - students with disabilities
+  - rural communities
+  - teachers and school support staff
+
+unknowns_and_next_research:
+  - Complete district-by-district state, local, and federal revenue composition.
+  - Sales, property, business, and other tax contributions to education by jurisdiction.
+  - Participating private-school payment totals, tuition changes, admissions practices, and service obligations.
+  - Administrative contracts and vendor fees for EFS implementation.
+  - Federal Title I, IDEA, and other grant allocations and pass-through timing by Tennessee district.
+  - Scholarship-granting organizations approved under the federal tax-credit framework and their governance.
+  - Effects on segregation, disability access, rural school viability, staffing, and long-term public infrastructure.
+
+reporter_rules:
+  - Distinguish a direct expenditure from a tax expenditure and from a restricted federal grant.
+  - Distinguish a prior-year funding floor from preserved future growth.
+  - Compare obligations attached to funds, including universal access, disability services, transparency, assessment, licensing, civil rights, and public records.
+  - Do not blame families for using a lawful program; trace legislative design, fiscal routing, institutional benefits, and consequences.
+  - Treat public schools as infrastructure with fixed and variable costs, not as interchangeable per-student retail providers.
+
+sources:
+  - source-bundle-tennessee-school-funding-routing-2026
