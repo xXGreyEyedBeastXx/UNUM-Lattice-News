@@ -1,0 +1,44 @@
+schema: unum-lattice-news/node/v0.1
+id: steve-witkoff
+title: Steve Witkoff
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: Trump confidant and special envoy whose personal access to the president and direct negotiating role give him substantial influence over Gaza, Israel, Iran, and wider Middle East policy.
+  posture: observed
+aliases: [Steven Witkoff]
+hashtags: [TrumpAdministration, IsraelPolicy, Gaza, MiddleEastEnvoy, BoardOfPeace]
+current_evidence:
+  observed:
+    - Serves as a special presidential envoy and has conducted direct negotiations on Gaza, Israel, Iran, Russia, and other conflicts.
+    - Appointed to the Board of Peace and Gaza Executive Board announced by the White House.
+    - Has met Netanyahu and participated directly in plans for Gaza governance, security, reconstruction, and disarmament.
+  supported_inferences:
+    - Functions as a personal-channel diplomatic hub whose influence can bypass ordinary State Department structures.
+  disputed:
+    - Whether concentrated informal diplomacy improves results or weakens transparency, expertise, and accountability.
+  unknowns:
+    - The boundaries between his public authority, private business network, and informal influence.
+relations:
+  - type: APPOINTED_BY
+    target: donald-trump
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+  - type: ADVISES
+    target: donald-trump
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+  - type: NEGOTIATES_WITH
+    target: benjamin-netanyahu
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+  - type: MEMBER_OF
+    target: trump-board-of-peace
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+locks:
+  - Personal access and negotiating authority do not establish agreement with every Israeli policy.
+  - Informal influence must be distinguished from formal statutory authority.
