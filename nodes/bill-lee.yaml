@@ -1,0 +1,95 @@
+schema: unum-lattice-news/node/v0.1
+id: bill-lee
+title: Bill Lee
+family: person
+subtype: state_executive_leader
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: >-
+    Tennessee governor whose public rhetoric emphasizes Christian faith, family,
+    local control, parental choice, service, opportunity, business efficiency,
+    and skepticism of bureaucracy. His governing record should be traced through
+    the state executive gate: budgets, signatures, vetoes, appointments, agency
+    direction, special sessions, procurement, state opt-ins, enforcement choices,
+    and public-private routing.
+  posture: observed_with_supported_inference
+claimed_ideals:
+  - Christian faith and religious liberty
+  - family and parental authority
+  - local and community problem-solving
+  - business efficiency and outsider management
+  - opportunity for every child
+  - limited or restrained government
+institutional_seat:
+  institution: state-of-tennessee-executive-branch
+  role: governor
+  gate_types:
+    - budget_proposal
+    - signature_or_veto
+    - executive_agenda
+    - appointment
+    - agency_direction
+    - special_session
+    - state_opt_in_or_implementation
+    - procurement_and_contract_oversight
+  lever_types:
+    - appropriation
+    - executive_order
+    - agency_rule_and_guidance
+    - contract
+    - grant
+    - appointment
+    - enforcement_discretion
+    - waiver_or_exception
+historical_policy_domains:
+  - education privatization and voucher expansion
+  - public school funding and local district pressure
+  - protest and criminalization policy
+  - abortion restrictions and crisis pregnancy funding
+  - immigration enforcement cooperation
+  - transportation public-private partnerships and priced access
+  - faith-based and nonprofit public funding
+  - procurement, vendor selection, and contract amendment
+working_pattern:
+  proposition: >-
+    Lee repeatedly uses freedom, family, local-control, and opportunity rhetoric
+    while exercising centralized state power in ways that may expand discretion
+    and public benefit for favored private, religious, market, or politically
+    aligned institutions and route retained obligation, enforcement, or loss
+    toward public systems and participants with fewer exit options.
+  status: supported_hypothesis_requires_case_by_case_trace
+counterevidence_and_limits:
+  - Some policies include genuine maternal, postpartum, public safety, education, or infrastructure benefits.
+  - Executive office alone does not prove authorship of every agency or legislative action.
+  - Personal impressions and private encounters are context, not public evidentiary proof.
+  - Favoritism or quid pro quo requires procurement, access, donor, contract, and decision-specific evidence.
+relations:
+  - type: LEADS
+    target: state-of-tennessee-executive-branch
+    posture: observed
+  - type: SIGNS_AND_ADMINISTERS
+    target: tennessee-education-freedom-scholarships
+    posture: observed
+  - type: CONTROLS_GATE_WITHIN
+    target: institutions-gates-leaders-levers
+    posture: supported_inference
+  - type: TESTED_BY
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: TESTED_BY
+    target: harm-domination-protection-weighting
+    posture: working_framework
+research_queue:
+  - full campaign platform and archived 2018 rhetoric
+  - state contract awards, amendments, penalties, and performance tolerance
+  - donor, lobbyist, family-business, nonprofit, and ideological-network links
+  - federal funding acceptance, rejection, waiver, and blame history
+  - district-level education losses and retained obligations
+  - faith-based grants and crisis-pregnancy funding recipients
+  - appointment networks and agency discretion
+locks:
+  - Separate rhetoric, office authority, specific decision, causal consequence, and motive.
+  - Do not infer personal corruption from ideological alignment or access alone.
+  - Do not erase executive responsibility by treating agencies or vendors as ownerless intermediaries.
