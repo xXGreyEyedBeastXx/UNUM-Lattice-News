@@ -1,0 +1,53 @@
+schema: unum-lattice-news/node/v0.1
+id: environmental-pollution-exposure
+title: Environmental pollution exposure
+family: condition_lived_state
+subtype: health_condition
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: Exposure to harmful contaminants in air, water, soil, food, workplaces, and built environments, including recognized developmental neurotoxicants.
+  posture: observed
+aliases:
+  - toxic exposure
+hashtags:
+  - Pollution
+  - EnvironmentalHealth
+  - Neurodevelopment
+  - EnvironmentalJustice
+current_evidence:
+  observed:
+    - EPA identifies lead, mercury, criteria air pollutants, pesticides, PCBs, flame retardants, and other chemicals as relevant to neurodevelopmental harm.
+    - NIEHS supports research on gene-environment interactions and autism, including air pollution and pesticide exposure.
+  stated: []
+  supported_inferences:
+    - Pollution governance is materially relevant when government officials frame autism as environmentally caused or preventable.
+  disputed:
+    - The magnitude and causality of specific exposure-autism relationships vary by pollutant, timing, study design, and population.
+  unknowns:
+    - Which exposures, combinations, windows, and susceptibilities are causally important for autism.
+  counterevidence:
+    - Environmental association does not establish that autism has one environmental cause or that identified prevalence trends are caused by pollution.
+relations:
+  - type: AFFECTS
+    target: neurodevelopment
+    posture: observed
+    evidence:
+      - source-epa-neurodevelopmental-disorders
+  - type: ASSOCIATED_WITH
+    target: autism
+    posture: supported_inference
+    evidence:
+      - source-niehs-autism-environment
+    scope: selected exposures and studies; not a universal causal statement
+unresolved_questions:
+  - Which current regulatory changes alter exposure to developmental neurotoxicants?
+  - How are burdens distributed across communities?
+corrections: []
+references:
+  - source-epa-neurodevelopmental-disorders
+  - source-niehs-autism-environment
+locks:
+  - Association is not singular causation.
+  - Environmental research must not erase genetic, developmental, social, or diagnostic complexity.
