@@ -1,0 +1,104 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-bill-lee-marsha-blackburn-education-levers
+title: Bill Lee and Marsha Blackburn — Tennessee and federal education levers
+as_of: 2026-08-09
+status: draft_review
+scope: >-
+  Trace two named Tennessee political leaders through distinct state and federal gates affecting school-choice subsidies, public fiscal capacity, and accountability. Do not infer downstream responsibility from party identity; attach responsibility to evidenced acts, offices, votes, sponsorship, signatures, budget proposals, implementation authority, and future control.
+
+actors:
+  bill_lee:
+    role: Governor of Tennessee, term-limited in 2026
+    institutional_seat: Tennessee executive branch
+    evidenced_education_actions:
+      - signed Tennessee Education Freedom Scholarship legislation on 2025-02-12
+      - supported and implemented statewide universal school-choice policy
+      - proposed further EFS expansion in final gubernatorial budget
+      - signed 2026 legislation expanding maximum scholarships from 25,000 to 35,000
+    gates:
+      - gubernatorial_signature_or_veto
+      - executive_budget_proposal
+      - executive_agency_direction
+      - appointment_and_administration_chain
+      - state_public_messaging_and_agenda_setting
+    levers:
+      - sign_or_veto
+      - budget_request
+      - special_session_and_legislative_agenda
+      - department_implementation
+      - rule_and_contract_administration_through_executive_branch
+    accountability_questions:
+      - what public-school and fixed-cost consequences were known or forecast before each expansion?
+      - what accountability conditions for private recipients did the executive support, oppose, or leave unchanged?
+      - how did public-school appropriations change relative to scholarship expansion, inflation, enrollment, and district obligations?
+      - which federal education funds did the administration accept, reject, or characterize as undesirable, and with what household/service consequences?
+
+  marsha_blackburn:
+    role: U.S. Senator from Tennessee; 2026 Republican nominee for Governor of Tennessee
+    institutional_seats:
+      - United States Senate
+      - prospective Tennessee executive branch if elected
+    evidenced_education_actions:
+      - publicly describes herself as an ardent supporter of school choice
+      - participated in introduction of earlier Educational Choice for Children Act legislation in 2023
+      - original cosponsor of S.292, Educational Choice for Children Act of 2025
+      - advocates federal tax-credit financing of scholarship-granting organizations for K-12 public and private education expenses
+      - 2026 gubernatorial campaign creates a possible future crossing from federal norm-setting to Tennessee executive implementation
+    gates:
+      - federal_legislation
+      - senate_finance_referral_and_legislative_process
+      - federal_tax_code
+      - federal_appropriation_and_oversight
+      - gubernatorial_election_2026
+      - prospective_state_signature_budget_and_agency_gates
+    levers:
+      - bill_introduction_and_cosponsorship
+      - senate_vote
+      - committee_and_caucus_influence
+      - federal_tax_credit_design
+      - federal_oversight
+      - campaign_platform
+      - if_elected_governor_state_budget_signature_and_implementation
+    accountability_questions:
+      - how did Blackburn vote on enacted federal scholarship-tax-credit provisions and broader education appropriations?
+      - what federal revenue is forgone under tax-credit scholarship mechanisms she supported, and who captures the benefit by income tier?
+      - what requirements attach to scholarship-granting organizations and participating private schools versus public schools?
+      - if elected governor, which federal mechanisms would she opt Tennessee into, preserve, expand, waive, or characterize as externally imposed?
+      - which campaign donors or allied organizations materially benefit from or advocate the same education-routing policies? Treat financial proximity as a research lead, not proof of quid pro quo.
+
+cross_level_topology:
+  - federal_tax_code_and_appropriations
+  - federal_legislators_including_blackburn
+  - treasury_or_education_agency_rules
+  - Tennessee_state_opt_in_or_implementation
+  - governor_and_general_assembly
+  - TDOE_and_other_state_agencies
+  - scholarship_granting_organization_or_program_administrator
+  - family_private_school_or_vendor
+  - public_revenue_forgone_or_reallocated
+  - district_household_student_and_worker_consequences
+  - audit_feedback_and_accountability
+
+important_distinction: >-
+  Bill Lee currently controls state executive gates but not federal legislative gates. Marsha Blackburn currently controls a federal legislative seat but not Tennessee executive gates. If Blackburn becomes governor, the same actor would move from federal norm-setting participation into state executive implementation, creating a traceable cross-level continuity. This continuity must be measured act by act rather than inferred from partisan identity.
+
+sources:
+  - Tennessee Department of Education / Comptroller EFS program pages: Lee signed the 2025 law; 2026 scholarship value and program administration.
+  - Tennessee General Assembly HB2532/SB2247: 2026 expansion to 35,000; signed by Lee 2026-05-07.
+  - U.S. Senator Marsha Blackburn official education page: stated school-choice posture and Educational Choice for Children Act advocacy.
+  - Blackburn Senate release 2023-01-27: participation in introduction of Educational Choice for Children Act.
+  - Congress.gov S.292: Blackburn listed as original cosponsor on 2025-01-29.
+  - Reuters 2026-08-06: Blackburn won Republican gubernatorial primary; Lee is term-limited.
+
+next_research:
+  - recover Blackburn's exact votes on the enacted 2025 federal tax-credit scholarship provision rather than equating S.292 cosponsorship with enactment
+  - identify Tennessee's 2026 federal-tax-credit scholarship implementing statute, named sponsors, Lee signature if applicable, and administrative agency
+  - quantify EFS and federal scholarship benefits by household income as percentage of income and compare with taxpayer burden and district revenue loss
+  - map Bill Lee and Blackburn donor/advocacy networks around school choice using campaign-finance primary sources
+  - trace federal education funds accepted/rejected by Lee administration and distinguish ideological refusal, matching-cost constraints, administrative burden, and program-specific reasons
+
+locks:
+  - federal jurisdiction is not ownerless causation; name the lawmakers, executive officials, agencies, state opt-in decisions, and waivers controlling each gate
+  - party control is contextual evidence, not proof that an individual authored or controlled a specific decision
+  - sponsorship, voting, signing, implementation, benefit, and downstream harm are separate relations
+  - preserve benefit and enforced loss separately and quantify both relative to recipient or bearer capacity
