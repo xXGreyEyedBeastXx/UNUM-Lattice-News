@@ -1,8 +1,11 @@
 schema: unum-lattice-news/node/v0.1
+registry: schemas/NODE_TYPE_REGISTRY_v0_1.yaml
 id: ""
 title: ""
-type: "" # person | institution | movement | technology | policy | place | population | ecology | concept | other
-status: seed
+family: "" # canonical family from NODE_TYPE_REGISTRY_v0_1.yaml
+subtype: "" # optional; must belong to family
+legacy_type: null # preserve only when migrating an older record
+status: seed # seed | candidate | landed | historical | disputed_identity | archived
 updated: YYYY-MM-DD
 
 summary:
@@ -16,6 +19,7 @@ current_evidence:
   observed: []
   stated: []
   supported_inferences: []
+  alleged: []
   disputed: []
   unknowns: []
   counterevidence: []
@@ -40,6 +44,8 @@ references: []
 
 locks:
   - Node inclusion is not an accusation.
+  - Node family does not determine relation role, guilt, intent, or moral status.
   - Hashtag co-occurrence is not evidence of coordination or culpability.
   - Consequential relations require recoverable evidence.
   - Collective identity does not inherit the actions of individual members or institutions.
+  - Legacy types are preserved through explicit migration aliases rather than silent rewriting.
