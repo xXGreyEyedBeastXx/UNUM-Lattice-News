@@ -36,6 +36,14 @@ canonical_families:
       - habitat
       - species
       - living_system
+  condition_lived_state:
+    subtypes:
+      - neurodevelopmental_condition
+      - disability_status
+      - health_condition
+      - impairment
+      - support_need
+      - lived_state
   resource_flow:
     subtypes:
       - money
@@ -55,7 +63,6 @@ canonical_families:
       - narrative_frame
   condition_consequence:
     subtypes:
-      - condition
       - consequence
       - harm
       - risk
@@ -78,13 +85,18 @@ migration_aliases:
   place: {family: place_jurisdiction, subtype: place}
   population: {family: population_community, subtype: population}
   ecology: {family: ecology_living_system, subtype: ecology}
+  condition: {family: condition_lived_state, subtype: lived_state, review_required: true}
+  disability: {family: condition_lived_state, subtype: disability_status}
   proposition: {family: claim_proposition, subtype: proposition}
   concept: {family: claim_proposition, subtype: claim}
-  other: {family: condition_consequence, subtype: condition, review_required: true}
+  other: {family: condition_lived_state, subtype: lived_state, review_required: true}
 
 relation_role_rule:
   actor_is_also_a_relation_role: true
   note: A node family does not determine its role in a relation. A person or institution may be actor, funder, regulator, target, beneficiary, affected party, or another evidenced role.
+
+condition_rule:
+  note: A condition node does not determine whether every person associated with it is disabled, impaired, ill, deficient, or in need of the same support. Disability, impairment, support need, legal status, identity, and environmental mismatch must remain separately evidenced relations or claims.
 
 validation:
   new_records:
@@ -99,8 +111,9 @@ validation:
     preserve_for_archived_records_with_review_flag: true
 
 locks:
-  - Node type classifies the record; it does not assign guilt, intent, or moral status.
+  - Node type classifies the record; it does not assign guilt, intent, moral status, incapacity, or uniform support need.
   - Relation roles are established by evidence, not inherited from node family.
   - Migration aliases preserve old records without silently rewriting history.
   - Affected populations and ecologies should not be fragmented merely because a source lists them.
+  - A diagnostic or institutional label is not the whole lived reality of a participant.
   - Empty landing results are valid; a story or spread does not owe the lattice a new node.
