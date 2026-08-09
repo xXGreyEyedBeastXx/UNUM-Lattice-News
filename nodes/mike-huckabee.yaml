@@ -1,0 +1,42 @@
+schema: unum-lattice-news/node/v0.1
+id: mike-huckabee
+title: Mike Huckabee
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: U.S. ambassador to Israel appointed by Donald Trump, with a long public record of evangelical Christian support for Israel and direct responsibility for representing the administration to the Israeli government.
+  posture: observed
+aliases: [Michael Dale Huckabee]
+hashtags: [TrumpAdministration, IsraelPolicy, ChristianZionism, Diplomacy]
+current_evidence:
+  observed:
+    - Confirmed by the Senate as U.S. ambassador to Israel on 2025-04-09.
+    - Has visited Israel extensively and is publicly identified with strong evangelical support for Israel.
+    - As ambassador, defended Israel's authority to determine its own military policy while also acknowledging a humanitarian crisis in Gaza.
+  stated:
+    - Presents U.S.-Israel alignment as strategically and morally important.
+  supported_inferences:
+    - Serves as a bridge between Trump, evangelical Christian Zionist constituencies, and the Israeli state.
+  disputed:
+    - Whether his ideological commitments reduce his willingness to challenge Israeli government conduct toward Palestinians.
+  unknowns:
+    - The extent of his private influence on Trump, Netanyahu, and Gaza policy.
+relations:
+  - type: APPOINTED_BY
+    target: donald-trump
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+  - type: AMBASSADOR_TO
+    target: state-of-israel
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+  - type: RHETORIC_ALIGNS_WITH
+    target: christian-zionism
+    posture: strongly_supported
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+locks:
+  - Evangelical identity alone does not establish Christian Zionism; use statements, advocacy, and policy record.
+  - Support for Israel does not prove support for every Israeli government action.
