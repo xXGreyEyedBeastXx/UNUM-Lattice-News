@@ -1,0 +1,92 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-trump-promises-harm-weight-baseline
+title: "Trump campaign promises versus punitive and coercive promises: baseline"
+as_of: "2026-08-09"
+status: draft_review
+
+question: >-
+  How often has Donald Trump kept campaign promises overall, and is fulfillment different for promises whose primary mechanism is punishment, exclusion, coercion, rights restriction, deregulation, retaliation, or transferred harm?
+
+method:
+  ordinary_promise_baseline:
+    source: source-politifact-trump-promise-trackers
+    scoring: [kept, compromise, broken, stalled, in_the_works]
+  harm_weight_subset:
+    status: classification_in_progress
+    inclusion_rule: >-
+      Include only explicit campaign promises whose stated mechanism directly imposes detention, deportation, exclusion, punishment, rights restriction, retaliatory state action, removal of protections, or material exposure to environmental/economic harm.
+    exclusions:
+      - adverse outcomes not actually promised
+      - harms inferred only from opponents' predictions
+      - ordinary policy disagreements without a direct coercive or deprivation mechanism
+    dimensions:
+      - target_population_or_institution
+      - coercive_mechanism
+      - directness_of_harm
+      - scale
+      - reversibility
+      - executive_unilateral_capacity
+      - judicial_or_legislative_constraint
+      - implementation_status
+
+established_baseline:
+  first_term_2016_platform:
+    promises_tracked: 102
+    kept: 25
+    compromise: 23
+    broken: 54
+    kept_rate_percent: 24.5
+    kept_or_compromise_percent: 47.1
+    source: source-politifact-trump-promise-trackers
+  second_term_2024_platform_as_of_2026-02-23:
+    promises_tracked: 75
+    kept_percent_approx: 19
+    note: "Current term remains incomplete; many promises were stalled, in progress, compromised, or not yet finally rateable."
+    source: source-politifact-trump-promise-trackers
+
+verified_examples:
+  - promise: "Remove all undocumented immigrants"
+    first_term_status: broken
+    harm_mechanism: mass_deportation
+  - promise: "Remove criminal undocumented immigrants"
+    first_term_status: compromise
+    harm_mechanism: deportation
+  - promise: "Cancel all funding of sanctuary cities"
+    first_term_status: broken
+    harm_mechanism: fiscal_coercion_against_jurisdictions
+  - promise: "Establish a ban on Muslims entering the United States"
+    first_term_status: broken_as_worded
+    implementation_note: "A narrower country-based travel restriction was implemented and upheld for part of the term."
+    harm_mechanism: religious_or_national_origin_exclusion
+  - promise: "Pardon January 6 defendants"
+    second_term_status: kept
+    harm_mechanism: removal_of_accountability_for_political_violence
+  - promise: "Carry out the largest domestic deportation operation in U.S. history"
+    second_term_status: in_progress
+    harm_mechanism: mass_deportation
+  - promise: "End birthright citizenship by executive action"
+    second_term_status: blocked_or_unfulfilled_as_of_current_review
+    harm_mechanism: citizenship_exclusion
+  - promise: "Revoke environmental regulations"
+    second_term_status: substantially_implemented
+    harm_mechanism: removal_of_public_health_and_environmental_protections
+
+preliminary_finding: >-
+  Trump's overall promise-keeping rate is low. However, punitive and coercive promises appear disproportionately actionable when they can be implemented through executive orders, enforcement discretion, pardons, regulatory rollback, or agency control. A final comparative rate must wait until the full promise set is independently classified under the predeclared inclusion rule.
+
+claim_locks:
+  - "Do not label a promise harmful merely because it is associated with Trump."
+  - "Do not treat attempted implementation as full fulfillment."
+  - "Do not treat a promise as harmless merely because courts or Congress blocked completion."
+  - "Separate promise fulfillment from realized harm magnitude."
+  - "Keep first-term final outcomes separate from second-term provisional outcomes."
+
+next_steps:
+  - classify all 102 first-term promises under the predeclared harm-weight rule
+  - classify all tracked second-term promises under the same rule
+  - calculate kept and partial rates for ordinary versus punitive subsets
+  - weight realized outcomes by reach, severity, duration, reversibility, and protection from accountability
+  - publish both raw counts and weighted harm totals
+
+sources:
+  - source-politifact-trump-promise-trackers
