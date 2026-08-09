@@ -1,0 +1,125 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-tennessee-republicans-across-the-board-first-sweep
+title: Tennessee Republicans across the board: institutions, gates, leaders, and levers
+as_of: 2026-08-09
+status: draft_review
+scope: >-
+  First statewide power sweep covering Republican executive, legislative, legal,
+  congressional, party, advocacy, donor, and vendor nodes. This is not a guilt-by-
+  affiliation record. It identifies seats and gates for subsequent act-level tracing.
+
+current_structural_facts:
+  - The 114th Tennessee Senate consisted of 27 Republicans and 6 Democrats, giving Republicans supermajority control.
+  - Current Senate leadership includes Randy McNally as lieutenant governor and speaker, Jack Johnson as Republican leader, and Ken Yager as caucus chair.
+  - Current House leadership includes Cameron Sexton as speaker, William Lamberth as Republican leader, Mark Cochran as assistant leader, and Jeremy Faison as caucus chair.
+  - Bill Lee controls the state executive gate through budget proposals, veto/signature authority, appointments, and agency direction.
+  - Jonathan Skrmetti controls major state litigation and legal-opinion gates as attorney general, while the Comptroller supplies audit and public-reporting functions.
+  - Tennessee's federal delegation is overwhelmingly Republican and occupies education, tax, appropriations, defense, financial-services, energy, and oversight gates.
+  - Marsha Blackburn won the 2026 Republican gubernatorial primary, making the Lee-to-Blackburn transition a likely continuity path subject to the November election.
+
+named_high_priority_nodes:
+  state_executive:
+    - bill-lee
+    - michael-hendrix
+    - lizzette-reynolds
+    - stuart-mcwhorter
+    - carter-lawrence
+  house:
+    - cameron-sexton
+    - william-lamberth
+    - mark-cochran
+    - jeremy-faison
+    - tim-hicks
+    - paul-sherrell
+    - clark-boyd
+  senate:
+    - randy-mcnally
+    - jack-johnson
+    - ken-yager
+    - ferrell-haile
+    - joey-hensley
+    - john-stevens
+  legal_and_audit:
+    - jonathan-skrmetti
+    - tennessee-comptroller
+  federal:
+    - marsha-blackburn
+    - bill-hagerty
+    - diana-harshbarger
+    - tim-burchett
+    - chuck-fleischmann
+    - scott-desjarlais
+    - andy-ogles
+    - john-rose
+    - mark-green
+    - david-kustoff
+  advocacy_and_policy:
+    - americans-for-prosperity-tennessee
+    - beacon-center-of-tennessee
+    - tennessee-republican-party
+    - school-choice-advocacy-network
+
+first_network_observations:
+  - Americans for Prosperity Tennessee publicly claims a direct role in securing universal school choice, defeating Medicaid expansion, repealing the Hall income tax, advancing right-to-work, and reducing regulation. This makes it a policy-production node rather than merely an outside commentator.
+  - AFP-TN simultaneously opposes selected corporate subsidies while supporting tax expenditures and private-school subsidies, making beneficiary-specific definitions of corporate welfare and public spending a testable rhetoric-to-action question.
+  - The House and Senate speakers possess agenda and committee-routing power that can prevent measures from receiving floor votes even without casting the final decisive vote.
+  - Majority leaders and caucus chairs coordinate party policy and vote flow, creating responsibility distinct from ordinary membership.
+  - The attorney general can both protect consumers and deploy multistate litigation to reshape federal policy; issue-specific tracing is required because the office can produce both protective and coercive outcomes.
+  - Policy staff and cabinet appointees such as Michael Hendrix and Lizzette Reynolds may carry substantial design and implementation power despite receiving less public attention than elected officials.
+  - The federal delegation supplies tax, funding, redistricting, oversight, defense, and national-policy connections that state officials may later describe as external federal constraints.
+
+working_hypotheses:
+  selective_government:
+    proposition: >-
+      Tennessee Republican rhetoric often opposes government power in the abstract
+      while supporting its use for tax expenditures, ideological funding conditions,
+      preemption, policing, reproductive control, immigration enforcement, labor
+      constraints, private-provider subsidies, and favored economic development.
+    status: requires_actor_and_issue_specific_testing
+  distributed_responsibility:
+    proposition: >-
+      The network distributes authorship across sponsors, speakers, committees,
+      agencies, legal officers, advocacy groups, donors, and vendors, which can make
+      responsibility appear ownerless unless each gate and lever is named.
+    status: strongly_supported_as_mapping_need
+  anti_elite_elite:
+    proposition: >-
+      Rhetorical attacks on cultural, academic, bureaucratic, or urban elites can
+      coexist with material dependence on wealthy donors, national advocacy networks,
+      corporate executives, and officeholders controlling major state levers.
+    status: supported_as_discrepancy_test_not_blanket_conclusion
+
+research_queue:
+  - Build individual records for Sexton, Lamberth, McNally, Johnson, Skrmetti, Hagerty, and major cabinet commissioners.
+  - Recover committee-chair histories and identify bills stopped, amended, or advanced at each gate.
+  - Map campaign finance, independent expenditures, nonprofit advocacy, lobbyists, and contract beneficiaries.
+  - Compare rhetoric about local control with state preemption of cities, counties, school boards, and local prosecutors.
+  - Compare anti-tax rhetoric with tax expenditures, fee structures, sales-tax burden, and household burden as a percent of income.
+  - Compare anti-corporate-welfare rhetoric with grants, FastTrack awards, tax incentives, public-private partnerships, and selective opposition.
+  - Trace school-choice bills, votes, amendments, procurement, vendor performance, and district-level enforced losses.
+  - Trace Medicaid expansion refusal, hospital closures, health burden, and beneficiaries of the existing insurance and provider structure.
+  - Trace abortion, LGBTQ, protest, immigration, policing, labor, environment, and voting/redistricting acts with affected-population and consequence fields.
+  - Identify Republican counterexamples: dissenting votes, whistleblowing, repair, protection of vulnerable participants, and resistance to donor or caucus pressure.
+
+sources:
+  - Tennessee General Assembly current House leadership
+  - Tennessee General Assembly current Senate leadership and chamber composition
+  - Tennessee official elected-official and cabinet pages
+  - Tennessee Attorney General official site
+  - Americans for Prosperity Tennessee official agenda and claimed victories
+  - Reuters 2026 Tennessee Republican gubernatorial primary coverage
+
+locks:
+  - Do not assign responsibility from party membership alone.
+  - Do not let formal hierarchy erase informal donor, staff, lobbyist, or vendor influence.
+  - Do not let informal influence substitute for evidence of control over a specific act.
+  - Preserve beneficial actions and counterexamples alongside harmful or coercive conduct.
+  - Date-stamp office and candidate status because multiple 2026 transitions remain incomplete.
+
+linked_nodes:
+  - tennessee-republican-power-network
+  - bill-lee
+  - marsha-blackburn
+  - institutions-gates-leaders-levers
+  - money-flow-benefit-enforced-loss
+  - harm-domination-protection-weighting
