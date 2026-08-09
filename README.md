@@ -61,6 +61,17 @@ Corrections should preserve what changed, why it changed, and what remains unres
 
 See [CORRECTIONS.md](CORRECTIONS.md).
 
+## Review-only news intake
+
+The first automation surface is deliberately narrow. A scheduled GitHub Actions workflow reads an explicit registry of official RSS/Atom feeds and emits a short-lived review artifact containing limited discovery metadata: title, canonical URL, supplied publication date, feed provenance, and configured review lenses.
+
+Collected items remain `candidate_unreviewed`. The workflow cannot edit the repository, open issues, create or promote nodes, or publish stories, spreads, or renditions. Human review remains required before an intake candidate becomes a lattice record.
+
+- Feed registry: [registries/FEEDS.json](registries/FEEDS.json)
+- Intake boundary: [docs/NEWS_INTAKE_WORKFLOW_v0_1.md](docs/NEWS_INTAKE_WORKFLOW_v0_1.md)
+- Spread model: [docs/SPREAD_SURFACE_MODEL_v0_1.md](docs/SPREAD_SURFACE_MODEL_v0_1.md)
+- Spread template: [templates/SPREAD.yaml](templates/SPREAD.yaml)
+
 ## Participation
 
 Evidence, corrections, source suggestions, technical review, and carefully bounded contributions are welcome.

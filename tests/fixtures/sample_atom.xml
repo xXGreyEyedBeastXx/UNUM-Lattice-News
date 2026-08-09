@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sample public health feed</title>
+  <entry>
+    <title>Accessible transit review published</title>
+    <link rel="alternate" href="https://example.gov/reports/accessible-transit#section" />
+    <updated>2026-08-09T10:30:00Z</updated>
+    <summary>This summary must not enter the intake candidate.</summary>
+  </entry>
+  <entry>
+    <title>Environmental health study notice</title>
+    <link href="https://example.gov/research/environmental-health" />
+    <updated>2026-08-09T11:00:00Z</updated>
+  </entry>
+</feed>
+
