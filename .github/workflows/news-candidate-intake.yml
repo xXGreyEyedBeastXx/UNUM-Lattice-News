@@ -1,0 +1,55 @@
+name: News candidate intake
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "23 5,17 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: news-candidate-intake
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Test collector
+        run: python -m unittest discover -s tests -p "test_*.py" -v
+
+      - name: Collect review candidates
+        id: collector
+        continue-on-error: true
+        run: >-
+          python scripts/collect_feed_candidates.py
+          --registry registries/FEEDS.json
+          --output artifacts/news-candidate-intake
+          --limit-per-feed 25
+
+      - name: Upload review packet
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: news-candidate-intake-${{ github.run_id }}
+          path: artifacts/news-candidate-intake/
+          if-no-files-found: warn
+          retention-days: 14
+
+      - name: Preserve collector failure
+        if: steps.collector.outcome == 'failure'
+        run: exit 1
+

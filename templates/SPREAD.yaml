@@ -1,0 +1,93 @@
+schema: unum-lattice-news/spread/v0.1
+
+spread:
+  id: spread-example
+  title: ""
+  status: draft
+  as_of: "YYYY-MM-DD"
+  bounded_question: ""
+  summary: ""
+
+  anchors:
+    story_ids: []
+    source_ids: []
+    intake_candidate_ids: []
+
+  lenses:
+    health:
+      findings: []
+      unknowns: []
+    disability_accessibility:
+      findings: []
+      unknowns: []
+    geopolitics_jurisdiction:
+      findings: []
+      unknowns: []
+    culture:
+      findings: []
+      unknowns: []
+    ideology_worldview:
+      findings: []
+      unknowns: []
+    economy_finance_ownership:
+      findings: []
+      unknowns: []
+    labor_care_dependency:
+      findings: []
+      unknowns: []
+    law_governance_accountability:
+      findings: []
+      unknowns: []
+    technology_data_infrastructure:
+      findings: []
+      unknowns: []
+    ecology_climate_material:
+      findings: []
+      unknowns: []
+    housing_land_migration:
+      findings: []
+      unknowns: []
+    education_science_knowledge:
+      findings: []
+      unknowns: []
+    media_information_language:
+      findings: []
+      unknowns: []
+    conflict_security_carceral:
+      findings: []
+      unknowns: []
+    history_memory:
+      findings: []
+      unknowns: []
+    community_resistance_repair:
+      findings: []
+      unknowns: []
+    future_generations_recoverability:
+      findings: []
+      unknowns: []
+
+  node_exposure:
+    existing_nodes: []
+    candidate_nodes:
+      - candidate_id: ""
+        proposed_label: ""
+        proposed_type: ""
+        exposed_by: []
+        why_existing_nodes_are_insufficient: ""
+        affected_surfaces: []
+        uncertainty_and_counterevidence: []
+        review_status: candidate_unreviewed
+    promoted_nodes: []
+
+  relations: []
+  counterevidence: []
+  unresolved_questions: []
+  corrections: []
+
+  review:
+    consequential_claims_reviewed: false
+    source_rights_reviewed: false
+    reviewer: ""
+    reviewed_at: null
+    notes: ""
+
