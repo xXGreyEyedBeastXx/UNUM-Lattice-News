@@ -1,0 +1,146 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-physics-of-harm-consolidation
+title: Physics of harm: causal power, vulnerability, protection, and accountability
+as_of: 2026-08-09
+status: draft_review
+question: >-
+  Can harm and moral accountability be represented as causal and relational fields without dehumanizing perpetrators, assigning collective guilt, or reducing responsibility to ideology?
+
+central_working_proposition: >-
+  Harm can be traced as a directional causal process. Power is capacity to alter another participant's state; vulnerability is susceptibility to consequential state change combined with limited capacity to resist, escape, recover, or return imposed consequences. Life-serving relations tend to route greater protection toward greater vulnerability and greater accountability toward greater causal power. Domination reverses or blocks these gradients by routing harm, risk, burden, and punishment downward while routing protection, secrecy, privilege, and impunity upward.
+
+moral_posture:
+  - There are no evil peoples: identity categories do not inherit guilt.
+  - Human beings remain human when they commit atrocities; dehumanization is not required for severe moral judgment.
+  - The lattice need not label persons good or evil. It should faithfully trace their acts, agency, knowledge, alternatives, consequences, repair, repetition, and accountability.
+  - Accumulated acts may support ordinary-language moral judgments outside the graph, but causal evidence remains primary.
+
+causal_chain:
+  - difference_or_power_gradient
+  - capacity_and_agency
+  - decision_order_policy_action_enablement_or_omission
+  - propagation_through_institutions_and_boundaries
+  - exposure_of_affected_participants
+  - consequence
+  - feedback_or_suppression_of_feedback
+  - repair_correction_repetition_or_impunity
+
+candidate_weighting_relations:
+  responsibility:
+    rises_with:
+      - agency
+      - causal_power_and_reach
+      - knowledge
+      - foreseeability
+      - available_alternatives
+      - persistence_after_notice
+    reduced_or_complicated_by:
+      - coercion
+      - diminished agency
+      - uncertainty
+      - inability_to_affect_outcome
+  protection_obligation:
+    rises_with:
+      - vulnerability
+      - exposure
+      - severity_of_potential_consequence
+      - limited_escape_or_repair_capacity
+      - dependency_on_more_powerful_participants
+  harm_weight:
+    examine:
+      - severity
+      - scale
+      - duration
+      - reversibility
+      - distribution
+      - intentionality_when_evidenced
+      - repetition
+      - effects_on_children_civilians_prisoners_disabled_people_and_other_high_vulnerability_groups
+
+role_examples_for_testing:
+  powerful_leader:
+    note: high causal reach can create high accountability even when harm is mediated through institutions
+  commander_or_policy_designer:
+    note: trace orders, design, knowledge, alternatives, and downstream implementation
+  willing_soldier_or_enforcer:
+    note: subordinate command reduces relative power but does not automatically erase agency; coercion and refusal capacity matter
+  humanitarian_or_protective_actor:
+    note: protective role is evidenced through acts and consequences, not sanctified identity
+  victim_or_vulnerable_participant:
+    note: vulnerability increases protection claim but does not create moral infallibility
+  institution:
+    note: test incentives, permissions, concealment, insulation, resource flows, and whether accountability feedback reaches causal sources
+
+cross_regime_test: >-
+  Apply the same operator to historical and contemporary actors, allies and adversaries, governments and movements. Context changes agency, necessity, proportionality, knowledge, alternatives, and causal contribution; allegiance alone must not change the moral sign of equivalent suffering.
+
+new_or_expanded_fields_for_schema_review:
+  - agency
+  - causal_power
+  - causal_reach
+  - vulnerability
+  - exposure
+  - knowledge
+  - foreseeability
+  - intent
+  - available_alternatives
+  - coercion
+  - consequence_severity
+  - consequence_scale
+  - duration
+  - reversibility
+  - benefit
+  - protection
+  - institutional_insulation
+  - accountability
+  - repair
+  - repetition
+  - feedback_integrity
+  - impunity
+  - identity_adjacency_not_causality
+
+relation_types_for_schema_review:
+  - ORDERS
+  - AUTHORIZES
+  - DESIGNS
+  - IMPLEMENTS
+  - ENABLES
+  - FUNDS
+  - ARMS
+  - DEFENDS
+  - CONCEALS
+  - SHIELDS_FROM_ACCOUNTABILITY
+  - EXPOSES_TO_HARM
+  - HARMS
+  - PROTECTS
+  - REPAIRS
+  - REFUSES_REPAIR
+  - ACCEPTS_ACCOUNTABILITY
+  - EVADES_ACCOUNTABILITY
+  - REPEATS_AFTER_NOTICE
+  - CONSTRAINS_HARMFUL_CAPACITY
+  - BENEFITS_FROM
+  - FAILS_TO_INTERVENE
+
+integration_with_existing_stack:
+  - interlocking-domination supplies structural and ideological context
+  - situated-relational-analysis supplies epistemic position and correction discipline
+  - actor-relation sweeps supply concrete causal paths
+  - life-serving-systems supplies the positive counter-architecture
+  - event-specific reporting must still establish each edge rather than inheriting guilt from network proximity
+
+research_rule: >-
+  Unknowns, blind spots, unresolved crossings, and contradictions trigger research when evidence may be recoverable. Preserve genuinely unknowable or currently unresolvable claims explicitly rather than converting uncertainty into either accusation or exoneration.
+
+next_steps:
+  - map the newly added Trump-Israel, congressional, judicial, donor, military, diplomatic, and prosecutorial actors into these fields
+  - distinguish direct acts from command, enablement, financing, defense, concealment, omission, and institutional shielding
+  - develop ordinal rather than falsely precise numerical weighting first
+  - test the operator against cases where the preferred political interpretation would predict a different result
+  - add protective and humanitarian event records so the lattice models both harm and life-serving flow
+
+linked_nodes:
+  - harm-domination-protection-weighting
+  - life-serving-systems
+  - interlocking-domination
+  - situated-relational-analysis
