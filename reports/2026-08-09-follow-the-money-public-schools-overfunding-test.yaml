@@ -1,0 +1,97 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-follow-the-money-public-schools-overfunding-test
+title: Follow the money: testing the claim that Tennessee public schools receive too much
+as_of: 2026-08-09
+status: draft_review
+question: >-
+  Does the gross amount allocated to Tennessee public schools demonstrate overfunding, or must funding be compared with enrollment, mandated obligations, student need, fixed costs, outcomes, and alternative public subsidies?
+
+core_distinction:
+  gross_funding_total: the total dollars routed to a public-school system
+  adequacy: whether resources are sufficient for legally and practically required services
+  efficiency: whether resources produce services and outcomes without avoidable waste
+  equity: whether funding reflects unequal student need and local fiscal capacity
+  overfunding: resources materially exceeding justified service, access, infrastructure, and outcome requirements after accounting for obligations and need
+
+current_official_baseline:
+  - Tennessee budgeted close to 7 billion state dollars for TISA in the 2025-26 school year.
+  - TISA is a funding formula, not a spending plan.
+  - Base and weighted funding are funded through an aggregate 70 percent state and 30 percent local split.
+  - Direct and outcomes components are funded 100 percent by the state.
+  - In 2025-26 districts received about 1.95 billion in weighted funding, more than 482 million in direct funding, and about 94 million in outcomes funding.
+  - Weighted funding serves students with disabilities, English learners, economically disadvantaged students, dyslexia characteristics, and other defined needs.
+  - Education Freedom Scholarships are worth 7,530 dollars per participating student for 2026-27.
+  - The maximum number of scholarships was increased to 35,000 for 2026-27.
+
+required_denominators:
+  - dollars_per_enrolled_student
+  - dollars_per_student_by_need_category
+  - dollars_per_classroom_and_school
+  - dollars_per_required_service
+  - district_loss_as_percent_of_total_revenue
+  - district_loss_as_percent_of_discretionary_revenue
+  - household_tax_burden_as_percent_of_income_and_disposable_income
+  - subsidy_value_as_percent_of_recipient_household_income
+  - administrative_and_vendor_cost_as_percent_of_program_value
+
+public_obligations_that_remain_visible:
+  - universal geographic access
+  - special education and disability services
+  - transportation
+  - buildings and maintenance
+  - staffing continuity
+  - rural and sparse-area access
+  - accountability and public reporting
+  - open-meeting and public-governance duties
+  - debt and capital obligations
+  - service to students whom private schools may decline or be unable to serve
+
+money_flow_test:
+  - identify every public revenue source
+  - identify every public and private recipient
+  - identify the gate and leader controlling the transfer
+  - identify fixed obligations that remain after revenue shifts
+  - identify whether private subsidy replaces spending families would already have made
+  - identify whether tuition rises after subsidy availability
+  - identify vendor and intermediary fees
+  - identify benefit by household income decile
+  - identify loss by district and community
+  - compare rhetoric about taxpayer relief with actual household replacement costs
+
+claim_tests:
+  public_schools_receive_too_much:
+    cannot_be_inferred_from:
+      - statewide gross dollars alone
+      - nominal year-over-year increases alone
+      - isolated anecdotes of waste
+    requires:
+      - obligation-adjusted per-pupil comparison
+      - district-level cost and outcome analysis
+      - fixed-versus-variable cost analysis
+      - comparison with private subsidy obligations and accountability
+      - evidence that justified services could be maintained with materially less funding
+  vouchers_save_taxpayers:
+    requires:
+      - proof of net public savings after fixed costs, administration, and replacement spending
+      - proof that recipients would otherwise have attended public school
+      - accounting for tuition inflation and tax expenditure
+      - district-level rather than statewide-only analysis
+  federal_money_is_external:
+    rejected_when:
+      - the same political actors voted for, preserved, administer, waive, opt into, or expand the federal mechanism
+
+rhetoric_to_money_questions:
+  - When officials say waste, which line items do they identify?
+  - When they say too much, what denominator are they using?
+  - When they say choice, who can actually exercise it after tuition, transport, admissions, and disability constraints?
+  - When they say taxpayer savings, whose taxes and whose replacement costs change?
+  - When they blame federal rules, who controlled the federal and state gates?
+
+working_conclusion: >-
+  Tennessee's public-school funding total is large because the system serves a large population and carries universal, fixed, and need-weighted obligations. Gross spending alone does not establish overfunding. The valid inquiry is where each dollar originates, which obligation it supports, who receives the benefit, who absorbs any enforced loss, and whether comparable private recipients carry comparable duties and accountability.
+
+sources:
+  - Tennessee Comptroller TISA dashboard and overview
+  - Tennessee Comptroller TISA direct, outcomes, and weighted funding recap, May 2026
+  - Tennessee Department of Education Education Freedom Scholarship program
+  - Tennessee General Assembly SB2247/HB2532, Public Chapter 963
