@@ -1,0 +1,92 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-israel-trump-appointee-sweep-tier-1
+title: Trump appointees and personal-channel actors with major Israel-policy influence: tier one
+as_of: 2026-08-09
+status: draft_review
+question: Which current Trump appointees or appointed advisers have the strongest documented connection to both Donald Trump and U.S. policy toward Israel, Gaza, or the wider regional conflict?
+method:
+  inclusion:
+    - current formal appointment or explicit appointment to an administration-created policy body
+    - direct access to Donald Trump
+    - documented operational role in Israel, Gaza, Iran, arms, diplomacy, or reconstruction policy
+  evidence_axes:
+    - formal office
+    - appointment or family/personal access
+    - direct meetings and negotiations
+    - public rhetoric
+    - policy authority
+    - funding, arms, sanctions, or military-command influence
+  exclusions:
+    - political sympathy without operational role
+    - religious or ethnic identity without policy evidence
+    - guilt by donor, family, or organizational association
+primary_nodes:
+  - node: mike-huckabee
+    role: ambassadorial_and_ideological_bridge
+    confidence: high
+  - node: steve-witkoff
+    role: personal_envoy_and_negotiation_hub
+    confidence: high
+  - node: marco-rubio
+    role: formal_diplomatic_authority
+    confidence: high
+  - node: jared-kushner
+    role: family_network_and_gaza_governance_channel
+    confidence: high
+  - node: pete-hegseth
+    role: military_command_bridge
+    confidence: high
+core_topology:
+  - from: donald-trump
+    relation: APPOINTED
+    to: mike-huckabee
+  - from: mike-huckabee
+    relation: REPRESENTS_US_TO
+    to: state-of-israel
+  - from: donald-trump
+    relation: APPOINTED_AND_EMPOWERS
+    to: steve-witkoff
+  - from: steve-witkoff
+    relation: NEGOTIATES_WITH
+    to: benjamin-netanyahu
+  - from: donald-trump
+    relation: APPOINTED
+    to: marco-rubio
+  - from: marco-rubio
+    relation: DIRECTS_FORMAL_DIPLOMACY_TOWARD
+    to: state-of-israel
+  - from: donald-trump
+    relation: FAMILY_AND_APPOINTMENT_CHANNEL
+    to: jared-kushner
+  - from: jared-kushner
+    relation: CO_DESIGNS_GAZA_GOVERNANCE_WITH
+    to: steve-witkoff
+  - from: donald-trump
+    relation: APPOINTED
+    to: pete-hegseth
+  - from: pete-hegseth
+    relation: DIRECTS_US_MILITARY_IMPLEMENTATION
+    to: middle-east-operations
+preliminary_finding: >-
+  The highest-weight Israel-policy network around Trump is not one ideological bloc. It combines an evangelical ambassadorial bridge, personal real-estate and family intermediaries, formal State Department authority, and military command. Their overlap concentrates decision access while distributing responsibility across formal and informal channels.
+next_tier_candidates:
+  - ary​​eh-lightstone
+  - josh-gruenbaum
+  - tom-barrack
+  - mike-waltz
+  - donald-blome
+  - fleet-white
+  - lee-zeldin
+  - elise-stefanik
+  - david-friedman
+notes:
+  - Elise Stefanik and David Friedman require status caution because influence does not necessarily equal a current administration appointment.
+  - Aryeh Lightstone and Josh Gruenbaum should be examined through their Board of Peace operational roles and prior Trump-Israel networks.
+  - Tom Barrack should be examined as a regional envoy whose relations with Turkey, Syria, Gulf states, Trump, and Israel may create both alignment and tension edges.
+claim_locks:
+  - Do not equate Jewish identity, evangelical identity, or family relation with political ideology.
+  - Do not infer Christian Zionism or supremacism without self-identification, repeated rhetoric, organizational advocacy, or policy evidence.
+  - Appointment and access create accountability relevance, not automatic culpability for every downstream act.
+  - Preserve disagreement and constraint edges; the network is hierarchical but not monolithic.
+sources:
+  - source-bundle-2026-08-09-israel-trump-appointee-sweep
