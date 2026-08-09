@@ -1,0 +1,16 @@
+source_id: source-reuters-2026-08-06-autism-vaccine-order
+type: news_report
+publisher: Reuters
+published: 2026-08-06
+title: "Trump administration considers order on autism and vaccines, source says"
+url: "https://www.reuters.com/legal/litigation/trump-administration-considers-order-autism-vaccines-bloomberg-news-reports-2026-08-06/"
+retrieved: 2026-08-09
+supports:
+  - "The Trump administration was considering an executive order concerning vaccines and autism."
+  - "The effort was described as driven by President Trump's interest in further action on autism."
+  - "RFK Jr.-led HHS continued pursuing studies of vaccines and autism despite large prior studies finding no credible causal link."
+limits:
+  - "The source did not provide the scope or final text of any executive order."
+  - "Consideration of an order does not establish that it will be issued or what it will require."
+claim_handling:
+  - "Use as evidence of policy/rhetorical activity, not evidence that vaccines cause autism."
