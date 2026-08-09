@@ -1,0 +1,243 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-bill-lee-marsha-blackburn-historical-moves
+title: Historical moves: Bill Lee and Marsha Blackburn
+as_of: 2026-08-09
+status: draft_review
+scope:
+  purpose: >-
+    Trace repeated historical moves, institutional seats, gates, levers, benefits,
+    enforced losses, and accountability patterns for Bill Lee and Marsha Blackburn.
+  method:
+    - separate rhetoric, formal authority, enacted policy, attempted policy, and downstream consequence
+    - preserve counterexamples and partial benefits
+    - do not treat party affiliation or personal impressions as proof
+    - weight repetition after notice more heavily than isolated acts
+
+bill_lee:
+  institutional_seat:
+    - governor of Tennessee since 2019
+    - state budget proposer
+    - legislation signer or veto gate
+    - executive administrator through state agencies
+  recurring_public_frames:
+    - freedom
+    - families
+    - local control
+    - public safety
+    - rural opportunity
+    - faith and service
+  historical_moves:
+    - move: pursued school voucher and education savings account programs from first term onward
+      posture: observed
+      mechanism:
+        - 2019 ESA legislation targeted Davidson and Shelby Counties
+        - statewide Education Freedom Scholarship proposal later pursued
+        - 2025 program enacted
+        - 2026 expansion signed
+      gates_and_levers:
+        - special sessions
+        - budget proposals
+        - signature authority
+        - executive advocacy
+        - agency implementation
+      benefit_flow:
+        - participating families
+        - private schools
+        - scholarship administration intermediaries
+        - national and state school-choice advocacy networks
+      enforced_loss_or_constraint:
+        - public fiscal capacity redirected
+        - districts may lose future funding growth while retaining fixed and universal obligations
+        - accountability rules for private recipients remain weaker or differently structured
+      evidence_posture: strongly_supported
+    - move: used state funding threats and centralized authority against local public-school decisions during pandemic-era conflict
+      posture: reported
+      mechanism:
+        - threat to withhold funds from Nashville and Shelby County schools over virtual instruction
+      pattern_relevance: >-
+        Public rhetoric about local choice coexisted with state coercion against local systems when their choices diverged from the governor's preferred policy.
+    - move: supported punitive legislation against Capitol protesters in 2020
+      posture: observed
+      mechanism:
+        - legislation made camping on state property a Class E felony
+      affected_participants:
+        - protesters
+        - people exposed to felony consequences
+      pattern_relevance: coercive state response to dissent despite reform rhetoric
+    - move: maintained and defended one of the country's strictest abortion regimes while directing large public grants toward crisis pregnancy centers
+      posture: strongly_supported
+      mechanisms:
+        - opposition to broad exceptions in the abortion ban
+        - proposed and funded large grant programs for anti-abortion centers
+        - served on an advisory board for a crisis pregnancy center
+      benefit_flow:
+        - crisis pregnancy centers and aligned nonprofits
+      enforced_loss_or_constraint:
+        - reproductive autonomy constrained
+        - pregnant people face greater medical, travel, and financial burdens
+        - state support routed toward ideologically aligned providers
+      countervailing_actions:
+        - extended postpartum Medicaid coverage
+        - proposed or expanded some parental and family supports
+      pattern_relevance: >-
+        Protective benefits were added within a regime that still imposed strong reproductive constraints; both flows must be retained.
+    - move: aligned state policy with federal immigration enforcement expansion
+      posture: observed
+      mechanisms:
+        - state immigration division
+        - 287(g)-style local enforcement participation
+        - penalties or pressure against sanctuary-policy divergence
+      pattern_relevance: state capacity used to extend federal coercive enforcement downward
+    - move: supported public-private infrastructure and user-fee mechanisms framed as choice
+      posture: observed
+      mechanisms:
+        - choice lanes
+        - public-private partnerships
+        - transportation modernization
+      pattern_relevance: >-
+        Public infrastructure remains collective while preferred access may be routed through additional fees and private participation.
+    - move: pursued business tax reductions and investment incentives while emphasizing Tennessee's low-tax environment
+      posture: observed
+      benefit_flow:
+        - corporations and investors
+      enforced_loss_or_constraint:
+        - foregone public revenue
+        - opportunity cost for public services
+      unresolved:
+        - distribution of job and wage gains versus subsidy and tax expenditure by income and region
+  recurring_pattern_hypothesis: >-
+    Lee repeatedly uses freedom, family, local control, and service language while employing centralized state authority, public subsidy, selective provider support, and punitive or coercive levers. The hypothesis is not that every policy has identical intent, but that benefits and discretion tend to flow toward private, corporate, religious, or state-aligned actors while constraints and retained obligations often flow toward public systems, dissenters, workers, local governments, and people with fewer exit options.
+  falsification_or_narrowing_conditions:
+    - sustained expansion of universal public capacity without selective routing
+    - stronger accountability imposed on favored private recipients than on public systems
+    - acceptance of local autonomy when local choices conflict with his policy preferences
+    - distributional evidence showing benefits concentrated among high-vulnerability groups without corresponding public loss
+
+marsha_blackburn:
+  institutional_seats:
+    - U.S. House member, 2003-2019
+    - U.S. senator from Tennessee since 2019
+    - federal legislative gatekeeper through sponsorship, votes, committees, and public pressure
+    - 2026 Republican nominee for Tennessee governor
+  recurring_public_frames:
+    - parents' rights
+    - school choice
+    - limited federal government
+    - public safety
+    - conservative values
+    - opposition to radical or woke institutions
+  historical_moves:
+    - move: long-running support for school-choice and federal scholarship tax-credit mechanisms
+      posture: observed
+      mechanisms:
+        - sponsorship and advocacy for the Educational Choice for Children Act
+        - support for dismantling or sharply reducing the federal Department of Education
+        - support for routing federal tax capacity through scholarship-granting organizations
+      benefit_flow:
+        - donors receiving tax credits
+        - scholarship organizations
+        - participating families and private schools
+      enforced_loss_or_constraint:
+        - federal revenue forgone
+        - public accountability shifted to private intermediaries
+        - potential weakening of federal public-education enforcement capacity
+      pattern_relevance: >-
+        Blackburn criticizes federal control while using federal tax law and federal office to construct private education channels.
+    - move: supported punitive federal funding threats against universities and schools over ideology, antisemitism definitions, DEI, CRT, and union influence
+      posture: observed
+      mechanisms:
+        - proposed rescission or conditioning of federal funds
+        - legislation targeting the National Education Association's federal influence
+        - pressure on Tennessee universities over DEI compliance
+      pattern_relevance: >-
+        Anti-federal-control rhetoric coexists with willingness to use federal funding as a disciplinary lever against institutions she opposes.
+    - move: opposed or worked against net-neutrality and broadband privacy regulation during House tenure
+      posture: widely_reported_requires_primary_vote_packet
+      benefit_flow:
+        - internet service providers and telecommunications firms gain greater pricing and data discretion
+      enforced_loss_or_constraint:
+        - consumers bear privacy, access, and discriminatory-pricing risks
+      research_needed:
+        - exact votes, sponsorships, donor flows, and policy consequences
+    - move: participated in congressional passage of legislation narrowing DEA emergency enforcement authority over controlled-substance distributors
+      posture: requires_member_specific_vote_and_role_packet
+      underlying_law:
+        - Ensuring Patient Access and Effective Drug Enforcement Act of 2016
+      systemic_effect:
+        - raised or clarified the threshold for immediate suspension of registrants
+        - required corrective-action opportunities
+      caution: >-
+        The law passed by unanimous consent and broad bipartisan support. Blackburn's exact authorship, vote, committee role, donor relationship, and knowledge must be separately established before assigning individual causal weight.
+    - move: later sponsored PBM reform and pharmacy-access legislation
+      posture: observed
+      mechanism:
+        - Patients Before Middlemen Act
+      countervailing_pattern:
+        - demonstrates that later healthcare work cannot be reduced to pharmaceutical-industry protection
+    - move: consistently supported abortion restrictions and conservative judicial and executive power
+      posture: strongly_supported_general_record_requires_issue_packets
+      enforced_loss_or_constraint:
+        - reproductive autonomy
+        - access burdens concentrated on pregnant people with limited resources
+      research_needed:
+        - bill-level timeline and harm routing
+    - move: supported expanded school-security funding centered on veterans, police, and physical hardening
+      posture: observed
+      benefit_flow:
+        - law enforcement and security infrastructure
+        - public and private schools receiving security grants
+      opportunity_cost_question:
+        - relative investment in weapons, policing, prevention, mental health, and community safety
+  recurring_pattern_hypothesis: >-
+    Blackburn repeatedly invokes parental freedom, state control, and limited government while using federal legislation, federal funding threats, tax policy, and regulatory withdrawal to empower preferred private or conservative institutions and constrain opposing institutions. The apparent contradiction should be tested as a stable governing pattern: federal power is condemned when protective or regulatory, but embraced when punitive, deregulatory, or redistributive toward aligned actors.
+  falsification_or_narrowing_conditions:
+    - consistent opposition to federal coercion even when directed at ideological opponents
+    - support for equivalent transparency and accountability across favored and disfavored institutions
+    - distributional evidence that tax-credit and deregulation benefits do not externalize costs downward
+
+shared_paths:
+  - path:
+      - federal tax policy shaped or advocated by Blackburn
+      - scholarship tax credit and private intermediary gate
+      - Tennessee opt-in or implementation
+      - state executive administration under Lee or successor
+      - private-school and family benefit
+      - public revenue or district opportunity cost
+    status: partially_established_requires_enacted-law-and-implementation-packet
+  - path:
+      - conservative donor and advocacy networks
+      - electoral pressure and primary spending
+      - legislative passage
+      - Lee signature and administration
+      - expansion of private-school subsidies
+    status: strongly_supported_at_network_level_requires_actor-specific-donor-packets
+  - path:
+      - rhetoric of local or parental control
+      - centralized state or federal lever
+      - favored private or ideological beneficiary
+      - constrained public institution or vulnerable participant
+    status: repeated_pattern_hypothesis
+
+research_queue:
+  bill_lee:
+    - Lee Company contracts, state interactions, and conflict safeguards
+    - voucher donor networks and campaign support
+    - corporate tax expenditure and subsidy beneficiaries
+    - prison, policing, protest, immigration, and clemency records
+    - Medicaid, TennCare block-grant, hospital closure, and rural-health outcomes
+    - disability, LGBTQ, reproductive, and local-governance policy effects
+  marsha_blackburn:
+    - complete school-choice sponsorship and vote history
+    - actual vote and role in the 2016 opioid-enforcement law
+    - telecommunications and ISP donor history tied to privacy and net-neutrality actions
+    - pharmaceutical, PBM, and healthcare donor history across time
+    - abortion, judicial, voting-rights, labor, union, and federal-funding coercion record
+    - gubernatorial platform and transition from federal to state gates
+
+locks:
+  - Personal encounters may motivate inquiry but do not substitute for sourced act records.
+  - Preserve beneficial actions and mixed outcomes alongside harmful or coercive actions.
+  - Repetition after notice increases evidentiary weight.
+  - Do not infer motive solely from ideological consistency or donor receipt.
+  - Do not let rhetoric erase concrete use of gates and levers.
+  - Federal and state jurisdiction labels do not erase named officeholders who control the relevant mechanisms.
