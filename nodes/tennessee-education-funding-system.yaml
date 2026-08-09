@@ -1,0 +1,58 @@
+schema: unum-lattice-news/node/v0.1
+id: tennessee-education-funding-system
+title: Tennessee education funding system
+family: system
+subtype: public_finance_infrastructure
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: >-
+    The network of Tennessee state appropriations, local education revenue, the TISA public-school funding formula, state-funded private-school scholarships, and federal pass-through or tax-credit mechanisms that route public fiscal capacity toward education providers, districts, families, vendors, and scholarship organizations.
+  posture: observed
+major_channels:
+  public_school_formula:
+    name: Tennessee Investment in Student Achievement
+    funding_mix:
+      - state funding
+      - local funding
+    components:
+      - base funding for every public-school student
+      - weighted funding for low-income students, concentrated poverty, English learners, students with disabilities, dyslexia characteristics, sparse and small communities
+      - direct funding for literacy, career and technical education, postsecondary readiness, and other priorities
+      - outcomes funding tied to student achievement
+  state_private_school_subsidy:
+    name: Education Freedom Scholarship Program
+    source: Tennessee General Fund and other available state funds
+    mechanism: per-student scholarship used primarily for tuition and fees at registered non-public schools
+  federal_pass_through:
+    mechanism: restricted federal grants administered through state and local education agencies
+    examples:
+      - Title I
+      - IDEA
+      - other ESSA and federal program funds
+  federal_tax_expenditure:
+    name: Federal Tax Credit Scholarship Act channel
+    mechanism: federal tax credits for donations to scholarship-granting organizations rather than direct appropriations to schools
+relations:
+  - type: FUNDS
+    target: tennessee-public-school-districts
+    posture: observed
+  - type: SUBSIDIZES
+    target: registered-tennessee-private-schools
+    posture: observed
+  - type: ROUTES_THROUGH
+    target: scholarship-granting-organizations
+    posture: observed
+  - type: ADMINISTERED_BY
+    target: tennessee-department-of-education
+    posture: observed
+unresolved_questions:
+  - Which taxes and revenue streams supply each state and local education channel by district and fiscal year?
+  - How much federal pass-through funding is retained, delayed, redirected, or conditioned at the state level?
+  - Which private schools, vendors, and scholarship organizations receive funds, in what amounts, and under what accountability standards?
+  - How do enrollment shifts affect future TISA growth, district fixed costs, staffing, transportation, special education, and rural-school viability?
+locks:
+  - Distinguish direct appropriations, formula funding, reimbursements, grants, tax expenditures, and private donations induced by tax credits.
+  - Do not treat a scholarship payment as equivalent to a public-school funding obligation; recipient duties and admissions rules differ.
+  - Do not assume nominal hold-harmless protection preserves future revenue growth or covers fixed institutional costs.
