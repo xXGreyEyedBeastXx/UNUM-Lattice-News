@@ -1,0 +1,42 @@
+schema: unum-lattice-news/node/v0.1
+id: donald-trump
+title: Donald Trump
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: President of the United States and central appointment, authorization, rhetoric, clemency, foreign-policy, military-policy, immigration-policy, and regulatory node in the current federal administration.
+  posture: observed
+aliases: [Donald J. Trump, President Trump]
+hashtags: [Trump, ExecutivePower, Immigration, Israel, Gaza, Iran, MAHA, January6]
+current_evidence:
+  observed:
+    - Appointed Pete Hegseth and Robert F. Kennedy Jr. to cabinet roles.
+    - Established the Make America Healthy Again Commission chaired by Kennedy.
+    - Jointly announced autism initiatives with Kennedy and HHS.
+    - Maintains a close support relationship with the government of Israel while also recording issue-specific disagreement with Benjamin Netanyahu.
+  supported_inferences:
+    - Appointment, executive authority, funding, material support, clemency, and persistence after notice are separate accountability relations that require event-specific tracing.
+  alleged: []
+  disputed:
+    - Scope of responsibility for particular subordinate, military, regulatory, or allied-government actions.
+  unknowns:
+    - Which decisions were personally directed, delegated, independently initiated, or later ratified in each event.
+  counterevidence:
+    - Hierarchical authority does not establish personal authorship of every subordinate act.
+relations:
+  - {type: APPOINTED, target: pete-hegseth, posture: observed, evidence: [source-white-house-cabinet-appointments-2025]}
+  - {type: APPOINTED, target: robert-f-kennedy-jr, posture: observed, evidence: [source-white-house-cabinet-appointments-2025]}
+  - {type: AUTHORIZED, target: make-america-healthy-again-commission, posture: observed, evidence: [source-white-house-maha-commission-2025]}
+  - {type: JOINTLY_ANNOUNCED, target: hhs-autism-initiatives-2025, posture: observed, evidence: [source-hhs-trump-kennedy-autism-actions-2025]}
+  - {type: SUPPORTS_AND_ARMS, target: government-of-israel, posture: supported_inference, evidence: []}
+  - {type: DISAGREES_WITH, target: benjamin-netanyahu, posture: observed, evidence: [source-reuters-netanyahu-rejects-trump-gaza-plan-2026]}
+unresolved_questions:
+  - For each harmful event, what did Trump order, authorize, fund, know, enable, defend, pardon, or decline to stop?
+  - How do constructive and domination-oriented promises compare by fulfillment and realized harm?
+references: [source-bundle-2026-08-09-actor-relation-sweep, source-politifact-trump-promise-trackers]
+locks:
+  - Executive authority raises accountability burden but does not erase event-specific proof requirements.
+  - A subordinate or ally retains independent agency unless evidence establishes direct control.
