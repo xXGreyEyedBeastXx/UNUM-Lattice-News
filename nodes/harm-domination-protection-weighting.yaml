@@ -1,0 +1,88 @@
+schema: unum-lattice-news/node/v0.1
+id: harm-domination-protection-weighting
+title: Harm, domination, protection, and accountability weighting
+family: causal_ethical_field
+subtype: relational_weighting_framework
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: >-
+    A causal framework for tracing harm without assigning moral essence to peoples or requiring person-level good/evil labels. It evaluates agency, power, vulnerability, foreseeability, alternatives, acts, consequences, protection, repair, repetition, and accountability. Its central diagnostic is directional: life-serving systems tend to move protection toward vulnerability and accountability toward causal power; domination tends to move harm and consequence toward vulnerability while insulating power from accountability.
+  posture: working_framework
+core_relations:
+  - vulnerability_rises: protection_obligation_rises
+  - causal_power_rises: accountability_obligation_rises
+  - agency_and_foreseeability_rise: responsibility_weight_rises
+  - institutional_insulation_rises: impunity_risk_rises
+physics_of_harm:
+  source: actor_or_institution_with_causal_capacity
+  propagation: act_order_policy_funding_enablement_or_omission
+  boundary: institutional_legal_social_or_material_constraint
+  absorption: affected_participant_or_ecology
+  feedback: consequence_information_repair_sanction_or_accountability
+  domination_failure_mode: >-
+    Harm propagates toward lower-power or more vulnerable participants while feedback and consequence are prevented from returning adequately to the causal source.
+act_trace_fields:
+  - agency
+  - power_and_causal_reach
+  - knowledge
+  - foreseeability
+  - intent_when_evidenced
+  - available_alternatives
+  - coercion_or_constraint
+  - affected_participants
+  - vulnerability_and_exposure
+  - direct_and_downstream_consequences
+  - benefit_or_advantage_obtained
+  - response_after_harm_became_known
+  - repair_or_refusal_to_repair
+  - repetition_or_correction
+  - accountability_accepted_resisted_or_evaded
+ethical_safeguards:
+  - No people, ethnicity, nationality, religion, race, sex, disability group, or other identity category inherits moral guilt from members.
+  - Responsibility follows causal participation rather than identity adjacency.
+  - Vulnerability creates a stronger protection claim but does not confer moral infallibility.
+  - Power creates greater responsibility capacity but does not by itself establish guilt.
+  - Subordinate position can reduce agency without automatically erasing responsibility for willing participation in harmful acts.
+  - Humanitarian or protective status does not sanctify every act; acts remain independently testable.
+  - Preserve full humanity of perpetrators; accountability depends on agency rather than dehumanization.
+  - Prefer judging documented acts and consequences; let accumulated records support moral judgments rather than injecting identity labels into the graph.
+comparative_test:
+  rule: >-
+    Apply the same act-level operator regardless of allegiance, nationality, ideology, religion, historical reputation, or political side.
+  contamination_signal: >-
+    If equivalent civilian harm changes moral sign solely because the actor belongs to an allied or preferred group, the evaluator is contaminated by allegiance.
+life_serving_direction:
+  - capacity toward responsibility
+  - protection toward vulnerability
+  - consequence toward causal source
+  - feedback toward correction
+  - repair toward harmed participants
+  - harmful capacity toward constraint when correction fails
+domination_direction:
+  - coercion toward vulnerability
+  - risk and consequence externalized downward
+  - protection and secrecy concentrated upward
+  - accountability blocked or displaced
+  - repetition enabled by failed feedback
+relations:
+  - type: TESTS
+    target: interlocking-domination
+    posture: working_framework
+  - type: REQUIRES
+    target: situated-relational-analysis
+    posture: working_framework
+  - type: COMPLEMENTS
+    target: life-serving-systems
+    posture: proposed
+unresolved_questions:
+  - How should agency, causal reach, foreseeability, vulnerability, exposure, and irreversibility be quantitatively or ordinally weighted?
+  - How should command responsibility, enablement, financing, omission, and institutional shielding be separated in graph edges?
+  - What feedback threshold distinguishes ordinary failure from durable impunity?
+locks:
+  - Do not infer collective guilt.
+  - Do not substitute ideology or identity for act-level causal tracing.
+  - Do not erase individual agency by attributing all harm to systems.
+  - Do not erase structural causation by attributing all harm to isolated individuals.
+  - Do not call uncertainty neutrality; preserve evidence posture and research unresolved crossings.
