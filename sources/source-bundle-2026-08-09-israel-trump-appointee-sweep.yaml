@@ -1,0 +1,51 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-bundle-2026-08-09-israel-trump-appointee-sweep
+accessed: 2026-08-09
+sources:
+  - id: congress-huckabee-confirmation-2025
+    publisher: Congress.gov
+    url: https://www.congress.gov/nomination/119th-congress/25/20
+    supports:
+      - Mike Huckabee was confirmed as U.S. ambassador to Israel on 2025-04-09.
+  - id: congressional-record-huckabee-2025
+    publisher: Congress.gov
+    url: https://www.congress.gov/congressional-record/volume-171/issue-64/senate-section/article/S2485-7
+    supports:
+      - Huckabee had visited Israel more than 100 times and was presented by supporters as a fierce friend of Israel.
+    limitations:
+      - Supporters' nomination speeches are evidence of reputation and advocacy, not neutral evaluation.
+  - id: reuters-huckabee-gaza-2025
+    publisher: Reuters
+    url: https://www.reutersconnect.com/item/huckabee-says-administration-respects-israels-right-to-defend-itself-as-army-set-to-take-gaza-city/dGFnOnJldXRlcnMuY29tLDIwMjU6bmV3c21sX1ZBNTg3MjA4MDgyMDI1UlAx
+    supports:
+      - Huckabee stated that Israel has the right to determine how it defends itself and acknowledged a humanitarian crisis.
+  - id: whitehouse-board-of-peace-2026
+    publisher: The White House
+    url: https://www.whitehouse.gov/briefings-statements/2026/01/statement-on-president-trumps-comprehensive-plan-to-end-the-gaza-conflict/
+    supports:
+      - Rubio, Witkoff, and Kushner were appointed to Gaza-related governance bodies.
+      - Witkoff and Kushner received direct roles in Gaza policy and implementation.
+  - id: reuters-witkoff-kushner-netanyahu-2026
+    publisher: Reuters
+    url: https://theprint.in/world/us-special-envoys-in-israel-to-discuss-future-of-gaza-sources-tell-reuters/2835616/
+    supports:
+      - Witkoff and Kushner met Netanyahu to discuss Gaza's future.
+  - id: state-rubio-office
+    publisher: U.S. Department of State
+    url: https://history.state.gov/departmenthistory/people/rubio-marco
+    supports:
+      - Rubio entered office as secretary of state on 2025-01-21.
+  - id: state-rubio-israel-travel
+    publisher: U.S. Department of State
+    url: https://history.state.gov/departmenthistory/travels/secretary/rubio-marco
+    supports:
+      - Rubio traveled to Israel and met Israeli leaders.
+  - id: reuters-rubio-ceasefire-2025
+    publisher: Reuters
+    url: https://www.investing.com/news/world-news/rubio-says-israeli-strike-on-gaza-didnt-violate-ceasefire-4309550
+    supports:
+      - Rubio defended Israel's retained right to act against asserted imminent threats during the ceasefire.
+locks:
+  - Official appointment proves office, not ideological motive.
+  - Access, family relation, and policy role must remain separate relation types.
+  - Strong support for Israel does not establish agreement with every act of the Israeli government.
