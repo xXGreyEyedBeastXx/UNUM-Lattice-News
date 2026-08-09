@@ -1,0 +1,49 @@
+schema: unum-lattice-news/node/v0.1
+id: us-department-health-human-services
+title: U.S. Department of Health and Human Services
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: U.S. federal department responsible for health policy whose autism agenda includes etiology research, prevention, treatment, care, data integration, and public-health messaging.
+  posture: observed
+aliases: [HHS, Department of Health and Human Services]
+hashtags: [HHS, AutismPolicy, AutismResearch, PublicHealth]
+current_evidence:
+  observed:
+    - States that autism research and policy are a departmental priority.
+    - Prioritizes work on etiology, treatment and care needs, and programs moving beyond genetic risk toward prevention.
+    - Has launched autism data, treatment, and coordinating-committee initiatives.
+  stated:
+    - Frames its approach as gold-standard science, root-cause research, prevention, treatment, care, and support for families.
+  supported_inferences:
+    - The institutional program combines legitimate care and research goals with a prevention-oriented frame that may pathologize autism or steer research toward predetermined causal narratives.
+  disputed:
+    - Whether its epidemic framing and causal assumptions accurately represent autism prevalence science.
+  unknowns:
+    - Final data governance, privacy protections, grant priorities, and degree of autistic-led participation.
+  counterevidence:
+    - Current scientific evidence does not support a single environmental toxin as the cause of autism or vaccines as a cause of autism.
+timeline:
+  - 2025-05-07: NIH-CMS autism data partnership announced.
+  - 2025-09-22: Autism treatment, risk communication, and data-science initiatives announced.
+  - 2026-01-28: New IACC membership announced.
+relations:
+  - type: LED_BY
+    target: robert-f-kennedy-jr
+    posture: observed
+    evidence: [source-hhs-autism-priorities]
+  - type: SETS_POLICY_FOR
+    target: autism
+    posture: observed
+    evidence: [source-hhs-autism-priorities, source-hhs-autism-actions-2025]
+stories: [2025-04-16-rfk-hhs-autism-rhetoric]
+unresolved_questions:
+  - How will HHS balance causal research with services, rights, accommodations, and quality of life?
+  - What safeguards will govern linked Medicare, Medicaid, electronic-record, and wearable data?
+corrections: []
+references: [source-hhs-autism-priorities, source-hhs-autism-actions-2025]
+locks:
+  - Institutional goals and public rhetoric must be tracked separately from demonstrated results.
