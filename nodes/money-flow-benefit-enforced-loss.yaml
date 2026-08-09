@@ -13,11 +13,14 @@ summary:
     compelled to absorb revenue loss, fixed costs, reduced service, risk, debt,
     displacement, or diminished future capacity. It distinguishes voluntary cost,
     ordinary tradeoff, and enforced loss created through law, taxation, funding
-    formulas, contract structure, or policy design.
+    formulas, contract structure, or policy design. Dollar totals must be paired with
+    burden ratios showing the share of household income, district revenue, operating
+    capacity, or taxable base affected.
   posture: working_framework
 core_question: >-
   Does one participant's benefit depend upon another participant or public system
-  being forced to absorb a loss, and who had authority to impose that transfer?
+  being forced to absorb a loss, who had authority to impose that transfer, and how
+  large is the burden relative to the affected participant's actual capacity?
 benefit_fields:
   - direct_payment
   - subsidy
@@ -42,6 +45,25 @@ loss_fields:
   - exclusion_or_access_loss
   - transferred_risk
   - diminished_future_capacity
+burden_ratio_fields:
+  - household_cost_as_percent_of_gross_income
+  - household_cost_as_percent_of_disposable_income
+  - tax_or_fee_as_percent_of_income
+  - subsidy_value_as_percent_of_recipient_income
+  - district_loss_as_percent_of_total_revenue
+  - district_loss_as_percent_of_discretionary_revenue
+  - district_loss_as_percent_of_local_tax_base
+  - federal_funding_as_percent_of_total_district_revenue
+  - fixed_costs_as_percent_of_post_transfer_revenue
+  - service_loss_as_percent_of_prior_capacity
+  - benefit_as_percent_of_beneficiary_revenue_or_assets
+  - cumulative_multi_year_burden
+burden_rules:
+  - Equal dollar amounts do not represent equal burdens across unequal incomes, tax bases, or operating margins.
+  - Use disposable income where essential costs materially constrain real capacity.
+  - Preserve median, distribution, and subgroup burdens rather than relying only on statewide averages.
+  - Distinguish nominal percentage from effective burden after credits, exemptions, debt, transportation, tuition gaps, and required service costs.
+  - Report concentrated district or household losses even when the statewide percentage appears small.
 enforced_loss_test:
   examine:
     - who made the decision
@@ -54,12 +76,36 @@ enforced_loss_test:
     - whether the affected system retained universal service duties
     - whether the transfer was transparent and reviewable
     - whether repair or compensation existed
+    - how large the burden was relative to income, revenue, reserves, and required obligations
 causal_pattern:
   - public_or_collective_resource
   - policy_or_contract_routing_decision
   - beneficiary_receives_gain
   - affected_participant_or_system_absorbs_loss
   - accountability_or_compensation_returns_or_fails_to_return
+federal_control_attribution:
+  purpose: >-
+    Prevent officials from treating federal taxes, grants, conditions, or tax-credit
+    mechanisms as external natural forces when they or their political coalition hold
+    material control over federal legislation, appropriations, executive agencies,
+    rulemaking, waivers, enforcement, appointments, litigation posture, or state opt-in decisions.
+  trace_fields:
+    - federal_legislative_control
+    - federal_executive_control
+    - relevant_agency_control
+    - appropriations_authorship_and_votes
+    - rulemaking_and_waiver_authority
+    - state_opt_in_or_opt_out_authority
+    - litigation_or_non_enforcement_choice
+    - party_alignment_across_state_and_federal_levels
+    - public_rhetoric_assigning_blame
+    - actual_decision_authority
+  attribution_rules:
+    - Federal origin does not mean no local or state agency; trace state acceptance, matching requirements, implementation, and discretionary routing.
+    - Party control does not prove personal authorship; identify the specific vote, appointment, rule, waiver, budget, or implementation choice.
+    - Officials may not plausibly cite federal constraints as wholly external when they helped create, maintain, administer, or decline to change them.
+    - Distinguish inherited constraint from actively preserved constraint.
+    - Distinguish lack of unilateral control from lack of responsibility or influence.
 relation_types:
   - RECEIVES_BENEFIT_FROM
   - IMPOSES_LOSS_ON
@@ -72,27 +118,43 @@ relation_types:
   - FAILS_TO_COMPENSATE_FOR_LOSS
   - BENEFIT_DEPENDS_ON_ENFORCED_LOSS
   - BENEFIT_COEXISTS_WITH_LOSS_WITHOUT_PROVEN_DEPENDENCE
+  - CONTROLS_FUNDING_RULE
+  - VOTES_FOR_APPROPRIATION
+  - ADMINISTERS_FEDERAL_PASS_THROUGH
+  - OPTS_INTO_FEDERAL_PROGRAM
+  - PRESERVES_CONSTRAINT_WHILE_BLAMING_SOURCE
+  - SHIFTS_ACCOUNTABILITY_TO_FEDERAL_LEVEL
 application_to_tennessee_education:
   working_hypothesis: >-
     Private-school subsidy beneficiaries may receive portable public fiscal capacity
     while public districts retain fixed and universal obligations and may lose future
-    funding growth. The existence, magnitude, distribution, and enforceability of that
-    loss must be measured district by district rather than assumed from statewide totals.
+    funding growth. The existence, magnitude, distribution, enforceability, and burden
+    ratio of that loss must be measured district by district rather than assumed from
+    statewide totals. Federal funding claims must also identify which Tennessee and
+    federal officials controlled program participation, appropriations, tax-credit
+    design, implementation, and public blame allocation.
   trace:
     - taxpayers_and_public_revenue
+    - household_tax_burden_by_income
     - state_or_federal_routing_mechanism
+    - federal_and_state_control_authority
     - family_private_school_or_scholarship_intermediary_benefit
+    - subsidy_value_relative_to_recipient_income
     - district_revenue_and_growth_effect
+    - district_loss_as_percent_of_total_and_discretionary_revenue
     - fixed_cost_and_service_obligation_retention
     - affected_students_workers_and_communities
     - compensation_hold_harmless_or_unrepaired_loss
+    - rhetoric_assigning_responsibility_elsewhere
 safeguards:
   - Do not treat every benefit as proof of another party's loss.
   - Do not treat every loss as enforced; distinguish voluntary exchange, shared sacrifice, and coercive transfer.
   - Do not hide tax expenditures by describing them as private donations when public revenue is forgone.
   - Do not equate hold-harmless floors with full compensation for future growth, fixed costs, or service obligations.
-  - Preserve gross benefit, gross loss, net effect, timing, and affected population separately.
+  - Preserve gross benefit, gross loss, net effect, timing, burden ratio, and affected population separately.
   - Trace both direct and opportunity-cost effects.
+  - Do not let jurisdictional complexity erase actors who controlled or preserved the rule.
+  - Do not infer total control from party label alone; require decision-specific evidence.
 relations:
   - type: EXTENDS
     target: harm-domination-protection-weighting
@@ -104,12 +166,17 @@ relations:
     target: tennessee-education-freedom-scholarships
     posture: working_framework
 unresolved_questions:
-  - Which Tennessee districts lose future TISA growth under scholarship expansion, and by how much?
+  - Which Tennessee districts lose future TISA growth under scholarship expansion, and by how much and what percentage of operating revenue?
   - Which costs remain fixed or increase as enrollment and revenue shift?
   - Which private schools, vendors, scholarship organizations, donors, and families capture the largest benefits?
   - What proportion of subsidy spending expands access versus replacing private tuition families would otherwise have paid?
+  - How do scholarship and tax-credit benefits distribute across household income percentiles?
+  - What percentage of income do Tennessee households contribute through sales, property, income-linked federal, and other taxes that support each route?
+  - Which federal and Tennessee officials voted for, administered, opted into, preserved, or publicly blamed each funding mechanism?
   - How do disability access, rural access, segregation, staffing, and transportation costs change?
 locks:
   - Benefit and loss must be traced as separate but potentially coupled flows.
   - Policy-created opacity does not erase public causation.
   - Net statewide balance must not erase concentrated local loss.
+  - Dollar totals without capacity-relative percentages are incomplete.
+  - Federal labeling does not erase state participation or federal actors' responsibility for rules they control.
