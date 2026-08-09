@@ -1,0 +1,35 @@
+schema: unum-lattice-news/node/v0.1
+id: pete-hegseth
+title: Pete Hegseth
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: U.S. Secretary of Defense and military-command node whose role requires tracing targeting policy, civilian-harm safeguards, operational secrecy, command responsibility, and accountability.
+  posture: observed
+aliases: [Peter Hegseth, Secretary Hegseth]
+hashtags: [Hegseth, DefenseDepartment, MilitaryCommand, CivilianHarm, Iran]
+current_evidence:
+  observed:
+    - Appointed by Donald Trump as Secretary of Defense.
+    - Leads the U.S. Department of Defense.
+  supported_inferences:
+    - His office has material authority over military policy and command systems, but attribution for a particular strike requires operation-specific evidence.
+  alleged:
+    - Serious unsupported allegations circulate concerning LaVena Lynn Johnson; no credible primary or corroborated evidence linking Hegseth has been recovered.
+  disputed: []
+  unknowns:
+    - His personal role in specific targeting, no-strike-list, and civilian-harm decisions under review.
+  counterevidence: []
+relations:
+  - {type: APPOINTED_BY, target: donald-trump, posture: observed, evidence: [source-white-house-cabinet-appointments-2025]}
+  - {type: LEADS, target: us-department-of-defense, posture: observed, evidence: [source-white-house-cabinet-appointments-2025]}
+unresolved_questions:
+  - Which military actions did Hegseth personally order, approve, modify, defend, or learn of after the fact?
+  - Were civilian-protection procedures weakened or bypassed in specific operations?
+references: [source-bundle-2026-08-09-actor-relation-sweep]
+locks:
+  - Command position is an accountability relation, not proof of personal execution or knowledge in every event.
+  - The LaVena Lynn Johnson allegation may not generate a factual relation without credible corroborated evidence.
