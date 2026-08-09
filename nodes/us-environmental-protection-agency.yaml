@@ -1,0 +1,65 @@
+schema: unum-lattice-news/node/v0.1
+id: us-environmental-protection-agency
+title: U.S. Environmental Protection Agency
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: Federal environmental regulator whose actions materially affect pollution exposure, enforcement, standards, and environmental-health risk.
+  posture: observed
+aliases:
+  - EPA
+hashtags:
+  - EnvironmentalRegulation
+  - Pollution
+  - Neurodevelopment
+  - PublicHealth
+current_evidence:
+  observed:
+    - EPA recognizes that lead, mercury, pesticides, PCBs, flame retardants, air pollution, and other environmental exposures can contribute to neurodevelopmental harm.
+    - EPA announced and finalized multiple deregulatory actions affecting greenhouse-gas, mercury, hazardous-air-pollutant, and PFAS protections during the current administration.
+  stated:
+    - EPA states that its deregulatory program protects health while lowering costs and advancing energy production.
+  supported_inferences:
+    - EPA policy choices are materially relevant to any federal claim that environmental exposures may contribute to autism or other neurodevelopmental outcomes.
+  disputed:
+    - Whether the current balance of deregulation, delayed compliance, retained standards, and targeted cleanup adequately protects vulnerable populations.
+  unknowns:
+    - Net exposure effects of the full current policy package.
+  counterevidence:
+    - EPA has also continued Superfund work, PFAS funding, emergency response, and some retained pollution standards.
+relations:
+  - type: PART_OF
+    target: united-states-federal-government
+    posture: observed
+    evidence: []
+    scope: federal executive branch
+  - type: REGULATES
+    target: environmental-pollution-exposure
+    posture: observed
+    evidence:
+      - source-epa-neurodevelopmental-disorders
+      - source-epa-mats-repeal-2026
+      - source-epa-pfas-2026
+    scope: air, water, hazardous substances, and related environmental exposures
+  - type: AFFECTS
+    target: autism
+    posture: supported_inference
+    evidence:
+      - source-epa-neurodevelopmental-disorders
+      - source-niehs-autism-environment
+    scope: policy and exposure environment; not a claim that EPA actions cause autism
+unresolved_questions:
+  - How do current deregulatory actions change exposure burdens by geography, class, race, disability, and age?
+  - Which pollution-control changes affect developmental neurotoxicants most directly?
+corrections: []
+references:
+  - source-epa-neurodevelopmental-disorders
+  - source-epa-mats-repeal-2026
+  - source-epa-pfas-2026
+locks:
+  - Regulatory authority does not prove causation for any individual diagnosis.
+  - Environmental contribution must not be converted into blame toward autistic people or families.
+  - Retained protections and cleanup actions must be recorded alongside deregulation.
