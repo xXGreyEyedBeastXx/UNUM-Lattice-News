@@ -71,6 +71,7 @@ Collected items remain `candidate_unreviewed`. The workflow cannot edit the repo
 - Intake boundary: [docs/NEWS_INTAKE_WORKFLOW_v0_1.md](docs/NEWS_INTAKE_WORKFLOW_v0_1.md)
 - Spread model: [docs/SPREAD_SURFACE_MODEL_v0_1.md](docs/SPREAD_SURFACE_MODEL_v0_1.md)
 - Spread template: [templates/SPREAD.yaml](templates/SPREAD.yaml)
+- Automation roadmap: [docs/NEWS_AUTOMATION_ROADMAP_v0_1.md](docs/NEWS_AUTOMATION_ROADMAP_v0_1.md)
 
 ## Participation
 
