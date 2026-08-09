@@ -1,5 +1,6 @@
 version: v0_1
 status: active_review
+node_type_registry: schemas/NODE_TYPE_REGISTRY_v0_1.yaml
 
 source_record:
   id: source_slug
@@ -28,6 +29,8 @@ story_record:
   summary: ""
   what_changed: []
   nodes: []
+  mentions: []
+  node_candidates: []
   hashtags: []
   proposed_relations: []
   affected_participants_or_ecologies: []
@@ -39,8 +42,11 @@ story_record:
 node_record:
   id: node_slug
   label: ""
-  node_type: person | institution | technology | policy | movement | place | population | ecology | proposition | other
-  status: active | historical | disputed_identity | archived
+  family: "" # canonical family from NODE_TYPE_REGISTRY_v0_1.yaml
+  subtype: "" # optional; must belong to family
+  legacy_type: null # preserve source type when migrating an older record
+  landing_status: mention | candidate | landed
+  lifecycle_status: active | historical | disputed_identity | archived
   summary: ""
   aliases: []
   hashtags: []
@@ -49,6 +55,7 @@ node_record:
   current_disputes: []
   unknowns: []
   sources: []
+  reviewer_decision: null
   last_reviewed: "YYYY-MM-DD"
 
 relation_record:
@@ -86,9 +93,18 @@ rendition_record:
   sources: []
   review_required: true
 
+migration_rules:
+  registry: schemas/NODE_TYPE_REGISTRY_v0_1.yaml
+  preserve_archived_legacy_type: true
+  silently_rewrite_archived_records: false
+  aliases:
+    concept: claim_proposition/claim
+    proposition: claim_proposition/proposition
+
 nonclaims:
   - hashtag_cooccurrence_is_not_a_relation
   - relation_is_not_automatic_culpability
+  - node_family_does_not_determine_relation_role
   - capability_is_not_intent
   - threat_assessment_is_not_enemy_designation
   - generated_rendition_is_not_published_fact_without_review
