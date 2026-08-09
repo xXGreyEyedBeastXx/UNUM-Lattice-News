@@ -1,0 +1,45 @@
+schema: unum-lattice-news/node/v0.1
+id: jared-kushner
+title: Jared Kushner
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-09
+summary:
+  text: Donald Trump's son-in-law and recurring informal foreign-policy adviser, appointed to Gaza governance and reconstruction bodies despite holding no ordinary Senate-confirmed diplomatic office.
+  posture: observed
+aliases: []
+hashtags: [TrumpNetwork, IsraelPolicy, Gaza, BoardOfPeace, InformalDiplomacy]
+current_evidence:
+  observed:
+    - Served as a senior White House adviser during Trump's first term and remains a trusted personal adviser.
+    - Appointed to the Board of Peace and Gaza Executive Board announced in 2026.
+    - Conducted Gaza and Israel discussions alongside Steve Witkoff, including meetings with Netanyahu.
+  supported_inferences:
+    - Represents the family and personal-network channel through which major foreign-policy influence can operate outside conventional appointment structures.
+  disputed:
+    - Whether his business relationships and investment interests create conflicts with public policy responsibilities.
+  unknowns:
+    - The exact scope of his authority, compensation, disclosure obligations, and recusal arrangements in current Gaza work.
+relations:
+  - type: FAMILY_OF
+    target: donald-trump
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+    scope: son-in-law
+  - type: APPOINTED_TO
+    target: trump-board-of-peace
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+  - type: WORKS_WITH
+    target: steve-witkoff
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+  - type: NEGOTIATES_WITH
+    target: benjamin-netanyahu
+    posture: observed
+    evidence: [source-bundle-2026-08-09-israel-trump-appointee-sweep]
+locks:
+  - Family relationship and access do not establish criminality or improper influence by themselves.
+  - Informal authority must be mapped separately from formal public office.
