@@ -1,0 +1,71 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-bundle-tennessee-school-funding-routing-2026
+as_of: 2026-08-09
+sources:
+  - id: source-tn-education-freedom-scholarships-2026
+    title: Tennessee Education Freedom Scholarship Program
+    institution: Tennessee Department of Education
+    url: https://www.tn.gov/education/efs.html
+    supports:
+      - program enactment and administration
+      - use at registered non-public schools
+      - 2025-26 scholarship amount of $7,295
+      - 2026-27 application and disbursement timeline
+  - id: source-tn-comptroller-efs-2026
+    title: Tennessee Education Freedom Scholarship Program
+    institution: Tennessee Comptroller / Department of Education mirror
+    url: https://comptroller.extglb.tn.gov/education/efs.html
+    supports:
+      - 2026-27 scholarship amount of $7,530
+      - projected quarterly disbursement schedule
+  - id: source-tn-tisa-formula-2026
+    title: Tennessee Investment in Student Achievement Formula
+    institution: Tennessee Department of Education
+    url: https://comptroller.extglb.tn.gov/education/best-for-all/tnedufunding.html
+    supports:
+      - base, weighted, direct, and outcomes components
+      - state and local public-school funding structure
+  - id: source-tn-comptroller-tisa-components-2026
+    title: Tennessee Investment in Student Achievement: Direct, Outcomes, and Weighted Funding
+    institution: Tennessee Comptroller Office of Research and Education Accountability
+    publication_date: 2026-05
+    url: https://comptroller.tn.gov/office-functions/research-and-education-accountability/publications/pre-12/tennessee-investment-in-student-achievement--direct--outcomes--and-weighted-funding.html
+    supports:
+      - approximately $1.95 billion weighted funding in 2025-26
+      - more than $482 million direct funding in 2025-26
+      - approximately $94 million outcomes funding in 2025-26
+      - 70 percent state and 30 percent local statewide split for weighted funding
+  - id: source-tn-public-chapter-963-efs-expansion
+    title: SB2247 / HB2532 education law revisions
+    institution: Tennessee General Assembly
+    public_chapter: 963
+    url: https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2247&ga=114
+    supports:
+      - increase to 35,000 maximum scholarships for 2026-27
+      - $150.6 million estimated General Fund expenditure in FY2026-27
+      - warning that LEAs may forgo future TISA growth beginning FY2027-28 as students transfer
+      - hold-harmless protections do not preserve all potential future growth
+  - id: source-tn-federal-tax-credit-scholarship-act
+    title: Federal Tax Credit Scholarship Act
+    institution: Tennessee General Assembly
+    bill: SB2206 / HB2187
+    public_chapter: 720
+    effective_date: 2026-04-14
+    url: https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB2206&ga=114
+    supports:
+      - Tennessee implementing framework for the federal tax-credit scholarship program
+      - scholarship-granting organization intermediary structure
+  - id: source-tn-private-school-accountability-bills-2026
+    title: Private-school public-fund accountability proposals
+    institution: Tennessee General Assembly
+    urls:
+      - https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1976&ga=114
+      - https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2247&ga=114
+    supports:
+      - existence of legislative efforts to impose public-fund conditions, licensing, testing, disclosure, or other accountability requirements on participating private schools
+      - HB2247 failed in subcommittee in March 2026
+limitations:
+  - This first sweep does not yet contain district-level tax, revenue, enrollment, or expenditure microdata.
+  - Federal grant allocation totals and pass-through timing require separate U.S. Department of Education and Tennessee data extraction.
+  - The source bundle establishes fiscal and legal channels but does not yet measure causal effects on achievement, segregation, tuition, staffing, or school closures.
+  - Tax-credit scholarship rules beginning in 2027 may change through federal implementation guidance.
