@@ -1,0 +1,45 @@
+schema: unum-lattice-news/node/v0.1
+id: ""
+title: ""
+type: "" # person | institution | movement | technology | policy | place | population | ecology | concept | other
+status: seed
+updated: YYYY-MM-DD
+
+summary:
+  text: ""
+  posture: unknown
+
+aliases: []
+hashtags: []
+
+current_evidence:
+  observed: []
+  stated: []
+  supported_inferences: []
+  disputed: []
+  unknowns: []
+  counterevidence: []
+
+timeline: []
+
+relations: []
+# Example relation entry:
+# - type: CONTRACTS_WITH
+#   target: node-id
+#   posture: observed
+#   evidence:
+#     - source-id
+#   scope: ""
+#   notes: ""
+
+stories: []
+
+unresolved_questions: []
+corrections: []
+references: []
+
+locks:
+  - Node inclusion is not an accusation.
+  - Hashtag co-occurrence is not evidence of coordination or culpability.
+  - Consequential relations require recoverable evidence.
+  - Collective identity does not inherit the actions of individual members or institutions.
