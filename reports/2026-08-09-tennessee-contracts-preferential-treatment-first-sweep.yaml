@@ -1,0 +1,136 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-tennessee-contracts-preferential-treatment-first-sweep
+title: Tennessee state contracts and preferential-treatment risk
+as_of: 2026-08-09
+status: draft_review
+
+question: >-
+  Do Tennessee state contracts, grants, tax advantages, appointments, or regulatory decisions show preferential treatment toward politically, ideologically, financially, or personally connected actors?
+
+established_high-priority_records:
+  - actor: tennessee-department-of-education
+    action: expanded_vendor_contract
+    beneficiary: student-first-technologies-llc
+    amount_or_scale: maximum contract value increased to nearly 637 million dollars over five years
+    context: administers Tennessee private-school voucher programs through an online portal
+    posture: observed
+    concern: >-
+      The contract increase was approved despite reported performance problems involving the vendor in other states. This establishes a procurement-risk and oversight question, not proof of corrupt preference.
+    source: source-tennessee-lookout-voucher-vendor-contract-2026
+  - actor: bill-lee
+    action: accepted_then_repaid_outside-funded_travel
+    beneficiary_or_access_provider: alliance-defending-freedom-and-related-entity
+    posture: observed
+    concern: >-
+      Tennessee Ethics Commission concluded the funding arrangement violated the state ban on direct or indirect gifts from lobbyists or their employers because the nonprofit entities were closely related and intertwined. The event establishes an access and ethics boundary failure, not proof of a contract quid pro quo.
+    source: source-ap-bill-lee-adf-travel-ethics-2024
+  - actor: bill-lee
+    action: maintains_blind_trust_and_income_disclosures
+    posture: observed
+    concern: >-
+      Current disclosure identifies a blind trust and other income sources. Blind-trust structure reduces some direct-knowledge conflicts but does not eliminate the need to trace state contracts involving previously owned, family-linked, or closely connected businesses.
+    source: source-tennessee-ethics-bill-lee-disclosure-2025
+
+procurement_and_preference_fields:
+  - contract_value
+  - original_competitive_process
+  - number_of_bidders
+  - bid_scores
+  - amendments_and_scope_growth
+  - emergency_or_no-bid_authority
+  - performance_history
+  - penalties_or_waivers
+  - subcontractors
+  - beneficial_owners
+  - political_donations
+  - lobbying_relationships
+  - ideological_affiliations
+  - prior_personal_or_business_relationships
+  - revolving-door_employment
+  - access_events_and_gifts
+  - appointment_or_board_connections
+  - tax_or_regulatory_advantage
+  - local_or_in-state_preference
+  - audit_findings
+  - disclosure_quality
+  - repair_or_remedy
+
+preference_test:
+  stages:
+    - compare connected and unconnected bidders under the same procurement rules
+    - identify whether eligibility or scoring criteria were tailored before award
+    - compare contract amendments, forgiveness, extensions, and penalties after award
+    - trace whether donors, lobbyists, ideological allies, or former associates received unusual access
+    - compare performance tolerance across vendors
+    - calculate benefit received and enforced loss imposed on public systems
+    - identify which leader controlled each gate and which lever changed the outcome
+  classifications:
+    - ordinary_competitive_award
+    - lawful_policy_preference
+    - structurally_favored_category
+    - conflict_risk
+    - preferential_treatment_supported
+    - quid_pro_quo_unestablished
+    - corrupt_exchange_supported
+
+leaders_gates_and_levers:
+  - leader: bill-lee
+    gates:
+      - executive_agenda
+      - budget_proposal
+      - bill_signature_or_veto
+      - agency_appointments
+      - executive_policy_direction
+    levers:
+      - appropriation_request
+      - appointment
+      - waiver_or_discretion
+      - contract_administration_through_agencies
+      - public_advocacy
+  - institution: tennessee-general-assembly-fiscal-review-committee
+    gates:
+      - contract_amendment_review
+    levers:
+      - approval_or_rejection_of_contract_expansion
+  - institution: tennessee-department-of-education
+    gates:
+      - procurement
+      - vendor_selection
+      - contract_monitoring
+      - payment_authorization
+    levers:
+      - request_for_proposals
+      - scoring
+      - amendment
+      - penalty
+      - renewal_or_termination
+  - institution: tennessee-ethics-commission
+    gates:
+      - disclosure_review
+      - ethics_opinion
+    levers:
+      - advisory_finding
+      - repayment_request
+      - public_record
+
+open_research_targets:
+  - recover the original Student First Technologies procurement, all bidders, scoring sheets, amendments, performance reports, and penalties
+  - identify the vendor's beneficial owners, executives, lobbyists, subcontractors, and Tennessee political donations
+  - trace TheoLearning branding and determine whether it is the same vendor, a product name, affiliate, or subcontractor
+  - search Lee Company, family trusts, former business partners, and close associates against Tennessee contract and grant databases
+  - compare contracts and grants awarded to Alliance Defending Freedom-aligned, faith-based, school-choice, and crisis-pregnancy organizations
+  - trace campaign donors and independent-expenditure groups supporting Lee's voucher agenda against later contracts, grants, and appointments
+  - build a comparable donor-contract-regulatory map for Marsha Blackburn's telecom, pharmaceutical, education, defense, and technology networks
+
+safeguards:
+  - Political donation or ideological alignment does not by itself establish preferential treatment.
+  - A lawful contract amendment can still create accountability risk if competition, performance, or cost controls are weak.
+  - Blind trusts and formal recusal reduce some conflicts but do not erase indirect benefit, relationship, or policy-alignment questions.
+  - Preserve ordinary policy preference, favoritism, conflict of interest, and corrupt exchange as distinct findings.
+  - Record both favorable and unfavorable treatment so the analysis can falsify its own expectation.
+
+linked_nodes:
+  - institutions-gates-leaders-levers
+  - money-flow-benefit-enforced-loss
+  - harm-domination-protection-weighting
+  - tennessee-education-freedom-scholarships
