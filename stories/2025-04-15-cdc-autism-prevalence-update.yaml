@@ -1,0 +1,54 @@
+version: v0_1
+id: 2025-04-15-cdc-autism-prevalence-update
+title: CDC reports autism identified in about 1 in 31 monitored eight-year-olds
+event_date: "2022-01-01"
+published: "2025-04-15"
+status: reviewed
+claim_posture: observed
+summary: >-
+  CDC's Autism and Developmental Disabilities Monitoring Network reported that
+  about 1 in 31 eight-year-old children were identified with autism across 16
+  monitored US communities using 2022 records. The result is an identified
+  prevalence estimate within a defined surveillance network, not a national
+  census or a direct explanation of causation.
+what_changed:
+  - The combined ADDM estimate increased from about 1 in 36 in 2020 data to about 1 in 31 in 2022 data.
+  - Site estimates varied widely, underscoring differences in identification and evaluation practices.
+nodes:
+  - autism
+hashtags:
+  - autism
+  - prevalence
+  - disability-data
+  - diagnosis-access
+proposed_relations:
+  - from: cdc-addm-network
+    relation_type: MONITORS
+    to: autism-identified-prevalence
+    claim_posture: observed
+    evidence:
+      - source-cdc-autism-data-2025
+  - from: autism
+    relation_type: CLASSIFIED_AS
+    to: developmental-disability
+    claim_posture: stated
+    evidence:
+      - source-cdc-autism-data-2025
+      - source-nimh-autism-overview
+affected_participants_or_ecologies:
+  - autistic-children
+  - autistic-adults
+  - families-and-caregivers
+  - schools-and-support-systems
+counterevidence:
+  - The surveillance estimate does not establish that all geographic variation reflects different underlying incidence.
+unknowns:
+  - How much of the change reflects underlying prevalence, improved identification, changing evaluation practices, service access, or other factors?
+  - How well do child surveillance systems represent autistic adults and people without formal diagnosis?
+sources:
+  - source-cdc-autism-data-2025
+  - source-nimh-autism-overview
+corrections: []
+review_notes:
+  - Preserve the distinction between identified prevalence, incidence, diagnosis, and causation.
+  - Add autistic-led sources before using this story to characterize lived experience or policy priorities.
