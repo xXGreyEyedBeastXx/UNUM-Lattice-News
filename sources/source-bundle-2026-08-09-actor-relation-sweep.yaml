@@ -1,0 +1,88 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-bundle-2026-08-09-actor-relation-sweep
+accessed: "2026-08-09"
+
+sources:
+  - id: source-white-house-cabinet-appointments-2025
+    title: President Trump Announces Cabinet and Cabinet-Level Appointments
+    author_or_institution: The White House
+    publication_date: "2025-01-20"
+    source_type: official_statement
+    url: https://www.whitehouse.gov/presidential-actions/2025/01/cabinet-and-cabinet-level-appointments/
+    supports:
+      - Trump nominated Pete Hegseth as Secretary of Defense.
+      - Trump nominated Robert F. Kennedy Jr. as Secretary of Health and Human Services.
+    limitations:
+      - Establishes appointment and formal role, not responsibility for every subordinate action.
+
+  - id: source-white-house-maha-commission-2025
+    title: President Donald J. Trump Establishes the Make America Healthy Again Commission
+    author_or_institution: The White House
+    publication_date: "2025-02-13"
+    source_type: official_statement
+    url: https://www.whitehouse.gov/fact-sheets/2025/02/fact-sheet-president-donald-j-trump-establishes-the-make-america-healthy-again-commission/
+    supports:
+      - Trump established the MAHA Commission.
+      - HHS Secretary Robert F. Kennedy Jr. chairs the commission.
+    limitations:
+      - Official goals do not establish implementation quality or scientific validity.
+
+  - id: source-hhs-trump-kennedy-autism-actions-2025
+    title: President Trump, Secretary Kennedy Announce Bold Actions to Tackle Autism Epidemic
+    author_or_institution: U.S. Department of Health and Human Services
+    publication_date: "2025-09-22"
+    source_type: official_statement
+    url: https://www.hhs.gov/press-room/hhs-trump-kennedy-autism-initiatives-leucovorin-tylenol-research-2025.html
+    supports:
+      - Trump and Kennedy jointly announced federal autism initiatives.
+      - The administration publicly used epidemic, treatment, risk, and research framing.
+    limitations:
+      - Official announcement is evidence of rhetoric and policy, not proof of causal claims.
+
+  - id: source-white-house-kirk-administration-roster-2025
+    title: President Trump Joins Nation in Celebrating Charlie Kirk's Enduring Legacy
+    author_or_institution: The White House
+    publication_date: "2025-09-22"
+    source_type: official_statement
+    url: https://www.whitehouse.gov/articles/2025/09/president-trump-joins-in-celebrating-charlie-kirks-enduring-legacy/
+    supports:
+      - Identifies Stephen Miller as White House Deputy Chief of Staff.
+      - Identifies Pete Hegseth and Robert F. Kennedy Jr. as senior administration officials.
+    limitations:
+      - Used only for current-role identification, not ideological or causal attribution.
+
+  - id: source-ap-epa-maha-deregulation-2026
+    title: EPA promised a Make America Healthy Again agenda. It has yet to materialize, frustrating activists
+    author_or_institution: Associated Press
+    publication_date: "2026-07-01"
+    source_type: investigative_reporting
+    url: https://www.ap.org/news-highlights/elections/2026/epa-promised-a-make-america-healthy-again-agenda-it-has-yet-to-materialize-frustrating-activists/
+    supports:
+      - EPA publicly promised a MAHA environmental-health agenda.
+      - AP documented conflict between those promises and broad deregulatory actions.
+    limitations:
+      - Establishes governance tension, not a direct causal link to autism.
+
+  - id: source-reuters-netanyahu-rejects-trump-gaza-plan-2026
+    title: Netanyahu says Israel won't pull out of Gaza before Hamas disarms
+    author_or_institution: Reuters
+    publication_date: "2026-08-09"
+    source_type: investigative_reporting
+    url: https://www.reuters.com/world/middle-east/israel-rejects-trumps-15-point-plan-gaza-pm-netanyahu-says-2026-08-09/
+    supports:
+      - Netanyahu rejected part of a Trump-backed Gaza plan.
+      - The relationship includes alliance and material support alongside independent Israeli decision-making and disagreement.
+    limitations:
+      - Does not by itself document the full U.S.-Israel support chain.
+
+  - id: source-un-gaza-genocide-inquiry-2025
+    title: Legal analysis of the conduct of Israel in Gaza pursuant to the Convention on the Prevention and Punishment of the Crime of Genocide
+    author_or_institution: UN Independent International Commission of Inquiry on the Occupied Palestinian Territory, including East Jerusalem, and Israel
+    publication_date: "2025-09-16"
+    source_type: official_investigation
+    url: https://www.un.org/unispal/document/commission-of-inquiry-report-genocide-in-gaza-a-hrc-60-crp-3/
+    supports:
+      - The Commission concluded that Israeli authorities and forces committed genocidal acts and possessed specific genocidal intent.
+      - Supplies the genocide-assessment target for tracing external support, knowledge, leverage, and enablement.
+    limitations:
+      - Does not by itself assign responsibility to every foreign supporter or official; those relations require separate evidence.
