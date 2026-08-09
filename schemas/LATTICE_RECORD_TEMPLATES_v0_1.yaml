@@ -1,0 +1,94 @@
+version: v0_1
+status: active_review
+
+source_record:
+  id: source_slug
+  title: ""
+  author_or_institution: ""
+  publication_date: "YYYY-MM-DD"
+  event_date: null
+  source_type: primary_document | official_statement | legal_record | research | dataset | investigative_reporting | interview | commentary
+  url: ""
+  accessed: "YYYY-MM-DD"
+  rights_or_license: unknown
+  supports:
+    stories: []
+    nodes: []
+    relations: []
+  relevant_claims: []
+  limitations: []
+
+story_record:
+  id: "YYYY-MM-DD-story-slug"
+  title: ""
+  event_date: "YYYY-MM-DD"
+  published: "YYYY-MM-DD"
+  status: draft | reviewed | published | corrected | archived
+  claim_posture: observed | stated | supported_inference | potential | possible | probable | likely | alleged | disputed | unknown
+  summary: ""
+  what_changed: []
+  nodes: []
+  hashtags: []
+  proposed_relations: []
+  affected_participants_or_ecologies: []
+  counterevidence: []
+  unknowns: []
+  sources: []
+  corrections: []
+
+node_record:
+  id: node_slug
+  label: ""
+  node_type: person | institution | technology | policy | movement | place | population | ecology | proposition | other
+  status: active | historical | disputed_identity | archived
+  summary: ""
+  aliases: []
+  hashtags: []
+  direct_relations: []
+  timeline_stories: []
+  current_disputes: []
+  unknowns: []
+  sources: []
+  last_reviewed: "YYYY-MM-DD"
+
+relation_record:
+  id: relation_slug
+  from: node_id
+  relation_type: DEVELOPS | USES | ADOPTS | FUNDS | OWNS | CONTRACTS_WITH | REGULATES | WARNS_ABOUT | AFFECTS | OPPOSES | SUPPORTS | STATES | STUDIES | OTHER
+  to: node_or_proposition_id
+  claim_posture: observed | stated | supported_inference | alleged | disputed | unknown
+  scope: ""
+  start_date: null
+  end_date: null
+  evidence: []
+  counterevidence: []
+  confidence: low | moderate | high
+  last_reviewed: "YYYY-MM-DD"
+
+rendition_record:
+  id: "YYYY-MM-DD-rendition-slug"
+  title: ""
+  as_of: "YYYY-MM-DD"
+  query:
+    nodes: []
+    hashtags: []
+    date_range: null
+  established_facts: []
+  stated_ambitions: []
+  supported_inferences: []
+  trajectories: []
+  documented_harms: []
+  counterevidence: []
+  disputed_or_unsupported_claims: []
+  affected_participants_or_ecologies: []
+  protective_options: []
+  evidence_that_would_change_assessment: []
+  sources: []
+  review_required: true
+
+nonclaims:
+  - hashtag_cooccurrence_is_not_a_relation
+  - relation_is_not_automatic_culpability
+  - capability_is_not_intent
+  - threat_assessment_is_not_enemy_designation
+  - generated_rendition_is_not_published_fact_without_review
