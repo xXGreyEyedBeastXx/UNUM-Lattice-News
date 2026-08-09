@@ -1,0 +1,171 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-bill-lee-marsha-blackburn-rhetoric-to-action
+title: Bill Lee and Marsha Blackburn: pre-term rhetoric, ideals, and later levers
+as_of: 2026-08-09
+status: draft_review
+
+question: >-
+  What moral, political, religious, and institutional ideals did Bill Lee and Marsha Blackburn publicly claim before or early in office, and how do those frames compare with their later use of state and federal power?
+
+bill_lee:
+  pre_term_and_early_frames:
+    faith_as_primary_identity:
+      observed: >-
+        During the 2018 campaign Lee described his Christian faith as the most important thing in his life and argued that faith-based nonprofits and community organizations were often more effective than government at addressing deep social problems.
+      rhetoric_tags:
+        - christian_faith
+        - religious_liberty
+        - government_skepticism
+        - faith_based_delivery
+    outsider_businessman:
+      observed: >-
+        Lee campaigned as a businessman and political outsider rather than a career politician, emphasizing management, efficiency, service, and practical problem solving.
+      rhetoric_tags:
+        - outsider
+        - business_efficiency
+        - service
+        - anti_bureaucracy
+    education_access_and_parental_options:
+      observed: >-
+        Lee said every Tennessee child should have access to a quality or first-rate education and promised reforms that would put students first and give parents more options. He signaled openness to vouchers during the 2018 campaign.
+      rhetoric_tags:
+        - every_child
+        - quality_education
+        - parent_choice
+        - student_first
+    local_and_nonstate_capacity:
+      observed: >-
+        Lee repeatedly framed government as rarely the best answer and elevated local communities, nonprofits, churches, and families as more legitimate or effective problem solvers.
+      rhetoric_tags:
+        - local_control
+        - civil_society
+        - subsidiarity
+        - limited_government
+  rhetoric_action_tests:
+    - claimed_frame: government_skepticism
+      later_levers_to_test:
+        - centralized_state_preemption
+        - funding_threats_against_local_school_systems
+        - state_enforcement_against_protest
+        - state_administered_private_school_subsidy
+      status: tension_requires_case_specific_trace
+    - claimed_frame: parent_choice
+      later_levers_to_test:
+        - which parents gain usable choice
+        - which families remain excluded by tuition_transportation_or_admissions
+        - which public systems retain universal obligations
+      status: distributional_question
+    - claimed_frame: faith_based_efficiency
+      later_levers_to_test:
+        - routing_of_public_funds_to_religious_or_aligned_nonprofits
+        - conflict_of_interest_and_oversight
+        - comparative_outcomes_and_accountability
+      status: requires_program_specific_evidence
+    - claimed_frame: every_child_quality_education
+      later_levers_to_test:
+        - public_school_capacity
+        - disability_access
+        - rural_access
+        - segregation
+        - district_revenue_and_fixed_costs
+      status: outcome_test
+
+marsha_blackburn:
+  pre_term_and_longstanding_frames:
+    anti_tax_identity:
+      observed: >-
+        Blackburn built her early Tennessee political identity around leading opposition to a state income tax and presented herself as a champion of anti-tax politics, fiscal restraint, and government accountability.
+      rhetoric_tags:
+        - anti_tax
+        - fiscal_common_sense
+        - government_accountability
+    limited_government_and_local_control:
+      observed: >-
+        Blackburn has long argued that federal bureaucracy should get out of the way and that states, communities, families, and teachers should lead education.
+      rhetoric_tags:
+        - limited_government
+        - state_control
+        - local_control
+        - anti_bureaucracy
+    parental_authority_and_school_choice:
+      observed: >-
+        Blackburn frames parents rather than government as the proper final authority over schooling and presents school choice as a route around zip-code and socioeconomic constraints.
+      rhetoric_tags:
+        - parents_rights
+        - school_choice
+        - education_freedom
+        - anti_indoctrination
+    conservative_moral_order:
+      observed: >-
+        Blackburn has consistently tied her political identity to abortion restrictions, religious-conservative social policy, national security, support for Israel, strict constitutionalist judges, border enforcement, and later the America First agenda.
+      rhetoric_tags:
+        - religious_conservatism
+        - nationalism
+        - israel_alignment
+        - judicial_originalism
+        - border_enforcement
+    anti_elite_populism:
+      observed: >-
+        Blackburn presents herself as fighting bureaucrats, Big Tech, unions, universities, federal agencies, and other institutions said to suppress parents, conservatives, or ordinary citizens.
+      rhetoric_tags:
+        - anti_elite
+        - populist_conflict
+        - institutional_enemy_construction
+  rhetoric_action_tests:
+    - claimed_frame: anti_tax
+      later_levers_to_test:
+        - federal_tax_credits_as_policy_spending
+        - foregone_revenue
+        - distribution_of_tax_benefits_by_income
+        - whether tax_expenditures_are_described_as_private_choice
+      status: strong_structural_tension
+    - claimed_frame: limited_federal_government
+      later_levers_to_test:
+        - federal_funding_withdrawal_threats
+        - national_ideological_conditions
+        - federal_tax_code_used_to_route_school_subsidies
+        - federal_school_security_and_enforcement_programs
+      status: selective_government_power_hypothesis
+    - claimed_frame: parents_not_government
+      later_levers_to_test:
+        - which parents are empowered
+        - which students_or_families_are_subject_to_state_defined_constraints
+        - private_school_admissions_and_accountability
+      status: asymmetrical_parental_authority_question
+    - claimed_frame: free_speech
+      later_levers_to_test:
+        - funding_punishment_for_disfavored_speech_or_programs
+        - asymmetry_between_conservative_and_other_expression
+      status: requires_event_specific_comparison
+
+shared_pattern_hypothesis: >-
+  Both leaders use freedom, family, local control, anti-bureaucracy, accountability, and opportunity as legitimating frames. Their later conduct should be tested for whether discretion and benefit actually move toward families and local communities generally, or selectively toward favored private, religious, political, and market actors while coercion, retained obligation, and loss move toward public institutions and less powerful participants.
+
+rhetoric_fields_for_schema:
+  - stated_ideal
+  - moral_frame
+  - identified_problem
+  - named_enemy_or_obstacle
+  - promised_beneficiary
+  - promised_constraint_on_power
+  - later_lever_used
+  - actual_beneficiary
+  - actual_loss_bearer
+  - continuity_with_rhetoric
+  - contradiction_with_rhetoric
+  - selective_application
+  - reframing_after_consequence
+
+reporter_rules:
+  - Rhetoric is evidence of claimed values and intended public meaning, not automatic proof of private motive.
+  - Compare like with like across time; preserve changes in office, jurisdiction, and available power.
+  - Distinguish contradiction, selective application, changed circumstances, and ordinary policy compromise.
+  - A stated ideal gains evidentiary weight when repeated before power, maintained after power, and matched by costly action.
+  - A rhetoric-action contradiction gains weight when the actor possessed alternatives, knew the consequences, and continued after notice.
+
+sources_to_attach:
+  - 2018 Lee campaign education debate and school-choice statements
+  - 2018 Lee religious-liberty and faith-based nonprofit remarks
+  - Blackburn early anti-income-tax political biography
+  - Blackburn education and school-choice platform
+  - Blackburn congressional record and campaign materials
