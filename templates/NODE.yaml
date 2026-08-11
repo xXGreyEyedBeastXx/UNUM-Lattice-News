@@ -1,7 +1,11 @@
-schema: unum-lattice-news/node/v0.1
+schema: unum-lattice-news/node/v0.2
 id: ""
 title: ""
-type: "" # person | institution | movement | technology | policy | place | population | ecology | concept | other
+
+# What the entity is. Keep distinct from the role it occupies in a story.
+entity_type: "" # person | institution | movement | technology | policy | place | population | ecology | concept | sovereign_state | international_organization | court | other
+actor_roles: [] # victim | survivor | complainant | witness | accused | defendant | authority | public_official | donor | funder | lobbyist | journalist | advocate | contractor | regulator | intermediary | constituency | other
+
 status: seed
 updated: YYYY-MM-DD
 
@@ -12,12 +16,37 @@ summary:
 aliases: []
 hashtags: []
 
+authority:
+  has_authority: false
+  seat: ""
+  source: ""
+  jurisdiction: ""
+  level: "" # local | subnational | federal | national | sovereign | supranational | international | private | other
+  term_start: null
+  term_end: null
+  oversight: []
+  appeal_or_review: []
+
+vulnerability:
+  roles: [] # victim | survivor | complainant | witness | whistleblower | affected_population | other
+  protection_needs: []
+
+funding:
+  gives_to: []
+  receives_from: []
+
+constituencies: []
+
 current_evidence:
   observed: []
   stated: []
+  adjudicated: []
+  alleged: []
   supported_inferences: []
   disputed: []
+  ambiguous: []
   unknowns: []
+  missing_or_withheld: []
   counterevidence: []
 
 timeline: []
@@ -40,6 +69,11 @@ references: []
 
 locks:
   - Node inclusion is not an accusation.
+  - Entity identity is not the same as event role or authority seat.
+  - Victim or survivor is a relational role, not a total identity.
+  - Authority changes capacity and provenance, not truth value.
+  - Alleged is not false; unknown is not absent; adjudicated is not metaphysical certainty.
+  - Benefit from an outcome is not proof of causation.
   - Hashtag co-occurrence is not evidence of coordination or culpability.
   - Consequential relations require recoverable evidence.
   - Collective identity does not inherit the actions of individual members or institutions.
