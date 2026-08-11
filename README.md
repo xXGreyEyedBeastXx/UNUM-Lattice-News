@@ -53,6 +53,14 @@ This repository gives particular attention to threats and pressures affecting:
 - information and reality integrity;
 - recoverable futures rather than permanent emergency rule.
 
+## Operations
+
+The repository-wide investigative operating layer is [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md).
+
+It connects the existing editorial and intake rules to a single recoverable lifecycle for field context, structure, constraint, transform, projection, coherence review, and re-entry. It also defines linked power, agency/constraint, and harm/benefit maps; typed missingness; competing causal models and discriminators; opacity/privacy handling; oversight as conductance control; and the boundary between automated research support and consequential public claims.
+
+The operations layer does not override source-specific evidence, `EDITORIAL_STANDARD.md`, privacy rules, corrections, or human review requirements. It coordinates them.
+
 ## Corrections
 
 Errors, missing context, contradictory evidence, changed conditions, and overstated conclusions should be corrected visibly.
@@ -67,6 +75,7 @@ The first automation surface is deliberately narrow. A scheduled GitHub Actions 
 
 Collected items remain `candidate_unreviewed`. The workflow cannot edit the repository, open issues, create or promote nodes, or publish stories, spreads, or renditions. Human review remains required before an intake candidate becomes a lattice record.
 
+- Operations layer: [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md)
 - Feed registry: [registries/FEEDS.json](registries/FEEDS.json)
 - Intake boundary: [docs/NEWS_INTAKE_WORKFLOW_v0_1.md](docs/NEWS_INTAKE_WORKFLOW_v0_1.md)
 - Spread model: [docs/SPREAD_SURFACE_MODEL_v0_1.md](docs/SPREAD_SURFACE_MODEL_v0_1.md)
