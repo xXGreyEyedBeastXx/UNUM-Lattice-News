@@ -148,197 +148,144 @@ def new_candidate(entry: dict[str, str], feed: dict[str, Any], collected_at: str
         ],
         "default_hashtags": list(feed.get("default_hashtags", [])),
         "default_lenses": list(feed.get("default_lenses", [])),
-        "candidate_nodes": [],
-        "review_notes": [],
+        "candidate_notes": "headline is not an established claim — requires editorial review before publication",
     }
 
 
-def merge_discovery(candidate: dict[str, Any], feed: dict[str, Any]) -> None:
-    feed_id = feed["id"]
-    if all(item["feed_id"] != feed_id for item in candidate["discovered_via"]):
-        candidate["discovered_via"].append(
+def merge_candidate(existing: dict[str, Any], entry: dict[str, str], feed: dict[str, Any]) -> int:
+    """Merge feed provenance into an existing candidate. Returns 1 if duplicate merged."""
+    existing_feed_ids = {via["feed_id"] for via in existing["discovered_via"]}
+    if feed["id"] not in existing_feed_ids:
+        existing["discovered_via"].append(
             {
-                "feed_id": feed_id,
+                "feed_id": feed["id"],
                 "feed_label": feed["label"],
                 "publisher": feed["publisher"],
                 "source_kind": feed["source_kind"],
             }
         )
-    append_unique(candidate["default_hashtags"], feed.get("default_hashtags", []))
-    append_unique(candidate["default_lenses"], feed.get("default_lenses", []))
-
-
-def validate_registry(registry: dict[str, Any]) -> list[dict[str, Any]]:
-    feeds = registry.get("feeds")
-    if not isinstance(feeds, list):
-        raise ValueError("registry.feeds must be a list")
-    enabled = [feed for feed in feeds if feed.get("enabled") is True]
-    if not enabled:
-        raise ValueError("registry has no enabled feeds")
-    required = {"id", "label", "publisher", "url", "format", "source_kind"}
-    seen_ids: set[str] = set()
-    for feed in enabled:
-        missing = sorted(required - set(feed))
-        if missing:
-            raise ValueError(f"feed is missing required fields: {', '.join(missing)}")
-        if feed["id"] in seen_ids:
-            raise ValueError(f"duplicate feed id: {feed['id']}")
-        seen_ids.add(feed["id"])
-        if not canonical_http_url(feed["url"], feed["url"]):
-            raise ValueError(f"feed has invalid HTTP(S) URL: {feed['id']}")
-    return enabled
+        append_unique(existing["default_hashtags"], feed.get("default_hashtags", []))
+        append_unique(existing["default_lenses"], feed.get("default_lenses", []))
+        return 1
+    return 0
 
 
 def collect_candidates(
     registry: dict[str, Any],
     fetcher: Callable[[str], bytes] = fetch_url,
-    limit_per_feed: int = 25,
     collected_at: str | None = None,
 ) -> tuple[list[dict[str, Any]], dict[str, Any]]:
-    if limit_per_feed < 1 or limit_per_feed > 200:
-        raise ValueError("limit_per_feed must be between 1 and 200")
+    if collected_at is None:
+        collected_at = utc_now()
 
-    timestamp = collected_at or utc_now()
-    enabled_feeds = validate_registry(registry)
-    by_url: dict[str, dict[str, Any]] = {}
-    feed_status: list[dict[str, Any]] = []
-    successful_feeds = 0
+    feeds = [f for f in registry.get("feeds", []) if f.get("enabled", True)]
+    url_index: dict[str, dict[str, Any]] = {}
+    feed_statuses: list[dict[str, Any]] = []
+    successful = 0
 
-    for feed in enabled_feeds:
-        status: dict[str, Any] = {
-            "feed_id": feed["id"],
-            "url": feed["url"],
-            "status": "failed",
-            "items_seen": 0,
-            "items_added": 0,
-            "duplicates_merged": 0,
-            "error": None,
-        }
+    for feed in feeds:
+        url = feed["url"]
+        feed_status: dict[str, Any] = {"feed_id": feed["id"], "url": url, "duplicates_merged": 0}
         try:
-            if feed["format"] != "rss_atom":
-                raise ValueError(f"unsupported feed format: {feed['format']}")
-            entries = parse_feed(fetcher(feed["url"]), feed["url"])
-            status["items_seen"] = len(entries)
-            for entry in entries[:limit_per_feed]:
-                existing = by_url.get(entry["url"])
-                if existing is None:
-                    by_url[entry["url"]] = new_candidate(entry, feed, timestamp)
-                    status["items_added"] += 1
+            payload = fetcher(url)
+            entries = parse_feed(payload, url)
+            feed_status["status"] = "ok"
+            feed_status["entry_count"] = len(entries)
+            successful += 1
+            for entry in entries:
+                cid = stable_candidate_id(entry["url"])
+                if cid in url_index:
+                    merged = merge_candidate(url_index[cid], entry, feed)
+                    feed_status["duplicates_merged"] = feed_status.get("duplicates_merged", 0) + merged
                 else:
-                    merge_discovery(existing, feed)
-                    status["duplicates_merged"] += 1
-            status["status"] = "ok"
-            successful_feeds += 1
-        except Exception as exc:  # Preserve per-feed failure while other feeds continue.
-            status["error"] = f"{type(exc).__name__}: {exc}"
-        feed_status.append(status)
+                    url_index[cid] = new_candidate(entry, feed, collected_at)
+        except Exception as exc:
+            feed_status["status"] = "failed"
+            feed_status["error"] = f"{type(exc).__name__}: {exc}"
 
-    candidates = list(by_url.values())
-    status_packet = {
-        "schema": "unum-lattice-news/feed-status/v0.1",
-        "collected_at": timestamp,
-        "enabled_feed_count": len(enabled_feeds),
-        "successful_feed_count": successful_feeds,
-        "candidate_count": len(candidates),
-        "all_feeds_failed": successful_feeds == 0,
-        "feeds": feed_status,
+        feed_statuses.append(feed_status)
+
+    candidates = list(url_index.values())
+    status = {
+        "collected_at": collected_at,
+        "total_feed_count": len(feeds),
+        "successful_feed_count": successful,
+        "all_feeds_failed": len(feeds) > 0 and successful == 0,
+        "total_candidates": len(candidates),
+        "feeds": feed_statuses,
     }
-    return candidates, status_packet
-
-
-def markdown_text(value: object) -> str:
-    return (
-        str(value or "")
-        .replace("\\", "\\\\")
-        .replace("|", "\\|")
-        .replace("[", "\\[")
-        .replace("]", "\\]")
-    )
+    return candidates, status
 
 
 def render_review_packet(candidates: list[dict[str, Any]], status: dict[str, Any]) -> str:
-    lines = [
-        "# News intake review packet",
+    lines: list[str] = [
+        "# Feed Candidate Review Packet",
         "",
-        f"Collected: `{status['collected_at']}`",
+        f"**Collected at:** {status['collected_at']}",
+        f"**Feeds processed:** {status['successful_feed_count']} / {status['total_feed_count']}",
+        f"**Candidates found:** {status['total_candidates']}",
         "",
-        "> Discovery metadata only. Every item is unreviewed; a headline is not an established claim, node, relation, or publication decision.",
+        "> **Editorial notice:** Each item below is a feed headline. A headline is not an established claim.",
+        "> All items require editorial review before publication.",
         "",
-        "## Feed status",
+        "---",
         "",
-        "| Feed | Status | Seen | Added | Merged | Error |",
-        "|---|---:|---:|---:|---:|---|",
     ]
-    for feed in status["feeds"]:
-        lines.append(
-            f"| {markdown_text(feed['feed_id'])} | {markdown_text(feed['status'])} | "
-            f"{feed['items_seen']} | {feed['items_added']} | {feed['duplicates_merged']} | "
-            f"{markdown_text(feed['error'])} |"
-        )
-
-    lines.extend(["", f"## Candidates ({len(candidates)})", ""])
-    if not candidates:
-        lines.append("No candidates were collected.")
-    for candidate in candidates:
-        feeds = ", ".join(item["feed_id"] for item in candidate["discovered_via"])
-        lenses = ", ".join(candidate["default_lenses"]) or "none configured"
-        published = candidate["published"] or "date not supplied by feed"
-        lines.extend(
-            [
-                f"### {markdown_text(candidate['title'])}",
-                "",
-                f"- Candidate: `{candidate['id']}`",
-                f"- URL: {candidate['url']}",
-                f"- Published: {markdown_text(published)}",
-                f"- Discovered via: {markdown_text(feeds)}",
-                f"- Review lenses: {markdown_text(lenses)}",
-                "- Review status: `candidate_unreviewed`",
-                "",
-            ]
-        )
-    return "\n".join(lines).rstrip() + "\n"
+    for i, candidate in enumerate(candidates, 1):
+        lines.append(f"## {i}. {candidate['title']}")
+        lines.append(f"- **URL:** {candidate['url']}")
+        if candidate.get("published"):
+            lines.append(f"- **Published:** {candidate['published']}")
+        lines.append(f"- **Collected at:** {candidate['collected_at']}")
+        lines.append(f"- **Review status:** {candidate['review_status']}")
+        lines.append(f"- **Lenses:** {', '.join(candidate['default_lenses']) or 'none'}")
+        lines.append(f"- **Discovered via:** {', '.join(v['feed_id'] for v in candidate['discovered_via'])}")
+        lines.append("")
+    return "\n".join(lines)
 
 
-def write_outputs(output_dir: Path, candidates: list[dict[str, Any]], status: dict[str, Any]) -> None:
+def write_outputs(
+    output_dir: Path,
+    candidates: list[dict[str, Any]],
+    status: dict[str, Any],
+) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
-    jsonl = "".join(json.dumps(item, ensure_ascii=False, sort_keys=True) + "\n" for item in candidates)
-    (output_dir / "candidates.jsonl").write_text(jsonl, encoding="utf-8", newline="\n")
-    (output_dir / "feed_status.json").write_text(
-        json.dumps(status, ensure_ascii=False, indent=2, sort_keys=True) + "\n",
-        encoding="utf-8",
-        newline="\n",
-    )
-    (output_dir / "review_packet.md").write_text(
-        render_review_packet(candidates, status), encoding="utf-8", newline="\n"
-    )
 
+    candidates_path = output_dir / "candidates.jsonl"
+    with candidates_path.open("w", encoding="utf-8") as fh:
+        for candidate in candidates:
+            fh.write(json.dumps(candidate, ensure_ascii=False) + "\n")
 
-def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--registry", type=Path, default=Path("registries/FEEDS.json"))
-    parser.add_argument("--output", type=Path, default=Path("artifacts/news-candidate-intake"))
-    parser.add_argument("--limit-per-feed", type=int, default=25)
-    return parser.parse_args(argv)
+    status_path = output_dir / "feed_status.json"
+    status_path.write_text(json.dumps(status, indent=2, ensure_ascii=False), encoding="utf-8")
+
+    packet_path = output_dir / "review_packet.md"
+    packet_path.write_text(render_review_packet(candidates, status), encoding="utf-8")
 
 
 def main(argv: list[str] | None = None) -> int:
-    args = parse_args(argv)
-    try:
-        registry = json.loads(args.registry.read_text(encoding="utf-8"))
-        candidates, status = collect_candidates(
-            registry, limit_per_feed=args.limit_per_feed
-        )
-        write_outputs(args.output, candidates, status)
-    except Exception as exc:
-        print(f"intake failed: {type(exc).__name__}: {exc}", file=sys.stderr)
-        return 2
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--registry", default="registries/FEEDS.json", help="Path to feed registry JSON")
+    parser.add_argument("--output", default="intake/candidates", help="Output directory")
+    args = parser.parse_args(argv)
 
-    print(
-        f"collected {len(candidates)} candidates from "
-        f"{status['successful_feed_count']}/{status['enabled_feed_count']} enabled feeds"
-    )
-    return 1 if status["all_feeds_failed"] else 0
+    registry_path = Path(args.registry)
+    if not registry_path.exists():
+        print(f"ERROR: registry not found: {registry_path}", file=sys.stderr)
+        return 1
+
+    registry = json.loads(registry_path.read_text(encoding="utf-8"))
+    candidates, status = collect_candidates(registry)
+
+    output_dir = Path(args.output)
+    write_outputs(output_dir, candidates, status)
+
+    print(f"Collected {status['total_candidates']} candidates from {status['successful_feed_count']} feeds.")
+    if status["all_feeds_failed"]:
+        print("WARNING: all feeds failed.", file=sys.stderr)
+        return 1
+    return 0
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    sys.exit(main())
