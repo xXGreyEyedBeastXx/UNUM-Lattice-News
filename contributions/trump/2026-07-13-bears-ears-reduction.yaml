@@ -1,0 +1,101 @@
+contribution_record:
+  id: trump-2026-07-13-bears-ears-reduction
+  title: "Trump reduces Bears Ears monument protection and terminates Bears Ears Commission"
+  contributor_node: donald-trump
+  mechanism_node: bears-ears-2026-boundary-modification
+  contribution_type: policy
+  start_date: "2026-07-13"
+  end_date: null
+  scope: >-
+    Presidential proclamation reducing Bears Ears National Monument, removing the
+    Bears Ears Commission, and reopening excluded federal lands to specified public-land,
+    mineral, geothermal, and mining-law uses after the stated delay.
+  causal_fields:
+    - Indigenous sovereignty
+    - sacred land
+    - public land
+    - mineral extraction
+    - environmental protection
+  studies_or_spreads:
+    - Trump second-term harm audit
+    - Indigenous harm ledger
+    - land and extraction study
+  immediate_mechanism: >-
+    Presidential proclamation excluded approximately 1,238,904 acres from the monument,
+    retained approximately 121,096 acres, terminated the Bears Ears Commission, and
+    provided for excluded lands to reopen to specified mineral/geothermal leasing and mining-law entry.
+  direct_effects:
+    - "Approximately 1.24 million acres lost Bears Ears National Monument status under the proclamation."
+    - "The Bears Ears Commission was disbanded and terminated."
+    - "Excluded lands were scheduled to reopen to specified extractive and public-land uses subject to law and existing rights."
+  downstream_effects:
+    - "Specific mining, leasing, ecological, archaeological, sacred-site, grazing, and cultural-resource harms require project/parcel-level tracing."
+  affected_participants_or_ecologies:
+    - Hopi Nation
+    - Navajo Nation
+    - Ute Indian Tribe of the Uintah and Ouray Reservation
+    - Ute Mountain Ute Tribe
+    - Pueblo of Zuni
+    - cultural and sacred landscapes
+    - affected ecosystems and future generations
+  shared_harm_ids: []
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: true
+    rating_scope: "Confirmed loss of monument protection and tribal-governance structure; future extraction damage not yet counted."
+    time_window:
+      start: "2026-07-13"
+      end: null
+    harm_vector:
+      lethal_physical_harm: 0
+      confinement_coercion: 0
+      material_deprivation: 1
+      rights_agency_harm: 3
+      land_sovereignty_displacement: 5
+      ecological_future_harm: 2
+      democratic_epistemic_harm: 1
+      power_concentration: 2
+      catastrophic_risk_imposition: 0
+    propagation:
+      reach: 3
+      duration: 5
+      irreversibility: 4
+      vulnerability: 3
+    catastrophic_pathway_support: 0
+    score_summary:
+      realized_harm_score: 30.00
+      structural_harm_score: 36.00
+      catastrophic_risk_score: 0
+    score_justification:
+      - "Land/sovereignty score is high because the proclamation directly removed protected status across a very large cultural landscape and terminated an institutionalized tribal-management body."
+      - "Ecological score is intentionally limited because parcel/project-level downstream extraction has not yet been fully traced."
+  evidence:
+    - title: "Modifying the Bears Ears National Monument"
+      institution: White House
+      date: "2026-07-13"
+      url: "https://www.whitehouse.gov/presidential-actions/2026/07/modifying-the-bears-ears-national-monument/"
+  counterevidence:
+    - "The proclamation retains approximately 121,096 acres within the monument and continues other forms of tribal consultation under applicable authorities; these facts limit, but do not erase, the confirmed removal of the Bears Ears Commission and excluded-acreage protections."
+  unknowns:
+    - "Which leases, claims, permits, or extractive projects occur on excluded lands."
+    - "Parcel-level cultural-resource and ecological effects."
+    - "Litigation outcomes concerning presidential authority and implementation."
+  path_forward:
+    - "Create parcel/project contribution pages for subsequent mining, leasing, infrastructure, or cultural-site impacts."
+    - "Collect tribal-government responses and consultation records."
+  debunking_record:
+    claim_as_tested: null
+    strongest_supporting_case: []
+    expected_evidence_if_true: []
+    recovered_evidence: []
+    decisive_failure: []
+    why_claim_fails: null
+    residual_claims: []
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - donald-trump
+  corrections: []
+  last_reviewed: "2026-08-12"
