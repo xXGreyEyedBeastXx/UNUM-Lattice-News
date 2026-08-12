@@ -1,0 +1,65 @@
+contribution_record:
+  id: udp-2024-cori-bush-electoral-intervention
+  title: "United Democracy Project electoral intervention against Cori Bush in the 2024 MO-01 Democratic primary"
+  contributor_node: united-democracy-project
+  mechanism_node: null
+  contribution_type: funding
+  start_date: "2024-01-01"
+  end_date: "2024-08-06"
+  scope: >-
+    Independent-expenditure intervention in the Democratic primary opposing Representative
+    Cori Bush and supporting the political environment in which Wesley Bell defeated her.
+  causal_fields:
+    - campaign finance
+    - AIPAC political influence
+    - Israel/Palestine
+    - Gaza ceasefire politics
+    - democratic power concentration
+  studies_or_spreads:
+    - AIPAC money and influence
+    - Gaza / U.S. political support
+    - congressional Israel-policy influence
+  immediate_mechanism: >-
+    AIPAC states that major UDP involvement and support from AIPAC members helped Wesley Bell
+    unseat Bush, whom AIPAC describes as one of Israel's most hostile congressional critics.
+  direct_effects:
+    - "AIPAC/UDP materially intervened in the primary against Bush."
+    - "AIPAC publicly claimed the intervention as part of its successful political program."
+  downstream_effects:
+    - "Bush lost the primary; the exact causal contribution of UDP spending remains multi-factor."
+  affected_participants_or_ecologies:
+    - Cori Bush
+    - MO-01 Democratic primary electorate
+    - constituents represented by the office
+    - political constituencies advocating a Gaza ceasefire / Palestinian civilian protection
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harmful_intent:
+    state: CONFIRMED
+    class: I4
+    scope: >-
+      Confirmed organizational intent and material political action to defeat a named critic of
+      Israeli policy. This does not itself prove intent to cause Palestinian civilian harm.
+  harm_score_status: calibration_pending
+  evidence:
+    - "AIPAC, United Democracy Project | Taking The Fight To Anti-Israel Candidates: https://www.aipac.org/memos/policy-politics-congress-israel"
+    - "FEC, United Democracy Project C00799031: https://www.fec.gov/data/committee/C00799031/"
+    - "FEC, Cori Bush candidate H8MO01143: https://www.fec.gov/data/candidate/H8MO01143/"
+  counterevidence:
+    - "Bush had other electoral vulnerabilities and opposition; AIPAC/UDP spending is not treated as sole causation of the result."
+  unknowns:
+    - "Exact final UDP candidate-level independent-expenditure total from primary FEC transaction extraction."
+    - "Counterfactual result without UDP spending."
+    - "Specific downstream Israel/Gaza policy differences attributable to the office changing hands."
+  related_relations:
+    - "UDP OPPOSES Cori Bush"
+  related_stories:
+    - "2024 MO-01 Democratic primary"
+  related_nodes:
+    - aipac
+    - united-democracy-project
+    - cori-bush
+    - wesley-bell
+  corrections: []
+  last_reviewed: "2026-08-12"
