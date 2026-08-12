@@ -112,6 +112,7 @@ contribution_record:
       duration: null
       irreversibility: null
       vulnerability: null
+    catastrophic_pathway_support: null
     score_summary:
       realized_harm_score: null
       structural_harm_score: null
@@ -146,7 +147,7 @@ harm_hierarchy_record:
   scope: ""
   eligible_contribution_states: [CONFIRMED]
   rating_tuple: [realized_harm_score, structural_harm_score, catastrophic_risk_score]
-  ranking_method: "See docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md"
+  ranking_method: "See docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md and docs/HARM_SCORING_RUBRIC_v0_1.md"
   entries: []
   shared_harm_deduplication_notes: []
   pending_and_path_forward_not_counted: []
