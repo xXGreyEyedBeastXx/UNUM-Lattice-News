@@ -9,6 +9,14 @@ source -> story -> node -> relation -> rendition
              \-> contribution ->/
              \-----> spread <-----/
              -> hashtags ->
+
+confirmed contribution
+        |
+        v
+harm assessment
+        |
+        v
+category-bounded harm hierarchy
 ```
 
 These structures cooperate without becoming interchangeable.
@@ -53,6 +61,7 @@ A node should contain only enough context to understand that subject locally:
 - direct evidence-backed relationships;
 - timeline pointers;
 - contribution index where relevant;
+- harm-rating windows where relevant;
 - hashtag neighborhoods;
 - current disputes and unknowns;
 - sources and correction history.
@@ -60,6 +69,16 @@ A node should contain only enough context to understand that subject locally:
 A node is not a dossier of everything ever associated with the subject.
 
 Large recurring actors may maintain a historical spine that points to independently reusable policy/action and contribution records rather than reproducing every event in full. See `docs/HISTORICAL_ACTOR_AND_CONTRIBUTION_MODEL_v0_1.md`.
+
+Nodes participating in harm hierarchy work should declare a hierarchy class:
+
+```text
+institution
+leader
+non_leader_actor
+affected_population
+not_scored
+```
 
 ## Contribution
 
@@ -81,7 +100,11 @@ A contribution should preserve:
 - direct and downstream effects;
 - affected participants or ecologies;
 - evidence posture;
+- investigation state;
+- harm assessment where relevant;
 - counterevidence and unknowns;
+- path-forward objects where unresolved;
+- debunking record where a claim is affirmatively defeated;
 - related stories, relations, and nodes;
 - study/spread memberships;
 - correction history.
@@ -89,6 +112,71 @@ A contribution should preserve:
 One contribution may appear in many studies. The underlying factual record should not be duplicated merely because several spreads interpret it.
 
 A contribution is not automatic culpability. Historical context is not justification. Benefit is not causation.
+
+## Investigation state
+
+Harm-audit contributions and consequential relations use four workflow states:
+
+```text
+PENDING
+PATH_FORWARD
+CONFIRMED
+DEBUNKED
+```
+
+These are not substitutes for evidentiary posture.
+
+`DEBUNKED` requires an affirmative explanation of why the scoped claim fails. `SEARCHED_NOT_FOUND` is not enough.
+
+See `docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md` and `EDITORIAL_STANDARD.md`.
+
+## Harm assessment
+
+A harm assessment is a structured read of a contribution's consequences and power effects.
+
+It preserves a decomposed harm vector rather than hiding the entire judgment inside one scalar score.
+
+Core dimensions include:
+
+```text
+lethal / physical harm
+confinement / coercion
+material deprivation
+rights / agency harm
+land / sovereignty / displacement
+ecological / future-generation harm
+democratic / epistemic harm
+power concentration
+catastrophic risk imposition
+```
+
+Propagation dimensions include reach, duration, irreversibility, and target vulnerability.
+
+Only `CONFIRMED` contributions may add to the confirmed harm hierarchy. `PENDING` and `PATH_FORWARD` remain visible but uncounted as confirmed realized harm. `DEBUNKED` claims contribute zero while retaining their explanation.
+
+Beneficial conduct elsewhere does not subtract from a documented harm. The harm hierarchy is not a net-goodness score.
+
+## Harm hierarchy
+
+A harm hierarchy is a dated, time-bounded assembly of confirmed harm contributions for legibility.
+
+Maintain separate ranking surfaces for:
+
+```text
+institutions
+leaders
+non-leader actors
+```
+
+The public rating remains a tuple:
+
+```text
+[realized harm, structural harm, catastrophic risk]
+```
+
+Do not silently convert that tuple into a claim of criminal guilt or moral essence.
+
+Where multiple contributors participate in the same underlying harm, preserve a shared harm identifier and contributor-specific responsibility so the victim count is not multiplied across actors.
 
 ## Hashtag
 
@@ -131,7 +219,7 @@ Co-occurrence is not an edge.
 
 A spread is a reader-facing discovery/review surface assembled from underlying records for a bounded question, event complex, or time window.
 
-It may pull together sources, stories, nodes, relations, contribution records, and renditions without becoming their permanent evidence container.
+It may pull together sources, stories, nodes, relations, contribution records, harm assessments, and renditions without becoming their permanent evidence container.
 
 The same contribution may therefore participate in multiple spreads without duplication.
 
@@ -150,13 +238,13 @@ A rendition should separate:
 - supported inferences;
 - possible or likely trajectories;
 - documented harms;
-- counterevidence;
+- counterevidence that bears on the claim;
 - disputed or unsupported claims;
 - affected people and ecologies;
 - protective options;
 - evidence that would change the assessment.
 
-A rendition is revisable. It does not rewrite the underlying sources, stories, nodes, relations, or contribution records.
+A rendition is revisable. It does not rewrite the underlying sources, stories, nodes, relations, contribution records, or harm assessments.
 
 ## Self-population boundary
 
@@ -169,6 +257,7 @@ Automation and agents may:
 - propose contribution records;
 - identify connected stories;
 - surface contradictions, stale claims, and missing evidence;
+- produce provisional harm vectors and hierarchy candidates;
 - draft bounded renditions.
 
 Automation and agents may not independently:
@@ -179,8 +268,10 @@ Automation and agents may not independently:
 - convert contribution into culpability;
 - promote allegation into fact;
 - infer private facts;
-- erase counterevidence or uncertainty;
+- erase claim-relevant counterevidence or uncertainty;
+- mark a claim debunked merely because a search failed;
 - turn threat assessment into enemy designation;
+- turn a harm hierarchy into punishment authorization;
 - publish material merely because it supports an existing conclusion.
 
 ## Core locks
@@ -191,9 +282,13 @@ Hashtag != edge.
 Association != culpability.
 Contribution != culpability.
 Benefit != causation.
+Beneficial action != offset for unrelated harm.
 Capability != intent.
 Historical context != justification.
+Pending != debunked.
+Searched-not-found != debunked.
 Threat assessment != enemy designation.
+Harm hierarchy != legal guilt.
 Rendition != canonical truth.
 Correction strengthens the lattice.
 ```
