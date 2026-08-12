@@ -1,0 +1,95 @@
+contribution_record:
+  id: trump-2025-07-24-homelessness-coercive-federal-incentive
+  title: "Trump directs federal grant incentives toward camping enforcement and civil commitment"
+  contributor_node: donald-trump
+  mechanism_node: homelessness-order-2025-07-24
+  contribution_type: policy
+  start_date: "2025-07-24"
+  end_date: null
+  scope: >-
+    Presidential order directing federal agencies to assess prioritizing discretionary
+    grants toward states and municipalities enforcing camping/loitering prohibitions
+    and specified treatment/civil-commitment approaches.
+  causal_fields:
+    - homelessness
+    - civil commitment
+    - state/local policy diffusion
+    - policing
+    - disability and substance-use policy
+  studies_or_spreads:
+    - Trump second-term harm audit
+    - federal-to-state coercive policy diffusion
+    - homelessness criminalization
+  immediate_mechanism: >-
+    Federal grant leverage and executive policy direction encouraging state/local
+    enforcement and institutionalization mechanisms.
+  direct_effects:
+    - "Confirmed federal policy preference and grant-prioritization instruction."
+  downstream_effects:
+    - "Jurisdiction-specific arrests, displacement, civil commitments, treatment placements, or grant reallocations require separate evidence."
+  affected_participants_or_ecologies:
+    - unhoused people
+    - people with serious mental illness
+    - people with substance-use disorders
+    - state and local governments
+  shared_harm_ids: []
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: true
+    rating_scope: "Structural coercive-policy expansion only; downstream arrests/commitments are not yet counted."
+    time_window:
+      start: "2025-07-24"
+      end: null
+    harm_vector:
+      lethal_physical_harm: 0
+      confinement_coercion: 0
+      material_deprivation: 0
+      rights_agency_harm: 0
+      land_sovereignty_displacement: 0
+      ecological_future_harm: 0
+      democratic_epistemic_harm: 1
+      power_concentration: 4
+      catastrophic_risk_imposition: 0
+    propagation:
+      reach: 5
+      duration: 3
+      irreversibility: 2
+      vulnerability: 5
+    catastrophic_pathway_support: 0
+    score_summary:
+      realized_harm_score: 0
+      structural_harm_score: 66.67
+      catastrophic_risk_score: 0
+    score_justification:
+      - "The federal coercive incentive is directly established, but actual downstream confinement or arrest is left unscored until jurisdiction-specific evidence is linked."
+      - "Structural score is high because federal grant leverage can propagate policy through many state/local jurisdictions and targets a population with constrained exit and bargaining power."
+  evidence:
+    - title: "Ending Crime and Disorder on America's Streets"
+      institution: White House
+      date: "2025-07-24"
+      url: "https://www.whitehouse.gov/presidential-actions/2025/07/ending-crime-and-disorder-on-americas-streets/"
+  counterevidence:
+    - "The order also describes treatment and public-safety objectives; those stated objectives do not establish that every downstream use is harmful, but they do not negate the confirmed coercive-policy and grant-leverage mechanism."
+  unknowns:
+    - "Which grants were actually prioritized, denied, suspended, or redirected."
+    - "Which state/local governments changed law or enforcement because of the order."
+    - "How many arrests, displacements, commitments, or treatment placements are causally linked."
+  path_forward:
+    - "Build jurisdiction-by-jurisdiction diffusion table."
+    - "Trace grant decisions, ordinances, civil-commitment statutes, arrest data, displacement sweeps, and court challenges."
+  debunking_record:
+    claim_as_tested: null
+    strongest_supporting_case: []
+    expected_evidence_if_true: []
+    recovered_evidence: []
+    decisive_failure: []
+    why_claim_fails: null
+    residual_claims: []
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - donald-trump
+  corrections: []
+  last_reviewed: "2026-08-12"
