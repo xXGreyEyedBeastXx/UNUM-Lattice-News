@@ -1,0 +1,74 @@
+contribution_record:
+  id: udp-2026-abdul-el-sayed-electoral-intervention
+  title: "AIPAC-linked electoral intervention against Abdul El-Sayed in the 2026 Michigan Democratic Senate primary"
+  contributor_node: united-democracy-project
+  mechanism_node: null
+  contribution_type: funding
+  start_date: "2026-01-01"
+  end_date: "2026-08-04"
+  scope: >-
+    Large pro-Israel outside-spending intervention backing Haley Stevens in the Michigan
+    Democratic Senate primary in an effort to defeat Abdul El-Sayed, a critic of AIPAC and
+    advocate for ending U.S. military aid to Israel.
+  causal_fields:
+    - campaign finance
+    - AIPAC political influence
+    - Israel military aid
+    - Gaza war
+    - democratic power concentration
+  studies_or_spreads:
+    - AIPAC money and influence
+    - 2026 Democratic primary politics
+    - U.S. military aid to Israel
+  immediate_mechanism: >-
+    AP reported that AIPAC and affiliated groups spent close to $30 million backing Haley Stevens,
+    described as AIPAC's largest investment ever in a single race at that point, while seeking to
+    defeat El-Sayed.
+  direct_effects:
+    - "Massive outside spending supported Stevens and opposed the political opportunity of El-Sayed."
+    - "The spending materially reshaped the financial environment of the primary."
+  downstream_effects:
+    - "El-Sayed nevertheless won the primary, so candidate-removal harm is not counted as realized."
+  affected_participants_or_ecologies:
+    - Abdul El-Sayed
+    - Haley Stevens
+    - Michigan Democratic primary electorate
+    - constituencies opposing U.S. military aid to Israel
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harmful_intent:
+    state: CONFIRMED
+    class: I4
+    scope: >-
+      Confirmed material attempt to alter the electoral outcome against a candidate advocating an
+      end to U.S. military aid to Israel. Failure of the attempt does not erase the intent/capacity
+      record, but it prevents false realized candidate-removal scoring.
+  harm_score_status: intent_and_structural_calibration_pending
+  realized_harm_scope:
+    candidate_removal: 0
+    note: "El-Sayed won; do not convert attempted political intervention into a realized electoral defeat."
+  evidence:
+    - "AP, 2026-07-19, AIPAC has spent a record amount on Michigan's Senate primary: https://apnews.com/article/588bb869eb557643950bf68d6a0d7a10"
+    - "AP, 2026-08-05, El-Sayed primary victory: https://apnews.com/article/60c79349b60ffbf24a34d60b76e130ed"
+    - "FEC, United Democracy Project C00799031: https://www.fec.gov/data/committee/C00799031/"
+    - "FEC, Abdul El-Sayed candidate S6MI00418: https://www.fec.gov/data/candidate/S6MI00418/"
+  counterevidence:
+    - "The intervention failed to prevent El-Sayed from winning the Democratic nomination."
+    - "The aggregate AP figure includes AIPAC and affiliated groups; committee-by-committee reconstruction remains required before assigning exact UDP-only amounts."
+  unknowns:
+    - "Exact allocation of the close-to-$30m aggregate among UDP/AIPAC-linked and other committees."
+    - "Effect of the spending on final vote margin versus backlash against outside spending."
+    - "General-election AIPAC/affiliate intervention after El-Sayed's nomination."
+  related_relations:
+    - "AIPAC-linked groups SUPPORT Haley Stevens"
+    - "AIPAC-linked groups OPPOSE electoral success of Abdul El-Sayed"
+  related_stories:
+    - "2026 Michigan Democratic Senate primary"
+  related_nodes:
+    - aipac
+    - united-democracy-project
+    - abdul-el-sayed
+    - haley-stevens
+  corrections: []
+  last_reviewed: "2026-08-12"
