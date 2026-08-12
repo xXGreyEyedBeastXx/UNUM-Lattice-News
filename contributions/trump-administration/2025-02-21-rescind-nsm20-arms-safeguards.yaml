@@ -1,0 +1,94 @@
+contribution_record:
+  id: trump-administration-2025-02-21-rescind-nsm20-arms-safeguards
+  title: "Trump administration rescinds NSM-20 arms-transfer assurances and review framework"
+  contributor_node: trump-administration-second-term
+  mechanism_node: nsm-20-arms-transfer-assurances
+  contribution_type: regulatory_action
+  start_date: "2025-02-21"
+  end_date: null
+  scope: >-
+    Rescission of National Security Memorandum-20, which had required specified
+    written assurances regarding compliance with international law and humanitarian-assistance access for certain recipients of U.S. defense articles.
+  causal_fields:
+    - U.S. arms transfers
+    - Israel / Gaza
+    - civilian harm oversight
+    - human-rights safeguards
+  studies_or_spreads:
+    - Trump second-term harm audit
+    - Israel/Gaza U.S. arms support
+    - military-industrial complex
+    - arms-transfer accountability
+  immediate_mechanism: >-
+    Removal of NSM-20's additional assurance/reporting framework. GAO reported the
+    memorandum was rescinded by the Trump administration on February 21, 2025.
+  direct_effects:
+    - "NSM-20's specified assurance framework was terminated."
+    - "The related periodic review structure described by State officials no longer operated under NSM-20."
+  downstream_effects:
+    - "Specific arms transfers, recipient conduct, and civilian harms after rescission require transfer/event-level linkage."
+  affected_participants_or_ecologies:
+    - civilians exposed to U.S.-supplied weapons in active conflicts
+    - humanitarian-aid recipients
+    - congressional/public arms-transfer oversight
+  shared_harm_ids: []
+  responsibility_grade: R4
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: true
+    rating_scope: "Confirmed removal of an arms-transfer human-rights/humanitarian assurance layer; downstream deaths not yet counted."
+    time_window:
+      start: "2025-02-21"
+      end: null
+    harm_vector:
+      lethal_physical_harm: 0
+      confinement_coercion: 0
+      material_deprivation: 0
+      rights_agency_harm: 0
+      land_sovereignty_displacement: 0
+      ecological_future_harm: 0
+      democratic_epistemic_harm: 3
+      power_concentration: 3
+      catastrophic_risk_imposition: 0
+    propagation:
+      reach: 5
+      duration: 3
+      irreversibility: 2
+      vulnerability: 5
+    catastrophic_pathway_support: 0
+    score_summary:
+      realized_harm_score: 0
+      structural_harm_score: 42.50
+      catastrophic_risk_score: 0
+    score_justification:
+      - "The confirmed harm scored here is reduced oversight/assurance structure, not every later injury involving U.S. weapons."
+      - "The affected population can be broad because the policy governs arms transfers to conflict partners, but event-level harm requires individual linkage."
+  evidence:
+    - title: "Human Rights: State Can Improve Response to Allegations of Civilians Harmed by U.S. Arms Transfers"
+      institution: U.S. Government Accountability Office
+      report: GAO-25-107077
+      date: "2025-04-24"
+      url: "https://files.gao.gov/reports/GAO-25-107077/index.html"
+  counterevidence:
+    - "GAO reports State retained other arms-transfer and end-use processes; rescinding NSM-20 did not eliminate every legal or administrative safeguard."
+  unknowns:
+    - "Which post-rescission transfers would have been delayed, conditioned, or stopped under NSM-20."
+    - "Which later civilian-harm incidents have sufficient weapon/transfer linkage to this policy change."
+  path_forward:
+    - "Create transfer-by-transfer post-rescission comparison against the prior NSM-20 review population."
+    - "Trace State/DOD civilian-harm review mechanisms that remained after rescission."
+  debunking_record:
+    claim_as_tested: null
+    strongest_supporting_case: []
+    expected_evidence_if_true: []
+    recovered_evidence: []
+    decisive_failure: []
+    why_claim_fails: null
+    residual_claims: []
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - trump-administration-second-term
+  corrections: []
+  last_reviewed: "2026-08-12"
