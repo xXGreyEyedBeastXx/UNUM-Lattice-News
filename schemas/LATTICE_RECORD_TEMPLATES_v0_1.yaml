@@ -25,6 +25,7 @@ story_record:
   event_date: "YYYY-MM-DD"
   published: "YYYY-MM-DD"
   status: draft | reviewed | published | corrected | archived
+  investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
   claim_posture: observed | stated | supported_inference | potential | possible | probable | likely | alleged | disputed | unknown
   summary: ""
   what_changed: []
@@ -42,12 +43,14 @@ node_record:
   id: node_slug
   label: ""
   node_type: person | institution | technology | policy | movement | place | population | ecology | proposition | other
+  hierarchy_class: institution | leader | non_leader_actor | affected_population | not_scored
   status: active | historical | disputed_identity | archived
   summary: ""
   aliases: []
   hashtags: []
   historical_spine: null
   contribution_index: []
+  harm_rating_windows: []
   direct_relations: []
   timeline_stories: []
   current_disputes: []
@@ -60,6 +63,7 @@ relation_record:
   from: node_id
   relation_type: DEVELOPS | USES | ADOPTS | FUNDS | OWNS | CONTRACTS_WITH | REGULATES | WARNS_ABOUT | AFFECTS | OPPOSES | SUPPORTS | STATES | STUDIES | OTHER
   to: node_or_proposition_id
+  investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
   claim_posture: observed | stated | supported_inference | alleged | disputed | unknown
   scope: ""
   start_date: null
@@ -67,6 +71,7 @@ relation_record:
   evidence: []
   counterevidence: []
   confidence: low | moderate | high
+  debunking_record: null
   last_reviewed: "YYYY-MM-DD"
 
 contribution_record:
@@ -84,15 +89,69 @@ contribution_record:
   direct_effects: []
   downstream_effects: []
   affected_participants_or_ecologies: []
-  responsibility_grade: null
+  shared_harm_ids: []
+  responsibility_grade: R0 | R1 | R2 | R3 | R4 | R5
+  investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
   claim_posture: observed | stated | adjudicated | supported_inference | alleged | disputed | ambiguous | unknown
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: false
+    rating_scope: ""
+    time_window: null
+    harm_vector:
+      lethal_physical_harm: null
+      confinement_coercion: null
+      material_deprivation: null
+      rights_agency_harm: null
+      land_sovereignty_displacement: null
+      ecological_future_harm: null
+      democratic_epistemic_harm: null
+      power_concentration: null
+      catastrophic_risk_imposition: null
+    propagation:
+      reach: null
+      duration: null
+      irreversibility: null
+      vulnerability: null
+    score_summary:
+      realized_harm_score: null
+      structural_harm_score: null
+      catastrophic_risk_score: null
+    score_justification: []
   evidence: []
   counterevidence: []
   unknowns: []
+  path_forward: []
+  debunking_record:
+    claim_as_tested: null
+    strongest_supporting_case: []
+    expected_evidence_if_true: []
+    recovered_evidence: []
+    decisive_failure: []
+    why_claim_fails: null
+    residual_claims: []
   related_relations: []
   related_stories: []
   related_nodes: []
   corrections: []
+  last_reviewed: "YYYY-MM-DD"
+
+harm_hierarchy_record:
+  id: "YYYY-MM-DD-harm-hierarchy-slug"
+  title: ""
+  hierarchy_class: institution | leader | non_leader_actor
+  as_of: "YYYY-MM-DD"
+  time_window:
+    start: null
+    end: null
+  scope: ""
+  eligible_contribution_states: [CONFIRMED]
+  rating_tuple: [realized_harm_score, structural_harm_score, catastrophic_risk_score]
+  ranking_method: "See docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md"
+  entries: []
+  shared_harm_deduplication_notes: []
+  pending_and_path_forward_not_counted: []
+  debunked_claims_excluded: []
+  limitations: []
   last_reviewed: "YYYY-MM-DD"
 
 rendition_record:
@@ -122,6 +181,10 @@ nonclaims:
   - relation_is_not_automatic_culpability
   - contribution_is_not_automatic_culpability
   - benefit_is_not_causation
+  - beneficial_action_does_not_offset_unrelated_harm
   - capability_is_not_intent
   - threat_assessment_is_not_enemy_designation
+  - pending_is_not_debunked
+  - searched_not_found_is_not_debunked
+  - hierarchy_score_is_not_legal_guilt
   - generated_rendition_is_not_published_fact_without_review
