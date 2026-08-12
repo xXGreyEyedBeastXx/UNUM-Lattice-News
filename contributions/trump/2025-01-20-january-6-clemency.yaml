@@ -1,0 +1,96 @@
+contribution_record:
+  id: trump-2025-01-20-january-6-clemency
+  title: "Trump grants sweeping January 6 clemency and orders pending cases dismissed"
+  contributor_node: donald-trump
+  mechanism_node: january-6-clemency-2025
+  contribution_type: operational_action
+  start_date: "2025-01-20"
+  end_date: "2025-01-20"
+  scope: >-
+    Presidential clemency and dismissal directive covering federal offenses related
+    to the January 6, 2021 Capitol events.
+  causal_fields:
+    - January 6 accountability
+    - presidential clemency
+    - democratic institutions
+    - political violence normalization
+  studies_or_spreads:
+    - Trump second-term harm audit
+    - January 6 consequence study
+    - executive power and impunity
+  immediate_mechanism: >-
+    Trump commuted 14 named sentences, granted full unconditional pardons to all
+    other people convicted of January 6-related offenses, directed immediate release
+    of imprisoned beneficiaries, and ordered the Attorney General to pursue dismissal
+    with prejudice of pending January 6 indictments.
+  direct_effects:
+    - "Criminal sentences for named beneficiaries were commuted."
+    - "Other covered federal convictions received full unconditional pardons."
+    - "Pending covered federal prosecutions were ordered toward dismissal with prejudice."
+  downstream_effects:
+    - "Potential deterrence, normalization, extremist-network, and reoffending effects require separate case-level review."
+  affected_participants_or_ecologies:
+    - Capitol Police and other officers assaulted or affected on January 6
+    - congressional staff and officials
+    - election workers and democratic institutions
+    - public accountability system
+  shared_harm_ids: []
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: true
+    rating_scope: "The clemency/dismissal action itself; no unproven later violence is included."
+    time_window:
+      start: "2025-01-20"
+      end: "2025-01-20"
+    harm_vector:
+      lethal_physical_harm: 0
+      confinement_coercion: 0
+      material_deprivation: 0
+      rights_agency_harm: 2
+      land_sovereignty_displacement: 0
+      ecological_future_harm: 0
+      democratic_epistemic_harm: 4
+      power_concentration: 4
+      catastrophic_risk_imposition: 0
+    propagation:
+      reach: 5
+      duration: 3
+      irreversibility: 3
+      vulnerability: 2
+    catastrophic_pathway_support: 0
+    score_summary:
+      realized_harm_score: 14.14
+      structural_harm_score: 69.33
+      catastrophic_risk_score: 0
+    score_justification:
+      - "Realized score is limited to confirmed accountability/democratic effects of the clemency and dismissal action."
+      - "Structural score reflects broad presidential use of clemency to terminate or erase federal criminal accountability for a politically aligned event population."
+      - "No later violent act by a beneficiary is scored without a separate contribution and causal record."
+  evidence:
+    - title: "Granting Pardons And Commutation Of Sentences For Certain Offenses Relating To The Events At Or Near The United States Capitol On January 6, 2021"
+      institution: White House
+      date: "2025-01-20"
+      url: "https://www.whitehouse.gov/presidential-actions/2025/01/granting-pardons-and-commutation-of-sentences-for-certain-offenses-relating-to-the-events-at-or-near-the-united-states-capitol-on-january-6-2021/"
+  counterevidence: []
+  unknowns:
+    - "Downstream effect on future political violence and deterrence."
+    - "Post-clemency conduct and benefits of individual recipients."
+  path_forward:
+    - "Build recipient-by-recipient offense, conduct, clemency, and post-clemency ledger."
+    - "Separate violent/assaultive convictions from nonviolent January 6 offenses."
+  debunking_record:
+    claim_as_tested: null
+    strongest_supporting_case: []
+    expected_evidence_if_true: []
+    recovered_evidence: []
+    decisive_failure: []
+    why_claim_fails: null
+    residual_claims: []
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - donald-trump
+  corrections: []
+  last_reviewed: "2026-08-12"
