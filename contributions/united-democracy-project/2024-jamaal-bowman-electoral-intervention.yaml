@@ -1,0 +1,70 @@
+contribution_record:
+  id: udp-2024-jamaal-bowman-electoral-intervention
+  title: "United Democracy Project electoral intervention against Jamaal Bowman in the 2024 NY-16 Democratic primary"
+  contributor_node: united-democracy-project
+  mechanism_node: null
+  contribution_type: funding
+  start_date: "2024-05-01"
+  end_date: "2024-06-25"
+  scope: >-
+    Independent-expenditure intervention opposing incumbent Representative Jamaal Bowman
+    and supporting the electoral environment that produced George Latimer's primary victory.
+  causal_fields:
+    - campaign finance
+    - AIPAC political influence
+    - Israel/Palestine
+    - Gaza war
+    - democratic power concentration
+    - criticism of Israeli military policy
+  studies_or_spreads:
+    - AIPAC money and influence
+    - Gaza / U.S. political support
+    - congressional Israel-policy influence
+  immediate_mechanism: >-
+    Large independent expenditures and political messaging against Bowman during a Democratic
+    congressional primary. AIPAC publicly states that significant UDP engagement helped propel
+    Latimer to victory and characterizes Bowman as an anti-Israel extremist.
+  direct_effects:
+    - "Large outside spending entered the NY-16 Democratic primary against Bowman."
+    - "AIPAC publicly claimed the intervention as part of its successful effort to defeat Bowman."
+  downstream_effects:
+    - "Bowman lost the primary; the exact causal share attributable to UDP spending remains multi-factor and is not treated as sole causation."
+  affected_participants_or_ecologies:
+    - Jamaal Bowman
+    - NY-16 Democratic primary electorate
+    - constituents represented by the office
+    - political constituencies advocating Gaza ceasefire / reduced U.S. support for Israeli military policy
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harmful_intent:
+    state: CONFIRMED
+    class: I4
+    scope: >-
+      Confirmed intent and material preparation to defeat a named candidate whom AIPAC/UDP
+      publicly opposed on Israel-policy grounds. This is not a finding that UDP intended every
+      downstream civilian harm associated with U.S.-Israel policy.
+  harm_score_status: calibration_pending
+  evidence:
+    - "AIPAC, United Democracy Project | Taking The Fight To Anti-Israel Candidates: https://www.aipac.org/memos/policy-politics-congress-israel"
+    - "Reuters, 2024-05-17, New York race for US House becomes latest Israel lobby battleground: https://www.reuters.com/world/us/new-york-race-us-house-becomes-latest-israel-lobby-battleground-2024-05-17/"
+    - "FEC, Jamaal Bowman candidate record H0NY16143: https://www.fec.gov/data/candidate/H0NY16143/"
+    - "FEC, United Democracy Project C00799031: https://www.fec.gov/data/committee/C00799031/"
+  counterevidence:
+    - "Bowman faced other electoral liabilities and opposition; UDP spending cannot responsibly be represented as the sole cause of his defeat."
+  unknowns:
+    - "Exact final UDP independent-expenditure total from primary FEC transaction extraction."
+    - "Counterfactual election result absent UDP spending."
+    - "Downstream policy difference between Bowman and Latimer on specific arms/aid/accountability votes after the election."
+  related_relations:
+    - "UDP OPPOSES Jamaal Bowman"
+    - "AIPAC ADVOCATES_FOR strong U.S.-Israel relationship"
+  related_stories:
+    - "2024 NY-16 Democratic primary"
+  related_nodes:
+    - aipac
+    - united-democracy-project
+    - jamaal-bowman
+    - george-latimer
+  corrections: []
+  last_reviewed: "2026-08-12"
