@@ -1,0 +1,102 @@
+contribution_record:
+  id: biden-administration-2023-2025-israel-arms-support-under-human-rights-concerns
+  title: "Biden administration continues Israel arms support despite formal civilian-harm concerns"
+  contributor_node: biden-administration
+  mechanism_node: us-arms-transfers-israel-2023-2025
+  contribution_type: transfer
+  start_date: "2023-10-07"
+  end_date: "2025-01-20"
+  scope: >-
+    Continued U.S. security assistance and arms-transfer policy toward Israel during
+    the Gaza war while the administration's own review framework identified serious
+    concerns about possible misuse and civilian harm.
+  causal_fields:
+    - Israel / Gaza
+    - U.S. arms transfers
+    - civilian harm
+    - military aid
+    - human-rights oversight
+  studies_or_spreads:
+    - Biden administration harm audit
+    - Israel/Gaza U.S. arms support
+    - military-industrial complex
+    - cross-administration arms-transfer comparison
+  immediate_mechanism: >-
+    The Biden administration maintained arms/security assistance while adopting a
+    human-rights-focused Conventional Arms Transfer policy and NSM-20 assurance framework.
+    GAO reported that no transfers were stopped as a result of those updated policies.
+  direct_effects:
+    - "U.S. arms/security assistance to Israel continued during the war."
+    - "Human-rights-focused policy and NSM-20 review did not result in a pause of arms transfers."
+  downstream_effects:
+    - "GAO reports State assessed U.S.-origin defense articles were likely involved in numerous incidents raising concern and that it was reasonable to assess covered articles had been used by Israel inconsistently with human-rights obligations."
+    - "Specific incident-by-incident U.S.-weapon causation remained unresolved in the State assessment described by GAO."
+  affected_participants_or_ecologies:
+    - Palestinian civilians
+    - humanitarian-aid recipients
+    - civilians in other affected conflict areas
+    - U.S. public accountability over arms transfers
+  shared_harm_ids:
+    - shared-harm-gaza-us-arms-2023-2025
+  responsibility_grade: R4
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: true
+    rating_scope: "Confirmed continued material military support and military-capacity transfer; specific civilian deaths are not yet counted without event/weapon linkage."
+    time_window:
+      start: "2023-10-07"
+      end: "2025-01-20"
+    harm_vector:
+      lethal_physical_harm: 0
+      confinement_coercion: 0
+      material_deprivation: 0
+      rights_agency_harm: 0
+      land_sovereignty_displacement: 0
+      ecological_future_harm: 0
+      democratic_epistemic_harm: 1
+      power_concentration: 3
+      catastrophic_risk_imposition: 0
+    propagation:
+      reach: 5
+      duration: 2
+      irreversibility: 2
+      vulnerability: 5
+    catastrophic_pathway_support: 0
+    score_summary:
+      realized_harm_score: 0
+      structural_harm_score: 40.80
+      catastrophic_risk_score: 0
+    score_justification:
+      - "The scored confirmed contribution is material military-capacity support during an active war despite formal civilian-harm concerns."
+      - "The record does not yet assign every Gaza civilian death involving Israeli forces to U.S. weapons or to this administration's specific transfer decisions."
+  evidence:
+    - title: "Human Rights: State Can Improve Response to Allegations of Civilians Harmed by U.S. Arms Transfers"
+      institution: U.S. Government Accountability Office
+      report: GAO-25-107077
+      date: "2025-04-24"
+      url: "https://files.gao.gov/reports/GAO-25-107077/index.html"
+  counterevidence:
+    - "The Biden administration strengthened human-rights language and monitoring compared with the 2018 policy and created NSM-20 assurance requirements."
+    - "Those safeguards are relevant to scope and mechanism, but GAO states no arms transfers were stopped as a result and security assistance to Israel was not curtailed under the review described."
+  unknowns:
+    - "Which specific U.S.-origin weapons were used in which civilian-harm incidents."
+    - "Which transfers would have been stopped under a materially stricter enforcement threshold."
+    - "President-level versus State/DOD-level authority for each individual transfer."
+  path_forward:
+    - "Create transfer/package records and link them to delivery dates, weapon systems, Israeli units, and incident investigations."
+    - "Separate Biden's personal contribution from administration-level contribution using presidential directives, statements, and decision records."
+  debunking_record:
+    claim_as_tested: null
+    strongest_supporting_case: []
+    expected_evidence_if_true: []
+    recovered_evidence: []
+    decisive_failure: []
+    why_claim_fails: null
+    residual_claims: []
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - biden-administration
+  corrections: []
+  last_reviewed: "2026-08-12"
