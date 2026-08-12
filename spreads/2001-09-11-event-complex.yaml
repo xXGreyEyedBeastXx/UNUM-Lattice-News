@@ -1,0 +1,200 @@
+schema: unum-lattice-news/spread/v0.1
+
+spread:
+  id: spread-2001-09-11-event-complex
+  title: "September 11 event complex: past cone, responsibility, blowback, and consequence cone"
+  status: draft
+  as_of: "2026-08-12"
+  bounded_question: >-
+    What can be established about the September 11, 2001 attacks, the actors and
+    policies that materially shaped the pre-attack causal field, the attackers'
+    own agency and stated motivations, the foreseeability and warning environment,
+    and the downstream political, military, industrial, legal, and human consequences?
+  summary: >-
+    Draft lattice scaffold only. This record separates causal contribution,
+    perpetrator agency, legal or moral justification, civilian targetability,
+    institutional benefit, and downstream consequence. Candidate nodes and
+    contribution records require source-level review before promotion.
+
+  method_locks:
+    - "Causal contribution != legal or moral justification."
+    - "Historical grievance != permission to target civilians."
+    - "Perpetrator responsibility != erasure of upstream causal history."
+    - "Institutional benefit after an event != proof of causing or engineering the event."
+    - "Alliance != identity; lobbying != command; funding != total control."
+    - "Collective identity categories must not substitute for evidenced institutional or individual conduct."
+    - "Past cone and consequence cone must both remain visible."
+
+  anchors:
+    story_ids: []
+    source_ids: []
+    contribution_ids: []
+    intake_candidate_ids: []
+
+  causal_cones:
+    past_cone:
+      description: >-
+        Policies, conflicts, alliances, institutional actions, ideological developments,
+        prior attacks, warnings, and material conditions that may have affected the
+        probability, timing, target selection, recruitment, or strategic framing of the attacks.
+      candidate_policy_or_action_surfaces:
+        - "U.S. military presence and basing in Saudi Arabia / Arabian Peninsula"
+        - "U.S. policy toward Israel and Palestine before September 11, 2001"
+        - "U.S. military aid, arms transfer, and defense-industrial cooperation with Israel"
+        - "Iraq sanctions, enforcement, and civilian-impact controversy during the 1990s"
+        - "Afghanistan anti-Soviet war lineage and later militant-network development"
+        - "U.S. responses to the 1993 World Trade Center bombing"
+        - "U.S. responses to the 1998 embassy bombings"
+        - "U.S. responses to the 2000 USS Cole attack"
+        - "pre-September-11 intelligence, aviation, and threat-warning environment"
+        - "regional authoritarian alliances, security cooperation, and political grievance"
+        - "al-Qaeda ideological development, strategic doctrine, financing, recruitment, and operational planning"
+    event:
+      description: >-
+        September 11, 2001 attacks and immediate operational responsibility,
+        target selection, civilian harm, emergency response, and contemporaneous attribution.
+    consequence_cone:
+      description: >-
+        Policies and systems materially changed, expanded, justified, funded, or created after the attacks.
+      candidate_policy_or_action_surfaces:
+        - "Authorization for Use of Military Force and expanded war powers"
+        - "Afghanistan war and occupation"
+        - "Iraq invasion and war"
+        - "Patriot Act and domestic surveillance expansion"
+        - "detention, rendition, torture, military commissions, and Guantanamo system"
+        - "Department of Homeland Security and security-bureaucracy expansion"
+        - "defense and intelligence contracting expansion"
+        - "airport and transportation security restructuring"
+        - "counterterrorism financing and sanctions architecture"
+        - "anti-Muslim, anti-Arab, anti-Sikh, and related hate/discrimination consequences"
+        - "later militant recruitment and blowback fields"
+
+  lenses:
+    history_memory:
+      findings:
+        - "The study requires both a past cone and a consequence cone; an isolated timestamp is insufficient for causal reconstruction."
+      unknowns:
+        - "Which historical cutoff points materially change the causal explanation, and which merely change narrative emphasis?"
+    geopolitics_jurisdiction:
+      findings: []
+      unknowns:
+        - "Which U.S. regional policies were explicitly cited by al-Qaeda leadership or planners, and how closely did those statements correspond to operational decision-making?"
+        - "Which state and non-state actors possessed meaningful authority over the conditions cited by the attackers?"
+    conflict_security_carceral:
+      findings: []
+      unknowns:
+        - "Which security choices before 9/11 materially reduced or increased risk?"
+        - "Which post-9/11 coercive systems were genuinely necessary, which were ineffective, and which created durable downstream harms or new threat fields?"
+    economy_finance_ownership:
+      findings: []
+      unknowns:
+        - "Which defense, intelligence, security, energy, finance, and reconstruction industries materially gained revenue, authority, or dependency after 9/11?"
+        - "Which pre-9/11 military-aid and procurement relationships connected U.S. and Israeli defense-industrial systems, and what policy effects can actually be demonstrated?"
+    ideology_worldview:
+      findings: []
+      unknowns:
+        - "How should religious ideology, anti-imperial grievance, nationalism, anti-Zionism, antisemitism, strategic doctrine, and organizational recruitment be separated rather than collapsed?"
+    law_governance_accountability:
+      findings:
+        - "Causal contribution, perpetrator responsibility, legal justification, and civilian targetability require separate connectors."
+      unknowns:
+        - "Which pre-attack warnings created specific institutional duties, and where did documented failures occur?"
+        - "Which post-attack policies received later judicial, legislative, inspector-general, or international legal review?"
+    media_information_language:
+      findings: []
+      unknowns:
+        - "How did 'they hate us for our freedoms', 'blowback', 'terrorism', 'war', and 'security' framings alter public understanding of causation and policy options?"
+    future_generations_recoverability:
+      findings: []
+      unknowns:
+        - "Which post-9/11 institutions or authorities became path-dependent and difficult to reverse even after their original emergency rationale weakened?"
+
+  historical_actor_spines_required:
+    - candidate_id: cand-us-federal-government-history
+      proposed_label: "United States federal government — Middle East and national-security history relevant to September 11"
+      proposed_type: historical_actor_spine
+      reason: "Too many administrations, agencies, wars, aid programs, and authorities to compress into one study node."
+    - candidate_id: cand-al-qaeda-history
+      proposed_label: "al-Qaeda — organizational and strategic history relevant to September 11"
+      proposed_type: historical_actor_spine
+      reason: "Requires separation of ideology, leadership, financing, recruitment, prior attacks, operational planning, and later branches."
+    - candidate_id: cand-israeli-state-history
+      proposed_label: "Israeli state and security institutions — historical relations relevant to U.S. policy and regional conflict"
+      proposed_type: historical_actor_spine
+      reason: "Requires separation of governments, military/security institutions, policy eras, occupation/settlement policy, and U.S. relations."
+    - candidate_id: cand-us-defense-industry-history
+      proposed_label: "United States defense-industrial system — historical procurement, lobbying, contracting, and foreign-military-assistance lanes"
+      proposed_type: historical_actor_spine
+      reason: "Industry-level structure crosses Israel policy, Gulf policy, Afghanistan, Iraq, intelligence, and post-9/11 expansion."
+    - candidate_id: cand-israeli-defense-industry-history
+      proposed_label: "Israeli defense-industrial system — historical procurement, exports, joint development, and U.S. cooperation lanes"
+      proposed_type: historical_actor_spine
+      reason: "Needs its own industry and institution history rather than being collapsed into the Israeli state."
+    - candidate_id: cand-saudi-state-history
+      proposed_label: "Saudi state and U.S.-Saudi security relationship — historical spine relevant to September 11"
+      proposed_type: historical_actor_spine
+      reason: "Requires separation of basing, monarchy, U.S. security relations, private persons, charities, financing allegations, and later investigations."
+
+  contribution_exposure:
+    existing_contributions: []
+    candidate_contributions:
+      - candidate_id: cand-contrib-us-saudi-basing
+        proposed_title: "U.S. military presence and basing in Saudi Arabia / Arabian Peninsula before September 11"
+        contributor_node: cand-us-federal-government-history
+        contribution_type: deployment
+        causal_fields: ["September 11 past cone", "U.S.-Saudi relations", "regional military posture"]
+        review_status: candidate_unreviewed
+        note: "Establish dates, authorities, scale, stated purpose, attacker references, regional opposition, and counterevidence."
+      - candidate_id: cand-contrib-us-israel-policy
+        proposed_title: "U.S. political, diplomatic, military-aid, and arms-transfer policy toward Israel before September 11"
+        contributor_node: cand-us-federal-government-history
+        contribution_type: policy
+        causal_fields: ["September 11 past cone", "Israel/Palestine", "military aid", "regional grievance"]
+        review_status: candidate_unreviewed
+        note: "Split diplomatic support, military assistance, arms transfers, peace-process policy, and specific administrations rather than treating 'support for Israel' as one edge."
+      - candidate_id: cand-contrib-us-israel-defense-industrial-cooperation
+        proposed_title: "U.S.-Israeli defense-industrial cooperation before September 11"
+        contributor_node: cand-us-defense-industry-history
+        contribution_type: procurement
+        causal_fields: ["September 11 past cone", "military-industrial complex", "Israel", "arms and technology"]
+        review_status: candidate_unreviewed
+        note: "Trace appropriations, contractors, joint development, offsets, technology transfer, procurement, lobbying, and actual policy relevance separately."
+      - candidate_id: cand-contrib-iraq-sanctions
+        proposed_title: "U.S. Iraq sanctions and enforcement policy during the 1990s"
+        contributor_node: cand-us-federal-government-history
+        contribution_type: policy
+        causal_fields: ["September 11 past cone", "Iraq", "regional grievance", "civilian harm"]
+        review_status: candidate_unreviewed
+        note: "Preserve disputed casualty estimates, humanitarian exemptions, enforcement mechanisms, attacker references, and contemporary criticism."
+      - candidate_id: cand-contrib-pre911-warning-response
+        proposed_title: "U.S. institutional response to pre-September-11 al-Qaeda warnings and prior attacks"
+        contributor_node: cand-us-federal-government-history
+        contribution_type: regulatory_action
+        causal_fields: ["September 11 foreseeability", "intelligence", "aviation security", "counterterrorism"]
+        review_status: candidate_unreviewed
+        note: "Disaggregate CIA, FBI, FAA, White House, Defense Department, immigration, and local/international information pathways."
+      - candidate_id: cand-contrib-post911-defense-expansion
+        proposed_title: "Post-September-11 expansion of U.S. defense, intelligence, and security contracting"
+        contributor_node: cand-us-federal-government-history
+        contribution_type: procurement
+        causal_fields: ["September 11 consequence cone", "military-industrial complex", "surveillance", "war"]
+        review_status: candidate_unreviewed
+        note: "Benefit after event must not be treated as evidence of causing the event; trace appropriations, awards, beneficiaries, oversight, and downstream policy dependence."
+    promoted_contributions: []
+
+  candidate_cross_studies:
+    - "U.S.-Israel military aid and arms-transfer history"
+    - "U.S.-Israel defense-industrial cooperation"
+    - "military-industrial complex and war-policy feedback"
+    - "Iraq sanctions and war lineage"
+    - "Afghanistan war and militant-network lineage"
+    - "counterterrorism, surveillance, and civil liberties"
+    - "Saudi-U.S. security relationship"
+    - "Israel/Palestine causal history and U.S. policy"
+    - "blowback and threat-generation feedback loops"
+
+  reentry_questions:
+    - "Which candidate contribution becomes independently source-supported enough to promote first?"
+    - "Which big actor histories already exist elsewhere in the repo and should be linked rather than duplicated?"
+    - "Which contribution records are reusable across three or more studies and therefore deserve early promotion?"
+    - "Where does a claimed causal chain break when tested against chronology, actor intent, counterevidence, or alternative explanations?"
