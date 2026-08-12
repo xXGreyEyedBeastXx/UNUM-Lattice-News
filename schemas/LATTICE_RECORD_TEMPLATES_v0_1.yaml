@@ -15,6 +15,7 @@ source_record:
     stories: []
     nodes: []
     relations: []
+    contributions: []
   relevant_claims: []
   limitations: []
 
@@ -30,6 +31,7 @@ story_record:
   nodes: []
   hashtags: []
   proposed_relations: []
+  contributions: []
   affected_participants_or_ecologies: []
   counterevidence: []
   unknowns: []
@@ -44,6 +46,8 @@ node_record:
   summary: ""
   aliases: []
   hashtags: []
+  historical_spine: null
+  contribution_index: []
   direct_relations: []
   timeline_stories: []
   current_disputes: []
@@ -65,6 +69,32 @@ relation_record:
   confidence: low | moderate | high
   last_reviewed: "YYYY-MM-DD"
 
+contribution_record:
+  id: contribution_slug
+  title: ""
+  contributor_node: node_id
+  mechanism_node: null
+  contribution_type: policy | vote | funding | contract | procurement | deployment | transfer | lobbying | statement | operational_action | regulatory_action | omission_under_duty | correction | other
+  start_date: null
+  end_date: null
+  scope: ""
+  causal_fields: []
+  studies_or_spreads: []
+  immediate_mechanism: ""
+  direct_effects: []
+  downstream_effects: []
+  affected_participants_or_ecologies: []
+  responsibility_grade: null
+  claim_posture: observed | stated | adjudicated | supported_inference | alleged | disputed | ambiguous | unknown
+  evidence: []
+  counterevidence: []
+  unknowns: []
+  related_relations: []
+  related_stories: []
+  related_nodes: []
+  corrections: []
+  last_reviewed: "YYYY-MM-DD"
+
 rendition_record:
   id: "YYYY-MM-DD-rendition-slug"
   title: ""
@@ -72,6 +102,7 @@ rendition_record:
   query:
     nodes: []
     hashtags: []
+    contributions: []
     date_range: null
   established_facts: []
   stated_ambitions: []
@@ -89,6 +120,8 @@ rendition_record:
 nonclaims:
   - hashtag_cooccurrence_is_not_a_relation
   - relation_is_not_automatic_culpability
+  - contribution_is_not_automatic_culpability
+  - benefit_is_not_causation
   - capability_is_not_intent
   - threat_assessment_is_not_enemy_designation
   - generated_rendition_is_not_published_fact_without_review
