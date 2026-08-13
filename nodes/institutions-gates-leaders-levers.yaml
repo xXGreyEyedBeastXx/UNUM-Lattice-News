@@ -1,0 +1,129 @@
+schema: unum-lattice-news/node/v0.1
+id: institutions-gates-leaders-levers
+title: Institutions, gates, leaders, and levers
+family: analysis_framework
+subtype: institutional_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_classification:
+  family: causal_governance_field
+  subtype: institutional_accountability_operator
+  source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    A governance operator for naming the institutional bodies, decision gates, officeholders, and material or procedural levers through which harm is constrained, enabled, redirected, concealed, repeated, or corrected. It prevents institutional complexity and delegation from laundering responsibility.
+  posture: source_grounded_working_framework
+institution_fields:
+  - institution_name
+  - institution_class
+  - jurisdiction
+  - formal_mandate
+  - funding_sources
+  - appointment_or_selection_process
+  - reporting_chain
+  - oversight_body
+  - self_policing_risk
+  - affected_populations
+  - retained_obligations
+  - authority_to_change_rule
+  - authority_claimed_absent
+function_separation:
+  norm_setting:
+    meaning: defines and revises constraints, eligibility, formulas, standards, and rights
+  adjudication:
+    meaning: interprets and applies constraints to particular disputes or claims
+  enforcement:
+    meaning: implements decisions and stops or imposes conduct through administrative, fiscal, civil, or coercive means
+  independent_harm_audit:
+    meaning: tracks outcomes, diffuse harms, concentrated losses, hidden beneficiaries, failed safeguards, and correction history
+actor_roles:
+  leader:
+    definition: officeholder or executive with agenda-setting, appointment, veto, waiver, enforcement, budget, or rulemaking authority
+  gatekeeper:
+    definition: participant controlling whether money, eligibility, information, review, appeal, enforcement, or remedy can pass
+  intermediary:
+    definition: body routing resources or decisions between source and destination without necessarily controlling the originating authority
+  auditor:
+    definition: participant independently evaluating outcomes, compliance, concealed harm, diffuse harm, and accountability failure
+  beneficiary:
+    definition: participant receiving direct or indirect material, legal, political, or institutional advantage from the mechanism under study
+  loss_bearer:
+    definition: participant compelled to absorb revenue loss, fixed costs, service reduction, risk, delay, exclusion, rights loss, or diminished future capacity
+lever_types:
+  - tax_rate
+  - tax_credit
+  - appropriation
+  - funding_formula
+  - eligibility_rule
+  - waiver
+  - administrative_guidance
+  - licensing
+  - accreditation
+  - contract
+  - procurement
+  - appointment
+  - veto
+  - enforcement_priority
+  - audit_power
+  - subpoena_or_disclosure_power
+  - data_access
+  - appeal_or_review
+  - hold_harmless_floor
+  - reporting_requirement
+  - penalty
+  - subsidy
+  - debt_or_bond_authority
+  - federal_preemption
+  - state_opt_in_or_opt_out
+gate_types:
+  - legislative_passage
+  - executive_signature_or_veto
+  - agency_rulemaking
+  - budget_appropriation
+  - formula_allocation
+  - eligibility_determination
+  - vendor_or_provider_registration
+  - donor_or_intermediary_selection
+  - licensing_or_accreditation
+  - payment_authorization
+  - audit_or_disclosure
+  - complaint_or_appeal
+  - judicial_review
+  - enforcement_discretion
+  - waiver_or_exception
+  - reauthorization_or_sunset
+harm_and_constraint_questions:
+  - Which institution created or preserved the harmful constraint?
+  - Which gate decides whether the resource, right, punishment, or remedy passes?
+  - Which leader can alter, waive, preserve, intensify, or enforce the rule?
+  - Which lever changes the flow most directly?
+  - Who gains when the gate opens, closes, or redirects?
+  - Who absorbs enforced loss?
+  - What percentage of income, revenue, rights, or discretionary capacity does the burden represent?
+  - Which institution retains fixed or universal obligations after resources move?
+  - Who audits the outcome independently?
+  - Does the same body set, apply, enforce, and audit its own rule?
+  - Is an actor blaming a federal or external constraint they voted for, administer, preserve, or can modify?
+accountability_rules:
+  - No body may police itself and count that as independent review.
+  - Delegation does not eliminate responsibility.
+  - Jurisdiction is not agencylessness; federal, state, local, and private routing must retain named decision-makers.
+  - Institutional complexity may explain distributed causation but may not launder responsibility.
+  - Leaders are weighted by actual authority, knowledge, alternatives, causal reach, and persistence after notice.
+  - Gatekeepers are accountable for approvals and denials when foreseeable consequences fall within their authority.
+  - Levers must be named concretely rather than replaced by vague references to policy or government.
+  - A claimed external constraint must be traced to the bodies and officeholders controlling enactment, administration, waiver, enforcement, and amendment.
+relations:
+  - type: EXTENDS
+    target: harm-domination-protection-weighting
+    posture: source_grounded_working_framework
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: source_grounded_working_framework
+locks:
+  - Do not collapse institution, gate, leader, lever, intermediary, beneficiary, and loss-bearer into one actor node.
+  - Do not infer personal responsibility from title alone; trace authority and use of authority.
+  - Do not allow formal delegation to erase originating or supervisory responsibility.
+  - Do not call a process independent when the audited body controls appointment, budget, evidence access, findings, or remedy.
+  - Beneficiary means gain from the mechanism under study, not unrelated moral credit.
