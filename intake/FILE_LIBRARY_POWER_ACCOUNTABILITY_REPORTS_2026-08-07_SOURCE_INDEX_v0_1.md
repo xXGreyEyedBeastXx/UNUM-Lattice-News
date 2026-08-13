@@ -1,7 +1,8 @@
 # File Library Power / Accountability Reports — 2026-08-07 — Source Index v0.1
 
-**Status:** SOURCE_INDEX / EVIDENCE_REPORT_INTAKE / RAW_BODY_HOLD  
-**Migration date:** 2026-08-11
+**Status:** SOURCE_INDEX / EVIDENCE_REPORT_INTAKE / SEMANTIC_ARCHIVE_RELEASE  
+**Migration date:** 2026-08-11  
+**Release reconciliation:** 2026-08-13
 
 These three File Library reports belong natively to `UNUM-Lattice-News` because they are evidence-traced analyses of institutional power, finance, law, authoritarian dynamics, human rights, and accountability. This index preserves their distinct source identities without merging their conclusions.
 
@@ -74,26 +75,37 @@ competing_interpretations:
 corrections_or_later_developments:
 ```
 
-## Raw-body hold
+## Preservation / release reconciliation
 
-The current File Library retrieval interface exposes searchable/parsed content but does not provide a direct raw-file export into GitHub. The reports are long enough that the currently retrieved views cannot be certified as complete byte-faithful copies.
+The File Library retrieval interface does not provide a direct byte-faithful export of these long report bodies into GitHub. That limitation remains true.
+
+On 2026-08-13 the user explicitly authorized a different cleanup standard: extract and preserve the useful content/provenance in the repository/archive ecology so the live Project Files can be removed, without requiring a byte-identical mirror of every ChatGPT upload.
+
+Additional archive custody now exists at:
+
+`xXGreyEyedBeastXx/UNUM-Archives/Backups/90_SOURCES/New_Beginning_Project_Files_2026-08-13/POWER_ACCOUNTABILITY_REPORTS_2026-08-07_DIGEST.md`
+
+and the broader cleanup decision is recorded at:
+
+`xXGreyEyedBeastXx/UNUM-Archives/Backups/90_SOURCES/New_Beginning_Project_Files_2026-08-13/PROJECT_FILE_RELEASE_LEDGER.md`
 
 Therefore:
 
 ```text
-native routing              = VERIFIED
-source identity             = VERIFIED
-major content structure     = RECOVERABLE
-raw complete body in repo   = NOT VERIFIED
-local-library erase ready   = NO
+native routing                         = VERIFIED
+source identity                        = VERIFIED
+major content / evidence discipline    = ARCHIVED / RECOVERABLE
+raw byte-faithful body in repo         = NOT CLAIMED
+user-accepted semantic preservation    = YES
+live Project File release ready        = YES
 ```
 
-Keep the original File Library sources until their complete source bodies are captured or the user explicitly accepts another preservation form.
+This does not make the archived reports current news. Every substantive claim remains tied to the report cutoff and must be rechecked before reuse.
 
 ## Crossings
 
 - `UNUM-Governance` — authority, accountability, institutional constraint, claim/evidence rules;
 - `UNUM-Ecology` — migration/re-entry and cross-realm routing;
 - `UNUM-Human-Relations` — possible future motive/action/emotion study only after that realm is operationalized;
-- `UNUM-Archives` — future raw source custody;
+- `UNUM-Archives` — preservation and recovery custody;
 - `Unum_Heart_Core` — project integration/re-entry only, not news authority.
