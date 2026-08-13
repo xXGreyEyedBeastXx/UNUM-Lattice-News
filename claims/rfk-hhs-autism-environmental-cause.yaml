@@ -1,0 +1,132 @@
+schema: unum-lattice-news/claim-test/v0.1
+id: rfk-hhs-autism-environmental-cause
+legacy_source_branch: reconcile-node-schema-v0-1
+claim_text: "Autism prevalence is evidence of a modern epidemic caused substantially or generally by an environmental toxin or exposure that can be identified and prevented."
+normalized_claim: "A modern environmental exposure is a general causal explanation for autism and its increased identification prevalence."
+claimant_nodes:
+  - robert-f-kennedy-jr
+  - us-department-health-human-services
+target_nodes:
+  - autism
+  - environmental-pollution-exposure
+first_observed: "2025-04-16"
+last_observed: null
+rhetoric_context:
+  source_ids: []
+  exact_quote_or_paraphrase: "Legacy research records public statements framing autism as an epidemic, preventable disease, and evidence of an environmental exposure requiring identification."
+  audience:
+    - United States public
+    - federal health agencies
+    - autism researchers
+  policy_context:
+    - HHS autism root-cause research agenda
+    - prevention-oriented research priorities
+claim_type: causal
+testability: partially_testable
+scope:
+  population: "Autistic people and populations measured through autism surveillance or diagnosis"
+  geography: "United States, with broader causal implication"
+  time_window: "Modern prevalence increase compared with earlier historical periods"
+  conditions: "Environmental exposures proposed as general or major cause"
+  exclusions:
+    - bounded claims about a specific exposure affecting a defined subgroup
+    - claims about pollution causing other neurodevelopmental harms
+burden_of_proof:
+  required_evidence:
+    - demonstrate a valid increase in biological incidence rather than identification prevalence alone
+    - identify the exposure or exposure class with reproducible dose-response evidence
+    - establish temporal order and plausible mechanism
+    - control for diagnostic expansion, recognition, surveillance, service access, and ascertainment differences
+    - explain historical autism evidence and substantial genetic contribution
+    - reproduce findings across independent populations
+  disconfirming_evidence:
+    - historical evidence of autism-like neurodevelopmental patterns before proposed modern exposures
+    - prevalence changes substantially explained by diagnostic and ascertainment changes
+    - failure to identify a general exposure with reproducible causal effect
+    - heterogeneity inconsistent with one general causal pathway
+  alternative_explanations:
+    - expanded diagnostic criteria
+    - greater recognition and screening
+    - service-linked identification
+    - changing surveillance methods
+    - multiple genetic and non-genetic pathways
+    - gene-environment interaction affecting only subsets
+  causal_identification_requirements:
+    - defined exposure
+    - defined outcome
+    - valid comparison population
+    - confounder control
+    - dose-response or natural-experiment evidence where possible
+    - replication
+    - distinction between autism itself and co-occurring impairment
+evidence:
+  supports:
+    - ref: environmental-pollution-exposure
+      posture: legacy_context_only
+      note: Environmental exposures can affect neurodevelopment, but the source records supporting the inherited EPA/NIEHS relations have not yet been recovered.
+  contradicts:
+    - ref: source-cdc-autism-data-2025
+      note: Identified prevalence within a surveillance network does not itself establish biological incidence or cause.
+    - ref: source-reuters-2026-08-06-autism-vaccine-order
+      note: Recovered reporting describes continued policy interest despite prior large studies not establishing a credible vaccine-autism causal link; policy interest is not causal evidence.
+  contextualizes:
+    - ref: source-nimh-autism-overview
+      note: Autism is described as a heterogeneous neurological/developmental condition rather than a single acquired injury category.
+  insufficient_or_ambiguous:
+    - ref: source-hhs-autism-priorities
+      state: SOURCE_RECORD_NOT_RECOVERED
+    - ref: source-hhs-autism-actions-2025
+      state: SOURCE_RECORD_NOT_RECOVERED
+    - ref: source-politifact-rfk-autism-2025
+      state: SOURCE_RECORD_NOT_RECOVERED
+reasoning_checks:
+  correlation_vs_causation: failed
+  prevalence_vs_incidence: failed
+  classification_shift: unresolved
+  base_rate_and_denominator: unresolved
+  temporal_order: unresolved
+  confounding: unresolved
+  selection_bias: unresolved
+  ecological_fallacy: unresolved
+  scope_overreach: failed
+  alternative_explanations_addressed: failed
+current_assessment:
+  status: unsupported
+  confidence: high
+  provenance_status: PARTIAL_SOURCE_RELINK
+  summary: >-
+    The recovered broad causal claim is not established by the evidence currently restored to the reconciliation branch. Environmental exposures may affect neurodevelopment or defined subgroups, but rising identified prevalence does not demonstrate that autism generally is a modern toxin-caused epidemic. The inherited assessment should be revisited when the missing HHS/EPA/NIEHS source records are recovered.
+  what_is_established:
+    - the recovered archive contains public-policy activity advancing or investigating broad environmental and vaccine-related autism causal narratives
+    - some environmental exposures can harm neurodevelopment, although the specific inherited EPA/NIEHS source records still need recovery
+    - autism is heterogeneous
+    - measured identified prevalence is affected by surveillance and identification conditions
+  what_is_not_established:
+    - a single or general modern toxin causing autism
+    - a matching rise in biological incidence equivalent to identified prevalence
+    - that preventing one exposure would eliminate autism generally
+    - that government investigation or rhetoric increases causal plausibility
+  unknowns:
+    - whether defined exposures affect defined autism-related outcomes in particular subgroups
+    - how gene-environment interactions operate across heterogeneous presentations
+    - how federal studies will test disconfirming evidence and prevent predetermined conclusions
+  evidence_that_would_change_assessment:
+    - replicated causal evidence for a defined exposure and defined subgroup
+    - credible incidence reconstruction controlling for ascertainment changes
+    - independent studies with preregistered methods and open data
+    - convergent mechanistic, epidemiological, and dose-response evidence
+downstream_permissions:
+  may_generate_factual_relation: false
+  may_generate_rhetoric_relation: true
+  may_appear_in_public_rendition: true
+  human_review_required: true
+review:
+  reviewers: []
+  last_reviewed: null
+  conflicts: []
+  corrections: []
+locks:
+  - Government interest, investigation, funding, or repetition does not increase a causal claim's evidentiary support.
+  - A broad unsupported causal claim does not invalidate narrower exposure-specific research.
+  - Pollution harm and autism causation are separate propositions and must not be collapsed.
+  - Missing provenance must remain visible until source records are recovered or transparently replaced.
