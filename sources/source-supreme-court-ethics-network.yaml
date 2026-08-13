@@ -1,0 +1,45 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-supreme-court-ethics-network
+title: Supreme Court ethics and conservative legal-network source bundle
+accessed: 2026-08-09
+legacy_source_branch: reconcile-node-schema-v0-1
+sources:
+  - id: propublica-supreme-connections
+    publisher: ProPublica
+    url: https://projects.propublica.org/supreme-connections/
+    supports:
+      - searchable financial-disclosure relationships for all current justices
+      - Federalist Society links disclosed by five current justices
+  - id: propublica-leonard-leo-network
+    publisher: ProPublica
+    url: https://www.propublica.org/article/we-dont-talk-about-leonard-leo-supreme-court-supermajority
+    supports:
+      - Leonard Leo's judicial-selection and donor-network role
+      - donor-event and travel connections involving justices
+      - Marble Freedom Trust funding
+  - id: propublica-thomas-crow-travel
+    publisher: ProPublica
+    url: https://www.propublica.org/article/clarence-thomas-scotus-undisclosed-luxury-travel-gifts-crow
+    supports:
+      - extensive previously undisclosed luxury travel provided to Clarence Thomas by Harlan Crow
+  - id: propublica-thomas-crow-property
+    publisher: ProPublica
+    url: https://www.propublica.org/article/clarence-thomas-harlan-crow-real-estate-scotus
+    supports:
+      - undisclosed real-estate transaction between Crow and the Thomas family
+  - id: propublica-thomas-crow-tuition
+    publisher: ProPublica
+    url: https://www.propublica.org/article/clarence-thomas-harlan-crow-private-school-tuition-scotus
+    supports:
+      - Crow-funded tuition for Thomas's grandnephew
+  - id: propublica-alito-singer-trip
+    publisher: ProPublica
+    url: https://www.propublica.org/article/samuel-alito-luxury-fishing-trip-paul-singer-scotus-supreme-court
+    supports:
+      - undisclosed Alaska travel involving Alito, Paul Singer, and Leonard Leo
+limitations:
+  - Financial or social connection does not by itself establish improper influence on a judicial decision.
+  - Disclosure records may be incomplete, amended, delayed, or interpreted differently by the justice and ethics experts.
+  - Individual cases require separate conflict, recusal, litigant-interest, timing, and decision analysis.
+locks:
+  - Absence of direct quid pro quo evidence does not make access, gifts, disclosure failures, recusal questions, donor relations, or selection networks irrelevant to accountability analysis.
