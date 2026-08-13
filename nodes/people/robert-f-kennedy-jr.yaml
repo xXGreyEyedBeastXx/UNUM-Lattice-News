@@ -1,0 +1,68 @@
+schema: unum-lattice-news/node/v0.1
+id: robert-f-kennedy-jr
+title: Robert F. Kennedy Jr.
+family: actor
+subtype: person
+hierarchy_class: leader
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    U.S. health-policy authority node whose autism rhetoric and actions in the recovered 2025-2026 research materially shaped federal causal framing, research priorities, data use, treatment priorities, and public understanding. This harm-audit node focuses on unsupported causal claims, research-direction pressure, privacy/data risks, pathologizing framing, and downstream public-health consequences rather than a net biography.
+  posture: observed_with_legacy_source_gaps
+aliases: [RFK Jr., Robert F. Kennedy Jr.]
+hashtags: [RFKJr, HHS, AutismPolicy, AutismRhetoric, MAHA]
+current_evidence:
+  observed:
+    - The recovered node records public framing of autism as an epidemic, preventable disease, and environmentally caused.
+    - The recovered node records federal initiatives focused on autism etiology, prevention, treatment pathways, and large-scale data analysis.
+  stated:
+    - Recovered HHS/RFK rhetoric emphasizes root causes, prevention, treatment, care, gold-standard science, and answers for families.
+  supported_inferences:
+    - The recovered agenda gives prevention and causal discovery greater emphasis than accommodation, rights, services, or autistic self-determination.
+  disputed:
+    - Claims that rising identified prevalence proves an epidemic caused generally by an environmental toxin or vaccine-related mechanism.
+  unknowns:
+    - Final research priorities, grant allocations, privacy safeguards, participation structure, and whether research design will genuinely discriminate among competing hypotheses.
+  claim_specific_counterevidence:
+    - Identified prevalence is not biological incidence by itself.
+    - The recovered CDC/NIMH records do not support a singular causal inference from prevalence change.
+    - The recovered Reuters policy-watch source says prior large studies did not establish a credible vaccine-autism causal link.
+provenance_missingness:
+  - {id: source-hhs-autism-priorities, state: SOURCE_RECORD_NOT_RECOVERED}
+  - {id: source-hhs-autism-actions-2025, state: SOURCE_RECORD_NOT_RECOVERED}
+  - {id: source-politifact-rfk-autism-2025, state: SOURCE_RECORD_NOT_RECOVERED}
+timeline:
+  - 2025-04-16: Legacy node records public epidemic/preventable/environmental-cause framing.
+  - 2025-05-07: Legacy node records NIH-CMS autism data partnership announcement.
+  - 2025-09-22: Legacy node records HHS autism initiatives involving treatment, acetaminophen guidance, and NIH data-science awards.
+  - 2026-01-28: Legacy node records appointment of a new Interagency Autism Coordinating Committee.
+  - 2026-08-06: Reuters policy-watch source records consideration of further autism-vaccine executive action.
+relations:
+  - type: LEADS
+    target: us-department-health-human-services
+    posture: legacy_observed_pending_source_relink
+    evidence: [source-hhs-autism-priorities, source-hhs-autism-actions-2025]
+  - type: FRAMES
+    target: autism
+    posture: legacy_observed_pending_source_relink
+    evidence: [source-politifact-rfk-autism-2025]
+    scope: epidemic, preventable disease, presumed environmental cause
+  - type: SUBJECT_OF
+    target: rfk-hhs-autism-environmental-cause
+    posture: observed
+  - type: SUBJECT_OF
+    target: story-2026-08-06-autism-vaccine-policy-watch
+    posture: reported
+research_queue:
+  - recover the missing HHS and statement source records or replace them transparently with identified primary sources
+  - trace research funding, study design, preregistration, endpoints, data access, privacy, and participant governance
+  - trace whether causal studies test disconfirming hypotheses or embed a preferred conclusion
+  - trace downstream effects on autistic people, vaccination policy, outbreak risk, public-health resources, and research opportunity cost
+locks:
+  - Critique documented statements and actions; do not infer private motive.
+  - Government investigation of a proposition does not increase that proposition's evidentiary support.
+  - Research spending or stated care goals do not offset harms caused by unsupported framing, privacy failures, discriminatory goals, or bad causal policy.
+  - Missing inherited source records prevent automatic promotion of legacy claims; recover the evidence chain.
