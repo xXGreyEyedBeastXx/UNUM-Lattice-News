@@ -1,0 +1,54 @@
+schema: unum-lattice-news/node/v0.1
+id: leonard-leo
+title: Leonard Leo
+family: actor
+subtype: person
+hierarchy_class: non_leader_actor
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    Conservative legal-network strategist associated with the Federalist Society, judicial-selection advocacy, donor coordination, and organizations that helped build the current conservative Supreme Court majority. Harm-audit attention belongs on documented selection, donor, access, travel, funding, and advocacy mechanisms rather than ideological identity by itself.
+  posture: observed
+aliases: [Leonard A. Leo]
+hashtags: [LeonardLeo, FederalistSociety, JudicialSelection, DarkMoney, SupremeCourt]
+current_evidence:
+  observed:
+    - Played a major role in conservative judicial-selection and confirmation networks.
+    - Helped arrange private events or travel involving Justices Samuel Alito and Clarence Thomas and conservative donors according to the recovered source bundle.
+    - Became trustee of the Marble Freedom Trust after a $1.6 billion transfer from Barre Seid according to the recovered source bundle.
+  disputed:
+    - Whether particular network relationships improperly affected judicial decisions.
+relations:
+  - type: ASSOCIATED_WITH
+    target: federalist-society
+    posture: observed
+    evidence: [source-supreme-court-ethics-network]
+  - type: CONNECTED
+    target: samuel-alito
+    posture: observed
+    evidence: [source-supreme-court-ethics-network]
+    scope: confirmation advocacy and donor-linked travel organization
+  - type: CONNECTED
+    target: clarence-thomas
+    posture: observed
+    evidence: [source-supreme-court-ethics-network]
+    scope: donor events and conservative legal network
+  - type: TESTED_BY
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: TESTED_BY
+    target: institutions-gates-leaders-levers
+    posture: working_framework
+harm_audit_questions:
+  - Which organizations, donors, nomination pipelines, media campaigns, and confirmation operations did Leo materially coordinate or route?
+  - Which justices or judicial candidates received access, advocacy, travel, event, or network support through Leo-linked institutions?
+  - Which funding flows created durable legal advocacy, selection, litigation, or influence capacity?
+  - Which Court decisions or recusals involved actors with documented network relationships, and what can actually be established about influence?
+locks:
+  - Network influence is not automatic proof of control over a justice or a particular ruling.
+  - Financial, travel, appointment, advocacy, donor, and ideological relations must be traced separately.
+  - Ideological conservatism is not itself a harm edge; responsibility attaches to evidenced mechanisms and consequences.
+  - Unrelated charitable, civic, or professional conduct does not offset a documented harmful or accountability-relevant mechanism.
