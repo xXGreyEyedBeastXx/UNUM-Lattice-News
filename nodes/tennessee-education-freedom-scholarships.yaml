@@ -1,0 +1,52 @@
+schema: unum-lattice-news/node/v0.1
+id: tennessee-education-freedom-scholarships
+title: Tennessee Education Freedom Scholarships
+family: instrument
+subtype: program
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    Tennessee state-funded scholarships that allow eligible K-12 students to use public funds for education expenses while enrolled in registered non-public schools, prioritizing tuition and fees. In the harm-audit lane, the program is traced as a routing instrument: who controls the funds, who receives the gain, which public obligations remain, and which districts or populations absorb resulting losses or reduced future capacity.
+  posture: observed
+established_facts:
+  - The program was enacted in February 2025.
+  - The 2025-26 scholarship amount was $7,295.
+  - The 2026-27 scholarship amount is $7,530.
+  - The statutory maximum was increased to 35,000 scholarships for 2026-27.
+  - The 2026 fiscal legislation estimated $150.6 million in General Fund expenditures for FY2026-27 under the enacted expansion.
+  - Fiscal analysis warns that beginning in FY2027-28 local education agencies may forgo future TISA funding growth when students transfer from public to private schools, despite prior-year hold-harmless protections.
+relations:
+  - type: ADMINISTERED_BY
+    target: tennessee-department-of-education
+    posture: observed
+  - type: FUNDED_BY
+    target: tennessee-general-fund
+    posture: observed
+  - type: PAYS_TOWARD
+    target: registered-tennessee-private-schools
+    posture: observed
+  - type: MAY_REDUCE_FUTURE_FUNDING_GROWTH_FOR
+    target: tennessee-public-school-districts
+    posture: supported_assessment
+  - type: PART_OF
+    target: tennessee-education-funding-system
+    posture: observed
+  - type: TESTED_BY
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+accountability_questions:
+  - Which participating private schools receive aggregate public payments?
+  - What admissions, disability-service, testing, educator-licensing, civil-rights, transparency, and financial-audit obligations attach to receipt?
+  - How many recipients were already privately enrolled before receiving a subsidy?
+  - What administrative vendors manage applications, payments, and data?
+  - How are rejected applicants, lawful-presence checks, and priority categories distributed?
+  - Which districts lose future revenue growth or retain fixed obligations, by amount and burden ratio?
+  - Which officeholders, committees, agencies, donors, and vendors shaped enactment, expansion, routing, and oversight?
+locks:
+  - Public subsidy does not imply public-school-equivalent access or obligations.
+  - A family receiving a scholarship is not itself evidence of wrongdoing.
+  - Measure direct state expenditure, beneficiary gain, public-district revenue effects, fixed costs, and affected populations separately.
+  - Program popularity or claimed educational benefit does not offset documented downstream loss in the harm ledger.
