@@ -1,0 +1,399 @@
+schema: unum-lattice-news/actor-network-seed/v0.1
+status: draft
+as_of: "2026-08-10"
+authority: conversation-derived scaffold; not a verdict surface
+purpose: >-
+  Seed the cross-event actor/source lattice before further fact-finding. Nodes are
+  placed first so later research can fill relationships, harms, incentives,
+  information flows, blind spots, and contradictory evidence without repeatedly
+  rebuilding the network from institutional shorthand.
+
+rules:
+  - "No authority gets epistemic immunity. Institutional findings are evidence nodes, not terminal verdicts."
+  - "Direct causal action outranks inherited moral classification."
+  - "Association is not control; proximity is not culpability; accusation is not proof."
+  - "Every consequential connector should distinguish documented relationship, plausible influence, allegation, rumor, and unknown."
+  - "A source can be factually accurate at article level while still normalizing a harmful constraint structure."
+  - "Do not infer individual culpability from population membership, citizenship, ideology, or institutional affiliation."
+
+status_vocabulary:
+  documented: "Supported by direct records or multiple strong sources."
+  supported: "Substantial evidence, but causal scope still bounded."
+  candidate: "Plausible connector requiring source-level trace."
+  alleged: "Sourced allegation not independently established."
+  rumor: "Claim circulating without sufficient affirmative evidence."
+  unknown: "Insufficient evidence or identity unresolved."
+
+nodes:
+  media_and_persuasion:
+    - id: source-secular-talk
+      label: "Secular Talk / Kyle Kulinski"
+      type: "commentator_media"
+      research_questions:
+        - "Where does commentator compression or certainty outrun evidence?"
+        - "Where does anti-establishment framing reveal omissions in larger outlets?"
+    - id: source-ms-now
+      label: "MS NOW"
+      type: "corporate_political_media"
+      research_questions:
+        - "Which establishment or Democratic-coalition assumptions become background reality?"
+        - "What harms or power relations are normalized through selection rather than false statements?"
+    - id: source-fox-news
+      label: "Fox News"
+      type: "corporate_partisan_media"
+      research_questions:
+        - "How do audience incentives and partisan power affect factual discipline and corrections?"
+    - id: source-bbc
+      label: "BBC"
+      type: "public_service_media"
+      research_questions:
+        - "When does institutional impartiality become false balance, establishment-source dependence, or asymmetric humanization?"
+    - id: source-breakthrough-news
+      label: "BreakThrough News"
+      type: "movement_media"
+      research_questions:
+        - "Does anti-imperialist framing underweight abuses by actors opposed to U.S. power?"
+        - "Where does movement alignment expose constraints mainstream outlets miss?"
+    - id: source-keith-edwards
+      label: "Keith Edwards"
+      type: "political_creator_strategist"
+      research_questions:
+        - "How do campaign-trained persuasion techniques shape story selection and framing?"
+        - "Where does former-insider knowledge produce useful divergence from Democratic institutions?"
+    - id: source-valhalla-vft
+      label: "Valhalla VFT"
+      type: "veteran_creator_media"
+      research_questions:
+        - "How do military/veteran experience and America-First cultural priors shape antiwar or interventionist conclusions?"
+        - "When does this node independently converge with left antiwar reporting?"
+    - id: source-raw-america
+      label: "Raw America"
+      type: "journalism_advocacy_hybrid"
+      research_questions:
+        - "What changes when Raw Story journalism crosses into Really American partnership media?"
+    - id: source-really-american
+      label: "Really American"
+      type: "political_advocacy_super_pac_media"
+      research_questions:
+        - "Where is reporting separated from persuasion and mobilization?"
+        - "Does anti-MAGA advocacy reduce scrutiny of aligned Democratic actors?"
+    - id: source-guardian
+      label: "The Guardian"
+      type: "trust_owned_liberal_media"
+      research_questions:
+        - "What does the outlet normalize while presenting itself as public-interest or guardian journalism?"
+        - "Which powers does it recognize easily, and which liberal/institutional powers become difficult to see?"
+        - "Which editorials materially disturb the harm-and-constraint matrix through normalization rather than simple factual error?"
+      user_observation:
+        status: "study_prompt"
+        note: "Repeated concern about editorials normalizing harmful structures; requires article-level retrieval rather than generic outlet reputation."
+
+  political_parties_and_electoral:
+    - id: org-democratic-party
+      label: "Democratic Party / Democratic political ecosystem"
+      type: "political_institution_ecology"
+      research_questions:
+        - "Does coalition management absorb reform energy while preserving conditions that regenerate authoritarian reaction?"
+        - "Which individual actors carry donor, security, labor, progressive, and corporate power through the party?"
+    - id: actor-jill-stein
+      label: "Jill Stein"
+      type: "political_actor"
+      affiliation: "Green Party"
+      current_posture: "actor node; not spoiler shorthand"
+      research_questions:
+        - "How effective is presidential-first Green strategy at building durable alternative power?"
+        - "Does anti-U.S./anti-NATO analysis apply consistent scrutiny to Russian power and Ukrainian self-determination?"
+        - "Which corruption/foreign-control claims are evidenced versus partisan projection?"
+
+  israel_palestine:
+    - id: actor-benjamin-netanyahu
+      label: "Benjamin Netanyahu"
+      type: "political_actor"
+      causal_harm_status: "user-designated strong-harm actor; independent evidence trace still required per action"
+    - id: actor-itamar-ben-gvir
+      label: "Itamar Ben-Gvir"
+      type: "political_actor"
+      causal_harm_status: "user-designated strong-harm actor; independent evidence trace still required per action"
+    - id: actor-bezalel-smotrich
+      label: "Bezalel Smotrich"
+      type: "political_actor"
+      causal_harm_status: "user-designated strong-harm actor; independent evidence trace still required per action"
+    - id: actor-naftali-bennett
+      label: "Naftali Bennett"
+      type: "political_actor_mediator"
+      research_questions:
+        - "What exactly passed through Bennett's Putin-Zelensky mediation channel in early 2022?"
+    - id: org-israeli-state-security
+      label: "Israeli state and security apparatus"
+      type: "state_security_ecology"
+      note: "Must be decomposed into individual political, military, intelligence, legal, media, and settlement actors before causal attribution."
+    - id: org-hamas
+      label: "Hamas governance, political, armed, and security ecology"
+      type: "political_armed_governance_ecology"
+      note: "Do not collapse governing, military, security, political, and coercive functions."
+    - id: pop-gaza-civilians
+      label: "Gaza civilian population"
+      type: "affected_population"
+    - id: pop-israeli-civilians
+      label: "Israeli civilian population"
+      type: "affected_population"
+    - id: network-gaza-dissent
+      label: "Gaza protest, dissent, and opposition networks"
+      type: "political_social_ecology"
+    - id: network-collaboration-informants
+      label: "Collaboration, informant, and intelligence-penetration pathways"
+      type: "security_relation_ecology"
+    - id: event-nova-festival
+      label: "Nova music festival and attendee population"
+      type: "event_site_population"
+      open_question: "Political composition and target-selection motive remain unverified beyond individual evidence."
+
+  russia_ukraine:
+    - id: actor-vladimir-putin
+      label: "Vladimir Putin"
+      type: "political_actor"
+      causal_harm_status: "unclassified pending direct causal trace"
+      research_questions:
+        - "Which harms can be tied to explicit orders, authorizations, knowing enablement, or command responsibility?"
+        - "Which allegations rely mainly on reputation, institutional attribution, or rumor?"
+        - "Who shaped the threat assessments reaching Putin before February 2022?"
+    - id: actor-volodymyr-zelensky
+      label: "Volodymyr Zelensky"
+      type: "political_actor"
+      causal_harm_status: "unclassified pending direct causal trace"
+      research_questions:
+        - "How did Zelensky's network change from 2019 peace-candidate ecology to the prewar 2021-22 security posture?"
+        - "Who shaped the threat assessments reaching Zelensky?"
+    - id: actor-andriy-yermak
+      label: "Andriy Yermak"
+      type: "gatekeeper_diplomatic_actor"
+      research_questions:
+        - "How much decision access and information filtering did Yermak exercise around Zelensky?"
+    - id: actor-ihor-kolomoisky
+      label: "Ihor Kolomoisky"
+      type: "oligarch_media_business_actor"
+    - id: actor-andriy-bohdan
+      label: "Andriy Bohdan"
+      type: "political_legal_actor"
+    - id: actor-maksym-donets
+      label: "Maksym Donets"
+      type: "security_actor"
+    - id: actor-viktor-medvedchuk
+      label: "Viktor Medvedchuk"
+      type: "cross_border_political_actor"
+      research_questions:
+        - "What political/media/intelligence roles actually connected Medvedchuk to Putin and Ukrainian domestic politics?"
+    - id: actor-nikolai-patrushev
+      label: "Nikolai Patrushev"
+      type: "security_policy_actor"
+    - id: actor-sergei-shoigu
+      label: "Sergei Shoigu"
+      type: "military_political_actor"
+    - id: actor-valery-gerasimov
+      label: "Valery Gerasimov"
+      type: "military_command_actor"
+    - id: actor-valerii-zaluzhny
+      label: "Valerii Zaluzhny"
+      type: "ukrainian_military_actor"
+
+  united_states:
+    - id: actor-donald-trump
+      label: "Donald Trump"
+      type: "political_actor"
+      causal_harm_status: "user-designated strong-harm actor; action-level ledger required"
+    - id: actor-pete-hegseth
+      label: "Pete Hegseth"
+      type: "political_security_actor"
+      causal_harm_status: "user-designated strong-harm actor; action-level ledger required"
+    - id: actor-stephen-miller
+      label: "Stephen Miller"
+      type: "political_policy_actor"
+      causal_harm_status: "user-designated strong-harm actor; action-level ledger required"
+    - id: actor-pam-bondi
+      label: "Pam Bondi"
+      type: "legal_political_actor"
+      causal_harm_status: "user-designated strong-harm actor; action-level ledger required"
+    - id: actor-dan-bongino-candidate
+      label: "Dan Bongino?"
+      type: "identity_unresolved_actor"
+      status: "candidate_identity"
+      note: "Possible resolution of user term 'Bondino'; do not lock without confirmation."
+    - id: actor-jeffrey-epstein
+      label: "Jeffrey Epstein"
+      type: "private_actor"
+      causal_harm_status: "strong direct-harm record; network tracing required"
+    - id: actor-joe-biden
+      label: "Joe Biden"
+      type: "political_actor"
+    - id: actor-jake-sullivan
+      label: "Jake Sullivan"
+      type: "national_security_actor"
+    - id: actor-antony-blinken
+      label: "Antony Blinken"
+      type: "diplomatic_actor"
+    - id: actor-victoria-nuland
+      label: "Victoria Nuland"
+      type: "diplomatic_security_actor"
+    - id: actor-lloyd-austin
+      label: "Lloyd Austin"
+      type: "defense_actor"
+    - id: actor-mark-milley
+      label: "Mark Milley"
+      type: "military_actor"
+
+  nato_europe:
+    - id: actor-jens-stoltenberg
+      label: "Jens Stoltenberg"
+      type: "alliance_political_actor"
+      research_questions:
+        - "Which decisions and assurances did Stoltenberg personally communicate regarding Ukraine and Russian security claims?"
+    - id: org-nato
+      label: "NATO"
+      type: "alliance_ecology"
+      note: "Never treat as one brain; decompose into leaders, member states, military commands, committees, and bilateral channels."
+
+  international_law_and_pressure:
+    - id: actor-karim-khan
+      label: "Karim Khan"
+      type: "international_prosecutorial_actor"
+      research_questions:
+        - "What is directly established about misconduct allegations, investigative findings, disciplinary standards, and his removal?"
+        - "What external actors attempted to pressure, discredit, defend, or remove him?"
+    - id: actor-khan-accuser-sarah
+      label: "Khan accuser ('Sarah', public pseudonym/partial identity)"
+      type: "complainant_actor"
+      note: "Claims of Israeli/Mossad ties remain rumor unless affirmative evidence is found."
+    - id: org-icc
+      label: "International Criminal Court"
+      type: "international_legal_ecology"
+      note: "Decompose prosecutor, judges, Assembly of States Parties, investigators, staff, funders/member states, disciplinary bodies, and external pressure."
+    - id: network-pro-israel-icc-pressure
+      label: "Pro-Israel / Israeli pressure and information network around ICC"
+      type: "influence_pressure_ecology"
+      research_questions:
+        - "Which actors are documented as surveilling, pressuring, briefing against, sanctioning, or otherwise attempting to influence ICC personnel?"
+        - "Did such pressure merely exploit the Khan allegations or materially cause disciplinary outcomes?"
+
+  unresolved_identity_nodes:
+    - id: actor-african-general-anti-gay-candidate
+      label: "African military/political actor associated with death penalty for same-sex conduct"
+      type: "identity_unresolved_actor"
+      status: "unknown"
+      candidate: "Yoweri Museveni is one possibility, but current recollection does not match the law precisely enough to lock identity."
+    - id: actor-recently-deceased-unknown
+      label: "Recently deceased strong-harm actor mentioned by user"
+      type: "identity_unresolved_actor"
+      status: "unknown"
+
+connectors:
+  - from: actor-volodymyr-zelensky
+    to: actor-andriy-yermak
+    type: "inner_circle_gatekeeper"
+    status: documented
+    question: "Trace specific decisions, briefings, appointments, and negotiation positions rather than assume control."
+  - from: actor-ihor-kolomoisky
+    to: actor-volodymyr-zelensky
+    type: "media_business_historical_relationship"
+    status: documented
+    question: "Determine where early media/business dependence ended and later political divergence began."
+  - from: actor-ihor-kolomoisky
+    to: actor-andriy-bohdan
+    type: "prior_legal_advisory_relationship"
+    status: supported
+  - from: actor-viktor-medvedchuk
+    to: actor-vladimir-putin
+    type: "personal_political_relationship"
+    status: documented
+  - from: actor-viktor-medvedchuk
+    to: actor-volodymyr-zelensky
+    type: "adversarial_domestic_political_relation"
+    status: documented
+    question: "Trace sanctions, media closures, prosecution, and their role in Russian threat perception."
+  - from: actor-andriy-yermak
+    to: actor-victoria-nuland
+    type: "direct_diplomatic_channel"
+    status: documented
+  - from: actor-volodymyr-zelensky
+    to: actor-jens-stoltenberg
+    type: "direct_alliance_diplomatic_channel"
+    status: documented
+  - from: actor-joe-biden
+    to: actor-volodymyr-zelensky
+    type: "direct_state_leader_channel"
+    status: documented
+  - from: actor-jake-sullivan
+    to: actor-andriy-yermak
+    type: "national_security_channel"
+    status: documented
+  - from: actor-mark-milley
+    to: actor-valerii-zaluzhny
+    type: "military_command_channel"
+    status: documented
+  - from: actor-naftali-bennett
+    to: actor-vladimir-putin
+    type: "mediation_channel"
+    status: documented
+  - from: actor-naftali-bennett
+    to: actor-volodymyr-zelensky
+    type: "mediation_channel"
+    status: documented
+  - from: source-really-american
+    to: source-raw-america
+    type: "co_production_shared_provenance"
+    status: documented
+    note: "Agreement between these nodes is not independent confirmation."
+  - from: network-pro-israel-icc-pressure
+    to: actor-karim-khan
+    type: "pressure_or_exploitation"
+    status: candidate
+    note: "Separate documented pressure/amplification from any claim that the original complaint was manufactured."
+  - from: actor-khan-accuser-sarah
+    to: network-pro-israel-icc-pressure
+    type: "alleged_israeli_or_mossad_tie"
+    status: rumor
+    note: "Do not promote absent affirmative evidence."
+  - from: org-icc
+    to: actor-karim-khan
+    type: "internal_governance_and_disciplinary_relation"
+    status: documented
+    note: "Different internal processes and proof standards must remain separate."
+  - from: org-israeli-state-security
+    to: network-collaboration-informants
+    type: "intelligence_recruitment_penetration"
+    status: candidate
+    note: "Populate only with case-specific evidence."
+  - from: network-collaboration-informants
+    to: org-hamas
+    type: "may_shape_counterintelligence_and_coercive_behavior"
+    status: candidate
+    note: "Existence of penetration cannot justify unverified accusations or unrelated repression."
+  - from: network-gaza-dissent
+    to: org-hamas
+    type: "dissent_opposition_relation"
+    status: documented
+    note: "Disaggregate genuine civilian grievance, factional rivalry, outside support, infiltration, and false accusation."
+
+blind_spots:
+  - id: blindspot-guardian-editorial-normalization
+    question: "Which Guardian editorials normalized coercive, colonial, carceral, militarist, paternalist, or elite-governance assumptions while presenting them as liberal/public-interest reasoning?"
+    next_method: "Collect specific editorials, authors, cited authorities, social/professional connections, and downstream policy assumptions."
+  - id: blindspot-putin-personal-causality
+    question: "Which major alleged harms can be traced to Putin personally, and where does the chain stop below him?"
+  - id: blindspot-zelensky-network-transition
+    question: "Which people and relationships materially changed Zelensky's posture from 2019 peace candidate to 2021-22 security alignment?"
+  - id: blindspot-nato-human-network
+    question: "Which NATO member-state leaders, staff, military commanders, think tanks, donors, and defense-sector actors shaped Ukraine policy and Russian threat perception?"
+  - id: blindspot-us-ukraine-human-network
+    question: "Trace person-to-person influence among Biden, Sullivan, Blinken, Nuland, Austin, Milley, Yermak, Zelensky, Kuleba, Zaluzhny, and relevant congressional/industry actors."
+  - id: blindspot-israel-ukraine-russia-network
+    question: "Trace Bennett/Netanyahu and Israeli security interests as independent connectors rather than treating Israel as a U.S. proxy."
+  - id: blindspot-icc-khan-causal-chain
+    question: "Did external Israeli/pro-Israel pressure materially alter Khan's disciplinary trajectory, or did it only exploit a genuine internal case?"
+  - id: blindspot-authority-audit
+    question: "For every major authority cited later, identify the individual decision-makers, funding/appointment structure, source chain, conflicts, and external pressures before using its conclusion as evidentiary weight."
+
+next_step_lock: >-
+  Stop adding theory. Fill this lattice empirically: one node or connector at a time,
+  preserving direct action, information flow, incentives, contradictory evidence,
+  and unresolved identity. New nodes should be added only when a trace exposes a
+  genuinely missing participant or relation.

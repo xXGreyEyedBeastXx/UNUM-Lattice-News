@@ -1,0 +1,447 @@
+schema: unum-lattice-news/money-influence-enrichment/v0.1
+status: draft
+as_of: "2026-08-10"
+branch: actor-network-seed-2026-08-10
+authority: research_enrichment_not_verdict
+parent_network: lattice/ACTOR_NETWORK_SEED_2026-08-10.yaml
+purpose: >-
+  Enrich the actor network by following money, access, support, and institutional
+  dependency before assigning causal control. Money is a routing signal that exposes
+  relationships worth tracing; it is not by itself proof of capture or quid pro quo.
+
+method_lock:
+  - "Follow money before ideology when a financial trace is available."
+  - "Do not stop at direct campaign contributions."
+  - "Separate donation, bundling, independent expenditure, lobbying, grant funding, advertising, contracts, ownership, debt, family wealth, and business ties."
+  - "Separate access from influence, influence from control, control from corruption, and correlation from quid pro quo."
+  - "Trace policy timing after money/access events when possible."
+  - "A beneficiary may receive independent-expenditure support without directing it; keep coordination status explicit."
+  - "Absence of money does not imply absence of ideological alignment, coercion, intelligence influence, or institutional capture."
+
+status_vocabulary:
+  documented: "Directly supported by records or strong reporting already identified in the research trace."
+  supported: "Substantial evidence for relationship; causal effect still bounded."
+  candidate: "Important route exposed but source-level trace incomplete."
+  needs_recheck: "Previously identified in research, but current external retrieval failed and should be refreshed before promotion."
+  unknown: "No sufficient evidence yet."
+
+connector_types_missing_from_seed:
+  - direct_campaign_contribution
+  - pac_contribution
+  - super_pac_independent_expenditure
+  - bundling_and_fundraising_host
+  - donor_access_channel
+  - lobbying_contact
+  - policy_demand_communicated
+  - nonprofit_501c4_dark_money_route
+  - 527_political_network
+  - foundation_grant
+  - project_specific_media_funding
+  - advertising_dependency
+  - ownership_control
+  - debt_creditor_relationship
+  - government_contract_procurement
+  - defense_industry_relationship
+  - law_firm_legal_representation
+  - think_tank_policy_pipeline
+  - university_expert_pipeline
+  - ngo_expert_pipeline
+  - intelligence_source_pipeline
+  - family_spouse_business_network
+  - revolving_door_employment
+  - board_membership
+  - social_fundraiser_network
+  - platform_algorithm_amplification
+  - media_cross_promotion
+  - philanthropic_agenda_setting
+  - sanctions_or_regulatory_leverage
+
+nodes:
+  democratic_pro_israel_money_network:
+    - id: actor-haim-saban
+      label: "Haim Saban"
+      type: "billionaire_media_donor_actor"
+      status: documented
+      notes:
+        - "Longstanding major Democratic donor and prominent pro-Israel political supporter."
+        - "Previously identified reporting shows he hosted a Biden fundraiser and directly objected to the 2024 pause of a bomb shipment to Israel through communications with senior White House officials."
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "Which Biden/Harris fundraisers did Saban host or underwrite, and who attended?"
+        - "Which specific White House or campaign officials received Israel-policy communications from Saban?"
+        - "Did policy change after those communications, and what competing explanations exist?"
+
+    - id: org-aipac
+      label: "AIPAC"
+      type: "pro_israel_lobby_and_electoral_network"
+      status: documented
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "Separate lobbying, direct PAC activity, donor-network activity, candidate access, and independent-expenditure pathways."
+        - "Which Biden/Harris advisers, donors, party officials, and congressional allies are recurrent bridges?"
+
+    - id: org-aipac-pac
+      label: "AIPAC PAC"
+      type: "federal_pac"
+      status: candidate
+      source_refresh_status: needs_recheck
+      note: "Keep distinct from AIPAC lobbying and from United Democracy Project independent expenditures."
+
+    - id: org-united-democracy-project
+      label: "United Democracy Project"
+      type: "super_pac_independent_expenditure_network"
+      status: documented
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "Which Democratic primaries received major independent expenditures and against whom?"
+        - "Which UDP donors also fund Republican candidates or conservative causes, and what does that reveal about coalition versus issue-specific influence?"
+
+    - id: org-dmfi
+      label: "Democratic Majority for Israel"
+      type: "democratic_pro_israel_advocacy_network"
+      status: documented
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "Which candidates and advisers does DMFI publicly identify as reliable pro-Israel partners?"
+        - "Trace DMFI PAC spending separately from messaging/endorsement activity."
+
+    - id: actor-mark-mellman
+      label: "Mark Mellman"
+      type: "pollster_strategist_advocacy_actor"
+      status: candidate
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "Map Mellman's roles across polling, Democratic strategy, and pro-Israel advocacy."
+        - "Which elected officials, campaigns, and donor networks overlap with those roles?"
+
+    - id: network-hollywood-democratic-donors
+      label: "Hollywood / entertainment Democratic donor ecology"
+      type: "donor_social_network"
+      status: candidate
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "Trace Harris-specific donor, fundraiser, and social-access routes rather than treating Hollywood as one bloc."
+        - "Identify which members are strongly pro-Israel, ceasefire-oriented, or otherwise divergent."
+
+    - id: network-democratic-small-donors
+      label: "Democratic small-donor ecology"
+      type: "mass_donor_population"
+      status: supported
+      source_refresh_status: needs_recheck
+      note: "Necessary counterweight: large-donor networks do not represent the whole funding base. Harris also received very large volumes of small-dollar support."
+
+    - id: network-democratic-voters-gaza
+      label: "Democratic voters opposed to or skeptical of U.S. military support for Israel"
+      type: "constituent_pressure_ecology"
+      status: supported
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "Compare voter preferences with donor/lobby preferences and actual administration policy over time."
+
+  biden_harris_actor_money_questions:
+    - id: actor-joe-biden-money-seat
+      label: "Joe Biden — money/access seat"
+      type: "actor_financial_profile"
+      status: candidate
+      parent_actor: actor-joe-biden
+      research_questions:
+        - "Career totals from pro-Israel donors/PAC-linked networks, disaggregated by source type and year."
+        - "Major fundraiser hosts and bundlers with Israel-policy interests."
+        - "Defense-industry donor/support relationships and procurement-policy overlap."
+        - "Which donor communications reached Biden personally versus staff?"
+        - "Which policy positions predated donor relationships, indicating ideological alignment rather than purchase?"
+
+    - id: actor-kamala-harris
+      label: "Kamala Harris"
+      type: "political_actor"
+      status: candidate
+      research_questions:
+        - "Senate and presidential-cycle donor history tied to pro-Israel, defense, technology, entertainment, and legal networks."
+        - "Fundraisers, bundlers, and direct-access supporters."
+        - "Doug Emhoff's professional/social network and any material policy-access implications."
+        - "Where Harris's public Gaza language diverged from administration material policy and from donor-network preferences."
+
+    - id: actor-kamala-harris-money-seat
+      label: "Kamala Harris — money/access seat"
+      type: "actor_financial_profile"
+      status: candidate
+      parent_actor: actor-kamala-harris
+      research_questions:
+        - "Disaggregate small-dollar support from major donors and independent expenditures."
+        - "Identify pro-Israel donor/supporter nodes with direct campaign or social access."
+        - "Identify donors/supporters who pressured Harris toward ceasefire or conditioning aid, not only pro-Israel pressure."
+
+    - id: actor-doug-emhoff
+      label: "Doug Emhoff"
+      type: "family_professional_network_actor"
+      status: candidate
+      research_questions:
+        - "Trace law-firm, entertainment, business, donor, and Jewish communal/pro-Israel networks only where they create documented access or influence."
+        - "Do not infer Harris policy from spouse affiliation alone."
+
+  guardian_money_and_influence:
+    - id: org-scott-trust
+      label: "Scott Trust Limited"
+      type: "media_governance_owner"
+      status: documented
+      notes:
+        - "Sole shareholder/owner structure protecting Guardian Media Group from ordinary proprietor/shareholder capture."
+        - "Explicitly preserves a liberal editorial tradition."
+      source_refresh_status: needs_recheck
+
+    - id: org-guardian-media-group
+      label: "Guardian Media Group"
+      type: "media_operating_company"
+      status: documented
+      source_refresh_status: needs_recheck
+
+    - id: org-theguardian-org
+      label: "theguardian.org"
+      type: "nonprofit_funding_intermediary"
+      status: candidate
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "List funders, restricted/project grants, project topics, periods, and editorial disclosure."
+
+    - id: org-gates-foundation
+      label: "Bill & Melinda Gates Foundation"
+      type: "philanthropic_funder"
+      status: documented
+      source_refresh_status: needs_recheck
+      note: "Previously identified as a funder of Guardian global-development work; funding does not establish copy control."
+
+    - id: network-guardian-reader-revenue
+      label: "Guardian recurring reader/supporter revenue ecology"
+      type: "audience_financial_dependency"
+      status: documented
+      source_refresh_status: needs_recheck
+      research_questions:
+        - "Which audience segments materially drive subscription/support revenue and therefore potential audience capture?"
+
+    - id: network-guardian-advertisers
+      label: "Guardian advertising client ecology"
+      type: "commercial_funding_network"
+      status: candidate
+      research_questions:
+        - "Identify major advertisers and categories, especially finance, technology, defense-adjacent, government, and philanthropy-linked campaigns."
+
+  high_priority_missing_money_ecologies:
+    - id: network-defense-industry-us-politics
+      label: "U.S. defense-industry political money and procurement network"
+      type: "industry_policy_ecology"
+      status: candidate
+      research_questions:
+        - "Map Lockheed Martin, RTX/Raytheon, Northrop Grumman, General Dynamics, Boeing and relevant executives/PACs to Biden, Harris, Trump, congressional leadership, think tanks, and procurement decisions."
+        - "Separate campaign money from the much larger leverage created by jobs, contracts, district dependence, and revolving-door employment."
+
+    - id: network-pro_israel-foundations-thinktanks
+      label: "Pro-Israel foundations, think tanks, policy institutes, and expert pipelines"
+      type: "policy_knowledge_ecology"
+      status: candidate
+      research_questions:
+        - "Which experts repeatedly brief campaigns, media, Congress, and executive agencies?"
+        - "Who funds the institutions supplying those experts?"
+
+    - id: network-dark-money-democratic
+      label: "Democratic-aligned 501(c)(4), nonprofit, and dark-money ecology"
+      type: "political_finance_ecology"
+      status: candidate
+      research_questions:
+        - "Which donors and pass-through entities cannot be reconstructed from ordinary candidate FEC records?"
+        - "Which groups fund ads, litigation, research, staffing, and voter mobilization around foreign-policy positions?"
+
+    - id: network-dark-money-republican
+      label: "Republican-aligned 501(c)(4), nonprofit, and dark-money ecology"
+      type: "political_finance_ecology"
+      status: candidate
+      note: "Needed for symmetric tracing; do not build a Democratic-only capture model."
+
+    - id: network-foreign-lobby-fara
+      label: "Foreign lobbying / FARA-registered influence ecology"
+      type: "foreign_influence_financial_ecology"
+      status: candidate
+      research_questions:
+        - "Map registered agents, PR firms, law firms, consultancies, and lobbying contracts for Israel, Ukraine, Gulf states, Russia-linked interests, and other relevant governments/entities."
+
+    - id: network-policy-law-firms
+      label: "Law firms as political, donor, lobbying, and elite-network bridges"
+      type: "professional_influence_ecology"
+      status: candidate
+
+    - id: network-think-tank-funders
+      label: "Think-tank donor and policy-production network"
+      type: "knowledge_influence_ecology"
+      status: candidate
+      research_questions:
+        - "Track funding behind experts appearing in media and government rather than treating expert affiliation as independent confirmation."
+
+    - id: network-media-crossownership-advertising
+      label: "Media ownership, advertising, sponsorship, and cross-promotion network"
+      type: "media_finance_ecology"
+      status: candidate
+
+    - id: network-platform-amplification
+      label: "Platform algorithm and creator monetization ecology"
+      type: "information_distribution_ecology"
+      status: candidate
+      research_questions:
+        - "How do YouTube/X/TikTok/Meta monetization and recommendation systems alter what Secular Talk, Jolly Good Ginger, Valhalla VFT, Keith Edwards, Really American, and others choose to emphasize?"
+
+  additional_media_nodes:
+    - id: source-jolly-good-ginger
+      label: "Jolly Good Ginger"
+      type: "political_creator_commentator"
+      status: candidate
+      user_observation:
+        note: "Currently among the user's higher-trust observed nodes, while explicitly not treated as an authority."
+      research_questions:
+        - "Ownership/monetization/sponsorship/donor/support network."
+        - "Recurring source ecology and where claims originate before amplification."
+        - "Cases where the creator corrects, resists, or repeats coalition narratives."
+
+connectors:
+  - from: actor-haim-saban
+    to: actor-joe-biden
+    type: "fundraiser_donor_access"
+    status: documented
+    source_refresh_status: needs_recheck
+    note: "Previously verified reporting identified fundraiser hosting and senior-level access."
+
+  - from: actor-haim-saban
+    to: actor-joe-biden
+    type: "israel_policy_demand_communicated"
+    status: documented
+    source_refresh_status: needs_recheck
+    note: "Previously identified reporting: objection to Biden's 2024 bomb-shipment pause was communicated to senior White House officials."
+
+  - from: actor-haim-saban
+    to: actor-kamala-harris
+    type: "donor_support_relationship"
+    status: candidate
+    source_refresh_status: needs_recheck
+    note: "Exact cycle amounts and access require FEC/source refresh before promotion."
+
+  - from: org-dmfi
+    to: actor-kamala-harris
+    type: "public_political_support"
+    status: documented
+    source_refresh_status: needs_recheck
+    note: "Previously identified DMFI materials presented Harris's pro-Israel record as a reason for support."
+
+  - from: org-aipac
+    to: org-democratic-party
+    type: "lobbying_and_electoral_pressure"
+    status: documented
+    source_refresh_status: needs_recheck
+
+  - from: org-united-democracy-project
+    to: org-democratic-party
+    type: "independent_primary_spending_pressure"
+    status: documented
+    source_refresh_status: needs_recheck
+    note: "Do not treat independent expenditure as candidate-controlled spending."
+
+  - from: network-democratic-voters-gaza
+    to: actor-joe-biden
+    type: "constituent_policy_pressure"
+    status: supported
+    source_refresh_status: needs_recheck
+
+  - from: network-democratic-voters-gaza
+    to: actor-kamala-harris
+    type: "constituent_policy_pressure"
+    status: supported
+    source_refresh_status: needs_recheck
+
+  - from: org-gates-foundation
+    to: org-theguardian-org
+    type: "project_grant_funding"
+    status: documented
+    source_refresh_status: needs_recheck
+
+  - from: org-theguardian-org
+    to: org-guardian-media-group
+    type: "supported_editorial_project_funding_route"
+    status: candidate
+    source_refresh_status: needs_recheck
+    note: "Trace exact legal/operational route and project disclosures before inferring agenda effect."
+
+  - from: org-scott-trust
+    to: org-guardian-media-group
+    type: "ownership_governance"
+    status: documented
+    source_refresh_status: needs_recheck
+
+causal_tests:
+  money_to_control:
+    sequence:
+      - money_or_material_support
+      - access_or_dependency
+      - communicated_preference_or_known_interest
+      - policy_or_editorial_choice
+      - timing_and_counterfactual
+      - alternative_explanations
+      - evidence_of_coordination_or_quid_pro_quo
+    rule: "Do not jump from first step to last."
+
+  audience_to_media_capture:
+    sequence:
+      - audience_or_supporter_segment
+      - revenue_or_algorithmic_dependence
+      - engagement_reward
+      - topic_selection
+      - framing_or_certainty_shift
+      - correction_behavior
+    rule: "A creator can be audience-captured without any institutional donor."
+
+  philanthropy_to_agenda_setting:
+    sequence:
+      - funder_priority
+      - project_grant
+      - staffing_and_duration
+      - source_and_expert_ecology
+      - topic_selection
+      - editorial_output
+    rule: "Agenda-setting can occur without direct sentence-level control."
+
+blind_spots_after_second_pass:
+  - id: gap-donor-access-calendar
+    question: "We need event-level donor access: fundraiser hosts, private meetings, calls, emails, bundling, and staff contacts—not just dollar totals."
+  - id: gap-independent-spending-beneficiary
+    question: "Map which actors benefited from independent spending while preserving whether they legally coordinated with the spender."
+  - id: gap-defense-procurement
+    question: "Campaign finance may be smaller than procurement dependence; trace contracts, district jobs, board/revolving-door ties, and arms-transfer beneficiaries."
+  - id: gap-dark-money-pass-through
+    question: "Ordinary FEC candidate records miss nonprofit/pass-through influence and issue advertising."
+  - id: gap-think-tank-source-laundering
+    question: "A claim can appear independently in government and media while both source the same funded think tank/expert network."
+  - id: gap-family-professional
+    question: "Spouses, law firms, family businesses, foundations, and social networks can create access without a direct candidate donation."
+  - id: gap-media-revenue
+    question: "The current media nodes need ownership, sponsor, advertiser, subscription, Patreon, Super PAC, grant, and platform-monetization traces."
+  - id: gap-guardian-editorial-authors
+    question: "The Guardian audit still needs author-level editorial sampling and recurring expert/source-network mapping before normalization claims can be promoted."
+  - id: gap-counterpressure
+    question: "Map money and access pushing in the opposite direction too: ceasefire advocates, labor, Arab/Muslim donors, civil-liberties groups, antiwar veterans, and small-donor pressure."
+  - id: gap-policy-preexistence
+    question: "For every apparent donor-policy alignment, determine whether the actor held the policy before receiving relevant support."
+  - id: gap-nonfinancial-coercion
+    question: "Money is only one influence carrier; sanctions, kompromat, intelligence access, legal exposure, appointments, endorsements, media attacks, and security guarantees may dominate in some networks."
+
+research_outage_note:
+  status: "external_search_unavailable_during_refresh"
+  note: >-
+    Web search/direct retrieval returned repeated service failures during this pass.
+    Relationships marked needs_recheck were previously identified in the conversation
+    from FEC, Reuters, Axios, AP, Guardian, and organization-primary materials, but
+    should be refreshed before promotion to reviewed/canonical status. No unrefreshed
+    claim should be treated as newly independently verified in this file.
+
+next_fill_order:
+  - "Haim Saban -> Biden/Harris access and Israel-policy communications"
+  - "AIPAC PAC / UDP / DMFI -> candidate and primary spending graph"
+  - "Defense industry -> campaigns, think tanks, procurement, revolving door"
+  - "Guardian -> funders/advertisers -> named editors/columnists -> editorial sample"
+  - "Harris -> donor/bundler/family-professional network"
+  - "Counterpressure networks -> ceasefire, labor, Arab/Muslim, antiwar, small donors"
+  - "Then rerun causal seams; add people only where an edge demands them"
