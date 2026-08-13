@@ -1,0 +1,58 @@
+schema: unum-lattice-news/node/v0.1
+id: situated-relational-analysis
+title: Situated relational analysis
+family: ideology_cultural_frame
+subtype: cultural_frame
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    A knowledge practice that combines evidence, causal analysis, embodiment, lived testimony, historical context, material conditions, ecological relation, participation, uncertainty, and correction without pretending the observer stands outside the system being studied.
+  posture: supported_inference
+aliases:
+  - situated knowledge
+  - relational epistemology
+  - accountable analysis
+hashtags:
+  - situated-knowledge
+  - relational-analysis
+  - embodiment
+  - participation
+  - epistemic-accountability
+current_evidence:
+  observed:
+    - Feminist standpoint, Black feminist, Indigenous, care-ethics, participatory, and disability-justice traditions challenge disembodied mastery as the only legitimate form of knowledge.
+  stated:
+    - Analysis becomes domination-oriented when it objectifies participants, erases the analyst's position, extracts without reciprocity, or freezes classifications into identities.
+  supported_inferences:
+    - Rigorous analysis and embodied or relational knowledge can correct one another rather than being opposites.
+  disputed:
+    - How to weigh conflicting lived testimony, institutional evidence, quantitative evidence, and historical interpretation.
+  unknowns:
+    - Which procedural safeguards best preserve participation without sacrificing adversarial testing.
+  counterevidence:
+    - Lived experience alone cannot establish every external causal claim.
+    - Formal analysis alone cannot exhaust lived consequence or meaning.
+relations:
+  - type: GOVERNS_REVIEW_OF
+    target: interlocking-domination
+    posture: supported_inference
+  - type: COMPLEMENTS
+    target: claim-test-record
+    posture: supported_inference
+  - type: OPPOSES
+    target: mastery-oriented-analysis
+    posture: supported_inference
+unresolved_questions:
+  - How should affected participants share authority over scope, naming, and interpretation?
+  - How should disagreement between situated standpoints be recorded?
+  - When does classification clarify reality and when does it become coercive?
+corrections: []
+locks:
+  - Do not treat the analyst as absent from the system.
+  - Do not confuse empathy with evidentiary exemption.
+  - Do not confuse abstraction with neutrality.
+  - Do not force participants to become fully legible before recognizing dignity or harm.
+  - Do not require a positive-balancing biography before investigating harm.
