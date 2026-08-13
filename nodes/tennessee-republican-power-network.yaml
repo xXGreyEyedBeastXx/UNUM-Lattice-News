@@ -1,0 +1,141 @@
+schema: unum-lattice-news/node/v0.1
+id: tennessee-republican-power-network
+title: Tennessee Republican power network
+family: network
+subtype: political_institutional
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_classification:
+  family: political_institutional_network
+  subtype: state_party_governance_mesh
+  source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    A statewide network tracing Republican officeholders, legislative leadership, executive appointees, legal officers, congressional delegation members, party organizations, advocacy groups, donors, vendors, and institutional gates that shape Tennessee policy. The node prevents the state government from being represented as a single actor and identifies who controls which levers, who receives gains from the mechanism under study, who absorbs enforced losses, and where accountability feedback is blocked, delayed, captured, or returned.
+  posture: working_framework
+current_power_centers:
+  state_executive:
+    - bill-lee
+    - governor-office-policy-director-michael-hendrix
+    - tennessee-department-of-education
+    - lizzette-reynolds
+    - tennessee-department-of-economic-and-community-development
+    - stuart-mcwhorter
+    - tennessee-department-of-commerce-and-insurance
+    - carter-lawrence
+  state_legislative_house:
+    - cameron-sexton
+    - william-lamberth
+    - mark-cochran
+    - jeremy-faison
+    - tim-hicks
+    - paul-sherrell
+    - clark-boyd
+  state_legislative_senate:
+    - randy-mcnally
+    - jack-johnson
+    - ken-yager
+    - ferrell-haile
+    - joey-hensley
+    - john-stevens
+  state_legal_and_audit:
+    - jonathan-skrmetti
+    - tennessee-attorney-general
+    - tennessee-comptroller
+  federal_delegation:
+    - marsha-blackburn
+    - bill-hagerty
+    - diana-harshbarger
+    - tim-burchett
+    - chuck-fleischmann
+    - scott-desjarlais
+    - andy-ogles
+    - john-rose
+    - mark-green
+    - david-kustoff
+  party_and_advocacy:
+    - tennessee-republican-party
+    - americans-for-prosperity-tennessee
+    - beacon-center-of-tennessee
+    - school-choice-advocacy-network
+  vendors_and_intermediaries:
+    - student-first-technologies
+    - scholarship-granting-organizations
+    - private-school-providers
+    - state-contractors
+network_gates:
+  - governor_budget_and_signature
+  - cabinet_appointment_and_agency_direction
+  - house_speaker_calendar_and_committee_assignment
+  - senate_speaker_calendar_and_committee_assignment
+  - majority_leader_vote_coordination
+  - committee_and_subcommittee_referral
+  - appropriations_and_fiscal_note
+  - attorney_general_litigation_and_opinion
+  - comptroller_audit_and_public_reporting
+  - federal_tax_and_appropriation
+  - state_opt_in_and_waiver
+  - procurement_and_contract_amendment
+  - donor_and_lobbyist_access
+  - district_mapping_and_election_rules
+recurring_levers:
+  - tax_credit
+  - direct_subsidy
+  - funding_formula
+  - preemption
+  - appointment
+  - regulatory_relief
+  - licensing
+  - grant
+  - contract
+  - contract_amendment
+  - litigation
+  - public_funding_condition
+  - district_map
+  - committee_bottleneck
+  - audit_scope
+  - information_control
+required_actor_fields:
+  - office_or_institutional_seat
+  - formal_authority
+  - informal_access
+  - donors_and_advocacy_links
+  - rhetoric_justifications_and_public_framing
+  - sponsored_and_supported_legislation
+  - votes_and_gate_actions
+  - contracts_grants_and_appointments_influenced
+  - beneficiary_gains_from_mechanism
+  - enforced_loss_bearers
+  - burden_as_percent_of_income_revenue_rights_or_capacity
+  - accountability_response
+  - claim_specific_counterevidence
+  - evidence_that_would_narrow_or_change_attribution
+safeguards:
+  - Republican affiliation is not itself evidence of responsibility for a specific act.
+  - Responsibility must be traced through seat, gate, lever, action, and consequence.
+  - Preserve a dissenting vote, recusal, blocked action, correction, or repair only when it changes a specific attribution, causal mechanism, scope, magnitude, or persistence claim; do not collect positive counterexamples for balance.
+  - Do not collapse elected officials, appointees, donors, vendors, and advocacy groups into one actor.
+  - Party coordination, ideological alignment, donor influence, and direct command are distinct relations.
+  - Current office status must be date-stamped because officeholders and election cycles change the network.
+relations:
+  - type: APPLIES
+    target: institutions-gates-leaders-levers
+    posture: working_framework
+  - type: TESTED_BY
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: TESTED_BY
+    target: harm-domination-protection-weighting
+    posture: working_framework
+unresolved_questions:
+  - Which donors, advocacy groups, contractors, and officeholders have the greatest cross-institutional reach through documented relationships?
+  - Which committee leaders most often prevent transparency, accountability, labor, disability, public-school, civil-rights, or other harm-reducing measures from reaching floor votes, and what harms follow?
+  - Which federal and state actors jointly construct funding or enforcement routes later described as unavoidable external constraints?
+  - Which officials control oversight, audit scope, evidence access, appointments, litigation posture, or remedy after harmful outcomes become visible?
+  - Which dissenting or corrective actions materially narrow a specific shared-responsibility claim rather than merely improving an actor's general reputation?
+locks:
+  - Network membership does not establish shared guilt, intent, command, or equal responsibility.
+  - Unrelated beneficial conduct does not belong in this harm-audit node.
+  - Beneficiary means gain from the mechanism under study, not moral goodness.
+  - Institutional complexity may explain distributed causation but may not launder responsibility.
