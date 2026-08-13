@@ -1,0 +1,43 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-white-lives-matter-2021-initiative
+title: White Lives Matter April 2021 initiative source bundle
+accessed: 2026-08-13
+sources:
+  - id: wlm-activist-manual-v3-2024
+    publisher: White Lives Matter Official / Internet Archive copy
+    source_class: primary_movement_document
+    date: 2024
+    url: https://archive.org/details/wlm-activist-manual-3.0
+    supports:
+      - the initiative identifies white racial consciousness as its organizing purpose
+      - the initiative states a long-term objective of populations above 99 percent white in countries and continents it identifies as white-built
+      - the initiative centers the white-supremacist slogan commonly known as the 14 Words
+      - the initiative describes public-facing outreach as a pathway toward a White Nationalist worldview
+      - the initiative states that overt Nazi, fascist, MAGA, antisemitic, anti-LGBT, and other polarizing public messaging should be excluded from WLM-branded outreach because it can reduce mainstream recruitment effectiveness
+      - the initiative establishes a recurring monthly activism tradition
+  - id: wlm-activist-manual-v2-2022
+    publisher: White Lives Matter Official / Internet Archive copy
+    source_class: primary_movement_document
+    date: 2022-01
+    url: https://archive.org/details/wlm-activist-manual
+    supports:
+      - the earlier manual stated an objective of a 99 percent white population and racially restricted citizenship in envisioned white states
+      - the earlier manual welcomed multiple strands of white-nationalist and fascist ideology under a race-first coalition while discouraging overtly divisive public branding
+      - the earlier manual recommended white-nationalist, antisemitic, fascist, and Holocaust-revisionist media and literature
+  - id: splc-white-lives-matter-background
+    publisher: Southern Poverty Law Center
+    source_class: secondary_extremism_analysis
+    url: https://www.splcenter.org/resources/extremist-files/white-lives-matter/
+    supports:
+      - historical White Lives Matter organizing has been classified by SPLC as white supremacist and neo-Nazi
+      - the 14 Words are identified as a white-supremacist slogan originating with David Lane
+limitations:
+  - The 2024 and 2022 manuals explicitly claim that the April 2021 initiative has no organizational connection to earlier groups using the White Lives Matter name; this bundle does not independently establish or defeat that claim.
+  - SPLC background material includes earlier White Lives Matter formations and must not be used to attribute specific earlier leaders or conduct to the April 2021 initiative without additional evidence.
+  - A recurring action tradition does not establish that a particular locality or state will hold an event on any given date.
+  - Anonymous participation prevents responsible attribution of individual identities without separate recoverable evidence.
+locks:
+  - Preserve the distinction between the April 2021 initiative and prior organizations unless evidence establishes a relation.
+  - Preserve extremist material only as evidence; do not reproduce operational instructions or recruitment guidance.
+  - Do not infer criminal conduct from ideology, anonymous channel participation, or attendance alone.
+  - Do not publish private identities, addresses, or doxxing material.
