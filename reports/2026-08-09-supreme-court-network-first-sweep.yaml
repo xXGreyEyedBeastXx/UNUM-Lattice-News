@@ -1,0 +1,66 @@
+schema: unum-lattice-news/rendition/v0.1
+id: 2026-08-09-supreme-court-network-first-sweep
+title: Supreme Court network and accountability: first sweep
+as_of: 2026-08-09
+status: developing
+legacy_source_branch: reconcile-node-schema-v0-1
+question: Which selection, donor, ideological, religious, access, and ethics relationships help explain the current Supreme Court's power and accountability structure, and where might those mechanisms contribute to harmful or insufficiently constrained judicial power?
+current_members:
+  - John Roberts
+  - Clarence Thomas
+  - Samuel Alito
+  - Sonia Sotomayor
+  - Elena Kagan
+  - Neil Gorsuch
+  - Brett Kavanaugh
+  - Amy Coney Barrett
+  - Ketanji Brown Jackson
+initial_findings:
+  - The recovered research records a six-member conservative majority and three Trump appointees as of the 2026-08-09 snapshot.
+  - Clarence Thomas, Samuel Alito, Neil Gorsuch, Brett Kavanaugh, and Amy Coney Barrett have disclosed Federalist Society connections in the recovered source bundle.
+  - Leonard Leo served as a major bridge among judicial selection, confirmation advocacy, wealthy conservative donors, and private access to justices.
+  - Clarence Thomas received extensive travel and other financial benefits from Harlan Crow and other wealthy benefactors, with significant items omitted from earlier disclosures and later amended or disputed according to the recovered reporting.
+  - Samuel Alito took an undisclosed Alaska trip organized through Leonard Leo and financed in part by donor Paul Singer; Alito maintained disclosure was not required.
+  - The Court adopted an ethics code in 2023; this research records no independent enforcement or complaint mechanism.
+  - Network relation, ideological alignment, gift, travel, or access does not by itself prove that a particular vote was purchased; the proper test is repeated access, disclosure, recusal, litigant interest, timing, and decision pattern.
+priority_nodes:
+  first_tier:
+    - clarence-thomas
+    - samuel-alito
+    - leonard-leo
+    - harlan-crow
+    - federalist-society
+    - us-supreme-court
+  second_tier:
+    - john-roberts
+    - amy-coney-barrett
+    - neil-gorsuch
+    - brett-kavanaugh
+    - alliance-defending-freedom
+    - people-of-praise
+    - judicial-crisis-network
+    - marble-freedom-trust
+    - teneo-network
+  control_and_discriminator_tier:
+    - sonia-sotomayor
+    - elena-kagan
+    - ketanji-brown-jackson
+method:
+  - trace nomination and confirmation pipeline
+  - trace organizations and ideological training networks
+  - trace gifts, travel, reimbursements, property transactions, and spousal income
+  - trace recusals and cases involving connected actors
+  - trace rulings on executive power, voting rights, reproductive rights, regulation, religion, labor, immunity, and civil rights
+  - separate disclosed relationship from inferred influence and proven conflict
+  - use other justices as controls or discriminators only where they test a specific ethics, disclosure, recusal, access, or influence hypothesis; do not collect positive examples for rhetorical balance
+provenance_missingness:
+  - id: source-supreme-court-current-members
+    state: SEARCHED_NOT_FOUND
+    note: Legacy rendition referenced this source identifier, but the source record was not recovered during reconciliation.
+claim_locks:
+  - Do not infer corruption solely from ideological voting.
+  - Do not erase financial or access relationships merely because direct quid pro quo evidence is absent.
+  - Apply the same disclosure, recusal, access, and conflict tests to any justice when needed to test the scoped hypothesis; symmetry of method does not require positive balancing or equal conclusions.
+  - Unrelated institutionally respected rulings do not offset a documented conflict, ethics failure, rights harm, or expansion of unaccountable power.
+sources:
+  - source-supreme-court-ethics-network
