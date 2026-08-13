@@ -5,7 +5,7 @@
 
 ## 1. Operating orientation
 
-UNUM-Lattice-News is not an accusation engine, enemy list, or partisan scoring system. It is a public evidence-traced relational analysis surface.
+UNUM-Lattice-News is not an accusation engine, enemy list, partisan scoring system, or net-morality ledger. It is a public evidence-traced relational analysis surface.
 
 Operational lock:
 
@@ -31,6 +31,21 @@ Harmful machinery need not.
 ```
 
 No claim, source, actor, institution, ideology, party, movement, government, corporation, donor, victim, witness, or investigator is exempt from the evidence standard.
+
+### Harm-audit scope lock
+
+The current accountability lane is intentionally harm-first.
+
+```text
+unrelated beneficial conduct != counterevidence
+public-service accomplishment != offset for documented harm
+charity != credit against coercion
+positive reputation != reduced causal responsibility
+```
+
+Do not interrupt a harm trace to construct a balanced moral biography. Beneficial conduct belongs only when it materially changes the scoped claim being tested: attribution, mechanism, scope, causation, chronology, magnitude, identity, necessity, or evidentiary reliability.
+
+Evidence that directly weakens, narrows, or defeats a harm claim remains mandatory. The audit may be one-sided in subject matter without becoming one-sided in evidence.
 
 ---
 
@@ -64,7 +79,7 @@ Record consequential operations: election, appointment, lobbying, donation, cont
 Separate what actors say the action means from what the action materially does. Record public framing, advertising, ideology, legal justification, media classification, institutional narrative, and symbolic language without treating them as outcomes.
 
 ### COHERENCE
-Compare stated purpose, incentives, implementation, distribution of benefit and harm, counterevidence, and observed outcomes. Coherence is not truth by itself; it is a review question.
+Compare stated purpose, incentives, implementation, distribution of harm, distribution of gain or insulation produced by the harmful machinery, claim-specific counterevidence, and observed outcomes. Coherence is not truth by itself; it is a review question.
 
 ### RE-ENTRY
 Preserve correction, appeal, source challenge, restitution, policy reversal, democratic removal, rehabilitation, archive lineage, and the path by which a future reviewer can reconstruct or revise the conclusion.
@@ -96,18 +111,21 @@ For each materially affected actor or population, ask:
 - whether deprivation or dependency converts nominal choice into structural coercion;
 - whether privacy protects agency or opacity shields concentrated power.
 
-### Harm / Benefit Map
+### Harm / Consequence / Beneficiary Map
 Trace:
 
 - direct harm;
 - distributed and delayed harm;
-- material benefit;
-- private profit;
-- public benefit;
+- material deprivation and rights loss;
+- private profit or asset gain tied to the mechanism;
+- institutional, political, or coercive capacity gained through the mechanism;
+- public-resource transfers and opportunity costs;
 - ecological consequences;
 - future-generation effects;
 - who bears downside risk;
-- who gains durable authority or insulation.
+- who gains durable authority, revenue, access, insulation, or control from the harmful arrangement.
+
+`beneficiary` here means a participant receiving an evidenced gain from the mechanism under study. It does not mean morally good, socially beneficial, or deserving of offset credit.
 
 Do not infer moral equivalence from symmetric mapping.
 
@@ -138,19 +156,21 @@ Repeated reporting is not automatically independent corroboration. Track claim l
 
 ---
 
-## 5. Competing models and discriminators
+## 5. Adversarial model, counterevidence, and discriminators
 
 For consequential interpretations, maintain at least three seats:
 
-1. **Harm / abuse / capture model** — strongest evidence supporting wrongdoing, exploitation, coercion, corruption, avoidable harm, or institutional failure.
-2. **Charitable / legitimate-governance model** — strongest plausible public-interest rationale, exculpatory evidence, beneficial outcomes, ordinary institutional explanation, and counterexamples.
+1. **Harm / abuse / capture model** — reconstruct the strongest evidence-supported account of wrongdoing, exploitation, coercion, corruption, avoidable harm, institutional failure, or concentrated-power abuse.
+2. **Claim-specific counterevidence / falsification model** — reconstruct the strongest evidence that the scoped claim is misidentified, misattributed, causally weak, chronologically impossible, materially overstated, narrower than alleged, protective against a concrete threat, or otherwise defeated or constrained by the record.
 3. **Discriminators** — observations that would materially change the weight between the models.
 
-Do not use the charitable model to launder demonstrated harm. Do not use the harm model to convert suspicion into proof.
+The counterevidence seat is not a charitable biography and does not require unrelated accomplishments, positive reputation, ordinary public-service achievements, or moral credit.
+
+Do not use counterevidence to launder demonstrated harm. Do not use the harm model to convert suspicion into proof.
 
 Where possible, ask:
 
-> What would we expect to observe if our current interpretation were wrong?
+> What would we expect to observe if this particular harm attribution, mechanism, scope, or magnitude were wrong?
 
 Actively search for that evidence.
 
@@ -270,7 +290,7 @@ source acquisition
 -> money/resource/influence tracing
 -> contradiction and source-lineage analysis
 -> affected-population and harm mapping
--> counterevidence search
+-> claim-specific counterevidence search
 -> confidence and missingness review
 -> portable investigative packet
 ```
@@ -309,10 +329,10 @@ relations:
     posture: ""
 power_map: []
 constraint_agency_map: []
-harm_benefit_map: []
+harm_consequence_beneficiary_map: []
 competing_models:
   harm_model: []
-  charitable_model: []
+  counterevidence_model: []
   discriminators: []
 counterevidence: []
 corrections: []
@@ -358,14 +378,14 @@ Low-power or vulnerable actors receive stronger privacy protection where disclos
 The lattice should be able to return any of these outcomes without embarrassment:
 
 - allegation supported;
-- allegation weakened;
-- allegation disproven;
+- allegation narrowed or weakened;
+- allegation affirmatively disproven;
 - legal but structurally conflicted;
-- harmful but plausibly legitimate in motive;
-- beneficial despite suspect motive;
 - ordinary systemic failure rather than actor-specific wrongdoing;
 - actor-specific intensification of an older system;
 - insufficient evidence.
+
+No positive-balance conclusion is required by the harm-audit lane.
 
 ---
 
@@ -380,7 +400,7 @@ Before promotion or publication, ask whether a fresh reviewer can recover:
 - the important relations without unlabeled edges;
 - who has power and who bears consequences;
 - what meaningful alternatives existed;
-- what evidence cuts against the current model;
+- what evidence cuts against the current harm claim;
 - what remains missing and why;
 - what would change the assessment;
 - what correction, appeal, or re-entry path exists.
