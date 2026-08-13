@@ -1,0 +1,81 @@
+schema: unum-lattice-news/node/v0.1
+id: harm-domination-protection-weighting
+title: Harm, domination, and accountability weighting
+family: analysis_framework
+subtype: causal_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_classification:
+  family: causal_ethical_field
+  subtype: relational_weighting_framework
+  source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    A causal framework for tracing harm without assigning moral essence to peoples or requiring a net moral biography of the actor. It evaluates agency, power, vulnerability, foreseeability, alternatives, acts, consequences, gain or insulation produced by the mechanism, repetition, repair after harm, and accountability. Its central diagnostic is directional: domination pushes harm and consequence toward lower-power or more vulnerable participants while insulating causal power from feedback and accountability.
+  posture: working_framework
+harm_audit_scope:
+  - Search for harmful conduct, harmful outcomes, enabling structures, concentrated power, and responsibility.
+  - Unrelated beneficial conduct is out of scope and does not offset documented harm.
+  - Preserve counterevidence when it changes attribution, mechanism, scope, causation, chronology, magnitude, identity, necessity, or evidentiary reliability.
+core_relations:
+  - vulnerability_rises: exposure_and_protection_need_rise
+  - causal_power_rises: accountability_obligation_rises
+  - agency_and_foreseeability_rise: responsibility_weight_rises
+  - institutional_insulation_rises: impunity_risk_rises
+physics_of_harm:
+  source: actor_or_institution_with_causal_capacity
+  propagation: act_order_policy_funding_enablement_or_omission
+  boundary: institutional_legal_social_or_material_constraint
+  absorption: affected_participant_or_ecology
+  feedback: consequence_information_correction_sanction_or_accountability
+  domination_failure_mode: >-
+    Harm propagates toward lower-power or more vulnerable participants while feedback and consequence are prevented from returning adequately to the causal source.
+act_trace_fields:
+  - agency
+  - power_and_causal_reach
+  - knowledge
+  - foreseeability
+  - intent_when_evidenced
+  - available_alternatives
+  - coercion_or_constraint
+  - affected_participants
+  - vulnerability_and_exposure
+  - direct_and_downstream_consequences
+  - gain_or_insulation_obtained_from_mechanism
+  - response_after_harm_became_known
+  - repair_or_refusal_to_repair
+  - repetition_or_correction
+  - accountability_accepted_resisted_or_evaded
+accountability_direction:
+  - trace causal capacity upstream
+  - trace harm and loss downstream
+  - trace gain, insulation, and authority accumulation sideways and upstream
+  - trace feedback, correction, sanction, appeal, and failed return paths back toward causal sources
+  - identify where consequence is externalized and accountability is blocked
+
+domination_direction:
+  - coercion toward vulnerability
+  - risk and consequence externalized downward
+  - protection and secrecy concentrated upward when they shield power
+  - accountability blocked or displaced
+  - repetition enabled by failed feedback
+relations:
+  - type: TESTS
+    target: interlocking-domination
+    posture: working_framework
+  - type: REQUIRES
+    target: situated-relational-analysis
+    posture: working_framework
+unresolved_questions:
+  - How should agency, causal reach, foreseeability, vulnerability, exposure, and irreversibility be quantitatively or ordinally weighted?
+  - How should command responsibility, enablement, financing, omission, and institutional shielding be separated in graph edges?
+  - What feedback threshold distinguishes ordinary failure from durable impunity?
+locks:
+  - Do not infer collective guilt.
+  - Do not substitute ideology or identity for act-level causal tracing.
+  - Do not erase individual agency by attributing all harm to systems.
+  - Do not erase structural causation by attributing all harm to isolated individuals.
+  - Do not call uncertainty neutrality; preserve evidence posture and research unresolved crossings.
+  - Do not introduce unrelated beneficial conduct to soften, offset, or balance a harm record.
+  - Analysis-framework geometry is not case evidence; each applied edge must be independently evidenced.
