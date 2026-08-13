@@ -1,0 +1,67 @@
+schema: unum-lattice-news/node/v0.1
+id: us-environmental-protection-agency
+title: U.S. Environmental Protection Agency
+family: actor
+subtype: institution
+hierarchy_class: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    Federal environmental regulator whose rules, enforcement choices, exemptions, delays, rollbacks, funding, and cleanup decisions materially affect pollution exposure and environmental-health risk. In the harm-audit lane, trace which regulatory changes increase or preserve exposure, which populations absorb the burden, which industries or actors gain, and where accountability or repair is blocked.
+  posture: observed_with_legacy_source_gaps
+aliases: [EPA]
+hashtags: [EnvironmentalRegulation, Pollution, Neurodevelopment, PublicHealth]
+current_evidence:
+  observed:
+    - The legacy node records EPA recognition of lead, mercury, pesticides, PCBs, flame retardants, air pollution, and other environmental exposures as relevant to neurodevelopmental harm.
+    - The legacy node records multiple deregulatory actions affecting greenhouse-gas, mercury, hazardous-air-pollutant, and PFAS protections during the period studied.
+  stated:
+    - The legacy node records EPA claims that deregulation protects health while lowering costs and advancing energy production.
+  supported_inferences:
+    - EPA policy choices are materially relevant when federal health authorities argue that environmental exposures may contribute to autism or other neurodevelopmental outcomes.
+  disputed:
+    - The exposure and health consequences attributable to specific regulatory changes.
+  unknowns:
+    - Net exposure effects, geographic distribution, latency, cumulative burden, and which developmental neurotoxicants are most affected by each policy change.
+  claim_specific_counterevidence:
+    - Retained or strengthened protections matter only when they narrow a specific claim about the scope, timing, mechanism, or magnitude of deregulation; they are not general reputation credit.
+provenance_missingness:
+  - {id: source-epa-neurodevelopmental-disorders, state: SOURCE_RECORD_NOT_RECOVERED}
+  - {id: source-epa-mats-repeal-2026, state: SOURCE_RECORD_NOT_RECOVERED}
+  - {id: source-epa-pfas-2026, state: SOURCE_RECORD_NOT_RECOVERED}
+  - {id: source-niehs-autism-environment, state: SOURCE_RECORD_NOT_RECOVERED}
+relations:
+  - type: PART_OF
+    target: united-states-federal-government
+    posture: observed
+  - type: REGULATES
+    target: environmental-pollution-exposure
+    posture: legacy_observed_pending_source_relink
+    evidence:
+      - source-epa-neurodevelopmental-disorders
+      - source-epa-mats-repeal-2026
+      - source-epa-pfas-2026
+  - type: AFFECTS_EXPOSURE_ENVIRONMENT_RELEVANT_TO
+    target: autism
+    posture: legacy_supported_inference_pending_source_relink
+    evidence:
+      - source-epa-neurodevelopmental-disorders
+      - source-niehs-autism-environment
+    scope: policy and exposure environment; not a claim that EPA action causes autism generally
+  - type: TESTED_BY
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+harm_audit_questions:
+  - Which rollbacks, exemptions, delays, non-enforcement decisions, or weakened standards increase exposure to known or suspected developmental toxicants?
+  - Which industries or asset holders receive reduced compliance cost, increased production capacity, or other gains from each change?
+  - Which communities absorb increased risk by geography, class, race, age, disability, occupation, or existing exposure burden?
+  - What harms are delayed or difficult to reverse, and what evidence/monitoring systems could reveal them?
+  - Where does EPA itself control data, enforcement, waivers, compliance timing, or the evidence used to evaluate its own policies?
+locks:
+  - Regulatory authority does not prove causation for any individual diagnosis.
+  - Environmental contribution must not be converted into blame toward autistic people or families.
+  - Retained protections are recorded only when they materially narrow a specific harm claim; they do not offset unrelated deregulation harm.
+  - Missing source records must be recovered before inherited regulatory assertions are promoted beyond their legacy posture.
