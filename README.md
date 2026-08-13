@@ -16,7 +16,7 @@ This repository can collect and connect:
 - scientific and technical research;
 - observed consequences;
 - institutional, financial, technological, and infrastructural relationships;
-- competing interpretations and counterevidence;
+- competing interpretations and claim-specific counterevidence;
 - uncertainty, missing evidence, and unresolved questions;
 - corrections and later developments.
 
@@ -40,6 +40,18 @@ Threat assessment is not enemy designation. A documented capability is not proof
 
 Likelihood, consequence, and confidence should remain separate wherever threat assessments are made.
 
+## Harm-audit orientation
+
+The current accountability lane may intentionally investigate harmful conduct, harmful machinery, concentrated power, coercion, deprivation, corruption/capture hypotheses, civilian or ecological consequence, and accountability failure without constructing a balanced moral biography of every actor.
+
+```text
+unrelated beneficial conduct != counterevidence
+positive reputation != reduced causal responsibility
+claim-specific falsification remains mandatory
+```
+
+Evidence that directly weakens, narrows, defeats, or reattributes a scoped claim must remain visible. Unrelated good news is not required as moral balance.
+
 ## Protection target
 
 This repository gives particular attention to threats and pressures affecting:
@@ -57,9 +69,27 @@ This repository gives particular attention to threats and pressures affecting:
 
 The repository-wide investigative operating layer is [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md).
 
-It connects the existing editorial and intake rules to a single recoverable lifecycle for field context, structure, constraint, transform, projection, coherence review, and re-entry. It also defines linked power, agency/constraint, and harm/benefit maps; typed missingness; competing causal models and discriminators; opacity/privacy handling; oversight as conductance control; and the boundary between automated research support and consequential public claims.
+It connects the existing editorial and intake rules to a single recoverable lifecycle for field context, structure, constraint, transform, projection, coherence review, and re-entry. It also defines linked power, agency/constraint, and harm/consequence/beneficiary maps; typed missingness; competing causal models and discriminators; opacity/privacy handling; oversight as conductance control; and the boundary between automated research support and consequential public claims.
 
 The operations layer does not override source-specific evidence, `EDITORIAL_STANDARD.md`, privacy rules, corrections, or human review requirements. It coordinates them.
+
+## Canonical recovery and branch reconciliation
+
+`main` is the active canonical working surface, not an infallible authority. Historical branches remain recovery surfaces until their unique evidence, provenance, geometry, or failed models have been reconciled or explicitly typed.
+
+Canonical replacement and recovery rules are documented in:
+
+- [docs/CANONICAL_MAIN_PROMOTION_PROTOCOL_v0_1.md](docs/CANONICAL_MAIN_PROMOTION_PROTOCOL_v0_1.md)
+- [docs/CANONICAL_RECONCILIATION_LEDGER_2026-08-13.md](docs/CANONICAL_RECONCILIATION_LEDGER_2026-08-13.md)
+- [docs/RECONCILIATION_CHECKPOINT_2026-08-13.md](docs/RECONCILIATION_CHECKPOINT_2026-08-13.md)
+
+Recovery agents:
+
+- [agents/CANONICAL_RECONCILIATION_STEWARD_v0_1.md](agents/CANONICAL_RECONCILIATION_STEWARD_v0_1.md)
+- [agents/PROVENANCE_CLAIM_INTEGRITY_AGENT_v0_1.md](agents/PROVENANCE_CLAIM_INTEGRITY_AGENT_v0_1.md)
+- [agents/LATTICE_RESURFACING_AGENT_v0_2.md](agents/LATTICE_RESURFACING_AGENT_v0_2.md)
+
+Historical material should be recovered semantically rather than blind-merged. Preserve old states as evidence; do not preserve obsolete framing as permanent authority.
 
 ## Corrections
 
