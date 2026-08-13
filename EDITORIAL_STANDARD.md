@@ -4,7 +4,7 @@
 
 UNUM Lattice News is an evidence-traced relational reporting and analysis surface. Its credibility depends on preserving the difference between evidence, allegation, inference, uncertainty, and judgment.
 
-Repository-wide investigations should also follow [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md). That operations layer coordinates this evidence standard with power, constraint/agency, harm/benefit, missingness, competing-model, oversight, correction, and re-entry review. It does not override this standard.
+Repository-wide investigations should also follow [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md). That operations layer coordinates this evidence standard with power, constraint/agency, harm/consequence/beneficiary, missingness, competing-model, oversight, correction, and re-entry review. It does not override this standard.
 
 Harm-first investigations should additionally follow [docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md](docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md).
 
@@ -107,7 +107,7 @@ Maps should distinguish relationships such as ownership, investment, contract, e
 
 Do not collapse distinct relation types into an unlabeled edge.
 
-For mature investigations, also distinguish the relation's function within the linked power, constraint/agency, and harm/benefit maps defined in `NEWS_OPERATIONS_v0_2.md`.
+For mature investigations, also distinguish the relation's function within the linked power, constraint/agency, and harm/consequence/beneficiary maps defined in `NEWS_OPERATIONS_v0_2.md`.
 
 ## Human and ecological protection
 
