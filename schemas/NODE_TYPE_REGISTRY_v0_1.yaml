@@ -1,0 +1,119 @@
+version: v0_1
+status: active_review
+schema: unum-lattice-news/node-type-registry/v0.1
+
+canonical_families:
+  actor:
+    subtypes:
+      - person
+      - institution
+      - collective
+      - movement
+  system:
+    subtypes:
+      - technology
+      - platform
+      - infrastructure
+  instrument:
+    subtypes:
+      - policy
+      - law
+      - program
+      - contract
+  event_action:
+    subtypes: []
+  place_jurisdiction:
+    subtypes:
+      - place
+      - jurisdiction
+  population_community:
+    subtypes:
+      - population
+      - community
+  ecology_living_system:
+    subtypes:
+      - ecology
+      - habitat
+      - species
+      - living_system
+  condition_lived_state:
+    subtypes:
+      - neurodevelopmental_condition
+      - disability_status
+      - health_condition
+      - impairment
+      - support_need
+      - lived_state
+  resource_flow:
+    subtypes:
+      - money
+      - labor
+      - data
+      - land
+      - energy
+      - supply
+  claim_proposition:
+    subtypes:
+      - claim
+      - proposition
+  ideology_cultural_frame:
+    subtypes:
+      - ideology
+      - cultural_frame
+      - narrative_frame
+  condition_consequence:
+    subtypes:
+      - consequence
+      - harm
+      - risk
+  response_repair:
+    subtypes:
+      - response
+      - remedy
+      - repair
+      - resistance
+      - refusal
+      - exit
+      - appeal
+
+migration_aliases:
+  person: {family: actor, subtype: person}
+  institution: {family: actor, subtype: institution}
+  movement: {family: actor, subtype: movement}
+  technology: {family: system, subtype: technology}
+  policy: {family: instrument, subtype: policy}
+  place: {family: place_jurisdiction, subtype: place}
+  population: {family: population_community, subtype: population}
+  ecology: {family: ecology_living_system, subtype: ecology}
+  condition: {family: condition_lived_state, subtype: lived_state, review_required: true}
+  disability: {family: condition_lived_state, subtype: disability_status}
+  proposition: {family: claim_proposition, subtype: proposition}
+  concept: {family: claim_proposition, subtype: claim}
+  other: {family: condition_lived_state, subtype: lived_state, review_required: true}
+
+relation_role_rule:
+  actor_is_also_a_relation_role: true
+  note: A node family does not determine its role in a relation. A person or institution may be actor, funder, regulator, target, beneficiary, affected party, or another evidenced role.
+
+condition_rule:
+  note: A condition node does not determine whether every person associated with it is disabled, impaired, ill, deficient, or in need of the same support. Disability, impairment, support need, legal status, identity, and environmental mismatch must remain separately evidenced relations or claims.
+
+validation:
+  new_records:
+    require_family_from_registry: true
+    subtype_must_belong_to_family: true
+  archived_records:
+    preserve_legacy_type: true
+    allow_migration_alias: true
+    rewrite_required: false
+  unknown_types:
+    reject_for_new_records: true
+    preserve_for_archived_records_with_review_flag: true
+
+locks:
+  - Node type classifies the record; it does not assign guilt, intent, moral status, incapacity, or uniform support need.
+  - Relation roles are established by evidence, not inherited from node family.
+  - Migration aliases preserve old records without silently rewriting history.
+  - Affected populations and ecologies should not be fragmented merely because a source lists them.
+  - A diagnostic or institutional label is not the whole lived reality of a participant.
+  - Empty landing results are valid; a story or spread does not owe the lattice a new node.
