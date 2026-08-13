@@ -75,6 +75,11 @@ canonical_families:
       - refusal
       - exit
       - appeal
+  analysis_framework:
+    subtypes:
+      - causal_accountability_operator
+      - institutional_accountability_operator
+      - resource_distribution_operator
 
 migration_aliases:
   person: {family: actor, subtype: person}
@@ -98,6 +103,9 @@ relation_role_rule:
 condition_rule:
   note: A condition node does not determine whether every person associated with it is disabled, impaired, ill, deficient, or in need of the same support. Disability, impairment, support need, legal status, identity, and environmental mismatch must remain separately evidenced relations or claims.
 
+analysis_framework_rule:
+  note: Analysis-framework nodes describe reusable investigative operators or map structures. They are not evidence that a worldly actor, harm, relation, or causal mechanism exists in a particular case. Case-specific edges still require evidence.
+
 validation:
   new_records:
     require_family_from_registry: true
@@ -113,6 +121,7 @@ validation:
 locks:
   - Node type classifies the record; it does not assign guilt, intent, moral status, incapacity, or uniform support need.
   - Relation roles are established by evidence, not inherited from node family.
+  - Analysis frameworks are maps and operators, not case evidence by themselves.
   - Migration aliases preserve old records without silently rewriting history.
   - Affected populations and ecologies should not be fragmented merely because a source lists them.
   - A diagnostic or institutional label is not the whole lived reality of a participant.
