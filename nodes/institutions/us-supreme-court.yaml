@@ -1,0 +1,51 @@
+schema: unum-lattice-news/node/v0.1
+id: us-supreme-court
+title: U.S. Supreme Court
+family: actor
+subtype: institution
+hierarchy_class: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    The highest federal court and a major judicial gate over constitutional and federal questions. In the harm-audit lane, review focuses on judicial power, life tenure, selection networks, donor and access relationships, disclosure, recusal, ethics enforcement, and decisions that remove or preserve constraints on concentrated power.
+  posture: observed
+aliases: [SCOTUS, Supreme Court of the United States]
+hashtags: [SCOTUS, JudicialPower, Ethics, FederalistSociety, SeparationOfPowers]
+current_evidence:
+  observed:
+    - The Court is composed of nine life-tenured justices.
+    - Five current justices have disclosed Federalist Society connections through travel, reimbursements, appearances, or other relationships in the recovered source bundle.
+    - The Court adopted a formal ethics code in 2023; the recovered research describes no independent enforcement mechanism.
+  supported_inferences:
+    - Selection networks, donor access, life tenure, recusal discretion, and weak external enforcement materially affect accountability risk.
+  disputed:
+    - Whether ideological, donor, travel, gift, or access relationships improperly influence particular decisions.
+  unknowns:
+    - The full extent of undisclosed relationships and the causal effect of those relationships on specific case outcomes.
+provenance_missingness:
+  - id: source-supreme-court-current-members
+    state: SEARCHED_NOT_FOUND
+    note: >-
+      The legacy node referenced this source identifier, but no corresponding repository source record was recovered by filename/search during reconciliation. Do not silently substitute a different source; recover or recreate from an identified official source in a later evidence pass.
+relations:
+  - type: SUBJECT_TO
+    target: supreme-court-ethics-code
+    posture: observed
+    evidence: [source-supreme-court-ethics-network]
+  - type: TESTED_BY
+    target: institutions-gates-leaders-levers
+    posture: working_framework
+harm_audit_questions:
+  - Which selection and confirmation networks shaped each appointment?
+  - Which gifts, travel, property, family-income, donor-access, or advocacy relations created disclosure or recusal questions?
+  - Which connected actors had interests before the Court, directly or through organizations, and what recusal decisions followed?
+  - Which decisions expanded executive, police, corporate, religious, electoral, or other concentrated power while reducing appeal, regulation, labor, voting, bodily-autonomy, or civil-rights constraints?
+  - Which ethics, disclosure, oversight, or complaint mechanisms are controlled by the Court itself, and where can independent accountability enter?
+locks:
+  - Ideological alignment, friendship, travel, reimbursement, gift, or donor access does not alone prove a corrupt ruling.
+  - Lack of direct quid pro quo evidence does not erase documented financial, access, disclosure, recusal, or selection-network relations.
+  - Life tenure and institutional opacity increase the need for evidence-based conflict and recusal review; they do not establish guilt by themselves.
+  - Do not add unrelated respected decisions or institutional achievements as offsets against a documented conflict or harmful ruling.
