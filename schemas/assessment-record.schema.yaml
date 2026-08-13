@@ -1,0 +1,87 @@
+version: 0.1
+status: working
+purpose: >-
+  Machine-readable envelope for scoped trust and threat assessments.
+  Assessment records are projections over evidence and must not be used as identity labels,
+  guilt findings, enemy designations, positive reputation credits, or automatic action authority.
+
+assessment_record:
+  id: ""
+  assessment_type: "" # trust | threat
+  subject_ref: "" # source/node/relation/claim/event identifier
+  scope:
+    claim: null
+    domain: null
+    event: null
+    jurisdiction: null
+    time_start: null
+    time_end: null
+  assessed_at: ""
+  assessor: ""
+  status: "" # draft | reviewed | superseded | withdrawn
+
+  evidence:
+    supporting: []
+    counterevidence: []
+    source_lineage: []
+    missingness: []
+
+  confidence: "" # low | medium | high
+  confidence_notes: ""
+
+  trust:
+    authenticity: null
+    provenance: null
+    evidence_recoverability: null
+    independence_interest: null
+    domain_competence: null
+    historical_reliability: null
+    correction_reentry: null
+    transparency: null
+    adversarial_survivability: null
+
+  threat:
+    capability: null
+    expressed_direction: null
+    trajectory: null
+    constraint_erosion: null
+    reach: null
+    target_vulnerability: null
+    irreversibility: null
+    opacity: null
+    precedent_repetition: null
+    escalation_potential: null
+    repair_capacity: null
+    immediacy: null
+    summary:
+      current_threat: null
+      escalation_risk: null
+      maximum_plausible_harm: null
+
+  scenario_branches: []
+
+  scoring:
+    mode: "" # none | ordinal | range | numeric
+    value_or_band: null
+    scale: null
+    weights_version: null
+    weights: {}
+    limitations: []
+
+  re_entry:
+    next_review: null
+    evidence_that_would_change_assessment: []
+    correction_path: ""
+    supersedes: null
+    superseded_by: null
+
+locks:
+  - "trust != truth"
+  - "trust != moral goodness"
+  - "threat != enemy"
+  - "harm != identity"
+  - "score != action authority"
+  - "missing != zero"
+  - "confidence != score"
+  - "listen before scoring"
+  - "deterministic evidence packet must survive score removal"
