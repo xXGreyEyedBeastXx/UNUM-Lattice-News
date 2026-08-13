@@ -1,0 +1,37 @@
+story_id: story-2026-08-06-autism-vaccine-policy-watch
+title: "Administration considers further autism-vaccine action despite contrary evidence base"
+date: 2026-08-06
+status: developing
+focal_nodes:
+  - Robert F. Kennedy Jr.
+  - U.S. Department of Health and Human Services
+  - autism
+source_refs:
+  - source-reuters-2026-08-06-autism-vaccine-order
+claims:
+  - id: policy-consideration
+    posture: reported
+    text: "The Trump administration is considering an executive order concerning vaccines and autism."
+    factual_relation_permission: allowed
+  - id: vaccine-autism-causation
+    posture: contested_rhetorical_claim
+    text: "Vaccination is a causal explanation for autism."
+    factual_relation_permission: blocked
+    reason: "The current evidence base cited in the source does not establish a credible causal link."
+  - id: investigation-implies-plausibility
+    posture: reasoning_warning
+    text: "Government investigation of a proposition does not itself increase the proposition's evidentiary support."
+    factual_relation_permission: not_applicable
+watch_for:
+  - final executive-order text or abandonment
+  - changes in HHS/NIH/CDC research funding
+  - study preregistration, endpoints, cohorts, confounder controls, and publication plans
+  - attempts to treat diagnosis prevalence as biological incidence
+  - policy changes justified by unverified causal claims
+  - conflicts of interest or unusual access to restricted health datasets
+  - effects on autistic people, vaccination access, outbreak risk, and public-health resources
+floating_claims:
+  - "Which specific vaccine exposure, timing, or mechanism is being alleged?"
+  - "What result would HHS accept as disconfirming the proposed causal link?"
+  - "Are studies designed to discriminate hypotheses or to search selectively for confirming associations?"
+reporter_rule: "State that the administration is investigating or considering action when sourced; never render vaccine-autism causation as fact unless a future claim-test record supports promotion."

@@ -1,0 +1,23 @@
+version: v0_1
+id: source-nimh-autism-overview
+title: Autism Spectrum Disorder
+author_or_institution: National Institute of Mental Health
+publication_date: null
+event_date: null
+source_type: official_statement
+url: https://www.nimh.nih.gov/health/publications/autism-spectrum-disorder
+accessed: "2026-08-09"
+rights_or_license: public_federal_source
+supports:
+  stories: []
+  nodes:
+    - autism
+  relations:
+    - autism-classified-as-developmental-disability
+    - autism-affects-autistic-people
+relevant_claims:
+  - NIMH describes autism as a neurological and developmental disorder.
+  - NIMH states that autism includes a range of characteristics, needs, strengths, and challenges.
+limitations:
+  - This is an institutional clinical overview, not a complete account of autistic lived experience or community terminology.
+  - Diagnostic description does not determine any individual's support needs, identity preference, or legal disability status.
