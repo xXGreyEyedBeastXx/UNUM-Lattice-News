@@ -1,12 +1,12 @@
 # Trust & Threat Assessment Field v0.1
 
 **Status:** working infrastructure; non-canonical scoring model  
-**Purpose:** add inspectable trust and threat assessment without converting scores into identity, verdict, punishment, or authority.
+**Purpose:** add inspectable trust and threat assessment without converting scores into identity, verdict, punishment, authority, or positive moral credit.
 
 ## Core separation
 
 ```text
-TRUST != THREAT != HARM != GUILT != IDENTITY
+TRUST != THREAT != HARM != GUILT != IDENTITY != MORAL GOODNESS
 ```
 
 Trust asks whether a bounded source/claim deserves epistemic weight.
@@ -15,6 +15,8 @@ Harm asks what consequences are occurring or have occurred.
 Accountability asks how choice, knowledge, power, alternatives, repetition, and causal contribution intersect.
 
 These surfaces may inform one another but must remain separately recoverable.
+
+Trust is an evidence instrument, not a reputation credit. A source may be reliable on one bounded claim while an actor associated with it remains harmful in another causal field.
 
 ## Instrument law
 
@@ -118,7 +120,7 @@ A high maximum plausible harm with low immediacy is not the same state as modera
 
 ## Power / Agency / Harm coupling
 
-Threat should be derived from, and remain auditable back to, the three News maps:
+Threat should be derived from, and remain auditable back to, the News maps:
 
 ```text
 POWER MAP      -> capability / reach / constraint control
@@ -156,9 +158,10 @@ If numeric scores are used:
 3. missing data does not silently become zero;
 4. confidence in the score is separate from the score itself;
 5. source trust does not mechanically determine claim truth;
-6. threat does not mechanically determine enforcement;
-7. harm does not erase dignity;
-8. no score may automatically trigger publication, targeting, punishment, surveillance, exposure, or escalation.
+6. source trust does not create moral credit or offset harm;
+7. threat does not mechanically determine enforcement;
+8. harm does not erase dignity;
+9. no score may automatically trigger publication, targeting, punishment, surveillance, exposure, or escalation.
 
 Suggested confidence wrapper:
 
@@ -176,20 +179,17 @@ assessment:
 
 ## Governance locks
 
-From the Harm Constraint & Dignity architecture:
-
-- no body may police itself;
+- no body may police itself and count that as independent review;
 - accusation alone is insufficient for sanction;
 - emergency increases the burden of justification;
 - accountability targets conduct and machinery, not disposable identity;
-- intervention must remain necessary, proportionate, reviewable, and dignity-preserving;
 - privacy may protect the weak while secrecy may protect the powerful.
 
 Assessment code, weights, datasets, and outputs require independent review pathways proportional to consequence.
 
 ## Actor-node integration
 
-Do not store `trusted`, `untrusted`, `dangerous`, or `enemy` as identity labels.
+Do not store `trusted`, `untrusted`, `dangerous`, `good`, `bad`, or `enemy` as identity labels.
 
 Attach assessments as dated, scoped records:
 
@@ -223,4 +223,4 @@ The deterministic evidence packet must remain usable if all scores are removed.
 
 > Trust is claim-local. Threat is trajectory-local. Harm is consequence-local. Dignity is not score-dependent.
 
-> A score may focus attention. It may never decide alone.
+> Trust is not moral credit. A score may focus attention. It may never decide alone.
