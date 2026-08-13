@@ -1,0 +1,59 @@
+schema: unum-lattice-news/node/v0.1
+id: us-department-health-human-services
+title: U.S. Department of Health and Human Services
+family: actor
+subtype: institution
+hierarchy_class: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    U.S. federal health-policy institution whose recovered autism agenda includes etiology research, prevention, treatment, care, data integration, and public-health messaging. In the harm-audit lane, examine causal framing, research-direction pressure, data governance, privacy, pathologizing assumptions, resource allocation, and effects on autistic people and public health.
+  posture: observed_with_legacy_source_gaps
+aliases: [HHS, Department of Health and Human Services]
+hashtags: [HHS, AutismPolicy, AutismResearch, PublicHealth]
+current_evidence:
+  observed:
+    - The legacy node records autism research and policy as a departmental priority.
+    - The legacy node records work on etiology, treatment/care, prevention-oriented research, data initiatives, and coordinating structures.
+  stated:
+    - Recovered institutional framing emphasizes gold-standard science, root-cause research, prevention, treatment, care, and support for families.
+  supported_inferences:
+    - Prevention-oriented framing may pathologize autism, narrow research priorities, or create pressure toward predetermined causal narratives depending on actual implementation.
+  disputed:
+    - Whether epidemic framing and broad causal assumptions accurately represent autism prevalence and causation science.
+  unknowns:
+    - Data governance, privacy protections, grant priorities, study design, and degree of autistic-led participation.
+  claim_specific_counterevidence:
+    - Identified prevalence does not by itself establish rising biological incidence or a single general causal exposure.
+    - The recovered Reuters source does not support vaccine-autism causation and treats the administration's interest as policy activity rather than causal evidence.
+provenance_missingness:
+  - {id: source-hhs-autism-priorities, state: SOURCE_RECORD_NOT_RECOVERED}
+  - {id: source-hhs-autism-actions-2025, state: SOURCE_RECORD_NOT_RECOVERED}
+relations:
+  - type: LED_BY
+    target: robert-f-kennedy-jr
+    posture: legacy_observed_pending_source_relink
+    evidence: [source-hhs-autism-priorities]
+  - type: SETS_POLICY_FOR
+    target: autism
+    posture: legacy_observed_pending_source_relink
+    evidence: [source-hhs-autism-priorities, source-hhs-autism-actions-2025]
+  - type: SUBJECT_OF
+    target: rfk-hhs-autism-environmental-cause
+    posture: observed
+  - type: TESTED_BY
+    target: institutions-gates-leaders-levers
+    posture: working_framework
+harm_audit_questions:
+  - Who controls research priorities, grant awards, datasets, endpoints, preregistration, and release of negative findings?
+  - What privacy and consent constraints govern linked Medicare, Medicaid, electronic-record, wearable, or other health data?
+  - Does prevention rhetoric target environmental injury in bounded subgroups or collapse autism itself into a preventable harm category?
+  - What research/service resources are displaced by preferred causal agendas?
+  - What decision power do autistic people and autistic researchers hold over scope, interpretation, privacy, and downstream policy?
+locks:
+  - Institutional stated goals are not demonstrated results or moral credit.
+  - Care or research activity elsewhere does not offset a harmful causal frame, privacy failure, discriminatory policy, or unsupported public-health claim.
+  - Missing source records must be relinked before inherited factual assertions are promoted beyond their legacy posture.
