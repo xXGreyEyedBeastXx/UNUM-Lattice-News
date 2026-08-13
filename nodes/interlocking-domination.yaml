@@ -1,0 +1,58 @@
+schema: unum-lattice-news/node/v0.1
+id: interlocking-domination
+title: Interlocking domination
+family: ideology_cultural_frame
+subtype: narrative_frame
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-13
+legacy_source_branch: reconcile-node-schema-v0-1
+summary:
+  text: >-
+    A systems framework describing how patriarchy, class rule, racial hierarchy, colonialism, ableism, nationalism, religious authority, extractivism, bureaucratic self-protection, and related domination structures can reinforce one another without being reducible to a single cause.
+  posture: supported_inference
+aliases:
+  - matrix of domination
+  - interlocking systems of domination
+hashtags:
+  - interlocking-domination
+  - patriarchy
+  - colonialism
+  - ableism
+  - class
+  - authoritarianism
+current_evidence:
+  observed:
+    - Multiple feminist, Black feminist, intersectional, decolonial, disability-justice, and political traditions analyze domination as structurally interlocking rather than isolated.
+  stated:
+    - The current working proposition treats patriarchy as a highly recurrent organizing architecture within a broader mesh of domination systems.
+  supported_inferences:
+    - Shared methods such as dehumanization, hierarchy, coercion, institutional protection, and downward harm transfer may connect actors with different surface ideologies.
+  disputed:
+    - Which structure has greatest causal weight in any given case.
+    - Whether apparently similar methods across regimes produce genuinely comparable systems and outcomes.
+  unknowns:
+    - Which measurable network features best distinguish domination, coordination, convergence, and coincidence.
+  counterevidence:
+    - Similar rhetoric or institutional form does not prove common command, identical ideology, or equal harm.
+relations:
+  - type: INTERLOCKS_WITH
+    target: patriarchy
+    posture: supported_inference
+  - type: TESTED_THROUGH
+    target: harm-domination-protection-weighting
+    posture: supported_inference
+  - type: REQUIRES
+    target: situated-relational-analysis
+    posture: supported_inference
+unresolved_questions:
+  - When is patriarchy causal, enabling, amplifying, or merely correlated?
+  - How should class, race, colonialism, caste, ableism, nationalism, religious authority, extractivism, and bureaucracy be independently weighted?
+  - What observations would falsify or narrow the framework?
+corrections: []
+locks:
+  - Do not convert interlocking structure into guilt by association.
+  - Do not infer coordination from ideological resemblance alone.
+  - Do not reduce every hierarchy to patriarchy or any other single mechanism.
+  - Shared methods must be traced through actors, institutions, resources, harms, gains, and accountability pathways.
+  - Unrelated beneficial conduct does not weaken an interlocking-harm hypothesis; claim-specific contradictory evidence does.
