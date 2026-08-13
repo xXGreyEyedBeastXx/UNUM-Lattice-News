@@ -1,0 +1,91 @@
+schema: unum-lattice-news/node/v0.2
+id: white-lives-matter-2021-initiative
+title: White Lives Matter April 2021 Initiative
+entity_type: movement
+actor_roles:
+  - advocate
+status: seed
+updated: 2026-08-13
+summary:
+  text: >-
+    A self-described worldwide, anonymous, decentralized White Lives Matter initiative launched in April 2021. Its own 2022 and 2024 activist manuals state a long-term objective of maintaining populations above 99 percent white in countries and continents it identifies as white-built, center the white-supremacist slogan commonly known as the 14 Words, and describe mainstream-facing outreach as a pathway toward a White Nationalist worldview. The manuals distinguish public-facing optics from the broader ideological material available inside the movement's ecosystem. The initiative claims no organizational connection to earlier groups using the White Lives Matter name; that claimed separation should remain distinct unless independently established otherwise.
+  posture: supported inference
+aliases:
+  - WLM April 2021 initiative
+  - White Lives Matter Official
+hashtags:
+  - WhiteLivesMatter
+  - white-nationalism
+  - white-supremacy
+  - extremist-movements
+authority:
+  has_authority: false
+  seat: decentralized movement
+  source: self-described movement structure
+  jurisdiction: transnational
+  level: other
+  term_start: 2021-04
+  term_end: null
+  oversight: []
+  appeal_or_review: []
+vulnerability:
+  roles: []
+  protection_needs: []
+funding:
+  gives_to: []
+  receives_from: []
+constituencies:
+  - self-described white population
+current_evidence:
+  observed: []
+  stated:
+    - The 2024 manual states that the initiative seeks to awaken white racial consciousness through real-world action.
+    - The 2024 manual states a long-term objective of populations above 99 percent white in countries and continents it identifies as white-built.
+    - The 2024 manual centers the 14 Words as its core ideological message.
+    - The 2024 manual describes its public outreach as a doorway toward a White Nationalist worldview.
+    - The 2024 manual directs WLM-branded outreach away from overt Nazi, fascist, MAGA, antisemitic, anti-LGBT, and other polarizing messaging because those associations can interfere with mainstream recruitment.
+    - The 2022 manual stated a 99 percent white demographic objective and racially restricted citizenship in envisioned white states.
+    - Both manuals claim the April 2021 initiative is distinct from earlier groups using the White Lives Matter name.
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - The movement's stated demographic and political objectives support classifying its program as white nationalist and white supremacist rather than as a generic equal-treatment campaign.
+    - The distinction between acceptable public-facing messaging and broader ideological material functions as an exoteric/esoteric recruitment boundary.
+  disputed: []
+  ambiguous:
+    - The degree of organizational continuity, if any, between the April 2021 initiative and earlier White Lives Matter formations is not established by the manuals themselves.
+  unknowns:
+    - Current size, geographic distribution, and activity level of local cells are not established by the manuals alone.
+    - The extent of overlap with specific contemporary neo-Nazi, Klan, Active Club, Patriot Front, or other extremist organizations requires node-specific evidence.
+  missing_or_withheld:
+    - participant identities are intentionally obscured by the movement's anonymous structure
+  counterevidence:
+    - The movement repeatedly states that WLM-branded activism should remain legal and nonviolent; ideological classification should not be converted into an unsupported allegation of criminal conduct.
+timeline:
+  - date: 2021-04
+    event: The initiative states that it launched in April 2021.
+    posture: stated
+  - date: 2022-01
+    event: Activist Manual 2.0 documents the initiative's racial-demographic objectives, ideological reading ecosystem, and decentralized organizing model.
+    posture: stated
+  - date: 2024
+    event: Activist Manual 3.0 reiterates the 99 percent white long-term objective and more explicitly frames mainstream-facing outreach as a path toward a White Nationalist worldview.
+    posture: stated
+relations: []
+stories: []
+unresolved_questions:
+  - Which Tennessee-linked public actions since 2021 can be attributed specifically to the April 2021 initiative rather than earlier or unrelated WLM formations?
+  - What documented relationships exist between this initiative and contemporary neo-Nazi, Klan, Active Club, Patriot Front, or other white-supremacist networks?
+  - Has the initiative's recurring monthly action tradition remained active through 2025-2026, and where is that independently observable?
+  - Which public-facing messages function as entry points to more explicit white-nationalist material, and how has that strategy changed between manual versions?
+  - What evidence can distinguish ideological overlap from organizational coordination?
+corrections: []
+references:
+  - source-white-lives-matter-2021-initiative
+locks:
+  - Node inclusion is not an accusation of criminal conduct.
+  - Preserve the initiative's claimed separation from earlier WLM groups unless independent evidence establishes continuity.
+  - White-nationalist or white-supremacist classification should rest on stated goals and documented ideology, not on racial identity or political affiliation alone.
+  - Anonymous participation is not sufficient evidence to identify a person as a member or organizer.
+  - Do not publish operational-security guidance, private identities, addresses, or doxxing material.
+  - Distinguish ideological overlap, shared media, attendance, coordination, and formal organizational relation as separate evidence classes.
