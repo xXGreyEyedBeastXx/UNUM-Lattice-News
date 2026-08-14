@@ -1,0 +1,106 @@
+contribution_record:
+  id: trump-2025-02-18-independent-agency-presidential-control
+  title: "Trump orders expanded White House supervision of independent regulatory agencies"
+  contributor_node: donald-trump
+  mechanism_node: null
+  contribution_type: regulatory_action
+  start_date: "2025-02-18"
+  end_date: null
+  scope: >-
+    Executive order extending presidential and OMB supervision into covered independent
+    regulatory agencies through regulatory review, budget-apportionment review, policy
+    coordination, performance standards, White House liaisons, and controlling executive-branch
+    legal interpretations.
+  causal_fields:
+    - executive power
+    - independent regulatory agencies
+    - institutional constraint
+    - budget control
+    - legal interpretation
+  studies_or_spreads:
+    - Trump constitutional safeguard trajectory ledger
+    - executive centralization study
+  immediate_mechanism: >-
+    The order declares a policy of Presidential supervision and control of the entire executive
+    branch, subjects covered independent agencies to White House regulatory review and policy
+    coordination, authorizes OMB review and adjustment of covered agency apportionments consistent
+    with law, and makes Presidential and Attorney General legal interpretations controlling for
+    executive-branch employees.
+  direct_effects:
+    - "Covered independent regulatory agencies became subject to OIRA review for significant regulatory actions."
+    - "OMB received an ongoing role reviewing covered independent-agency obligations against presidential policies and priorities, subject to law."
+    - "Covered independent agencies were directed to coordinate priorities and strategic plans with White House offices."
+    - "The order states that Presidential and Attorney General legal interpretations control executive-branch employees in official duties."
+  downstream_effects:
+    - "Potential reduction in institutional independence from direct presidential policy control requires agency-by-agency and litigation-specific review."
+    - "Potential effects on election, communications, securities, competition, labor, and other regulatory safeguards depend on subsequent implementation."
+  affected_participants_or_ecologies:
+    - independent regulatory agencies
+    - career and appointed federal officials
+    - regulated populations and industries
+    - public institutional checks and balances
+  shared_harm_ids: []
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: false
+    rating_scope: "Structural-power effect is confirmed; harm scoring awaits agency-specific consequence extraction."
+    time_window:
+      start: "2025-02-18"
+      end: null
+    harm_vector:
+      lethal_physical_harm: null
+      confinement_coercion: null
+      material_deprivation: null
+      rights_agency_harm: null
+      land_sovereignty_displacement: null
+      ecological_future_harm: null
+      democratic_epistemic_harm: null
+      power_concentration: null
+      catastrophic_risk_imposition: null
+    propagation:
+      reach: null
+      duration: null
+      irreversibility: null
+      vulnerability: null
+    catastrophic_pathway_support: null
+    score_summary:
+      realized_harm_score: null
+      structural_harm_score: null
+      catastrophic_risk_score: null
+    score_justification:
+      - "Do not assign a harm score until implementation and consequence are extracted by agency and function."
+  evidence:
+    - title: "Ensuring Accountability for All Agencies"
+      institution: The White House
+      date: "2025-02-18"
+      url: "https://www.whitehouse.gov/presidential-actions/2025/02/ensuring-accountability-for-all-agencies/"
+  counterevidence:
+    - "The order expressly frames the change as democratic accountability and repeatedly limits implementation to actions consistent with applicable law."
+    - "The Federal Reserve's monetary-policy functions are excluded, showing the order does not erase every statutory or institutional independence boundary."
+  unknowns:
+    - "Which specific covered agency decisions were changed, delayed, prohibited, or redirected through the new White House and OMB controls?"
+    - "Which provisions have been narrowed, invalidated, or sustained in subsequent litigation?"
+  path_forward:
+    - "Extract implementation records for FEC, FTC, FCC, SEC, NLRB, and other covered bodies separately."
+    - "Track court rulings and congressional responses that strengthen, narrow, or invalidate the asserted control."
+  debunking_record:
+    claim_as_tested: "The February 2025 order completed presidential capture of all independent federal institutions."
+    strongest_supporting_case:
+      - "The order expressly expands presidential and OMB control over covered independent regulatory agencies."
+    expected_evidence_if_true:
+      - "Elimination of legally meaningful independence across all covered institutions and inability of courts or Congress to constrain the change."
+    recovered_evidence:
+      - "The order preserves applicable-law limitations and excludes Federal Reserve monetary policy."
+    decisive_failure:
+      - "The order alone does not establish complete institutional capture or elimination of external judicial and legislative constraints."
+    why_claim_fails: "The evidence supports expanded executive control, not completed control of every independent institution."
+    residual_claims:
+      - "The order is confirmed evidence of a preferred and implemented direction toward stronger presidential control over covered independent agencies."
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - donald-trump
+  corrections: []
+  last_reviewed: "2026-08-13"
