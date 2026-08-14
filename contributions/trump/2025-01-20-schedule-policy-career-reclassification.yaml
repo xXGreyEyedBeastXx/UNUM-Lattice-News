@@ -1,0 +1,114 @@
+contribution_record:
+  id: trump-2025-01-20-schedule-policy-career-reclassification
+  title: "Trump reinstates and later implements Schedule Policy/Career for policy-influencing civil-service positions"
+  contributor_node: donald-trump
+  mechanism_node: null
+  contribution_type: regulatory_action
+  start_date: "2025-01-20"
+  end_date: null
+  scope: >-
+    Reinstatement, rulemaking, and implementation of Schedule Policy/Career for career
+    positions classified as confidential, policy-determining, policymaking, or policy-advocating,
+    with reduced adverse-action protections and stronger executive removal authority.
+  causal_fields:
+    - civil service
+    - executive control
+    - personnel independence
+    - institutional constraint
+    - policy implementation
+  studies_or_spreads:
+    - Trump constitutional safeguard trajectory ledger
+    - civil-service independence study
+  immediate_mechanism: >-
+    The January 2025 order reinstated the former Schedule F framework as Schedule Policy/Career,
+    while stating that covered employees need not personally or politically support the President
+    but must faithfully implement lawful administration policy. OPM finalized implementing rules
+    in February 2026, and a June 2026 executive order transferred listed senior policy-influencing
+    positions into the category.
+  direct_effects:
+    - "A new implemented excepted-service category covers designated policy-influencing career positions."
+    - "Covered positions remain career and merit-based according to OPM rather than becoming ordinary political appointments."
+    - "Covered employees are exempted from ordinary adverse-action procedures specified in the implementing framework."
+    - "The executive branch obtained greater removal discretion over designated policy-influencing career positions."
+  downstream_effects:
+    - "Potential reduction in career officials' practical ability to resist unlawful or improper pressure requires position- and event-specific evidence."
+    - "Potential improvement in removal of poor performers or misconduct is the administration's stated protective rationale and must remain visible where supported."
+  affected_participants_or_ecologies:
+    - federal career civil service
+    - policy-influencing federal employees
+    - federal agency institutional continuity
+    - public administration and oversight systems
+  shared_harm_ids: []
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: false
+    rating_scope: "Structural change is confirmed; harm scoring awaits case-level evidence of removals, pressure, implementation gains, or institutional loss."
+    time_window:
+      start: "2025-01-20"
+      end: null
+    harm_vector:
+      lethal_physical_harm: null
+      confinement_coercion: null
+      material_deprivation: null
+      rights_agency_harm: null
+      land_sovereignty_displacement: null
+      ecological_future_harm: null
+      democratic_epistemic_harm: null
+      power_concentration: null
+      catastrophic_risk_imposition: null
+    propagation:
+      reach: null
+      duration: null
+      irreversibility: null
+      vulnerability: null
+    catastrophic_pathway_support: null
+    score_summary:
+      realized_harm_score: null
+      structural_harm_score: null
+      catastrophic_risk_score: null
+    score_justification:
+      - "Do not score structural harm from legal category change alone without extracting actual personnel and institutional consequences."
+  evidence:
+    - title: "Restoring Accountability To Policy-Influencing Positions Within the Federal Workforce"
+      institution: The White House
+      date: "2025-01-20"
+      url: "https://www.whitehouse.gov/presidential-actions/2025/01/restoring-accountability-to-policy-influencing-positions-within-the-federal-workforce/"
+    - title: "Schedule Policy/Career"
+      institution: U.S. Office of Personnel Management
+      date: "2026"
+      url: "https://www.opm.gov/policy-data-oversight/hiring-information/hiring-authorities/schedule-policycareer/"
+    - title: "Implementing Schedule Policy/Career in the Excepted Service"
+      institution: The White House
+      date: "2026-06-03"
+      url: "https://www.whitehouse.gov/presidential-actions/2026/06/implementing-schedule-policy-career-in-the-excepted-service/"
+  counterevidence:
+    - "OPM states that Schedule Policy/Career positions remain career, merit-based positions rather than political appointments."
+    - "The January 2025 order expressly says covered employees are not required to personally or politically support the President."
+    - "The administration states the framework is intended to improve accountability for misconduct and poor performance."
+  unknowns:
+    - "How many employees have been removed, reassigned, chilled, or protected from misconduct under the implemented framework?"
+    - "Which covered employees have alleged pressure to violate law or professional obligations, and what independent evidence supports those allegations?"
+  path_forward:
+    - "Build position- and agency-level implementation records rather than treating all covered employees as one population."
+    - "Track litigation, Merit Systems Protection Board issues, whistleblower consequences, and measurable performance outcomes."
+  debunking_record:
+    claim_as_tested: "Schedule Policy/Career converts the federal civil service into a purely partisan patronage workforce."
+    strongest_supporting_case:
+      - "The framework increases removal discretion over policy-influencing career positions."
+    expected_evidence_if_true:
+      - "Political loyalty would be an employment requirement and positions would cease to be career or merit-based."
+    recovered_evidence:
+      - "OPM describes the positions as career and merit-based, and the executive order disclaims a requirement of personal or political support for the President."
+    decisive_failure:
+      - "The formal framework does not establish a purely partisan patronage workforce."
+    why_claim_fails: "The supported claim is reduced adverse-action protection and increased executive personnel control, not formal conversion of all covered positions into political appointments."
+    residual_claims:
+      - "The framework is confirmed evidence of increased executive control over policy-influencing career personnel."
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - donald-trump
+  corrections: []
+  last_reviewed: "2026-08-13"
