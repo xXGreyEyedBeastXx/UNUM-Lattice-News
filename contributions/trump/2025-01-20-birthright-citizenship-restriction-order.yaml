@@ -1,0 +1,114 @@
+contribution_record:
+  id: trump-2025-01-20-birthright-citizenship-restriction-order
+  title: "Trump orders federal restriction of birthright citizenship; Supreme Court later rejects the constitutional theory"
+  contributor_node: donald-trump
+  mechanism_node: null
+  contribution_type: policy
+  start_date: "2025-01-20"
+  end_date: "2026-06-30"
+  scope: >-
+    Executive Order 14160 directed federal agencies not to recognize birthright citizenship
+    for specified children born in the United States based on parental immigration status.
+    Federal courts enjoined implementation, and the Supreme Court held on June 30, 2026 that
+    children born in the United States to parents unlawfully or temporarily present are citizens
+    at birth under the Fourteenth Amendment.
+  causal_fields:
+    - citizenship
+    - Fourteenth Amendment
+    - executive constitutional interpretation
+    - immigration
+    - judicial constraint
+  studies_or_spreads:
+    - Trump constitutional safeguard trajectory ledger
+    - citizenship and equal-membership study
+    - judicial resistance and re-entry study
+  immediate_mechanism: >-
+    The order directed State, Justice, Homeland Security, Social Security, and other federal
+    agencies to deny federal recognition of citizenship to specified U.S.-born children based
+    on their parents' immigration status, with implementation scheduled after 30 days. Litigation
+    prevented the policy from taking effect against the certified class, and the Supreme Court
+    later rejected the order's interpretation of the Citizenship Clause.
+  direct_effects:
+    - "Federal agencies were ordered to prepare for nonrecognition of citizenship for the defined categories of U.S.-born children."
+    - "Lower federal courts enjoined enforcement before the policy could take effect against the certified class."
+    - "On June 30, 2026, the Supreme Court held that the affected children are citizens at birth under the Fourteenth Amendment and affirmed the injunction."
+  downstream_effects:
+    - "The attempted restriction is evidence of executive preference and formal action toward narrowing constitutional citizenship by executive order."
+    - "The Supreme Court decision is evidence that a major judicial constitutional safeguard remained effective in this episode."
+    - "Realized denial-of-citizenship harm should not be scored for the blocked class without evidence that any individual was actually denied recognition before or outside the injunction."
+  affected_participants_or_ecologies:
+    - U.S.-born children of parents unlawfully present in the United States
+    - U.S.-born children of certain temporarily present noncitizen parents
+    - immigrant families
+    - federal and state citizenship-document systems
+    - constitutional judicial review
+  shared_harm_ids: []
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: adjudicated
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: false
+    rating_scope: "Attempted constitutional-right restriction and successful judicial constraint are confirmed; realized citizenship-deprivation scoring requires individual evidence."
+    time_window:
+      start: "2025-01-20"
+      end: "2026-06-30"
+    harm_vector:
+      lethal_physical_harm: null
+      confinement_coercion: null
+      material_deprivation: null
+      rights_agency_harm: null
+      land_sovereignty_displacement: null
+      ecological_future_harm: null
+      democratic_epistemic_harm: null
+      power_concentration: null
+      catastrophic_risk_imposition: null
+    propagation:
+      reach: null
+      duration: null
+      irreversibility: null
+      vulnerability: null
+    catastrophic_pathway_support: null
+    score_summary:
+      realized_harm_score: null
+      structural_harm_score: null
+      catastrophic_risk_score: null
+    score_justification:
+      - "The order is strong harmful-intent/trajectory evidence but the principal implementation was blocked; do not count the intended endpoint as realized harm."
+  evidence:
+    - title: "Protecting The Meaning And Value Of American Citizenship"
+      institution: The White House
+      date: "2025-01-20"
+      url: "https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-meaning-and-value-of-american-citizenship/"
+    - title: "Trump v. Barbara"
+      institution: Supreme Court of the United States
+      date: "2026-06-30"
+      url: "https://www.supremecourt.gov/opinions/25pdf/25-365_new_5if6.pdf"
+  counterevidence:
+    - "The administration framed the order as an interpretation of the Fourteenth Amendment rather than as rejection of the Amendment itself."
+    - "The judicial system prevented the principal policy from taking effect against the certified class and the Supreme Court ultimately rejected the executive interpretation."
+    - "The Supreme Court ruling demonstrates that the current judiciary cannot accurately be described as uniformly captured by the executive."
+  unknowns:
+    - "Whether any individuals experienced temporary documentation or administrative harms attributable to implementation preparation before final adjudication."
+    - "Whether the administration will seek a different statutory, constitutional-amendment, or administrative route toward the same citizenship objective."
+  path_forward:
+    - "Track compliance with Trump v. Barbara and any renewed attempt to narrow birthright citizenship."
+    - "Record any future effort through legislation or constitutional amendment separately from the invalid executive-order route."
+  debunking_record:
+    claim_as_tested: "Trump successfully ended birthright citizenship for children of undocumented or temporary-status parents."
+    strongest_supporting_case:
+      - "The January 2025 executive order expressly sought that outcome."
+    expected_evidence_if_true:
+      - "The policy would have taken effect and remained legally operative."
+    recovered_evidence:
+      - "Federal courts enjoined the order, and the Supreme Court held the affected children are citizens at birth under the Fourteenth Amendment."
+    decisive_failure:
+      - "The intended constitutional endpoint was blocked and rejected by the Supreme Court."
+    why_claim_fails: "The supported claim is attempted restriction by executive order, not successful elimination of birthright citizenship."
+    residual_claims:
+      - "The order remains confirmed evidence of the administration's preferred constitutional direction and willingness to test that direction through executive power."
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - donald-trump
+  corrections: []
+  last_reviewed: "2026-08-13"

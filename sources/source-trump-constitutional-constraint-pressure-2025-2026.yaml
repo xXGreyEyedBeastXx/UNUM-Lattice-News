@@ -1,0 +1,81 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-trump-constitutional-constraint-pressure-2025-2026
+title: Trump constitutional constraint-pressure primary-source bundle, 2025-2026
+accessed: 2026-08-13
+sources:
+  - id: white-house-independent-agencies-2025-02-18
+    publisher: The White House
+    source_class: primary_executive_order
+    date: 2025-02-18
+    url: https://www.whitehouse.gov/presidential-actions/2025/02/ensuring-accountability-for-all-agencies/
+    supports:
+      - the order states a policy of presidential supervision and control over the entire executive branch, including independent regulatory agencies
+      - significant regulations from covered independent agencies are subjected to White House OIRA review
+      - OMB is directed to review and adjust covered independent-agency apportionments consistent with presidential priorities, subject to law
+      - the President and Attorney General are assigned controlling legal interpretations for executive-branch employees
+  - id: white-house-schedule-policy-career-2025-01-20
+    publisher: The White House
+    source_class: primary_executive_order
+    date: 2025-01-20
+    url: https://www.whitehouse.gov/presidential-actions/2025/01/restoring-accountability-to-policy-influencing-positions-within-the-federal-workforce/
+    supports:
+      - reinstatement and renaming of Schedule F as Schedule Policy/Career
+      - policy-influencing career employees are not required to personally support the President but may be dismissed for failing to faithfully implement administration policy consistent with law and their oath
+      - the order directs rescission or nonenforcement of prior civil-service protections that impede the new framework
+  - id: opm-schedule-policy-career-current
+    publisher: U.S. Office of Personnel Management
+    source_class: primary_agency_implementation
+    date: 2026
+    url: https://www.opm.gov/policy-data-oversight/hiring-information/hiring-authorities/schedule-policycareer/
+    supports:
+      - Schedule Policy/Career is an implemented excepted-service category for policy-influencing career positions
+      - OPM issued a final rule and implementation guidance in February 2026
+      - implementation materials continued through June and July 2026
+      - OPM describes covered positions as career and merit-based rather than political appointments
+  - id: white-house-schedule-policy-career-implementation-2026-06-03
+    publisher: The White House
+    source_class: primary_executive_order
+    date: 2026-06-03
+    url: https://www.whitehouse.gov/presidential-actions/2026/06/implementing-schedule-policy-career-in-the-excepted-service/
+    supports:
+      - senior policy-influencing positions were transferred into Schedule Policy/Career
+      - covered positions are exempted from ordinary adverse-action procedures described in the order
+      - agencies were directed to notify covered employees and conform records and practices
+  - id: white-house-alien-enemies-act-2025-03-15
+    publisher: The White House
+    source_class: primary_presidential_proclamation
+    date: 2025-03-15
+    url: https://www.whitehouse.gov/presidential-actions/2025/03/invocation-of-the-alien-enemies-act-regarding-the-invasion-of-the-united-states-by-tren-de-aragua/
+    supports:
+      - the President declared Tren de Aragua activity an invasion or predatory incursion and invoked the Alien Enemies Act
+      - the proclamation directed immediate apprehension, detention, and removal of qualifying Venezuelan nationals alleged to be TdA members
+      - the proclamation authorized use of federal, state, local, and tribal officers to effectuate the policy consistent with law
+  - id: white-house-birthright-citizenship-order-2025-01-20
+    publisher: The White House
+    source_class: primary_executive_order
+    date: 2025-01-20
+    url: https://www.whitehouse.gov/presidential-actions/2025/01/protecting-the-meaning-and-value-of-american-citizenship/
+    supports:
+      - the order directed federal agencies not to recognize birthright citizenship for specified children born in the United States based on their parents' immigration status
+      - the order required implementing action across State, Justice, Homeland Security, Social Security, and other agencies
+  - id: supreme-court-trump-v-barbara-2026-06-30
+    publisher: Supreme Court of the United States
+    source_class: primary_legal_record
+    date: 2026-06-30
+    url: https://www.supremecourt.gov/opinions/25pdf/25-365_new_5if6.pdf
+    supports:
+      - the Court held that children born in the United States to parents unlawfully or temporarily present are citizens at birth under the Fourteenth Amendment
+      - the Court affirmed the injunction against Executive Order 14160 as applied to the certified class
+      - the decision demonstrates an operative judicial constraint on this executive initiative
+limitations:
+  - Executive-branch descriptions of their own authority and purpose are primary evidence of stated policy and mechanism, not neutral adjudications of constitutionality.
+  - Schedule Policy/Career remains career and merit-based according to OPM; the evidentiary issue is reduced adverse-action protection and presidential control, not conversion of every covered position into a partisan appointment.
+  - Invocation of the Alien Enemies Act does not by itself establish that every detained or removed person was misidentified or denied due process; individual cases require separate records.
+  - The Supreme Court's rejection of the birthright-citizenship order is evidence of both attempted executive constitutional reinterpretation and continued judicial constraint.
+locks:
+  - stated presidential legal theory != adjudicated constitutional validity
+  - executive centralization != completed authoritarian capture
+  - blocked action remains trajectory evidence but not realized endpoint
+  - policy-influencing career employee != political appointee
+  - alleged gang membership != criminal conviction
+  - judicial resistance and executive pressure must both remain visible

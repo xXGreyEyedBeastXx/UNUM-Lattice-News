@@ -1,0 +1,108 @@
+contribution_record:
+  id: trump-2025-03-15-alien-enemies-act-invocation
+  title: "Trump invokes the Alien Enemies Act against alleged Tren de Aragua members"
+  contributor_node: donald-trump
+  mechanism_node: null
+  contribution_type: operational_action
+  start_date: "2025-03-15"
+  end_date: null
+  scope: >-
+    Presidential invocation of the Alien Enemies Act against specified Venezuelan nationals
+    alleged to be members of Tren de Aragua, using an invasion/predatory-incursion theory to
+    authorize immediate apprehension, detention, and removal subject to later judicial review.
+  causal_fields:
+    - immigration enforcement
+    - emergency power
+    - detention
+    - removal
+    - due process
+    - executive war and security authority
+  studies_or_spreads:
+    - Trump constitutional safeguard trajectory ledger
+    - immigration detention harm audit
+    - emergency-power trajectory study
+  immediate_mechanism: >-
+    The proclamation declared Tren de Aragua to be perpetrating, attempting, and threatening
+    an invasion or predatory incursion and directed immediate apprehension, detention, and
+    removal of qualifying Venezuelan nationals alleged to be TdA members under the Alien
+    Enemies Act.
+  direct_effects:
+    - "The Alien Enemies Act was formally activated as an immigration-removal mechanism for the defined population."
+    - "Federal agencies were directed to apprehend, detain, and remove qualifying people alleged to be TdA members."
+    - "The proclamation authorized coordination with federal, state, local, and tribal officials consistent with law."
+  downstream_effects:
+    - "Individual due-process, identification, detention-condition, and removal harms require person- and case-specific extraction."
+    - "The invocation expands the practical use of a wartime/emergency statute into a contemporary immigration-enforcement setting, creating a trajectory question for future uses."
+  affected_participants_or_ecologies:
+    - Venezuelan nationals alleged to be Tren de Aragua members
+    - migrants and detainees
+    - immigration courts and federal judiciary
+    - federal, state, local, and tribal law-enforcement systems
+  shared_harm_ids: []
+  responsibility_grade: R5
+  investigation_state: CONFIRMED
+  claim_posture: observed
+  harm_assessment:
+    counts_toward_confirmed_hierarchy: false
+    rating_scope: "Invocation and coercive mechanism are confirmed; realized harm scoring awaits verified individual detention/removal and due-process records."
+    time_window:
+      start: "2025-03-15"
+      end: null
+    harm_vector:
+      lethal_physical_harm: null
+      confinement_coercion: null
+      material_deprivation: null
+      rights_agency_harm: null
+      land_sovereignty_displacement: null
+      ecological_future_harm: null
+      democratic_epistemic_harm: null
+      power_concentration: null
+      catastrophic_risk_imposition: null
+    propagation:
+      reach: null
+      duration: null
+      irreversibility: null
+      vulnerability: null
+    catastrophic_pathway_support: null
+    score_summary:
+      realized_harm_score: null
+      structural_harm_score: null
+      catastrophic_risk_score: null
+    score_justification:
+      - "Do not infer misidentification, unlawful detention, or rights deprivation for every affected person from the proclamation alone."
+  evidence:
+    - title: "Invocation of the Alien Enemies Act Regarding the Invasion of The United States by Tren De Aragua"
+      institution: The White House
+      date: "2025-03-15"
+      url: "https://www.whitehouse.gov/presidential-actions/2025/03/invocation-of-the-alien-enemies-act-regarding-the-invasion-of-the-united-states-by-tren-de-aragua/"
+  counterevidence:
+    - "The proclamation targets people the executive alleges are members of a designated foreign terrorist organization rather than Venezuelan nationals generally."
+    - "The proclamation repeatedly states that implementation must be consistent with applicable law."
+    - "A genuine violent-gang and public-safety interest can coexist with separate disputes over the statute's availability, identification procedures, and due process."
+  unknowns:
+    - "How many affected individuals were accurately identified as TdA members?"
+    - "What notice and opportunity to challenge classification did each affected person receive?"
+    - "Which removals or detentions were later held unlawful, mistaken, or procedurally defective?"
+  path_forward:
+    - "Extract Supreme Court and lower-court rulings governing notice, habeas access, removal timing, and statutory scope."
+    - "Build individual case records for disputed gang identification rather than generalizing from selected cases."
+    - "Track future attempts to invoke wartime or emergency authorities against additional civilian populations."
+  debunking_record:
+    claim_as_tested: "The proclamation proves that every Venezuelan migrant was treated as an enemy alien."
+    strongest_supporting_case:
+      - "The proclamation uses broad emergency language and coercive powers."
+    expected_evidence_if_true:
+      - "Its operative class would include Venezuelan migrants regardless of alleged TdA membership."
+    recovered_evidence:
+      - "The proclamation's operative class is limited by alleged TdA membership and other statutory criteria."
+    decisive_failure:
+      - "The text does not classify all Venezuelan migrants as alien enemies."
+    why_claim_fails: "The confirmed issue is use of the Alien Enemies Act against a defined alleged-membership class, not universal classification of Venezuelans."
+    residual_claims:
+      - "The proclamation is confirmed evidence of a preferred direction toward stronger emergency-power mechanisms for detention and removal."
+  related_relations: []
+  related_stories: []
+  related_nodes:
+    - donald-trump
+  corrections: []
+  last_reviewed: "2026-08-13"
