@@ -1,0 +1,92 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-antifa-classifier-policy-2025-2026
+title: Trump administration Antifa / domestic-terrorism classifier policy source bundle
+accessed: 2026-08-14
+purpose: >-
+  Preserve the post-Prairieland federal policy chronology that classified Antifa and broader anti-fascism
+  within domestic-terrorism strategy, while keeping policy language distinct from proof that a particular
+  protester, defendant, group, funder, or organization satisfied a criminal or organizational element.
+
+sources:
+  - id: trump-antifa-executive-order-2025-09-22
+    publisher: The White House
+    source_class: primary_executive_order
+    date: 2025-09-22
+    url: https://www.whitehouse.gov/presidential-actions/2025/09/designating-antifa-as-a-domestic-terrorist-organization/
+    supports:
+      - President Trump issued an order designating Antifa a domestic terrorist organization.
+      - The order directs executive departments and agencies to investigate, disrupt, and dismantle illegal operations conducted by Antifa or persons claiming to act on its behalf, including funding sources.
+      - The order characterizes Antifa as a coordinated militarist/anarchist enterprise using violence and intimidation.
+    limitations:
+      - The executive designation is an executive-branch classifier and policy direction; it does not independently establish membership or criminal conduct by any named individual.
+      - The order does not itself prove that one formal organization with stable membership and governance exists everywhere the Antifa label is used.
+
+  - id: trump-nspm7-domestic-political-violence-2025-09-25
+    publisher: The White House
+    source_class: primary_presidential_memorandum
+    date: 2025-09-25
+    url: https://www.whitehouse.gov/presidential-actions/2025/09/countering-domestic-terrorism-and-organized-political-violence/
+    supports:
+      - >-
+        NSPM-7 directs Joint Terrorism Task Forces to coordinate a national strategy investigating political
+        violence, recruitment, funding, networks, and related organizations.
+      - >-
+        The memorandum explicitly frames self-described anti-fascism as an umbrella/common indicator in the
+        administration's account of domestic political violence and lists ideological recurrent motivations.
+      - >-
+        It directs investigation of funders, officers/employees of organizations, and related networks where
+        the required criminal predicates and authorities apply.
+    limitations:
+      - The memorandum repeatedly requires implementation consistent with applicable law.
+      - Ideological language in the memorandum is not proof that holding a listed belief constitutes a crime.
+      - Whether this policy altered a particular prosecution must be traced from case-specific records.
+
+  - id: doj-prairieland-antifa-cell-indictment-2025-11-14
+    publisher: U.S. Department of Justice / U.S. Attorney ND Texas
+    source_class: primary_prosecution_record_summary
+    date: 2025-11-14
+    url: https://www.justice.gov/usao-ndtx/pr/antifa-cell-members-indicted-prairieland-shooting
+    supports:
+      - DOJ publicly used the North Texas Antifa Cell classifier in the Prairieland prosecution by November 2025.
+      - The indictment announcement follows the September 2025 executive order and NSPM-7 chronologically.
+    limitations:
+      - Temporal sequence does not establish that the executive policy caused the classifier or charges.
+      - An indictment is an allegation until adjudicated.
+
+  - id: doj-prairieland-sentencing-2026-06-23
+    publisher: U.S. Department of Justice
+    source_class: primary_sentencing_summary
+    date: 2026-06-23
+    url: https://www.justice.gov/opa/pr/leader-antifa-cell-members-north-texas-sentenced-100-years-prison-terrorist-attack-ice
+    supports:
+      - DOJ explicitly described the Prairieland sentencing as the first sentencing of defendants affiliated with Antifa following Trump's September 2025 executive order.
+      - DOJ continued to use the North Texas Antifa Cell classifier in its sentencing narrative.
+    limitations:
+      - DOJ's rhetorical linkage does not by itself establish that the executive order changed guideline calculations, statutory penalties, evidentiary rulings, or the verdict.
+
+cross_source_findings:
+  - id: antifa-classifier-policy-sequence
+    posture: documented_temporal_sequence
+    statement: >-
+      Prairieland violence occurred July 4 2025; Trump issued the Antifa order September 22 and NSPM-7 September 25;
+      DOJ publicly used North Texas Antifa Cell in the November indictment announcement and explicitly highlighted
+      the September order when announcing June 2026 sentences.
+  - id: classifier-causation-question
+    posture: candidate
+    statement: >-
+      Whether the post-event executive classifier materially expanded, redirected, or hardened the Prairieland
+      prosecution, organizational theory, trial framing, network investigation, or sentencing remains unresolved.
+
+open_records_targets:
+  - Earliest internal DOJ/FBI/DHS use of North Texas Antifa Cell in the Prairieland investigation.
+  - Charging memoranda and approval chains before and after September 22 2025.
+  - Communications referencing the executive order or NSPM-7 in connection with Prairieland.
+  - Jury instructions and rulings concerning ideological/organizational evidence.
+  - Sentencing memoranda and guideline calculations identifying any terrorism enhancement or classifier-dependent theory.
+
+locks:
+  - Executive designation != criminal conviction.
+  - Anti-fascist belief != membership in a formal organization.
+  - Political ideology != material support or conspiracy without conduct and required mental state.
+  - Temporal sequence != causation.
+  - Preserve documented violent conduct and adjudicated convictions separately from the broader classifier question.
