@@ -1,0 +1,127 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-sexual-autonomy-protection-asymmetry-2026-08-14
+title: Sexual autonomy, child-marriage exceptions, official protection, and justice-asymmetry source bundle
+accessed: 2026-08-14
+purpose: >-
+  Support a cross-spectrum investigation of how law, kinship, office, marriage, reproductive policy,
+  prosecutorial discretion, and institutional status can increase or reduce a victim's ability to exit
+  sexual coercion or obtain accountability. This bundle does not encode a partisan verdict.
+
+sources:
+  - id: pubmed-child-marriage-statutory-rape-2022
+    publisher: PubMed / peer-reviewed literature index
+    source_class: peer_reviewed_research
+    url: https://pubmed.ncbi.nlm.nih.gov/35184836/
+    supports:
+      - child-marriage laws and marital exemptions can intersect with statutory-rape law
+      - some marriages involving minors would otherwise implicate statutory-rape statutes
+    limitations:
+      - legal landscape is time-bounded to the study period and requires current state-law verification
+
+  - id: pubmed-age-consent-longitudinal-2026
+    publisher: PubMed / peer-reviewed literature index
+    source_class: peer_reviewed_research
+    url: https://pubmed.ncbi.nlm.nih.gov/41540601/
+    supports:
+      - longitudinal comparison of U.S. statutory-rape law changes from 2000-2021
+      - general age-of-consent reduction was not the dominant mechanism in that period
+      - exception structures changed in some jurisdictions
+    limitations:
+      - does not describe post-2021 enactments
+
+  - id: ap-missouri-child-marriage-2024
+    publisher: Associated Press
+    source_class: high_quality_news
+    url: https://apnews.com/article/f5de4c79b9de5c2f83ebb95bb0de9f27
+    supports:
+      - Missouri allowed 16- and 17-year-olds to marry with parental permission during the 2024 debate
+      - survivor advocates warned that adult-minor marriages can function as shields against rape charges
+      - former child brides testified to abuse and legal-exit difficulties
+    limitations:
+      - survivor testimony about legal shielding is evidence of mechanism/risk, not proof that every minor marriage concealed rape
+
+  - id: ap-editorial-roundup-missouri-billington-2024
+    publisher: Associated Press editorial roundup quoting Kansas City Star reporting
+    source_class: secondary_editorial_roundup
+    url: https://apnews.com/article/8604e12f1f56f08e3057b11be205bf4d
+    supports:
+      - Rep. Hardy Billington explicitly argued that preventing a pregnant 17-year-old from marrying could increase the chance of abortion
+    limitations:
+      - editorial context; use the quoted statement for motive evidence but do not convert it into intent to protect sexual offenders
+
+  - id: bostoncom-new-hampshire-child-marriage-2024
+    publisher: Boston.com
+    source_class: regional_news
+    url: https://www.boston.com/news/local-news/2024/05/07/new-hampshire-move-to-ban-child-marriage-despite-lawmaker-calling-teens-ripe-and-fertile/
+    supports:
+      - Rep. Jess Edwards argued that banning minor marriage could make abortion more attractive and used the phrase ripe and fertile during debate
+      - New Hampshire nevertheless moved to raise the marriage age to 18
+    limitations:
+      - quote demonstrates one lawmaker's reasoning, not the motive of every opponent
+
+  - id: doj-duran-charge-2015
+    publisher: U.S. Department of Justice / USAO Southern District of California
+    source_class: primary_government_criminal_record
+    url: https://www.justice.gov/usao-sdca/pr/us-border-patrol-supervisor-charged-violating-civil-rights-legal-us-resident-who-made
+    supports:
+      - Border Patrol supervisor Martin Rene Duran was charged with using false border-security database alerts against a father who reported alleged child sexual abuse by Duran's brother-in-law
+      - the false alerts caused repeated detentions of the father
+    limitations:
+      - charging allegations should not be treated as adjudicated until supported by later plea/conviction records
+
+  - id: doj-duran-plea-2018
+    publisher: U.S. Department of Justice / USAO Southern District of California
+    source_class: primary_government_adjudicated_record
+    url: https://www.justice.gov/usao-sdca/pr/former-us-border-patrol-supervisor-pleads-guilty-admits-violating-civil-rights-legal
+    supports:
+      - Duran pleaded guilty and admitted creating false alerts and using official power to target the father
+      - Duran admitted detaining/interrogating the father about the matter involving his brother-in-law
+
+  - id: doj-duran-sentencing-2018
+    publisher: U.S. Department of Justice / USAO Southern District of California
+    source_class: primary_government_adjudicated_record
+    url: https://www.justice.gov/usao-sdca/pr/former-supervisory-us-border-patrol-agent-sentenced-following-convictions-civil-rights
+    supports:
+      - Duran was sentenced after civil-rights and firearms convictions
+      - DOJ states Duran hired, communicated with, and paid the attorney for his brother-in-law while falsely denying knowledge of the allegations
+
+  - id: doj-david-lanier-case-summary
+    publisher: U.S. Department of Justice Civil Rights Division
+    source_class: primary_government_case_summary
+    url: https://www.justice.gov/crt/criminal-section-selected-case-summaries
+    supports:
+      - Tennessee judge David Lanier was convicted of civil-rights offenses arising from sexual assaults against women
+      - DOJ states local action was difficult because Lanier came from a powerful family and the Dyer County district attorney was his brother
+    limitations:
+      - kinship conflict and structural protection are documented; a separate criminal cover-up by the district-attorney brother is not established by this source
+
+  - id: butler-payne-county-case-summary-2026
+    publisher: MoreLaw republishing court disposition text
+    source_class: secondary_court_record_republication
+    url: https://www.morelaw.com/verdicts/cf-2025-59/OK/199596/
+    supports:
+      - Jesse Mack Butler pleaded no contest as a youthful offender to all eleven charged counts
+      - the court approved a rehabilitation plan and retained jurisdiction through his nineteenth birthday
+    limitations:
+      - use as a control/justice-asymmetry case, not as evidence of Republican intervention or improper influence
+
+  - id: people-butler-dismissal-2026
+    publisher: People
+    source_class: national_news
+    url: https://people.com/teen-who-raped-strangled-and-brutalized-2-girls-has-case-dismissed-12035464
+    supports:
+      - Butler received no incarceration under youthful-offender disposition and the case was dismissed after successful completion of requirements
+      - public controversy centered on severity of alleged/admitted-through-no-contest conduct versus rehabilitative outcome
+    limitations:
+      - headline language should not replace exact plea/disposition terminology
+      - family prominence does not establish political or judicial corruption
+
+locks:
+  - Age of consent != minimum marriage age.
+  - Child marriage != rape in every case.
+  - Marital exemption != proof an offender used the exemption in a particular case.
+  - Anti-abortion reasoning for preserving minor marriage != proven intent to protect rapists.
+  - Republican jurisdiction != Republican intervention in an individual criminal case.
+  - Democratic jurisdiction != Democratic intervention in an individual criminal case.
+  - Powerful-family proximity != obstruction without conduct-specific evidence.
+  - No-contest plea, conviction, adjudication, allegation, and dismissed youthful-offender disposition must remain distinct.
