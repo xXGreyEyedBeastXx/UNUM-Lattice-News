@@ -1,0 +1,100 @@
+schema: unum-lattice-news/node/v0.2
+id: org-ice
+title: U.S. Immigration and Customs Enforcement
+entity_type: federal_agency
+actor_roles:
+  - immigration_enforcement
+  - civil_detention_authority
+  - contracting_authority
+  - complaint_and_records_custodian
+  - investigative_subject
+status: active
+updated: 2026-08-14
+
+summary:
+  text: >-
+    Federal agency within DHS that operates and contracts for civil immigration detention and participates
+    in the complaint, investigation, inspection, records, and evidence systems used to evaluate detention
+    conditions and misconduct. In the Prairieland investigation, ICE is not only the custody authority but
+    also a central routing and evidence institution: its JIC/OPR data records sexual-abuse allegations, its
+    oversight components inspect facilities, and its records/preservation practices affect what can later be
+    established about deaths and abuse.
+  posture: documented
+
+hashtags:
+  - ICE
+  - DHS
+  - immigration-detention
+  - oversight
+  - evidence-custody
+  - private-contractors
+
+authority:
+  has_authority: true
+  seat: federal immigration enforcement and detention
+  jurisdiction: United States
+  level: federal
+  oversight:
+    - Department of Homeland Security
+    - DHS Office of Inspector General
+    - DHS Office for Civil Rights and Civil Liberties
+    - federal courts
+    - Congress
+    - PREA and detention-standard review systems
+
+current_evidence:
+  observed:
+    - ICE FOIA 2018-ICFO-45499 preserves JIC/OPR records of sexual-abuse and misconduct allegations in Texas detention facilities, including Prairieland.
+    - ICE publicly indexes PREA and detention-oversight reviews for Prairieland.
+    - Records-based oversight reporting documents ICE detention-death investigation failures involving evidence preservation, witness access, and omitted facts across the detention system.
+    - Prairieland-specific records-based reporting documents surveillance-evidence non-retention in the 2018 death of Gourgen Mirimanian.
+  stated: []
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - >-
+      ICE can occupy multiple seats in one accountability chain: custody authority, contractor, complaint recipient,
+      investigator/oversight participant, and records custodian. Those overlapping roles create a potential epistemic
+      chokepoint that must be tested case by case rather than assumed benign or corrupt.
+  disputed: []
+  ambiguous:
+    - The degree of institutional independence among ICE custody, investigation, inspection, and records functions varies by component and case.
+  unknowns:
+    - How frequently ICE structured metadata misclassifies alleged actor/facility categories relative to narrative case fields.
+    - How often complaint outcomes are externally verified rather than determined inside the custody/contracting ecology.
+  missing_or_withheld:
+    - Many underlying complaint, PREA, disciplinary, and death-review records require FOIA or litigation to obtain.
+  counterevidence:
+    - Internal-agency evidence can be accurate and probative; overlapping institutional roles do not by themselves establish concealment or bad faith.
+
+relations:
+  - to: org-dhs
+    type: component_of
+    status: documented
+  - to: facility-prairieland-detention-center
+    type: custody_contract_and_oversight
+    status: documented
+  - to: org-lasalle-corrections
+    type: detention_contracting_interface
+    status: documented
+  - to: system-evidence-custody-and-oversight
+    type: central_evidence_actor
+    status: supported
+  - to: trump-administration-second-term
+    type: executive_implementation_component
+    status: documented
+
+unresolved_questions:
+  - Which ICE component controlled each Prairieland complaint, video, medical record, inspection, and disposition decision?
+  - What independence barriers exist between detention operations and misconduct/death investigations?
+  - What retention schedules applied to surveillance and sexual-abuse investigation records at Prairieland?
+  - Which Prairieland findings led to penalties, contract changes, discipline, prosecution, or no action?
+
+references:
+  - source-prairieland-detention-evidence-2017-2026
+
+locks:
+  - Agency record != automatic truth.
+  - Agency record != automatic falsehood.
+  - Custody authority, contractor, investigator, and oversight seats must remain distinguishable even when housed in one institutional ecology.
+  - Missing or internally controlled evidence must be typed by custody and preservation state rather than silently treated as neutral absence.
