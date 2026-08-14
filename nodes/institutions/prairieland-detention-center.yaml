@@ -1,0 +1,291 @@
+schema: unum-lattice-news/node/v0.2
+id: facility-prairieland-detention-center
+title: Prairieland Detention Center
+entity_type: detention_facility
+actor_roles:
+  - custody_site
+  - institutional_site
+  - evidence_custody_site
+status: active
+updated: 2026-08-14
+aliases:
+  - Prairieland Detention Facility
+  - PDC
+location:
+  city: Alvarado
+  county: Johnson County
+  state: Texas
+  country: United States
+
+summary:
+  text: >-
+    ICE immigration-detention facility in Alvarado, Texas, operated by LaSalle Corrections. The
+    recoverable record includes repeated sexual-assault/misconduct allegations in ICE's own 2017-2018
+    intake/investigation dataset, including at least two explicit staff-on-detainee allegations; a 2018
+    detainee death in which relevant surveillance evidence was not fully retained; repeated PREA and
+    detention-oversight review; and documented 2025 overcrowding plus medical/access complaints before
+    the July 4 2025 protest and later violence. The facility should be analyzed as a custody, contractor,
+    complaint-intake, evidence-preservation, protest, and prosecution junction rather than only as the
+    location of the July 2025 shooting.
+  posture: supported
+
+hashtags:
+  - ICE
+  - immigration-detention
+  - private-detention
+  - LaSalle-Corrections
+  - PREA
+  - sexual-abuse
+  - evidence-custody
+  - Prairieland
+  - Alvarado
+
+authority:
+  has_authority: true
+  seat: civil immigration detention facility
+  source: DHS / ICE detention authority and contracting structure
+  jurisdiction: federal immigration custody with private/local contractual implementation
+  level: facility
+  term_start: null
+  term_end: null
+  oversight:
+    - U.S. Immigration and Customs Enforcement
+    - ICE Office of Professional Responsibility
+    - ICE Office of Detention Oversight
+    - DHS Office for Civil Rights and Civil Liberties
+    - DHS Office of Inspector General
+    - PREA audit process
+  appeal_or_review:
+    - courts
+    - FOIA/public-record systems
+    - congressional oversight
+    - civil-rights complaints
+
+vulnerability:
+  roles:
+    - detained population
+    - people dependent on custodial staff for food, water, medicine, communication, safety, and release process
+  protection_needs:
+    - bodily safety
+    - medical and mental-health care
+    - sexual-abuse prevention and response
+    - confidential complaint channels
+    - evidence preservation
+    - interpretation and communication access
+    - protection from retaliation
+
+funding:
+  gives_to: []
+  receives_from:
+    - federal immigration-detention funding via ICE contractual structure
+
+constituencies:
+  - people held in ICE civil immigration custody at Prairieland
+
+current_evidence:
+  observed:
+    - >-
+      ICE's FOIA dataset 2018-ICFO-45499 contains multiple Prairieland-linked sexual-assault or
+      sexual-misconduct records from 2017-2018.
+    - >-
+      Index 365 records a June 2017 staff-on-detainee sexual-assault allegation against an unnamed
+      contract officer and codes it 0612 Staff on Detainee / Criminal / Investigation IG / Closed.
+    - >-
+      Index 95 records a December 2017 allegation that a male LaSalle detention officer / contract guard
+      groped a detainee during a pat-down; the row's Primary FD identifies Staff on Detainee.
+    - >-
+      Index 95 also contains a structured-data contradiction: its Topic field says another detainee while
+      its Case Summary, Synopsis, and Primary FD identify a LaSalle contract guard.
+    - >-
+      ICE indexes PREA audits for Prairieland in 2018, 2021, and 2023.
+    - >-
+      Gourgen Mirimanian died in ICE custody at Prairieland on April 10 2018 while the facility was
+      operated by LaSalle Corrections. A records-based oversight review reports that some relevant video
+      was of limited value and another video was not retained, impairing review preparation.
+    - >-
+      April 2025 reporting documented women sleeping on thin mats on concrete because the female holding
+      unit was full during a period of expanding ICE detention.
+    - >-
+      A July 4 2025 daytime protest and later nighttime event occurred at the facility; the nighttime event
+      escalated through fireworks, vandalism, and Benjamin Song's gunfire at responding officers.
+    - >-
+      A March 2026 jury convicted Song alone on the attempted-murder/firearm counts summarized by DOJ,
+      while multiple other defendants were convicted on riot, material-support, and fireworks/explosives counts.
+
+  stated:
+    - >-
+      Former detainee América Platt told The Washington Post she was denied antibiotics for an ear
+      infection and denied telephone access while held at Prairieland in 2025.
+    - >-
+      DOJ states that some defendants attended a peaceful daytime protest before returning for the
+      later nighttime event, and that a cooperating witness testified Song had proposed freeing detainees
+      and bringing rifles at a pre-event gear check.
+
+  adjudicated:
+    - >-
+      Benjamin Song was convicted in March 2026 of attempted murder of the Alvarado police officer and
+      associated firearm counts, in addition to common riot/material-support/fireworks counts.
+    - >-
+      Other trial defendants were convicted of common riot/material-support/fireworks-related counts but
+      were not convicted on Song's attempted-murder/firearm counts as summarized by DOJ.
+
+  alleged:
+    - >-
+      June 2017: a detainee alleged sexual assault by an unnamed contract officer at Prairieland.
+    - >-
+      December 2017: a detainee alleged a male LaSalle detention officer / contract guard groped him
+      during a pat-down.
+    - >-
+      Multiple 2017-2018 records allege detainee-on-detainee sexual assault, abuse, harassment, or
+      inappropriate touching at Prairieland.
+    - >-
+      April 2025: a former detainee alleged denial of prescribed antibiotics and phone access.
+
+  supported_inferences:
+    - >-
+      Prairieland has a recoverable pre-2025 humanitarian and sexual-safety history that makes the July 2025
+      protest grievance independently legible; the later shooting does not erase that antecedent.
+    - >-
+      Demonstrated evidence-preservation failures at Prairieland and across ICE custody justify treating
+      evidence custody and investigative completeness as variables when weighing non-substantiation or missing evidence.
+    - >-
+      Structured database fields can underdescribe or misclassify allegations; narrative-level extraction is
+      necessary before aggregate counts are treated as reliable.
+    - >-
+      The 2025 detention-expansion environment plausibly increased capacity pressure at Prairieland, but
+      facility-specific conditions require their own causal trace rather than automatic attribution to one policy actor.
+
+  disputed:
+    - >-
+      The degree to which defendants in the July 2025 case constituted one pre-existing formal organization,
+      versus overlapping activist, firearms, social, and trusted planning networks, remains contested outside
+      the criminal verdicts on specific counts.
+    - >-
+      Whether every participant shared Song's proposed or eventual use of armed force remains a defendant-specific
+      question requiring transcripts, jury instructions, chats, and verdict/sentencing records.
+
+  ambiguous:
+    - >-
+      The administrative meaning of Closed in ICE FOIA 2018-ICFO-45499 does not reveal whether a sexual-abuse
+      allegation was substantiated, unsubstantiated, unfounded, referred, declined, or disciplined.
+    - >-
+      DOJ's later North Texas Antifa Cell classifier is a documented prosecutorial label; whether it maps onto
+      one formal organizational entity independently of the prosecution theory is not established by the current source bundle.
+
+  unknowns:
+    - Number and disposition of all staff-on-detainee sexual-abuse allegations at Prairieland beyond current extraction.
+    - Whether any Prairieland allegation specifically alleged rape rather than other forms of sexual assault or abuse.
+    - Identity and employment/discipline outcome of the unnamed contract officer in the June 2017 case.
+    - Identity and disposition of the LaSalle guard allegation in December 2017.
+    - Full findings and corrective actions from the 2018, 2021, and 2023 PREA audits.
+    - Full DHS CRCL/OIG Prairieland complaint record.
+    - Defendant-by-defendant knowledge and agreement in the July 2025 event beyond what verdicts and public summaries establish.
+    - Whether later anti-Antifa executive policy materially influenced charging, classifier choice, trial framing, or sentencing.
+
+  missing_or_withheld:
+    - Full PREA investigative files and disposition records behind the FOIA spreadsheet entries are not present in the spreadsheet.
+    - Some personal and investigative fields are FOIA-redacted.
+    - Relevant surveillance video in the Mirimanian death was not fully retained according to the records-based oversight review.
+    - AIC/BAJI records litigation indicates parts of the broader complaint/conditions record have required litigation to obtain.
+    - Full trial transcript, complete jury instructions, presentence reports where nonpublic, and complete sentencing record are not contained in the current source bundle.
+
+  counterevidence:
+    - An allegation recorded by ICE is not proof the alleged abuse occurred.
+    - The current source bundle does not establish a systematic rape program at Prairieland.
+    - DOJ obtained convictions on serious non-attempted-murder offenses against multiple July 2025 defendants; acquittal on Song's attempted-murder theory does not erase those convictions.
+    - Humanitarian grievance does not justify gunfire, assault, vandalism, or other criminal conduct.
+
+timeline:
+  - date: 2017-03-02
+    event: Prairieland detainee-on-detainee sexual-assault allegation appears in ICE JIC data.
+    posture: alleged
+  - date: 2017-06-15
+    event: ICE data records staff-on-detainee sexual-assault allegation against an unnamed contract officer.
+    posture: alleged
+  - date: 2017-07-18
+    event: ICE data records allegation that a Prairieland detainee was sexually assaulted while sleeping.
+    posture: alleged
+  - date: 2017-12-11
+    event: ICE data records allegation that a male LaSalle contract guard groped a detainee during a pat-down.
+    posture: alleged
+  - date: 2018-04-10
+    event: Gourgen Mirimanian dies in ICE custody at Prairieland; later records review identifies incomplete video preservation.
+    posture: documented
+  - date: 2018-06-12/2018-06-14
+    event: ICE indexes a PREA audit of Prairieland.
+    posture: documented
+  - date: 2021-04-13/2021-04-15
+    event: ICE indexes another PREA audit of Prairieland.
+    posture: documented
+  - date: 2021-05-18
+    event: American Immigration Council and BAJI identify Prairieland in a multi-facility FOIA investigation into treatment and conditions.
+    posture: documented
+  - date: 2023-11-14/2023-11-16
+    event: ICE indexes another PREA audit of Prairieland.
+    posture: documented
+  - date: 2025-04-18
+    event: Washington Post reports floor sleeping and detainee medical/phone-access allegations at Prairieland during detention-capacity strain.
+    posture: supported
+  - date: 2025-07-04
+    event: Peaceful daytime protest and later nighttime event at Prairieland; nighttime event escalates through fireworks, vandalism, and Song's gunfire.
+    posture: mixed_documented_and_adjudicated
+  - date: 2025-11-14
+    event: DOJ publicly frames charged defendants as North Texas Antifa Cell operatives in superseding indictment announcement.
+    posture: prosecutorial_classifier
+  - date: 2026-03-13
+    event: Federal jury returns convictions distinguishing Song's attempted-murder/firearm counts from other defendants' common counts.
+    posture: adjudicated
+  - date: 2026-06-23
+    event: DOJ announces very long sentences and explicitly situates the case after Trump's September 2025 Antifa executive order.
+    posture: adjudicated_and_government_framing
+
+relations:
+  - to: org-ice
+    type: federal_custody_and_oversight
+    status: documented
+  - to: org-lasalle-corrections
+    type: private_facility_operator
+    status: documented
+  - to: population-prairieland-detainees
+    type: custodial_power_relation
+    status: documented
+  - to: system-evidence-custody-and-oversight
+    type: evidence_preservation_and_review_interface
+    status: supported
+  - to: event-prairieland-july4-2025-day-protest
+    type: protest_site
+    status: documented
+  - to: event-prairieland-july4-2025-night-violence
+    type: violence_site
+    status: documented
+  - to: trump-administration-second-term
+    type: detention_expansion_policy_environment
+    status: supported
+    question: >-
+      Trace national expansion, local population/capacity, contracting, staffing, medical capacity, and timing before assigning facility conditions to one actor.
+
+stories: []
+
+unresolved_questions:
+  - What are the investigative findings and dispositions behind each staff-on-detainee Prairieland FOIA row?
+  - Do narrative searches reveal additional Prairieland cases hidden by facility or actor metadata errors?
+  - What did each PREA audit find and what corrective actions were completed, repeated, or left open?
+  - Which entity possessed, preserved, requested, or failed to retain each piece of Mirimanian surveillance evidence?
+  - How did Prairieland population, staffing, medical capacity, and contractor payments change from January-July 2025?
+  - What complaints or incidents directly motivated the July 4 protest organizers?
+  - Which July 4 participants belonged to the broad protest chat, trusted planning chats, armed-left networks, or none of those layers?
+  - What precise evidence established knowledge/agreement for each defendant convicted on common riot/material-support/fireworks counts?
+  - Did the post-event Antifa executive order merely name a pre-existing prosecution theory or reshape federal classifier/prosecution/sentencing behavior?
+
+corrections: []
+references:
+  - source-prairieland-detention-evidence-2017-2026
+
+locks:
+  - Facility history explains context; it does not excuse violence.
+  - Violence by a participant does not erase facility abuse evidence.
+  - Group or ideology label does not replace individualized conduct and knowledge.
+  - Government-recorded allegation is evidence of the allegation, not proof of the alleged act.
+  - Closed is not a disposition unless the underlying file establishes what closure meant.
+  - Missing evidence must be typed as missing/lost/withheld rather than silently converted into either proof or exoneration.
+  - Preserve LaSalle, ICE, DHS oversight bodies, individual guards, detainees, protesters, defendants, and Trump administration policy as distinct actors/seats.
