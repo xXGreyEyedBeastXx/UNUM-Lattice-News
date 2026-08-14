@@ -1,0 +1,265 @@
+schema: unum-lattice-news/evidence-lattice/v0.1
+id: sexual-autonomy-protection-asymmetry-2026-08-14
+title: Sexual Autonomy / Victim Exit / Protection Asymmetry Lattice
+status: active_investigative_lattice
+as_of: 2026-08-14
+verdict: none
+source_bundle: sources/source-sexual-autonomy-protection-asymmetry-2026-08-14.yaml
+purpose: >-
+  Investigate whether law, reproductive policy, marriage rules, kinship, office, local elite status,
+  prosecutorial discretion, evidence control, or partisan governance changes a victim's ability to
+  exit sexual coercion or obtain accountability. Preserve offender, victim, helper, official,
+  institution, and policy seats separately. This is a cross-spectrum test, not a Republican-guilt
+  presumption or a Democratic-immunity surface.
+
+method:
+  primitive: harm_or_claim -> strongest_alternative -> discriminators
+  rules:
+    - allegation != adjudication
+    - association != intervention
+    - kinship != obstruction without conduct
+    - party control != causal responsibility for an individual case
+    - age_of_consent != minimum_marriage_age
+    - child_marriage != rape in every case
+    - marital_exception != proof that an offender used the exception
+    - anti_abortion_policy != protection_of_rapist unless a concrete exit-control mechanism is shown
+    - lenient_outcome != corruption without evidence of improper influence
+    - unusually_severe_outcome != justified merely because a group label is politically disfavored
+    - preserve counterexamples from every political camp
+
+status_vocabulary:
+  adjudicated: established within the stated judicial finding or plea scope
+  documented: directly supported by primary records or multiple strong sources
+  supported: substantial evidence with bounded causal scope
+  alleged: sourced allegation not independently established
+  candidate: live connector requiring source-level trace
+  disputed: materially contested
+  searched_not_found: targeted search completed without affirmative evidence
+  unknown: insufficient evidence
+
+core_mechanism:
+  label: victim_exit_control
+  question: Who controls the victim's practical exits after sexual coercion?
+  exits:
+    - physical separation from offender
+    - reporting to police or child-protection authorities
+    - independent investigation
+    - prosecution without family/patronage interference
+    - access to evidence
+    - ability to avoid marriage to offender
+    - ability to terminate a pregnancy resulting from rape/incest where lawful
+    - ability to obtain outside adult/legal/medical assistance
+    - ability to relocate or cross jurisdictional boundaries safely
+    - protection from retaliation by officials or powerful networks
+
+mechanism_families:
+  - id: marriage_exception
+    description: marriage rules or marital exemptions can alter statutory-rape exposure or a minor's practical legal exit
+  - id: reproductive_constraint
+    description: abortion restrictions, rape/incest exceptions, parental involvement, helper liability, and cross-state enforcement can alter post-assault bodily exit
+  - id: kinship_protection
+    description: an official may use authority to protect a relative or retaliate against a reporter
+  - id: local_elite_protection
+    description: family prominence, institutional prestige, money, or patronage may affect investigation, charging, plea, or sentence
+    posture: hypothesis_not_presumption
+  - id: evidence_gatekeeping
+    description: police, prosecutors, courts, schools, detention operators, employers, and record systems can determine what becomes provable
+  - id: rehabilitation_asymmetry
+    description: compare when systems emphasize youth, future potential, treatment, and restoration versus incapacitation, terrorism, collective liability, or maximum punishment
+  - id: partisan_governance_hypothesis
+    description: test whether partisan control predicts victim-exit restrictions or offender-protection structures after controlling for religion, region, age, race, wealth, local elite status, and institutional capacity
+
+nodes:
+  laws_and_policy:
+    - id: policy-reproductive-autonomy
+      label: Reproductive Autonomy
+      ref: nodes/policies/reproductive-autonomy.yaml
+    - id: policy-child-marriage-minimum-age
+      label: Minimum marriage age / child-marriage exceptions
+      type: policy_family
+    - id: policy-statutory-rape-marital-exemptions
+      label: Statutory-rape marital exemptions
+      type: policy_family
+    - id: policy-rape-incest-abortion-exceptions
+      label: Rape/incest abortion exceptions
+      type: policy_family
+    - id: policy-parental-involvement-minor-abortion
+      label: Parental involvement / judicial bypass for minors
+      type: policy_family
+    - id: policy-helper-liability-reproductive-travel
+      label: Helper liability / reproductive travel constraints
+      type: policy_family
+
+  actors_and_cases:
+    - id: actor-hardy-billington
+      label: Hardy Billington
+      type: state_legislator
+      jurisdiction: Missouri
+      posture: documented_statement
+      note: >-
+        During the 2024 child-marriage debate, argued that preventing a pregnant 17-year-old from
+        marrying could increase the chance of abortion. This supports an anti-abortion -> preserve
+        minor-marriage-option connector, not an intent-to-protect-rapists finding.
+
+    - id: actor-jess-edwards
+      label: Jess Edwards
+      type: state_legislator
+      jurisdiction: New Hampshire
+      posture: documented_statement
+      note: >-
+        During debate over raising marriage age to 18, argued that removing marriage from people of
+        ripe/fertile age could make abortion more attractive. New Hampshire nevertheless enacted the
+        higher minimum age, making this also a useful correction/counterexample to inevitability.
+
+    - id: actor-martin-rene-duran
+      label: Martin Rene Duran
+      type: former_federal_law_enforcement_supervisor
+      posture: adjudicated
+      note: >-
+        Former Border Patrol supervisor who pleaded guilty to using official border-security database
+        power to target a father who reported alleged child sexual abuse by Duran's brother-in-law.
+        DOJ states Duran hired and paid the brother-in-law's attorney and lied about his knowledge.
+
+    - id: actor-david-lanier
+      label: David Lanier
+      type: former_state_judge
+      jurisdiction: Tennessee
+      posture: adjudicated
+      note: >-
+        Convicted of federal civil-rights offenses arising from sexual assaults against women who
+        appeared before or worked for him. DOJ states local action was difficult because he came from
+        a powerful family and the local district attorney was his brother.
+
+    - id: case-jesse-mack-butler
+      label: State of Oklahoma v. Jesse Mack Butler
+      type: justice_asymmetry_control_case
+      posture: documented_disposition
+      note: >-
+        Butler pleaded no contest as a youthful offender to eleven serious charged counts and received
+        a rehabilitation/supervision disposition without incarceration; the case was later dismissed
+        after completion. Family prominence and public controversy are leads, but partisan intervention
+        or improper judicial influence are not established.
+
+  affected_populations:
+    - id: pop-sexual-assault-survivors
+      label: Sexual-assault survivors
+    - id: pop-minor-survivors
+      label: Minor sexual-abuse survivors
+    - id: pop-pregnant-rape-incest-survivors
+      label: Pregnant rape/incest survivors
+    - id: pop-reporting-family-members
+      label: Family members/reporters seeking accountability
+    - id: pop-helpers-providers
+      label: Helpers, advocates, medical providers, and attorneys
+
+relations:
+  - from: policy-child-marriage-minimum-age
+    to: policy-statutory-rape-marital-exemptions
+    type: can_modify_legal_exposure
+    posture: supported
+    source: source-sexual-autonomy-protection-asymmetry-2026-08-14
+    lock: Do not infer every minor marriage involves illegal sexual conduct.
+
+  - from: actor-hardy-billington
+    to: policy-child-marriage-minimum-age
+    type: opposed_full_minor_marriage_ban_with_abortion_reasoning
+    posture: documented
+    source: source-sexual-autonomy-protection-asymmetry-2026-08-14
+
+  - from: actor-jess-edwards
+    to: policy-child-marriage-minimum-age
+    type: opposed_or_questioned_full_minor_marriage_ban_with_abortion_reasoning
+    posture: documented
+    source: source-sexual-autonomy-protection-asymmetry-2026-08-14
+
+  - from: actor-martin-rene-duran
+    to: pop-reporting-family-members
+    type: retaliatory_use_of_official_power
+    posture: adjudicated
+    source: source-sexual-autonomy-protection-asymmetry-2026-08-14
+
+  - from: actor-martin-rene-duran
+    to: kinship_protection
+    type: canonical_example
+    posture: adjudicated
+    source: source-sexual-autonomy-protection-asymmetry-2026-08-14
+
+  - from: actor-david-lanier
+    to: local_elite_protection
+    type: structural_power_example
+    posture: documented
+    source: source-sexual-autonomy-protection-asymmetry-2026-08-14
+    lock: Brother's personal obstruction is not established by the cited DOJ summary.
+
+  - from: case-jesse-mack-butler
+    to: rehabilitation_asymmetry
+    type: control_case
+    posture: documented
+    source: source-sexual-autonomy-protection-asymmetry-2026-08-14
+    lock: Republican-state environment is contextual, not causal proof.
+
+hypotheses_to_test:
+  - id: H1-partisan-protection-asymmetry
+    statement: >-
+      Republican-governed systems may be more likely than Democratic-governed systems to preserve
+      legal structures that reduce victim exit or increase protection for sexual offenders.
+    status: OPEN_HYPOTHESIS
+    required_discriminators:
+      - state-year party trifecta/governor control
+      - minimum marriage age and exceptions
+      - marital exemptions to statutory-rape laws
+      - rape/incest exceptions in abortion law
+      - judicial-bypass and helper-liability rules
+      - sexual-offense reporting/clearance/prosecution rates where comparable
+      - sentencing distributions controlling for offense, age, criminal history, plea posture, race, wealth, and jurisdiction
+      - clemency/pardon decisions involving sexual offenses
+      - victim-service funding and institutional capacity
+      - explicit lawmaker reasoning
+    falsifiers:
+      - no robust association after confounder controls
+      - stronger association with nonpartisan variables such as region/religiosity/local elite status
+      - comparable or worse victim-exit structures under Democratic control
+
+  - id: H2-patriarchal-family-authority
+    statement: >-
+      Some reproductive and marriage policies may prioritize family hierarchy, pregnancy continuation,
+      or marital regularization over the independent exit power of minors and assault survivors.
+    status: SUPPORTED_IN_SOME_EXPLICIT_STATEMENTS_NOT_GENERALIZED
+
+  - id: H3-elite-status-leniency
+    statement: >-
+      Local prestige, wealth, family networks, institutional affiliation, or perceived future potential
+      may increase access to rehabilitative or lenient treatment after serious sexual-violence allegations.
+    status: OPEN_HYPOTHESIS
+    controls:
+      - youthful-offender statutes
+      - age at conduct
+      - plea agreements
+      - prior record
+      - victim input
+      - prosecutor recommendation
+      - judge-specific sentencing baseline
+
+  - id: H4-official-kinship-retaliation
+    statement: >-
+      Kinship becomes a protection mechanism when an official uses state power to impede or punish
+      reporting/investigation of a relative's alleged sexual abuse.
+    status: ADJUDICATED_EXISTENCE_IN_DURAN_CASE
+
+cross_lattice_stitches:
+  - target: lattice/PRAIRIELAND_ICE_DETENTION_EVIDENCE_LATTICE_2026-08-14.yaml
+    relation: >-
+      Both lattices examine who controls vulnerable bodies, complaint channels, evidence, and exit;
+      do not infer sexual abuse at Prairieland from system-level recurrence without facility-specific evidence.
+  - target: research/investigations/TRUMP_MASTER_TOPOLOGY_2026-08-12.md
+    relation: >-
+      Reproductive autonomy, immigration/border coercion, appointments, clemency, and oversight provide
+      potential crossings, but Trump personal responsibility must be separately evidenced.
+
+next_searches:
+  - build state-year table of marriage age, statutory-rape marital exemptions, rape/incest abortion exceptions, and partisan control
+  - identify Democratic and Republican officials who directly intervened to protect relatives/associates accused of sexual abuse
+  - identify cases where officials refused such protection despite kinship or partisan alignment
+  - compare youthful-offender/first-offender leniency in serious sexual-violence cases across class/race/local-status variables
+  - audit victim-service and sex-trafficking enforcement capacity against immigration-enforcement reallocations
+  - distinguish formal legal protections from practical ability of minors to obtain counsel, shelter, medical care, or judicial bypass
