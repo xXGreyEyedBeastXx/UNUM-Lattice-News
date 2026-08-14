@@ -14,6 +14,10 @@ It is not a net-goodness biography and does not treat every action by the United
 
 Individual policies, orders, funding decisions, appointments, statements, clemency acts, wars, and other contributions should live in reusable contribution records and link back here.
 
+## Public accountability article
+
+- `articles/2026-08-14_TRUMP_PUBLIC_RECORD_ACCOUNTABILITY_REPORT.md` — current public-facing synthesis of the Trump accountability record.
+
 ## Master investigative indexes
 
 - `research/investigations/TRUMP_ACCOUNTABILITY_MASTER_INDEX_2026-08-14.md` — numbered address book for the current Trump investigation.
