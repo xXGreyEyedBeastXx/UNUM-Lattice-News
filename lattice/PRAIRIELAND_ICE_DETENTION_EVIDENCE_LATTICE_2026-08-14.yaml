@@ -1,0 +1,573 @@
+schema: unum-lattice-news/evidence-lattice/v0.1
+id: prairieland-ice-detention-evidence-lattice-2026-08-14
+title: Prairieland / ICE Detention / Evidence Custody / Protest / Classifier Lattice
+status: active_investigative_lattice
+as_of: 2026-08-14
+verdict: none
+purpose: >-
+  Preserve the causal and evidentiary crossings surrounding Prairieland without flattening detention
+  conditions into justification for violence, violence into erasure of detention conditions, group labels
+  into individual culpability, or absence of retained evidence into exoneration.
+
+method:
+  inherited_from: lattice/ACTOR_NETWORK_SEED_2026-08-10.yaml
+  rules:
+    - No authority gets epistemic immunity. Institutional findings are evidence nodes, not terminal verdicts.
+    - Direct causal action outranks inherited moral classification.
+    - Association is not control; proximity is not culpability; accusation is not proof.
+    - Every consequential connector must carry an evidence posture.
+    - The evidence custodian is itself an actor when preservation, classification, access, or disclosure affects what can later be known.
+    - A later violent event cannot retroactively erase an antecedent humanitarian record.
+    - An antecedent humanitarian record cannot retroactively justify later violence.
+    - Individual intent and knowledge must not be inferred from a movement, protest, group chat, clothing style, or political label alone.
+    - Structured metadata must be checked against narrative fields before aggregate conclusions are trusted.
+
+status_vocabulary:
+  documented: Supported directly by primary records or multiple strong sources.
+  adjudicated: Established by a court verdict or judicial finding within the stated scope.
+  supported: Substantial evidence, but causal scope remains bounded.
+  candidate: Plausible connector requiring additional source-level trace.
+  alleged: Sourced allegation not independently established.
+  disputed: Material factual or interpretive dispute remains.
+  unknown: Insufficient evidence or identity unresolved.
+  missing: Evidence expected or sought but not presently available.
+  inaccessible_or_withheld: Existing or requested evidence is not currently accessible to this investigation.
+  lost_or_not_retained: Evidence is reported as destroyed, overwritten, lost, or not retained.
+  contradicted_metadata: Structured fields conflict with narrative or other record fields.
+
+nodes:
+  institutions:
+    - id: org-dhs
+      label: U.S. Department of Homeland Security
+      type: federal_executive_department
+    - id: org-ice
+      label: U.S. Immigration and Customs Enforcement
+      type: federal_custody_enforcement_institution
+      roles:
+        - custody authority
+        - contracting authority
+        - complaint recipient
+        - records custodian
+        - oversight subject
+    - id: org-ice-ero
+      label: ICE Enforcement and Removal Operations
+      type: federal_operational_component
+    - id: org-ice-jic
+      label: ICE Joint Intake Center
+      type: complaint_intake_and_routing_component
+    - id: org-ice-opr
+      label: ICE Office of Professional Responsibility
+      type: investigative_and_professional-responsibility_component
+    - id: org-ice-odo
+      label: ICE Office of Detention Oversight
+      type: detention_oversight_component
+    - id: org-dhs-crcl
+      label: DHS Office for Civil Rights and Civil Liberties
+      type: civil_rights_oversight_component
+    - id: org-dhs-oig
+      label: DHS Office of Inspector General
+      type: inspector_general
+    - id: org-lasalle-corrections
+      label: LaSalle Corrections
+      type: private_detention_operator
+      posture: documented
+      research_questions:
+        - Which Prairieland staff were direct LaSalle employees versus subcontractors or government staff?
+        - What disciplinary, referral, termination, reassignment, and litigation records exist for sexual-abuse or medical complaints?
+        - Which evidence-retention duties were contractually assigned to LaSalle versus ICE?
+    - id: facility-prairieland-detention-center
+      label: Prairieland Detention Center
+      type: detention_facility
+      dossier: nodes/institutions/prairieland-detention-center.yaml
+    - id: trump-administration-second-term
+      label: Trump Administration — Second Term
+      type: governing_coalition_federal_executive_system
+      dossier: nodes/institutions/trump-administration-second-term.md
+
+  populations:
+    - id: population-prairieland-detainees
+      label: People detained at Prairieland
+      type: affected_population
+      vulnerability:
+        - custody dependence
+        - limited exit
+        - medical dependence
+        - communication dependence
+        - retaliation risk
+        - evidence-access asymmetry
+    - id: population-prairieland-protest-participants-2025-07-04
+      label: July 4 2025 Prairieland protest participants
+      type: event_population
+      lock: >-
+        Do not equate daytime attendees, nighttime attendees, broad chat participants, trusted planning
+        participants, armed participants, defendants, or Song's own intent without person-specific evidence.
+    - id: population-prairieland-workers
+      label: Prairieland detention and contract staff
+      type: workforce_population
+    - id: population-responding-law-enforcement-2025-07-04
+      label: Responding law-enforcement officers on July 4 2025
+      type: affected_population
+
+  incidents_and_conditions:
+    - id: incident-pdc-2017-06-staff-sexual-assault-allegation
+      label: June 2017 Prairieland staff-on-detainee sexual-assault allegation
+      type: alleged_abuse_incident
+      date: 2017-06-15
+      posture: alleged
+      record:
+        dataset: ICE FOIA 2018-ICFO-45499
+        index: 365
+        primary_fd: 0612 Detainee/Alien - Sexual Assault (Staff on Detainee)
+        case_type: Investigation IG
+        class: Criminal
+        status: Closed
+      unknowns:
+        - identity of contract officer
+        - investigative finding
+        - criminal referral or declination
+        - discipline or reassignment
+        - PREA disposition
+
+    - id: incident-pdc-2017-12-lasalle-guard-groping-allegation
+      label: December 2017 Prairieland LaSalle guard groping allegation
+      type: alleged_abuse_incident
+      date: 2017-12-11
+      posture: alleged
+      record:
+        dataset: ICE FOIA 2018-ICFO-45499
+        index: 95
+        primary_fd: 0612 Detainee/Alien - Sexual Assault (Staff on Detainee)
+        case_type: Management Inquiry
+        class: Non-Criminal (S)
+        status: Closed
+      metadata_conflict:
+        posture: contradicted_metadata
+        topic_field: says the detainee was touched sexually by another detainee
+        case_summary_and_synopsis: identify a contract detention officer / male LaSalle detention officer
+        primary_fd: identifies Staff on Detainee
+      unknowns:
+        - why the actor field/topic was inconsistent
+        - investigative disposition
+        - guard identity and personnel outcome
+        - whether local or federal criminal review occurred
+
+    - id: incident-pdc-2017-2018-detainee-sexual-assault-cluster
+      label: 2017-2018 Prairieland detainee-on-detainee sexual-assault/misconduct allegations
+      type: allegation_cluster
+      posture: documented_existence_of_allegations
+      note: >-
+        Current extraction locates multiple separate allegations in ICE's own dataset. Count should remain
+        minimum/partial until narrative and metadata searches across the entire workbook are reconciled.
+
+    - id: incident-pdc-2018-mirimanian-death
+      label: Death of Gourgen Mirimanian at Prairieland
+      type: death_in_custody
+      date: 2018-04-10
+      posture: documented
+
+    - id: incident-pdc-2018-mirimanian-video-loss
+      label: Incomplete retention of surveillance evidence in Mirimanian death review
+      type: evidence_custody_failure
+      posture: supported
+      state: lost_or_not_retained
+      note: >-
+        Records-based oversight reporting states some dorm footage was of limited value because of distance
+        and another video was not retained; internal reviewers complained the missing recordings impaired review preparation.
+
+    - id: condition-pdc-2025-overcrowding-floor-sleeping
+      label: Prairieland 2025 crowding and floor-sleeping condition
+      type: detention_condition
+      date: 2025-04
+      posture: documented_reporting
+      note: >-
+        Washington Post reporting documented women sleeping on thin mats on concrete because beds in the
+        female holding unit were full.
+
+    - id: allegation-pdc-2025-medication-phone-denial
+      label: América Platt medication and phone-access allegation
+      type: detainee_conditions_allegation
+      date: 2025-04
+      posture: alleged
+      note: >-
+        Platt reported being denied antibiotics for an ear infection and denied telephone access while detained.
+
+  events:
+    - id: event-prairieland-july4-2025-day-protest
+      label: July 4 2025 Prairieland daytime protest
+      type: protest_event
+      date: 2025-07-04
+      posture: documented
+      note: DOJ's trial summary itself describes a peaceful daytime protest attended by some later defendants.
+
+    - id: event-prairieland-july4-2025-night-violence
+      label: July 4 2025 Prairieland nighttime violence
+      type: violent_event
+      date: 2025-07-04
+      posture: adjudicated_and_documented
+      components:
+        - fireworks used/thrown
+        - vandalism
+        - responding police intervention
+        - Benjamin Song gunfire
+        - Alvarado officer wounded in neck
+      locks:
+        - Physical objects described as fireworks should not be rhetorically upgraded to bombs/IEDs without evidence.
+        - Federal explosives counts are legal classification and must be distinguished from ordinary physical-language description.
+
+    - id: event-prairieland-2025-11-antifa-cell-indictment-framing
+      label: November 2025 DOJ North Texas Antifa Cell indictment framing
+      type: prosecution_classifier_event
+      date: 2025-11-14
+      posture: documented
+
+    - id: event-prairieland-2026-03-verdict
+      label: March 2026 Prairieland federal jury verdict
+      type: judicial_event
+      date: 2026-03-13
+      posture: adjudicated
+      key_distinction: >-
+        Song alone was convicted on attempted-murder/firearm counts in DOJ's verdict summary; other trial defendants
+        were convicted on common riot/material-support/fireworks-explosives counts.
+
+    - id: event-prairieland-2026-06-sentencing
+      label: June 2026 Prairieland federal sentencing
+      type: judicial_event
+      date: 2026-06-23
+      posture: adjudicated
+
+    - id: event-trump-antifa-designation-2025-09-22
+      label: Trump order designating Antifa a domestic terrorist organization
+      type: executive_classifier_event
+      date: 2025-09-22
+      posture: documented
+      source: https://www.whitehouse.gov/presidential-actions/2025/09/designating-antifa-as-a-domestic-terrorist-organization/
+
+    - id: event-trump-nspm7-2025-09-25
+      label: NSPM-7 Countering Domestic Terrorism and Organized Political Violence
+      type: executive_security_classifier_event
+      date: 2025-09-25
+      posture: documented
+      source: https://www.whitehouse.gov/presidential-actions/2025/09/countering-domestic-terrorism-and-organized-political-violence/
+
+  people:
+    - id: actor-benjamin-song
+      label: Benjamin Hanil Song
+      type: defendant_actor
+      posture: adjudicated_on_specific_counts
+      known:
+        - former U.S. Marine Corps reservist according to DOJ public records
+        - convicted of attempted murder of the Alvarado officer in March 2026
+      unknowns:
+        - full causal relation between his proposed armed detainee-liberation plan and each other participant's knowledge/agreement
+
+  classifiers_and_systems:
+    - id: classifier-north-texas-antifa-cell
+      label: North Texas Antifa Cell
+      type: prosecutorial_classifier
+      posture: documented_as_government_label
+      lock: >-
+        Treat as DOJ/prosecution ontology unless independent evidence establishes a formal pre-existing organization
+        with stable membership, governance, boundaries, and continuity outside the prosecution record.
+
+    - id: system-evidence-custody-and-oversight
+      label: ICE / contractor evidence-custody and oversight system
+      type: accountability_infrastructure
+      research_questions:
+        - Who creates and controls primary evidence when custody, contractor operations, complaint intake, and death review overlap?
+        - Which evidence is mandatory to preserve and for how long?
+        - Who can independently compel preservation before routine overwrite or destruction?
+        - How often do metadata errors alter aggregate abuse statistics?
+        - Does an agency's internal non-substantiation remain reliable when the same ecology controlled evidence preservation and witness access?
+
+    - id: system-institutional-credibility-discount
+      label: Institutional credibility discount for damaged evidence pipelines
+      type: evidentiary_rule_candidate
+      posture: supported
+      definition: >-
+        Demonstrated failures of preservation, witness access, classification, or disclosure reduce the exculpatory
+        weight of absent or non-substantiated evidence. They do not transform an allegation into a proven fact.
+
+    - id: hypothesis-nested-intent-prairieland
+      label: Prairieland nested-intent hypothesis
+      type: investigative_hypothesis
+      posture: candidate
+      model:
+        - broader solidarity/protest layer
+        - armed self-defense / firearms-social-network layer
+        - smaller trusted planning layer
+        - Benjamin Song's own offensive-use-of-force intent
+      discriminator: >-
+        Reconstruct chat membership, timing, pre-event discussions, physical items, individual statements,
+        jury instructions, verdicts, and sentencing findings for each participant rather than infer a common mind.
+
+connectors:
+  - from: org-ice
+    to: facility-prairieland-detention-center
+    type: custody_contract_and_oversight
+    status: documented
+
+  - from: org-lasalle-corrections
+    to: facility-prairieland-detention-center
+    type: private_operator
+    status: documented
+
+  - from: facility-prairieland-detention-center
+    to: population-prairieland-detainees
+    type: custodial_power
+    status: documented
+    note: >-
+      Facility/operator controls movement and materially mediates access to food, water, medicine,
+      communication, safety, evidence, and complaint pathways.
+
+  - from: population-prairieland-detainees
+    to: org-ice-jic
+    type: complaint_intake_path
+    status: documented
+
+  - from: org-ice-jic
+    to: org-ice-opr
+    type: allegation_routing_and_investigation_path
+    status: documented
+
+  - from: incident-pdc-2017-06-staff-sexual-assault-allegation
+    to: org-lasalle-corrections
+    type: contractor_actor_question
+    status: unknown
+    note: Record says unnamed contract officer; employer identity requires underlying case file.
+
+  - from: incident-pdc-2017-12-lasalle-guard-groping-allegation
+    to: org-lasalle-corrections
+    type: alleged_staff_conduct
+    status: alleged
+
+  - from: incident-pdc-2017-12-lasalle-guard-groping-allegation
+    to: system-evidence-custody-and-oversight
+    type: metadata_integrity_failure
+    status: documented
+    note: Topic field conflicts with Case Summary/Synopsis/Primary FD about alleged actor type.
+
+  - from: incident-pdc-2018-mirimanian-death
+    to: incident-pdc-2018-mirimanian-video-loss
+    type: investigation_evidence_relation
+    status: supported
+
+  - from: incident-pdc-2018-mirimanian-video-loss
+    to: system-evidence-custody-and-oversight
+    type: evidence_preservation_failure
+    status: supported
+
+  - from: system-evidence-custody-and-oversight
+    to: system-institutional-credibility-discount
+    type: evidentiary_consequence
+    status: supported
+    lock: Missing evidence reduces confidence in exculpatory absence; it does not prove the missing proposition.
+
+  - from: trump-administration-second-term
+    to: org-ice
+    type: executive_policy_and_resource_direction
+    status: documented
+
+  - from: trump-administration-second-term
+    to: condition-pdc-2025-overcrowding-floor-sleeping
+    type: detention_expansion_pressure
+    status: supported
+    question: >-
+      Quantify local population growth, staffing, medical capacity, bed use, transfers, and contract modifications
+      before assigning the local condition wholly to national policy.
+
+  - from: condition-pdc-2025-overcrowding-floor-sleeping
+    to: event-prairieland-july4-2025-day-protest
+    type: humanitarian_grievance_context
+    status: supported
+    lock: Context/motive is not justification for violence.
+
+  - from: allegation-pdc-2025-medication-phone-denial
+    to: event-prairieland-july4-2025-day-protest
+    type: humanitarian_grievance_context
+    status: candidate
+    question: Did organizers know or cite this specific allegation, or only the broader detention-abuse environment?
+
+  - from: event-prairieland-july4-2025-day-protest
+    to: event-prairieland-july4-2025-night-violence
+    type: same_day_temporal_relation
+    status: documented
+    lock: Temporal continuity does not establish identical participants, knowledge, or intent.
+
+  - from: actor-benjamin-song
+    to: event-prairieland-july4-2025-night-violence
+    type: gunfire_and_attempted_murder
+    status: adjudicated
+
+  - from: population-prairieland-protest-participants-2025-07-04
+    to: hypothesis-nested-intent-prairieland
+    type: heterogeneity_question
+    status: candidate
+
+  - from: event-prairieland-july4-2025-night-violence
+    to: event-prairieland-2025-11-antifa-cell-indictment-framing
+    type: prosecution_response
+    status: documented
+
+  - from: event-prairieland-2025-11-antifa-cell-indictment-framing
+    to: classifier-north-texas-antifa-cell
+    type: classifier_application
+    status: documented
+
+  - from: event-trump-antifa-designation-2025-09-22
+    to: classifier-north-texas-antifa-cell
+    type: possible_classifier_environment
+    status: candidate
+    evidence_for:
+      - Trump executive order predates the November indictment announcement using the label.
+      - DOJ's June 2026 sentencing release explicitly highlights the September 2025 order when describing the Prairieland sentencing.
+    evidence_against_overclaim:
+      - Temporal order and later rhetorical linkage do not establish that the executive order caused the prosecution's organizational theory or charges.
+      - Underlying investigators may have used Antifa-related concepts before the public wording changed; full charging/internal records are required.
+
+  - from: event-trump-nspm7-2025-09-25
+    to: classifier-north-texas-antifa-cell
+    type: broader_domestic_terrorism_network_policy_context
+    status: candidate
+    note: >-
+      NSPM-7 directs network/funder investigation around political violence and explicitly frames self-described
+      anti-fascism as a recurrent umbrella. Test whether this policy changed investigative scope in the Prairieland case.
+
+  - from: classifier-north-texas-antifa-cell
+    to: event-prairieland-2026-03-verdict
+    type: trial_frame_question
+    status: candidate
+    question: >-
+      How did organizational/ideological testimony enter jury instructions and element proof, and what did the judge
+      tell jurors about ideology versus criminal conduct?
+
+  - from: classifier-north-texas-antifa-cell
+    to: event-prairieland-2026-06-sentencing
+    type: sentencing_frame_question
+    status: candidate
+    question: >-
+      Trace whether terrorism enhancements, statutory mandatory minimums, acquitted conduct, group evidence, or the
+      classifier itself affected defendant-specific sentencing calculations.
+
+  - from: event-prairieland-2026-03-verdict
+    to: hypothesis-nested-intent-prairieland
+    type: partial_discriminator
+    status: supported
+    note: >-
+      Song-alone attempted-murder/firearm convictions demonstrate at least one legally consequential distinction
+      between his conduct and other trial defendants; common-count convictions also establish that the jury found
+      additional criminal participation by others within the elements charged.
+
+cross_lattice_bridges:
+  - to: docs/CONTROVERSY_MEMBRANE_v0_1.md
+    reason: evidence custody, private contractor power, court/oversight scope, victim/authority separation
+  - to: research/harm-audit/TRUMP_HUMANITARIAN_HARM_AND_EXTREMIST_ENABLEMENT_LEDGER_2026-08-13.md
+    reason: anti-fascism/extremism classifier asymmetry, detention harm, oversight reduction, political-violence chronology
+  - to: research/investigations/TRUMP_MASTER_TOPOLOGY_2026-08-12.md
+    reason: private detention, captive population, contractor revenue, oversight/referee problem, concentrated leverage
+  - to: nodes/institutions/trump-administration-second-term.md
+    reason: DHS/ICE policy seat and private detention contractor boundary
+  - to: lattice/MONEY_INFLUENCE_ENRICHMENT_2026-08-10.yaml
+    reason: detention contracts and private-profit lane require monetary/contract enrichment pass
+
+high_centrality_connections_to_expand:
+  - id: custody-evidence-dual-role
+    posture: supported
+    pattern: >-
+      The custody ecology is not only the alleged harm environment; it also controls or mediates much of the
+      complaint intake, surveillance, medical record, witness access, retention, and investigative record later used
+      to decide whether harm can be substantiated.
+    risk: epistemic_chokepoint
+
+  - id: contractor-care-evidence-profit-crossing
+    posture: candidate
+    pattern: >-
+      A private contractor may simultaneously receive public detention revenue, provide or arrange daily custody/care,
+      employ alleged wrongdoers, and hold operational evidence. Trace contract incentives, indemnification, penalties,
+      retention duties, and renewal decisions before inferring motive.
+
+  - id: metadata-to-public-statistics-crossing
+    posture: supported
+    pattern: >-
+      A structured-field error can move a staff allegation into the wrong apparent actor category, changing aggregate
+      counts even where the narrative and primary classification remain explicit.
+    next_test: Scan the complete FOIA workbook using both facility-name and narrative-text matching, then compare actor/facility fields against Synopsis/Primary FD.
+
+  - id: detention-expansion-to-protest-to-classifier
+    posture: supported_with_open_causal_edges
+    pattern: >-
+      detention expansion / capacity pressure -> local humanitarian grievance -> protest -> violent escalation by some
+      participants -> broad terrorism/Antifa classifier -> prosecution and sentencing environment.
+    lock: Every arrow requires its own evidence; the chain is a research topology, not a claim of one mastermind or one intention.
+
+  - id: harm-record-to-prosecution-context-asymmetry
+    posture: supported
+    pattern: >-
+      Public prosecution narratives can begin at the attack and omit the facility's antecedent abuse/oversight history;
+      advocacy narratives can begin at detention abuse and minimize later criminal conduct. The lattice must carry both
+      histories simultaneously without allowing one to null the other.
+
+missingness_ledger:
+  - object: Prairieland staff sexual-abuse investigative dispositions
+    state: missing
+    why: not contained in extracted FOIA spreadsheet columns
+  - object: full Prairieland PREA audit findings/corrective actions 2018/2021/2023
+    state: inaccessible_or_withheld
+    why: audit existence indexed; full underlying reports not yet incorporated into this packet
+  - object: Mirimanian missing surveillance recording
+    state: lost_or_not_retained
+    why: records-based review reports it was not retained
+  - object: AIC/BAJI requested complaint and conditions records
+    state: inaccessible_or_withheld
+    why: records project/litigation indicates incomplete public acquisition
+  - object: July 2025 defendant-specific chat topology
+    state: missing
+    why: public DOJ summaries describe some chats but do not supply complete membership/timing set
+  - object: jury instructions and complete trial transcript
+    state: missing
+    why: not yet incorporated
+  - object: defendant-specific sentencing calculations and enhancement bases
+    state: missing
+    why: not yet incorporated
+
+falsification_and_counterevidence:
+  - >-
+    Finding substantiated PREA investigations clearing specific staff allegations would lower confidence in those
+    allegation branches, while still preserving the fact that the allegations were made and how they were investigated.
+  - >-
+    Complete chat/transcript evidence showing each convicted common-count defendant knowingly agreed to the violent
+    plan would substantially weaken the nested-intent hypothesis for those defendants.
+  - >-
+    Internal pre-September 2025 prosecution records using a stable North Texas Antifa Cell organizational theory would
+    weaken the hypothesis that the later executive classifier materially generated that ontology.
+  - >-
+    Evidence of robust independent evidence preservation and external investigation in a given complaint should reduce
+    application of the institutional credibility discount for that complaint.
+
+next_extraction_queue:
+  - Re-scan full FOIA 2018-ICFO-45499 workbook by narrative, facility, city, actor type, and Primary FD; reconcile minimum count and hidden/miscoded Prairieland rows.
+  - Retrieve underlying investigative/disposition files for indexes 365 and 95.
+  - Retrieve complete Prairieland PREA audits and corrective-action materials for 2018, 2021, 2023.
+  - Pull Mirimanian death-review source pages and evidence-preservation correspondence.
+  - Trace LaSalle contract, revenue, staffing, subcontractors, insurance/indemnity, evidence-retention duties, and renewal history.
+  - Quantify Prairieland detention population, bed use, medical staffing, and transfer pressure during January-July 2025.
+  - Retrieve July 2025 protest organizer communications and public calls to determine stated motive before the nighttime event.
+  - Retrieve full July 2025 criminal complaints, November indictment, jury instructions, trial transcript/exhibits, sentencing memoranda, and appeal dockets.
+  - Build defendant-by-defendant conduct/knowledge ledger; do not reuse a group-level guilt field.
+  - Trace when federal investigators/prosecutors first used the North Texas Antifa Cell classifier internally and publicly.
+  - Cross-check the anti-fascism classifier lane against treatment, pardons/clemency, and threat classification of far-right political-violence networks using symmetric evidence rules.
+
+references:
+  - source-prairieland-detention-evidence-2017-2026
+  - docs/CONTROVERSY_MEMBRANE_v0_1.md
+  - lattice/ACTOR_NETWORK_SEED_2026-08-10.yaml
+  - nodes/institutions/trump-administration-second-term.md
+
+locks:
+  - This lattice is an investigation surface, not a verdict surface.
+  - Do not infer rape at Prairieland from sexual-assault allegations unless the underlying allegation or finding specifically establishes rape.
+  - Do not infer that staff sexual-abuse allegations were substantiated from their presence in ICE's database.
+  - Do not infer exoneration from Closed status.
+  - Do not infer common intent from common location, political identity, encrypted-chat use, black clothing, firearms culture, or prosecution label.
+  - Do not infer government provocation or far-right infiltration without affirmative evidence.
+  - Do not use the violence of July 4 to erase the facility's preexisting humanitarian record.
+  - Do not use the facility's humanitarian record to excuse Song's adjudicated gunfire or other proven criminal conduct.
