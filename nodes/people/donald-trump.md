@@ -4,7 +4,7 @@
 **Hierarchy class:** leader  
 **Status:** active  
 **Historical spine:** yes  
-**Last reviewed:** 2026-08-12
+**Last reviewed:** 2026-08-14
 
 ## Scope
 
@@ -13,6 +13,12 @@ This node is the durable historical index for Donald Trump's public-power contri
 It is not a net-goodness biography and does not treat every action by the United States government, Republican Party, Trump family, cabinet, agencies, contractors, donors, or foreign allies as Trump's personal action.
 
 Individual policies, orders, funding decisions, appointments, statements, clemency acts, wars, and other contributions should live in reusable contribution records and link back here.
+
+## Master investigative indexes
+
+- `research/investigations/TRUMP_ACCOUNTABILITY_MASTER_INDEX_2026-08-14.md` — numbered address book for the current Trump investigation.
+- `research/investigations/TRUMP_MASTER_TOPOLOGY_2026-08-12.md` — cross-domain causal topology.
+- `research/harm-audit/TRUMP_HUMANITARIAN_HARM_AND_EXTREMIST_ENABLEMENT_LEDGER_2026-08-13.md` — humanitarian and extremist-enablement ledger.
 
 ## Authority seats
 
@@ -64,7 +70,21 @@ Do not collapse those seats.
 - family/private financial conflicts;
 - clemency networks beyond January 6;
 - political-enemy prosecution pressure;
-- historical contractor/nonpayment and adjudicated sexual-misconduct findings.
+- historical contractor/nonpayment and adjudicated sexual-misconduct findings;
+- person-by-person sexual-misconduct allegation table;
+- Trump/Epstein primary-record chronology;
+- sex-trafficking enforcement capacity versus immigration-enforcement resource allocation;
+- Ghislaine Maxwell interview/transfer authority and any White House involvement;
+- senior-selection sexual-misconduct/enabling allegation nodes with counterevidence;
+- sexual-autonomy/protection-asymmetry cross-lattice comparison without partisan presumption.
+
+## Current high-value cross-lattice links
+
+- `lattice/PRAIRIELAND_ICE_DETENTION_EVIDENCE_LATTICE_2026-08-14.yaml`
+- `lattice/SEXUAL_AUTONOMY_PROTECTION_ASYMMETRY_2026-08-14.yaml`
+- `nodes/policies/reproductive-autonomy.yaml`
+
+These links expose relations among custody, immigration priority, victim protection, reproductive exit, evidence control, and political classification. They do not convert administration-level or state-level conduct into Trump-personal conduct without an attributable decision path.
 
 ## Rating windows
 
@@ -88,6 +108,7 @@ Each hierarchy rating must specify the window and included confirmed contributio
 - Court records.
 - Federal financial/procurement records.
 - High-quality independent reporting for chronology and discovery.
+- `sources/source-trump-accountability-index-refresh-2026-08-14.yaml`
 
 ## Locks
 
@@ -97,4 +118,8 @@ Signature/order != every downstream mechanism.
 Dispute with ally != erasure of prior cooperation.
 Beneficial action elsewhere != offset for confirmed harm.
 High harm rating != legal finding of criminal guilt.
+Public accusation != adjudicated assault.
+Epstein association != participation in Epstein crimes.
+Appointment despite allegation != proof of allegation or protection motive.
+Administration enforcement tradeoff != Trump personal intent unless decision path is established.
 ```
