@@ -20,6 +20,28 @@ reproductive autonomy
 
 No single dossier owns the relation. Canonical stitches and bridges may be visible from several node-local views.
 
+## Declared ethical lens: bodily sovereignty
+
+The project uses a bodily-sovereignty lens in this domain:
+
+```text
+no person has an automatic right to use, occupy, alter, or control another person's body without consent
+```
+
+Pregnancy can create competing moral interests, especially as fetal development advances, but those interests do not automatically convert into ownership or compulsory use of the pregnant person's body.
+
+Where fetal survival outside the pregnant person's body becomes medically feasible, and where delivery can be accomplished without imposing disproportionate risk, it may be ethically or clinically **recommended** to consider delivery, induction, or cesarean delivery as alternatives to ending fetal life.
+
+`RECOMMENDED != FORCED`
+
+`CLINICALLY_PREFERABLE_IN_A_CASE != LEGALLY_MANDATED`
+
+No recommendation in this dossier authorizes forced surgery, forced cesarean delivery, compelled pregnancy continuation, or other non-consensual medical intervention.
+
+Medical feasibility, gestational viability, maternal risk, fetal condition, and safest delivery route are clinical questions and should be sourced as such rather than inferred from ideology.
+
+If adoption is invoked as an alternative after birth, the ethical analysis must continue downstream into the actual adoption, foster-care, disability-support, maternal-care, and child-welfare systems. A recommendation to carry or deliver for adoption is incomplete if the receiving social system is unsafe, exploitative, inaccessible, or materially unsupported.
+
 ## Core distinctions
 
 Do not collapse:
@@ -88,6 +110,12 @@ Contested medical claims must remain typed as contested unless evidence establis
 `Personhood rhetoric != proven contraception prohibition unless statutory or adjudicated mechanism supports the relation.`
 
 `Protection claim != demonstrated protective outcome.`
+
+`Recommendation != coercive authority.`
+
+`Viability != permission for forced surgery.`
+
+`Adoption option != humane endpoint unless the downstream care system is evaluated.`
 
 `Legal != harmless.`
 
