@@ -1,0 +1,31 @@
+id: reproductive-autonomy
+label: Reproductive Autonomy
+node_type: policy
+status: active
+summary: >-
+  Durable lattice address for laws, policies, enforcement mechanisms, protections,
+  coercive constraints, surveillance practices, and material outcomes affecting
+  reproductive decision-making. This node does not encode a single normative
+  conclusion; individual relations must preserve mechanism, evidence posture,
+  affected participants, counterevidence, and temporal state.
+aliases:
+  - reproductive rights policy
+  - reproductive autonomy policy
+hashtags:
+  - reproductive_autonomy
+  - health
+  - law_governance_accountability
+historical_spine: docs/CONTROVERSY_MEMBRANE_v0_1.md
+contribution_index: []
+harm_rating_windows: []
+direct_relations: []
+timeline_stories: []
+current_disputes:
+  - abortion access and restriction
+  - contraception access and refusal
+  - reproductive surveillance and data enforcement
+  - interstate assistance and helper liability
+  - parental involvement and minors
+unknowns: []
+sources: []
+last_reviewed: "2026-08-14"
