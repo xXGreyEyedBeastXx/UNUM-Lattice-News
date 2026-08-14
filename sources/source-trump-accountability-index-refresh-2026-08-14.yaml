@@ -1,0 +1,122 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-trump-accountability-index-refresh-2026-08-14
+title: Trump accountability master-index refresh sources
+accessed: 2026-08-14
+purpose: >-
+  Refresh high-value Trump accountability nodes that changed or sharpened after the 2026-08-12
+  master topology, especially sexual-misconduct adjudication, sex-trafficking enforcement capacity,
+  reproductive policy, Epstein-record status, and sexual-misconduct allegations around senior selections.
+
+sources:
+  - id: scotus-carroll-docket-25-573
+    publisher: Supreme Court of the United States
+    source_class: primary_court_docket
+    url: https://www.supremecourt.gov/docket/docketfiles/html/public/25-573.html
+    supports:
+      - Trump's petition arising from the Second Circuit Carroll judgment was denied on 2026-06-29
+      - the lower-court decision date was 2024-12-30 and rehearing was denied 2025-06-13
+    limitations:
+      - denial of certiorari does not itself endorse every lower-court rationale; it leaves the judgment standing
+
+  - id: axios-trump-27-sexual-misconduct-accusers-2024
+    publisher: Axios
+    source_class: high_quality_news_compilation
+    date: 2024-10-27
+    url: https://www.axios.com/2024/10/28/trump-sexual-misconduct-allegations-women
+    supports:
+      - roughly 27 women had publicly accused Trump of sexual misconduct by late October 2024
+      - Stacey Williams became the latest listed accuser and alleged Trump groped her while Jeffrey Epstein watched
+      - Trump/campaign denied the allegations
+    limitations:
+      - the accusers' claims remain separately typed; the count is not a count of adjudicated findings
+      - Stacey Williams' Epstein-linked allegation is an allegation, not proof of a coordinated assault or Epstein-related criminal conduct by Trump
+
+  - id: reuters-sex-trafficking-enforcement-2026-08-13
+    publisher: Reuters
+    source_class: high_quality_data_investigation
+    date: 2026-08-13
+    url: https://www.reuters.com/legal/government/trump-promised-sex-trafficking-crackdown-his-justice-department-hasnt-delivered-2026-08-13/
+    supports:
+      - federal sex-trafficking charges through June 2026 were at the slowest pace since 2010 in Reuters' court-record review
+      - former prosecutors/current agents linked stalled probes to staffing shortages, funding cuts, and diversion toward immigration enforcement
+      - HSI agent reassignments disrupted trafficking investigations and victim relationships
+      - trafficking-victim service grants were delayed/frozen in some cases
+      - T-visa approvals in the first six months of the fiscal year ran at about half the typical decade pace and some cooperating trafficking victims were detained by immigration authorities
+      - administration officials state sex trafficking remains a high priority and dispute the implication that enforcement has been abandoned
+    limitations:
+      - prosecution counts are not a complete measure of trafficking prevalence or all investigative activity
+      - some decline predates the second Trump administration
+      - causal attribution should separate budget/personnel decisions, agency implementation, and longer-run trend
+
+  - id: ap-trump-cabinet-sexual-misconduct-2024
+    publisher: Associated Press
+    source_class: high_quality_news
+    date: 2024-11-21
+    url: https://apnews.com/article/2fe42bb7ea72c5212236ae8d8c153901
+    supports:
+      - several Trump selections/nominees for senior second-term roles had faced sexual-misconduct or related enabling allegations
+      - Trump himself had the Carroll civil sexual-abuse finding
+    limitations:
+      - allegations against distinct nominees vary substantially in evidentiary status and severity
+      - nomination/selection despite an allegation != proof the allegation is true or that Trump intended to protect misconduct
+
+  - id: doj-epstein-release-2026-01-30
+    publisher: U.S. Department of Justice
+    source_class: primary_government_release
+    date: 2026-01-30
+    url: https://www.justice.gov/opa/pr/department-justice-publishes-35-million-responsive-pages-compliance-epstein-files
+    supports:
+      - DOJ reported approximately 3.5 million pages released under the Epstein Files Transparency Act
+      - DOJ warned the production included materials submitted by the public that may be fake or false
+      - DOJ stated notable individuals and politicians were not to be redacted merely because of prominence
+    limitations:
+      - appearance in released material != criminal conduct
+      - DOJ's characterization of claims involving Trump is an executive-branch statement and not an independent adjudication
+
+  - id: doj-epstein-library-2026
+    publisher: U.S. Department of Justice
+    source_class: primary_government_document_library
+    url: https://www.justice.gov/epstein
+    supports:
+      - the public Epstein library remained active and was last updated 2026-07-17 at time of review
+      - DOJ warns its search functionality can be incomplete or unreliable for some file formats
+    limitations:
+      - search failure != absence from the archive
+
+  - id: whitehouse-pro-life-2026-01-23
+    publisher: White House
+    source_class: primary_executive_statement
+    date: 2026-01-23
+    url: https://www.whitehouse.gov/releases/2026/01/president-trump-is-the-most-pro-life-president-in-history/
+    supports:
+      - the administration publicly describes itself as strongly anti-abortion/pro-life
+      - it identifies expanded Mexico City Policy, restrictions on federal abortion funding/providers, and related actions as administration achievements
+    limitations:
+      - promotional framing is not independent evidence of beneficial effects
+
+  - id: hhs-geneva-consensus-2026
+    publisher: U.S. Department of Health and Human Services
+    source_class: primary_government_policy
+    url: https://www.hhs.gov/about/agencies/oga/geneva-consensus-declaration/index.html
+    supports:
+      - the declaration rejects an international right or obligation to finance/facilitate abortion while affirming other women's-health commitments
+    limitations:
+      - declaration-level policy does not establish each domestic state abortion restriction
+
+  - id: whitehouse-faith-reproductive-actions-2026
+    publisher: White House
+    source_class: primary_executive_statement
+    url: https://www.whitehouse.gov/priorities/faith/
+    supports:
+      - administration claims and lists actions including defunding abortion providers, rescinding abortion-related guidance, Geneva Consensus participation, and deactivation of ReproductiveRights.gov
+    limitations:
+      - causal impact requires separate implementation and outcome evidence
+
+locks:
+  - Civil liability != criminal conviction.
+  - Approximately 27 public accusers != 27 adjudicated assaults.
+  - Epstein association or file appearance != participation in Epstein's crimes.
+  - Senior appointment despite an allegation != proof of protection unless intervention, knowledge, or preferential treatment is evidenced.
+  - A fall in trafficking prosecutions != proof the administration favors traffickers; it is a capacity/prioritization outcome to investigate.
+  - Trump personal action != administration action != congressional action != state-law consequence.
+  - Anti-abortion policy != sexual-offender protection without a demonstrated mechanism crossing the two.
