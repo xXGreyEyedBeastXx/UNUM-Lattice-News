@@ -1,0 +1,101 @@
+schema: unum-lattice-news/node/v0.2
+id: org-lasalle-corrections
+title: LaSalle Corrections
+entity_type: private_detention_operator
+actor_roles:
+  - detention_operator
+  - federal_contract_interface
+  - employer_or_contracting_ecology
+  - operational_evidence_custodian
+status: active
+updated: 2026-08-14
+
+summary:
+  text: >-
+    Private detention operator identified in records-based oversight reporting as the operator of Prairieland
+    Detention Center. In the Prairieland evidence lattice, LaSalle is a high-centrality contractor node because
+    facility operation joins custody conditions, staffing, alleged staff conduct, surveillance/evidence retention,
+    and public detention revenue. A December 2017 ICE record specifically identifies a male LaSalle detention
+    officer / contract guard in a staff-on-detainee groping allegation; the allegation's disposition remains unknown
+    from the extracted FOIA spreadsheet.
+  posture: documented_operator_relation_with_alleged_staff_conduct
+
+hashtags:
+  - private-detention
+  - LaSalle-Corrections
+  - ICE
+  - contractors
+  - evidence-custody
+  - Prairieland
+
+authority:
+  has_authority: true
+  seat: private custodial operator under public contract
+  jurisdiction: contract-specific detention facilities
+  level: private_contractor
+  oversight:
+    - ICE
+    - DHS oversight bodies
+    - PREA audit system
+    - courts
+    - local/state regulators where applicable
+
+current_evidence:
+  observed:
+    - Records-based oversight reporting identifies LaSalle Corrections as Prairieland's private operator in 2018.
+    - ICE FOIA index 95 identifies a male LaSalle detention officer / contract guard as the alleged actor in a December 2017 groping complaint at Prairieland.
+    - The same row contains a conflicting Topic field that incorrectly points toward another detainee while its Case Summary, Synopsis, and Primary FD identify staff-on-detainee conduct.
+  stated: []
+  adjudicated: []
+  alleged:
+    - December 2017 Prairieland detainee alleged a male LaSalle detention officer / contract guard groped him during a pat-down.
+  supported_inferences:
+    - >-
+      Where a private operator controls daily custody, employs or manages staff, and maintains operational systems such as
+      surveillance, its contractual duties and evidence-retention practices become part of the abuse-accountability chain.
+  disputed: []
+  ambiguous:
+    - The June 2017 unnamed contract officer's employer is not established by the extracted row and should not be silently assigned to LaSalle.
+  unknowns:
+    - Personnel identity, employment status, discipline, referral, and disposition for the December 2017 allegation.
+    - Contractual evidence-retention and reporting duties in force during the Mirimanian death and the sexual-abuse allegations.
+    - Prairieland-specific revenue, penalties, corrective actions, staffing levels, medical subcontractors, insurance, and indemnification over time.
+  missing_or_withheld:
+    - Underlying personnel and disciplinary files are not present in the current source bundle.
+    - Complete Prairieland contract/modification history has not yet been compiled into this node.
+  counterevidence:
+    - Operator status and allegations against employees do not establish company-wide intent or liability for every alleged incident.
+
+relations:
+  - to: facility-prairieland-detention-center
+    type: private_operator
+    status: documented
+  - to: org-ice
+    type: federal_detention_contract_interface
+    status: documented
+  - to: incident-pdc-2017-12-lasalle-guard-groping-allegation
+    type: alleged_employee_conduct
+    status: alleged
+  - to: incident-pdc-2018-mirimanian-video-loss
+    type: facility_evidence_custody_question
+    status: candidate
+    question: Which entity controlled and was contractually responsible for retaining each surveillance recording?
+  - to: system-evidence-custody-and-oversight
+    type: private_custody_evidence_interface
+    status: supported
+
+unresolved_questions:
+  - Obtain complete ICE/LaSalle/Johnson County contracting chain for Prairieland and all amendments.
+  - Identify medical, food-service, security, transport, and surveillance subcontractors.
+  - Trace penalties, cure notices, corrective-action plans, renewals, and expansion despite documented deficiencies or deaths.
+  - Determine whether alleged staff wrongdoers remained employed, were reassigned, disciplined, referred, or terminated.
+  - Determine which entity controlled surveillance retention at the time of Mirimanian's death.
+
+references:
+  - source-prairieland-detention-evidence-2017-2026
+
+locks:
+  - Private contractor != government agency; contract relation must remain visible.
+  - Alleged employee misconduct != adjudicated corporate misconduct.
+  - Contractor revenue/profit is an incentive variable to trace, not proof of abusive intent.
+  - Evidence-retention responsibility must be established from contract/policy rather than inferred from physical control alone.
