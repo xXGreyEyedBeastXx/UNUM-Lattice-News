@@ -1,0 +1,106 @@
+version: v0_1
+status: active_review
+schema: unum-lattice-news/correction-response-stitch/v0.1
+
+purpose: >-
+  Record how a person, institution, movement, policy actor, or other durable node
+  responds when later evidence, adjudication, correction, exoneration, or changed
+  facts materially challenge an earlier claim or action. The object is a temporal
+  relation record, not a personality diagnosis or permanent identity label.
+
+correction_response_stitch:
+  id: correction_response_slug
+
+  subject:
+    node_id: node_slug
+    node_type: person | institution | movement | policy | ideology | technology | other
+
+  original_event:
+    event_id: null
+    date: null
+    claim_or_action: ""
+    context: ""
+    affected_participants_or_ecologies: []
+    evidence: []
+    contemporaneous_warnings_or_counterevidence: []
+    claim_posture: observed | stated | adjudicated | supported_inference | alleged | disputed | unknown
+
+  later_record_change:
+    date: null
+    change_type: correction | exoneration | adjudication | contrary_evidence | replication_failure | factual_update | policy_reversal | other
+    summary: ""
+    evidence: []
+    strength: weak | moderate | strong | unresolved
+    dispute_status: undisputed | disputed | mixed | unknown
+
+  opportunity_to_update:
+    established: false
+    date: null
+    mechanism: direct_question | formal_notice | litigation | public_record | scientific_publication | internal_review | other | unknown
+    evidence: []
+
+  response:
+    state: ACKNOWLEDGED_AND_UPDATED | ACKNOWLEDGED_NO_UPDATE | DENIED | IGNORED | DOUBLED_DOWN | APOLOGIZED | REPAIRED | RETALIATED | DISPUTED_CORRECTION | PARTIAL_UPDATE | INSUFFICIENT_EVIDENCE
+    date: null
+    summary: ""
+    evidence: []
+    counterevidence: []
+    private_motive_claimed: false
+
+  repair_or_downstream_effect:
+    repair_actions: []
+    policy_changes: []
+    restitution_or_compensation: []
+    continuing_harms: []
+    later_recurrence_candidates: []
+    later_reform_or_counterexamples: []
+
+  pattern_assessment:
+    candidate_pattern_id: null
+    comparable_event_ids: []
+    recurrence_count: null
+    counterexamples: []
+    confidence: low | moderate | high | not_assessed
+    notes: ""
+
+  provenance:
+    sources: []
+    source_issue_refs: []
+    source_pr_refs: []
+    inherited_from_historical_artifact: false
+    historical_artifact_notes: ""
+    last_reviewed: "YYYY-MM-DD"
+
+  epistemic_state:
+    investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
+    claim_posture: observed | stated | adjudicated | supported_inference | alleged | disputed | ambiguous | unknown
+    confidence: low | moderate | high
+    unknowns: []
+    evidence_that_would_change_assessment: []
+
+nonclaims:
+  - past_act_is_not_permanent_identity
+  - one_error_is_not_a_repeated_pattern
+  - disagreement_is_not_correction_resistance
+  - correction_claim_is_not_established_without_evaluating_the_underlying_evidence
+  - refusal_to_update_does_not_by_itself_prove_private_motive
+  - procedural_enforcement_is_not_automatically_retaliation
+  - current_moderation_does_not_erase_historical_conduct
+  - historical_harm_does_not_nullify_documented_later_reform
+  - pattern_candidate_is_not_pattern_confirmation
+
+historical_provenance:
+  issue: 36
+  original_talos_pr: 37
+  recovered_talos_pr: 45
+  recovered_talos_branch: talos/bounty-36-1786433951172
+  retained_ideas:
+    - actor lineage
+    - correction attempts
+    - response state
+    - retaliation and repair
+    - source-backed recurrence
+  discarded_or_reworked:
+    - coupling the concept to obsolete feed-intake rewrites
+    - overly narrow response enum
+    - treating the ledger as an actor-local ownership object instead of a relational stitch
