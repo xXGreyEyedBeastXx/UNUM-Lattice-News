@@ -1,0 +1,44 @@
+schema: unum-lattice-news/bridge/v0.1
+id: rfk-autism-medical-lattice-crossing
+status: ACTIVE_REVIEW
+from_nodes:
+  - robert-f-kennedy-jr
+  - us-department-health-human-services
+through_nodes:
+  - autism
+to_domains:
+  - medical-classification
+  - disability-and-support
+  - public-health-rhetoric
+  - research-priority
+  - eugenic-risk-analysis
+relation_types:
+  - public_statement
+  - policy_priority
+  - medical_conflation
+  - supported_harm_inference
+canonical_claims:
+  - ../../../claims/rfk-hhs-autism-environmental-cause.yaml
+posture:
+  autism_as_heterogeneous_neurodevelopmental_condition: DOCUMENTED
+  intellectual_disability_as_distinct_co_occurring_dimension: DOCUMENTED
+  rfk_hhs_prevention_or_root_cause_rhetoric: STATED
+  announced_eugenics_program: NOT_ESTABLISHED
+  eugenic_risk_pathway_from_population_pathology_and_prevention_rhetoric: SUPPORTED_INFERENCE
+harm_questions:
+  - Does conflating autism with intellectual disability, language impairment, medical comorbidity, and adaptive support needs distort the target of causal research?
+  - Does catastrophic population rhetoric increase stigma toward autistic people as a class?
+  - Are identifiable and treatable co-occurring conditions obscured when their effects are attributed generically to autism?
+  - Are research attention or resources displaced away from present-life support, medical care, and quality-of-life questions toward broad cause-and-prevention agendas?
+  - Does prevention rhetoric aimed at a highly heritable neurodevelopmental phenotype create an ethically recognizable eugenic pathway even absent an announced reproductive policy?
+locks:
+  - Autism, intellectual disability, language impairment, medical comorbidity, and adaptive-function outcome must not be collapsed into one variable.
+  - Eugenic-risk analysis does not establish private eugenic intent or an announced eugenics program.
+  - Legitimate research into defined environmental exposures or defined subgroups remains distinct from a broad claim that autism generally is a preventable modern environmental disease.
+  - Medical evidence should be anchored in UNUM-Medical and linked rather than rhetorically reproduced without provenance.
+next_stitches:
+  - HHS autism prevalence/intellectual-disability framing versus underlying CDC categories
+  - RFK/HHS prevention language and root-cause research agenda
+  - diagnostic-overshadowing literature and treatable co-occurring conditions
+  - autism research allocation and opportunity-cost evidence
+  - vaccine-policy consequences where autism rhetoric is used as causal support
