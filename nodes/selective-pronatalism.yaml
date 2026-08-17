@@ -1,0 +1,44 @@
+schema: unum-lattice-news/node/v0.2
+id: selective-pronatalism
+title: Selective Pronatalism
+entity_type: concept
+actor_roles: []
+status: seed
+updated: 2026-08-17
+summary:
+  text: >-
+    Pronatalism that preferentially encourages reproduction by a selected population in order to preserve or
+    increase that population's demographic dominance. Peer-reviewed 2026 U.S. research distinguishes this from
+    general pronatalism and finds Christian nationalism and replacement-theory belief associated with selective
+    pronatalism.
+  posture: supported inference
+aliases: []
+hashtags:
+  - pronatalism
+  - demographic-dominance
+  - replacement-theory
+current_evidence:
+  observed: []
+  stated: []
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Selective pronatalism is analytically distinct from general policies that support all families or all births.
+    - Christian nationalism and replacement-theory belief are associated with selective pronatalism in nationally representative peer-reviewed research.
+  disputed: []
+  ambiguous: []
+  unknowns: []
+  missing_or_withheld: []
+  counterevidence:
+    - General religious commitment in the cited study predicted general pronatalism differently from Christian nationalism and should not be silently reclassified as selective pronatalism.
+timeline: []
+relations: []
+stories: []
+unresolved_questions: []
+corrections: []
+references:
+  - source-christian-nationalism-reproductive-autonomy-convergence-2026-08-17
+locks:
+  - Selective pronatalism requires evidence of population preference or demographic-dominance logic.
+  - Support for children or families is not enough.
+  - Replacement rhetoric may be a relevant discriminator but actor-level intent still requires evidence.
