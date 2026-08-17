@@ -1,0 +1,91 @@
+schema: unum-lattice-news/node/v0.2
+id: zionism
+title: Zionism
+entity_type: concept
+actor_roles: []
+status: seed
+updated: 2026-08-17
+summary:
+  text: >-
+    A Jewish nationalist movement. The World Zionist Organization's official Jerusalem Program defines Zionism
+    as the national liberation movement of the Jewish people and centers a Jewish, Zionist State of Israel,
+    Jewish national continuity, aliyah, national Zionist interests, and settlement. For lattice classification,
+    Zionism is seated first under nationalism and Jewish ethnonationalism before its internal currents are
+    distinguished. Internal branches or dissidents may differ materially in program, tactics, religion, economics,
+    borders, or treatment of Palestinians, but branch labels must not erase parent commitments that remain
+    evidenced. The contemporary Israeli state expression includes a legal exclusivity rule: the 2018 Nation-State
+    Basic Law states that exercise of national self-determination in Israel is unique to the Jewish people.
+  posture: supported_inference
+aliases:
+  - Zionist movement
+hashtags:
+  - nationalism
+  - ethnonationalism
+  - Zionism
+authority:
+  has_authority: false
+  seat: ideology / political movement
+  source: movement platform and historical/political record
+  jurisdiction: transnational with state-centered institutional expression in Israel
+  level: other
+  term_start: null
+  term_end: null
+  oversight: []
+  appeal_or_review: []
+vulnerability:
+  roles: []
+  protection_needs: []
+funding:
+  gives_to: []
+  receives_from: []
+constituencies: []
+current_evidence:
+  observed: []
+  stated:
+    - The World Zionist Organization defines Zionism as the national liberation movement of the Jewish people.
+    - The World Zionist Organization's official platform centers a Jewish, Zionist State of Israel, aliyah, Jewish national interests, Jewish national continuity, and settlement of the country.
+    - Israel's 2018 Nation-State Basic Law states that national self-determination in Israel is unique to the Jewish people and that Jewish settlement is a national value.
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Zionism is properly classified as a nationalist movement and, in its peoplehood/state-centered structure, as a form of Jewish ethnonationalism.
+    - The current state-law expression contains an exclusionary national-self-determination structure because the collective right is expressly reserved to one national people.
+    - Internal Zionist currents are modalities or disputes within the parent movement unless their program rejects or materially transforms parent commitments; the existence of such a current does not by itself redefine the parent movement.
+    - Martin Buber is best treated as an internal dissident/outlier for questions of sovereign Jewish statehood, Jewish demographic majority, and binationalism rather than as representative counterevidence to the dominant Zionist state-building program.
+  disputed: []
+  ambiguous:
+    - The term Zionism has been used historically by actors whose programs diverged substantially from dominant institutional political Zionism; self-identification therefore requires program-level classification rather than label-only inference.
+  unknowns: []
+  missing_or_withheld: []
+  counterevidence:
+    - Internal Zionist dissent and binational Zionist self-identifications are historically documented; they establish contestation but do not automatically establish representativeness of the parent movement.
+timeline:
+  - date: 2018-07-19
+    event: Israel enacted the Nation-State Basic Law reserving national self-determination in Israel to the Jewish people and naming Jewish settlement a national value.
+    posture: adjudicated
+  - date: 2026-08-17
+    event: Lattice methodology corrected prior use of Martin Buber as if his binational dissent were representative counterevidence to the parent Zionist structure.
+    posture: observed
+relations: []
+stories: []
+unresolved_questions:
+  - Which historical and contemporary Zionist currents retain, alter, or reject the parent movement's state-centered and peoplehood-centered commitments?
+  - For any specific actor claiming a Zionist identity, what program do they actually support, what do they understand, and what material or political consequences do their actions support?
+corrections:
+  - date: 2026-08-17
+    previous: Martin Buber's binational Zionist self-identification was treated as evidence that Zionism itself could therefore be represented as non-exclusionary.
+    updated: >-
+      Buber's self-identification and participation remain historically relevant, but his rejection of Jewish sovereign statehood and Jewish majority rule and his advocacy of a binational state are typed as internal dissent/outlier positions, not representative counterevidence against the dominant institutional Zionist program.
+    reason: >-
+      Scholarly sources describe Buber as opposing the dominant state-building trajectory, seeking demographic parity and binationalism, and recognizing that his views were unlikely to sway the Zionist majority.
+references:
+  - source-zionism-parent-ideology-and-buber-scope-2026-08-17
+locks:
+  - Judaism is not Zionism.
+  - Jewish identity is not Zionist ideology.
+  - Zionism is not identical to the State of Israel, an Israeli government, or every Israeli citizen.
+  - Self-identification with an ideology is evidence of claimed identity, not automatic evidence that every position held by the actor faithfully instantiates the ideology.
+  - Subtype difference does not erase the parent ideology.
+  - Internal dissent does not become representative counterevidence without evidence of representativeness.
+  - Do not use one reformer or humane outlier to morally average, sanitize, or redefine a parent movement.
+  - Nationalist or ethnonationalist classification does not by itself establish every alleged harm or individual intent; causal and conduct claims require separate evidence.
