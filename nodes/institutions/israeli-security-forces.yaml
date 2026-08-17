@@ -1,0 +1,174 @@
+schema: unum-lattice-news/node/v0.2
+id: israeli-security-forces
+title: Israeli Security Forces
+entity_type: institution
+actor_roles:
+  - authority
+status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Umbrella investigative node for Israeli military, prison, police and related security bodies when an external
+    source uses a collective security-force category. It does not erase distinctions among the IDF, Israel Prison
+    Service, police, Yamam, units, commanders, facilities or individual personnel. Current evidence includes UN
+    findings of collective punishment and intentionally directed civilian attacks in Gaza within the Commission's
+    scope; systematic sexual and gender-based violence including verified rape and gang rape in detention; and a
+    2026 Commission finding of deliberate targeting of Palestinian children, including documented precision-fire
+    cases. Israel and the IDF deny intentionally targeting civilians and reject the Commission's systemic SGBV findings.
+  posture: supported_inference
+aliases:
+  - ISF
+  - Israeli armed and security forces
+hashtags:
+  - institution/IsraeliSecurityForces
+  - domain/IsraelPalestine
+  - mechanism/CivilianTargeting
+  - mechanism/DetentionAbuse
+  - mechanism/SexualViolence
+  - mechanism/ChildHarm
+
+authority:
+  has_authority: true
+  seat: military, detention, policing and security operations
+  source: Israeli state law, command structures and operational authority
+  jurisdiction: Israel, occupied Palestinian territory and external operational theaters where deployed
+  level: national
+  term_start: null
+  term_end: null
+  oversight:
+    - Israeli civilian government
+    - Israeli military and domestic legal oversight bodies
+    - international legal and fact-finding bodies within their mandates
+  appeal_or_review: []
+vulnerability:
+  roles: []
+  protection_needs: []
+funding:
+  gives_to: []
+  receives_from: []
+constituencies: []
+current_evidence:
+  observed:
+    - Israeli forces conduct military operations, detention, checkpoint, buffer/control-zone and security activity across Gaza and the occupied West Bank.
+    - Individual Israeli soldiers have publicly described orders or practices involving shooting persons entering designated no-go or buffer areas and unnecessary destruction of civilian property.
+  stated:
+    - IDF states it does not intentionally target civilians and that its directives prohibit deliberate attacks on civilians.
+    - IDF states its operations are directed at Hamas, Islamic Jihad and other armed groups and that it uses civilian-harm mitigation procedures.
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Soldier testimony becomes stronger mechanism evidence when it converges with independent findings, repeated incidents, official orders or other corroborating records.
+  disputed:
+    - Israel rejects UN findings characterizing sexual and gender-based violence as systematic or as an operating procedure.
+  ambiguous:
+    - The degree to which local shoot orders and permissive rules described by soldiers were formalized at brigade, division, theater or national-command level varies by incident and remains trace-specific.
+  unknowns:
+    - Full unit-by-unit accountability chain for deliberate child targeting findings has not yet been entered into the Lattice.
+    - Full disciplinary/criminal disposition map for verified sexual-violence cases remains incomplete.
+  missing_or_withheld: []
+  counterevidence:
+    - IDF publishes rules and statements requiring civilian-harm mitigation and prohibiting deliberate attacks on civilians; these are retained as policy/counterposition evidence rather than treated as dispositive of practice.
+
+evidence_extensions:
+  operating_procedure_findings:
+    - date: 2025-03
+      body: UN Independent International Commission of Inquiry
+      finding: >-
+        Forced public stripping/nudity, sexual harassment including rape threats and sexual assault were found to
+        form de facto parts of ISF standard operating procedures toward Palestinians; sexualized torture including
+        rape and genital violence was found committed under explicit orders or implicit encouragement by top civilian
+        and military leadership.
+      posture: OPERATING_PROCEDURE
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  verified_sexual_violence:
+    - date: 2026-04
+      body: UN Secretary-General / SRSG-SVC
+      finding: >-
+        UN verification included rape with objects, gang rape, attempted rape, genital violence, targeted shooting of
+        genitals, forced nudity and rape threats against Palestinian detainees and others; perpetrators in verified
+        cases included IDF, IPS units and Yamam.
+      posture: EXTERNAL_FACT_FINDING
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  deliberate_targeting_findings:
+    - date: 2024-06
+      body: UN Independent International Commission of Inquiry
+      finding: >-
+        Commission found intentionally directing attacks against civilians and civilian objects and found that the
+        total siege constituted collective punishment within the examined period.
+      posture: DELIBERATE_TARGETING_FINDING
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    - date: 2026-06
+      body: UN Independent International Commission of Inquiry
+      finding: >-
+        Commission found deliberate targeting and killing of Palestinian children, including documented direct
+        shooting of vital organs with precision weapons such as quadcopters and snipers.
+      posture: DELIBERATE_TARGETING_FINDING
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  local_order_testimony:
+    - source_actor: Israeli soldiers interviewed by Associated Press and Sky News
+      finding: >-
+        Multiple soldiers described local instructions or practices in which unauthorized persons crossing designated
+        control/no-go lines could be shot regardless of an individually identified threat; some described arbitrary
+        killing and unnecessary destruction.
+      posture: LOCAL_ORDER
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+      limitation: Local testimony does not by itself establish an army-wide written policy.
+
+timeline:
+  - date: 2024-06
+    event: UN Commission reported collective-punishment and intentionally-directed-civilian-attack findings for Gaza within its investigated period.
+    posture: EXTERNAL_FACT_FINDING
+  - date: 2025-03
+    event: UN Commission reported systematic SGBV and de facto operating-procedure findings including sexualized torture and rape under explicit orders or implicit top-level encouragement.
+    posture: OPERATING_PROCEDURE
+  - date: 2026-04
+    event: UN Secretary-General report verified rape, gang rape and other conflict-related sexual violence by Israeli armed/security bodies and listed them among parties credibly suspected of patterns of such violence.
+    posture: EXTERNAL_FACT_FINDING
+  - date: 2026-06
+    event: UN Commission reported deliberate targeting of Palestinian children including precision-fire cases.
+    posture: DELIBERATE_TARGETING_FINDING
+relations:
+  - type: SUBORDINATE_TO
+    target: state-of-israel
+    posture: observed
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: state security authority
+    notes: Exact institutional command chains differ among IDF, IPS, police and related bodies.
+  - type: SUBJECT_OF_FINDING
+    target: collective-punishment-gaza
+    posture: EXTERNAL_FACT_FINDING
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: Gaza siege and related conduct within UN Commission scope
+  - type: SUBJECT_OF_FINDING
+    target: systematic-sexual-violence-against-palestinians
+    posture: EXTERNAL_FACT_FINDING
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: detention and occupied Palestinian territory within cited UN reports
+  - type: SUBJECT_OF_FINDING
+    target: deliberate-targeting-palestinian-children
+    posture: DELIBERATE_TARGETING_FINDING
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: occupied Palestinian territory within 2026 Commission report
+stories: []
+unresolved_questions:
+  - Which named units and commanders are identified in the 2026 child-targeting report, and what command orders governed each documented incident?
+  - Which sexual-violence cases have resulted in indictment, conviction, dismissal, charge reduction or no investigation?
+  - How do written rules of engagement compare with soldier-described local orders at Netzarim, the yellow line, aid-distribution approaches and other control zones?
+corrections: []
+references:
+  - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  - docs/STATED_JUSTIFICATION_VS_OBSERVED_CONDUCT_v0_1.md
+  - docs/EXTENSIBLE_EVIDENCE_GRAMMAR_v0_1.md
+locks:
+  - Israeli Security Forces != every Israeli soldier, police officer, prison employee or citizen.
+  - Finding against an institutional pattern != guilt of every member.
+  - Soldier testimony != army-wide policy without corroboration.
+  - Written civilian-protection rule != proof of compliance.
+  - Hamas target present != civilians not targeted.
+  - Civilian casualty != deliberate targeting by itself.
+  - Deliberate-targeting finding != claim that every civilian casualty was intended.
+  - Verified rape cases and systematic-pattern findings must not be downgraded to rumor because the institution denies them.
