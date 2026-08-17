@@ -1,0 +1,62 @@
+schema: unum-lattice-news/node/v0.1
+id: white-lives-matter-normalization-recruitment-and-ethnostate-objective
+title: White Lives Matter normalization, recruitment, and ethnostate objective
+family: analysis_framework
+subtype: extremist_movement_recruitment_and_goal_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Preserves the April 2021 White Lives Matter initiative as more than a generic white-supremacist slogan. Primary
+    movement manuals previously reviewed in UNUM-Extremism-Watch support an explicit 99%+ White demographic objective,
+    a White Nationalist ideological endpoint, and a deliberate normalization/recruitment strategy in which approachable
+    public activism is used to reach mainstream White families and move participants toward a White Nationalist worldview.
+    Operational recruitment, evasion, anonymity, and event-execution instructions are intentionally not reproduced.
+  posture: evidence_bound
+movement_level_findings:
+  - primary_movement_documents_support_a_long_term_99_percent_plus_White_demographic_objective_in_designated_countries_or_continents
+  - primary_movement_documents_center_the_14_words_and_a_White_Nationalist_worldview
+  - primary_movement_documents_describe_approachable_public_activism_as_a_doorway_toward_that_worldview
+  - primary_movement_documents_emphasize_appeal_to_mainstream_White_families_rather_than_only_hardcore_extremist_fringe_audiences
+  - primary_movement_documents_direct_public_facing_WLM_activity_to_avoid_overtly_polarizing_extremist_symbols_that_could_interfere_with_the_racial_message
+  - primary_movement_documents_distinguish_sanitized_public_presentation_from_more_ideologically_explicit_material_in_the_broader_pro_White_ecosystem
+  - federal_court_records_recount_a_complaint_alleging_the_national_WLM_organization_sought_a_future_for_White_children_in_a_99_percent_White_Land
+  - ADL_describes_the_current_WLM_network_as_advocating_eventual_white_ethnostates_in_North_America_Europe_and_Australia_and_using_recruitment_efforts
+core_transformation: >-
+  racial_grievance_or_identity_message -> approachable_public_activism -> normalization_and_contact -> deeper_white_nationalist_worldview -> recurring_participation_or_recruitment -> movement_capacity_directed_toward_ethnostate_objective
+required_trace:
+  - movement_document_or_public_statement
+  - stated_demographic_or_political_objective
+  - public_facing_message
+  - normalization_or_recruitment_function
+  - audience_or_population_targeted
+  - ideological_endpoint
+  - recurring_participation_or_local_network_if_evidenced
+  - overlap_with_other_extremist_ecologies
+  - individual_membership_or_role_only_if_actor_specific_evidence_exists
+  - conduct_and_harm
+  - redress_or_counter_mobilization
+classification_locks:
+  - WLM_movement_level_ethnostate_objective != proof_that_every_person_using_the_phrase_is_a_movement_member
+  - movement_recruitment_strategy != proof_that_every_contacted_person_adopts_the_ideology
+  - white_nationalist_ideological_overlap != organizational_identity_with_KKK_neo_Nazi_or_fascist_groups
+  - participation != membership != leadership
+  - court_recounting_of_complaint_allegations != final_adjudication_of_every_allegation
+  - ADL_or_SPLC_classification != criminal_liability
+  - do_not_reproduce_operational_recruitment_evasion_anonymity_or_event_execution_instructions
+safety_and_provenance:
+  - high_level_recruitment_and_normalization_mechanisms_are_preserved_because_they_are_causally_material_to_harm_analysis
+  - tactical_or_operational_extremist_instructions_remain_excluded
+  - primary_manual_findings_are_inherited_from_UNUM_Extremism_Watch_and_should_be_checked_against_the_preserved_source_copy_before_consequential_direct_quotation
+source_bundle:
+  - source-wlm-normalization-recruitment-ethnostate-2026-08-17
+relations:
+  - type: EXTENDS
+    target: extremist-taxonomy-and-evidence-boundary
+  - type: EXTENDS
+    target: ideological-threat-labeling-and-redress-delegitimization
+  - type: RELATES_TO
+    target: truth-laundering-and-citation-lineage-capture
+  - type: RELATES_TO
+    target: power-capacity-accumulation
