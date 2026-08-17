@@ -1,0 +1,36 @@
+schema: unum-lattice-news/node/v0.1
+id: immigration-fiscal-and-labor-burden-claim
+title: Immigration fiscal and labor burden claim
+family: claim_proposition
+subtype: claim
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable proposition node for claims that immigration or a defined immigrant category
+    imposes net fiscal costs, public-service pressure, or labor-market harm on existing U.S.
+    residents. Each use must specify the population, legal-status category, jurisdiction,
+    time window, accounting method, affected worker group, and claimed magnitude.
+  posture: disputed
+current_evidence:
+  stated:
+    - FAIR's current 2026 website asserts fiscal-burden, public-resource, and labor-competition effects for illegal immigration and broader immigration levels.
+  observed:
+    - CBO's defined 2021-2026 immigration-surge model estimates a net federal deficit reduction while also estimating heterogeneous labor-market effects, including short-run wage pressure for some workers and higher returns to capital.
+  disputed:
+    - Net fiscal effects vary with population definition, legal status, level of government, time horizon, and accounting choices.
+    - Labor-market effects vary by occupation, education, region, complementarity or substitution, bargaining institutions, and time.
+  unknowns:
+    - Current matched federal, state, local, and cohort-specific estimates for every claim made by active advocacy organizations or political actors.
+relations:
+  - type: TESTED_THROUGH
+    target: attribution-routing-and-grievance-redirection
+    posture: working_framework
+locks:
+  - Illegal immigration != all immigration.
+  - Federal fiscal effect != state or local fiscal effect.
+  - Fiscal effect != labor-market effect.
+  - A positive aggregate effect does not erase subgroup costs.
+  - A subgroup cost does not establish a net national drain.
+  - Claim repetition does not strengthen causal evidence without independent support.

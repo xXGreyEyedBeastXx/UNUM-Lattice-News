@@ -1,0 +1,35 @@
+schema: unum-lattice-news/node/v0.1
+id: means-tested-public-transfers
+title: U.S. means-tested public transfers
+family: resource_flow
+subtype: money
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable resource-flow node for public cash and in-kind transfers whose eligibility
+    depends in substantial part on income, assets, categorical status, or related means tests.
+    Program-specific investigations must preserve the exact program, payer, recipient,
+    service provider, funding source, and downstream economic route.
+  posture: observed
+current_evidence:
+  observed:
+    - CBO's household-income distribution analysis treats means-tested transfers as a measurable resource flow concentrated toward households in the lower income distribution.
+  unknowns:
+    - Program-specific gross cost, administrative cost, provider capture, household value, work effects, and downstream recirculation in each investigation.
+relations:
+  - type: AFFECTS
+    target: us-means-tested-benefit-recipient-households
+    posture: observed
+    evidence:
+      - source-cbo-household-income-2022
+    scope: Positive household resource flow, with value and incidence varying by program and household.
+  - type: TESTED_THROUGH
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+locks:
+  - Gross program spending != recipient disposable-income gain.
+  - Recipient benefit != provider or contractor revenue.
+  - Benefit receipt != extraction, fraud, or moral status.
+  - Program cost must be separated from downstream fiscal, labor, health, housing, and macroeconomic effects.

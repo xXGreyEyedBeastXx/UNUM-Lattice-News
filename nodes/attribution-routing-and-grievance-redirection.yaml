@@ -1,0 +1,156 @@
+schema: unum-lattice-news/node/v0.1
+id: attribution-routing-and-grievance-redirection
+title: Attribution routing and grievance redirection
+family: analysis_framework
+subtype: attribution_routing_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable investigative operator for cases where a real or perceived material,
+    social, or status pressure is attributed to a person, population, institution,
+    ideology, or event. It keeps separate the pressure's material causes, the causes
+    people perceive, the causes public actors assert, the targets selected in rhetoric,
+    the funders and amplifiers of that framing, the responses it mobilizes, and the
+    material or power effects that return after those responses.
+  posture: working_framework
+
+core_trace:
+  - pressure_or_loss
+  - pressure_bearer
+  - material_cause_candidates
+  - visible_intermediate_or_competitor
+  - perceived_cause
+  - publicly_asserted_cause
+  - targeted_population_or_actor
+  - claim_producer
+  - funder_or_resource_route
+  - amplifier_or_distribution_channel
+  - audience
+  - affective_or_status_carrier
+  - political_or_social_response
+  - policy_or_institutional_transform
+  - beneficiary_or_loss_bearer_after_transform
+  - material_or_power_return
+  - correction_or_re_entry
+
+distinctions:
+  material_pressure_vs_status_pressure:
+    rule: >-
+      Material deprivation, wage pressure, tax burden, housing cost, debt, or service loss
+      must not be collapsed with fear of losing relative social position, cultural dominance,
+      prestige, identity security, or political control.
+  actual_vs_perceived_vs_asserted_cause:
+    rule: >-
+      The best-supported material cause, the cause an affected participant believes, and the
+      cause asserted by a politician, donor, media actor, institution, or movement are separate
+      fields even when they coincide.
+  target_vs_cause:
+    rule: >-
+      A population named as the cause of a harm is not thereby established as a material cause.
+      The causal claim must survive independent evidence and relevant counterfactuals.
+  funder_vs_controller:
+    rule: >-
+      Funding a message, institution, network, or campaign establishes a resource route, not
+      automatic command, intent, coordination, persuasion, or downstream policy control.
+  beneficiary_vs_author:
+    rule: >-
+      Benefiting from a policy or outcome does not establish authorship, intent, or causal
+      responsibility. Contribution and control require independent evidence.
+
+relation_types:
+  - EXPERIENCES_PRESSURE_FROM
+  - ATTRIBUTES_PRESSURE_TO
+  - ASSERTS_CAUSE_IS
+  - TARGETS_AS_CAUSE
+  - FUNDS_MESSAGE_INFRASTRUCTURE
+  - AMPLIFIES_FRAME
+  - TRIGGERS_OR_ACTIVATES_STATUS_THREAT
+  - MOBILIZES_RESPONSE
+  - SUPPORTS_POLICY_RESPONSE
+  - PRODUCES_POLICY_TRANSFORM
+  - BENEFITS_FROM_TRANSFORM
+  - BEARS_LOSS_FROM_TRANSFORM
+  - RETURNS_GAIN_OR_POWER_TO
+  - EXTERNALIZES_COST_TO
+  - CONTRADICTS_ATTRIBUTION
+  - NARROWS_ATTRIBUTION
+
+evidence_fields:
+  - source
+  - source_class
+  - date
+  - jurisdiction
+  - pressure_measure
+  - causal_identification_method
+  - claimant_or_messenger
+  - target
+  - funder
+  - amplifier
+  - audience
+  - observed_response
+  - downstream_policy
+  - beneficiary
+  - loss_bearer
+  - magnitude
+  - counterevidence
+  - citation_lineage
+  - investigation_state
+  - confidence
+  - re_entry_source
+
+adversarial_models:
+  - id: deliberate_grievance_redirection
+    question: >-
+      Are actors with material or political power knowingly financing or amplifying a false or
+      materially misleading attribution that redirects anger toward a lower-power target?
+  - id: political_opportunism_without_central_coordination
+    question: >-
+      Are actors exploiting a grievance frame because it mobilizes support even if they did not
+      create the underlying belief or coordinate with other actors?
+  - id: distributed_ideological_alignment
+    question: >-
+      Are similar messages emerging independently from shared ideology, status threat, market
+      incentives, or audience demand rather than central control?
+  - id: target_materially_contributes
+    question: >-
+      Does the targeted population actually cause a meaningful share of the claimed harm, and
+      is the rhetoric proportionate to the measured effect?
+  - id: mixed_mechanism
+    question: >-
+      Are genuine local costs, status threat, organized messaging, and upstream material gains
+      interacting without any single mechanism explaining the whole pattern?
+
+discriminators:
+  - Compare the claimed target's measured fiscal or material effect with the magnitude asserted in rhetoric.
+  - Compare who experiences loss with who receives income, profit, asset, tax, subsidy, or authority gains.
+  - Trace whether message financing predates, follows, or is independent of the material pressure.
+  - Test whether the same audience responds differently when the group cue changes but the stated economic facts remain constant.
+  - Test whether a claimed economic explanation persists after contradictory fiscal or causal evidence is supplied.
+  - Separate policy outcomes that reduce the stated pressure from outcomes that primarily increase upstream wealth, authority, insulation, or coercive capacity.
+  - Preserve local and subgroup costs even when national aggregate effects are positive.
+
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: REQUIRES
+    target: situated-relational-analysis
+    posture: working_framework
+  - type: INTERLOCKS_WITH
+    target: interlocking-domination
+    posture: working_framework
+
+locks:
+  - Actual cause != perceived cause != asserted cause != politically targeted cause.
+  - Material insecurity != status insecurity.
+  - Visibility of a target != magnitude of its causal contribution.
+  - Funding != control.
+  - Benefit != causation.
+  - Group-level experimental effects do not prove that any particular person was persuaded.
+  - A documented local cost does not establish a national net harm, and a national net benefit does not erase local cost.
+  - Wealth, income, race, citizenship, class, or ideological membership does not itself establish participation or culpability.
+  - A false or exaggerated attribution may be harmful even when no central conspiracy exists.
+  - Repeated reporting or message repetition does not create independent evidence of the underlying causal claim.
+  - Corrections must be able to return through the same attribution path.

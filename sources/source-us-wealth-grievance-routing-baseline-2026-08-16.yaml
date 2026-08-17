@@ -1,0 +1,211 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-us-wealth-grievance-routing-baseline-2026-08-16
+title: U.S. wealth, household burden, immigration, and grievance-routing baseline
+accessed: 2026-08-16
+purpose: >-
+  Establish a recoverable evidence base for tracing household resource distribution,
+  wealth ownership, tax burden, immigration fiscal and labor-market effects, status threat,
+  group-cue effects, welfare racialization, and private funding of immigration-restriction
+  advocacy. The bundle supports a harm audit; it does not encode a class, partisan, or
+  demographic verdict.
+
+sources:
+  - id: source-cbo-pl11921-distribution
+    publisher: Congressional Budget Office
+    source_class: primary_government_analysis
+    title: How the 2025 Reconciliation Act (Public Law 119-21) Will Affect the Distribution of Resources Available to Households
+    date: 2025-08-11
+    url: https://www.cbo.gov/interactive/2025-reconciliation-act
+    supports:
+      - lowest income decile modeled average resource change of -3.1 percent over 2026-2034
+      - highest income decile modeled average resource change of +2.7 percent over 2026-2034
+      - highest income decile receives 63.9 percent of the law's net modeled household-resource increase
+    limitations:
+      - CBO cautions that the combined resource channels are not all directly comparable
+      - modeled distributional effect does not establish intent
+
+  - id: source-cbo-immigration-surge-2024
+    publisher: Congressional Budget Office
+    source_class: primary_government_analysis
+    title: Effects of the Immigration Surge on the Federal Budget and the Economy
+    date: 2024-07-23
+    url: https://www.cbo.gov/publication/60165
+    supports:
+      - defined 2021-2026 immigration surge lowers federal deficits by about $0.9 trillion over 2024-2034 in CBO's model
+      - surge raises federal revenues by about $1.2 trillion and mandatory spending plus net interest by about $0.3 trillion
+      - faster labor-force growth and residential-investment demand raise the rate of return on capital
+      - through 2026 wage growth is slightly slower for non-surge workers with 12 or fewer years of education, with the pattern reversing later
+    limitations:
+      - analyzes a defined surge relative to a counterfactual, not all immigrants or only unauthorized immigrants
+      - federal analysis does not estimate complete state and local fiscal effects
+      - estimates are explicitly uncertain
+
+  - id: source-cbo-household-income-2022
+    publisher: Congressional Budget Office
+    source_class: primary_government_analysis
+    title: The Distribution of Household Income, 2022
+    date: 2026-01-21
+    url: https://www.cbo.gov/publication/62300
+    supports:
+      - most means-tested transfers go to households in the bottom two income quintiles
+      - higher-income households typically pay higher average federal tax rates in conventional CBO accounting
+      - top quintile paid 70 percent of federal taxes in 2022 and top 1 percent paid 27 percent
+      - income after transfers and taxes grew fastest at the top over 1979-2022
+    limitations:
+      - income includes realized capital gains but does not measure all unrealized wealth appreciation
+      - federal analysis does not replace state and local tax-incidence analysis
+
+  - id: source-fed-dfa-2026q1
+    publisher: Federal Reserve Board
+    source_class: primary_government_dataset
+    title: Distributional Financial Accounts — Assets by wealth percentile group, 2026 Q1
+    date: 2026-06-18
+    url: https://www.federalreserve.gov/releases/z1/dataviz/dfa/compare/chart/
+    supports:
+      - corporate equities and mutual-fund shares are heavily concentrated in upper wealth percentile groups
+      - top 0.1 percent held 13.33 trillion dollars, next 0.9 percent 14.31 trillion, next 9 percent 20.51 trillion, and bottom 50 percent 0.59 trillion in that asset category
+    limitations:
+      - ownership concentration does not identify policy authorship or the public/private origin of every asset gain
+
+  - id: source-nber-billionaire-tax-2025
+    publisher: National Bureau of Economic Research
+    source_class: working_paper_using_administrative_data
+    title: How Much Tax Do US Billionaires Pay? Evidence from Administrative Data
+    date: 2025-08
+    url: https://www.nber.org/papers/w34170
+    supports:
+      - benchmark total effective tax rate for approximately the top 400 averaged 24 percent of economic income in 2018-2020
+      - comparison estimates were about 30 percent for the full population and 45 percent for top labor-income earners
+      - low taxable individual income relative to economic income is a major mechanism
+    limitations:
+      - working paper rather than enacted-government estimate
+      - authors' views do not represent IRS or NBER institutional endorsement
+
+  - id: source-irs-wealth-tax-burdens-working-paper
+    publisher: Internal Revenue Service Statistics of Income
+    source_class: government_hosted_working_paper
+    title: Estimating Tax Burdens by Wealth Groups
+    date: 2025-02
+    url: https://www.irs.gov/statistics/soi-tax-stats-soi-working-papers
+    supports:
+      - IRS SOI hosts the administrative-data working paper underlying the billionaire-tax estimates
+    limitations:
+      - hosting does not constitute IRS endorsement of the authors' conclusions
+
+  - id: source-itep-tennessee-2024
+    publisher: Institute on Taxation and Economic Policy
+    source_class: independent_tax_policy_analysis
+    title: Tennessee — Who Pays? 7th Edition
+    date: 2024-01-09
+    url: https://itep.org/tennessee-who-pays-7th-edition/
+    supports:
+      - modeled state and local tax share is 12.8 percent of family income for lowest 20 percent
+      - modeled state and local tax share is 10.2 percent for middle 20 percent and 3.8 percent for top 1 percent
+    limitations:
+      - independent model rather than official Tennessee incidence estimate
+      - uses 2024 law at 2023 income levels and excludes senior taxpayers
+
+  - id: source-brader-valentino-suhay-2008
+    publisher: American Journal of Political Science
+    source_class: peer_reviewed_experiment
+    title: What Triggers Public Opposition to Immigration? Anxiety, Group Cues, and Immigration Threat
+    date: 2008-09-29
+    url: https://onlinelibrary.wiley.com/doi/10.1111/j.1540-5907.2008.00353.x
+    supports:
+      - nationally representative experiment found cost-of-immigration messages produced greater white opposition when Latino rather than European immigrants were featured
+      - anxiety mediated much of the effect
+    limitations:
+      - historical experimental context does not by itself establish effects of any current campaign
+      - group-level effect does not identify any particular person's motive
+
+  - id: source-mutz-status-threat-2018
+    publisher: Proceedings of the National Academy of Sciences
+    source_class: peer_reviewed_panel_study
+    title: Status threat, not economic hardship, explains the 2016 presidential vote
+    date: 2018-04-23
+    url: https://doi.org/10.1073/pnas.1718155115
+    supports:
+      - panel analysis found status-threat explanations outperformed personal economic-hardship explanations for 2012-2016 vote movement in the study
+    limitations:
+      - one election and one model do not establish status threat as the cause of every anti-immigration or anti-welfare attitude
+      - status and material insecurity can coexist
+
+  - id: source-gilens-welfare-race-1995
+    publisher: The Journal of Politics
+    source_class: peer_reviewed_research
+    title: Racial Attitudes and Opposition to Welfare
+    date: 1995-11
+    url: https://www.journals.uchicago.edu/doi/10.2307/2960399
+    supports:
+      - racial attitudes were strongly associated with white opposition to means-tested welfare in the study
+      - opposition varied across welfare-state programs rather than reflecting uniform rejection of government spending
+    limitations:
+      - historical U.S. context
+      - does not establish motives of every present-day opponent of means-tested programs
+
+  - id: source-propublica-tanton-colcom-network
+    publisher: ProPublica
+    source_class: investigative_reporting
+    title: The Ghosts of John Tanton
+    date: 2024-10-19
+    url: https://www.propublica.org/article/john-tanton-far-right-extremism-environmentalism-climate-change
+    supports:
+      - John Tanton co-founded FAIR and helped create a wider network of immigration-restriction organizations
+      - Cordelia Scaife May financially supported Tanton
+      - Colcom Foundation later provided more than 150 million dollars to Tanton-linked organizations
+    limitations:
+      - aggregate network funding is not a grant-by-grant primary-source ledger
+      - funding does not establish control over every recipient message
+
+  - id: source-colcom-foundation-current
+    publisher: Colcom Foundation
+    source_class: organization_primary_source
+    title: Colcom Foundation — current website and funding interests
+    date: 2026
+    url: https://www.colcomfdn.org/
+    supports:
+      - Colcom Foundation remained active in 2026
+      - current public funding-interest categories include carrying capacity, local environment, and local community
+    limitations:
+      - self-description does not independently validate historical network effects or grant-level influence
+
+  - id: source-fair-current-claims-2026
+    publisher: Federation for American Immigration Reform
+    source_class: organization_primary_statement
+    title: FAIR current immigration fiscal and labor-market framing
+    date: 2026
+    url: https://www.fairus.org/
+    supports:
+      - FAIR currently asserts that illegal immigration imposes a fiscal burden on taxpayers
+      - FAIR currently argues that immigration increases labor-market competition, especially for lower-skilled jobs
+      - FAIR currently frames immigration as increasing pressure on schools, hospitals, highways, and other public resources
+    limitations:
+      - source establishes FAIR's current stated claims, not their truth
+      - FAIR's illegal-immigration scope is not identical to CBO's defined 2021-2026 immigration-surge population
+      - federal, state, local, cohort, and time-window accounting must be separated before comparing fiscal claims
+
+  - id: source-fair-990-2024
+    publisher: ProPublica Nonprofit Explorer / IRS Form 990 data
+    source_class: primary_tax_filing_republication
+    title: Federation for American Immigration Reform — 2024 Form 990 extracted data
+    date: 2025-07-14
+    url: https://projects.propublica.org/nonprofits/organizations/521136126
+    supports:
+      - FAIR reported 7.03 million dollars in 2024 revenue
+      - contributions accounted for 4.84 million dollars, about 68.9 percent of reported revenue
+    limitations:
+      - Form 990 totals do not disclose all donor identities
+      - revenue mix does not establish message or policy influence
+
+locks:
+  - Federal conventional tax incidence != broad economic-income tax incidence.
+  - Federal tax progressivity != state and local tax progressivity.
+  - Benefit receipt != extraction.
+  - Gross fiscal cost != net fiscal effect.
+  - Immigration aggregate effects != uniform local or worker effects.
+  - Illegal immigration != all immigration.
+  - Asset ownership concentration != proof that every asset gain is publicly generated.
+  - Funding != control.
+  - Group cue effects != proof of individual motive.
+  - Status threat != material hardship.
+  - A documented harmful or misleading frame != proof of one central conspiracy.

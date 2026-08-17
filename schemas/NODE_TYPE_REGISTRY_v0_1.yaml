@@ -86,6 +86,7 @@ canonical_families:
       - causal_accountability_operator
       - institutional_accountability_operator
       - resource_distribution_operator
+      - attribution_routing_operator
 
 migration_aliases:
   person: {family: actor, subtype: person}

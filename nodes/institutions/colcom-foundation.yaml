@@ -1,0 +1,30 @@
+schema: unum-lattice-news/node/v0.1
+id: colcom-foundation
+title: Colcom Foundation
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A foundation created from the philanthropy of Cordelia Scaife May. It is relevant to
+    this lattice because investigative reporting documents substantial long-run funding of
+    organizations connected to John Tanton's immigration-restriction network.
+  posture: observed
+current_evidence:
+  observed:
+    - ProPublica reports that after Cordelia Scaife May's death, Colcom Foundation continued to fund Tanton-linked organizations and that the cumulative amount exceeded $150 million.
+    - Colcom Foundation maintained an active public website with 2026 grant and conservation updates.
+  unknowns:
+    - The exact allocation, year, restrictions, and message-level influence of each grant without grant-by-grant primary-source reconstruction.
+relations:
+  - type: FUNDS_MESSAGE_INFRASTRUCTURE
+    target: tanton-linked-immigration-restriction-network
+    posture: observed
+    evidence:
+      - source-propublica-tanton-colcom-network
+locks:
+  - Funding != control.
+  - Historical funding != proof of responsibility for every later message or action by a recipient.
+  - Aggregate network funding should not be silently converted into a direct grant amount for any one organization.

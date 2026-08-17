@@ -1,0 +1,28 @@
+schema: unum-lattice-news/node/v0.1
+id: us-workers-lower-formal-education
+title: U.S. workers with lower levels of formal education
+family: population_community
+subtype: population
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable labor-market population node for analyses that identify workers by years or
+    level of formal education. The node is not a synonym for low income, low skill, low
+    intelligence, race, immigration status, or social worth.
+  posture: observed
+hierarchy_class: affected_population
+current_evidence:
+  observed:
+    - CBO's immigration-surge model estimates slightly slower wage growth through 2026 for U.S. workers outside the surge population with 12 or fewer years of education, followed by a reversal in later years.
+  unknowns:
+    - Which occupations, regions, bargaining conditions, and labor-market institutions account for heterogeneous effects within this broad group.
+relations:
+  - type: DISTINCT_FROM
+    target: us-low-income-households
+    posture: observed
+locks:
+  - Education category != income category.
+  - Education category != skill, intelligence, dignity, or deservingness.
+  - Aggregate labor-market effects must not be assigned uniformly to every worker in the category.

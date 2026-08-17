@@ -1,0 +1,34 @@
+schema: unum-lattice-news/node/v0.1
+id: us-immigrant-population
+title: U.S. immigrant population
+family: population_community
+subtype: population
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable population node for people who immigrate to or reside in the United States
+    as immigrants. Investigations must preserve legal-status, cohort, time-window, geography,
+    and source-defined category rather than treating all immigrants as one fiscal, legal,
+    cultural, or labor-market unit.
+  posture: observed
+hierarchy_class: affected_population
+current_evidence:
+  observed:
+    - CBO's 2024 immigration-surge analysis models the incremental effects of a defined 2021-2026 surge category rather than all immigrants.
+    - In that model, the surge raises both federal revenues and federal spending while reducing federal deficits on net over 2024-2034.
+  disputed:
+    - Fiscal, labor-market, housing, service-demand, and wage effects vary by place, cohort, legal status, time, and worker group.
+  unknowns:
+    - State and local fiscal effects not covered by CBO's federal analysis.
+relations:
+  - type: TESTED_THROUGH
+    target: attribution-routing-and-grievance-redirection
+    posture: working_framework
+locks:
+  - Immigrant != undocumented immigrant != refugee != asylum seeker != temporary worker != naturalized citizen.
+  - A national net fiscal estimate does not erase local costs.
+  - A local cost does not establish a national net fiscal drain.
+  - Immigration status does not determine personhood, dignity, or culpability.
+  - A target named in rhetoric is not thereby established as a material cause.

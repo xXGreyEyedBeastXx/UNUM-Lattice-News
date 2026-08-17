@@ -1,0 +1,40 @@
+schema: unum-lattice-news/node/v0.1
+id: public-law-119-21
+title: Public Law 119-21 — 2025 reconciliation act
+family: instrument
+subtype: law
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    The 2025 federal reconciliation law evaluated by CBO as changing household resources
+    through federal taxes, cash transfers, in-kind transfers, state fiscal responses, and
+    other spending and revenues.
+  posture: observed
+current_evidence:
+  observed:
+    - CBO estimates that, averaged over 2026-2034, the lowest income decile loses 3.1 percent of baseline after-tax-and-transfer resources while the highest income decile gains 2.7 percent.
+    - CBO allocates 63.9 percent of the law's net modeled increase in household resources to the highest income decile.
+  disputed:
+    - How to compare different resource channels that CBO cautions are not all directly comparable.
+  unknowns:
+    - Which specific provisions account for each household-level effect in every subgroup and jurisdiction.
+relations:
+  - type: AFFECTS
+    target: us-low-income-households
+    posture: observed
+    evidence:
+      - source-cbo-pl11921-distribution
+    scope: Lowest income decile; modeled negative resource effect in CBO's 2026-2034 average.
+  - type: AFFECTS
+    target: us-high-income-households
+    posture: observed
+    evidence:
+      - source-cbo-pl11921-distribution
+    scope: Highest income decile; modeled positive resource effect in CBO's 2026-2034 average.
+locks:
+  - CBO's distributional result != proof of legislative intent.
+  - Modeled household resource change != a literal cash transfer between deciles.
+  - Income decile != wealth percentile.
+  - Different resource channels should remain separately recoverable.

@@ -1,0 +1,45 @@
+schema: unum-lattice-news/node/v0.1
+id: federation-for-american-immigration-reform
+title: Federation for American Immigration Reform
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A U.S. nonprofit immigration-restriction advocacy organization founded in 1979 by
+    John Tanton and others. It is included here because it is a recurring institutional
+    node in the historical and contemporary infrastructure that produces and distributes
+    arguments for lower immigration levels and for stricter immigration enforcement.
+  posture: observed
+current_evidence:
+  observed:
+    - ProPublica's historical investigation identifies John Tanton as a co-founder of FAIR.
+    - IRS Form 990 data republished by ProPublica show FAIR remained an operating nonprofit in 2024, with most reported revenue coming from contributions.
+  stated:
+    - FAIR's current 2026 website frames illegal immigration as a fiscal burden on taxpayers.
+    - FAIR's current 2026 website argues that immigration increases labor-market competition, especially for lower-skilled jobs, and places pressure on public services and infrastructure.
+  unknowns:
+    - Donor identities and the causal influence of particular donors on specific FAIR messages or policy positions where disclosure is unavailable.
+    - How FAIR's current fiscal and labor-market estimates compare with independently reconstructed federal, state, local, cohort, and time-bounded evidence.
+relations:
+  - type: MEMBER_OF
+    target: tanton-linked-immigration-restriction-network
+    posture: observed
+  - type: ASSERTS_CAUSE_IS
+    target: immigration-fiscal-and-labor-burden-claim
+    posture: stated
+    evidence:
+      - source-fair-current-claims-2026
+    scope: FAIR's current claims about illegal immigration, taxpayer burden, labor competition, and public-service pressure.
+  - type: PARTICIPATES_IN
+    target: attribution-routing-and-grievance-redirection
+    posture: candidate
+    notes: Case-specific causal, blame, audience, and policy-return edges must be sourced before promotion.
+locks:
+  - Advocacy for lower immigration levels is not by itself proof of falsehood, racism, coordination, or harmful intent.
+  - Organizational funding does not establish donor control over specific messages.
+  - A current organizational statement establishes the claim was made; it does not establish the claim is true.
+  - FAIR's illegal-immigration framing must not be silently broadened to all immigrants.
+  - Each factual or causal claim attributed to FAIR must be tested separately.

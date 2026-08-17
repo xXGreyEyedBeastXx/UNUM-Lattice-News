@@ -1,0 +1,36 @@
+schema: unum-lattice-news/node/v0.1
+id: tanton-linked-immigration-restriction-network
+title: Tanton-linked U.S. immigration-restriction network
+family: network
+subtype: influence_pressure
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A network node for documented organizational, funding, and historical-lineage relations
+    among U.S. immigration-restriction organizations associated with John Tanton. The node
+    does not assert a single present-day command structure or common intent across all
+    organizations and funders.
+  posture: observed
+current_evidence:
+  observed:
+    - Investigative reporting documents Tanton's role in building multiple immigration-restriction organizations and substantial funding from Cordelia Scaife May and Colcom Foundation into organizations connected to that network.
+  unknowns:
+    - Current coordination, donor influence, message-specific control, and the degree of operational independence among network organizations.
+relations:
+  - type: INCLUDES
+    target: federation-for-american-immigration-reform
+    posture: observed
+  - type: HISTORICAL_ORGANIZER
+    target: john-tanton
+    posture: observed
+  - type: RECEIVES_FUNDING_FROM
+    target: colcom-foundation
+    posture: observed
+locks:
+  - Network != collective actor.
+  - Network != conspiracy.
+  - Shared lineage != shared present-day command.
+  - Funding != control.
+  - Message-level and policy-level effects require case-specific evidence.

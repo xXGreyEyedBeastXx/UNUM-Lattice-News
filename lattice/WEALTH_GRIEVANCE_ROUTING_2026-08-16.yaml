@@ -1,0 +1,243 @@
+schema: unum-lattice-news/lattice/v0.1
+id: wealth-grievance-routing-2026-08-16
+title: Wealth, pressure, attribution, and grievance routing in the United States
+status: active
+as_of: 2026-08-16
+authority: evidence_lattice_not_verdict
+purpose: >-
+  Trace how economic pressure, status threat, public causal claims, message funding,
+  political response, and material or power returns can interact without presuming a
+  universal class conspiracy or erasing genuine local costs.
+
+operators:
+  - money-flow-benefit-enforced-loss
+  - attribution-routing-and-grievance-redirection
+  - situated-relational-analysis
+  - interlocking-domination
+
+source_bundle:
+  - source-us-wealth-grievance-routing-baseline-2026-08-16
+
+nodes:
+  affected_or_targeted_populations:
+    - us-low-income-households
+    - us-means-tested-benefit-recipient-households
+    - us-immigrant-population
+    - us-workers-lower-formal-education
+  beneficiary_or_ownership_seats:
+    - us-high-income-households
+    - us-high-wealth-households
+  resource_flows:
+    - means-tested-public-transfers
+  claims:
+    - immigration-fiscal-and-labor-burden-claim
+  policy:
+    - public-law-119-21
+  advocacy_and_funding:
+    - federation-for-american-immigration-reform
+    - colcom-foundation
+    - john-tanton
+    - tanton-linked-immigration-restriction-network
+
+flows:
+  material_flow:
+    findings:
+      - id: pl11921-bottom-top-resource-shift
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - public-law-119-21
+          - household_resource_change
+          - us-low-income-households
+          - us-high-income-households
+        evidence:
+          - source-cbo-pl11921-distribution
+        notes:
+          - Lowest decile modeled at -3.1 percent of baseline household resources on average over 2026-2034.
+          - Highest decile modeled at +2.7 percent; 63.9 percent of net increase allocated to highest decile.
+          - This is a modeled distributional result, not a literal dollar transfer or proof of intent.
+
+      - id: wealth-ownership-concentration
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - us-household-wealth
+          - corporate_equities_and_mutual_funds
+          - us-high-wealth-households
+        evidence:
+          - source-fed-dfa-2026q1
+        notes:
+          - Ownership concentration changes who receives gains from profit and asset appreciation.
+          - It does not establish that every gain is publicly generated.
+
+      - id: means-tested-transfer-concentration
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - means-tested-public-transfers
+          - us-means-tested-benefit-recipient-households
+          - us-low-income-households
+        evidence:
+          - source-cbo-household-income-2022
+        notes:
+          - CBO finds means-tested transfers concentrated toward the lower income quintiles.
+          - Receipt of public benefit is a real fiscal flow and must be counted; it does not by itself establish extraction, fraud, or primary responsibility for another household's pressure.
+
+      - id: immigration-mixed-labor-capital-effects
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - defined_2021_2026_immigration_surge
+          - larger_labor_force_and_investment_demand
+          - us-workers-lower-formal-education
+          - higher_rate_of_return_on_capital
+        evidence:
+          - source-cbo-immigration-surge-2024
+        notes:
+          - CBO models slightly slower wage growth through 2026 for non-surge workers with 12 or fewer years of education.
+          - CBO also models a higher rate of return on capital; wage effect reverses in later years.
+
+  attribution_and_message_flow:
+    findings:
+      - id: recent-immigration-net-federal-drain-claim
+        posture: contradicted
+        investigation_state: PATH_FORWARD
+        proposition: >-
+          The defined 2021-2026 immigration surge is a net drain on the federal budget over 2024-2034.
+        evidence:
+          - source-cbo-immigration-surge-2024
+        current_assessment: >-
+          CBO's defined surge model strongly contradicts the simple federal-drain claim: it
+          estimates roughly 1.2 trillion dollars in added federal revenues versus about 0.3
+          trillion in added mandatory spending and net interest, reducing deficits by about
+          0.9 trillion. The finding does not close differently scoped unauthorized-immigration,
+          state/local, or local-service claims.
+        residual_claims:
+          - State and local fiscal effects remain outside the full scope of this CBO estimate.
+          - Labor-market and service-demand effects are heterogeneous.
+          - Population definitions and time windows must match before one model is used to answer another claim.
+
+      - id: fair-current-immigration-fiscal-labor-frame
+        posture: stated
+        investigation_state: CONFIRMED
+        trace:
+          - federation-for-american-immigration-reform
+          - immigration-fiscal-and-labor-burden-claim
+          - illegal_immigration_target_category
+          - taxpayer_worker_and_public_audiences
+        evidence:
+          - source-fair-current-claims-2026
+        discriminators:
+          - reconstruct FAIR's population definition and fiscal accounting
+          - separate federal from state and local costs and revenues
+          - compare labor-market effects by worker group, occupation, region, and time
+          - compare independently sourced local studies and CBO's differently defined surge model
+        limits:
+          - Statement evidence establishes FAIR's present framing, not its causal truth.
+          - FAIR's illegal-immigration category is not identical to CBO's defined immigration-surge population.
+          - Message production does not establish audience persuasion or policy control.
+
+      - id: immigration-group-cue-threat-routing
+        posture: supported_inference
+        investigation_state: CONFIRMED
+        trace:
+          - economic_cost_message
+          - immigrant_group_cue
+          - anxiety
+          - opposition_to_immigration
+        evidence:
+          - source-brader-valentino-suhay-2008
+        limits:
+          - Does not establish the motive of any particular current voter.
+          - Does not prove current elite coordination.
+
+      - id: welfare-racialization-route
+        posture: supported_inference
+        investigation_state: CONFIRMED
+        trace:
+          - means_tested_welfare_policy
+          - racial_attitudes_and_deservingness_stereotypes
+          - us-means-tested-benefit-recipient-households
+          - opposition_to_means_tested_programs
+        evidence:
+          - source-gilens-welfare-race-1995
+        limits:
+          - Historical study; current claims require current evidence.
+          - Does not imply every welfare opponent acts from racial animus.
+          - Does not establish that benefit recipients create no fiscal cost.
+
+      - id: status-threat-distinct-from-hardship
+        posture: supported_inference
+        investigation_state: CONFIRMED
+        trace:
+          - perceived_relative_status_loss
+          - political_preference_change
+        evidence:
+          - source-mutz-status-threat-2018
+        limits:
+          - One election context does not universalize the mechanism.
+          - Status threat and material insecurity may coexist.
+
+      - id: wealth-funded-immigration-restriction-infrastructure
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - colcom-foundation
+          - tanton-linked-immigration-restriction-network
+          - federation-for-american-immigration-reform
+        evidence:
+          - source-propublica-tanton-colcom-network
+          - source-fair-990-2024
+        limits:
+          - Funding != message control.
+          - Network lineage != present-day command structure.
+
+  political_return_flow:
+    findings:
+      - id: grievance-to-policy-to-upstream-return
+        posture: possible
+        investigation_state: PATH_FORWARD
+        proposition: >-
+          In specific cases, grievance frames targeting immigrants or poor people mobilize
+          political support for policy transforms that preserve or increase material or
+          political gains for upstream high-income, high-wealth, or institutional actors.
+        required_edges:
+          - recoverable grievance frame
+          - funder_or_amplifier route where alleged
+          - audience exposure or belief evidence
+          - political mobilization evidence
+          - policy causal edge
+          - beneficiary gain or insulation measure
+        current_status: >-
+          Components are separately supported, but no universal national loop is promoted.
+          Build case-specific loops and allow failed edges to break the chain.
+
+counterevidence_and_constraints:
+  - CBO finds conventional federal taxation progressive; do not describe the federal system as uniformly regressive.
+  - Means-tested transfers are concentrated toward lower-income households; do not deny benefit receipt or program cost.
+  - Benefit receipt does not by itself establish that recipients are the primary source of another group's economic pressure.
+  - CBO's immigration analysis excludes full state and local fiscal effects.
+  - Immigration can impose short-run wage pressure on some workers even while improving federal fiscal balance and capital returns.
+  - Status threat can explain political movement without personal economic decline.
+  - FAIR's current illegal-immigration claims and CBO's defined immigration-surge model do not share identical populations or accounting scopes.
+  - Wealth or income membership alone does not establish participation, intent, or culpability.
+
+path_forward:
+  - Build current actor-specific grievance-message records for major political, donor, media, and advocacy nodes.
+  - Build current actor-specific claims about welfare, poor people, fraud, and means-tested benefit recipients rather than relying only on historical welfare-attitude research.
+  - Reconstruct FAIR's current fiscal and labor claims at matched population, jurisdiction, and time windows.
+  - Trace grant-level funding and current donor routes where primary records permit.
+  - Separate immigration, welfare, crime, race, gender, and other target frames rather than assuming one narrative.
+  - Quantify policy-specific gains to owners using net profit or asset effects rather than gross government spending.
+  - Add local/state fiscal studies where national CBO estimates cannot answer local burden questions.
+  - Test whether stated fiscal justifications persist after contradictory or narrowing fiscal evidence is presented.
+  - Trace which policy responses actually reduce the stated pressure and which primarily increase coercive or ownership power.
+
+locks:
+  - Harm audit names supported harms and mechanisms; it does not manufacture enemies.
+  - The chain may be distributed and emergent rather than centrally coordinated.
+  - Do not promote a complete feedback loop until each consequential edge is independently supported.
+  - Benefit receipt != extraction.
+  - Do not erase genuine costs merely because a scapegoat claim is exaggerated or false.
+  - Do not erase upward gains merely because the targeted population also creates some costs.
+  - Illegal immigration != all immigration.

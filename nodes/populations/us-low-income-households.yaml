@@ -1,0 +1,32 @@
+schema: unum-lattice-news/node/v0.1
+id: us-low-income-households
+title: U.S. low-income households
+family: population_community
+subtype: population
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable affected-population node for U.S. households toward the lower end of the
+    income distribution. Specific investigations must preserve the source-defined threshold
+    or percentile rather than treating "low income" as one fixed national cutoff.
+  posture: observed
+hierarchy_class: affected_population
+current_evidence:
+  observed:
+    - CBO distributional analyses repeatedly measure means-tested transfers, federal taxes, and household resources by income group.
+    - In CBO's 2025 reconciliation-law analysis, the lowest income decile has a modeled average reduction in household resources over 2026-2034.
+  counterevidence:
+    - Federal means-tested transfers are concentrated toward households near the bottom and federal taxes are progressive in conventional CBO accounting.
+  unknowns:
+    - Which household definitions best match each state, local, labor-market, and wealth-flow investigation.
+relations:
+  - type: TESTED_THROUGH
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+locks:
+  - Low income is a measured economic position, not a moral identity.
+  - Benefit receipt != extraction.
+  - Household income percentile != household wealth percentile.
+  - National averages must not erase local or subgroup differences.

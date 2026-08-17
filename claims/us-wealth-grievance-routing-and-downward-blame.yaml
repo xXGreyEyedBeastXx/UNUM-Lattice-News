@@ -1,0 +1,185 @@
+schema: unum-lattice-news/claim-test/v0.1
+id: us-wealth-grievance-routing-and-downward-blame
+claim_text: >-
+  In some U.S. political-economic contexts, real material pressure or fear of relative
+  status loss is redirected toward lower-power populations such as immigrants or poor
+  people through political and media narratives, while upstream ownership and policy
+  structures may retain or increase material or political gains.
+normalized_claim: >-
+  Material pressure, status threat, causal attribution, message funding, political
+  mobilization, and upstream beneficiary gain can form a recurring but not universally
+  coordinated grievance-routing pathway in the United States.
+claim_type: causal_system
+testability: partially_testable
+scope:
+  geography: United States
+  time_window: historical evidence with current 2024-2026 economic, policy, and messaging anchors
+  populations:
+    - us-low-income-households
+    - us-means-tested-benefit-recipient-households
+    - us-high-income-households
+    - us-high-wealth-households
+    - us-immigrant-population
+    - us-workers-lower-formal-education
+  exclusions:
+    - universal claims that all wealthy people coordinate or knowingly participate
+    - claims that immigrants or low-income people have zero fiscal or local costs
+    - claims that federal tax incidence is uniformly regressive
+
+burden_of_proof:
+  required_evidence:
+    - measured material pressure or status pressure
+    - a recoverable causal or blame attribution
+    - evidence distinguishing the target's actual material contribution from the claim made about it
+    - funding or amplification evidence where elite or institutional routing is alleged
+    - downstream response or policy evidence where mobilization is alleged
+    - measured beneficiary or loss-bearer effects where a return loop is alleged
+  disconfirming_evidence:
+    - targeted population accounts for the claimed harm at the alleged magnitude
+    - no recoverable message or attribution route
+    - no upstream gain or preservation after the policy response
+    - observed policy materially relieves the stated pressure without shifting harm or increasing concentrated power
+    - alleged funding, amplification, persuasion, or policy edges fail source-level verification
+  alternative_explanations:
+    - genuine local fiscal or labor-market costs
+    - genuine program costs or fraud in a bounded means-tested program
+    - status threat independent of personal economic decline
+    - political opportunism without donor coordination
+    - distributed ideological alignment
+    - audience demand or media-market incentives
+    - policy preferences unrelated to the alleged grievance frame
+    - mixed mechanism
+
+evidence:
+  supports:
+    - ref: source-cbo-pl11921-distribution
+      note: Current-law example of modeled resource losses toward the bottom and gains toward the top.
+    - ref: source-fed-dfa-2026q1
+      note: Ownership of equities and mutual-fund shares is highly concentrated toward the top of the wealth distribution.
+    - ref: source-cbo-immigration-surge-2024
+      note: CBO models a net federal fiscal benefit from the defined immigration surge while also finding short-run wage pressure for some lower-education workers and higher returns to capital.
+    - ref: source-brader-valentino-suhay-2008
+      note: Experimental evidence supports a mechanism in which group cues alter opposition independently of stated economic facts.
+    - ref: source-mutz-status-threat-2018
+      note: Supports keeping relative-status threat separate from personal economic hardship.
+    - ref: source-gilens-welfare-race-1995
+      note: Supports a historical mechanism in which racial attitudes shape opposition to means-tested welfare.
+    - ref: source-propublica-tanton-colcom-network
+      note: Case evidence that concentrated private wealth financed durable immigration-restriction advocacy infrastructure.
+    - ref: source-fair-current-claims-2026
+      note: Documents a current live fiscal, labor-market, and public-resource attribution frame from a major immigration-restriction organization; this establishes the message, not its causal truth.
+  contextualizes:
+    - ref: source-cbo-household-income-2022
+      note: Federal taxes are conventionally progressive and means-tested transfers are concentrated toward lower-income households; benefit receipt is real but does not itself identify the cause of another household's pressure.
+    - ref: source-itep-tennessee-2024
+      note: State and local burden can be strongly regressive even when the federal system is progressive.
+    - ref: source-nber-billionaire-tax-2025
+      note: Broad economic-income accounting can show a lower effective burden at the extreme top than taxable-income framing suggests.
+  contradicts_or_limits:
+    - ref: source-cbo-household-income-2022
+      note: Contradicts a blanket claim that lower-income households bear higher conventional federal tax rates than high-income households.
+    - ref: source-cbo-immigration-surge-2024
+      note: Strongly contradicts a blanket claim that CBO's defined recent immigration surge is a net drain on the federal budget; it does not resolve every narrower unauthorized-immigration or state/local fiscal claim.
+    - ref: source-mutz-status-threat-2018
+      note: Limits any claim that anti-immigration mobilization is explained only by personal economic hardship.
+
+subclaims:
+  - id: upward_distribution_current_policy
+    status: supported
+    confidence: high
+    proposition: Some current federal policy changes redistribute modeled household resources upward across the income distribution.
+  - id: ownership_concentration
+    status: supported
+    confidence: high
+    proposition: U.S. equity ownership is heavily concentrated toward upper wealth groups.
+  - id: recent_immigration_is_net_federal_drain
+    status: contradicted_for_defined_cbo_surge
+    confidence: high
+    proposition: The defined 2021-2026 immigration surge is a net federal fiscal drain over 2024-2034.
+  - id: immigration_can_create_mixed_worker_capital_effects
+    status: supported
+    confidence: high
+    proposition: The same immigration shock can produce short-run wage pressure for some workers while raising returns to capital.
+  - id: current_restriction_advocacy_uses_fiscal_labor_frame
+    status: observed_statement
+    confidence: high
+    proposition: FAIR currently frames illegal immigration in fiscal-burden, public-resource, and labor-competition terms.
+  - id: means_tested_benefit_receipt_is_real
+    status: supported
+    confidence: high
+    proposition: Means-tested public transfers are materially concentrated among lower-income households.
+  - id: benefit_receipt_proves_primary_drain
+    status: not_established
+    confidence: high
+    proposition: The fact that lower-income households receive means-tested benefits establishes them as the primary cause of other households' economic pressure.
+  - id: group_cues_can_redirect_threat
+    status: supported
+    confidence: moderate_high
+    proposition: Immigration threat framing can be altered by group cues and anxiety independently of the objective economic content of a message.
+  - id: wealthy_funding_of_restriction_infrastructure
+    status: observed_case
+    confidence: high
+    proposition: Concentrated private wealth has financed substantial U.S. immigration-restriction advocacy infrastructure.
+  - id: universal_coordinated_elite_strategy
+    status: not_established
+    confidence: high
+    proposition: Wealthy people as a class centrally coordinate a single national strategy to make lower-income people blame immigrants and poor people.
+  - id: wealth_threshold_equals_culpability
+    status: not_established
+    confidence: high
+    proposition: Crossing a particular income or wealth threshold is sufficient to establish participation or culpability.
+
+current_assessment:
+  status: partially_supported
+  confidence: moderate_high
+  summary: >-
+    The lattice supports multiple components of a grievance-routing mechanism: upward
+    distribution and concentrated ownership, mixed immigration effects that can create
+    visible worker pressure alongside capital gain, experimental and panel evidence for
+    group-cue and status-threat pathways, a documented case of concentrated private wealth
+    financing immigration-restriction advocacy, and a current live fiscal/labor attribution
+    frame from FAIR. It also preserves the fact that lower-income households do receive
+    substantial means-tested transfers. Benefit receipt, however, is not evidence by itself
+    that those households are the primary cause of broader economic pressure. The evidence
+    does not support a universal wealth cutoff or a single coordinated elite conspiracy.
+    Case-level loops from funder to message to audience to policy to beneficiary still require
+    independent edge-by-edge proof.
+  what_is_established:
+    - some lower-income groups can bear heavier state and local tax burdens relative to income
+    - current federal policy can reduce resources at the bottom while increasing them toward the top
+    - wealth ownership is highly concentrated
+    - lower-income households receive a large share of means-tested transfers
+    - recent immigration can be fiscally positive federally while having heterogeneous labor-market effects
+    - immigration and welfare attitudes can be shaped by racialized or group-cued threat and deservingness frames
+    - wealthy funding has supported durable immigration-restriction advocacy infrastructure
+    - a major current immigration-restriction organization publicly uses fiscal-burden and labor-competition framing
+  what_is_not_established:
+    - all affluent or wealthy people knowingly participate in extraction or grievance redirection
+    - every anti-immigration or anti-welfare belief is produced by elite manipulation
+    - every local immigration effect is positive
+    - FAIR's current illegal-immigration fiscal claims are fully answered by CBO's differently defined surge analysis
+    - benefit receipt establishes that poor or low-income people are the primary source of broader household economic loss
+    - a single central actor commands the entire feedback loop
+  evidence_that_would_change_assessment:
+    - better causal studies linking specific funded message campaigns to voter behavior and subsequent policy
+    - grant-level and donor-level primary records tying message production to funder preferences
+    - policy-specific owner-benefit estimates that isolate net profit or asset gain from gross spending
+    - program-specific incidence and net-cost studies matched to claims about welfare or means-tested recipients
+    - stronger local fiscal and wage studies that materially reverse or narrow CBO's aggregate federal findings
+    - source-level reconstruction of FAIR's current fiscal accounting with matched population, jurisdiction, and time windows
+    - evidence that policy responses attributed to grievance routing materially reduce the alleged pressure without upstream gain or power concentration
+
+downstream_permissions:
+  may_generate_factual_relation: true
+  may_generate_public_rendition: true
+  human_review_required: true
+
+locks:
+  - The target of blame is not automatically the cause of harm.
+  - Benefit receipt != extraction.
+  - A real local cost does not license exaggerated national causal claims.
+  - A national aggregate benefit does not erase local or subgroup costs.
+  - Illegal immigration != all immigration.
+  - Funding, amplification, persuasion, voting, policy production, and beneficiary gain must remain separate edges.
+  - Wealth and income are continuous distributions, not moral thresholds.
+  - The strongest supported account may be a mixed mechanism rather than a single intentional scheme.

@@ -1,0 +1,30 @@
+schema: unum-lattice-news/node/v0.1
+id: john-tanton
+title: John Tanton
+family: actor
+subtype: person
+landing_status: landed
+lifecycle_status: historical
+updated: 2026-08-16
+summary:
+  text: >-
+    A U.S. immigration-restriction organizer and institution builder whose organizational
+    network is relevant to tracing how private wealth, advocacy infrastructure, and
+    immigration narratives became linked over time.
+  posture: observed
+current_evidence:
+  observed:
+    - ProPublica identifies Tanton as a co-founder of FAIR and describes his long-running relationship with donor Cordelia Scaife May.
+    - ProPublica traces subsequent Colcom Foundation funding into organizations connected to his network.
+relations:
+  - type: COFOUNDED
+    target: federation-for-american-immigration-reform
+    posture: observed
+    evidence:
+      - source-propublica-tanton-colcom-network
+  - type: ORGANIZATIONAL_LINEAGE
+    target: tanton-linked-immigration-restriction-network
+    posture: observed
+locks:
+  - Historical network centrality does not establish control over all later organizations or messages.
+  - Ideological affinity, funding, and command are separate relations.
