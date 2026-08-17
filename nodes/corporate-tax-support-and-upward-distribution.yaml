@@ -1,0 +1,53 @@
+schema: unum-lattice-news/node/v0.1
+id: corporate-tax-support-and-upward-distribution
+title: Corporate tax support and upward distribution
+family: analysis_framework
+subtype: public_support_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for tax-code provisions, business deductions, credits, accelerated
+    depreciation, research expensing, preferential income treatment, and related measures that reduce
+    public revenue while leaving private ownership and upside intact. It compares these supports with
+    household-level spending cuts and distributional effects without treating every tax expenditure as
+    corporate welfare.
+  posture: working_framework
+current_evidence:
+  - GAO_states_tax_expenditures_have_the_same_net_budget_effect_as_spending_programs_and_the_2025_federal_program_inventory_included_174_tax_expenditures_representing_about_1_8_trillion_in_estimated_outlays_and_forgone_revenue.
+  - Treasury_defines_tax_expenditures_as_special_exclusions_deductions_credits_preferential_rates_or_deferrals_that_can_be_viewed_as_alternatives_to_spending_or_regulation.
+  - Public_Law_119_21_reinstated_or_expanded_business_tax_preferences_including_100_percent_special_depreciation_for_qualified_property_and_current_deduction_of_domestic_research_expenses.
+  - ITEP_reports_at_least_88_large_profitable_corporations_with_zero_current_federal_income_tax_expense_for_2025_on_more_than_105_billion_of_US_pretax_income_and_identifies_accelerated_depreciation_and_research_expensing_as_major_mechanisms.
+  - CBO_estimates_Public_Law_119_21_reduces_average_annual_resources_for_the_lowest_income_decile_and_increases_them_for_the_highest_decile_over_2026_2034_with_63_9_percent_of_the_modeled_net_change_assigned_to_the_highest_decile.
+required_trace:
+  - statutory_tax_baseline
+  - specific_credit_deduction_deferral_or_rate_preference
+  - eligible_firm_or_owner_class
+  - revenue_forgone_or_refund
+  - stated_policy_goal
+  - investment_wage_price_or_output_response
+  - private_income_profit_or_asset_effect
+  - ownership_distribution
+  - household_program_or_tax_changes_in_same_policy_package
+  - lobbying_or_policy_authorship_evidence_if_present
+  - performance_review_and_redress
+translation_lock:
+  political_phrase: corporate_welfare_or_corporate_communism
+  analytic_translation: socialized_fiscal_cost_or_risk_with_privately_retained_ownership_and_upside
+  note: communism_is_not_the_technical_ownership_structure_when_ownership_and_residual_claims_remain_private
+locks:
+  - tax_expenditure_is_not_wrongdoing_by_definition.
+  - tax_expenditures_include_household_and_business_provisions_and_must_be_disaggregated.
+  - current_tax_expense_is_not_identical_to_total_cash_tax_paid_across_periods_and_jurisdictions.
+  - public_policy_can_create_real_social_value; measure_pass_through_and_public_return.
+  - household_distribution_does_not_by_itself_establish_corporate_capture.
+relations:
+  - type: EXTENDS
+    target: asymmetric-public-support-and-private-gain
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+  - type: EXTENDS
+    target: power-capacity-accumulation
+source_bundle:
+  - source-complaint-beneficiary-matching-2026-08-16

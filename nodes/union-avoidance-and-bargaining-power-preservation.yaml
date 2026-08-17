@@ -1,0 +1,51 @@
+schema: unum-lattice-news/node/v0.1
+id: union-avoidance-and-bargaining-power-preservation
+title: Union avoidance and bargaining-power preservation
+family: analysis_framework
+subtype: labor_power_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for employer spending, legal strategy, consultant activity, surveillance,
+    delay, and other lawful or unlawful mechanisms used to reduce the probability, scope, speed, or
+    bargaining strength of worker organization. The immediate gain may be preserved managerial
+    discretion, lower bargaining pressure, or delayed redistribution rather than a separately booked
+    revenue line.
+  posture: working_framework
+required_trace:
+  - worker_organizing_or_bargaining_demand
+  - employer_response
+  - consultant_law_firm_or_internal_campaign
+  - money_spent_on_persuasion_delay_or_litigation
+  - legal_and_administrative_tools_used
+  - effect_on_election_recognition_first_contract_or_strike_power
+  - wage_benefit_scheduling_safety_or_profit_sharing_terms_at_stake
+  - consultant_or_law_firm_revenue
+  - employer_bargaining_power_preserved_or_changed
+  - worker_outcome
+  - redress_path
+current_evidence:
+  - DOL_requires_reporting_of_many_employer_consultant_persuader_arrangements_under_LMRDA_section_203.
+  - DOL_reported_1364_combined_LM10_and_LM20_persuader_reports_in_FY2025.
+  - EPI_LaborLab_estimates_total_union_avoidance_spending_near_1_7_billion_annually_including_reported_and_estimated_legal_consulting_activity.
+  - EPI_LaborLab_reports_Amazon_consultant_spending_of_26_640_897_for_2025_from_DOL_filings.
+beneficiary_seats:
+  - employer_management_and_ownership_when_bargaining_pressure_is_reduced_or_delayed
+  - labor_relations_consultants
+  - management_side_labor_law_firms
+locks:
+  - employer_opposition_to_unionization_is_not_illegal_by_definition.
+  - consultant_spending_does_not_by_itself_prove_an_unfair_labor_practice.
+  - preserved_bargaining_power_is_a_real_gain_but_must_not_be_double_counted_as_booked_profit_without_measurement.
+  - worker_wage_effect_requires_case_specific_or_population_level_evidence.
+relations:
+  - type: EXTENDS
+    target: labor-market-power-and-wage-extraction
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+  - type: USES
+    target: complaint-to-mechanism-translation
+source_bundle:
+  - source-complaint-beneficiary-matching-2026-08-16
