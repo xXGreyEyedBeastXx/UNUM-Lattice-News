@@ -1,0 +1,113 @@
+schema: unum-lattice-news/node/v0.2
+id: israeli-settlement-enterprise
+title: Israeli Settlement Enterprise in the Occupied West Bank
+entity_type: ecology
+actor_roles: []
+status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    A state-settler territorial ecology encompassing settlement authorization, outposts, infrastructure,
+    land administration, state services/protection, settler organizations and individual settlement activity
+    in the occupied West Bank including East Jerusalem. It is not a claim that every settler is violent or that
+    settlers and the State are legally identical. The ICJ found continued Israeli settlement activity unlawful
+    and required Israel to cease new settlement activity and evacuate settlers. In 2026 the UN Commission of
+    Inquiry found that settler violence functions as a means of implementing Israeli State policy and that the
+    State and violent settler actors work toward overlapping strategic objectives including settlement
+    entrenchment, annexation and Palestinian displacement.
+  posture: supported_inference
+aliases:
+  - West Bank settlement enterprise
+  - Israeli settlement system
+hashtags:
+  - mechanism/SettlementExpansion
+  - mechanism/Displacement
+  - mechanism/Annexation
+  - domain/WestBank
+  - domain/IsraelPalestine
+authority:
+  has_authority: false
+  seat: distributed state-settler territorial ecology
+  source: state policy, international legal findings, settlement administration and field conduct
+  jurisdiction: occupied West Bank including East Jerusalem
+  level: other
+  term_start: null
+  term_end: null
+  oversight: []
+  appeal_or_review: []
+vulnerability:
+  roles: []
+  protection_needs: []
+funding:
+  gives_to: []
+  receives_from: []
+constituencies: []
+current_evidence:
+  observed:
+    - Israeli governments authorize, service, protect or retroactively legalize settlement/outpost activity in parts of the occupied West Bank.
+    - Settlement expansion and settler violence have displaced Palestinian residents and constrained access to land, water, homes and movement in documented cases.
+  stated:
+    - Finance Minister Bezalel Smotrich has publicly framed settlement expansion as strengthening Israeli control and preventing a Palestinian state.
+    - Netanyahu and Defense Minister Katz announced in July 2026 that farm-outpost legalization and new outpost establishment would be accelerated among West Bank response measures.
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - The settlement enterprise should be analyzed as a state-settler ecology rather than presuming either complete private independence or complete actor identity.
+  disputed:
+    - Israel disputes the international legal characterization of much of the occupied-territory and settlement regime.
+  ambiguous:
+    - State responsibility, military participation, settler-organizational role and individual perpetration vary by event and require separate attribution.
+  unknowns:
+    - Full current funding, land-transfer, security-coordination and organizational map across settlement/outpost networks remains incomplete.
+  missing_or_withheld: []
+  counterevidence:
+    - Israeli military or police have at times intervened against particular settlers/outposts; those events must be retained and do not by themselves negate broader state-policy or responsibility findings.
+
+evidence_extensions:
+  legal_advisory_findings:
+    - date: 2024-07-19
+      body: International Court of Justice
+      finding: Israel must cease immediately all new settlement activities and evacuate all settlers from the Occupied Palestinian Territory.
+      posture: LEGAL_ADVISORY_FINDING
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  external_fact_findings:
+    - date: 2026-06
+      body: UN Independent International Commission of Inquiry
+      finding: >-
+        Settler violence functions as a means of implementing Israeli State policy and violent settlers and the State
+        pursue overlapping strategic objectives including occupation maintenance, settlement entrenchment,
+        annexation and displacement of Palestinians from land.
+      posture: EXTERNAL_FACT_FINDING
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  territorial_effects:
+    - effect: Palestinian displacement and reduced return/access to homes, agricultural land, grazing land, roads, water and community space in documented cases
+      posture: DOCUMENTED_EFFECT
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+relations:
+  - type: MAINTAINED_BY
+    target: state-of-israel
+    posture: supported_inference
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: policy, infrastructure, authorization, protection and administration
+    notes: This does not make every settler a state employee or every settler action a direct state order.
+  - type: DISPLACES
+    target: palestinian-residents-west-bank
+    posture: EXTERNAL_FACT_FINDING
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: documented communities and wider pattern in occupied West Bank
+    notes: Exact event attribution remains local and actor-specific.
+stories: []
+unresolved_questions:
+  - Which settler organizations, government ministries, military units, donors and local councils provide the highest-conductance links across current settlement expansion?
+  - Which current displaced Palestinian communities have return blocked by formal orders, settler presence, infrastructure destruction, threat, or land reclassification?
+corrections: []
+references:
+  - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+locks:
+  - Settler != State employee by default.
+  - Settler violence != independent private violence when state responsibility, participation, protection or shared objectives are evidenced.
+  - State relation != organizational identity.
+  - Settlement expansion != proof every individual settler supports violence.
+  - Intervention against some settlers != falsification of a broader state-settler ecology.
