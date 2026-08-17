@@ -1,0 +1,44 @@
+schema: unum-lattice-news/node/v0.1
+id: housing-private-equity-ownership-and-pricing
+title: Housing private-equity ownership and pricing recomposition
+family: analysis_framework
+subtype: housing_ownership_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Requires rental-housing investigations to continue past the property manager or landlord brand into parent,
+    portfolio-company, fund, and investment-vehicle ownership, then connect pricing conduct to rent revenue and
+    asset-value return without assuming every property in an ownership family shares the same conduct.
+  posture: evidence_bound
+current_evidence:
+  - DOJ_identifies_LivCor_as_a_Blackstone_portfolio_company_in_the_RealPage_case.
+  - SEC_filings_state_LivCor_is_controlled_or_owned_by_Blackstone_advised_investment_vehicles.
+  - DOJ_alleged_LivCor_and_other_large_landlords_used_competitor_sensitive_information_and_common_pricing_algorithms.
+  - defendant_specific_settlement_and_judgment_postures_exist_and_must_be_preserved.
+required_trace:
+  - property
+  - property_manager
+  - legal_owner
+  - parent_or_portfolio_company
+  - fund_or_investment_vehicle
+  - beneficial_or_control_seat
+  - pricing_vendor_and_information_inputs
+  - rent_revenue
+  - debt_and_financing
+  - distributions_fees_appreciation_or_sale
+  - tenant_harm_and_redress
+locks:
+  - shared_parent_does_not_prove_shared_misconduct.
+  - settlement_is_not_identical_to_admission_of_every_allegation.
+  - rent_increases_have_multiple_possible_drivers.
+source_bundle:
+  - source-article-readiness-expansion-2-2026-08-16
+relations:
+  - type: EXTENDS
+    target: rent-algorithm-coordination-and-landlord-capture
+  - type: EXTENDS
+    target: entity-kinship-and-identity-resolution
+  - type: EXTENDS
+    target: land-rent-and-resource-capture

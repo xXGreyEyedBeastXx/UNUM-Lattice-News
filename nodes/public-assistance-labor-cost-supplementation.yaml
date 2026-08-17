@@ -1,0 +1,65 @@
+schema: unum-lattice-news/node/v0.1
+id: public-assistance-labor-cost-supplementation
+title: Public-assistance labor-cost supplementation
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable operator for tracing employment arrangements in which workers or their
+    households receive means-tested public benefits while employed. The operator keeps
+    distinct the legal recipient of the benefit, the employer's compensation package,
+    household eligibility conditions, the public cost, and any indirect employer benefit
+    created when public programs cover necessities that otherwise would require greater
+    private compensation or household resources.
+  posture: working_framework
+core_trace:
+  - labor_performed
+  - employer_compensation
+  - household_income_and_eligibility
+  - unmet_or_publicly_covered_need
+  - public_program
+  - worker_or_household_benefit
+  - public_cost
+  - employer_cost_supplementation_candidate
+  - ownership_or_margin_effect_candidate
+  - correction_or_counterfactual
+required_fields:
+  - employer
+  - worker_population
+  - program
+  - jurisdiction
+  - household_eligibility_rule
+  - wage_or_compensation_measure
+  - benefit_recipient
+  - benefit_amount_or_enrollment_count
+  - employer_health_or_other_benefits
+  - work_hours_or_schedule_if_available
+  - family_size_or_household_income_if_available
+  - counterfactual_wage_or_compensation_test
+  - public_cost
+  - evidence
+  - limitations
+adversarial_tests:
+  - Benefit receipt does not itself prove the employer caused eligibility.
+  - Eligibility may depend on household size, other household income, work hours, disability, age, or program rules.
+  - Employer-sponsored insurance availability does not prove affordability, enrollment, or adequacy for a particular household.
+  - A public benefit paid to a worker is not a direct cash payment to the employer.
+  - An indirect employer subsidy claim requires a counterfactual or incidence argument showing that public provision reduces compensation pressure or employer-borne cost.
+  - Employee benefit counts from selected states are not national employer totals unless a source establishes national coverage.
+relations:
+  - type: EXTENDS
+    target: labor-market-power-and-wage-extraction
+    posture: working_framework
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+locks:
+  - Worker benefit receipt != worker culpability.
+  - Worker benefit receipt != direct corporate subsidy.
+  - Employer association with benefit recipients != proof of illegal underpayment.
+  - Public cost and employer indirect benefit are separate quantities.
+  - Do not count the same public benefit once as worker assistance and again in full as employer capture.
+  - Count employer-side capture only to the extent a supported incidence or counterfactual analysis attributes value to the employer.

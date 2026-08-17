@@ -1,0 +1,57 @@
+schema: unum-lattice-news/node/v0.1
+id: causal-partition-laundering
+title: Causal partition laundering
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for detecting when legal, accounting, market, jurisdictional, or policy
+    labels are used as if they sever a real causal or material flow. Examples include treating the
+    legal recipient of a benefit as the terminal economic beneficiary, treating a market label as
+    proof of competitive formation, treating foreign aid as if it terminates abroad, or treating
+    corporate profit, executive compensation, shareholder return, public subsidy, and worker cost
+    as unrelated merely because they occupy different accounting categories.
+  posture: working_framework
+core_rule:
+  - Separate carriers for attribution.
+  - Recompose carriers before closing the causal analysis.
+  - A category boundary is not evidence of causal discontinuity.
+  - A legal recipient is not automatically a terminal economic beneficiary.
+  - A claimed market price is not automatically a competitively formed price.
+  - A lawful wage is not automatically an adequate or non-extractive wage.
+  - Public spending is not analytically complete until downstream private revenue and ownership seats are traced.
+partition_types_to_test:
+  - legal_recipient_vs_economic_beneficiary
+  - gross_revenue_vs_surplus_vs_owner_return
+  - public_program_vs_private_revenue
+  - domestic_spending_vs_foreign_aid_vs_procurement_return
+  - wage_legality_vs_labor_market_power
+  - market_price_label_vs_actual_price_formation
+  - landlord_revenue_vs_land_capture_vs_tenant_burden
+  - insurer_payment_vs_provider_pbm_pharmacy_parent_return
+  - tax_expenditure_vs_cash_outlay
+  - environmental_liability_vs_realized_public_cost
+required_questions:
+  - What value entered the system?
+  - Through which legal or accounting seats did it pass?
+  - Which participants could alter the terms?
+  - Who bore the loss, risk, deprivation, or opportunity cost?
+  - Where did surplus, avoided cost, rent, interest, margin, appreciation, or political capacity accumulate?
+  - Which downstream gains are overlapping dispositions of the same underlying value?
+  - Which asserted category boundaries are supported by causal discontinuity, and which merely rename the flow?
+relations:
+  - type: EXTENDS
+    target: whole-circuit-corporate-gain-accounting
+    posture: working_framework
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+locks:
+  - Precision must not become fragmentation.
+  - Anti-double-counting must not become anti-recomposition.
+  - Distinguishing recipient from beneficiary must preserve both seats rather than deleting one.
+  - A corporate, government, market, or program label is a description to test, not a causal exemption.
+  - Weak edges remain visible with uncertainty rather than being removed from an otherwise evidenced network.

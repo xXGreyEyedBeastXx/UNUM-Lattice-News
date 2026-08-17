@@ -1,0 +1,162 @@
+schema: unum-lattice-news/mesh/v0.1
+id: complaint-beneficiary-matching-2026-08-16
+title: Complaint-to-beneficiary matching — first populated pass
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - complaint-redress-and-corporate-support-mesh-2026-08-16
+  - unum-harm-mesh-2026-08-16
+source_bundle:
+  - source-complaint-beneficiary-matching-2026-08-16
+purpose: >-
+  Move beyond complaint classification by tracing selected recurring complaints to the material arrangement
+  being challenged, the rhetoric used against the challenge, the policy or enforcement transformation that
+  follows, and the firms or institutions that retain revenue, ownership, bargaining power, tax advantage,
+  procurement position, or coercive capacity.
+
+case_surfaces:
+  worker_organizing:
+    complaint:
+      - workers_lack_bargaining_power
+      - wages_benefits_and_working_conditions_are_suppressed_when_workers_cannot_organize_effectively
+    challenged_arrangement:
+      - unilateral_employer_control_over_pay_scheduling_benefits_staffing_and_workplace_rules
+    observed_counter_capacity:
+      - employer_consultant_and_law_firm_union_avoidance_market
+      - 1364_combined_DOL_persuader_reports_in_FY2025
+      - EPI_LaborLab_estimated_total_union_avoidance_spending_about_1_7_billion_annually
+      - reported_Amazon_2025_consultant_spending_about_26_6_million
+    beneficiary_match:
+      confirmed:
+        - consultants_and_management_side_law_firms_receive_revenue
+      supported_mechanism:
+        - employers_can_preserve_or_delay_bargaining_constraints_when_organizing_is_defeated_or_delayed
+      unresolved:
+        - firm_specific_wage_profit_and_turnover_effects
+    next_trace:
+      - normalize_top_50_employer_LM10_and_consultant_LM20_filings
+      - cross_match_with_wages_union_elections_first_contract_delays_and_stock_returns
+
+  immigration_enforcement:
+    complaint:
+      - immigrants_are_scapegoated_while_enforcement_spending_creates_private_profit_and_worker_fear
+    challenged_arrangement:
+      - immigration_status_as_labor_and_policing_constraint
+      - mass_detention_deportation_and_monitoring_capacity
+    observed_material_crossing:
+      - CoreCivic_ICE_revenue_770_7_million_and_35_percent_of_2025_total_revenue
+      - GEO_ICE_revenue_share_47_6_percent_of_2025_consolidated_revenue
+      - GEO_Q4_2025_share_repurchases_49_million
+    beneficiary_match:
+      confirmed:
+        - CoreCivic_and_GEO_receive_major_revenue_from_ICE
+      whole_circuit_candidate:
+        - enforcement_growth_to_revenue_to_financial_capacity_to_ownership_return
+      unresolved:
+        - exact_policy_authorship_lobbying_return_and_contract_to_buyback_dollar_lineage
+    next_trace:
+      - normalize_ICE_contracts_facility_activations_transport_monitoring_and_case_management_vendors
+      - add_lobbying_campaign_finance_and_beneficial_ownership
+
+  equity_and_affirmative_action:
+    complaint:
+      - anti_discrimination_and_equity_redress_is_recast_as_marxism_or_illegal_preference
+    threat_label:
+      - FY2026_budget_material_used_woke_Marxist_agenda_language_for_equity_programs
+    before_after_state:
+      before:
+        - EO11246_required_federal_contractors_to_take_affirmative_action_on_race_sex_and_related_protected_categories_under_its_regime
+      2025_change:
+        - EO14173_revoked_EO11246_and_OFCCP_closed_enforcement_and_pending_reviews_under_that_authority
+      2026_change:
+        - EO14398_imposed_new_anti_DEI_contract_clauses_with_termination_suspension_debarment_and_false_claims_exposure
+    beneficiary_match:
+      confirmed:
+        - contractors_no_longer_carry_the_former_EO11246_race_sex_affirmative_action_obligation
+        - government_gains_new_procurement_leverage_against_defined_DEI_activity
+      loss_or_risk_seats:
+        - workers_applicants_and_suppliers_lose_one_former_federal_contract_compliance_route
+        - contractors_face_new_anti_DEI_compliance_and_penalty_risk
+      unresolved:
+        - realized_distributional_effects_on_hiring_pay_promotion_and_supplier_access
+    lock: >-
+      This is a reversal and reseating of enforcement authority, not a simple government-versus-market story.
+
+  anti_fascism_and_anti_capitalism:
+    complaint:
+      - anti_fascist_or_anti_authoritarian_redress_is_being_moved_into_a_terrorism_frame
+    observed_threat_label:
+      - 2025_order_designated_Antifa_as_domestic_terrorist_organization
+      - 2025_memorandum_used_self_described_anti_fascism_as_umbrella_frame_and_named_anti_capitalism_among_common_threads
+    policy_transform:
+      - network_disruption
+      - investigation_of_funding
+      - domestic_terrorism_national_priority_area_and_grant_capacity
+    beneficiary_match:
+      confirmed:
+        - federal_security_and_law_enforcement_institutions_receive_expanded_priority_and_network_disruption_capacity
+      not_yet_established:
+        - private_security_surveillance_or_data_vendor_gain_from_this_specific_policy
+        - intent_to_suppress_all_nonviolent_anti_fascist_or_anti_capitalist_activity
+    discriminator:
+      - trace_investigations_grants_contracts_and_charges_to_determine_whether_scope_stays_predicated_on_crime_or_expands_into_protected_activity
+
+  tax_and_public_support:
+    complaint:
+      - public_support_for_low_income_households_is_stigmatized_while_large_fiscal_support_for_private_capital_is_normalized
+    observed_public_support_surface:
+      - about_793_billion_in_FY2025_federal_contract_obligations
+      - 2025_federal_program_inventory_contained_174_tax_expenditures_about_1_8_trillion_in_estimated_outlays_and_forgone_revenue
+      - Public_Law_119_21_created_or_expanded_business_tax_preferences_including_100_percent_special_depreciation_and_current_domestic_R_and_E_expensing
+    corporate_case_surface:
+      - ITEP_identified_at_least_88_large_profitable_companies_with_zero_current_federal_income_tax_expense_on_more_than_105_billion_of_2025_US_pretax_income
+      - ITEP_attributes_large_parts_of_reported_reductions_to_accelerated_depreciation_R_and_E_credits_and_new_research_expensing
+    household_distribution_surface:
+      - CBO_projects_lowest_decile_average_annual_resource_change_minus_1214_and_highest_decile_plus_13622_for_2026_2034_under_PL119_21
+      - highest_decile_receives_63_9_percent_of_modeled_total_net_household_resource_increase
+    beneficiary_match:
+      confirmed:
+        - eligible_businesses_and_owners_receive_value_from_business_tax_preferences
+        - federal_contractors_receive_public_revenue_in_exchange_for goods_and_services
+        - high_income_households_receive_larger_modeled_net_resource gains_from_PL119_21
+      unresolved:
+        - contract_level_public_value_and_profit_margin
+        - complete_company_level_tax_beneficiary_census
+        - pass_through_to_workers_consumers_and_investment
+    translation:
+      political_phrase: corporate_communism
+      analytic_type: asymmetric_socialization_of_fiscal_cost_or_risk_with_private_ownership_and_upside
+      lock: private_ownership_means_this_is_not_technical_communism
+
+cross_case_pattern_candidate:
+  state: SUPPORTED_AS_RESEARCH_HYPOTHESIS_NOT_SINGLE_proven_intent
+  trace:
+    - material_grievance_or_equalizing_demand
+    - collective_redress_or_organizing
+    - radical_marxist_terrorist_lawless_or_dependency_label
+    - enforcement_budget_or_legal_transform
+    - worker_civil_right_or_low_power_redress_weakens_or_changes
+    - private_or_state_power_seat_retains_or_gains_capacity
+  required_discriminator:
+    - identify_policy_specific_beneficiary_and_counterfactual
+    - establish_actor_specific_lobbying_authorship_or_coordination_before_claiming_intentional_capture
+    - preserve_cases_where_threat_label_matches_actual_violent_or_unlawful_conduct
+
+priority_growth_queue:
+  - housing_landlord_private_equity_and_realpage_beneficiary_matching
+  - healthcare_insurer_pbm_provider_and_private_equity_beneficiary_matching
+  - student_debt_servicing_and_education_finance
+  - energy_utility_fossil_fuel_and_data_center_public_support
+  - defense_security_and_surveillance_contractors
+  - anti_union_employer_and_law_firm_networks
+  - corporate_tax_and_lobbying_return_networks
+  - media_think_tank_and_advocacy_threat_label_amplification
+  - state_level_benefit_conditions_criminalization_and_carceral_labor_backstops
+locks:
+  - complaint_is_not_verdict
+  - threat_label_is_not_verdict
+  - public_spending_is_not_capture_by_definition
+  - corporate_gain_is_not_policy_authorship_by_definition
+  - real_violent_conduct_remains_real_even_when_a_broader_label_is_overinclusive
+  - anti_double_counting_must_not_break_causal_recomposition

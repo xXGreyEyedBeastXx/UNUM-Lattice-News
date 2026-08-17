@@ -1,0 +1,162 @@
+schema: unum-lattice-news/spread/v0.1
+
+spread:
+  id: who-pays-who-gains-who-gets-blamed-2026-08-16
+  title: Who Pays, Who Gains, Who Gets Blamed?
+  status: active_review
+  as_of: 2026-08-16
+  bounded_question: >-
+    When U.S. households experience material pressure or fear relative status loss, what
+    do the evidence and money flows show about who bears costs, who receives gains, who is
+    publicly blamed, who funds or amplifies those causal stories, and what policies return
+    from the resulting political response?
+  summary: >-
+    Current evidence supports a mixed mechanism rather than a single conspiracy story.
+    Resource gains and asset ownership are strongly concentrated; some policy changes
+    measurably reduce resources at the bottom while increasing them toward the top; lower-
+    income households also receive substantial means-tested transfers; the recent immigration
+    surge is modeled by CBO as improving the federal fiscal balance even while temporarily
+    slowing wage growth for some workers and raising capital returns; group cues and status
+    threat can shape political attribution; concentrated private wealth has funded durable
+    immigration-restriction advocacy infrastructure; and FAIR currently uses a live fiscal-
+    burden and labor-competition frame. Each claimed return loop still has to be proven edge
+    by edge.
+
+  anchors:
+    story_ids: []
+    source_ids:
+      - source-us-wealth-grievance-routing-baseline-2026-08-16
+    intake_candidate_ids: []
+
+  lenses:
+    economy_finance_ownership:
+      findings:
+        - CBO models a bottom-to-top divergence in household resource effects from Public Law 119-21.
+        - Federal Reserve data show highly concentrated ownership of equities and mutual-fund shares.
+        - Broad economic-income research finds the extreme top can face lower effective tax burdens than taxable-income measures imply.
+        - CBO also confirms that means-tested transfers materially flow toward households in the lower income distribution.
+      unknowns:
+        - Policy-specific net owner capture after costs and anti-double-counting adjustments.
+        - Program-specific net fiscal effects of means-tested benefits beyond gross transfer receipt.
+    labor_care_dependency:
+      findings:
+        - CBO models short-run wage-growth pressure for some workers with 12 or fewer years of education from the defined immigration surge.
+        - Means-tested benefit recipients are not identical to low-income households, unemployed people, or nonworkers.
+      unknowns:
+        - Local occupational and regional labor-market effects.
+        - Current program-by-program recipient, work-status, and household-composition distributions.
+    housing_land_migration:
+      findings:
+        - CBO models the defined immigration surge as reducing federal deficits overall.
+        - FAIR currently asserts fiscal, public-resource, and labor-market burdens associated with illegal immigration and broader immigration levels.
+      unknowns:
+        - Full state/local fiscal, housing, school, infrastructure, and service-demand effects.
+        - Whether FAIR's current estimates survive matched population, jurisdiction, time-window, and accounting reconstruction.
+    ideology_worldview:
+      findings:
+        - Status threat must be kept separate from personal economic hardship.
+        - Welfare and immigration attitudes can be shaped by racialized, deservingness, and group-cue frames.
+      unknowns:
+        - Which current audiences are primarily material-pressure driven, status-threat driven, ideologically aligned, or mixed.
+    media_information_language:
+      findings:
+        - The targeted group's visibility can exceed its measured causal contribution.
+        - FAIR's current site provides a live example of fiscal-burden, labor-competition, and public-resource attribution framing.
+        - Funding, message production, amplification, persuasion, and policy response are separate edges.
+      unknowns:
+        - Current campaign-level message reach and persuasion effects.
+        - Which present-day political and media actors repeat, narrow, reject, or transform FAIR-like frames.
+    law_governance_accountability:
+      findings:
+        - Public Law 119-21 provides a current, measurable distributional policy transform.
+      unknowns:
+        - Which actors authored, preserved, justified, or opposed specific provisions that generated the measured distributional effects.
+    community_resistance_repair:
+      findings:
+        - Correcting a false or exaggerated attribution requires tracing the actual pressure, real costs, and beneficiary path rather than merely denying the target frame.
+      unknowns:
+        - Which corrective framings reduce scapegoating without denying genuine local costs or genuine benefit receipt.
+
+  node_exposure:
+    existing_nodes:
+      - money-flow-benefit-enforced-loss
+      - situated-relational-analysis
+      - interlocking-domination
+    candidate_nodes: []
+    promoted_nodes:
+      - attribution-routing-and-grievance-redirection
+      - immigration-fiscal-and-labor-burden-claim
+      - means-tested-public-transfers
+      - us-low-income-households
+      - us-means-tested-benefit-recipient-households
+      - us-high-income-households
+      - us-high-wealth-households
+      - us-immigrant-population
+      - us-workers-lower-formal-education
+      - public-law-119-21
+      - federation-for-american-immigration-reform
+      - colcom-foundation
+      - john-tanton
+      - tanton-linked-immigration-restriction-network
+
+  relations:
+    - type: BEARS_LOSS_FROM_TRANSFORM
+      from: us-low-income-households
+      to: public-law-119-21
+      posture: observed
+      source: source-cbo-pl11921-distribution
+    - type: BENEFITS_FROM_TRANSFORM
+      from: us-high-income-households
+      to: public-law-119-21
+      posture: observed
+      source: source-cbo-pl11921-distribution
+    - type: RECEIVES_GAIN_FROM
+      from: us-means-tested-benefit-recipient-households
+      to: means-tested-public-transfers
+      posture: observed
+      source: source-cbo-household-income-2022
+      notes: Receipt is a measured benefit flow, not a culpability finding.
+    - type: ASSERTS_CAUSE_IS
+      from: federation-for-american-immigration-reform
+      to: immigration-fiscal-and-labor-burden-claim
+      posture: stated
+      source: source-fair-current-claims-2026
+    - type: FUNDS_MESSAGE_INFRASTRUCTURE
+      from: colcom-foundation
+      to: tanton-linked-immigration-restriction-network
+      posture: observed
+      source: source-propublica-tanton-colcom-network
+    - type: COFOUNDED
+      from: john-tanton
+      to: federation-for-american-immigration-reform
+      posture: observed
+      source: source-propublica-tanton-colcom-network
+
+  counterevidence:
+    - Federal taxes are conventionally progressive in CBO's 2022 distributional analysis.
+    - Means-tested transfers materially benefit lower-income households and must be counted rather than rhetorically erased.
+    - Benefit receipt alone does not establish that recipients are the primary cause of another group's economic pressure.
+    - Immigration has heterogeneous local and worker effects; federal net benefit is not universal local benefit.
+    - FAIR's illegal-immigration framing is not population-identical to CBO's surge model.
+    - A wealthy funder or beneficiary is not automatically a controller or author.
+
+  unresolved_questions:
+    - Which current political and media actors make explicit fiscal claims blaming immigrants or means-tested benefit recipients for household pressure?
+    - Which of those claims survive source-level fiscal and causal testing?
+    - Which current donors fund the organizations or media channels producing those frames?
+    - Which policy responses materially reduce the stated pressure versus returning gains or authority upstream?
+    - How far down the ownership and income ladders do material benefit, dependence, and political alignment measurably extend?
+    - Which people in upper-middle and affluent strata are net beneficiaries, net losers, status-threatened participants, dissenters, or mixed?
+    - What does FAIR's current fiscal accounting count as cost, revenue, population, and time horizon, and how does it compare with matched independent estimates?
+
+  corrections: []
+
+  review:
+    consequential_claims_reviewed: false
+    source_rights_reviewed: false
+    reviewer: ""
+    reviewed_at: null
+    notes: >-
+      Ready for source-level human review and article rendition after additional current
+      actor/message examples are added. Do not publish a universal elite-coordination or
+      wealth-threshold culpability claim; neither is established.

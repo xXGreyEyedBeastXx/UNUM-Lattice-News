@@ -1,0 +1,31 @@
+schema: unum-lattice-news/node/v0.1
+id: us-high-income-households
+title: U.S. high-income households
+family: population_community
+subtype: population
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable population node for U.S. households toward the upper end of the income
+    distribution. Specific investigations must preserve the source-defined decile, quintile,
+    percentile, or threshold and must not treat high income as identical to high wealth,
+    ownership control, or culpability.
+  posture: observed
+hierarchy_class: not_scored
+current_evidence:
+  observed:
+    - CBO distributional analyses show higher-income households typically pay higher average federal tax rates in conventional income accounting.
+    - CBO's 2025 reconciliation-law analysis models an average increase in resources for households toward the top of the income distribution.
+  unknowns:
+    - How much high income in a given case derives from labor, business ownership, capital income, realized gains, or other sources.
+relations:
+  - type: DISTINCT_FROM
+    target: us-high-wealth-households
+    posture: observed
+locks:
+  - High income != high wealth.
+  - High income != ownership control.
+  - High income != culpability.
+  - Distributional gain from a policy != proof of intent to create the policy.

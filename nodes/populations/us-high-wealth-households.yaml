@@ -1,0 +1,35 @@
+schema: unum-lattice-news/node/v0.1
+id: us-high-wealth-households
+title: U.S. high-wealth households
+family: population_community
+subtype: population
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable population node for households in the upper portion of the U.S. wealth
+    distribution. Specific relations must preserve the percentile group used by the source.
+    The node exists to trace ownership, asset appreciation, business equity, investment
+    income, political capacity, and insulation without converting wealth into automatic guilt.
+  posture: observed
+hierarchy_class: not_scored
+current_evidence:
+  observed:
+    - Federal Reserve Distributional Financial Accounts show corporate equities, mutual-fund shares, and unincorporated-business assets concentrated heavily toward upper wealth percentile groups.
+    - Administrative-data research finds that taxable individual income can be much smaller than economic income at the extreme top.
+  unknowns:
+    - Which ownership interests, policy gains, donor routes, and control rights are relevant in each investigation.
+relations:
+  - type: DISTINCT_FROM
+    target: us-high-income-households
+    posture: observed
+  - type: TESTED_THROUGH
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+locks:
+  - Wealth percentile != income percentile.
+  - Asset ownership != policy authorship.
+  - Benefit != causation.
+  - Wealth != culpability.
+  - Ownership concentration may create unequal exposure to gains without implying a single coordinated class actor.

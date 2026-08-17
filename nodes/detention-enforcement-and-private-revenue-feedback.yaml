@@ -1,0 +1,51 @@
+schema: unum-lattice-news/node/v0.1
+id: detention-enforcement-and-private-revenue-feedback
+title: Detention enforcement and private-revenue feedback
+family: analysis_framework
+subtype: public_to_private_enforcement_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for immigration, detention, corrections, transport, electronic monitoring,
+    and related enforcement spending that becomes material private revenue. It compares threat and
+    scapegoat narratives with procurement, facility utilization, firm revenue, capital allocation, and
+    ownership return while keeping public safety claims and case-specific legal predicates separately typed.
+  posture: working_framework
+current_evidence:
+  - CoreCivic_reported_ICE_as_35_percent_of_2025_total_revenue_equal_to_about_770_7_million.
+  - GEO_reported_ICE_as_47_6_percent_of_2025_consolidated_revenue.
+  - GEO_reported_49_million_of_share_repurchases_in_Q4_2025.
+required_trace:
+  - political_or_security_claim
+  - appropriations_and_executive_enforcement_policy
+  - detention_transport_monitoring_or_case_management_demand
+  - contract_and_facility_utilization
+  - company_revenue
+  - operating_costs_and_labor
+  - profit_cash_flow_debt_service_and_capex
+  - dividends_buybacks_or_asset_appreciation
+  - beneficial_ownership
+  - detainee_worker_family_and_community_harm
+  - due_process_and_redress
+feedback_test:
+  - Does expanded enforcement increase private revenue or asset utilization?
+  - Does the beneficiary fund lobbying political spending advocacy or messaging related to continued expansion?
+  - Does increased private or state capacity make the next enforcement expansion easier?
+locks:
+  - detention_contract_revenue_is_not_all_profit.
+  - a_company_benefiting_from_enforcement_does_not_prove_it_authored_the_policy.
+  - a_specific_buyback_dollar_cannot_be_assigned_to_a_specific_ICE_payment_without_cash_flow evidence.
+  - immigration_status_or criminal allegation does not erase detainee rights or human dignity.
+relations:
+  - type: EXTENDS
+    target: downward-scapegoat-upward-extraction-inversion
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+  - type: EXTENDS
+    target: power-capacity-accumulation
+  - type: RELATED_TO
+    target: compulsory-dependency-and-survival-enclosure
+source_bundle:
+  - source-complaint-beneficiary-matching-2026-08-16

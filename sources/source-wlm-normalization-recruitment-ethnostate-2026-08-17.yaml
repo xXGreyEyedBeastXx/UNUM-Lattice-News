@@ -1,0 +1,133 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-wlm-normalization-recruitment-ethnostate-2026-08-17
+title: White Lives Matter normalization, recruitment, and ethnostate objective
+status: active
+as_of: 2026-08-17
+purpose: >-
+  Preserve the source lineage establishing that the April 2021 White Lives Matter initiative is not merely a generic
+  slogan or loose white-supremacist identity marker. User-supplied primary copies of Activist Manual 2.0 (January 2022)
+  and Activist Manual 3.0 (2024) were directly reviewed on 2026-08-17. They establish an explicit 99% or 99%+ White
+  demographic objective, a White Nationalist ideological endpoint, and a deliberate normalization/recruitment pathway.
+  Tactical recruitment, evasion, anonymity, and event-execution instructions are intentionally not reproduced.
+sources:
+  - id: wlm-activist-manual-2-0-2022-primary-copy
+    class: primary_movement_document_user_supplied_verified_copy
+    date: 2022-01
+    external_archive: https://archive.org/details/wlm-activist-manual
+    supports:
+      - movement_self_identifies_as_April_2021_worldwide_decentralized_initiative
+      - explicit_minimum_99_percent_White_demographic_objective_in_designated_nations
+      - explicit_racially_restricted_citizenship_program_in_2022_version
+      - short_term_goal_of_mass_message_spread_and_growth_of_visible_local_participation
+      - activism_described_as_a_funnel_to_Telegram_and_into_the_pro_White_activist_community
+      - staged_onboarding_from_sympathetic_person_to_ideological_material_to_local_participation_and_decentralized_cells
+      - quantitative_recruitment_growth_logic_is_explicitly_discussed
+      - local_structure_includes_vetting_marketing_teaching_logistics_and_recruitment_functions
+      - interaction_guidance_for_potential_sympathizers_explicitly_requires_transforming_them_into_activists
+      - public_messaging_is_presented_as_more_effective_when_mainstream_approachable_and_family_centered
+    page_anchors:
+      - p3_goal_and_99_percent_program
+      - p5_short_term_growth_and_mass_visibility
+      - p9_to_p10_staged_recruitment_and_decentralized_cell_model
+      - p12_to_p13_activism_as_recruitment_funnel_and_compounding_growth_logic
+      - p16_to_p17_local_organizational_roles_and_recruitment_functions
+      - p19_potential_sympathizers_to_activists
+      - p24_to_p25_mainstreaming_strategy
+    safety_boundary: do_not_reproduce_operational_evasion_vetting_or_event_execution_instructions
+  - id: wlm-activist-manual-3-0-2024-primary-copy
+    class: primary_movement_document_user_supplied_verified_copy
+    date: 2024
+    external_archive: https://archive.org/details/wlm-activist-manual-3.0
+    supports:
+      - short_term_mass_awakening_and_long_term_99_percent_plus_White_demographic_objective
+      - recurring_monthly_real_world_activism_as_a_movement_custom
+      - explicit_preference_for_appealing_to_mainstream_White_families_over_hardcore_fringe_audiences
+      - public_message_kept_simple_positive_and_separated_from_other_polarizing_issues_to_reduce_rejection
+      - approachable_public_activism_explicitly_described_as_a_doorway_toward_a_White_Nationalist_worldview
+      - step_by_step_development_of_pro_White_sentiments_is_explicitly_described
+      - potential_sympathizers_are_to_be_transformed_into_activists
+      - successful_events_are_measured_by_joining_the_network_and_adopting_recurring_activism
+      - exclusive_White_spaces_and_legal_measures_to_uphold_absolute_White_majority_remain_part_of_the_long_term_program
+      - conclusion_explicitly_says_the_movement_wants_to_be_mainstream_and_build_a_pro_White_world
+    page_anchors:
+      - p3_99_percent_plus_goal_mainstream_family_strategy
+      - p4_approachable_race_focused_entry_strategy
+      - p10_to_p11_everyday_audience_sanitized_message_and_doorway_to_White_Nationalist_worldview
+      - p13_transform_potential_sympathizers_into_activists_and_event_conversion_goal
+      - p15_mainstreaming_and_pro_White_world_conclusion
+    safety_boundary: do_not_reproduce_operational_evasion_vetting_or_event_execution_instructions
+  - id: manual-version-comparison-2022-to-2024
+    class: source_comparison_inference
+    supports:
+      - explicit_99_percent_or_99_percent_plus_demographic_objective_survives_both_versions
+      - 2024_version_streamlines_public_language_and_removes_some_of_2022s_most_explicit_exclusionary_wording_while_retaining_the_same_white_nationalist_demographic_endpoint
+      - approachability_mainstream_family_appeal_and_separation_from_polarizing_symbols_are_more_explicitly_theorized_in_2024
+    posture: supported_inference_from_primary_document_comparison
+    lock: wording_change_does_not_by_itself_prove_deceptive_intent_beyond_the_documents_explicitly_stated_approachability_and_message_control_strategy
+  - id: user-supplied-telegram-search-screenshots-2026-08-17
+    class: direct_screenshot_observation
+    supports:
+      - search_result_labeled_WLM_TENNESSEE_visible_in_recent_results
+      - WLM_branded_results_visible_for_materials_events_Montana_Pennsylvania_United_Kingdom_Germany_Greece_and_Georgia_chat
+      - WLM_material_and_backup_or_viewing_channels_visible_with_subscriber_or_member_counts_in_the_screenshot
+    limitations:
+      - screenshot_search_results_do_not_establish_channel_operator_identity
+      - screenshot_search_results_do_not_establish_current_offline_activity
+      - visible_subscriber_counts_do_not_equal_active_membership
+      - exact_observation_date_is_from_current_user_submission_not_embedded_in_the_screenshot
+  - id: user-supplied-wlm-family-reproduction-propaganda-image-2026-08-17
+    class: direct_screenshot_or_image_observation
+    supports:
+      - WLM_branded_material_links_to_WhiteLivesMatterOfficial_Telegram
+      - propaganda_combines_self_improvement_socialization_family_formation_and_white_reproduction_into_a_single_recruitment_aesthetic
+    limitations:
+      - image_date_and_original_channel_post_metadata_not_visible
+      - visual_theme_does_not_by_itself_establish_who_created_or_first_posted_the_image
+  - id: user-supplied-fundraiser-screenshot-2026-08-17
+    class: direct_screenshot_observation
+    supports:
+      - fundraiser_screenshot_shows_an_anonymous_1488_dollar_donation_and_a_message_using_the_14_words
+    limitations:
+      - screenshot_does_not_visibly_establish_WLM_control_or_affiliation
+      - donor_identity_is_not_known
+      - fundraiser_platform_and_date_are_not_visible_in_the_crop
+      - preserve_as_adjacent_extremist_financial_signal_not_as_WLM_financing_proof
+  - id: unum-extremism-watch-wlm-profile
+    class: internal_research_profile_with_primary_document_lineage
+    repository: xXGreyEyedBeastXx/UNUM-Extremism-Watch
+    path: groups/white-lives-matter-2021/PROFILE.yaml
+    supports:
+      - explicit_99_percent_plus_White_demographic_objective
+      - White_Nationalist_worldview_as_ideological_endpoint
+      - mainstream_family_appeal_and_public_normalization_strategy
+      - public_facing_avoidance_of_overtly_polarizing_extremist_symbols
+      - approachable_activism_as_doorway_toward_White_Nationalist_worldview
+      - ideological_overlap_with_fascist_neo_Nazi_and_white_nationalist_ecosystem_without_proving_organizational_identity
+  - id: community-church-v-penny-order-2024
+    class: federal_court_order_recounting_pleaded_allegations
+    url: https://law.justia.com/cases/federal/district-courts/ohio/ohndce/1%3A2024cv00642/305503/31/
+    supports:
+      - court_recounts_complaint_allegation_that_national_WLM_organization_goal_includes_99_percent_White_Land
+      - court_recounts_allegations_of_real_life_activism_requirement_and_WLM_Ohio_alignment_with_national_agenda
+    limitation: >-
+      The organizational propositions appear in the court's discussion of complaint allegations at the motion-to-dismiss stage;
+      this is not a final adjudication that every pleaded factual allegation is true.
+  - id: adl-white-lives-matter-backgrounder
+    class: specialist_extremism_monitor
+    url: https://www.adl.org/resources/backgrounder/white-lives-matter
+    supports:
+      - WLM_network_described_as_white_supremacist
+      - eventual_formation_of_white_ethnostates_in_North_America_Europe_and_Australia
+      - raising_white_racial_consciousness
+      - recruitment_efforts_as_part_of_movement_activity
+    limitation: specialist_monitor_assessment_not_criminal_adjudication
+excluded_user_upload:
+  - private_medical_or_appointment_text_screenshot_was_unrelated_to_extremism_research_and_was_not_used_or_archived_in_this_source_bundle
+locks:
+  - movement_level_objective != individual_membership
+  - recruitment_strategy != proof_of_successful_recruitment_of_a_specific_person
+  - white_ethnostate_objective != organizational_identity_with_every_other_white_supremacist_group
+  - court_recounting_of_pleaded_allegations != final_fact_finding
+  - Telegram_search_result != verified_offline_chapter_activity
+  - 1488_fundraiser_message != WLM_financing_without_additional_attribution
+  - high_level_recruitment_analysis_is_preserved_but_tactical_extremist_instructions_are_not

@@ -1,0 +1,57 @@
+schema: unum-lattice-news/node/v0.1
+id: defense-procurement-and-shareholder-return
+title: Defense procurement and shareholder return
+family: analysis_framework
+subtype: public_procurement_and_capital_return_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Traces public defense appropriations and procurement through contractor revenue, operating results, capital
+    allocation, and ownership return while keeping the purchase of real goods and services separate from profit and
+    keeping weapon-specific human harm separate from the contractor's general revenue dependence.
+  posture: evidence_bound
+current_case:
+  institution: Lockheed_Martin
+  observed:
+    - 2025_sales_75_billion
+    - 72_percent_of_2025_sales_from_US_government
+    - 2025_net_earnings_5_017_billion
+    - 2025_share_repurchases_3_billion
+    - 2025_dividends_declared_3_126_billion
+    - lobbying_filings_cover_defense_authorization_appropriations_and_named_procurement_programs
+core_trace:
+  - taxpayer_appropriation
+  - agency_or_foreign_military_sales_procurement
+  - contract_obligation_and_delivery
+  - contractor_revenue
+  - costs_and_operating_income
+  - net_earnings_and_cash_flow
+  - dividends_repurchases_debt_investment_or_retained_capacity
+  - ownership_distribution
+  - lobbying_or_policy_advocacy_on_relevant_programs
+  - weapon_or_system_specific_deployment_if_harm_is_claimed
+required_discriminators:
+  - whether_contract_amount_is_ceiling_obligation_or_payment
+  - public_value_and_delivered_capability
+  - competitive_or_sole_source_procurement
+  - program_specific_margin_if_recoverable
+  - lobbying_period_and_issue
+  - deployment_transfer_and_affected_population_for_harm_claims
+locks:
+  - public_contract_payment != profit
+  - public_revenue != dividend_or_buyback_dollar_for_dollar
+  - lobbying != policy_authorship_or_corruption
+  - defense_capability_can_have_legitimate_defensive_value
+  - contractor_revenue_dependence_does_not_establish_weapon_specific_harm
+  - human_harm_requires_a_separate_deployment_transfer_or_use_chain
+source_bundle:
+  - source-proof-chain-closure-2026-08-17
+relations:
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+  - type: EXTENDS
+    target: lobbying-beneficiary-overlap-without-causation
+  - type: EXTENDS
+    target: whole-circuit-corporate-gain-accounting

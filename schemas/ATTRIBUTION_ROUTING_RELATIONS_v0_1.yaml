@@ -1,0 +1,101 @@
+schema: unum-lattice-news/relation-vocabulary/v0.1
+id: attribution-routing-relations-v0-1
+status: active_review
+updated: 2026-08-16
+purpose: >-
+  Provide typed relation names for tracing pressure, attribution, message funding,
+  amplification, mobilization, policy response, beneficiary gain, and correction without
+  collapsing those stages into a single accusation.
+
+relations:
+  EXPERIENCES_PRESSURE_FROM:
+    requires:
+      - affected_participant_or_population
+      - pressure_measure_or_bounded_description
+      - evidence
+  ATTRIBUTES_PRESSURE_TO:
+    requires:
+      - attributing_actor_or_population
+      - attributed_target
+      - evidence_of_belief_or_statement
+  ASSERTS_CAUSE_IS:
+    requires:
+      - claimant
+      - causal_target_or_proposition
+      - recoverable_statement
+  TARGETS_AS_CAUSE:
+    requires:
+      - messenger_or_campaign
+      - target
+      - evidence_of_causal_or_blame_frame
+  FUNDS_MESSAGE_INFRASTRUCTURE:
+    requires:
+      - funder
+      - recipient_or_network
+      - recoverable_financial_trace
+    does_not_establish:
+      - message_control
+      - coordination
+      - persuasion
+      - policy_control
+  AMPLIFIES_FRAME:
+    requires:
+      - amplifier
+      - frame
+      - distribution_or_repetition_evidence
+  TRIGGERS_OR_ACTIVATES_STATUS_THREAT:
+    requires:
+      - population
+      - stimulus_or_context
+      - research_or_observational_support
+  MOBILIZES_RESPONSE:
+    requires:
+      - frame_or_pressure
+      - response
+      - evidence_linking_exposure_or_belief_to_response
+  SUPPORTS_POLICY_RESPONSE:
+    requires:
+      - actor_or_population
+      - policy
+      - evidence_of_support
+  PRODUCES_POLICY_TRANSFORM:
+    requires:
+      - institution_or_actor
+      - policy_or_action
+      - evidence_of_causal_authority
+  BENEFITS_FROM_TRANSFORM:
+    requires:
+      - beneficiary
+      - transform
+      - measured_or_bounded_gain
+  BEARS_LOSS_FROM_TRANSFORM:
+    requires:
+      - affected_participant_or_population
+      - transform
+      - measured_or_bounded_loss
+  RETURNS_GAIN_OR_POWER_TO:
+    requires:
+      - transform
+      - beneficiary
+      - evidenced_return_path
+  EXTERNALIZES_COST_TO:
+    requires:
+      - actor_or_system
+      - affected_participant_or_population
+      - cost_path
+  CONTRADICTS_ATTRIBUTION:
+    requires:
+      - source_or_evidence
+      - attributed_claim
+      - explanation_of_conflict
+  NARROWS_ATTRIBUTION:
+    requires:
+      - source_or_evidence
+      - attributed_claim
+      - surviving_bounded_claim
+
+locks:
+  - Relation names classify evidenced crossings; they do not supply evidence themselves.
+  - A chain is only as strong as its weakest consequential edge.
+  - Missing intermediate edges remain explicit rather than inferred for narrative completeness.
+  - Funding, amplification, persuasion, voting, policy production, and beneficiary gain are separate relations.

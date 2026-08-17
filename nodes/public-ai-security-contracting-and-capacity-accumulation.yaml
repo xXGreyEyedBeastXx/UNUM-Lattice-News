@@ -1,0 +1,50 @@
+schema: unum-lattice-news/node/v0.1
+id: public-ai-security-contracting-and-capacity-accumulation
+title: Public AI/security contracting and capacity accumulation
+family: analysis_framework
+subtype: public_private_security_capacity_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for public spending on private data, analytics, AI, surveillance, and military software
+    where taxpayer-funded contracts create private revenue while simultaneously increasing government information,
+    targeting, logistics, enforcement, or warfighting capacity.
+  posture: evidence_bound
+current_evidence:
+  - Palantir_reports_4_475_billion_total_2025_revenue_with_54_percent_from_government_customers.
+  - Palantir_reports_1_9_billion_2025_revenue_from_US_government_customers.
+  - Palantir_reports_1_576_billion_2025_government_segment_contribution_on_2_402_billion_government_revenue.
+  - Army_2025_enterprise_agreement_consolidates_75_contracts_and_allows_purchases_over_up_to_10_years_subject_to_a_10_billion_cap.
+  - Army_explicitly_states_10_billion_is_a_maximum_potential_value_not_an_obligation_or_commitment.
+  - DOD_awarded_a_795_million_2025_modification_for_Maven_Smart_System_software_licenses.
+required_trace:
+  - public_mission_and_legal_authority
+  - contract_and_obligation
+  - software_or_data_capability
+  - data_sources_and_population_affected
+  - human_decision_and_accountability_layer
+  - private_revenue_and_margin
+  - resulting_public_coercive_or_operational_capacity
+  - civil_liberty_or_safety_effect
+  - procurement_competition_lock_in_and_exit
+  - ownership_and_political_return_if_evidenced
+beneficiary_seats:
+  - contractor_receiving_public_revenue
+  - public_agency_receiving_operational_capacity
+  - owners_receiving_corporate_financial_return_where_traceable
+locks:
+  - government_software_contracting_is_not_harm_by_definition.
+  - military_or_security_capacity_can_have_legitimate_defensive_uses.
+  - contract_ceiling_is_not_obligated_spending.
+  - do_not_connect_a_company_to_a_specific_abusive_enforcement_or_targeting_action_without_use_case_evidence.
+source_bundle:
+  - source-article-readiness-expansion-2026-08-16
+relations:
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+  - type: EXTENDS
+    target: power-capacity-accumulation
+  - type: EXTENDS
+    target: administrative-moral-distance

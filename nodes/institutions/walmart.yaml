@@ -1,0 +1,98 @@
+schema: unum-lattice-news/node/v0.1
+id: walmart
+title: Walmart Inc.
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Large U.S. retailer and employer used as a whole-circuit corporate case node. The node traces
+    ordinary-worker compensation, worker-household public-assistance participation, operating
+    surplus, executive compensation, shareholder distributions, and concentrated ownership in one
+    body so legally distinct carriers do not disappear from the aggregate economic picture.
+  posture: observed
+
+current_evidence:
+  labor_and_public_assistance:
+    observed:
+      - GAO's 2026 update identifies Walmart among large employers with thousands of working adult Medicaid enrollees or SNAP recipients in selected states.
+      - In Georgia, GAO estimated 4,595 nondisabled, nonelderly working adult Medicaid enrollees worked for Walmart in September 2025, the largest employer count in that table.
+      - In Tennessee, GAO estimated 3,513 working adult SNAP recipients worked for Walmart in September 2025, second in the table behind app-based food delivery.
+      - Walmart reports an average U.S. hourly wage of about 18 dollars overall for FYE2026, with pay varying by role and market.
+    limits:
+      - Household eligibility depends on household income, family size, hours, other earners, and program rules as well as one worker's wage.
+      - Selected-state GAO counts are not a national Walmart total.
+      - Medicaid or SNAP paid to a worker household is not a direct payment to Walmart.
+      - Employer-side incidence requires a counterfactual compensation or benefit-cost analysis.
+
+  firm_surplus_and_shareholder_return:
+    observed:
+      - Walmart reported 706.413 billion dollars in fiscal 2026 net sales.
+      - Walmart reported 29.825 billion dollars in fiscal 2026 operating income.
+      - Walmart reported 21.893 billion dollars in fiscal 2026 net income attributable to Walmart.
+      - Walmart paid 7.507 billion dollars in dividends in fiscal 2026.
+      - Walmart spent 8.088 billion dollars purchasing company stock in fiscal 2026.
+      - Walmart therefore returned approximately 15.6 billion dollars through dividends and share repurchases in fiscal 2026 and announced a new 30 billion dollar repurchase authorization in February 2026.
+    limits:
+      - Net income, dividends, buybacks, retained earnings, and equity appreciation are overlapping seats of corporate surplus and must not be added as independent gains.
+      - Buybacks are a use of corporate cash and change share count/per-share economics; they are not a cash payment to every continuing shareholder.
+
+  executive_and_worker_compensation:
+    observed:
+      - Walmart's 2026 proxy reported fiscal 2026 total compensation of 29,240,930 dollars for then-CEO Doug McMillon.
+      - The proxy estimated fiscal 2026 total compensation of 30,520 dollars for Walmart's median associate using the SEC pay-ratio methodology.
+      - Walmart reported the resulting CEO-to-median-associate compensation ratio as 958 to 1.
+    limits:
+      - The median-associate figure is proxy total compensation, not the same metric as average hourly wage.
+      - Doug McMillon retired as CEO effective January 31, 2026; John Furner became CEO February 1, 2026.
+      - A pay ratio is a distributional fact, not by itself proof that executive compensation caused worker program eligibility.
+
+  ownership:
+    observed:
+      - Walmart's 2026 proxy states that approximately 44 percent of Walmart shares were held by entities related to founder Sam Walton's family as of April 10, 2026.
+      - Walton Enterprises reported 44.11 percent beneficial ownership/voting power when the shares held by Walton Family Holdings Trust under irrevocable proxy are included.
+      - Walton Family Holdings Trust separately held 513,524,456 shares, 6.44 percent of outstanding shares, with dispositive power; those shares are included within Walton Enterprises' 44.11 percent voting/beneficial figure and are not additive.
+    limits:
+      - April 10, 2026 ownership does not prove identical ownership on each fiscal 2026 dividend record date.
+      - Ownership creates an economic seat for dividends and equity-value changes but does not establish authorship of every corporate policy.
+
+whole_circuit_questions:
+  - What share of worker-household public support is attributable to compensation structure versus household circumstances unrelated to Walmart?
+  - What share of SNAP benefits used by Walmart-employed households is redeemed at Walmart stores?
+  - What Medicaid or other public healthcare spending connected to Walmart-employed households returns to Walmart pharmacies or health businesses versus unrelated providers?
+  - How much of fiscal 2026 shareholder distributions accrued to concentrated family, institutional, executive, employee, and dispersed ownership seats on the relevant record dates?
+  - How do ordinary-worker compensation, public supplementation, executive compensation, firm surplus, and shareholder return change together over time?
+
+relations:
+  - type: TESTED_THROUGH
+    target: whole-circuit-corporate-gain-accounting
+    posture: observed
+  - type: TESTED_THROUGH
+    target: public-assistance-labor-cost-supplementation
+    posture: observed
+  - type: PARTICIPATES_IN
+    target: labor-market-power-and-wage-extraction
+    posture: path_forward
+  - type: OWNED_BY
+    target: walton-enterprises
+    posture: observed
+  - type: OWNED_BY
+    target: walton-family-holdings-trust
+    posture: observed
+
+sources:
+  - source-gao-working-medicaid-snap-employers-2026
+  - source-walmart-people-fye2026
+  - source-walmart-fy2026-10k
+  - source-walmart-2026-proxy
+
+locks:
+  - Decompose the carriers, then recompose the corporate circuit.
+  - Benefit recipient != terminal economic beneficiary.
+  - Workers receiving Medicaid or SNAP are the legal beneficiaries; do not relabel the benefit itself as a direct payment to Walmart.
+  - Public assistance may still create an indirect employer-side economic benefit; do not erase that possibility merely because the legal recipient is the worker.
+  - Executive compensation, worker compensation, public assistance, net income, dividends, buybacks, and ownership concentration must remain jointly visible even though they are different accounting categories.
+  - A recurring employer-beneficiary association is evidence for labor-cost incidence investigation, not automatic proof of wage theft or illegality.
+  - Do not double count Walton Family Holdings Trust shares inside and outside Walton Enterprises' beneficial/voting total.

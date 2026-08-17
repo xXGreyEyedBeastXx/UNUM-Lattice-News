@@ -1,0 +1,36 @@
+schema: unum-lattice-news/node/v0.1
+id: us-means-tested-benefit-recipient-households
+title: U.S. households receiving means-tested benefits
+family: population_community
+subtype: population
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable population node for households receiving one or more means-tested public
+    benefits. It is distinct from low-income households as a whole because eligibility,
+    participation, household composition, program type, and benefit level vary.
+  posture: observed
+hierarchy_class: affected_population
+current_evidence:
+  observed:
+    - CBO's 2022 household-income distribution analysis finds means-tested transfers concentrated among households in the lower income quintiles.
+  unknowns:
+    - Program-specific recipient counts, benefit levels, work status, disability status, age, family composition, and local costs for each investigation.
+relations:
+  - type: DISTINCT_FROM
+    target: us-low-income-households
+    posture: observed
+  - type: TESTED_THROUGH
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: TESTED_THROUGH
+    target: attribution-routing-and-grievance-redirection
+    posture: working_framework
+locks:
+  - Benefit recipient != unemployed.
+  - Benefit recipient != nonworker.
+  - Benefit recipient != low-income household in every case.
+  - Benefit receipt != extraction, fraud, dependency as identity, or culpability.
+  - Program cost != net household or macroeconomic cost without the relevant accounting frame.

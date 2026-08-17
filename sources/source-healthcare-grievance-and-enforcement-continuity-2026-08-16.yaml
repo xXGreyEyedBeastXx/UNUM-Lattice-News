@@ -1,0 +1,127 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-healthcare-grievance-and-enforcement-continuity-2026-08-16
+title: U.S. health-insurance grievance, Mangione reaction, and enforcement continuity baseline
+accessed: 2026-08-16
+purpose: >-
+  Preserve evidence needed to distinguish widespread health-insurance grievance, Luigi Mangione's
+  own stated/established motive and target choice, public reaction to Brian Thompson's killing,
+  and the continuity or disruption of federal healthcare enforcement after the 2025 presidential
+  transition. The bundle does not treat grievance as justification for violence and does not treat
+  an investigation as proof of wrongdoing.
+sources:
+  - id: source-kff-claims-denials-2024-2026
+    publisher: KFF
+    source_class: independent_health_policy_analysis_using_cms_data_and_polling
+    title: Claims Denials and Appeals in ACA Marketplace Plans in 2024
+    date: 2026-03-24
+    url: https://www.kff.org/patient-consumer-protections/claims-denials-and-appeals-in-aca-marketplace-plans-in-2024/
+    supports:
+      - HealthCare.gov insurers denied about 20 percent of claims in 2024, including about 19 percent of in-network claims.
+      - 66 percent of insured adults in a January 2026 KFF poll called insurer delays and denials a major problem.
+      - 33 percent of insured adults said an insurer had denied coverage for a prescribed service or medication in the prior two years.
+    limitations:
+      - Marketplace claims data do not represent every insurance market segment.
+      - A denied claim can be administratively proper or improper; denial rate alone is not a harm verdict.
+
+  - id: source-ap-norc-thompson-killing-reaction-2024
+    publisher: Associated Press / NORC
+    source_class: public_opinion_poll_reporting
+    title: Most Americans blame insurance profits and denials alongside the killer in UHC CEO death
+    date: 2024-12
+    url: https://apnews.com/article/b53fde08980d160ee93fd08b1664108d
+    supports:
+      - Roughly eight in ten respondents assigned responsibility to the shooter.
+      - Nearly seven in ten also assigned at least some responsibility to health-insurance coverage denials and insurer profits.
+      - Wealth and income inequality were also identified by many respondents as contributing context.
+    limitations:
+      - Assigning social responsibility is not endorsement of homicide.
+      - Polling does not establish causation for any individual supporter or critic.
+
+  - id: source-ap-mangione-guilty-plea-2026
+    publisher: Associated Press
+    source_class: current_legal_reporting
+    title: Luigi Mangione pleads guilty to federal stalking charges in killing of UnitedHealthcare CEO
+    date: 2026-08-14
+    url: https://apnews.com/article/3b8a5bb41589c9f5f4775dba2beea66f
+    supports:
+      - Mangione admitted stalking and killing Brian Thompson.
+      - He described long-term physical pain and frustration with the U.S. healthcare system as part of his motivation.
+      - Mangione was not a UnitedHealthcare customer.
+    limitations:
+      - Motive statements do not justify the killing.
+      - His grievance with the health-insurance system is not evidence that UnitedHealthcare personally denied his care.
+
+  - id: source-ftc-pbm-case-timeline-2025-2026
+    publisher: Federal Trade Commission
+    source_class: primary_government_case_record
+    title: Caremark Rx, Zinc Health Services, et al., In the Matter of (Insulin)
+    date: 2026-07-14
+    url: https://www.ftc.gov/legal-library/browse/cases-proceedings/221-0114-caremark-rx-zinc-health-services-et-al-matter-insulin
+    supports:
+      - FTC stayed the PBM administrative adjudication on April 1, 2025.
+      - FTC later moved to resume/progress the matter.
+      - Express Scripts reached a proposed/announced settlement in February 2026.
+      - Caremark reached a settlement in July 2026.
+      - Optum's matter was withdrawn from adjudication to consider a proposed consent agreement.
+    limitations:
+      - Case posture changes do not by themselves identify political motive.
+      - Settlement is not identical to full litigation on the merits.
+
+  - id: source-wsj-ftc-pbm-quorum-disruption-2025
+    publisher: Wall Street Journal
+    source_class: current_investigative_reporting
+    title: FTC's Case Against Drug Managers on Hold After Commissioners Fired
+    date: 2025-04-02
+    url: https://www.wsj.com/health/healthcare/trumps-move-to-dump-ftcs-democratic-members-leaves-insulin-case-in-limbo-a1241846
+    supports:
+      - The PBM case pause followed President Trump's firing of two Democratic FTC commissioners.
+      - The remaining two commissioners were recused from the case, leaving no participating commissioners to oversee it at that point.
+    limitations:
+      - Secondary reporting should be read alongside the FTC's own docket.
+      - The later case history shows the disruption was not permanent.
+
+  - id: source-unitedhealth-sec-doj-2025
+    publisher: U.S. Securities and Exchange Commission / UnitedHealth Group filing
+    source_class: primary_corporate_filing
+    title: UnitedHealth Group current report regarding Department of Justice requests
+    date: 2025-07-23
+    url: https://www.sec.gov/Archives/edgar/data/731766/000073176625000224/unh-20250723.htm
+    supports:
+      - UnitedHealth said it had begun complying with formal criminal and civil requests from DOJ concerning aspects of its Medicare participation.
+    limitations:
+      - An investigation is not proof of wrongdoing.
+      - Filing does not disclose full scope or likely outcome.
+
+  - id: source-unitedhealth-10q-2026q1
+    publisher: U.S. Securities and Exchange Commission / UnitedHealth Group filing
+    source_class: primary_corporate_filing
+    title: UnitedHealth Group Form 10-Q for quarter ended March 31, 2026
+    date: 2026-03-31
+    url: https://www.sec.gov/Archives/edgar/data/731766/000073176626000127/unh-20260331.htm
+    supports:
+      - UnitedHealth continued to disclose governmental investigations, audits, subpoenas, and information requests.
+      - The company stated certain businesses were under review for compliance with Medicare risk-adjustment coding requirements.
+    limitations:
+      - Broad disclosure includes multiple agencies and matters and does not prove any specific allegation.
+
+  - id: source-doj-unitedhealth-amedisys-settlement-2025
+    publisher: U.S. Department of Justice Antitrust Division
+    source_class: primary_government_enforcement
+    title: Justice Department Requires Broad Divestitures to Resolve Challenge to UnitedHealth's Acquisition of Amedisys
+    date: 2025-08-07
+    url: https://www.justice.gov/opa/pr/justice-department-requires-broad-divestitures-resolve-challenge-unitedhealths-acquisition
+    supports:
+      - DOJ resolved the Amedisys merger challenge through a settlement requiring divestiture of at least 164 home-health and hospice locations.
+      - The settlement allowed the acquisition to proceed subject to remedies rather than continuing the original attempt to block it entirely.
+    limitations:
+      - Settlement may be characterized as weaker or stronger than continued litigation only with a specified benchmark.
+      - It was not a complete abandonment of enforcement.
+locks:
+  - Grievance != justification for violence.
+  - Public sympathy or system blame != support for homicide.
+  - Mangione's healthcare grievance != personal UnitedHealthcare denial.
+  - Investigation != guilt.
+  - Pause != termination.
+  - Settlement != abandonment.
+  - Continued investigation != proof of vigorous or adequate enforcement.
+  - Regulatory disruption and regulatory continuity may coexist across different cases.

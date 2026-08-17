@@ -1,0 +1,150 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-complaint-beneficiary-matching-2026-08-16
+title: Complaint-to-beneficiary matching sources — labor, equity, anti-fascism, corporate support, immigration
+as_of: 2026-08-16
+status: active
+purpose: >-
+  Support case-level matching between recurring worker/progressive complaints, ideological threat labels,
+  policy or enforcement changes, and the material or institutional seats that retain revenue, ownership,
+  bargaining power, tax advantage, procurement access, or coercive capacity.
+sources:
+  - id: aflcio-resolution-4-2026
+    type: representative_labor_position
+    url: https://aflcio.org/resolutions/resolution-4-we-refuse-be-divided
+    supports:
+      - immigrant_scapegoating_complaint
+      - claim_that_enforcement_diverts_resources_from_labor_enforcement
+      - concern_about_private_profit_from_mass_deportation
+    lock: complaint_source_not_independent_proof_of_every_claim
+  - id: aflcio-resolution-6-2026
+    type: representative_labor_position
+    url: https://aflcio.org/resolutions/resolution-6-we-want-decent-living-all
+    supports:
+      - wage_affordability_complaint
+      - healthcare_monopoly_private_equity_complaint
+      - labor_enforcement_underfunding_complaint
+    lock: complaint_source_not_independent_proof_of_every_claim
+  - id: dol-olms-employer-consultant-reporting
+    type: primary_government
+    url: https://www.dol.gov/agencies/olms/compliance-assistance/employer-consultant-reporting
+    supports:
+      - employer_consultant_persuader_arrangements_exist
+      - reports_cover_expenditures_or_arrangements_to_influence_collective_bargaining_choices
+  - id: dol-olms-annual-report-2025
+    type: primary_government
+    url: https://www.dol.gov/agencies/olms/about/annual-reports/2025
+    supports:
+      - 1364_combined_employer_and_consultant_persuader_reports_in_fy2025
+  - id: epi-union-avoidance-2026
+    type: secondary_research
+    url: https://www.epi.org/publication/u-s-employers-spend-more-than-1-5-billion-annually-on-union-avoidance/
+    supports:
+      - estimated_1_7_billion_annual_union_avoidance_spending
+      - amazon_2025_reported_consultant_spending_26_640_897
+      - specialized_union_avoidance_law_and_consulting_market
+    lock: total_annual_estimate_is_model_based_and_broader_than_directly_reported_forms
+  - id: whitehouse-antifa-order-2025
+    type: primary_government
+    url: https://www.whitehouse.gov/presidential-actions/2025/09/designating-antifa-as-a-domestic-terrorist-organization/
+    supports:
+      - executive_antifa_domestic_terrorist_designation
+      - direction_to_investigate_disrupt_and_dismantle_illegal_operations_and_funding
+  - id: whitehouse-domestic-terrorism-memo-2025
+    type: primary_government
+    url: https://www.whitehouse.gov/presidential-actions/2025/09/countering-domestic-terrorism-and-organized-political-violence/
+    supports:
+      - self_described_anti_fascism_used_as_umbrella_frame
+      - anti_capitalism_named_as_common_thread
+      - network_disruption_and_grant_priority_expansion
+    lock: named_ideological_thread_does_not_establish_criminality_of_nonviolent_belief_or_association
+  - id: crs-domestic-terrorism-r47885
+    type: primary_legislative_research
+    url: https://www.congress.gov/crs-product/R47885
+    supports:
+      - federal_law_defines_domestic_terrorism
+      - no_general_federal_domestic_terrorism_charging_offense
+      - no_ordinary_federal_FTO_style_domestic_group_designation_process
+    lock: executive_policy_can_use_existing_authorities_even_without_FTO_style_statute
+  - id: whitehouse-fy2026-skinny-budget
+    type: primary_government
+    url: https://www.whitehouse.gov/briefings-statements/2025/05/the-white-house-office-of-management-and-budget-releases-the-presidents-fiscal-year-2026-skinny-budget/
+    supports:
+      - official_woke_marxist_agenda_label_applied_to_equity_related_grants
+  - id: whitehouse-eo14173
+    type: primary_government
+    url: https://www.whitehouse.gov/presidential-actions/2025/01/ending-illegal-discrimination-and-restoring-merit-based-opportunity/
+    supports:
+      - revocation_of_eo11246
+      - end_of_race_sex_affirmative_action_requirements_under_that_order_for_federal_contractors
+  - id: dol-ofccp-2026-status
+    type: primary_government
+    url: https://www.dol.gov/index.php/agencies/ofccp
+    supports:
+      - ofccp_ceased_investigative_and_enforcement_activity_under_eo11246
+      - pending_compliance_reviews_administratively_closed
+      - disability_and_veteran_obligations_remain_distinct
+  - id: whitehouse-eo14398-2026
+    type: primary_government
+    url: https://www.whitehouse.gov/presidential-actions/2026/03/addressing-dei-discrimination-by-federal-contractors/
+    supports:
+      - new_anti_dei_contract_clause
+      - termination_suspension_debarment_and_false_claims_enforcement_tools
+    lock: this_is_new_regulatory_coercion_not_simple_deregulation
+  - id: gao-fy2025-contracting
+    type: primary_government
+    url: https://www.gao.gov/blog/snapshot-government-wide-contracting-fy-2025-interactive-dashboard
+    supports:
+      - about_793_billion_federal_contract_obligations_fy2025
+    lock: contract_obligation_is_not_welfare_or_owner_gain_by_definition
+  - id: gao-federal-program-inventory-2026
+    type: primary_government
+    url: https://files.gao.gov/reports/GAO-26-107551/index.html
+    supports:
+      - 2025_inventory_included_174_tax_expenditures_about_1_8_trillion_estimated_outlays_and_forgone_revenue
+      - tax_expenditures_have_same_net_budget_effect_as_spending_programs
+    lock: tax_expenditures_include_household_and_business_provisions_and_cannot_be_summed_naively_for_repeal_estimates
+  - id: treasury-tax-expenditures-fy2026
+    type: primary_government
+    url: https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures
+    supports:
+      - tax_expenditures_are_alternatives_to_spending_or_regulation
+      - major_fy2026_examples_and_values
+  - id: cbo-pl119-21-distribution
+    type: primary_government
+    url: https://www.cbo.gov/interactive/2025-reconciliation-act
+    supports:
+      - lowest_decile_average_annual_resource_change_minus_1214_2026_2034
+      - highest_decile_average_annual_resource_change_plus_13622_2026_2034
+      - highest_decile_63_9_percent_of_total_modeled_net_change
+    lock: modeled_household_resource_effect_not_literal_cash_transfer
+  - id: itep-zero-tax-corporations-2026
+    type: independent_tax_research
+    url: https://itep.org/88-profitable-corporations-paid-zero-income-tax-in-2025/
+    supports:
+      - at_least_88_large_profitable_corporations_reported_zero_current_federal_income_tax_expense_for_2025
+      - combined_us_pretax_income_over_105_billion
+      - accelerated_depreciation_and_research_expensing_as_major_reported_tax_reduction_mechanisms
+    lock: based_on_financial_statement_current_tax_expense_not_complete_cash_tax_history
+  - id: corecivic-2025-10k
+    type: primary_corporate_filing
+    url: https://www.sec.gov/Archives/edgar/data/1070985/000119312526060669/cxw-20251231.htm
+    supports:
+      - ice_35_percent_of_2025_total_revenue
+      - ice_revenue_770_7_million_2025
+  - id: geo-2025-10k
+    type: primary_corporate_filing
+    url: https://www.sec.gov/Archives/edgar/data/923796/000119312526071747/geo-20251231.htm
+    supports:
+      - ice_47_6_percent_of_2025_consolidated_revenue
+  - id: geo-q4-2025-results
+    type: primary_corporate_filing
+    url: https://www.sec.gov/Archives/edgar/data/923796/000119312526047556/d88889dex991.htm
+    supports:
+      - geo_q4_2025_share_repurchase_49_million
+    lock: do_not_assign_specific_ice_dollar_to_specific_buyback_dollar
+research_gaps:
+  - normalize_company_level_union_avoidance_filings_for_top_employers
+  - trace_lobbying_and_campaign_finance_by_zero_tax_and_major_contract_recipient_companies
+  - trace_security_surveillance_contractors_benefiting_from_domestic_terrorism_priority_expansion
+  - quantify_race_sex_affirmative_action_compliance_changes_for_federal_contractors_before_and_after_eo14173
+  - expand_public_support_inventory_into_tax_contract_credit_guarantee_insurance_and_regulatory_advantage_by_company

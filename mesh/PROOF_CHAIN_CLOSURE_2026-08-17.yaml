@@ -1,0 +1,215 @@
+schema: unum-lattice-news/mesh/v0.1
+id: proof-chain-closure-2026-08-17
+title: Proof-chain closure — who pays, who controls, who gains, who can correct
+status: active
+as_of: 2026-08-17
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - article-ready-evidence-expansion-3-2026-08-16
+  - complaint-beneficiary-matching-2026-08-16
+  - unum-harm-mesh-2026-08-16
+source_bundle:
+  - source-proof-chain-closure-2026-08-17
+purpose: >-
+  Close the remaining article-level gaps by making each consequential arrow explicit. A hostile reader should be able
+  to dispute a named edge, source, scope, counterfactual, or attribution grade rather than dismissing the article as a
+  political conclusion. This mesh therefore separates payment, control, harm, gain, influence, and redress instead of
+  inferring one from another.
+
+proof_rule:
+  chain: source_of_value_or_need -> gatekeeper_or_controller -> operative_term -> harm_or_constraint -> gain_or_capacity -> terminal_or_reseated_beneficiary -> influence_or_reproduction -> redress
+  article_burden: every_material_arrow_requires_an_evidence_anchor_or_an_explicit_Pending_state
+
+case_chains:
+  immigration_detention_GEO:
+    status: HIGH_CHAIN_COMPLETENESS
+    value_source:
+      observed: taxpayer_funded_ICE_contracting
+    gatekeeper_or_controller:
+      observed: ICE_detention_and_supervision_system_plus_private_contractor
+    gain:
+      observed:
+        - ICE_47_6_percent_of_GEO_2025_consolidated_revenue
+        - GEO_2025_total_revenue_2_631549_billion
+    terminal_capital_allocation:
+      observed:
+        - GEO_repurchased_about_91_million_of_common_stock_in_2025
+    influence:
+      observed:
+        - GEO_reported_340000_Q4_2025_lobbying_expense
+        - disclosed_topics_include_ICE_immigration_enforcement_alternatives_to_detention_and_homeland_security_appropriations
+        - disclosed_contacts_include_ICE_DHS_OMB_and_Congress
+      lock: lobbying_does_not_prove_policy_control_or_quid_pro_quo
+    harm_or_constraint:
+      supported_elsewhere:
+        - detention_and_deportation_are_state_coercive_mechanisms
+        - detainee_labor_litigation_and_low_power_constraint_surfaces_exist
+      lock: do_not_attribute_every_detention_harm_to_GEO_without_facility_or_contract_specific_evidence
+    article_claim_now: >-
+      A private contractor can be heavily dependent on immigration-enforcement revenue, lobby directly on that funding
+      and service environment, and return capital to shareholders. The evidence establishes overlap and incentive; it
+      does not by itself establish that the company authored detention policy.
+
+  immigration_detention_CoreCivic:
+    status: HIGH_CHAIN_COMPLETENESS
+    value_source:
+      observed: taxpayer_funded_federal_and_state_corrections_and_detention_contracts
+    gain:
+      observed:
+        - ICE_35_percent_of_CoreCivic_2025_total_revenue
+        - total_2025_revenue_2_211182_billion
+    terminal_capital_allocation:
+      observed:
+        - 2025_share_repurchases_218_4_million
+    influence:
+      observed:
+        - lobbying_on_ICE_BOP_USMS_and_detention_funding
+        - FY26_DHS_appropriations_and_HR1_named_in_2025_filings
+      lock: company_and_lobbyists_state_they_do_not_lobby_on_the_basis_for_individual_detention
+    article_claim_now: >-
+      The contractor receives material revenue from detention, advocates on detention-funding and contracting surfaces,
+      and directs substantial cash to stock repurchases. Policy authorship remains a separate unproven edge.
+
+  public_healthcare_UnitedHealth:
+    status: HIGH_CHAIN_COMPLETENESS_WITH_HARM_ATTRIBUTION_LOCK
+    value_source:
+      observed:
+        - CMS_premiums_44_percent_of_2025_consolidated_revenue
+        - 8_4_million_Medicare_Advantage_members_at_2025_year_end
+    control_surfaces:
+      observed:
+        - insurance_plan_design_and_networks
+        - prior_authorization
+        - Medicare_Advantage_risk_based_payment
+        - PBM_and_pharmacy_functions_through_Optum
+    terminal_capital_allocation:
+      observed:
+        - 2025_cash_dividends_7_916_billion
+        - 2025_common_share_repurchases_about_5_5_billion
+    influence:
+      observed:
+        - 2025_in_house_LDA_expense_11_74_million_using_superseding_Q1_amendment
+        - disclosed_topics_include_Medicare_Advantage_prior_authorization_PBM_and_drug_pricing_reforms
+        - disclosed_contacts_include_CMS_Congress_and_White_House
+      lock: lobbying_does_not_prove_a_specific_CMS_rate_or_rule_was_bought_or_controlled
+    harm_or_oversight:
+      observed:
+        - congressional_oversight_review_of_UnitedHealth_Medicare_Advantage_risk_adjustment_practices
+      system_level_elsewhere:
+        - HHS_OIG_has_documented_inappropriate_or_avoidable_denial_mechanisms_in_Medicare_Advantage
+      lock: system_level_denial_findings_are_not_UnitedHealth_specific_without_actor_level_evidence
+    article_claim_now: >-
+      A company whose revenue depends heavily on public Medicare payments spends heavily to lobby on Medicare Advantage
+      and related rules while returning billions to shareholders. That is a documented political-economy circuit even
+      before any stronger claim about improper influence or denial causation is made.
+
+  defense_procurement_Lockheed:
+    status: HIGH_FOR_PUBLIC_MONEY_TO_OWNER_RETURN_MEDIUM_FOR_HARM
+    value_source:
+      observed:
+        - 72_percent_of_75_billion_2025_sales_from_US_government
+    terminal_capital_allocation:
+      observed:
+        - 2025_net_earnings_5_017_billion
+        - 2025_share_repurchases_3_billion
+        - 2025_dividends_declared_3_126_billion
+    influence:
+      observed:
+        - Lockheed_lobbies_on_defense_authorization_and_appropriations
+        - disclosed_program_topics_include_aircraft_munitions_missiles_shipbuilding_space_and_other_procurement
+      lock: lobbying_does_not_make_a_defense_program_unnecessary_or_corrupt_by_definition
+    harm_or_constraint:
+      state: PATH_FORWARD
+      required: weapon_or_program -> deployment_or_transfer -> affected_population -> actor_specific_harm
+    article_claim_now: >-
+      Public defense procurement is a direct revenue source for a major private contractor that also lobbies on the
+      appropriations and programs generating that market and returns billions to shareholders. Human-harm attribution
+      must be attached only through weapon- or program-specific deployment evidence.
+
+  labor_redress_NLRB_quorum:
+    status: HIGH_FOR_INSTITUTIONAL_CAPACITY_CHANGE
+    redress_channel:
+      observed: NLRB_board_level_review_and_adjudication_of_labor_rights
+    disruption:
+      observed:
+        - Wilcox_removed_2025_01_28
+        - Supreme_Court_stayed_lower_court_reinstatement_orders_in_2025
+        - board_composition_records_show_less_than_three_members_until_2026_01_07
+        - NLRB_announced_2026_01_07_that_two_new_members_restored_a_quorum
+    effect:
+      supported_inference: board_lacked_the_three_member_quorum_required_for_full_board_business_during_the_gap
+    limits:
+      - regional_offices_and_delegated_functions_did_not_cease_all_NLRB_activity
+      - legality_of_removal_remains_litigated
+      - restored_quorum_means_this_is_a_historical_capacity_gap_not_a_current_no_quorum_claim
+    article_claim_now: >-
+      A worker-redress institution can remain formally alive while one of its central adjudicative capacities becomes
+      unavailable because the board lacks a statutory quorum. That is a measurable redress failure mode, not a metaphor.
+
+  food_market_power:
+    status: HIGH_FOR_CONCENTRATION_MEDIUM_FOR_ACTOR_SPECIFIC_EXTRACTION
+    observed:
+      - four_largest_beef_packers_handle_85_percent_of_steer_and_heifer_purchases
+      - USDA_reports_recent_evidence_of_reduced_competition_and_lower_cattle_prices
+      - county_level_food_retail_concentration_rose_94_percent_from_1990_to_2019
+    counterevidence:
+      - scale_economies_can_reduce_costs_and_consumer_prices
+      - older_research_found_limited_or_offset_market_power_effects_in_some_periods
+    required_trace:
+      - named_local_or_product_market
+      - supplier_price
+      - processor_or_retail_margin
+      - consumer_price
+      - ownership_return
+      - entry_barriers_and_counterfactual
+    article_claim_now: >-
+      Essential-food markets contain documented high concentration and, in meatpacking, current evidence of reduced
+      competition; concentration alone is not enough to prove price gouging, so actor- and market-specific price traces
+      remain required.
+
+  extremist_taxonomy:
+    status: HIGH_FOR_NAMED_CATEGORIES_WITH_SCOPE_LOCKS
+    observed_source_classifications:
+      - SPLC_designates_Proud_Boys_as_hate_group
+      - SPLC_tracks_KKK_and_neo_Nazi_as_hate_group_families
+      - SPLC_defines_white_nationalist_groups_as_white_supremacist_or_white_separatist_movements
+      - ADL_identifies_White_Lives_Matter_as_white_supremacist_phrase_and_campaign
+    locks:
+      - nationalist_alone_is_too_broad_and_must_not_be_typed_as_hate_group_without_ideological_or_group_evidence
+      - participant_in_a_named_rally_or_channel_is_not_automatically_member_of_every_overlapping_group
+      - monitor_designation_is_not_criminal_liability_or_government_terrorist_designation
+      - conduct_and_membership_need_actor_specific_evidence
+    article_use: >-
+      Preserve exact organization, ideology, participation type, and source classification. Precision prevents an
+      extremist or propagandist from escaping a documented record by pointing to one overbroad label.
+
+cross_sector_recurrence:
+  status: SUPPORTED_STRUCTURAL_PATTERN_NOT_SINGLE_CAUSE
+  recurring_edges:
+    - public_money_or_survival_need_enters
+    - concentrated_gatekeeper_controls_terms_information_or_access
+    - lower_power_party_bears_cost_risk_or_constraint
+    - private_revenue_or_state_capacity_accumulates
+    - terminal_gain_can_reseat_in_buybacks_dividends_asset_value_or_operational_power
+    - beneficiary_or_industry_may_lobby_on_rules_funding_or_enforcement_environment
+    - nonviolent_redress_can_be_costly_restricted_underfunded_or_temporarily_disabled
+  anti_overclaim:
+    - recurrence_does_not_prove_one_central_conspiracy
+    - common_incentive_structure_does_not_prove_coordination
+    - each_chain_must_survive_independent_source_and_counterfactual_review
+
+proof_dossier_gate:
+  required:
+    - exact_claim
+    - every_arrow_named
+    - source_for_each_observed_arrow
+    - posture_for_each_inferred_arrow
+    - terminal_beneficiary_or_explicit_unresolved_endpoint
+    - strongest_counterevidence
+    - policy_influence_kept_separate_from_policy_authorship
+    - redress_status
+    - what_would_change_the_assessment
+    - extremist_or_identity_labels_scoped_to_source_and_actor
+  failure_rule: >-
+    If a critic can truthfully say that the article skipped an essential transformation between source and conclusion,
+    the proof chain is not closed enough for publication.

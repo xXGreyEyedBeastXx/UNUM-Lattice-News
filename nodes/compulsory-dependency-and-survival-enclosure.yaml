@@ -1,0 +1,112 @@
+schema: unum-lattice-news/node/v0.1
+id: compulsory-dependency-and-survival-enclosure
+title: Compulsory dependency and survival enclosure
+family: analysis_framework
+subtype: causal_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for situations in which formal legal freedom coexists with state-backed or
+    institutionally enforced dependence on work, benefits, insurance, housing, food, healthcare,
+    legal status, confinement, or other necessities. The operator does not equate modern regulatory
+    states with chattel slavery. It tests whether survival, liberty, or access to necessities is
+    conditioned on conduct that substantially narrows refusal, exit, bargaining, or self-direction.
+  posture: working_framework
+
+core_invariant:
+  - literal_legal_ownership_is_not_required_for_domination_or_coercive_dependency
+  - formal_liberty_does_not_prove_meaningful_exit
+  - benefit_condition_does_not_become_voluntary_merely_because_the_benefit_is_formally_optional
+  - regulation_does_not_equal_ownership_but_can_participate_in_an_enclosure_when_combined_with_dependency_and_enforcement
+  - private_control_of_necessities_and_state_enforcement_must_be_traced_together_when_they_reinforce_each_other
+
+required_trace:
+  - essential_need_or_liberty_interest
+  - gatekeeper_or_governing_authority
+  - legal_or_private_condition_of_access
+  - enforcement_mechanism
+  - realistic_refusal_or_exit_options
+  - cost_of_noncompliance
+  - labor_money_data_behavior_or_subordination_extracted
+  - public_private_or_state_capacity_gain
+  - downstream_harm_or_loss_of_agency
+  - redress_or_escape_path
+  - whether_dependency_is_reproduced
+
+coercion_seats:
+  - criminal_confinement_and_compelled_labor
+  - benefit_eligibility_conditioned_on_work_or_community_engagement
+  - food_assistance_workfare_or_time_limits
+  - employer_linked_access_to_healthcare_or_other_necessities
+  - licensing_taxation_or_regulatory_dependency
+  - debt_rent_and_housing_dependency
+  - immigration_status_and_work_authorization
+  - compulsory_data_or_identity_systems_when_access_to_necessities_depends_on_compliance
+
+current_us_legal_baseline_2026:
+  federal_health_insurance:
+    state: PARTIAL_CONSTRAINT_WITH_ZERO_FEDERAL_PENALTY
+    note: >-
+      Federal law continues to contain an individual shared-responsibility coverage provision, but the
+      federal shared-responsibility payment has been zero since tax year 2019. Therefore a claim that
+      the federal government currently fines ordinary people simply for lacking health insurance is
+      not supported by the current federal tax rule.
+  medicaid:
+    state: DIRECT_BENEFIT_CONDITION_EXPANDING
+    note: >-
+      Public Law 119-21 requires states, beginning January 1 2027 unless implemented sooner, to condition
+      Medicaid eligibility for many applicable adults on monthly community-engagement requirements.
+      Current CMS materials describe an 80-hour monthly work, education, training, or service threshold.
+  snap:
+    state: DIRECT_BENEFIT_CONDITION_ACTIVE
+    note: >-
+      USDA's 2026 rules require many ABAWD recipients to meet an 80-hour monthly work or work-program
+      requirement, with benefit loss/time limits for noncompliance unless exempt.
+  prison_labor:
+    state: TEXTUAL_CONSTITUTIONAL_EXCEPTION
+    note: >-
+      The Thirteenth Amendment prohibits slavery and involuntary servitude except as punishment for a
+      crime after conviction; Constitution Annotated recognizes that this exception permits compelled
+      labor in that circumstance.
+
+constitutional_boundary:
+  note: >-
+    The Constitution protects enumerated and judicially recognized liberties from government
+    interference, including due-process liberty interests, but it does not create a general right to
+    live wholly outside all government law, taxation, or regulation. The mesh should therefore test
+    each claimed deprivation or condition rather than invent a categorical right that current doctrine
+    does not recognize.
+
+harm_test:
+  questions:
+    - Is the underlying need genuinely optional, or necessary to remain alive, healthy, housed, free, or legally present?
+    - Who controls access to that need?
+    - What happens materially if the person refuses the required conduct?
+    - Is refusal legally permitted but practically catastrophic?
+    - Does the condition transfer labor, money, data, obedience, risk, or bargaining power upward?
+    - Which actor gains from the condition and which actor has authority to change it?
+    - Does public policy create or subsidize a private gatekeeper over the necessity?
+    - Are peaceful exit, appeal, unionization, relocation, alternative coverage, or other meaningful routes actually usable?
+
+relations:
+  - type: EXTENDS
+    target: legality-laundering-and-false-voluntariness
+    posture: working_framework
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+    posture: working_framework
+  - type: REQUIRES
+    target: power-capacity-accumulation
+    posture: working_framework
+  - type: REQUIRES
+    target: whole-circuit-corporate-gain-accounting
+    posture: working_framework
+
+locks:
+  - Do not collapse chattel slavery, prison labor, benefit work requirements, ordinary employment, taxation, and regulation into one legal category.
+  - Do compare their constraint envelopes, enforcement mechanisms, exit costs, extracted value, and power effects where the same structural question recurs.
+  - Formal choice is evidence about legal form, not proof of meaningful freedom.
+  - State authority is not literal ownership of persons; ownership language must be typed as structural or legal rather than silently switched between the two.
+  - The relevant moral and causal question is how much meaningful agency remains over one's body, labor, necessities, movement, livelihood, and political redress.

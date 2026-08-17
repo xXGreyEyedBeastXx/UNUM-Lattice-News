@@ -1,0 +1,50 @@
+schema: unum-lattice-news/node/v0.1
+id: victim-to-resource-conversion
+title: Victim-to-resource conversion
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for cases where a harmed, confined, displaced, excluded, indebted, or subordinated
+    population is administratively transformed into a source of labor, property, land, fees,
+    contracts, data, political capacity, or other usable value, causing the person's harm and the
+    beneficiary's gain to appear in different ledgers.
+  posture: working_framework
+candidate_resource_forms:
+  - coerced_or_undercompensated_labor
+  - confiscated_property
+  - captured_land_or_housing
+  - detention_or_incarceration_contract_revenue
+  - debt_or_fee_revenue
+  - data_or_surveillance_value
+  - political_or_propaganda_value
+  - eligibility_or_population_counts_used_to_route_resources
+trace:
+  - population_targeted_or_constrained
+  - rights_agency_property_or_mobility_loss
+  - administrative_or_commercial_reclassification
+  - labor_property_contract_data_or_capacity_created
+  - intermediary_and_terminal_beneficiaries
+  - narrative_that_separates_harm_from_gain
+historical_discovery_surfaces:
+  - Nazi confiscation, forced labor, and public-private use of imprisoned populations
+  - other historical slavery, prison-labor, dispossession, and coercive labor systems
+current_candidate_surfaces:
+  - detention_and_incarceration_economies
+  - undercompensated_confined_labor
+  - displacement_and_land_capture
+  - extraction_of_data_from_low_agency_populations
+locks:
+  - Confinement or victim status does not prove a resource-conversion relation; trace the gain.
+  - Do not erase the person's legal rights or personhood by adopting the administrative resource label.
+  - Keep harm, intermediary payment, productive use, and terminal gain in one mesh.
+relations:
+  - type: EXTENDS
+    target: administrative-moral-distance
+    posture: working_framework
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework

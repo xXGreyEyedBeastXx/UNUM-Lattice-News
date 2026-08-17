@@ -1,0 +1,218 @@
+schema: unum-lattice-news/lattice/v0.1
+id: material-extraction-and-upward-recirculation-2026-08-16
+title: Material extraction and upward recirculation in the United States
+status: active
+as_of: 2026-08-16
+authority: evidence_lattice_not_verdict
+purpose: >-
+  Trace recurring mechanisms by which labor value, land rent, public spending, tax preferences,
+  public assistance, and environmental liabilities can move resources toward owners, landlords,
+  firms, creditors, or asset holders while costs remain with workers, tenants, taxpayers,
+  communities, or future generations. The lattice measures each path separately and does not
+  equate ownership, profit, benefit receipt, or public spending with wrongdoing.
+operators:
+  - money-flow-benefit-enforced-loss
+  - labor-market-power-and-wage-extraction
+  - public-assistance-labor-cost-supplementation
+  - land-rent-and-resource-capture
+  - public-to-private-revenue-and-ownership-return
+  - environmental-cost-externalization
+  - attribution-routing-and-grievance-redirection
+source_bundles:
+  - source-us-material-extraction-and-upward-recirculation-2026-08-16
+  - source-us-wealth-grievance-routing-baseline-2026-08-16
+  - source-walmart-public-assistance-employment-2026
+nodes:
+  institutions:
+    - lockheed-martin
+    - walmart
+  populations:
+    - us-low-income-households
+    - us-high-income-households
+    - us-high-wealth-households
+    - us-workers-lower-formal-education
+    - us-means-tested-benefit-recipient-households
+  resources:
+    - means-tested-public-transfers
+flows:
+  labor:
+    findings:
+      - id: fy2025-enforced-back-wage-flow
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - labor_performed
+          - compensation_legally_due
+          - employer_underpayment
+          - worker_loss
+          - enforcement_recovery
+        evidence:
+          - source-dol-whd-fy2025-back-wages
+        magnitude: more than 259 million dollars recovered for nearly 177000 workers
+        limits:
+          - Recovery amount is not a national estimate of all wage theft.
+      - id: employer-market-power-wage-suppression
+        posture: supported_inference
+        investigation_state: CONFIRMED
+        trace:
+          - employer_concentration_or_anticompetitive_practice
+          - reduced_worker_bargaining_power
+          - lower_counterfactual_wage
+          - employer_cost_saving_or_margin_effect
+        evidence:
+          - source-treasury-labor-market-competition-2022
+        limits:
+          - Treasury's roughly 20 percent estimate is a model-level benchmark, not a uniform firm-level effect.
+      - id: walmart-working-public-assistance-case
+        posture: observed_with_incidence_path_forward
+        investigation_state: PATH_FORWARD
+        trace:
+          - labor_performed
+          - walmart
+          - employer_compensation
+          - household_income_and_program_eligibility
+          - means-tested-public-transfers
+          - worker_or_household_benefit
+          - taxpayer_public_cost
+          - candidate_employer_cost_supplementation
+        evidence:
+          - source-gao-working-medicaid-snap-employers-2026
+          - source-walmart-people-fye2026
+        observed:
+          - GAO estimated 4,595 nondisabled, nonelderly working adult Medicaid enrollees employed by Walmart in Georgia in September 2025, the largest employer count in that table.
+          - GAO estimated 3,513 working adult SNAP recipients employed by Walmart in Tennessee in September 2025, second in that table behind app-based food delivery.
+          - Walmart reports an average U.S. hourly wage of about 18 dollars overall for FYE2026 and offers employer benefits whose availability varies by role and eligibility.
+        limits:
+          - The public benefit is legally paid to the worker or household, not to Walmart.
+          - Household eligibility depends on household income, family size, hours, other earners, and program rules as well as individual wages.
+          - GAO's selected-state counts are not a national Walmart total.
+          - The employer-side subsidy magnitude remains unmeasured until a labor-incidence or counterfactual compensation analysis is performed.
+
+  land_and_rent:
+    findings:
+      - id: farmland-tenant-to-landlord-flow-2024
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - rented_farmland
+          - producer_or_tenant
+          - rent_payment
+          - nonfarming_landlord_or_other_landowner
+        evidence:
+          - source-usda-total-2024-landlords
+        magnitude:
+          rented_acres: 348 million
+          landlord_rental_income: 34.1 billion dollars
+          landlord_operating_expenses: 12.0 billion dollars
+          rented_land_and_buildings_value: more than 1.6 trillion dollars
+        limits:
+          - Rental income is not automatically economic extraction or net owner profit.
+          - Ownership entities and wealth distribution require further tracing.
+
+  public_to_private:
+    findings:
+      - id: lockheed-public-revenue-owner-return-case
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - U.S._Government_procurement
+          - lockheed-martin
+          - company_revenue_pool
+          - operating_costs_wages_suppliers_and_capital
+          - net_earnings
+          - dividends_and_share_repurchases
+          - shareholders
+        evidence:
+          - source-lockheed-2025-10k
+        magnitude:
+          total_sales_2025: 75.0 billion dollars
+          us_government_sales_share: 72 percent
+          net_earnings_2025: 5.017 billion dollars
+          common_stock_repurchases_2025: 3.0 billion dollars
+          dividends_declared_2025: 3.126 billion dollars
+        limits:
+          - The filing does not identify which shareholder distributions were funded by which government contracts.
+          - Gross sales must not be counted as owner capture.
+      - id: capital-gains-tax-preference-current-carrier
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - federal_tax_code
+          - preferential_capital_gains_treatment
+          - foregone_revenue
+          - capital_gain_recipient
+        evidence:
+          - source-treasury-tax-expenditures-fy2026
+          - source-cbo-major-tax-expenditures-2019
+        limits:
+          - Current magnitude and historical distribution are sourced from different years.
+          - Tax expenditure is foregone revenue, not a cash transfer.
+
+  environmental_externalization:
+    findings:
+      - id: offshore-oil-gas-financial-assurance-gap
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - offshore_oil_and_gas_activity
+          - post_production_cleanup_obligation
+          - company_financial_assurance
+          - residual_default_risk
+          - federal_public_exposure
+        evidence:
+          - source-gao-federal-oil-gas-oversight-2025
+        magnitude:
+          estimated_post_production_costs: 40 to 70 billion dollars
+          supplemental_bonds_held: about 3.5 billion dollars as of June 2023
+        limits:
+          - Exposure is not identical to realized taxpayer loss.
+      - id: superfund-cost-recovery
+        posture: observed
+        investigation_state: CONFIRMED
+        trace:
+          - contamination
+          - public_cleanup_or_oversight
+          - responsible_party_enforcement
+          - cost_recovery_or_private_cleanup_commitment
+        evidence:
+          - source-epa-superfund-enforcement-fy2025
+        limits:
+          - Successful cost recovery reduces the amount that should be classified as externally borne.
+
+anti_double_counting:
+  rules:
+    - Contract revenue cannot also be counted in full as profit or owner gain.
+    - Profit retained in a firm cannot be counted again as both retained earnings and the full market-capitalization response without attribution.
+    - Dividends and buybacks are owner-return channels but must be linked to the same earnings pool before aggregation.
+    - Tax expenditures are foregone revenue and must not be added to cash spending as if they were identical instruments.
+    - Land appreciation, rent, and realized capital gains are distinct seats and may overlap economically.
+    - Environmental cleanup obligations count as externalized only to the extent the responsible party does not ultimately bear them.
+    - A means-tested benefit paid to a worker household must not be counted in full as both household assistance and employer capture.
+    - Employer-side capture from public assistance counts only to the supported incidence share attributable to reduced private compensation or employer-borne cost.
+
+crossing_to_grievance_routing:
+  proposition: >-
+    Material extraction or upward recirculation can coexist with public narratives that attribute
+    household pressure primarily to lower-power populations. The money-flow lattice establishes
+    the material field; the attribution-routing lattice tests who is blamed and whether that blame
+    is proportionate to measured causation. Working public-assistance recipients are therefore
+    represented simultaneously as benefit recipients and possible sites of employer cost
+    supplementation rather than being treated as the endpoint of the money flow.
+  related_lattice: wealth-grievance-routing-2026-08-16
+
+path_forward:
+  - Trace wage suppression and wage-theft cases by sector, employer concentration, and ownership seat.
+  - Estimate employer-side incidence of Medicaid, SNAP, refundable tax credits, housing support, and other public assistance used by working households, beginning with Walmart and other recurring large-employer cases in GAO data.
+  - Separate direct worker benefit, taxpayer cost, employer compensation saved, and retailer/provider revenue recapture so the same public dollar is not counted repeatedly.
+  - Map rent, mortgage interest, land appreciation, and landlord ownership by household wealth tier.
+  - Trace federal procurement and subsidy cases from gross award to wages, suppliers, net profit, dividends, buybacks, and ultimate ownership.
+  - Quantify tax-expenditure incidence with current-year distributional estimates where available.
+  - Trace environmental liabilities from private gain through bonding, cleanup, health harm, public spending, and cost recovery.
+  - Build a same-year normalized capture ledger before making any aggregate claim that upward recirculation exceeds lower- or middle-income tax payments.
+locks:
+  - Extraction is a mechanism claim, not a wealth identity.
+  - Profit, rent, ownership, government contracting, and public-assistance receipt are not harms by definition.
+  - Material benefit and culpability require separate evidence.
+  - Genuine public value created by spending, investment, or social insurance remains part of the accounting.
+  - Failed or repaired externalization reduces the harm estimate.
+  - Benefit recipient != terminal economic beneficiary.

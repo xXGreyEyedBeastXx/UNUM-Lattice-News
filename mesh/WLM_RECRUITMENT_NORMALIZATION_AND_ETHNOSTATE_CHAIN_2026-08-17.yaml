@@ -1,0 +1,115 @@
+schema: unum-lattice-news/mesh/v0.1
+id: wlm-recruitment-normalization-and-ethnostate-chain-2026-08-17
+title: White Lives Matter recruitment, normalization, and ethnostate chain
+status: active
+as_of: 2026-08-17
+authority: evidence_mesh_not_verdict
+source_bundle:
+  - source-wlm-normalization-recruitment-ethnostate-2026-08-17
+purpose: >-
+  Make the WLM evidence chain inspectable without reproducing extremist operational instructions. The chain distinguishes
+  the public entry message, recruitment/normalization function, ideological endpoint, recurring participation model,
+  local network capacity, and explicit demographic objective. Each edge is typed separately so movement-level evidence
+  is not converted into unsupported claims about private individuals.
+claim_now:
+  posture: HIGH_CHAIN_COMPLETENESS_AT_MOVEMENT_LEVEL
+  text: >-
+    The April 2021 White Lives Matter initiative's own 2022 and 2024 manuals document a deliberate recruitment and
+    normalization model aimed at turning an approachable racial-identity message into White Nationalist consciousness,
+    recurring activism, decentralized local capacity, and a long-term 99% or 99%+ White demographic order in designated
+    nations. The 2024 revision makes the mainstreaming function more explicit while retaining the demographic endpoint.
+edge_ledger:
+  E1_grievance_frame:
+    from: movement_worldview
+    relation: frames_present_conditions_as_existential_white_replacement_or_extinction_threat
+    to: urgency_and_identity_grievance
+    posture: OBSERVED_IN_PRIMARY_MANUALS
+    limitation: ideological_claim_is_evidence_of_movement_worldview_not_proof_that_the_claim_is_factually_true
+  E2_public_entry_message:
+    from: urgency_and_identity_grievance
+    relation: compresses_into_simple_positive_approachable_WLM_message
+    to: low_friction_public_contact
+    posture: OBSERVED_IN_PRIMARY_MANUALS
+  E3_normalization:
+    from: low_friction_public_contact
+    relation: deliberately_targets_mainstream_White_families_and_avoids_polarizing_peripheral_symbols_or_messages
+    to: increased_receptivity_and_normalization_surface
+    posture: OBSERVED_IN_PRIMARY_MANUALS
+    lock: reduced_symbolic_friction_is_not_evidence_that_every_audience_member_is_deceived_or_recruited
+  E4_ideological_deepening:
+    from: increased_receptivity_and_normalization_surface
+    relation: public_approachability_is_explicitly_described_as_doorway_or_stepwise_path
+    to: White_Nationalist_worldview_and_White_racial_consciousness
+    posture: OBSERVED_IN_2024_PRIMARY_MANUAL
+  E5_conversion:
+    from: sympathetic_or_potential_supporter
+    relation: movement_material_explicitly_seeks_conversion_into_activist_status
+    to: recurring_participant
+    posture: OBSERVED_IN_BOTH_PRIMARY_MANUAL_GENERATIONS
+  E6_network_capacity:
+    from: recurring_participant
+    relation: decentralized_local_channels_roles_events_and_recurring_activity_accumulate
+    to: movement_organizational_and_visibility_capacity
+    posture: OBSERVED_HIGH_LEVEL_ONLY
+    safety_lock: operational_vetting_evasion_and_event_execution_instructions_are_not_reproduced
+  E7_demographic_endpoint:
+    from: movement_organizational_and_visibility_capacity
+    relation: directed_toward_stated_long_term_program
+    to: 99_percent_or_99_percent_plus_White_demographic_order_and_exclusive_White_spaces
+    posture: OBSERVED_IN_PRIMARY_MANUALS
+  E8_version_change:
+    from: 2022_manual
+    relation: public_language_and_optics_are_streamlined_while_core_demographic_goal_survives
+    to: 2024_manual
+    posture: SUPPORTED_INFERENCE_FROM_DIRECT_COMPARISON
+    lock: optics_refinement_does_not_by_itself_prove_hidden_illegal_intent
+  E9_current_network_signal:
+    from: movement_brand_and_channel_naming
+    relation: user_supplied_Telegram_search_results_show_multiple_state_country_material_event_and_backup_or_viewing_surfaces
+    to: evidence_of_visible_online_network_footprint
+    posture: DIRECT_SCREENSHOT_OBSERVATION
+    limitations:
+      - no_channel_operator_identity_established
+      - no_offline_activity_established
+      - subscriber_counts_are_not_membership_counts
+      - recent_WLM_TENNESSEE_result_is_a_lead_not_proof_of_a_current_Tennessee_chapter
+version_comparison:
+  2022:
+    strongest_supported_features:
+      - explicit_99_percent_demographic_threshold
+      - explicit_racially_restricted_citizenship_program
+      - recruitment_growth_metrics_and_conversion_logic
+      - decentralized_small_cell_or_local_effort_model
+      - organizers_and_specialized_roles_to_scale_participation
+      - explicit_mainstreaming_argument_in_appendix
+  2024:
+    strongest_supported_features:
+      - explicit_99_percent_plus_demographic_endpoint
+      - mass_awakening_as_short_term_goal
+      - mainstream_White_families_as_priority_audience
+      - simple_positive_WLM_message_as_unified_public_surface
+      - public_approachability_as_doorway_to_White_Nationalist_worldview
+      - explicit_stepwise_development_and_conversion_to_activism
+      - exclusive_spaces_and_legal_measures_for_absolute_White_majority
+  survivor: >-
+    The central demographic objective, racial consciousness project, recurring real-world activism, decentralized
+    participation, and recruitment function survive the revision. The public presentation becomes more deliberately
+    approachable and stripped of peripheral extremist branding.
+article_readiness:
+  posture: READY_FOR_DENSE_MOVEMENT_LEVEL_HARM_AUDIT
+  can_show:
+    - exact_primary_documents
+    - versioned_goal_continuity
+    - recruitment_and_normalization_function
+    - movement_level_conversion_and_capacity_model
+    - public_optics_strategy
+    - screenshot_evidence_of_visible_online_network_surfaces
+  still_needed_for_actor_specific_or_Tennessee_article:
+    - independently_verified_current_Tennessee_channel_identifier_and_operator_status
+    - dated_public_Tennessee_posts_or_events
+    - offline_activity_or_public_record_evidence
+    - individual_membership_or_leadership_only_where_public_actor_specific_evidence_exists
+  publication_lock: >-
+    Do not publish tactical recruitment, anonymity, evasion, vetting, or event-execution instructions. The analytical
+    existence and causal role of those functions may be stated at high level because erasing them would falsify the
+    movement's documented recruitment architecture.

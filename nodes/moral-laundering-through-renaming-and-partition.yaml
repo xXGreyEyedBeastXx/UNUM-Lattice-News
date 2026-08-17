@@ -1,0 +1,58 @@
+schema: unum-lattice-news/node/v0.1
+id: moral-laundering-through-renaming-and-partition
+title: Moral laundering through renaming and partition
+family: analysis_framework
+subtype: causal_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for detecting when the moral type of an evidenced harmful transformation is changed by
+    renaming it, splitting it among categories, or emphasizing institutional legitimacy rather than
+    the underlying distribution of harm, agency, consent, power, and accountability.
+  posture: working_framework
+common_labels_to_test:
+  - market_wage
+  - competitive_price
+  - market_rent
+  - efficiency
+  - investment
+  - growth
+  - security
+  - law_and_order
+  - emergency
+  - foreign_aid
+  - welfare_dependency
+  - taxpayer_burden
+  - voluntary_transaction
+  - legal_compliance
+  - charity
+  - public_private_partnership
+  - administrative_necessity
+trace:
+  - underlying_transformation
+  - harm_and_gain_distribution
+  - original_or_public_label
+  - omitted_relation_or_constraint
+  - moral_classification_created_by_label
+  - policy_or_accountability_effect
+required_test: >-
+  Strip the actor and institutional labels, describe the transformation in terms of who had power,
+  what changed, who lost agency/resources/safety, who gained, and what alternatives existed, then
+  compare whether the moral classification changes when the names are restored.
+locks:
+  - A contested label is not automatically laundering.
+  - Some market, security, efficiency, or legal descriptions may be accurate; test them.
+  - Moral disagreement does not erase measurable coercion, deprivation, domination, or impunity.
+  - Do not let a respectable institutional name outrank the transformation it performs.
+relations:
+  - type: EXTENDS
+    target: causal-partition-laundering
+    posture: working_framework
+  - type: EXTENDS
+    target: accusation-reversal-and-actor-dependent-moral-laundering
+    posture: working_framework
+  - type: EXTENDS
+    target: legality-laundering-and-false-voluntariness
+    posture: working_framework

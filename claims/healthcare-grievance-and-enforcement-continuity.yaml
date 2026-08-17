@@ -1,0 +1,101 @@
+schema: unum-lattice-news/claim-test/v0.1
+id: healthcare-grievance-and-enforcement-continuity
+claim_text: >-
+  U.S. health-insurance denial and affordability grievances are widespread and help explain why
+  Brian Thompson's killing produced unusually strong public sympathy for the killer or blame toward
+  the insurance system, while federal scrutiny of major healthcare intermediaries and UnitedHealth
+  was disrupted in some lanes after the 2025 presidential transition but was not universally shut down.
+claim_type: mixed_social_system_and_enforcement_continuity
+testability: testable_in_parts
+scope:
+  geography: United States
+  time_window: 2024-2026
+burden_of_proof:
+  required_evidence:
+    - measured prevalence of insurance denial/delay grievances
+    - evidence of public reaction distinguishing shooter responsibility from system responsibility
+    - evidence of Mangione's own stated or admitted motive and actual insurer relationship
+    - docket-level evidence for enforcement pause, continuation, settlement, or termination
+  alternative_explanations:
+    - online celebrity dynamics independent of healthcare grievance
+    - generalized anti-corporate sentiment
+    - fascination with violent crime or defendant appearance/persona
+    - partisan interpretation of regulatory events
+subclaims:
+  - id: widespread_insurance_grievance
+    status: supported
+    confidence: high
+    proposition: Delays, denials, and coverage disputes are a widespread concern among insured U.S. adults.
+    evidence:
+      - source-kff-claims-denials-2024-2026
+  - id: mangione_personally_denied_by_unitedhealthcare
+    status: contradicted
+    confidence: high
+    proposition: Mangione targeted UnitedHealthcare because UnitedHealthcare personally insured him and denied his care.
+    evidence:
+      - source-ap-mangione-guilty-plea-2026
+  - id: mangione_healthcare_system_grievance
+    status: supported
+    confidence: high
+    proposition: Mangione's own account connected his violence to pain and frustration with the U.S. healthcare/insurance system.
+    evidence:
+      - source-ap-mangione-guilty-plea-2026
+  - id: public_reaction_reflected_system_grievance
+    status: supported
+    confidence: moderate_high
+    proposition: Public reaction to Thompson's killing included substantial attribution of responsibility to insurer denials, insurer profits, and inequality while still assigning primary responsibility to the shooter.
+    evidence:
+      - source-ap-norc-thompson-killing-reaction-2024
+  - id: all_healthcare_investigations_shut_down_after_trump_return
+    status: contradicted
+    confidence: high
+    proposition: Federal investigations and enforcement actions concerning major insurers and PBMs were all terminated after President Trump returned to office.
+    evidence:
+      - source-ftc-pbm-case-timeline-2025-2026
+      - source-unitedhealth-sec-doj-2025
+      - source-unitedhealth-10q-2026q1
+      - source-doj-unitedhealth-amedisys-settlement-2025
+  - id: trump_transition_disrupted_some_healthcare_enforcement
+    status: supported_case
+    confidence: high
+    proposition: The 2025 presidential transition disrupted at least one major PBM enforcement proceeding.
+    evidence:
+      - source-wsj-ftc-pbm-quorum-disruption-2025
+      - source-ftc-pbm-case-timeline-2025-2026
+  - id: enforcement_softened_in_some_merger_lanes
+    status: supported_case
+    confidence: moderate_high
+    proposition: At least one Biden-era attempt to block healthcare consolidation was later resolved by the Trump DOJ through a divestiture settlement that allowed the transaction to proceed.
+    evidence:
+      - source-doj-unitedhealth-amedisys-settlement-2025
+current_assessment:
+  status: supported_with_correction
+  confidence: high
+  summary: >-
+    The evidence supports a real and widespread grievance field around insurer delays, denials, and
+    profit incentives, and public reaction to Thompson's killing cannot be reduced to approval of
+    homicide. Mangione was not a UnitedHealthcare customer, so a personal UnitedHealthcare denial
+    should not be inserted into his motive. Federal healthcare enforcement after the 2025 transition
+    shows both disruption and continuity: the FTC PBM case was temporarily stayed after commissioner
+    removals and recusals, but later progressed to settlements; UnitedHealth acknowledged formal DOJ
+    civil and criminal requests and continued to disclose Medicare-related reviews in 2026; and the
+    Amedisys antitrust challenge ended in a remedy settlement rather than a complete shutdown.
+what_is_established:
+  - insurance denial and delay grievances are common enough to form a measurable public grievance field
+  - Mangione's motive included healthcare-system grievance but not a personal UnitedHealthcare coverage dispute
+  - many Americans simultaneously blamed the shooter and the insurance system
+  - some Trump-era personnel changes disrupted healthcare enforcement
+  - some major healthcare investigations and enforcement actions nevertheless continued or settled under Trump
+what_is_not_established:
+  - healthcare grievance justifies homicide
+  - everyone who sympathized with Mangione supported the killing
+  - all healthcare investigations were shut down after Trump took office
+  - continued enforcement proves adequate enforcement
+  - settlement proves either capture or successful regulation without case-specific comparison
+locks:
+  - Do not romanticize or excuse homicide.
+  - Do not erase the systemic grievance field because violence occurred.
+  - Do not invent a personal insurance denial that did not occur.
+  - Regulatory state must be typed: opened | stayed | resumed | settled | narrowed | ongoing | abandoned | adjudicated.
+  - Personnel causation requires evidence; chronology alone is not enough.
+  - A settlement may preserve some competition while still representing weaker relief than the original blocking action.

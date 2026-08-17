@@ -1,0 +1,71 @@
+schema: unum-lattice-news/node/v0.1
+id: ideological-threat-labeling-and-redress-delegitimization
+title: Ideological threat labeling and redress delegitimization
+family: analysis_framework
+subtype: narrative_power_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Tests when a political or institutional response converts a complaint, reform demand, ideology,
+    association, funding relationship, or protest identity into a security or civilizational threat
+    category such as terrorism, communism, Marxism, extremism, lawlessness, or anti-Americanism.
+    The operator distinguishes violent conduct from protected advocacy and asks whether the label
+    broadens enforcement or weakens legitimate redress beyond the conduct actually established.
+  posture: working_framework
+core_invariant:
+  - violent_conduct_may_be_investigated_without_collapsing_nonviolent_ideology_or_association_into_violence
+  - threat_label_is_a_claim_about_scope_and_must_be_evidenced
+  - security_language_does_not_erase_first_amendment_or_due_process_questions
+  - opposition_to_fascism_social_inequality_or_corporate_power_is_not_by_itself_evidence_of_terrorism
+  - ideological_disagreement_is_not_by_itself_evidence_of_criminality
+required_scope_test:
+  - specific_criminal_conduct
+  - specific_individual_or_group
+  - ideology_or_viewpoint
+  - association_or_affiliation
+  - donor_or_funder
+  - protected_protest_or_speech
+  - material_support_to_criminal_conduct
+  - enforcement_authority_invoked
+  - legal_status_of_the_label
+  - practical_effect_on_redress
+candidate_effects:
+  - surveillance_or_investigation_expansion
+  - funding_disruption
+  - contract_termination_or_debarment
+  - criminal_or_civil_enforcement
+  - chilling_of_association_or_protest
+  - exclusion_from_public_institutions
+  - public_moral_delegitimation
+  - redress_channel_weakening
+current_case_surfaces:
+  antifa_and_anti_fascism:
+    observed:
+      - 2025_white_house_order_designated_antifa_domestic_terrorist_organization
+      - 2025_white_house_domestic_terrorism_memorandum_described_self_identified_anti_fascism_as_rallying_cry_for_domestic_terrorists
+      - 2026_white_house_campaign_described_radical_left_terrorism_as_transnational_threat
+    legal_lock: >-
+      Earlier Congressional Research Service analysis states that federal law defines domestic
+      terrorism but does not provide the same formal designation regime used for foreign terrorist
+      organizations and does not make domestic terrorism itself a standalone charge. Current executive
+      designation language must therefore be tracked separately from statutory criminal authority and
+      from prosecution of specific violent crimes.
+  equity_and_social_policy:
+    observed:
+      - 2026_white_house_budget_material_used_marxist_agenda_language_for_equity_and_related_programs
+      - 2026_white_house_dei_contract_order_authorized_contract_suspension_termination_or_debarment_for_defined_racially_discriminatory_dei_activity
+      - 2026_white_house_proclamation_described_socialism_and_communism_as_evil_ideologies_that_must_not_take_root_at_home
+relations:
+  - type: EXTENDS
+    target: moral-laundering-through-renaming-and-partition
+  - type: EXTENDS
+    target: accusation-reversal-and-actor-dependent-moral-laundering
+  - type: FEEDS
+    target: redress-capture-and-correction-failure
+locks:
+  - Do not infer secret motive solely from inflammatory language.
+  - Test whether enforcement is tied to proven unlawful conduct or expands through identity, ideology, association, or funding.
+  - Political violence remains independently condemnable and prosecutable where evidence supports it.
+  - A broad threat label can be overinclusive even when some members of a movement commit crimes.

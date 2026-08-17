@@ -1,0 +1,47 @@
+schema: unum-lattice-news/node/v0.1
+id: environmental-cost-externalization
+title: Environmental cost externalization
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable operator for tracing cases where private or public-private activity produces
+    contamination, depletion, reclamation duties, health burdens, or ecological damage whose
+    cleanup or long-tail risk is borne partly by governments, communities, workers, future
+    owners, or future generations rather than fully by the activity's beneficiary.
+  posture: working_framework
+core_trace:
+  - extractive_or_polluting_activity
+  - beneficiary_or_operator
+  - revenue_or_asset_gain
+  - environmental_damage_or_cleanup_obligation
+  - bond_insurance_or_financial_assurance
+  - responsible_party_payment
+  - residual_public_or_community_liability
+  - health_ecology_and_land_effects
+  - repair_reclamation_or_cost_recovery
+current_evidence:
+  observed:
+    - GAO reported that offshore oil and gas post-production obligations were estimated at roughly 40 to 70 billion dollars while supplemental bonds held by BOEM were about 3.5 billion dollars as of June 2023.
+    - EPA's Superfund program continues to recover cleanup costs from responsible parties, while public funds remain necessary where viable liable parties cannot be made to pay.
+  supported_inferences:
+    - Insufficient financial assurance can shift residual cleanup risk from private operators toward the public.
+  unknowns:
+    - Eventual taxpayer share of currently outstanding private-sector cleanup obligations.
+    - Full distribution of health, land, ecological, and opportunity costs not captured in formal cleanup liabilities.
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+locks:
+  - Environmental damage != automatically private-sector damage; federal and other public activities can also create liabilities.
+  - Estimated liability != realized taxpayer expenditure.
+  - Gross cleanup cost != private gain.
+  - A responsible party's later reimbursement must reduce the externalized-cost estimate.
+  - Ecological and health harm may exceed accounting liability and must be evidenced separately.
+references:
+  - https://www.gao.gov/products/gao-25-108130
+  - https://www.epa.gov/enforcement/enforcement-and-compliance-assurance-annual-results-fy-2025-superfund-cleanup

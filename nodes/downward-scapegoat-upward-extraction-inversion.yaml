@@ -1,0 +1,57 @@
+schema: unum-lattice-news/node/v0.1
+id: downward-scapegoat-upward-extraction-inversion
+title: Downward scapegoat / upward extraction inversion
+family: analysis_framework
+subtype: attribution_routing_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for cases where real material pressure is attributed primarily to a lower-power visible
+    population while larger or more controllable gains are captured upstream through wages, rent,
+    pricing, contracts, tax advantages, asset ownership, or policy. It distinguishes contribution
+    to pressure from control of terms and capture of gain.
+  posture: working_framework
+core_relation:
+  - UPWARD_MATERIAL_FLOW
+  - DOWNWARD_BLAME_FLOW
+trace:
+  - measured_material_pressure
+  - lower_power_target_named_as_cause
+  - all_supported_causal_contributors
+  - actors_with_term_setting_or_policy_power
+  - who_bears_loss_or_deprivation
+  - wage_saving_rent_margin_contract_tax_or_asset_gain
+  - terminal_or_reseated_beneficiaries
+  - claim_producers_funders_and_amplifiers
+  - policy_response_to_blame
+  - beneficiaries_of_policy_response
+  - whether_underlying_extraction_survives
+required_questions:
+  - Does the blamed population contribute to the pressure, and by how much?
+  - Who controls wages, prices, rent, access, contracts, taxes, or resource allocation?
+  - Who receives the resulting surplus, rent, public revenue, enforcement revenue, or asset appreciation?
+  - Does policy aimed at the blamed population create a new private or state-capacity revenue stream?
+  - Would removing the blamed population alter the upstream extraction mechanism itself?
+priority_application:
+  - immigration_and_wages
+  - immigration_and_housing
+  - immigration_and_public_spending
+  - poverty_and_welfare_blame
+  - racialized_or_status_based_economic_blame
+locks:
+  - Do not erase real localized costs or pressures.
+  - Contributing to demand or labor supply is not the same as setting terms or capturing gain.
+  - Do not turn a population into a collective causal verdict.
+  - Compare the magnitude and controllability of all supported mechanisms.
+relations:
+  - type: EXTENDS
+    target: attribution-routing-and-grievance-redirection
+    posture: working_framework
+  - type: REQUIRES
+    target: whole-circuit-corporate-gain-accounting
+    posture: working_framework
+  - type: REQUIRES
+    target: entity-kinship-and-identity-resolution
+    posture: working_framework

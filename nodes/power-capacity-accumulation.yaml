@@ -1,0 +1,53 @@
+schema: unum-lattice-news/node/v0.1
+id: power-capacity-accumulation
+title: Power-capacity accumulation
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator extending extraction accounting beyond private profit. Surplus, coerced labor, public
+    resources, information, land, technology, or administrative control may accumulate as state,
+    party, military, police, detention, surveillance, bureaucratic, informational, monopoly, or
+    political capacity even when no private shareholder is the terminal beneficiary.
+  posture: working_framework
+capacity_seats:
+  - private_wealth_and_ownership
+  - creditor_and_financial_capacity
+  - monopoly_or_market_power
+  - land_and_resource_control
+  - state_fiscal_capacity
+  - military_capacity
+  - police_detention_or_coercive_capacity
+  - surveillance_and_data_capacity
+  - party_or_political_capacity
+  - bureaucratic_capacity
+  - information_and_truth_production_control
+  - institutional_insulation
+  - ability_to_block_or_punish_redress
+trace:
+  - extracted_or_transferred_value_resource_or_labor
+  - productive_or_administrative_transformation
+  - accumulated_capacity
+  - increased_ability_to_set_terms_or_impose_constraints
+  - feedback_into_next_extraction_or_control_cycle
+historical_discovery_surface:
+  - Stalinist forced-labor, industrialization, party-state, and coercive-capacity accumulation without private shareholder primacy
+required_questions:
+  - What durable capability was created or strengthened?
+  - Who controls that capability?
+  - Can it set the next terms of labor, price, access, information, law, or enforcement?
+  - Does it increase the cost of refusal, competition, dissent, exit, or correction?
+locks:
+  - Public capacity can serve legitimate public purposes; capacity alone is not harm.
+  - Attribute harm when the capacity is created through or used for an evidenced harmful mechanism.
+  - Do not force all extraction into a private-profit model.
+relations:
+  - type: EXTENDS
+    target: whole-circuit-corporate-gain-accounting
+    posture: working_framework
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework

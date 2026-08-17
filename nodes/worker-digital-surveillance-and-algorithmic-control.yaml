@@ -1,0 +1,47 @@
+schema: unum-lattice-news/node/v0.1
+id: worker-digital-surveillance-and-algorithmic-control
+title: Worker digital surveillance and algorithmic control
+family: analysis_framework
+subtype: labor_constraint_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for employer surveillance and automated management systems that monitor productivity,
+    location, communications, biometrics, or behavior and can alter injury risk, stress, pay, discipline, termination,
+    organizing freedom, and the practical cost of refusing employer demands.
+  posture: evidence_bound
+current_evidence:
+  - GAO_reviewed_122_methodologically_screened_studies_and_found_both_positive_and_negative_effects_from_worker_surveillance.
+  - GAO_reports_surveillance_can_raise_stress_and_anxiety_and_can_raise_injury_risk_when_workers_are_pushed_to_meet_productivity_targets.
+  - GAO_reports_flawed_productivity_benchmarks_or_misuse_can_affect_performance_reviews_pay_discipline_or_termination.
+  - GAO_reports_federal_agencies_in_2025_rescinded_prior_resources_or_were_reassessing_them_for_alignment_with_current_priorities.
+  - NLRB_states_employers_may_not_spy_on_or_create_the_impression_of_spying_on_protected_union_activity.
+required_trace:
+  - worker_task_and_workplace
+  - surveillance_tool_vendor_and_owner
+  - data_collected
+  - algorithm_or_metric_used
+  - employer_decision_trigger
+  - pay_schedule_discipline_termination_or_safety_effect
+  - union_or_collective_action_effect
+  - worker_notice_consent_and_appeal
+  - vendor_and_employer_gain
+  - regulatory_or_collective_bargaining_constraint
+beneficiary_seats:
+  - employer_receiving_information_and_control_capacity
+  - surveillance_or_algorithm_vendor_receiving_revenue
+locks:
+  - surveillance_can_improve_safety_or_operations_in_some_uses.
+  - monitoring_itself_does_not_prove_illegal_union_surveillance.
+  - tool_specific_effect_and_governance_matter_more_than_the_label_bossware.
+source_bundle:
+  - source-article-readiness-expansion-2026-08-16
+relations:
+  - type: EXTENDS
+    target: labor-market-power-and-wage-extraction
+  - type: EXTENDS
+    target: compulsory-dependency-and-survival-enclosure
+  - type: EXTENDS
+    target: power-capacity-accumulation

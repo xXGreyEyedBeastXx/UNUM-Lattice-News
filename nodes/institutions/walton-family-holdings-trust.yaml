@@ -1,0 +1,26 @@
+schema: unum-lattice-news/node/v0.1
+id: walton-family-holdings-trust
+title: Walton Family Holdings Trust
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Walton-family-related trust holding a substantial Walmart equity position. The node preserves
+    the economic/dispositive ownership seat separately from Walton Enterprises' voting authority.
+  posture: observed
+current_evidence:
+  observed:
+    - Walmart's 2026 proxy reported 513,524,456 Walmart shares held by the trust as of April 10, 2026, representing 6.44 percent of outstanding shares.
+    - Voting power over those shares was exercised by Walton Enterprises under an irrevocable proxy, while dispositive power remained with the trust's trustees.
+relations:
+  - type: OWNS
+    target: walmart
+    posture: observed
+sources:
+  - source-walmart-2026-proxy
+locks:
+  - The trust's shares are already included in Walton Enterprises' 44.11 percent beneficial-ownership/voting figure and must not be double counted.
+  - Family relationship does not establish control of every operational decision or moral culpability.

@@ -6,6 +6,39 @@
 
 The purpose is not to preserve the status quo simply because it already exists. The protection target is human dignity, meaningful self-sovereignty, plural life, accountable institutions, and recoverable futures.
 
+## Mesh terminology lock
+
+The repository name remains **UNUM Lattice News** for continuity, but the investigative object is a **mesh**.
+
+`lattice` names the durable storage, indexing, and record surface. `mesh` names the living causal topology being investigated: overlapping identities, relations, flows, constraints, transformations, harms, gains, narratives, ownership paths, power feedbacks, and correction routes.
+
+```text
+node = addressable seat in the mesh, not a wall or primitive
+relation = typed traversable path, not the whole relationship
+category = routing label, not proof of causal separation
+name change != identity change
+shared relation != same identity
+different names != independence
+legal/accounting seat != terminal economic or causal seat
+```
+
+Core traversal:
+
+```text
+enter anywhere
+-> resolve identity and kinship
+-> follow every materially relevant relation
+-> trace value / harm / power through transformations
+-> preserve uncertainty on the weak edge
+-> recompose crossings and terminal/reseated gains
+-> test redress and feedback
+-> project a dated public account
+```
+
+The mesh interpretation controls whenever older wording accidentally encourages investigators to treat nodes, legal entities, accounting categories, jurisdictions, program labels, or market labels as causal walls.
+
+See [MESH_MODEL.md](MESH_MODEL.md) and [docs/HARM_MESH_OPERATING_MODEL_v0_1.md](docs/HARM_MESH_OPERATING_MODEL_v0_1.md).
+
 ## What we do
 
 This repository can collect and connect:
@@ -20,7 +53,7 @@ This repository can collect and connect:
 - uncertainty, missing evidence, and unresolved questions;
 - corrections and later developments.
 
-The aim is not to force every event into one theory. It is to keep important relations from disappearing merely because they were reported in separate places, disciplines, jurisdictions, institutions, or moments in time.
+The aim is not to force every event into one theory. It is to keep important relations from disappearing merely because they were reported in separate places, disciplines, jurisdictions, institutions, legal entities, accounting categories, ownership shells, or moments in time.
 
 ## Evidence posture
 
@@ -67,7 +100,7 @@ This repository gives particular attention to threats and pressures affecting:
 
 ## Operations
 
-The repository-wide investigative operating layer is [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md).
+The repository-wide investigative operating layer is [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md), interpreted through the mesh rules in [docs/HARM_MESH_OPERATING_MODEL_v0_1.md](docs/HARM_MESH_OPERATING_MODEL_v0_1.md).
 
 It connects the existing editorial and intake rules to a single recoverable lifecycle for field context, structure, constraint, transform, projection, coherence review, and re-entry. It also defines linked power, agency/constraint, and harm/consequence/beneficiary maps; typed missingness; competing causal models and discriminators; opacity/privacy handling; oversight as conductance control; and the boundary between automated research support and consequential public claims.
 
@@ -89,6 +122,7 @@ Recovery agents:
 - [agents/CANONICAL_RECONCILIATION_STEWARD_v0_1.md](agents/CANONICAL_RECONCILIATION_STEWARD_v0_1.md)
 - [agents/PROVENANCE_CLAIM_INTEGRITY_AGENT_v0_1.md](agents/PROVENANCE_CLAIM_INTEGRITY_AGENT_v0_1.md)
 - [agents/LATTICE_RESURFACING_AGENT_v0_2.md](agents/LATTICE_RESURFACING_AGENT_v0_2.md)
+- [agents/HARM_MESH_TRAVERSAL_AGENT_v0_1.md](agents/HARM_MESH_TRAVERSAL_AGENT_v0_1.md)
 
 Historical material should be recovered semantically rather than blind-merged. Preserve old states as evidence; do not preserve obsolete framing as permanent authority.
 
@@ -104,9 +138,10 @@ See [CORRECTIONS.md](CORRECTIONS.md).
 
 The first automation surface is deliberately narrow. A scheduled GitHub Actions workflow reads an explicit registry of official RSS/Atom feeds and emits a short-lived review artifact containing limited discovery metadata: title, canonical URL, supplied publication date, feed provenance, and configured review lenses.
 
-Collected items remain `candidate_unreviewed`. The workflow cannot edit the repository, open issues, create or promote nodes, or publish stories, spreads, or renditions. Human review remains required before an intake candidate becomes a lattice record.
+Collected items remain `candidate_unreviewed`. The workflow cannot edit the repository, open issues, create or promote nodes, or publish stories, spreads, or renditions. Human review remains required before an intake candidate becomes a lattice record participating in the mesh.
 
 - Operations layer: [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md)
+- Mesh model: [MESH_MODEL.md](MESH_MODEL.md)
 - Feed registry: [registries/FEEDS.json](registries/FEEDS.json)
 - Intake boundary: [docs/NEWS_INTAKE_WORKFLOW_v0_1.md](docs/NEWS_INTAKE_WORKFLOW_v0_1.md)
 - Spread model: [docs/SPREAD_SURFACE_MODEL_v0_1.md](docs/SPREAD_SURFACE_MODEL_v0_1.md)
@@ -129,4 +164,4 @@ See [RIGHTS.md](RIGHTS.md).
 
 ## Tiny lock
 
-> Name danger without manufacturing enemies. Preserve uncertainty without using it to excuse preventable harm. Follow power, consequence, and the living systems that bear the cost.
+> Name danger without manufacturing enemies. Preserve uncertainty without using it to excuse preventable harm. Follow power, consequence, kinship, transformation, and the living systems that bear the cost.

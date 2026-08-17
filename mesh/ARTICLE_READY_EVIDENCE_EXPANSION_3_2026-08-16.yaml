@@ -1,0 +1,88 @@
+schema: unum-lattice-news/mesh/v0.1
+id: article-ready-evidence-expansion-3-2026-08-16
+title: Article-ready evidence expansion 3 — medical debt and nursing-home ownership
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - article-ready-evidence-expansion-2-2026-08-16
+  - unum-harm-mesh-2026-08-16
+source_bundle:
+  - source-medical-debt-and-nursing-home-ownership-2026-08-16
+purpose: >-
+  Add two necessity-linked article packages where the cost of refusal and the ownership structure are directly
+  recoverable from public law, federal datasets, and oversight records.
+packages:
+  medical_debt_collection:
+    readiness: HIGH_FOR_LEGAL_MECHANISM_ARTICLE
+    supported_claim: >-
+      For covered tax-exempt hospitals, federal tax law explicitly recognizes a set of extraordinary collection
+      actions that can follow unpaid medical care, including credit reporting, debt sales, liens, lawsuits, attachment,
+      wage garnishment, and in defined circumstances delayed or denied medically necessary care. The same law requires
+      reasonable financial-assistance screening before those actions.
+    harm_path:
+      medical_need -> care_and_bill -> patient_balance -> financial_assistance_gate -> debt_or_collection -> credit_wage_asset_or_future_care_consequence
+    beneficiary_or_power_seats:
+      - healthcare_provider_or_health_system
+      - third_party_collector_or_debt_buyer_where_present
+      - medical_finance_or_credit_provider_where_present
+    redress:
+      - financial_assistance_policy
+      - notice_and_application_requirements
+      - suspension_and_reversal_of_ECAs_for_eligible_patients
+      - FDCPA_FCRA_No_Surprises_Act_and_state_protections_where_applicable
+    limits:
+      - existence_of_legal_collection_authority_does_not_show_every_hospital_uses_it
+      - valid_billing_and_abusive_or_noncompliant_collection_are_distinct
+      - 501r_applies_to_covered_tax_exempt_hospital_facilities_not_all_medical_creditors
+    article_hook: What can happen to your wages, property, credit, or access to care after illness becomes debt?
+
+  medical_debt_credit_redress:
+    readiness: HIGH_FOR_REDDRESS_CHANGE_SIDEBAR
+    supported_claim: >-
+      The federal medical-debt credit-reporting regime changed sharply between January and July 2025: CFPB adopted a
+      broad restriction and a federal court later vacated it. Current CFPB guidance states that certain older unpaid
+      medical debts over 500 dollars can still appear on consumer reports.
+    harm_path:
+      medical_debt -> credit_reporting -> credit_or_other_adverse_effect -> regulatory_or_judicial_rule -> changed_redress_boundary
+    limits:
+      - current_private_credit_bureau_practices_remove_many_paid_low_balance_or_recent_medical_collections
+      - vacatur_was_a_legal_authority_holding_not_a_factual_finding_that_medical_debt_is_harmless
+    article_hook: A protection can exist on paper, disappear in court, and leave the underlying debt intact.
+
+  nursing_home_ownership_and_quality:
+    readiness: HIGH_FOR_OWNERSHIP_TRANSPARENCY_ARTICLE_MEDIUM_FOR_ACTOR_SPECIFIC_HARM
+    supported_claim: >-
+      CMS now requires and publishes unusually detailed nursing-home ownership information, including private-equity,
+      REIT, parent, management, holding-company, trust, investment-firm, and ownership-percentage fields. CMS and HHS
+      OIG both identify ownership as a relevant quality/accountability variable, while CMS cites research associating
+      some PE and REIT ownership with worse outcomes or staffing. Facility-specific causal claims still require matching
+      ownership histories to staffing, deficiencies, payments, resident outcomes, and enforcement.
+    harm_path:
+      public_and_private_care_payment -> nursing_facility -> ownership_management_real_estate_and_financial_parties -> staffing_and_operations -> resident_outcomes -> fees_profit_asset_or_investor_return
+    redress:
+      - CMS_ownership_disclosure
+      - public_monthly_owner_data
+      - state_surveys_and_CMS_enforcement
+      - active_OIG_review_of_quality_after_ownership_change
+    limits:
+      - ownership_type_does_not_determine_quality_by_itself
+      - cited_studies_are_associations_and_have_scope_and_design_limits
+      - public_payment_is_not_private_profit_dollar_for_dollar
+    article_hook: If a nursing home's sign never changes, can the people controlling the money and property still change underneath it?
+
+cross_package_relation:
+  - necessity_can_create_a_low_exit_relationship_before_financial_or_ownership_power_is_applied
+  - legal_form_can_make_a_coercive_or_extractive_consequence_look_like_an_ordinary_billing_or_ownership_event
+  - public_transparency_and_financial_assistance_rules_are_redress_channels_whose_actual_function_must_be_measured
+  - entity_resolution_is_essential_where_debt_is_sold_or_facilities_are_nested_under_management_real_estate_fund_and_parent_entities
+next_fill:
+  - match_CMS_nursing_home_owner_data_to_facility_quality_and_Medicare_Medicaid_payment_for_selected_large_ownership_networks
+  - identify_Tennessee_hospital_financial_assistance_and_collection_policies_from_public_501r_materials
+  - map_medical_debt_collectors_debt_buyers_and_medical_financing_firms_where_public_records_support_it
+  - utility_shutoffs_and_energy_burden
+  - food_processing_grocery_and_agricultural_market_power
+  - defense_procurement_to_capital_return
+publication_lock: >-
+  A necessity-linked debt or ownership relationship is not condemned by its label. The article must show the actual
+  constraint, transaction, consequence, beneficiary, and functioning or failure of redress.

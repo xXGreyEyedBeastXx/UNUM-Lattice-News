@@ -1,0 +1,52 @@
+schema: unum-lattice-news/node/v0.1
+id: public-to-private-revenue-and-ownership-return
+title: Public-to-private revenue and ownership return
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable operator for tracing public spending, procurement, subsidies, tax expenditures,
+    guarantees, and public investment into private firms or asset values and then onward through
+    wages, suppliers, capital expenditure, profit, dividends, buybacks, retained earnings, debt
+    service, executive compensation, and asset appreciation. It prevents gross public spending
+    from being mislabeled as owner capture while preserving the route by which public money can
+    enter private ownership returns.
+  posture: working_framework
+core_trace:
+  - public_authority_or_tax_preference
+  - appropriation_contract_subsidy_credit_or_guarantee
+  - immediate_private_recipient
+  - wages_and_supplier_costs
+  - capital_and_operating_costs
+  - operating_profit_or_retained_earnings
+  - dividends_buybacks_interest_or_equity_revaluation
+  - ultimate_owner_or_creditor_seat
+  - public_benefit_and_counterfactual
+  - double_count_lineage
+current_evidence:
+  observed:
+    - Federal procurement and assistance records document direct public awards to private recipients.
+    - Lockheed Martin reported that 72 percent of its 75.0 billion dollars in 2025 sales came from the U.S. Government, while also reporting 5.017 billion dollars in net earnings, 3.0 billion dollars in share repurchases, and 3.126 billion dollars in dividends declared.
+    - Treasury estimates large annual tax expenditures, including preferential treatment associated with capital gains and other exclusions or deferrals.
+  unknowns:
+    - The precise share of any firm's shareholder distributions causally attributable to a particular public contract or subsidy.
+    - Aggregate owner-capture ratios after wages, suppliers, investment, taxes, and public-value production are accounted for.
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+locks:
+  - Gross contract value != owner gain.
+  - Government revenue share != proof that government dollars funded a particular dividend or buyback.
+  - Profit != harm; the audit must test price, competition, public value, risk allocation, alternatives, and ownership return.
+  - Tax expenditure != cash outlay.
+  - Asset appreciation != budget outlay.
+  - Wages and supplier payments must not be counted as owner capture.
+  - Retained earnings, dividends, buybacks, and stock-price effects require anti-double-counting lineage.
+references:
+  - https://www.usaspending.gov/search
+  - https://www.sec.gov/Archives/edgar/data/936468/000162828026004195/lmt-20251231.htm
+  - https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures

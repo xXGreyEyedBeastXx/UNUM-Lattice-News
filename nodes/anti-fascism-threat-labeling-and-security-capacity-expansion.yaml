@@ -1,0 +1,50 @@
+schema: unum-lattice-news/node/v0.1
+id: anti-fascism-threat-labeling-and-security-capacity-expansion
+title: Anti-fascism threat-labeling and security-capacity expansion
+family: analysis_framework
+subtype: civil_liberties_and_security_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for cases where violent acts attributed to anti-fascist actors are used to
+    expand a broader security frame around self-described anti-fascism, anti-capitalism, associated
+    networks, funding, or protected political activity. It requires criminal conduct, ideology,
+    association, financing, and nonviolent protest to remain separately typed while tracing any
+    resulting expansion of investigative, prosecutorial, grant, surveillance, or administrative power.
+  posture: working_framework
+observed_current_changes:
+  - September_2025_executive_order_designated_Antifa_a_domestic_terrorist_organization_and_directed_disruption_of_illegal_operations_and_funding.
+  - September_2025_presidential_memorandum_used_self_described_anti_fascism_as_an_umbrella_frame_and_named_anti_capitalism_among_common_threads_associated_with_targeted_violent_activity.
+  - memorandum_directed_network_disruption_and_made_domestic_terrorism_a_national_priority_area_for_law_enforcement_grants.
+  - CRS_explains_that_federal_law_defines_domestic_terrorism_but_lacks_an_ordinary_FTO_style_statutory_designation_process_for_domestic_groups_and_no_general_standalone_domestic_terrorism_offense_exists.
+required_trace:
+  - predicate_crime_or_specific_violent_conduct
+  - evidence_of_actor_identity_and_coordination
+  - ideological_or_associational_label
+  - expansion_from_actor_to_network_funder_or_movement
+  - authority_invoked
+  - investigation_surveillance_grant_or_prosecution_capacity_added
+  - effects_on_lawful_speech_association_protest_funding_or_organizing
+  - contractors_or_platforms_receiving_new_security_revenue_if_any
+  - court_legislative_or_internal_oversight
+current_beneficiary_seats:
+  - federal_law_enforcement_and_security_institutions_receive_expanded_priority_and_network_disruption_authority_or_resources
+  - political_authorities_may_gain_capacity_to_investigate_broader_networks_subject_to_existing_law
+unresolved_beneficiary_seats:
+  - private_surveillance_data_analytics_or_security_contractors_require_contract_specific_tracing_before promotion
+locks:
+  - violent_crime_can_be_investigated_and_punished_without_treating_nonviolent_anti_fascism_or_anti_capitalism_as_criminal.
+  - anti_fascist_identity_does_not_establish_membership_in_a_single_organization.
+  - a_security_priority_is_not_proof_of_illegal_repression.
+  - the_operator_exists_to_test_scope_creep_and_power_accumulation_not_to immunize violence.
+relations:
+  - type: EXTENDS
+    target: ideological-threat-labeling-and-redress-delegitimization
+  - type: EXTENDS
+    target: power-capacity-accumulation
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+source_bundle:
+  - source-complaint-beneficiary-matching-2026-08-16

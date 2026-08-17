@@ -1,0 +1,51 @@
+schema: unum-lattice-news/node/v0.1
+id: equity-threat-labeling-and-contractor-obligation-reversal
+title: Equity threat-labeling and contractor-obligation reversal
+family: analysis_framework
+subtype: redress_and_procurement_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for cases where anti-discrimination, affirmative-action, equity, or DEI
+    measures are rhetorically classified as Marxist, discriminatory, wasteful, or anti-merit and the
+    procurement state changes which contractor behaviors it requires, prohibits, investigates, or
+    punishes. The operator compares the before-and-after coercive structure rather than describing the
+    change as simple deregulation.
+  posture: working_framework
+observed_current_changes:
+  - EO_14173_revoked_EO_11246_and_ended_the_race_sex_affirmative_action_regime_previously_applied_to_federal_contractors_under_that_order.
+  - OFCCP_ceased_EO_11246_investigative_and_enforcement_activity_and_closed_pending_reviews_tied_to_that_authority.
+  - disability_and_protected_veteran_requirements_remain_separate_and_are_not_erased_by_this_operator.
+  - EO_14398_created_new_contract_clauses_prohibiting_defined_racially_discriminatory_DEI_activity_and_authorized_termination_suspension_debarment_and_False_Claims_Act_enforcement.
+  - FY2026_budget_material_used_woke_Marxist_agenda_language_for_equity_related_grants_and_programming.
+required_trace:
+  - program_or_obligation_before_change
+  - protected_population_or_remedial_goal
+  - threat_or_moral_label_applied
+  - legal_authority_removed_or_added
+  - contractor_compliance_cost_or_discretion_change
+  - investigation_enforcement_and_penalty_change
+  - measurable_hiring_promotion_supplier_or_access_outcomes
+  - who_gains_discretion_or_loses_protection
+  - legal_challenges_and_corrections
+beneficiary_and_loss_seats:
+  - federal_contractors_gain_relief_from_the_former_EO11246_race_sex_affirmative_action_obligation
+  - federal_contractors_and_subcontractors_face_new_anti_DEI_reporting_and_penalty_exposure_under_EO14398
+  - workers_or_applicants_may_lose_one_enforcement_route_previously_available_under_EO11246
+  - government_gains_new_anti_DEI_procurement_enforcement_leverage
+locks:
+  - DEI_is_not_one_uniform_mechanism; distinguish unlawful_disparate_treatment_from_outreach_remediation_and_neutral_access_measures.
+  - revocation_of_one_regime_plus_creation_of_another_is_not_general_deregulation.
+  - reduced_compliance_obligation_is_not_automatically_harmful_or_beneficial_without_outcome_evidence.
+  - ideological_label_cannot_substitute_for_testing_the_actual_policy_mechanism.
+relations:
+  - type: EXTENDS
+    target: ideological-threat-labeling-and-redress-delegitimization
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+  - type: RELATED_TO
+    target: asymmetric-public-support-and-private-gain
+source_bundle:
+  - source-complaint-beneficiary-matching-2026-08-16

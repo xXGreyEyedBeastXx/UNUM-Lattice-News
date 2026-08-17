@@ -1,0 +1,265 @@
+schema: unum-lattice-news/mesh/v0.1
+id: unum-harm-mesh-2026-08-16
+title: UNUM Harm Mesh — extraction, capture, laundering, blame, power, and redress
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+repository_compatibility:
+  repository_name: UNUM-Lattice-News
+  terminology:
+    lattice: durable_record_and_index_surface
+    mesh: traversable_causal_and_relational_topology
+  legacy_parent:
+    - lattice/UNUM_HARM_NETWORK_2026-08-16.yaml
+purpose: >-
+  Assemble the material, economic, political, informational, legal, administrative, historical,
+  and redress mechanisms recovered during the 2026-08-16 investigation into one traversable harm
+  mesh. Nodes remain recoverable evidence seats; they do not become walls between relations.
+
+root_invariants:
+  - separate_for_attribution_recompose_for_causation
+  - node_is_a_seat_not_a_wall
+  - different_names_do_not_prove_independence
+  - shared_relation_does_not_prove_same_identity
+  - legal_or_accounting_separation_does_not_prove_causal_separation
+  - formal_consent_does_not_prove_meaningful_voluntariness
+  - legality_does_not_prove_legitimacy
+  - repeated_citation_does_not_prove_independent_corroboration
+  - weak_edges_remain_typed_inside_the_mesh
+  - strong_edges_are_not_downgraded_because_composition_is_uncomfortable
+
+operators:
+  material_and_distribution:
+    - money-flow-benefit-enforced-loss
+    - labor-market-power-and-wage-extraction
+    - public-assistance-labor-cost-supplementation
+    - price-power-and-essential-goods-extraction
+    - land-rent-and-resource-capture
+    - public-to-private-revenue-and-ownership-return
+    - environmental-cost-externalization
+    - whole-circuit-corporate-gain-accounting
+    - victim-to-resource-conversion
+  identity_and_continuity:
+    - entity-kinship-and-identity-resolution
+    - causal-partition-laundering
+  laundering_and_narrative:
+    - truth-laundering-and-citation-lineage-capture
+    - legality-laundering-and-false-voluntariness
+    - moral-laundering-through-renaming-and-partition
+    - accusation-reversal-and-actor-dependent-moral-laundering
+    - downward-scapegoat-upward-extraction-inversion
+    - patronage-return-laundering
+    - administrative-moral-distance
+    - attribution-routing-and-grievance-redirection
+  accumulation_and_return:
+    - power-capacity-accumulation
+    - redress-capture-and-correction-failure
+
+canonical_mesh_cycle:
+  - value_resource_labor_data_or_public_capacity_enters
+  - identity_and_kinship_are_resolved
+  - ownership_bargaining_pricing_policy_or_coercive_power_shapes_terms
+  - harm_loss_deprivation_dependency_or_externalized_risk_is_borne
+  - surplus_rent_avoided_cost_asset_gain_or_capacity_accumulates
+  - gain_reseats_in_executives_creditors_owners_state_party_or_security_capacity
+  - accumulated_capacity_increases_ability_to_set_future_terms
+  - legal_market_administrative_or_moral_labels_legitimize_or_obscure_the_relation
+  - accusations_or_scapegoating_may_route_pressure_toward_lower_power_targets
+  - redress_channels_return_the_harm_or_fail
+  - cycle_repeats_changes_or_breaks
+
+material_mesh:
+  labor:
+    current_state: CONFIRMED_IN_PARTS
+    paths:
+      - worker_labor -> wage_theft_or_market_power_suppression -> employer_gain
+      - low_compensation -> household_pressure -> public_support -> candidate_employer_cost_supplementation
+      - compensation_and_public_support -> whole_corporate_circuit -> surplus_and_ownership
+  prices:
+    current_state: CONFIRMED_IN_CASES
+    paths:
+      - essential_or_high_dependency_good -> concentration_coordination_or_captive_demand -> pricing_power -> household_burden -> surplus
+      - cost_shock -> price_change -> margin_test -> owner_return
+  land_resources:
+    current_state: CONFIRMED_IN_PARTS
+    paths:
+      - land_or_resource_control -> dependency -> rent_or_extraction_payment -> owner_revenue_or_appreciation
+  healthcare:
+    current_state: ACTIVE_WHOLE_CIRCUIT_STUDY
+    paths:
+      - taxes_premiums_public_payments -> insurer_pbm_provider_pharmacy -> access_claim_pricing_mechanism -> patient_burden -> corporate_surplus -> ownership
+  public_money:
+    current_state: ACTIVE_SOURCE_FIRST_CENSUS
+    rails:
+      - healthcare
+      - defense_and_intelligence
+      - immigration_detention_and_border_enforcement
+      - housing
+      - food_assistance
+      - agriculture
+      - energy
+      - education
+      - infrastructure
+      - prisons_and_corrections
+      - disaster_response
+      - tax_expenditures_and_credits
+      - public_debt_and_interest
+      - state_local_pass_throughs
+      - foreign_security_assistance_and_procurement_return
+  ecology:
+    current_state: CONFIRMED_RISK_AND_RECOVERY_CASES
+    paths:
+      - private_activity -> private_revenue -> damage_or_cleanup_liability -> recovered_or_externalized_cost
+
+identity_mesh:
+  rule: >-
+    Every apparent endpoint created by a new company, agency, trust, fund, subsidiary, brand,
+    jurisdiction, or program name receives an identity/kinship test before being accepted as a real
+    termination.
+  required_crossings:
+    - aliases_and_dbas
+    - parent_subsidiary_holding_company
+    - beneficial_ownership_and_voting_control
+    - funds_trusts_asset_managers_creditors
+    - predecessor_successor_merger_spinoff
+    - shared_executives_directors_and_control_agreements
+    - contracting_funding_lobbying_advocacy_and_joint_ventures
+
+laundering_mesh:
+  truth:
+    rule: >-
+      Track source lineage so one assertion does not become apparent independent corroboration merely
+      by moving through official, legal, expert, statistical, or media institutions.
+  legality:
+    rule: >-
+      Trace the constraint envelope around legal or formally voluntary transactions before using law,
+      signature, or contract form as moral evidence.
+  moral_naming:
+    rule: >-
+      Strip labels and compare the underlying transformation of power, agency, harm, gain, and consent.
+  administrative_distance:
+    rule: >-
+      Recompose locally ordinary tasks when their handoffs jointly create the harmful transformation.
+  patronage:
+    rule: >-
+      Compare broad extraction/control with selective return and test whether the return changes or
+      legitimizes the underlying distribution of power.
+
+blame_mesh:
+  current_core_relation:
+    - UPWARD_MATERIAL_FLOW
+    - DOWNWARD_BLAME_FLOW
+  immigration_application:
+    state: ACTIVE_WITH_SUPPORTED_COMPONENTS
+    rule: >-
+      Preserve real immigration-related pressures where supported, but compare them with who controls
+      wages, prices, rents, contracts, public spending, and ownership returns; contributing to a
+      pressure is not the same as capturing the gain.
+  accusation_mirror:
+    state: ACTIVE
+    comparison_states:
+      - SAME_MECHANISM
+      - ANALOGOUS_MECHANISM
+      - MATERIALLY_DIFFERENT
+      - INSUFFICIENT_EVIDENCE
+      - CONTRADICTED_MIRROR
+
+power_accumulation_mesh:
+  private_terminal_seats:
+    - executives
+    - creditors
+    - controlling_shareholders
+    - institutional_shareholders
+    - trusts_and_funds
+    - dispersed_and_employee_shareholders
+  non_private_terminal_or_reseated_seats:
+    - monopoly_or_market_power
+    - state_fiscal_capacity
+    - military_capacity
+    - police_detention_and_coercive_capacity
+    - surveillance_and_data_capacity
+    - party_political_capacity
+    - bureaucratic_capacity
+    - information_control
+    - institutional_insulation
+
+redress_mesh:
+  orientation: violence_prevention_through_early_legibility_and_nonviolent_correction
+  channels:
+    - voting_and_election_administration
+    - courts_and_appeals
+    - unions_and_collective_bargaining
+    - regulators_enforcement_and_watchdogs
+    - journalism_records_and_whistleblowers
+    - scientific_statistical_and_expert_review
+    - petition_protest_boycott_strike_and_legislative_change
+  failure_modes:
+    - capture
+    - retaliation
+    - defunding
+    - bypass
+    - delay
+    - noncompliance
+    - quorum_destruction
+    - secrecy
+    - inaccessibility
+    - symbolic_only_review
+  lock: >-
+    Failed redress can raise political-violence risk without making violence inevitable, legitimate,
+    or responsibility-free. The mesh exists in part to expose harm while democratic correction still
+    has usable return paths.
+
+historical_operator_library:
+  purpose: mechanism_discovery_not_guilt_by_analogy
+  Rome:
+    candidate_mechanisms:
+      - public_private_extraction_mesh
+      - tax_farming_and_intermediary_capture
+      - conquest_and_elite_accumulation
+      - patronage_return_laundering
+  Nazi_Germany:
+    candidate_mechanisms:
+      - legality_laundering
+      - false_voluntariness
+      - victim_to_resource_conversion
+      - public_private_forced_labor_mesh
+      - administrative_moral_distance
+      - truth_laundering_and_euphemism
+  Stalinist_USSR:
+    candidate_mechanisms:
+      - power_capacity_accumulation_without_private_shareholder_primacy
+      - forced_labor_and_resource_extraction
+      - captured_truth_production
+      - redress_and_institutional_capture
+  lock: >-
+    Each present-day comparison must record both the shared transformation and the material differences
+    that could defeat the correspondence.
+
+case_surfaces_already_present:
+  - walmart-whole-circuit-2026-08-16
+  - wealth-grievance-routing-2026-08-16
+  - material-extraction-and-upward-recirculation-2026-08-16
+  - healthcare-grievance-and-enforcement-continuity-2026-08-16
+
+recovery_manifest:
+  - docs/HARM_MESH_THREAD_RECOVERY_2026-08-16.md
+  - docs/HARM_MESH_OPERATING_MODEL_v0_1.md
+  - MESH_MODEL.md
+  - agents/HARM_MESH_TRAVERSAL_AGENT_v0_1.md
+
+next_growth:
+  - Build normalized source-first public-money census rather than actor-first lists.
+  - Cross-match recurring corporate, ownership, trust, fund, creditor, and control seats across sectors.
+  - Promote healthcare, food, housing, energy, insurance, pharmaceutical, debt, and other essential-market circuits.
+  - Expand immigration blame inversion into employer, landlord, detention, surveillance, transport, and contractor meshes.
+  - Normalize historical source bundles for the operator library.
+  - Build truth-production and citation-lineage case studies.
+  - Build redress-capture/election-administration case surfaces with strict observed/candidate/not-established typing.
+  - Preserve all discovered weak edges as explicit research paths rather than conversational memory.
+
+locks:
+  - The mesh maps mechanisms and contributions, not enemy identities.
+  - Group membership does not establish culpability.
+  - Harm, control, gain, and responsibility remain evidence-scoped.
+  - No category, institution, corporation, government, party, religion, ideology, nationality, or wealth class receives evidentiary immunity.
+  - No legal, accounting, naming, or jurisdictional partition may close a path without evidence that the relevant causal carrier actually terminates.

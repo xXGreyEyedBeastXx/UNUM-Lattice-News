@@ -1,0 +1,53 @@
+schema: unum-lattice-news/node/v0.1
+id: truth-laundering-and-citation-lineage-capture
+title: Truth laundering and citation-lineage capture
+family: analysis_framework
+subtype: causal_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for detecting when a claim gains apparent independence or legitimacy by passing through
+    official records, courts, agencies, experts, media, statistics, reports, or repeated citations
+    without acquiring genuinely independent evidentiary support. Also covers systems that preserve
+    locally true facts while hiding or falsifying the relations among them.
+  posture: working_framework
+core_rule: >-
+  Repetition is not corroboration unless the evidentiary lineage becomes materially independent.
+  A captured, erroneous, coerced, or strategically sanitized upstream account can propagate through
+  many downstream institutions while remaining one lineage.
+trace:
+  - upstream_assertion_or_record
+  - institutional_or_administrative_translation
+  - legal_statistical_expert_or_media_republication
+  - citation_inheritance
+  - apparent_independent_consensus
+  - public_policy_or_moral_consequence
+required_tests:
+  - identify_first_recoverable_source
+  - identify_independent_primary_evidence
+  - map_which_sources_copy_or_depend_on_which
+  - test_whether_official_categories_hide_material_relations
+  - test_coercion_or_capture_of_truth_producing_institution
+  - preserve_contradictory_or_destroyed_records
+lineage_states:
+  - INDEPENDENT_CORROBORATION
+  - PARTIAL_INDEPENDENCE
+  - CITATION_INHERITANCE
+  - COMMON_UPSTREAM_SOURCE
+  - OFFICIAL_ASSERTION_ONLY
+  - COERCION_OR_CAPTURE_SUPPORTED
+  - LINEAGE_UNKNOWN
+historical_discovery_surfaces:
+  - Nazi administrative euphemism and staged appearances
+  - Stalinist show trials, propaganda, controlled records, and official-statistical environments
+locks:
+  - Historical correspondence is operator discovery, not present-day equivalence.
+  - Official status increases recoverability, not automatic truth.
+  - Ten downstream sources may still be one evidentiary lineage.
+  - Locally true facts can compose into a false overall causal picture when relations are omitted.
+relations:
+  - type: EXTENDS
+    target: causal-partition-laundering
+    posture: working_framework

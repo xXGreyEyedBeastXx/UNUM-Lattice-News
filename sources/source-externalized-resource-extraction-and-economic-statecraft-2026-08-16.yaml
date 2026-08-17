@@ -1,0 +1,193 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-externalized-resource-extraction-and-economic-statecraft-2026-08-16
+title: Externalized resource extraction, public finance, political support, and corporate return baseline
+accessed: 2026-08-16
+purpose: >-
+  Preserve current and historical evidence for tracing U.S. public finance, economic statecraft,
+  security support, covert action, resource access, infrastructure, corporate participation, local
+  benefit, and local harm as one mesh without collapsing distinct cases into a single motive.
+sources:
+  - id: source-dfc-strategic-investments-2026-06-03
+    publisher: U.S. International Development Finance Corporation
+    source_class: primary_government
+    title: DFC Board Approves $2.5 Billion in New Strategic Investments
+    date: 2026-06-03
+    url: https://www.dfc.gov/media/press-releases/dfc-board-approves-25-billion-new-strategic-investments-advancing
+    supports:
+      - DFC approved $2.5 billion in strategic investments spanning infrastructure, energy, supply-chain security, and other objectives.
+      - DFC describes debt, equity, and political-risk insurance as instruments of American economic statecraft.
+      - DFC explicitly described increasing U.S. access to critical minerals as an objective of the approved investments.
+  - id: source-dfc-critical-minerals-2026-02-04
+    publisher: U.S. International Development Finance Corporation
+    source_class: primary_government
+    title: DFC Highlights Landmark Critical Minerals Investments
+    date: 2026-02-04
+    url: https://www.dfc.gov/media/press-releases/dfc-highlights-landmark-critical-minerals-investments-strengthen-us-national
+    supports:
+      - DFC closed a $600 million investment in the Orion Critical Mineral Consortium, part of a $1.8 billion public-private platform.
+      - DFC had letters exploring up to $700 million for a tungsten project in Kazakhstan.
+      - DFC invested $75 million in the U.S.-Ukraine Reconstruction Investment Fund for critical minerals and other strategic sectors.
+  - id: source-dfc-lobito-rail-2025-12-17
+    publisher: U.S. International Development Finance Corporation
+    source_class: primary_government
+    title: DFC Signs Loan Agreement for Lobito Atlantic Railway
+    date: 2025-12-17
+    url: https://www.dfc.gov/media/press-releases/dfc-ceo-ben-black-signs-loan-agreement-lobito-atlantic-railway-securing
+    supports:
+      - DFC financing supports a mineral port and approximately 1,300 km of railway in Angola.
+      - The project is expected to raise transport capacity to 4.6 million metric tons and reduce critical-mineral transport cost by up to 30 percent.
+    limitations:
+      - Reduced transport cost is not itself evidence of the final retail-price pass-through or distribution of the gain.
+  - id: source-state-lobito-commercial-diplomacy-2024-09-26
+    publisher: U.S. Department of State
+    source_class: primary_government
+    title: UNGA79 Lobito Corridor - Trans Africa Connectivity
+    date: 2024-09-26
+    url: https://2021-2025.state.gov/briefings-foreign-press-centers/unga79/lobito-corridor-trans-africa-connectivity
+    supports:
+      - The U.S. reported mobilizing more than $4 billion for the corridor with roughly $3 billion from U.S. tools at that point.
+      - The State Department described the model as going beyond traditional aid and centering commercial diplomacy.
+      - Officials explicitly stated a desire to avoid an extractive play and cited local jobs, beneficiation, and community benefit as intended safeguards.
+    limitations:
+      - Stated intent and expected benefit require outcome verification.
+  - id: source-dfc-lobito-local-benefits-2025
+    publisher: U.S. International Development Finance Corporation
+    source_class: primary_government
+    title: Strengthening critical mineral supply chains by countering China's dominance
+    date: 2025
+    url: https://www.dfc.gov/investment-story/strengthening-critical-mineral-supply-chains-countering-chinas-dominance
+    supports:
+      - DFC projects 30 percent lower mineral export transport costs and 29 fewer transit days.
+      - DFC projects more than $350 million in local procurement over five years and more than 1,000 additional full-time Angolan jobs.
+      - DFC describes the corridor as a benefit to U.S. industries and U.S. strategic interests.
+  - id: source-exim-project-finance-2026
+    publisher: Export-Import Bank of the United States
+    source_class: primary_government
+    title: Project and Structured Finance - Our Approach
+    date: 2026
+    url: https://www.exim.gov/solutions/project-and-structured-finance/our-approach-to-project-finance
+    supports:
+      - EXIM explicitly states that project finance helps U.S. exporters compete in private infrastructure and natural-resource extraction.
+  - id: source-exim-structured-finance-transactions-2026-06-30
+    publisher: Export-Import Bank of the United States
+    source_class: primary_government
+    title: Project and Structured Finance Transactions Fiscal Years 1993-2026
+    date: 2026-07-02
+    url: https://www.exim.gov/solutions/project-and-structured-finance/transactions
+    supports:
+      - EXIM reports $78.656 billion in project and structured finance from 1993 through June 30, 2026 across multiple sectors.
+      - A $1.25 billion Reko Diq mining project in Pakistan was authorized in 2026.
+    limitations:
+      - The $78.656 billion total includes infrastructure and other sectors and is not a resource-extraction total.
+  - id: source-exim-supply-chain-resiliency-initiative
+    publisher: Export-Import Bank of the United States
+    source_class: primary_government
+    title: Supply Chain Resiliency Initiative
+    date: 2026
+    url: https://www.exim.gov/about/special-initiatives/supply-chain-resiliency-initiative
+    supports:
+      - EXIM financing for foreign critical-mineral projects is tied to long-term offtake contracts with U.S. companies.
+      - The financing amount is linked to the share of mine output committed to U.S. importers.
+      - EXIM states these arrangements are intended to benefit American companies and workers.
+  - id: source-dol-drc-cobalt-forced-labor
+    publisher: U.S. Department of Labor
+    source_class: primary_government_labor_rights
+    title: Democratic Republic of the Congo - cobalt ore forced labor findings
+    date: 2024-2026
+    url: https://www.dol.gov/taxonomy/country/congo-democratic-republic-drc
+    supports:
+      - DOL reports forced-labor indicators in parts of the DRC cobalt industry, including hazardous work, abusive overtime, wage withholding, and inability to refuse dangerous work.
+    limitations:
+      - These findings concern the DRC cobalt sector generally and do not establish that a specific DFC-financed corridor or named mine caused the documented abuses.
+  - id: source-crs-fms-fmf-2025-12-11
+    publisher: Congressional Research Service
+    source_class: primary_legislative_research
+    title: Transfer of Defense Articles - Foreign Military Sales
+    date: 2025-12-11
+    url: https://www.congress.gov/crs-product/IF11437
+    supports:
+      - FY2024 FMS-system activity included $11.8 billion in arms transfers funded through Foreign Military Financing and $9.2 billion in DOD building-partner-capacity and State security assistance.
+      - FMS uses U.S. government institutions to procure or transfer defense goods and services to foreign partners.
+    limitations:
+      - Security assistance is not itself proof of resource extraction or regime-support-for-resource-deal causation.
+
+  - id: source-frus-iran-support-shah-oil-1952
+    publisher: U.S. Department of State Office of the Historian
+    source_class: declassified_primary_government
+    title: Program to Support the Shah
+    date: 1952-09-22
+    url: https://history.state.gov/historicaldocuments/frus1951-54Iran/d122
+    supports:
+      - A CIA memorandum proposed supporting a Shah-led government willing to accept a reasonable oil settlement.
+      - It contemplated covert support, military contacts, material assistance, and inducing military leaders to carry out a coup if the Shah failed to act.
+  - id: source-frus-iran-coup-acknowledgment-1953
+    publisher: U.S. Department of State Office of the Historian
+    source_class: declassified_primary_government
+    title: Editorial note on Eisenhower diary and U.S. role in overthrow of Mossadegh
+    date: 1953-10-08
+    url: https://history.state.gov/historicaldocuments/frus1951-54Iran/d328
+    supports:
+      - President Eisenhower recorded that the United States helped restore the Shah and eliminate Mossadegh through covert means.
+  - id: source-frus-iran-postcoup-power-1954
+    publisher: U.S. Department of State Office of the Historian
+    source_class: declassified_primary_government
+    title: Iran after the overthrow of Mossadegh
+    date: 1954
+    url: https://history.state.gov/historicaldocuments/frus1951-54Iran/d375
+    supports:
+      - U.S. analysts described increased authoritarian methods including martial law, censorship, prosecution, and repression of opponents.
+      - They described the United States as the post-coup government's chief financial backer and a major influence.
+  - id: source-frus-iran-oil-consortium-1954
+    publisher: U.S. Department of State Office of the Historian
+    source_class: declassified_primary_government
+    title: 1954 Iranian oil consortium agreement
+    date: 1954-10-30
+    url: https://history.state.gov/historicaldocuments/frus1951-54Iran/d375
+    supports:
+      - The 1954 consortium granted 40 percent participation to American oil companies and 40 percent to Anglo-Iranian Oil Company, with the remainder to Shell and a French company.
+      - Iran was to receive 50 percent of net consortium profits while consortium operating companies received extensive production, exploration, and refining roles.
+  - id: source-frus-guatemala-pbsuccess-budget-1953
+    publisher: U.S. Department of State Office of the Historian
+    source_class: declassified_primary_government
+    title: Project PBSUCCESS funding authorization
+    date: 1953-12-09
+    url: https://history.state.gov/historicaldocuments/frus1952-54Guat/d75
+    supports:
+      - CIA Director Allen Dulles approved up to $3 million for PBSUCCESS.
+  - id: source-frus-guatemala-private-interests-1953
+    publisher: U.S. Department of State Office of the Historian
+    source_class: declassified_primary_government
+    title: U.S. policy toward Guatemala and private U.S. interests
+    date: 1953
+    url: https://history.state.gov/historicaldocuments/frus1952-54v04/d424
+    supports:
+      - U.S. policy papers identified expropriation of United Fruit and other U.S.-owned assets as a major subsidiary problem.
+      - The documents also framed anti-communism and hemisphere security as central objectives.
+    limitations:
+      - Corporate-property protection should not be treated as the sole established motive for PBSUCCESS.
+  - id: source-frus-guatemala-land-reform-ufco-1953-1954
+    publisher: U.S. Department of State Office of the Historian
+    source_class: declassified_primary_government
+    title: Editorial note on United Fruit expropriations under Guatemalan agrarian reform
+    date: 1953-1954
+    url: https://history.state.gov/historicaldocuments/frus1952-54v04/d420
+    supports:
+      - Guatemala expropriated large areas of United Fruit land under its agrarian reform law and the United States formally pressed compensation claims on the company's behalf.
+
+assessment:
+  established:
+    - U.S. public financial and state-capacity instruments directly support foreign resource, energy, mineral, transport, and export-market projects.
+    - Some current programs explicitly tie financing to U.S. access, U.S. exporters, U.S. offtake, or U.S. strategic supply-chain goals.
+    - Current programs also claim and in some cases quantify local benefits such as jobs, procurement, infrastructure, and lower logistics costs; these benefits must be measured rather than erased.
+    - Historical Iran provides a documented case where covert political intervention, post-intervention financial backing, an oil settlement, foreign corporate participation, and increased authoritarian repression belong in one recoverable mesh.
+    - Historical Guatemala provides a documented case where covert regime-change activity, agrarian reform, United Fruit property interests, compensation claims, anti-communism, and U.S. strategic interests overlapped; corporate protection was important but not proven to be the only motive.
+  not_yet_established:
+    - a single aggregate dollar total for U.S. public exposure devoted specifically to foreign resource extraction across all agencies and financing forms
+    - that all current critical-mineral or infrastructure projects produce net harm to host populations
+    - that lower U.S. consumer prices are smaller than total extraction burdens across the whole system
+    - that current development-finance projects are equivalent to historical covert regime-change operations
+next_searches:
+  - Build agency-by-agency exposure census: DFC, EXIM, State/FMF, DOD security cooperation, USTDA, MCC, USAID blended finance, Treasury/MDB participation, DOE, Commerce, and sovereign guarantees.
+  - Trace corporate counterparties, parents, beneficial owners, commodity traders, lenders, insurers, and offtake buyers for each resource project.
+  - Measure host-country taxes, royalties, ownership, wages, local procurement, downstream processing, displacement, ecological costs, and security conditions.
+  - Measure actual retail or industrial price pass-through versus retained corporate margin after logistics or input cost reductions.

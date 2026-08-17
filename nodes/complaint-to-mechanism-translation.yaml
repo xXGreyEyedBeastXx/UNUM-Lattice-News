@@ -1,0 +1,60 @@
+schema: unum-lattice-news/node/v0.1
+id: complaint-to-mechanism-translation
+title: Complaint-to-mechanism translation
+family: analysis_framework
+subtype: investigative_routing_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Converts recurring public complaints into testable harm-mesh questions without treating repetition,
+    ideology, or emotional intensity as proof. The complaint is an entry seat. The investigation must
+    recover the measurable pressure, causal mechanism, controlling terms, beneficiaries, harmed
+    populations, proposed redress, opposition framing, and evidence that would weaken the complaint.
+  posture: working_framework
+core_rule:
+  - complaint_is_evidence_of_perceived_harm_not_automatic_proof_of_cause
+  - recurring_complaints_raise_research_priority_not_confidence_by_themselves
+  - translate_slogans_into_material_relations_before_accepting_or_rejecting_them
+  - preserve_the_complainants_own_claim_before_assistant_normalization
+required_trace:
+  - complaint_or_demand
+  - population_reporting_harm
+  - lived_pressure_or_loss
+  - measurable_indicator
+  - proximate_mechanism_candidates
+  - upstream_power_or_rule_setting_seats
+  - who_controls_terms
+  - who_bears_cost
+  - who_captures_gain_or_capacity
+  - requested_redress
+  - opposition_or_delegitimizing_frame
+  - actual_policy_or_enforcement_response
+  - claim_specific_counterevidence
+  - discriminator_that_would_change_weight
+complaint_families_to_watch:
+  - wages_and_worker_bargaining_power
+  - rent_housing_and_landlord_power
+  - healthcare_cost_denial_and_profit
+  - monopoly_consolidation_and_private_equity
+  - union_suppression_and_misclassification
+  - immigration_scapegoating_and_workplace_exploitation
+  - corporate_subsidy_tax_contract_and_bailout_support
+  - privatization_and_public_goods
+  - climate_pollution_and_externalized_cost
+  - war_security_and_foreign_policy_resource_flows
+  - civil_liberties_voting_and_democratic_redress
+  - debt_education_and_household_dependency
+relations:
+  - type: EXTENDS
+    target: attribution-routing-and-grievance-redirection
+  - type: EXTENDS
+    target: causal-partition-laundering
+  - type: FEEDS
+    target: redress-capture-and-correction-failure
+locks:
+  - Do not treat the left, labor, progressives, socialists, or any other coalition as one speaker.
+  - Record disagreement within complaint-producing coalitions.
+  - A complaint may identify a real harm while misidentifying one or more causes.
+  - A hostile response to a complaint does not prove the complaint correct.

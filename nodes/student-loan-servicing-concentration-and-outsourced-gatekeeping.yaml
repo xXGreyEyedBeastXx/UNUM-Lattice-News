@@ -1,0 +1,44 @@
+schema: unum-lattice-news/node/v0.1
+id: student-loan-servicing-concentration-and-outsourced-gatekeeping
+title: Student-loan servicing concentration and outsourced gatekeeping
+family: analysis_framework
+subtype: public_debt_administration_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Maps the federal student-loan servicing ecosystem as outsourced administration of public debt, including borrower
+    records, repayment information, payment-plan transitions, contractor revenue, performance metrics, staffing-dependent
+    oversight, and the risk created when the public agency loses capacity to verify private gatekeepers.
+  posture: evidence_bound
+current_evidence:
+  - GAO_found_four_of_five_tested_servicers_failed_accuracy_standards_in_the_reviewed_quarters.
+  - FSA_stopped_direct_accuracy_and_call_quality_assessments_in_February_2025_due_to_staff_capacity.
+  - Nelnet_reports_363_970_million_in_2025_Department_servicing_revenue_and_434_5_billion_in_government_owned_loans_serviced.
+  - FSA_lists_a_multi_servicer_ecosystem_including_Aidvantage_CRI_ECSI_Edfinancial_MOHELA_and_Nelnet.
+  - Maximus_confirms_it_assists_borrowers_with_Department_originated_loans_but_does_not_disaggregate_Aidvantage_revenue.
+required_trace:
+  - federal_loan_owner
+  - servicing_contract
+  - contractor_and_subcontractor
+  - borrower_record_and_account_interface
+  - repayment_or_relief_program_rule
+  - error_delay_or_information_failure
+  - performance_metric_and_penalty
+  - agency_staffing_and_audit_capacity
+  - contractor_revenue
+  - complaint_appeal_and_correction
+locks:
+  - outsourced_servicing_performs_real_administrative_work.
+  - failing_a_metric_does_not_mean_every_account_is_inaccurate.
+  - company_level_revenue_must_be_disaggregated_where_the_filing_allows_it; do_not_invent_Aidvantage_revenue.
+source_bundle:
+  - source-article-readiness-expansion-2-2026-08-16
+relations:
+  - type: EXTENDS
+    target: student-loan-servicing-and-oversight-retreat
+  - type: EXTENDS
+    target: administrative-moral-distance
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure

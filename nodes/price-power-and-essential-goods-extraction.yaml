@@ -1,0 +1,64 @@
+schema: unum-lattice-news/node/v0.1
+id: price-power-and-essential-goods-extraction
+title: Price power and essential-goods extraction
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Harm-audit operator for testing whether prices presented as ordinary competitive market outcomes
+    are instead materially shaped by concentration, coordination, captive demand, scarcity leverage,
+    switching barriers, information asymmetry, algorithmic alignment, or other pricing power that
+    transfers disproportionate value from households or dependent buyers to firms and owners.
+  posture: working_framework
+core_trace:
+  - essential_or_high-dependency_need
+  - buyer_household_or_public_payer
+  - market_structure_and_available_substitutes
+  - price_setting_mechanism
+  - cost_change
+  - price_change
+  - margin_change
+  - corporate_surplus
+  - executive_compensation_and_owner_return
+  - household_or_public_burden
+harm_tests:
+  - Compare input-cost growth with price growth.
+  - Compare gross and operating margins before, during, and after the claimed cost shock.
+  - Measure concentration, entry barriers, switching costs, and buyer ability to refuse or delay purchase.
+  - Test whether competitors set prices independently or share data, algorithms, or common pricing infrastructure.
+  - Trace whether elevated prices persist after the original cost shock recedes.
+  - Trace surplus through dividends, buybacks, retained earnings, executive equity, acquisitions, and concentrated ownership.
+  - Distinguish genuine scarcity and cost pass-through from opportunistic or coordinated price extraction.
+confirmed_examples:
+  - id: grocery-pandemic-margin-expansion
+    posture: observed
+    source: source-ftc-grocery-supply-chain-2024
+    note: FTC found grocery retailer profits rose and remained elevated and that some firms appeared to use rising costs as an opportunity to raise prices further.
+  - id: realpage-rent-pricing-coordination
+    posture: observed_legal_enforcement
+    source: source-doj-realpage-2024-2026
+    note: DOJ alleged and later settled claims involving nonpublic competitor data and pricing alignment in rental housing software.
+  - id: labor-market-price-of-work
+    posture: supported_inference
+    source: source-treasury-labor-market-competition-2022
+    note: Treasury estimated employer market power and anticompetitive practices materially suppress worker wages relative to a more competitive benchmark.
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: REQUIRES
+    target: whole-circuit-corporate-gain-accounting
+    posture: working_framework
+  - type: REQUIRES
+    target: causal-partition-laundering
+    posture: working_framework
+locks:
+  - High price != price gouging by definition.
+  - High profit != illegal conduct by definition.
+  - Cost inflation may explain part or all of a price increase and must be measured.
+  - Market labeling does not prove competitive price formation.
+  - Essential demand and inability to exit increase the burden even when the transaction is formally voluntary.
+  - A regulator's allegation remains an allegation unless resolved; settlements and final judgments must be typed separately.

@@ -1,0 +1,45 @@
+schema: unum-lattice-news/node/v0.1
+id: carceral-labor-and-captive-work
+title: Carceral labor and captive work
+family: analysis_framework
+subtype: coercion_and_labor_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigates labor performed under confinement where the worker's freedom to leave is removed and work may be
+    legally required. It separates ordinary mandatory institution jobs, UNICOR participation, rehabilitation claims,
+    compensation, sanctions, market output, and post-release effects instead of collapsing them into one label.
+  posture: evidence_bound
+current_evidence:
+  - BOP_states_medically_able_sentenced_inmates_are_required_to_work.
+  - ordinary_institution_assignments_pay_12_to_40_cents_per_hour.
+  - UNICOR_typical_pay_is_23_cents_to_1_15_per_hour.
+  - BOP_states_UNICOR_participation_is_associated_with_reentry_and_recidivism_benefits_and_has_more_demand_than_capacity.
+  - Federal_Prison_Industries_is_a_wholly_owned_self_sustaining_government_corporation.
+required_trace:
+  - legal_basis_for_confinement
+  - mandatory_or_optional_work_status
+  - refusal_consequence
+  - job_and_output
+  - compensation
+  - deductions_or_financial_obligations
+  - customer_or_user_of_output
+  - state_or_private_beneficiary
+  - training_and_post_release_benefit
+  - injury_safety_and_grievance_process
+  - redress
+locks:
+  - confinement_changes_the_constraint_envelope_even_when_a_worker_prefers_a_specific_assignment.
+  - rehabilitation_benefit_does_not_make_mandatory_work_noncoercive.
+  - do_not_equate_every_prison_work_program_with_historical_chattel_slavery.
+source_bundle:
+  - source-article-readiness-expansion-2-2026-08-16
+relations:
+  - type: EXTENDS
+    target: compulsory-dependency-and-survival-enclosure
+  - type: EXTENDS
+    target: victim-to-resource-conversion
+  - type: EXTENDS
+    target: power-capacity-accumulation

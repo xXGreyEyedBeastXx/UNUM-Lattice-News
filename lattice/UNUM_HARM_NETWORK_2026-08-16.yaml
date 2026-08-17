@@ -1,0 +1,270 @@
+schema: unum-lattice-news/lattice/v0.1
+id: unum-harm-network-2026-08-16
+title: UNUM harm network — extraction, capture, concentration, blame routing, and failed redress
+status: active
+as_of: 2026-08-16
+authority: evidence_lattice_not_verdict
+purpose: >-
+  Recompose the material, political, and narrative harm mechanisms already recovered in UNUM
+  Lattice News into one causal network. The network does not erase evidentiary distinctions; it
+  prevents those distinctions from being used as false disconnects that hide aggregate extraction,
+  concentrated gain, power feedback, scapegoating, or institutional failure.
+
+operators:
+  - money-flow-benefit-enforced-loss
+  - whole-circuit-corporate-gain-accounting
+  - causal-partition-laundering
+  - price-power-and-essential-goods-extraction
+  - labor-market-power-and-wage-extraction
+  - public-assistance-labor-cost-supplementation
+  - land-rent-and-resource-capture
+  - public-to-private-revenue-and-ownership-return
+  - environmental-cost-externalization
+  - attribution-routing-and-grievance-redirection
+
+source_bundles:
+  - source-us-material-extraction-and-upward-recirculation-2026-08-16
+  - source-walmart-public-assistance-employment-2026
+  - source-us-wealth-grievance-routing-baseline-2026-08-16
+  - source-healthcare-grievance-and-enforcement-continuity-2026-08-16
+  - source-price-power-and-market-capture-2026-08-16
+
+core_invariant:
+  statement: >-
+    Separate for attribution; recompose for causation. A legal, accounting, market, programmatic,
+    jurisdictional, or rhetorical category does not sever a material or causal flow unless evidence
+    shows that the flow actually terminates there.
+  prohibited_shortcuts:
+    - worker_received_benefit_therefore_employer_cannot_gain
+    - government_spending_reached_program_therefore_private_ownership_is_irrelevant
+    - market_price_label_therefore_price_was_competitively_formed
+    - legal_wage_therefore_labor_market_is_nonextractive
+    - profit_is_a_distinct_accounting_category_therefore_it_is_unrelated_to_labor_price_or_public_input
+    - foreign_aid_left_the_country_therefore_procurement_return_is_irrelevant
+    - shareholder_return_is_downstream_therefore_it_is_unrelated_to_upstream_extraction
+    - blame_target_is_visible_therefore_blame_target_is_causal_source
+
+harm_network:
+  material_pressure_generation:
+    labor_extraction:
+      state: CONFIRMED_IN_PARTS
+      trace:
+        - worker_labor
+        - employer_market_power_or_underpayment
+        - suppressed_or_withheld_compensation
+        - worker_household_pressure
+        - employer_cost_saving_or_surplus_effect
+      evidence:
+        - source-dol-whd-fy2025-back-wages
+        - source-treasury-labor-market-competition-2022
+      locks:
+        - lawful_low_wage_is_not_identical_to_wage_theft
+        - legality_does_not_establish_adequacy_or_competitive_formation
+
+    public_supplementation_of_low_compensation:
+      state: PATH_FORWARD_WITH_OBSERVED_CASES
+      trace:
+        - employer_compensation
+        - worker_household_remains_program_eligible
+        - public_assistance
+        - worker_household_support
+        - candidate_reduction_in_private_employer_cost
+        - possible_retail_provider_or_pharmacy_revenue_return
+      evidence:
+        - source-gao-working-medicaid-snap-employers-2026
+        - walmart-whole-circuit-2026-08-16
+      locks:
+        - legal_benefit_recipient_is_worker_or_household
+        - employer_incidence_requires_measurement
+        - do_not_stop_trace_at_legal_recipient
+
+    price_extraction:
+      state: CONFIRMED_IN_CASES
+      trace:
+        - essential_or_high_dependency_good_or_service
+        - concentration_or_coordination_or_captive_demand
+        - pricing_power
+        - price_above_competitive_or_cost_justified_counterfactual
+        - household_or_public_payer_burden
+        - firm_margin_or_surplus
+      evidence:
+        - source-ftc-grocery-supply-chain-2024
+        - source-doj-realpage-2024-2026
+      locks:
+        - high_price_alone_is_not_price_gouging
+        - market_label_is_not_proof_of_competitive_price_formation
+
+    land_and_resource_capture:
+      state: CONFIRMED_IN_PARTS
+      trace:
+        - land_or_resource_control
+        - access_dependency_or_tenancy
+        - rent_or_extraction_payment
+        - owner_revenue_or_asset_appreciation
+        - tenant_producer_or_public_burden
+      evidence:
+        - source-usda-total-2024-landlords
+      locks:
+        - rent_is_not_wrongdoing_by_definition
+        - ownership_and_burden_distribution_must_be_traced
+
+    healthcare_extraction_and_denial_pressure:
+      state: CONFIRMED_GRIEVANCE_FIELD_PATH_FORWARD_MONEY_FLOW
+      trace:
+        - taxes_premiums_and_public_health_spending
+        - insurer_pbm_provider_or_pharmacy_intermediary
+        - claim_payment_denial_prior_authorization_rebate_or_vertical_integration_mechanism
+        - patient_cost_delay_or_access_effect
+        - corporate_revenue_and_surplus
+        - executive_and_owner_return
+      evidence:
+        - source-healthcare-grievance-and-enforcement-continuity-2026-08-16
+      locks:
+        - denial_rate_alone_does_not_establish_improper_denial
+        - public_program_payment_does_not_end_the_private_money_trace
+
+    public_to_private_capture:
+      state: CONFIRMED_IN_CASES
+      trace:
+        - taxpayer_or_public_borrowing_capacity
+        - contract_subsidy_tax_preference_program_payment_or_public_infrastructure
+        - private_firm_revenue_or_reduced_cost
+        - productive_costs_wages_and_suppliers
+        - residual_profit_or_asset_gain
+        - dividend_buyback_interest_executive_or_ownership_return
+      evidence:
+        - source-lockheed-2025-10k
+        - source-treasury-tax-expenditures-fy2026
+      locks:
+        - gross_public_spending_is_not_owner_gain
+        - owner_gain_must_be_traced_after_real_costs
+        - public_value_created_by_the_program_remains_visible
+
+    environmental_externalization:
+      state: CONFIRMED_RISK_AND_RECOVERY_CASES
+      trace:
+        - private_resource_or_industrial_activity
+        - private_revenue
+        - ecological_or_cleanup_liability
+        - insufficient_assurance_or_unrecovered_cost
+        - community_public_or_future_generation_burden
+      evidence:
+        - source-gao-federal-oil-gas-oversight-2025
+        - source-epa-superfund-enforcement-fy2025
+      locks:
+        - estimated_liability_is_not_realized_public_loss
+        - recovered_costs_reduce_externalized_harm
+
+  corporate_recomposition:
+    state: CONFIRMED_OPERATOR_WITH_CASE
+    trace:
+      - all_private_and_public_inflows
+      - ordinary_worker_compensation
+      - public_cost_supplementation
+      - operating_costs
+      - operating_and_net_income
+      - executive_compensation
+      - dividends
+      - buybacks
+      - retained_earnings
+      - acquisition_and_asset_appreciation
+      - concentrated_ownership
+    case:
+      - walmart-whole-circuit-2026-08-16
+    invariant:
+      - decomposition_must_recompose
+      - anti_double_counting_must_not_delete_downstream_gain
+
+  concentration_and_power_feedback:
+    state: SUPPORTED_IN_PARTS_PATH_FORWARD_AS_FULL_LOOP
+    trace:
+      - accumulated_surplus_and_asset_ownership
+      - greater_market_power_and_insulation
+      - greater_capacity_to_set_terms_acquire_competitors_lobby_or_shape_policy
+      - weaker_worker_consumer_tenant_or_patient_bargaining_power
+      - renewed_extraction_capacity
+    evidence:
+      - source-fed-dfa-2026q1
+      - source-treasury-labor-market-competition-2022
+      - source-doj-realpage-2024-2026
+    locks:
+      - ownership_concentration_is_not_identical_to_policy_authorship
+      - political_influence_edges_require_actor_specific_evidence
+
+  blame_and_legitimization:
+    state: CONFIRMED_IN_CASES_PATH_FORWARD_AS_GENERAL_LOOP
+    trace:
+      - real_material_or_status_pressure
+      - legitimizing_or_causal_story
+      - asserted_market_naturalness_or_lower_power_target
+      - immigrant_poor_worker_or_other_visible_target
+      - political_attention_moves_away_from_upstream_mechanism
+      - extraction_or_capture_mechanism_remains_less_visible
+    evidence:
+      - source-us-wealth-grievance-routing-baseline-2026-08-16
+      - source-price-power-and-market-capture-2026-08-16
+    legitimizing_labels_to_test:
+      - market_wage
+      - competitive_price
+      - market_rent
+      - private_sector_efficiency
+      - foreign_aid
+      - welfare_dependency
+      - taxpayer_burden
+      - investment
+      - economic_growth
+    locks:
+      - a_label_can_be_true_in_one_case_and_laundering_in_another
+      - test_the_mechanism_do_not_convict_by_vocabulary_alone
+
+  redress_and_legitimacy:
+    state: ACTIVE_STUDY
+    trace:
+      - harm_or_deprivation
+      - complaint_appeal_vote_union_lawsuit_regulation_or_oversight
+      - correction_returns_or_fails_to_return
+      - perceived_legitimacy_changes
+      - peaceful_collective_action_or_parallel_self_help
+      - violence_risk_if_return_paths_collapse
+    evidence:
+      - healthcare-grievance-and-enforcement-continuity-2026-08-16
+    locks:
+      - institutional_failure_can_raise_violence_risk_without_removing_individual_agency
+      - violence_is_not_a_required_or_legitimate_end_state_of_the_network
+
+whole_network_feedback:
+  supported_composition: >-
+    Existing evidence supports multiple connected mechanisms by which workers, tenants, patients,
+    consumers, taxpayers, communities, and future generations can bear costs while firms, landlords,
+    executives, creditors, and owners receive gains. It also supports cases where market or political
+    narratives misdescribe price formation or redirect blame toward lower-power groups. The full
+    nationwide magnitude of the combined extraction loop is not yet measured, but the network must
+    remain recomposed while each weak edge is marked and tested.
+  canonical_cycle:
+    - labor_resource_public_or_household_value_enters_system
+    - bargaining_or_pricing_or_policy_power_shapes_terms
+    - cost_or_deprivation_is_borne_downstream
+    - surplus_rent_avoided_cost_or_asset_gain_accumulates_upstream
+    - executive_creditor_and_ownership_seats_receive_or_retain_gain
+    - accumulated_gain_increases_market_or_political_capacity
+    - rules_prices_wages_access_or_enforcement_are_shaped_again
+    - legitimizing_or_blame_narratives obscure_or_redirect_attention
+    - redress_succeeds_or_fails
+    - cycle_repeats_changes_or_breaks
+
+next_research:
+  - Build public-money source-first census across healthcare, defense, immigration, housing, food, energy, agriculture, education, infrastructure, prisons, disaster response, finance, and state/local pass-through spending.
+  - Trace each rail to company revenue, real operating costs, surplus, executive compensation, dividends, buybacks, debt service, acquisitions, and ultimate ownership.
+  - Add price-formation studies for food, housing, healthcare, energy, insurance, pharmaceuticals, and other essential markets.
+  - Add current low-wage employer cases using public-assistance incidence, compensation distribution, scheduling, unionization, and labor-market concentration evidence.
+  - Trace lobbying, campaign finance, revolving-door, regulatory, and policy-authorship edges only where actor-specific evidence exists.
+  - Build same-year normalized burden and gain ledgers without double-counting overlapping surplus seats.
+  - Cross-match repeated corporate and ownership nodes across otherwise separate sectors and public programs.
+
+locks:
+  - The harm network is a causal map, not a declaration that every corporation, owner, market, or government program is harmful.
+  - Harm is established at the mechanism and contribution level.
+  - Weak edges stay visible as weak edges; they are not silently deleted to make the network look safer.
+  - Strong edges are not downgraded merely because the composed result is politically uncomfortable.
+  - Legal and accounting categories do not outrank demonstrated causal continuity.
+  - The burden remains symmetric: claims against concentrated power and claims against lower-power populations require the same evidentiary discipline.

@@ -1,0 +1,52 @@
+schema: unum-lattice-news/node/v0.1
+id: labor-market-power-and-wage-extraction
+title: Labor-market power and wage extraction
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable operator for tracing how labor value can be shifted away from workers through
+    wage theft, unpaid overtime, employer market power, weak bargaining alternatives,
+    misclassification, scheduling power, or other mechanisms that reduce compensation or
+    increase uncompensated worker cost. The operator distinguishes unlawful underpayment from
+    lawful but structurally depressed wages and from ordinary differences in productivity.
+  posture: working_framework
+core_trace:
+  - labor_performed
+  - compensation_due_or_counterfactual_compensation
+  - employer_or_buyer_power
+  - bargaining_and_exit_options
+  - wage_or_hours_rule
+  - compensation_actually_paid
+  - underpayment_or_wage_suppression_measure
+  - employer_cost_saving_or_margin_effect
+  - downstream_profit_or_owner_return
+  - enforcement_or_repair
+current_evidence:
+  observed:
+    - U.S. Department of Labor reported recovering more than 259 million dollars in back wages for nearly 177000 workers in fiscal year 2025.
+  supported_inferences:
+    - Treasury's labor-market competition report estimates employer concentration and anticompetitive labor practices can materially depress wages relative to a more competitive benchmark.
+  unknowns:
+    - The national amount of unlawful wages not detected or recovered.
+    - The share of firm profit attributable to labor-market power in specific firms or sectors.
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: INTERLOCKS_WITH
+    target: attribution-routing-and-grievance-redirection
+    posture: working_framework
+locks:
+  - Low wages != wage theft.
+  - Wage theft requires a violated compensation obligation or adjudicated/enforced underpayment finding.
+  - Employer market power != proof that every wage difference is exploitative.
+  - Gross revenue or profit != the amount extracted from labor.
+  - Worker immigration status, race, gender, disability, or class may affect vulnerability but does not by itself establish the mechanism.
+  - Repair must trace money restored to workers as well as penalties or compliance changes.
+references:
+  - https://www.dol.gov/newsroom/releases/whd/whd20260108
+  - https://home.treasury.gov/news/press-releases/jy0634

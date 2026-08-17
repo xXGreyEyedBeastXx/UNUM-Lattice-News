@@ -1,0 +1,124 @@
+schema: unum-lattice-news/claim-test/v0.1
+id: us-material-extraction-and-upward-recirculation
+claim_text: >-
+  In the United States, multiple recurring mechanisms can shift value upward from workers,
+  tenants or producers, taxpayers, public programs, land and natural resources toward owners,
+  landlords, firms, creditors, or asset holders while some costs are borne by lower-power
+  participants, the public, communities, or future generations.
+normalized_claim: >-
+  Labor-market power and underpayment, rent and land control, public-to-private revenue routing,
+  tax preferences, and environmental cost externalization can each create measurable upward
+  recirculation paths, but their magnitudes and culpability must be established mechanism by mechanism.
+claim_type: causal_system
+testability: partially_testable
+scope:
+  geography: United States
+  time_window: historical evidence with current 2024-2026 anchors
+  exclusions:
+    - profit or wealth is inherently harmful
+    - all landlords or employers exploit
+    - all government spending is captured by owners
+    - all environmental cleanup costs are taxpayer borne
+    - gross spending, revenue, rent, or liability can be counted as owner extraction without downstream accounting
+burden_of_proof:
+  required_evidence:
+    - recoverable payer or loss-bearer
+    - instrument or mechanism carrying value
+    - immediate recipient
+    - downstream cost and value-production seats
+    - ultimate owner, creditor, landlord, or beneficiary seat where claimed
+    - counterfactual or legal obligation where extraction is alleged
+    - anti-double-counting lineage
+  disconfirming_evidence:
+    - claimed loss is fully repaired or reimbursed
+    - owner gain disappears after costs and productive contribution are accounted for
+    - public expenditure produces the claimed public value without disproportionate private capture
+    - environmental liability is fully bonded, paid, or recovered from responsible parties
+    - wage difference is explained by lawful productivity or job characteristics rather than market power or underpayment
+alternative_explanations:
+  - ordinary compensation for capital, land, risk, entrepreneurship, or productive contribution
+  - competitive market pricing
+  - public procurement purchasing genuine public goods or services at reasonable cost
+  - temporary accounting timing differences rather than durable transfer
+  - mixed mechanism
+evidence:
+  supports:
+    - ref: source-dol-whd-fy2025-back-wages
+      note: Direct evidence of legally owed wages withheld and later recovered.
+    - ref: source-treasury-labor-market-competition-2022
+      note: Government analysis supporting a wage-suppression mechanism through employer market power.
+    - ref: source-usda-total-2024-landlords
+      note: Direct producer or tenant to landlord rental-income flow at national scale.
+    - ref: source-lockheed-2025-10k
+      note: Concrete case where a firm with a large U.S.-government revenue share also reports substantial earnings and shareholder distributions.
+    - ref: source-treasury-tax-expenditures-fy2026
+      note: Current evidence that the tax code creates large foregone-revenue channels including capital-gains preferences.
+    - ref: source-cbo-major-tax-expenditures-2019
+      note: Historical distributional evidence that capital-gains and dividend preferences were highly concentrated toward the top.
+    - ref: source-gao-federal-oil-gas-oversight-2025
+      note: Evidence of potential cleanup-risk externalization where financial assurance is far below estimated obligations.
+    - ref: source-epa-superfund-enforcement-fy2025
+      note: Shows both environmental liability and the importance of subtracting recovered responsible-party payments.
+subclaims:
+  - id: unlawful_wage_underpayment_is_real
+    status: supported
+    confidence: high
+    proposition: Employers unlawfully withhold wages at a scale large enough to produce hundreds of millions of dollars in annual federal recoveries.
+  - id: labor_market_power_can_suppress_wages
+    status: supported
+    confidence: moderate_high
+    proposition: Employer market power and anticompetitive labor practices can reduce worker pay relative to more competitive labor markets.
+  - id: land_control_creates_owner_income_flow
+    status: supported
+    confidence: high
+    proposition: Rented land creates a direct income flow from agricultural producers or tenants to landowners, including non-farming landlords.
+  - id: public_revenue_can_enter_owner_return_chain
+    status: supported_case
+    confidence: high
+    proposition: Public procurement can constitute a large share of a private firm's revenue while the firm also generates earnings and distributes capital to shareholders.
+  - id: specific_tax_dollar_funds_specific_dividend
+    status: not_established
+    confidence: high
+    proposition: A particular government-contract dollar can be assigned directly to a particular shareholder dividend or buyback without additional accounting evidence.
+  - id: tax_preferences_can_flow_disproportionately_upward
+    status: supported
+    confidence: high
+    proposition: Some tax expenditures, especially preferential rates on capital gains and dividends, disproportionately benefit high-income households.
+  - id: environmental_costs_can_be_externalized
+    status: supported
+    confidence: high
+    proposition: Inadequate financial assurance can leave governments or communities exposed to cleanup costs created by extractive activity.
+  - id: all_profit_is_extraction
+    status: contradicted_by_framework
+    confidence: high
+    proposition: All profit or ownership return is itself evidence of harmful extraction.
+current_assessment:
+  status: supported_as_multi_mechanism
+  confidence: high
+  summary: >-
+    The evidence supports multiple distinct upward-recirculation mechanisms. Some are direct
+    legal violations, such as unpaid wages. Others are structural or contractual, such as
+    employer market power and land rent. Public procurement and tax preferences can route public
+    value into private firms and asset holders, but gross spending is not owner capture and must
+    be traced through costs and productive output. Environmental extraction can create residual
+    public liabilities when private financial assurance is insufficient. The next unresolved task
+    is magnitude: a same-year, anti-double-counted ledger of how much value terminates at each seat.
+what_is_not_established:
+  - one universal extraction coefficient for all wealthy households
+  - a single dollar threshold that determines culpability
+  - gross government spending equals private owner gain
+  - every landlord, employer, contractor, or investor participates in the same way
+  - upward recirculation already exceeds all lower- and middle-income tax payments in a matched-year ledger
+path_forward:
+  - Build sector-specific worker-to-owner traces.
+  - Build housing and agricultural land owner maps.
+  - Trace procurement-heavy firms from award to shareholder return with cost allocation.
+  - Add current distributional tax-expenditure data.
+  - Quantify environmental liabilities net of bonding and cost recovery.
+  - Normalize all flows to common years and prevent duplicated value across revenue, profit, distribution, and asset appreciation.
+locks:
+  - Mechanism before moral category.
+  - Gross flow != extracted value.
+  - Owner gain != culpability.
+  - Repaired harm must reduce the harm estimate.
+  - Public value and private return may coexist and must both remain visible.
