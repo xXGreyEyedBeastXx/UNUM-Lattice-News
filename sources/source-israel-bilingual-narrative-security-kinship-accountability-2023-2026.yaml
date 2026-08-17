@@ -1,0 +1,164 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-israel-bilingual-narrative-security-kinship-accountability-2023-2026
+title: Israel bilingual narrative, security-institution kinship, and accountability source bundle
+accessed: 2026-08-17
+purpose: >-
+  Support investigation of audience-dependent Israeli state/security narratives, personnel and operational kinship
+  between the IDF and other Israeli security institutions, and the evidentiary weight of internal self-investigations.
+  Do not infer deliberate translation deception merely from differences in audience, language or speaker.
+
+sources:
+  - id: idf-english-civilian-targeting-position
+    publisher: Israel Defense Forces / Ministry of Foreign Affairs
+    source_class: primary_state_security_statement
+    url: https://www.idf.il/en/mini-sites/israel-at-war/all-articles/the-war-against-hamas-answering-your-most-pressing-questions/
+    supports:
+      - English-facing IDF statement says operations are solely directed at Hamas, Islamic Jihad and other armed groups
+      - IDF says it does not intentionally target civilians and uses civilian-harm mitigation measures
+    limitations:
+      - stated doctrine and public diplomacy are not independent findings of compliance
+
+  - id: idf-english-hagari-clarification-2023
+    publisher: Israel Defense Forces
+    source_class: primary_state_security_statement
+    url: https://www.idf.il/en/mini-sites/israel-at-war/war-on-hamas-2023-resources/idf-press-release-clarification/
+    supports:
+      - IDF disputes the English paraphrase that emphasis was on damage rather than accuracy
+      - IDF acknowledges Hagari said the IDF was balancing exactness/accuracy and scope of damage and focusing on maximum damage
+      - IDF says maximum damage referred to Hamas military capabilities rather than Gaza generally
+      - IDF expressly argues the Hebrew word diyuk should be professionally translated as exactness rather than accuracy in context
+    limitations:
+      - later clarification is evidence of the institution's interpretation and translation position, not independent adjudication of original operational meaning
+
+  - id: ynet-hebrew-hagari-10oct2023
+    publisher: Ynet
+    source_class: major_israeli_news_hebrew_live_report
+    url: https://www.ynet.co.il/blogs/warday4m/article/sjsbc00fbp
+    supports:
+      - Hebrew report quotes IDF spokesperson Daniel Hagari describing thousands of munitions on thousands of targets producing maximum damage across areas of the Gaza Strip
+      - report quotes Hagari stating a policy that anyone approaching the Gaza fence was killed
+    limitations:
+      - media report rather than surviving official transcript; preserve later IDF clarification and translation dispute
+
+  - id: knesset-smotrich-de-facto-sovereignty-2025
+    publisher: Knesset
+    source_class: primary_parliamentary_record_hebrew
+    url: https://main.knesset.gov.il/News/PressReleases/pages/press29.07.25cx.aspx
+    supports:
+      - Finance Minister Bezalel Smotrich publicly described a two-stage process beginning with de facto sovereignty
+      - Smotrich said normalization of settlements and administrative/legal preparation were being advanced so formal sovereignty could later be implemented
+    limitations:
+      - West Bank statement; does not by itself establish Gaza policy or the position of every cabinet member
+
+  - id: idf-manpower-reserve-corps
+    publisher: Israel Defense Forces
+    source_class: primary_institutional_description
+    url: https://www.idf.il/en/mini-sites/directorates/manpower-directorate/manpower-directorate/
+    supports:
+      - IDF reserve force consists of civilians who completed regular military service and return to IDF reserve units
+      - reservists serve across IDF units
+    limitations:
+      - does not identify every police, prison or intelligence employee who performs reserve duty
+
+  - id: knesset-compulsory-soldiers-police-2025
+    publisher: Knesset
+    source_class: primary_legislative_record
+    url: https://m.knesset.gov.il/EN/News/PressReleases/Pages/press251225q.aspx
+    supports:
+      - law extended through 2026 the option to station IDF compulsory-service soldiers in Israel Police units outside Border Police
+      - stationed personnel retain status equivalent to compulsory-service IDF soldiers for specified laws
+    limitations:
+      - placement is consent-based under the cited provision and does not merge police and IDF command structures
+
+  - id: israel-police-idf-officer-pipeline
+    publisher: Israel Police
+    source_class: primary_institutional_recruitment_record
+    url: https://police.gov.il/join/IDF
+    supports:
+      - Israel Police operates accelerated command recruitment tracks for discharged IDF officers
+      - prior IDF rank and military experience are used as entry credentials for police command pathways
+
+  - id: israel-police-yamam-idf-background
+    publisher: Israel Police
+    source_class: primary_institutional_description
+    url: https://www.police.gov.il/join/about-yamam
+    supports:
+      - Yamam counterterrorism fighters are predominantly veterans of IDF combat and elite units
+      - Yamam conducts counterterrorism operations in cooperation with the IDF and Shin Bet
+    limitations:
+      - prior military service and operational cooperation do not make Yamam an IDF unit
+
+  - id: israel-police-compulsory-service-border-police
+    publisher: Israel Police
+    source_class: primary_institutional_recruitment_record
+    url: https://www.police.gov.il/join/faq
+    supports:
+      - compulsory recruitment and placement into Border Police is handled by IDF recruitment authorities
+      - compulsory police service recruitment is also administered through IDF channels
+    limitations:
+      - administrative recruitment relationship does not erase later police command distinctions
+
+  - id: idf-self-investigation-position-2024
+    publisher: Israel Defense Forces / Military Advocate General Corps
+    source_class: primary_internal_accountability_statement
+    url: https://www.idf.il/en/mini-sites/military-advocate-generals-corps/addressing-alleged-misconduct-in-the-context-of-the-war-in-gaza-published-february-24-2024/
+    supports:
+      - IDF says Military Advocate General is professionally independent and subject only to law
+      - IDF says General Staff Fact-Finding Assessment Mechanism is detached from wartime operational chain
+      - decisions can be challenged before Attorney General and Supreme Court
+    limitations:
+      - institutional self-description requires outcome and external-independence testing
+
+  - id: ap-idf-investigations-2024
+    publisher: Associated Press
+    source_class: high_quality_news_review
+    url: https://apnews.com/article/b0b6107d449ca4e6d6a1b59749f15814
+    supports:
+      - IDF announced many internal investigations into lethal incidents
+      - public details were often sparse and admissions of wrongdoing were rare at the time of review
+    limitations:
+      - early-war snapshot; later dispositions must be updated separately
+
+  - id: aoav-idf-investigation-outcomes-2025
+    publisher: Action on Armed Violence
+    source_class: specialist_open_source_accountability_review
+    url: https://aoav.org.uk/2025/88-of-israeli-investigations-into-recent-gaza-abuse-allegations-stalled-or-closed-without-findings-with-just-one-leading-to-criminal-sentencing/
+    supports:
+      - review of 52 publicly reported investigations found 88 percent closed without wrongdoing or unresolved/no public outcome
+      - one case in the reviewed set resulted in a prison sentence
+      - review identifies opacity and weak consequential accountability as recurring concerns
+    limitations:
+      - media/open-source review rather than official complete case universe
+      - IDF and AOAV counts use different scopes and methodologies
+
+  - id: un-coi-impunity-2026
+    publisher: UN Independent International Commission of Inquiry
+    source_class: international_fact_finding_statement
+    url: https://www.un.org/unispal/document/statement-by-coi-15jun26/
+    supports:
+      - Commission chair described continuing attacks against Palestinians as occurring with complete impunity
+      - Commission reaffirmed prior genocide findings against Israeli authorities and security forces
+    limitations:
+      - commission finding is not a final criminal conviction of every responsible individual
+
+  - id: icc-netanyahu-gallant-warrants
+    publisher: International Criminal Court
+    source_class: international_court_pretrial_finding
+    url: https://www.icc-cpi.int/news/situation-state-palestine-icc-pre-trial-chamber-i-rejects-state-israels-challenges
+    supports:
+      - Pre-Trial Chamber found reasonable grounds to believe Netanyahu and Gallant responsible for starvation as method of warfare and crimes against humanity
+      - Chamber found reasonable grounds to believe both bore responsibility as civilian superiors for intentionally directing attacks against civilian population
+    limitations:
+      - arrest-warrant reasonable-grounds standard is not a final conviction
+
+locks:
+  - Hebrew-language statement != automatically truer than English-language statement.
+  - English-language statement != automatic neutral description of conduct.
+  - Audience-dependent framing requires paired-source comparison before inferring deliberate bilingual deception.
+  - IDF != Israel Police != Border Police != Yamam != Shin Bet != Israel Prison Service.
+  - Institutional distinction != personnel independence.
+  - Prior IDF service, reserve service, compulsory placement, career recruitment and joint operations are distinct kinship mechanisms.
+  - Personnel overlap != identical command chain.
+  - Self-investigation != independent external review.
+  - Internal closure != debunking when material contrary evidence remains.
+  - ICC reasonable-grounds finding != conviction.
