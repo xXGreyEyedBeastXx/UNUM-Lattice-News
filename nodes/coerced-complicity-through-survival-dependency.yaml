@@ -1,0 +1,64 @@
+schema: unum-lattice-news/node/v0.1
+id: coerced-complicity-through-survival-dependency
+title: Coerced complicity through survival dependency
+family: analysis_framework
+subtype: causal_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for situations in which people retain formal legal freedom but must
+    participate in institutions, industries, labor arrangements, enforcement systems, consumption
+    patterns, or policies they reasonably judge to be against their own interests or harmful to
+    others because refusal threatens income, food, housing, healthcare, legal security, or liberty.
+    This operator distinguishes market dependence, benefit-conditioned labor, criminalization of
+    destitution, and compelled prison labor instead of collapsing them into one mechanism.
+  posture: working_framework
+core_invariants:
+  - formal_choice_does_not_prove_meaningful_refusal
+  - participation_under_survival_threat_is_not_equivalent_to_unconstrained_consent
+  - economic_compulsion_benefit_conditioning_criminalization_and_prison_labor_are_distinct_mechanisms
+  - distinct_mechanisms_may_form_one_causal_chain_when_evidence_establishes_the_crossings
+  - individual_participation_under_dependency_does_not_erase_upstream_power_or_incentive_structure
+required_trace:
+  - survival_need_or_liberty_interest
+  - institution_or_market_controlling_access
+  - required_or_practically_required_conduct
+  - realistic_alternatives
+  - cost_of_refusal
+  - whether_the_conduct_conflicts_with_the_participants_material_moral_or_collective_interests
+  - public_or_private_gain_from_participation
+  - whether_destitution_or_noncompliance_can_trigger_civil_or_criminal_enforcement
+  - whether_confinement_can_trigger_compelled_labor
+  - available_redress_exit_or_collective_bargaining_path
+mechanism_types:
+  - survival_mediated_market_participation
+  - employer_dependency
+  - benefit_conditioned_work_or_workfare
+  - criminalization_of_unavoidable_or_survival_conduct
+  - carceral_compelled_labor
+  - participation_in_harmful_supply_or_enforcement_system_under_material_dependency
+comparison_lock:
+  text: >-
+    Do not claim that every worker is legally forced to labor or that poverty automatically produces
+    imprisonment. Instead test each crossing. The constitutional and statutory distinction between
+    prohibited peonage and permitted compelled labor after conviction must remain explicit.
+relations:
+  - type: EXTENDS
+    target: compulsory-dependency-and-survival-enclosure
+    posture: working_framework
+  - type: RELATES_TO
+    target: labor-market-power-and-wage-extraction
+    posture: working_framework
+  - type: RELATES_TO
+    target: redress-capture-and-correction-failure
+    posture: working_framework
+  - type: RELATES_TO
+    target: victim-to-resource-conversion
+    posture: working_framework
+locks:
+  - Do not convert structural dependence into universal literal ownership claims.
+  - Do not treat the existence of formal alternatives as proof that alternatives are materially usable.
+  - Do not erase agency; measure how much agency remains under the constraint envelope.
+  - Do not let survival necessity become a moral excuse for institutions that intentionally preserve dependency.
