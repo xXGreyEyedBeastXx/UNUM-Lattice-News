@@ -5,10 +5,20 @@ entity_type: movement
 actor_roles:
   - advocate
 status: seed
-updated: 2026-08-13
+updated: 2026-08-17
 summary:
   text: >-
-    A self-described worldwide, anonymous, decentralized White Lives Matter initiative launched in April 2021. Its own 2022 and 2024 activist manuals state a long-term objective of maintaining populations above 99 percent white in countries and continents it identifies as white-built, center the white-supremacist slogan commonly known as the 14 Words, and describe mainstream-facing outreach as a pathway toward a White Nationalist worldview. The manuals distinguish public-facing optics from the broader ideological material available inside the movement's ecosystem. The initiative claims no organizational connection to earlier groups using the White Lives Matter name; that claimed separation should remain distinct unless independently established otherwise.
+    A self-described worldwide, anonymous, decentralized White Lives Matter initiative launched in April 2021.
+    Its 2022 and 2024 activist manuals state a long-term objective of maintaining populations above 99 percent
+    white in countries and continents it identifies as white-built, center the white-supremacist slogan commonly
+    known as the 14 Words, and describe mainstream-facing outreach as a pathway toward a White Nationalist
+    worldview. The initiative denies identity or organizational continuity with prior WLM groups, but its own
+    manuals separately place the initiative within a broader older pro-White / white-racial-consciousness movement
+    lineage. Its decentralization is operational rather than causal separation: the manuals and public channel
+    document common doctrine, manuals, branding, schedules, vetting, local-admin expectations, shared submission
+    and communication infrastructure, and recognized regional/local efforts. Local cells remain distinct bodies for
+    event-specific attribution, but should not be treated as independent actors merely because responsibility is
+    formally distributed or names/channels change.
   posture: supported inference
 aliases:
   - WLM April 2021 initiative
@@ -20,8 +30,8 @@ hashtags:
   - extremist-movements
 authority:
   has_authority: false
-  seat: decentralized movement
-  source: self-described movement structure
+  seat: decentralized movement / distributed initiative
+  source: self-described movement structure plus public routing and manuals
   jurisdiction: transnational
   level: other
   term_start: 2021-04
@@ -37,7 +47,9 @@ funding:
 constituencies:
   - self-described white population
 current_evidence:
-  observed: []
+  observed:
+    - The official public Telegram channel repeatedly forwards and attributes activity to recognized regional WLM efforts, including Tennessee, Montana, Pennsylvania, United Kingdom, Germany, and others.
+    - The official public channel publishes a structured state-channel navigator and has used successor/backup channel handles over time, showing that channel-name change does not by itself terminate movement continuity.
   stated:
     - The 2024 manual states that the initiative seeks to awaken white racial consciousness through real-world action.
     - The 2024 manual states a long-term objective of populations above 99 percent white in countries and continents it identifies as white-built.
@@ -45,47 +57,91 @@ current_evidence:
     - The 2024 manual describes its public outreach as a doorway toward a White Nationalist worldview.
     - The 2024 manual directs WLM-branded outreach away from overt Nazi, fascist, MAGA, antisemitic, anti-LGBT, and other polarizing messaging because those associations can interfere with mainstream recruitment.
     - The 2022 manual stated a 99 percent white demographic objective and racially restricted citizenship in envisioned white states.
-    - Both manuals claim the April 2021 initiative is distinct from earlier groups using the White Lives Matter name.
+    - The manuals state that the April 2021 initiative is not the same as prior WLM groups while separately describing the initiative as continuing an older pro-White / white-racial-consciousness struggle.
+    - The 2022 manual describes an ideal of many small autonomous local nests acting as a unit toward the same stated goals.
+    - The manuals prescribe common local-channel structures, admin expectations, vetting, branding, recurring action schedules, conduct rules, and shared movement infrastructure.
+    - The official public channel has explicitly described local WLM efforts using a cell metaphor while presenting their success as shared across the initiative.
   adjudicated: []
   alleged: []
   supported_inferences:
     - The movement's stated demographic and political objectives support classifying its program as white nationalist and white supremacist rather than as a generic equal-treatment campaign.
     - The distinction between acceptable public-facing messaging and broader ideological material functions as an exoteric/esoteric recruitment boundary.
+    - The initiative's local/regional efforts are better represented as distributed cells, chapters, or local efforts within a common movement topology than as presumptively independent actors.
+    - Formal decentralization and individual-responsibility disclaimers coexist with common standards, movement routing, vetting, branding, schedules, and shared infrastructure; therefore decentralization is not evidence of causal disconnection.
+    - Language disassociating unlawful local conduct from the initiative may function as an accountability-separation mechanism, but this functional inference does not establish central command over unlawful acts.
   disputed: []
   ambiguous:
-    - The degree of organizational continuity, if any, between the April 2021 initiative and earlier White Lives Matter formations is not established by the manuals themselves.
+    - The degree of legal-entity, personnel, administrator, or infrastructure continuity between the April 2021 initiative and particular pre-2021 WLM groups remains relation-specific and incompletely resolved.
+    - The exact authority hierarchy among central surfaces, local administrators, chats, channels, and individual activists is only partially observable because the initiative intentionally uses anonymity and distributed organization.
   unknowns:
-    - Current size, geographic distribution, and activity level of local cells are not established by the manuals alone.
+    - Current size, geographic distribution, administrator identity, and activity level of every local cell are not established by the manuals alone.
     - The extent of overlap with specific contemporary neo-Nazi, Klan, Active Club, Patriot Front, or other extremist organizations requires node-specific evidence.
+    - The full succession history of renamed, replaced, banned, backup, or recreated regional Telegram channels remains to be reconstructed.
   missing_or_withheld:
-    - participant identities are intentionally obscured by the movement's anonymous structure
+    - participant and administrator identities are intentionally obscured by the movement's anonymous structure
+    - Manual 1.0 or an earlier manual version has not been recovered in the current evidence set
   counterevidence:
-    - The movement repeatedly states that WLM-branded activism should remain legal and nonviolent; ideological classification should not be converted into an unsupported allegation of criminal conduct.
+    - The movement repeatedly states that WLM-branded activism should remain legal and nonviolent; ideological classification or movement-cell relation should not be converted into an unsupported allegation of criminal conduct by the initiative or every participant.
 timeline:
   - date: 2021-04
-    event: The initiative states that it launched in April 2021.
+    event: The initiative states that it launched in April 2021 as a new initiative distinct from prior WLM groups while continuing a broader pro-White struggle.
     posture: stated
   - date: 2022-01
-    event: Activist Manual 2.0 documents the initiative's racial-demographic objectives, ideological reading ecosystem, and decentralized organizing model.
+    event: Activist Manual 2.0 documents racial-demographic objectives, ideological reading ecology, decentralized local nests, admin/vetting structure, and common movement practices.
     posture: stated
   - date: 2024
-    event: Activist Manual 3.0 reiterates the 99 percent white long-term objective and more explicitly frames mainstream-facing outreach as a path toward a White Nationalist worldview.
+    event: Activist Manual 3.0 reiterates the 99 percent white long-term objective, common monthly action culture, distributed local administration, and mainstream-facing recruitment as a path toward a White Nationalist worldview.
     posture: stated
-relations: []
+  - date: 2026-08-17
+    event: Source/node review corrected an earlier overbroad separation lock by distinguishing prior-group identity from movement lineage and documented local-cell topology.
+    posture: observed
+relations:
+  - type: CONTINUES_MOVEMENT_LINEAGE
+    target: white-lives-matter-movement-lineage
+    posture: supported_inference
+    evidence:
+      - source-white-lives-matter-movement-lineage
+      - source-white-lives-matter-2021-initiative
+    scope: broader WLM / pro-White movement lineage
+    notes: >-
+      This does not assert that the April 2021 initiative is the same legal entity as any particular prior WLM group.
+  - type: HAS_DISTRIBUTED_LOCAL_CELLS
+    target: white-lives-matter-2021-initiative
+    posture: supported_inference
+    evidence:
+      - source-white-lives-matter-distributed-cell-topology-2026-08-17
+    scope: local/regional WLM efforts coordinated through common movement surfaces
+    notes: >-
+      Self-relation denotes distributed internal topology, not duplicate legal identity. Local acts still require event-specific attribution.
 stories: []
 unresolved_questions:
-  - Which Tennessee-linked public actions since 2021 can be attributed specifically to the April 2021 initiative rather than earlier or unrelated WLM formations?
+  - Which Tennessee-linked public actions since 2021 can be attributed to which specific WLM local channel/cell, and which channel successions or renamed handles connect those records over time?
   - What documented relationships exist between this initiative and contemporary neo-Nazi, Klan, Active Club, Patriot Front, or other white-supremacist networks?
+  - Which regional WLM channels have been shut down, renamed, replaced, or recreated, and what source evidence establishes successor relations rather than merely similar names?
   - Has the initiative's recurring monthly action tradition remained active through 2025-2026, and where is that independently observable?
   - Which public-facing messages function as entry points to more explicit white-nationalist material, and how has that strategy changed between manual versions?
-  - What evidence can distinguish ideological overlap from organizational coordination?
-corrections: []
+  - What evidence can distinguish ideological overlap, alliance, cell relation, operational coordination, shared personnel, and formal organizational control?
+  - Can Manual 1.0 or another pre-2.0 activist manual be recovered and dated?
+corrections:
+  - date: 2026-08-17
+    previous: Preserve the initiative's claimed separation from earlier WLM groups unless independent evidence establishes continuity.
+    updated: >-
+      Preserve the narrow claim that the April 2021 initiative denies identity/organizational continuity with prior WLM groups, but do not use that disclaimer to sever the separately evidenced broader movement lineage or the initiative's distributed local-cell topology.
+    reason: >-
+      Manual 2.0 explicitly distinguishes prior WLM groups from the broader pro-White movement and says the initiative continues an older struggle; both manuals and the official public channel document common local-effort infrastructure and shared movement goals.
 references:
   - source-white-lives-matter-2021-initiative
+  - source-white-lives-matter-movement-lineage
+  - source-white-lives-matter-distributed-cell-topology-2026-08-17
 locks:
   - Node inclusion is not an accusation of criminal conduct.
-  - Preserve the initiative's claimed separation from earlier WLM groups unless independent evidence establishes continuity.
+  - Prior-group identity, movement lineage, local-cell relation, operational coordination, and individual-act attribution are different relation types.
+  - Organizational discontinuity is not movement discontinuity.
+  - Decentralized does not mean disconnected.
+  - A cell/chapter relation does not erase event-specific attribution requirements.
+  - Denial of one relation type must not erase other demonstrated relation types.
+  - Missing proof of an edge is not affirmative proof of causal disconnection.
   - White-nationalist or white-supremacist classification should rest on stated goals and documented ideology, not on racial identity or political affiliation alone.
   - Anonymous participation is not sufficient evidence to identify a person as a member or organizer.
   - Do not publish operational-security guidance, private identities, addresses, or doxxing material.
-  - Distinguish ideological overlap, shared media, attendance, coordination, and formal organizational relation as separate evidence classes.
+  - Distinguish ideological overlap, shared media, attendance, alliance, cell/chapter relation, coordination, and formal organizational control as separate evidence classes.
