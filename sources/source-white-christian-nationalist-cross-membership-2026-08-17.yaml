@@ -1,0 +1,115 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-white-christian-nationalist-cross-membership-2026-08-17
+title: White-nationalist, white-supremacist, and Christian-nationalist cross-membership / convergence source bundle
+accessed: 2026-08-17
+purpose: >-
+  Preserve evidence that white-nationalist/white-supremacist and Christian-nationalist or Christian-racialist
+  movements are not merely rhetorically adjacent: some organizations embody both ideologies, some individuals
+  and memberships move across multiple extremist organizations, and some coalition/event spaces connect
+  distinct organizations. Keep dual classification, personnel overlap, organizational succession, and coalition
+  participation separately typed.
+
+sources:
+  - id: adl-groypers-dual-classification-2025
+    publisher: Anti-Defamation League
+    source_class: extremism_monitoring
+    url: https://go.adl.org/resources/article/nicholas-j-fuentes-five-things-know
+    supports:
+      - Nick Fuentes and the America First/Groyper movement promote white-supremacist and Christian-nationalist ideas simultaneously
+      - Fuentes frames the desired United States as a white Christian nation and uses Christian nationalism as a mainstreaming frame
+      - the Groyper movement provides a contemporary specimen where white nationalism and Christian nationalism are co-instantiated rather than merely adjacent
+    limitations:
+      - dual ideological classification of a movement does not establish that every participant holds every belief expressed by its leader
+
+  - id: adl-groyper-network-florida-2022
+    publisher: Anti-Defamation League
+    source_class: extremism_monitoring
+    url: https://www.adl.org/resources/report/hate-sunshine-state-extremism-antisemitism-florida-2020-2022
+    supports:
+      - the America First/Groyper network is a white-supremacist network that presents itself through Christianity, traditional values, and defense of a white Christian nation
+      - multiple named Groyper activists relocated into the same regional organizing ecology
+
+  - id: adl-legion-saint-ambrose
+    publisher: Anti-Defamation League
+    source_class: extremism_monitoring
+    url: https://www.adl.org/resources/backgrounder/legion-saint-ambrose-losa
+    supports:
+      - Legion of Saint Ambrose was a Knoxville-based white-supremacist group seeking a white Christian nation and a Christian state religion
+      - it was formed by former members of the neo-Nazi Traditionalist Worker Party
+      - most of its membership later moved into NSC-Dixie, a Nationalist Social Club chapter
+    limitations:
+      - Legion of Saint Ambrose is an explicit white-supremacist religious-nationalist group; it should not be treated as representative of all Christian-nationalist organizations
+
+  - id: adl-shield-wall-network
+    publisher: Anti-Defamation League
+    source_class: extremism_monitoring
+    url: https://www.adl.org/resources/backgrounder/shield-wall-network-swn
+    supports:
+      - Shield Wall Network leader Billy Roper is a Christian Identity adherent with documented prior involvement in National Alliance, White Revolution, Knights Party, and an Aryan Nations faction
+      - SWN members participated in events with National Socialist Movement, League of the South, and Knights Party actors
+      - this provides a concrete personnel-migration and coalition specimen across white-power organizations
+    limitations:
+      - Christian Identity is a distinct racist theology and must not be collapsed into contemporary Christian nationalism
+
+  - id: adl-aryan-nations-common-membership
+    publisher: Anti-Defamation League
+    source_class: extremism_monitoring
+    url: https://www.adl.org/resources/profiles/aryan-nationschurch-jesus-christ-christian
+    supports:
+      - Aryan Nations combined Christian Identity, white supremacy, and neo-Nazism
+      - Aryan Nations historically had members in common with National Alliance, Ku Klux Klan organizations, and The Silent Brotherhood/The Order
+      - its compound functioned as a meeting point for multiple far-right extremist currents
+    limitations:
+      - much of this evidence is historical and should not be silently projected onto current organizations or current membership
+
+  - id: splc-christian-identity-2024
+    publisher: Southern Poverty Law Center
+    source_class: extremism_monitoring
+    url: https://www.splcenter.org/resources/extremist-files/christian-identity/
+    supports:
+      - Christian Identity is a racist and antisemitic theology historically influential inside the white-power movement
+      - SPLC reports that Christian Identity rhetoric and themes continue to influence more mainstream Christian-nationalist and neo-Confederate currents
+      - SPLC specifically notes seepage of Christian Identity themes into Dominionist / Christian-nationalist milieus
+    limitations:
+      - influence or rhetorical inheritance is not the same thing as organizational identity, formal affiliation, or conscious adoption by every Christian nationalist
+
+  - id: oxford-social-forces-christian-nationalism-white-racial-solidarity-2025
+    publisher: Oxford Academic / Social Forces
+    source_class: peer_reviewed_research
+    url: https://academic.oup.com/sf/article/104/2/453/8030582
+    supports:
+      - among white Americans, Christian nationalism is a leading predictor of white racial solidarity
+      - Christian nationalism predicts greater racial identity salience and support for collective political action on behalf of white group interests
+    limitations:
+      - population-level association does not establish organizational membership or coordination
+
+  - id: prri-white-christian-nationalism-replacement-overlap
+    publisher: Public Religion Research Institute
+    source_class: national_survey_research
+    url: https://prri.org/spotlight/understanding-differences-between-black-and-white-of-christian-nationalism-adherents-and-sympathizers/
+    supports:
+      - white Christian-nationalism adherents/sympathizers differ substantially from Black adherents/sympathizers on racial replacement and white-discrimination beliefs
+      - nearly three-quarters of white Christian-nationalism adherents/sympathizers in the cited data agreed with an immigrant replacement statement
+    limitations:
+      - Christian nationalism is not reducible to white nationalism because nonwhite Christian-nationalist adherents exist and show materially different racial attitudes
+
+  - id: adl-unite-the-right-cross-movement-coalition
+    publisher: Anti-Defamation League
+    source_class: extremism_monitoring
+    url: https://www.adl.org/resources/article/two-years-ago-they-marched-charlottesville-where-are-they-now
+    supports:
+      - Unite the Right brought together dozens of distinct extreme-right movements including neo-Nazis, Klan groups, Christian Identity adherents, neo-Confederates, Odinists, racist skinheads, and militia-linked actors
+      - coalition/event participation can connect distinct organizations without proving dual membership
+    limitations:
+      - co-attendance at an event is not proof of shared command, identical ideology, or membership in every participating group
+
+locks:
+  - Christianity != Christian nationalism.
+  - Christian nationalism != Christian Identity.
+  - White nationalism != every Christian-nationalist expression.
+  - Dual ideological classification != dual organizational membership.
+  - Personnel overlap / shared membership != organizational identity.
+  - Coalition participation != common command.
+  - Organizational succession / personnel migration may preserve movement continuity even where group names change.
+  - Cross-membership is a consequential relation when directly evidenced and should not be downgraded to mere rhetorical similarity.
+  - Population-level ideological correlation does not substitute for actor-level membership evidence.
