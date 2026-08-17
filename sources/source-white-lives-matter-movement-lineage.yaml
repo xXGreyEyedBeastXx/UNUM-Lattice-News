@@ -1,0 +1,73 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-white-lives-matter-movement-lineage
+title: White Lives Matter slogan and movement-lineage sources
+accessed: 2026-08-17
+purpose: >-
+  Separate the broader White Lives Matter slogan/movement lineage from the identity of any one
+  organization, group, Telegram initiative, chapter, or cell.
+sources:
+  - id: adl-white-lives-matter-hate-symbol
+    publisher: Anti-Defamation League
+    source_class: secondary_extremism_analysis
+    url: https://www.adl.org/resources/hate-symbol/white-lives-matter
+    supports:
+      - the phrase White Lives Matter emerged in white-supremacist use in early 2015 as a racist response to the Black Lives Matter movement
+      - white supremacists in several states promoted the slogan through flyers and protests, creating a loose campaign that outlived the activity of its original promoters
+    limitations:
+      - slogan use alone does not establish membership in a particular organization or continuity of personnel
+  - id: splc-wlm-racist-response-2016
+    publisher: Southern Poverty Law Center
+    source_class: secondary_extremism_analysis
+    date: 2016-03-18
+    url: https://www.splcenter.org/resources/hatewatch/meet-white-lives-matter-racist-response-black-lives-matter-movement/
+    supports:
+      - White Lives Matter was being promoted as a movement and counter-response to Black Lives Matter before the 2021 Telegram initiative
+      - early WLM promotion involved identifiable white-supremacist organizations and activists, while the exact organizational form of WLM itself was already ambiguous
+    limitations:
+      - this 2016 reporting cannot by itself establish personnel or organizational continuity into the 2021 initiative
+  - id: adl-white-lives-matter-background-2022
+    publisher: Anti-Defamation League
+    source_class: secondary_extremism_analysis
+    date: 2022-03-11
+    url: https://www.adl.org/resources/backgrounder/white-lives-matter
+    supports:
+      - the current WLM network coalesced around an already-existing WLM phrase/movement lineage in spring 2021
+      - the 2021 network organized through a national Telegram surface with state channels run by local administrators, designated action days, shared propaganda, and local activity
+    limitations:
+      - ADL's network characterization is external analysis and should remain distinguishable from WLM's own self-description
+  - id: wlm-manual-v2-lineage-statements
+    publisher: White Lives Matter Official
+    source_class: primary_movement_document
+    artifact_sha256: 0061c79104bc9a052337a43fc4357f9a00b55d598c577314d0cca115665c6a71
+    pages:
+      - 3
+      - 8
+      - 24
+      - 25
+    supports:
+      - the April 2021 initiative denies identity with prior WLM groups while explicitly describing itself as continuing a much older pro-White / white-racial-consciousness effort
+      - the manual describes the 2021 project as a new way of presenting and acting within the broader pro-White movement rather than as the origin of that movement
+    limitations:
+      - self-described historical continuity does not establish continuity of every organization, leader, or participant
+  - id: wlm-manual-v3-lineage-statements
+    publisher: White Lives Matter Official
+    source_class: primary_movement_document
+    artifact_sha256: df1724fc6992a32aa40429501d7e9a7312912976875232ce4f2a5f3e28af9eef
+    pages:
+      - 1
+      - 3
+      - 4
+      - 15
+    supports:
+      - the 2024 manual continues to distinguish the April 2021 initiative from prior WLM groups while retaining the WLM slogan, racial program, and movement framing
+    limitations:
+      - the manual does not identify the full personnel genealogy connecting earlier WLM formations to the 2021 initiative
+posture:
+  slogan_and_movement_lineage_predates_2021: supported
+  april_2021_initiative_is_same_legal_entity_as_prior_wlm_groups: not_established
+  april_2021_initiative_continues_broader_wlm_pro_white_movement_lineage: supported
+locks:
+  - First recovered document is not the origin event.
+  - Prior-group identity is not the same question as movement continuity.
+  - Failure to prove personnel or legal continuity does not causally sever an evidenced ideological, slogan, tactical, or movement lineage.
+  - Do not attribute earlier actors' conduct to the April 2021 initiative without relation-specific evidence.
