@@ -1,0 +1,115 @@
+schema: unum-lattice-news/lattice/v0.1
+id: healthcare-grievance-and-enforcement-continuity-2026-08-16
+title: Healthcare grievance, insurer power, and enforcement continuity in the United States
+status: active
+as_of: 2026-08-16
+authority: evidence_lattice_not_verdict
+purpose: >-
+  Trace the relationship between health-insurance denial/affordability grievances, public reaction
+  to the killing of UnitedHealthcare CEO Brian Thompson, and the actual continuity or disruption of
+  federal scrutiny of large insurers and pharmacy benefit managers after the 2025 presidential transition.
+source_bundle:
+  - source-healthcare-grievance-and-enforcement-continuity-2026-08-16
+parent_lattices:
+  - material-extraction-and-upward-recirculation-2026-08-16
+  - wealth-grievance-routing-2026-08-16
+flows:
+  grievance_field:
+    findings:
+      - id: insurance-denial-delay-major-problem
+        posture: observed
+        investigation_state: CONFIRMED
+        evidence:
+          - source-kff-claims-denials-2024-2026
+        notes:
+          - 66 percent of insured adults in KFF's January 2026 poll described delays and denials as a major problem.
+          - 33 percent said an insurer had denied coverage for a prescribed service or medication in the prior two years.
+      - id: marketplace-claims-denial-rate-2024
+        posture: observed
+        investigation_state: CONFIRMED
+        evidence:
+          - source-kff-claims-denials-2024-2026
+        notes:
+          - HealthCare.gov insurers denied about 20 percent of claims in 2024.
+          - Denial rate alone does not establish that a denial was improper.
+
+  mangione_event_and_reaction:
+    findings:
+      - id: mangione-admitted-killing-and-healthcare-grievance
+        posture: observed
+        investigation_state: CONFIRMED
+        evidence:
+          - source-ap-mangione-guilty-plea-2026
+        notes:
+          - Mangione admitted stalking and killing Brian Thompson.
+          - His own account connected the act to long-term pain and frustration with the healthcare system.
+          - He was not a UnitedHealthcare customer.
+      - id: public-system-blame-with-shooter-responsibility
+        posture: observed
+        investigation_state: CONFIRMED
+        evidence:
+          - source-ap-norc-thompson-killing-reaction-2024
+        notes:
+          - The public reaction held two ideas at once: substantial responsibility assigned to the shooter and substantial responsibility assigned to denials, profits, and inequality.
+          - This is evidence of a grievance field, not evidence that homicide was broadly endorsed.
+
+  enforcement_continuity_and_disruption:
+    findings:
+      - id: ftc-pbm-case-temporary-disruption-2025
+        posture: observed
+        investigation_state: CONFIRMED
+        evidence:
+          - source-ftc-pbm-case-timeline-2025-2026
+          - source-wsj-ftc-pbm-quorum-disruption-2025
+        state_sequence:
+          - active
+          - stayed_2025-04-01
+          - later_resumed_or_progressed
+          - express_scripts_settlement_2026-02
+          - caremark_settlement_2026-07
+          - optum_consent_process_pending
+        notes:
+          - The 2025 stay followed commissioner removals and recusals that left the case without participating commissioners.
+          - The later docket contradicts a claim of permanent shutdown.
+      - id: unitedhealth-doj-medicare-scrutiny-continuity
+        posture: observed
+        investigation_state: PATH_FORWARD
+        evidence:
+          - source-unitedhealth-sec-doj-2025
+          - source-unitedhealth-10q-2026q1
+        notes:
+          - UnitedHealth acknowledged formal criminal and civil DOJ requests in July 2025.
+          - Its March 2026 filing still disclosed governmental investigations and Medicare risk-adjustment reviews.
+          - Investigation existence is not proof of wrongdoing.
+      - id: amedisys-enforcement-shift-from-block-to-remedy
+        posture: observed
+        investigation_state: CONFIRMED
+        evidence:
+          - source-doj-unitedhealth-amedisys-settlement-2025
+        notes:
+          - The Biden DOJ sought to block the acquisition.
+          - The Trump DOJ resolved it through divestitures and a settlement that allowed the deal to proceed.
+          - This is better typed as a change in enforcement remedy than as total abandonment.
+
+crossing_to_material_flow:
+  proposition: >-
+    Public anger at healthcare companies should be tested against whole-circuit money flows:
+    public Medicare/Medicaid spending, premiums, claims denials, PBM rebates, vertically integrated
+    provider/pharmacy revenue, executive compensation, profits, dividends, buybacks, acquisitions,
+    and ownership concentration. Grievance becomes analytically useful when it points back to a
+    measurable mechanism rather than substituting for one.
+  path_forward:
+    - Build whole-circuit corporate cases for UnitedHealth/UnitedHealthcare/Optum, CVS/Aetna/Caremark, Cigna/Express Scripts, Humana, Centene, Elevance, and Molina.
+    - Trace Medicare Advantage and Medicaid managed-care public payments into insurer revenue, provider ownership, PBM revenue, profit, executive compensation, dividends, and buybacks.
+    - Separate legitimate care payment from overpayment allegations, risk-adjustment disputes, and vertical-integration gain.
+    - Trace claim denial and prior-authorization systems as cost-control mechanisms with both valid and harmful uses.
+    - Compare enforcement remedy strength across administrations without treating partisan labels as evidence.
+locks:
+  - Violence is not a valid evidentiary shortcut or policy instrument.
+  - Grievance is evidence of pressure, not proof of the grievance's causal theory.
+  - Public sympathy != endorsement of homicide.
+  - Investigation != guilt.
+  - Stay != shutdown.
+  - Settlement != exoneration and settlement != abandonment.
+  - Continued scrutiny != adequate scrutiny.
+  - Healthcare corporate gain must be traced through the whole circuit and recomposed at ownership seats.
