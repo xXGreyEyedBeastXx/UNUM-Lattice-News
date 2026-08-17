@@ -1,0 +1,124 @@
+schema: unum-lattice-news/mesh/v0.1
+id: article-ready-evidence-packages-2026-08-16
+title: Article-ready evidence packages — second fill pass
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - unum-harm-mesh-2026-08-16
+  - complaint-beneficiary-matching-2026-08-16
+source_bundle:
+  - source-article-readiness-expansion-2026-08-16
+purpose: >-
+  Assemble high-verifiability harm-audit packages suitable for later reader-facing articles. Each package
+  preserves the claim that can responsibly be made now, the causal mechanism, beneficiary seat, strongest
+  counterevidence or limitation, and the next evidence needed before stronger language is used.
+packages:
+  housing_algorithmic_rent:
+    readiness: HIGH_FOR_SCOPED_ARTICLE
+    supported_claim: >-
+      Federal antitrust enforcement has documented and alleged a recurring system in which RealPage and several
+      very large landlords used competitors' sensitive information and common pricing algorithms in ways alleged
+      to align rents; multiple defendants have entered settlements or consent decrees.
+    harm_path:
+      renter_dependency -> landlord_market_and_information_power -> pricing_coordination_candidate -> higher_or_less_competitive_rent -> landlord_revenue_and_owner_asset_return
+    beneficiary:
+      - landlord_or_property_manager
+      - beneficial_owner_or_parent
+      - pricing_vendor
+    counterevidence_and_limits:
+      - housing_supply_interest_rates_taxes_insurance_and_operating_costs_also_move_rents
+      - case_posture_varies_by_defendant
+      - do_not_generalize_to_all_landlords_or_all_algorithmic_pricing
+    article_hook: Who actually receives the rent when immigrants or tenants are blamed for housing pressure?
+
+  pbm_drug_price_vertical_integration:
+    readiness: HIGH_FOR_SCOPED_ARTICLE
+    supported_claim: >-
+      FTC staff found large specialty-generic markups, affiliated-pharmacy reimbursement advantages, and spread
+      pricing in the Big Three PBM systems, while current enforcement has produced settlements changing practices.
+    harm_path:
+      patient_need -> formulary_network_rebate_and_dispensing_control -> affiliated_pharmacy_or_spread_revenue -> parent_conglomerate_income
+    beneficiary:
+      - pbm
+      - affiliated_pharmacy
+      - parent_conglomerate
+    counterevidence_and_limits:
+      - PBMs_can_negotiate_real_discounts_and_manage_costs
+      - NADAC_excess_is_not_net_profit
+      - drug_manufacturer_pricing_remains_an_independent_causal_seat
+    article_hook: When the middleman owns the pharmacy, where does the promised saving actually go?
+
+  federal_student_loan_servicing:
+    readiness: HIGH_FOR_OVERSIGHT_ARTICLE
+    supported_claim: >-
+      The federal government pays private servicers to administer public student debt; GAO found most tested
+      servicers failed accuracy standards while FSA subsequently stopped direct accuracy and call-quality testing
+      after major staffing reductions, and at least one servicer reports hundreds of millions in annual federal revenue.
+    harm_path:
+      public_debt -> private_servicer -> borrower_record_and_information_gate -> error_or_delay_risk -> weakened_direct_oversight -> continued_contract_revenue
+    beneficiary:
+      - loan_servicer
+      - parent_company
+    counterevidence_and_limits:
+      - Education_reports_other_oversight_methods
+      - private_servicing_performs_real_work
+      - metric_failure_does_not_mean_every_account_is_wrong
+    article_hook: What happens when the government outsources the debt gate and then loses capacity to check the gatekeeper?
+
+  worker_digital_surveillance:
+    readiness: MEDIUM_HIGH
+    supported_claim: >-
+      GAO finds worker surveillance can improve safety in some cases but can also increase stress, injury risk, and
+      employment consequences when productivity metrics are flawed or coercive; federal worker-protection agencies
+      reassessed or rescinded some prior guidance in 2025.
+    harm_path:
+      survival_dependency -> employer_surveillance -> metric_or_algorithm -> pace_pay_discipline_or_termination -> stronger_employer_control -> reduced_practical_refusal
+    beneficiary:
+      - employer_control_capacity
+      - surveillance_vendor_revenue
+    counterevidence_and_limits:
+      - tool_specific_benefits_can_be_real
+      - illegal_union_surveillance_requires_separate_evidence
+      - vendor_market_and_contract_data_need_more_filling
+    article_hook: How voluntary is work when software watches, scores, and can punish the worker?
+
+  public_ai_security_contracting:
+    readiness: MEDIUM_HIGH_FOR_MONEY_AND_CAPACITY_ARTICLE
+    supported_claim: >-
+      Large public AI/software contracts can simultaneously create substantial private revenue and expand state
+      military, information, or enforcement capacity; Palantir is a strong documented example of this dual flow.
+    harm_path:
+      taxpayer_funds -> private_software_contract -> corporate_revenue -> state_data_or_targeting_capacity -> future_policy_or_coercive_use
+    beneficiary:
+      - contractor
+      - public_agency_capacity
+      - owners_where_return_is_traced
+    counterevidence_and_limits:
+      - capability_is_not_abuse
+      - defensive_and_efficiency_benefits_can_be_real
+      - contract_ceiling_is_not_obligation
+      - abusive_use_requires_case_specific_evidence
+    article_hook: Public money does not only buy services; sometimes it buys the state more power to act.
+
+cross_package_relations:
+  - pricing_and_data_systems_can_turn_information_control_into_material_extraction_or_behavioral_control
+  - outsourcing_can_create_private_revenue_while_state_oversight_capacity_declines_or_becomes_more_distant
+  - vertical_integration_and_identity_resolution_are_required_to_find_terminal_beneficiaries
+  - correction_and_enforcement_records_are_part_of_the_story_because_the_mesh_tracks_whether_redress_still_works
+publication_gate:
+  required_before_article:
+    - primary_source_links_verified
+    - claim_posture_and_case_status_current
+    - beneficiary_language_scoped_to_evidence
+    - strongest_claim_specific_counterevidence_included
+    - no_double_counting
+    - no_collective_blame
+    - explicit_what_would_change_the_assessment
+priority_next_fill:
+  - healthcare_public_payment_to_insurer_provider_pbm_owner_whole_circuit
+  - housing_ownership_and_private_equity_parent_resolution
+  - surveillance_vendor_and_employer_case_studies
+  - student_loan_servicer_company_by_company_contract_and_error_records
+  - energy_utility_data_center_subsidy_and_ratepayer_cost_distribution
+  - defense_and_immigration_software_use_case_tracing

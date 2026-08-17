@@ -1,0 +1,48 @@
+schema: unum-lattice-news/node/v0.1
+id: rent-algorithm-coordination-and-landlord-capture
+title: Rent algorithm coordination and landlord capture
+family: analysis_framework
+subtype: housing_price_power_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for rental markets where landlords or property managers use common pricing systems,
+    competitors' sensitive data, or aligned pricing rules in ways that may weaken independent price competition
+    and raise renter burden while rent revenue and asset value remain upstream with owners and managers.
+  posture: evidence_bound
+current_evidence:
+  - DOJ_has_alleged_and_settled_components_of_algorithmic_coordination_across_RealPage_and_multiple_large_landlords.
+  - Willow_Bridge_settlement_materials_describe_competitor_sensitive_data_and_pricing_recommendations_used_to_align_rents.
+  - Greystar_manages_nearly_950000_units_and_entered_a_proposed_settlement_in_2025_with_final_judgment_in_2026.
+  - LivCor_is_identified_by_DOJ_as_a_Blackstone_portfolio_company_and_entered_a_proposed_consent_decree.
+required_trace:
+  - renter_need_and_local_supply_conditions
+  - landlord_manager_owner_and_parent_identity
+  - pricing_software_and_data_inputs
+  - competitor_data_sharing_or_coordination_evidence
+  - recommended_and_realized_rent_changes
+  - operating_cost_and_capital_cost_changes
+  - rent_revenue_margin_and_asset_value
+  - public_subsidy_or_tax_advantage_if_present
+  - tenant_exit_and_bargaining_options
+  - enforcement_and_redress
+beneficiary_seats:
+  - property_manager_or_landlord_receiving_rent
+  - beneficial_owner_or_parent_receiving_income_or_asset_appreciation
+  - pricing_software_vendor_receiving_fees
+locks:
+  - high_rent_alone_does_not_prove_coordination.
+  - supply_constraints_interest_rates_taxes_insurance_and_maintenance_costs_may_materially_affect_rents.
+  - settlements_may_resolve_claims_without_admission_of_every_allegation; preserve_case_specific_posture.
+  - tenant_housing_demand_does_not_receive_the_rent_and_must_not_be_confused_with_the_terminal_beneficiary.
+source_bundle:
+  - source-article-readiness-expansion-2026-08-16
+relations:
+  - type: EXTENDS
+    target: price-power-and-essential-goods-extraction
+  - type: EXTENDS
+    target: land-rent-and-resource-capture
+  - type: EXTENDS
+    target: entity-kinship-and-identity-resolution

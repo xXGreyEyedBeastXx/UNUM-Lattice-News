@@ -1,0 +1,52 @@
+schema: unum-lattice-news/node/v0.1
+id: pbm-vertical-integration-and-specialty-drug-extraction
+title: PBM vertical integration and specialty-drug extraction
+family: analysis_framework
+subtype: healthcare_price_power_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for pharmacy-benefit-manager arrangements where a vertically integrated PBM can
+    influence formularies, pharmacy networks, reimbursement, rebates, dispensing location, and spread pricing
+    while affiliated pharmacies and parent conglomerates receive revenue from the same medication flow.
+  posture: evidence_bound
+current_evidence:
+  - FTC_staff_found_hundreds_to_thousands_percent_markups_on_numerous_specialty_generics_dispensed_at_big_three_affiliated_pharmacies.
+  - FTC_staff_calculated_more_than_7_3_billion_in_affiliated_pharmacy_dispensing_revenue_above_estimated_acquisition_cost_for_analyzed_drugs_2017_2022.
+  - FTC_staff_estimated_1_4_billion_in_additional_spread_pricing_income_on_the_analyzed_drugs.
+  - FTC_found_affiliated_pharmacies_received_higher_reimbursement_than_unaffiliated_pharmacies_on_nearly_every_analyzed_specialty_generic.
+  - Express_Scripts_and_Caremark_entered_2026_settlements_in_the_FTC_insulin_case;_Optum_settlement_discussions_remained_pending_in_the_latest_source.
+  - UnitedHealth_2025_filing_reports_Optum_Rx_154_726_billion_revenue_and_7_193_billion_operating_earnings.
+required_trace:
+  - patient_and_plan_need
+  - manufacturer_list_price_and_net_price
+  - rebate_and_gpo_flow
+  - formulary_and_network_decision
+  - affiliated_vs_unaffiliated_pharmacy_reimbursement
+  - spread_pricing
+  - patient_cost_sharing
+  - Medicare_or_other_public_payment_where_present
+  - PBM_segment_revenue_and_operating_income
+  - parent_company_and_ownership_return
+  - enforcement_and_remedy
+beneficiary_seats:
+  - pbm
+  - affiliated_specialty_or_mail_order_pharmacy
+  - parent_healthcare_conglomerate
+  - manufacturer_where_rebate_or_list_price_structure_creates_gain
+locks:
+  - revenue_above_NADAC_is_not_identical_to_net_profit.
+  - PBMs_can_negotiate_discounts_and_perform_cost_management_functions; measure_net_effect_by_drug_and_plan.
+  - manufacturer_pricing_and_patent_or_market_structure_remain_separate_causal_seats.
+  - settlement_terms_and_expected_savings_are_not_yet_realized_outcomes.
+source_bundle:
+  - source-article-readiness-expansion-2026-08-16
+relations:
+  - type: EXTENDS
+    target: price-power-and-essential-goods-extraction
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+  - type: EXTENDS
+    target: whole-circuit-corporate-gain-accounting

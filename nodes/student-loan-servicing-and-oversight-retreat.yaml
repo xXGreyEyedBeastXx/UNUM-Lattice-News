@@ -1,0 +1,51 @@
+schema: unum-lattice-news/node/v0.1
+id: student-loan-servicing-and-oversight-retreat
+title: Student-loan servicing and oversight retreat
+family: analysis_framework
+subtype: public_private_debt_administration_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for federal student-loan administration where public debt is serviced through private
+    contractors whose revenue depends on federal servicing volume while the public agency's ability to measure
+    accuracy, call quality, and contract performance may weaken.
+  posture: evidence_bound
+current_evidence:
+  - GAO_reports_four_of_five_servicers_failed_accuracy_performance_standards_in_at_least_one_assessed_quarter.
+  - FSA_stopped_direct_accuracy_and_call_quality_assessments_in_February_2025_citing_staff_capacity.
+  - FSA_staff_declined_from_1433_to_777_between_January_and_December_2025.
+  - GAO_says_no_replacement_method_was_in_use_as_of_December_2025_and_its_recommendation_to_resume_assessments_remains_open.
+  - Nelnet_reports_363_970_million_in_2025_Department_of_Education_government_loan_servicing_revenue_and_434_5_billion_in_government_owned_loans_serviced_for_11_4_million_borrowers_at_year_end.
+  - Nelnet_reports_Education_was_its_largest_customer_at_21_percent_of_2025_revenue.
+required_trace:
+  - borrower_debt_and_repayment_status
+  - federal_program_rules
+  - assigned_private_servicer
+  - per_borrower_or_other_contract_payment
+  - accuracy_call_quality_and_compliance_metrics
+  - error_or_misinformation_effect_on_borrower
+  - penalties_and_account_reallocation
+  - contractor_revenue_and_parent_ownership
+  - agency_staffing_and_oversight_capacity
+  - complaint_appeal_and_correction_path
+beneficiary_seats:
+  - servicing_contractor_receiving_federal_revenue
+  - parent_company_and_owners_where_servicing_contributes_to_income
+risk_seats:
+  - borrowers_exposed_to_wrong_balance_status_payment_or_repayment_information
+  - taxpayers_if_servicers_are_overpaid_for_poor_performance
+locks:
+  - servicing_contracts_perform_real_administrative_work_and_are_not_capture_by_definition.
+  - GAO_records_Education_disagreement_and_alternative_oversight_methods; preserve_that_counterevidence.
+  - a_servicer_failing_a_metric_does_not_establish_every_borrower_account_is_wrong.
+source_bundle:
+  - source-article-readiness-expansion-2026-08-16
+relations:
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+  - type: EXTENDS
+    target: administrative-moral-distance

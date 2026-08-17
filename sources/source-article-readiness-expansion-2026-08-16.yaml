@@ -1,0 +1,112 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-article-readiness-expansion-2026-08-16
+title: Article-readiness expansion — housing, PBM, student-loan servicing, worker surveillance, and public AI contracting
+status: active
+as_of: 2026-08-16
+purpose: >-
+  Preserve primary and direct evidence for several high-value harm-audit article surfaces. These sources
+  are chosen because they support a recoverable chain from grievance to mechanism, beneficiary, counterevidence,
+  redress, and remaining uncertainty.
+sources:
+  - id: doj-realpage-willow-2026-07-06
+    class: primary_government
+    url: https://www.justice.gov/opa/pr/justice-department-reaches-proposed-settlement-willow-bridge-one-americas-largest-landlords
+    supports:
+      - algorithmic_rent_coordination_claims
+      - competitively_sensitive_information_sharing
+      - settlement_lineage_realpage_greystar_cortland_livcor_willow_bridge
+  - id: doj-realpage-greystar-2025-08-08
+    class: primary_government
+    url: https://www.justice.gov/opa/pr/justice-department-reaches-proposed-settlement-greystar-largest-us-landlord-end-its
+    supports:
+      - greystar_nearly_950000_units
+      - algorithmic_pricing_and_information_sharing_claims
+  - id: doj-realpage-settlement-2025-11-24
+    class: primary_government
+    url: https://www.justice.gov/opa/pr/justice-department-requires-realpage-end-sharing-competitively-sensitive-information-and
+    supports:
+      - realpage_proposed_settlement
+      - millions_of_renters_market_scope
+  - id: doj-livcor-2025-12-23
+    class: primary_government
+    url: https://www.justice.gov/opa/pr/justice-department-reaches-proposed-consent-decree-livcor-one-americas-largest-landlords
+    supports:
+      - livcor_blackstone_portfolio_company
+      - algorithmic_pricing_claims
+  - id: ftc-pbm-second-interim-2025-01-14
+    class: primary_government
+    url: https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen
+    supports:
+      - big_three_pbm_specialty_generic_markups
+      - more_than_7_3_billion_revenue_above_estimated_acquisition_cost
+      - estimated_1_4_billion_spread_pricing_income
+      - affiliated_pharmacy_steering_candidate
+  - id: ftc-caremark-insulin-case-2026-07-14
+    class: primary_government
+    url: https://www.ftc.gov/legal-library/browse/cases-proceedings/221-0114-caremark-rx-zinc-health-services-et-al-matter-insulin
+    supports:
+      - pbm_insulin_case_status
+      - express_scripts_and_caremark_settlement_lineage
+      - optum_consent_discussions
+  - id: unh-2025-10k
+    class: sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/731766/000073176626000062/unh-20251231.htm
+    supports:
+      - optum_rx_2025_revenue_154_726_billion
+      - optum_rx_2025_operating_earnings_7_193_billion
+      - optum_rx_managed_188_billion_pharmaceutical_spend
+  - id: gao-student-loan-servicer-oversight-2026-03-05
+    class: primary_government
+    url: https://www.gao.gov/products/gao-26-108534
+    supports:
+      - four_of_five_servicers_failed_accuracy_standard
+      - fsa_stopped_accuracy_and_call_quality_assessments_february_2025
+      - fsa_staff_1433_to_777_in_2025
+      - oversight_recommendation_remains_open
+  - id: nelnet-2025-10k
+    class: sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1258602/000125860226000014/nni-20251231.htm
+    supports:
+      - department_of_education_largest_customer_21_percent_of_2025_revenue
+      - 363_970_million_government_loan_servicing_revenue
+      - 434_5_billion_government_owned_loans_serviced_for_11_4_million_borrowers
+  - id: gao-worker-digital-surveillance-2025-09-02
+    class: primary_government
+    url: https://www.gao.gov/products/gao-25-107126
+    supports:
+      - surveillance_can_raise_injury_risk_stress_anxiety
+      - flawed_metrics_can_affect_pay_discipline_or_termination
+      - 2025_agencies_rescinded_or_reassessed_prior_guidance_resources
+  - id: nlrb-organizing-rights
+    class: primary_government
+    url: https://www.nlrb.gov/about-nlrb/rights-we-protect/the-law/employees/your-rights-during-union-organizing
+    supports:
+      - employer_may_not_spy_on_union_activity
+      - protected_organizing_rights
+  - id: palantir-2025-10k
+    class: sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm
+    supports:
+      - 2025_total_revenue_4_475_billion
+      - 54_percent_government_segment
+      - 1_9_billion_us_government_revenue
+      - 2025_government_segment_contribution_1_576_billion
+  - id: army-palantir-enterprise-agreement-2025-07-31
+    class: primary_government
+    url: https://www.army.mil/article/287506/u_s_army_awards_enterprise_service_agreement_to_enhance_military_readiness_and_drive_operational_efficiency
+    supports:
+      - consolidated_75_contracts
+      - up_to_10_year_agreement
+      - 10_billion_cap_not_obligation
+  - id: dod-palantir-maven-2025-05-21
+    class: primary_government
+    url: https://www.defense.gov/News/Contracts/Contract/Article/4194643/
+    supports:
+      - 795_million_maven_contract_modification
+locks:
+  - settlement_or_complaint_allegation_is_not_identical_to_final_adjudication
+  - revenue_above_acquisition_cost_is_not_identical_to_net_profit
+  - public_contract_revenue_is_not_capture_by_definition
+  - public_ai_contracting_does_not_establish_abusive_use_without_use_case_evidence
+  - student_loan_servicing_is_a_government_function_outsourced_to_private_entities_but_private_revenue_does_not_by_itself_prove borrower_harm
+  - worker_surveillance_can_have_safety_benefits_and_harms; evaluate tool_specific_use_and_effect
