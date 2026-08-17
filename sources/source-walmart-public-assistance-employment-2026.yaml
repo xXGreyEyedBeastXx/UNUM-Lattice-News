@@ -1,0 +1,47 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-walmart-public-assistance-employment-2026
+title: Walmart employment and working-adult public-assistance evidence, 2026
+accessed: 2026-08-16
+purpose: >-
+  Provide a recoverable source base for testing whether means-tested public programs
+  supplement the reproduction costs of labor at Walmart without misclassifying worker
+  benefits as direct corporate payments.
+sources:
+  - id: source-gao-working-medicaid-snap-employers-2026
+    publisher: U.S. Government Accountability Office
+    source_class: primary_government_analysis
+    title: Federal Social Safety Net Programs: Millions of Workers, Including Many Employed by Large Employers, Continue to Rely on Medicaid and SNAP
+    report: GAO-26-108703
+    date: 2026-06-22
+    public_release: 2026-07-22
+    url: https://www.gao.gov/products/gao-26-108703
+    supports:
+      - GAO estimated 13.8 million wage-earning adults enrolled in Medicaid and 10.6 million wage-earning adults living in SNAP-recipient households worked at some point during 2024.
+      - About two-thirds of wage-earning adults in each program worked full time for at least part of 2024.
+      - Most working beneficiaries were employed in the private sector, and large private employers repeatedly appeared among the employers with the most beneficiaries in selected states.
+      - Georgia September 2025 data estimated 4,595 working adult Medicaid enrollees employed by Walmart, 4.8 percent of the relevant working-adult Medicaid population in that table.
+      - Tennessee September 2025 data estimated 3,513 working adult SNAP recipients employed by Walmart, 2.9 percent of working adult SNAP recipients working for an employer in that table.
+    limitations:
+      - Employer estimates are based on 15 state agencies in 11 states and are not generalizable to all states or nationwide employer totals.
+      - Program participation does not identify why any individual worker is eligible.
+      - The data do not estimate the public dollar cost associated with each employer's workforce.
+      - GAO does not conclude that employers caused program participation or that public benefits are direct employer subsidies.
+
+  - id: source-walmart-people-fye2026
+    publisher: Walmart Inc.
+    source_class: organization_primary_statement
+    title: Our People / Working at Walmart
+    date: 2026
+    url: https://corporate.walmart.com/purpose/esgreport/our-people
+    supports:
+      - Walmart reports an average U.S. hourly wage of about 18 dollars overall as of FYE2026.
+      - Walmart reports wage, health, retirement, education, leave, and other employee-benefit investments.
+    limitations:
+      - Employer self-report is appropriate for stated compensation policy but does not establish program incidence or household adequacy.
+      - Average wage obscures variation by role, market, hours, tenure, and household circumstances.
+
+locks:
+  - Medicaid or SNAP paid to a worker household != direct payment to Walmart.
+  - Public support may create an indirect employer benefit, but the magnitude requires incidence or counterfactual analysis.
+  - Household income, family size, work hours, other earners, and program rules can affect eligibility.
+  - Selected-state beneficiary counts must not be summed into a national Walmart estimate without compatible national data.

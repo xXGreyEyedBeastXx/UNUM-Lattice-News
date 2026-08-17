@@ -6,13 +6,14 @@ as_of: 2026-08-16
 authority: evidence_lattice_not_verdict
 purpose: >-
   Trace recurring mechanisms by which labor value, land rent, public spending, tax preferences,
-  and environmental liabilities can move resources toward owners, landlords, firms, creditors,
-  or asset holders while costs remain with workers, tenants, taxpayers, communities, or future
-  generations. The lattice measures each path separately and does not equate ownership or profit
-  with wrongdoing.
+  public assistance, and environmental liabilities can move resources toward owners, landlords,
+  firms, creditors, or asset holders while costs remain with workers, tenants, taxpayers,
+  communities, or future generations. The lattice measures each path separately and does not
+  equate ownership, profit, benefit receipt, or public spending with wrongdoing.
 operators:
   - money-flow-benefit-enforced-loss
   - labor-market-power-and-wage-extraction
+  - public-assistance-labor-cost-supplementation
   - land-rent-and-resource-capture
   - public-to-private-revenue-and-ownership-return
   - environmental-cost-externalization
@@ -20,14 +21,19 @@ operators:
 source_bundles:
   - source-us-material-extraction-and-upward-recirculation-2026-08-16
   - source-us-wealth-grievance-routing-baseline-2026-08-16
+  - source-walmart-public-assistance-employment-2026
 nodes:
   institutions:
     - lockheed-martin
+    - walmart
   populations:
     - us-low-income-households
     - us-high-income-households
     - us-high-wealth-households
     - us-workers-lower-formal-education
+    - us-means-tested-benefit-recipient-households
+  resources:
+    - means-tested-public-transfers
 flows:
   labor:
     findings:
@@ -57,6 +63,30 @@ flows:
           - source-treasury-labor-market-competition-2022
         limits:
           - Treasury's roughly 20 percent estimate is a model-level benchmark, not a uniform firm-level effect.
+      - id: walmart-working-public-assistance-case
+        posture: observed_with_incidence_path_forward
+        investigation_state: PATH_FORWARD
+        trace:
+          - labor_performed
+          - walmart
+          - employer_compensation
+          - household_income_and_program_eligibility
+          - means-tested-public-transfers
+          - worker_or_household_benefit
+          - taxpayer_public_cost
+          - candidate_employer_cost_supplementation
+        evidence:
+          - source-gao-working-medicaid-snap-employers-2026
+          - source-walmart-people-fye2026
+        observed:
+          - GAO estimated 4,595 nondisabled, nonelderly working adult Medicaid enrollees employed by Walmart in Georgia in September 2025, the largest employer count in that table.
+          - GAO estimated 3,513 working adult SNAP recipients employed by Walmart in Tennessee in September 2025, second in that table behind app-based food delivery.
+          - Walmart reports an average U.S. hourly wage of about 18 dollars overall for FYE2026 and offers employer benefits whose availability varies by role and eligibility.
+        limits:
+          - The public benefit is legally paid to the worker or household, not to Walmart.
+          - Household eligibility depends on household income, family size, hours, other earners, and program rules as well as individual wages.
+          - GAO's selected-state counts are not a national Walmart total.
+          - The employer-side subsidy magnitude remains unmeasured until a labor-incidence or counterfactual compensation analysis is performed.
 
   land_and_rent:
     findings:
@@ -157,17 +187,23 @@ anti_double_counting:
     - Tax expenditures are foregone revenue and must not be added to cash spending as if they were identical instruments.
     - Land appreciation, rent, and realized capital gains are distinct seats and may overlap economically.
     - Environmental cleanup obligations count as externalized only to the extent the responsible party does not ultimately bear them.
+    - A means-tested benefit paid to a worker household must not be counted in full as both household assistance and employer capture.
+    - Employer-side capture from public assistance counts only to the supported incidence share attributable to reduced private compensation or employer-borne cost.
 
 crossing_to_grievance_routing:
   proposition: >-
     Material extraction or upward recirculation can coexist with public narratives that attribute
     household pressure primarily to lower-power populations. The money-flow lattice establishes
     the material field; the attribution-routing lattice tests who is blamed and whether that blame
-    is proportionate to measured causation.
+    is proportionate to measured causation. Working public-assistance recipients are therefore
+    represented simultaneously as benefit recipients and possible sites of employer cost
+    supplementation rather than being treated as the endpoint of the money flow.
   related_lattice: wealth-grievance-routing-2026-08-16
 
 path_forward:
   - Trace wage suppression and wage-theft cases by sector, employer concentration, and ownership seat.
+  - Estimate employer-side incidence of Medicaid, SNAP, refundable tax credits, housing support, and other public assistance used by working households, beginning with Walmart and other recurring large-employer cases in GAO data.
+  - Separate direct worker benefit, taxpayer cost, employer compensation saved, and retailer/provider revenue recapture so the same public dollar is not counted repeatedly.
   - Map rent, mortgage interest, land appreciation, and landlord ownership by household wealth tier.
   - Trace federal procurement and subsidy cases from gross award to wages, suppliers, net profit, dividends, buybacks, and ultimate ownership.
   - Quantify tax-expenditure incidence with current-year distributional estimates where available.
@@ -175,7 +211,8 @@ path_forward:
   - Build a same-year normalized capture ledger before making any aggregate claim that upward recirculation exceeds lower- or middle-income tax payments.
 locks:
   - Extraction is a mechanism claim, not a wealth identity.
-  - Profit, rent, ownership, and government contracting are not harms by definition.
+  - Profit, rent, ownership, government contracting, and public-assistance receipt are not harms by definition.
   - Material benefit and culpability require separate evidence.
-  - Genuine public value created by spending or investment remains part of the accounting.
+  - Genuine public value created by spending, investment, or social insurance remains part of the accounting.
   - Failed or repaired externalization reduces the harm estimate.
+  - Benefit recipient != terminal economic beneficiary.

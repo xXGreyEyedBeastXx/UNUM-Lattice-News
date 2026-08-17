@@ -1,0 +1,43 @@
+schema: unum-lattice-news/node/v0.1
+id: walmart
+title: Walmart Inc.
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Large U.S. retailer and employer used in this lattice as a case node for tracing
+    employment compensation, employee reliance on means-tested public programs, retail
+    benefit redemption, healthcare/pharmacy activity, tax incentives, land use, and
+    ownership returns. Node inclusion is not a verdict on any single mechanism.
+  posture: observed
+current_evidence:
+  observed:
+    - GAO's 2026 update identifies Walmart among large employers with thousands of working adult Medicaid enrollees or SNAP recipients in selected states.
+    - In Georgia, GAO estimated 4,595 nondisabled, nonelderly working adult Medicaid enrollees worked for Walmart in September 2025, the largest employer count in the table.
+    - In Tennessee, GAO estimated 3,513 working adult SNAP recipients worked for Walmart in September 2025, second in the table behind app-based food delivery.
+    - Walmart reports an average U.S. hourly wage of about 18 dollars overall for FYE2026, with pay varying by role and market.
+  counterevidence:
+    - Walmart offers employer benefits including health coverage, retirement contributions, education benefits, and other compensation; benefit eligibility or enrollment in Medicaid/SNAP cannot be inferred from hourly wage alone.
+  unknowns:
+    - National number and share of Walmart workers or worker households receiving each means-tested program.
+    - Program-specific public cost attributable to Walmart-employed households.
+    - Counterfactual compensation and employer-cost effect if specific public benefits were absent.
+    - How much SNAP spending by Walmart-employed households returns to Walmart stores versus other retailers.
+relations:
+  - type: TESTED_THROUGH
+    target: public-assistance-labor-cost-supplementation
+    posture: observed
+  - type: PARTICIPATES_IN
+    target: labor-market-power-and-wage-extraction
+    posture: path_forward
+sources:
+  - source-gao-working-medicaid-snap-employers-2026
+  - source-walmart-people-fye2026
+locks:
+  - Workers receiving Medicaid or SNAP are the legal beneficiaries of those programs; do not relabel the benefit itself as a direct payment to Walmart.
+  - A recurring employer-beneficiary association is evidence for a labor-cost-incidence investigation, not automatic proof of wage theft or illegal pay.
+  - Selected-state counts are not a national Walmart total.
+  - Household eligibility is not determined by one worker's hourly wage alone.
