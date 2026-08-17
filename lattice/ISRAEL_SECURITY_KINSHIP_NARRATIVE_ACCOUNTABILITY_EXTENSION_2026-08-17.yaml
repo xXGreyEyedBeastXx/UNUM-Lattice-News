@@ -1,0 +1,126 @@
+schema: unum-lattice-news/evidence-lattice-extension/v0.1
+id: israel-security-kinship-narrative-accountability-extension-2026-08-17
+extends: lattice/ISRAEL_PALESTINE_WORDS_CONDUCT_TERRITORIAL_CONTROL_2026-08-17.yaml
+as_of: 2026-08-17
+status: active_extension
+sources:
+  - sources/source-israel-bilingual-narrative-security-kinship-accountability-2023-2026.yaml
+  - sources/source-self-exoneration-accountability-israel-trump-2025-2026.yaml
+methodology:
+  - docs/SELF_INVESTIGATION_INDEPENDENCE_AND_ACCOUNTABILITY_v0_1.md
+  - docs/STATED_JUSTIFICATION_VS_OBSERVED_CONDUCT_v0_1.md
+  - docs/EXTENSIBLE_EVIDENCE_GRAMMAR_v0_1.md
+
+new_nodes:
+  - id: israeli-security-institutional-kinship
+    ref: nodes/israeli-security-institutional-kinship.yaml
+    type: ecology
+
+new_grammar:
+  - term: AUDIENCE_DIFFERENTIATED_FRAMING
+    parent: STATED_JUSTIFICATION
+    meaning: materially different framing supplied to different linguistic or political audiences; does not itself prove deception
+  - term: TRANSLATION_DISPUTE
+    parent: disputed
+    meaning: dispute over translation or semantic scope that materially affects interpretation
+  - term: PERSONNEL_PIPELINE
+    parent: relation
+    meaning: recurring movement or placement of personnel from one institution into another
+  - term: DUAL_SEAT_SERVICE
+    parent: relation
+    meaning: a person occupies materially consequential service roles across institutions or periods, including reserve service where evidenced
+  - term: INSTITUTIONAL_KINSHIP
+    parent: relation
+    meaning: distinct institutions share evidenced personnel, recruitment, operational, command, funding or oversight relations
+  - term: INTERNAL_REVIEW
+    parent: evidence_process
+    meaning: review performed inside or under the same wider institutional/state system as the investigated actor
+  - term: INDEPENDENCE_AUDIT
+    parent: evidence_process
+    meaning: explicit test of appointment, removal, staffing, budget, evidence access, personnel crossing and sanction capacity
+  - term: SELF_EXONERATION
+    parent: finding
+    meaning: internal review concludes no wrongdoing or materially narrows responsibility
+  - term: EXTERNAL_CONTRADICTION
+    parent: evidence_relation
+    meaning: competent outside evidence materially contradicts an internal account or finding
+  - term: SELF_EXONERATION_CREDIBILITY_DECAY
+    parent: trust_posture
+    meaning: repeated weak-accountability self-clearance plus external contradiction lowers future exculpatory weight without making all internal claims false
+  - term: COMMAND_ALLOWANCE
+    parent: responsibility_relation
+    meaning: harmful conduct is knowingly tolerated, normalized, left uncorrected or enabled within command authority without proof of a direct written order
+  - term: COMMAND_RESPONSIBILITY_FINDING
+    parent: legal_finding
+    meaning: court or competent legal body attributes superior responsibility at its exact evidentiary standard
+
+kinship_findings:
+  - proposition: IDF and Israel Police are legally distinct but not personnel-independent.
+    posture: supported
+    evidence:
+      - compulsory IDF soldiers may be stationed in police units under current law
+      - police directly recruits former IDF officers into accelerated command tracks
+      - Border Police compulsory placement is handled through IDF channels
+  - proposition: Yamam is institutionally police-based while strongly connected to IDF personnel and joint operations.
+    posture: supported
+    evidence:
+      - Yamam states most fighters are veterans of elite/combat IDF units
+      - Yamam performs counterterrorism in cooperation with IDF and Shin Bet
+  - proposition: Institution-level separation cannot be used as automatic causal severance when personnel, reserve duty or joint operational relations are evidenced.
+    posture: supported_inference
+
+narrative_findings:
+  - id: hagari-maximum-damage-translation
+    relation: TRANSLATION_DISPUTE
+    Hebrew_domestic_record: >-
+      Ynet reported Hagari describing thousands of munitions on thousands of targets as producing maximum damage across areas of Gaza and separately a lethal fence-approach policy.
+    English_institutional_clarification: >-
+      IDF later said maximum damage referred to Hamas military capabilities, rejected the paraphrase damage-not-accuracy, and argued diyuk should be translated as exactness in context.
+    correct_read: preserve both records and compare against observed conduct; do not let the later clarification replace the original statement surface.
+  - id: smotrich-de-facto-sovereignty
+    relation: AUDIENCE_DIFFERENTIATED_FRAMING
+    Hebrew_domestic_record: >-
+      Knesset record quotes Smotrich describing de facto sovereignty, normalization of settlements and administrative/legal preparation for later formal sovereignty in the West Bank.
+    correct_read: >-
+      Explicit domestic annexation preparation is relevant to territorial-purpose analysis and should not be flattened into generic security/administrative vocabulary.
+
+accountability_findings:
+  - id: idf-formal-independence-claim
+    posture: INDEPENDENCE_CLAIM
+    evidence: IDF says MAG is professionally independent and FFA detached from operational chain.
+  - id: outcome-and-external-pressure
+    posture: INDEPENDENCE_AUDIT
+    evidence:
+      - AP documented sparse details and rare admissions in many early internal probes
+      - AOAV later found most of 52 public probes unresolved or closed without wrongdoing and one prison sentence in its reviewed set
+      - UN Commission described continuing violations as occurring with impunity
+    limitation: AOAV dataset is not a complete official universe and uses different scope from IDF statistics.
+  - id: senior-command-responsibility-external
+    posture: COMMAND_RESPONSIBILITY_FINDING
+    evidence: >-
+      ICC Pre-Trial Chamber found reasonable grounds to believe Netanyahu and Gallant bore civilian-superior responsibility for intentionally directing attacks against the civilian population.
+    legal_limit: arrest-warrant reasonable-grounds finding, not final conviction.
+
+responsibility_pathways:
+  - DIRECT_ORDER
+  - LOCAL_ORDER
+  - FORMAL_POLICY
+  - COMMAND_ALLOWANCE
+  - LEADERSHIP_ENCOURAGEMENT
+  - FAILURE_TO_PREVENT_OR_REPRESS
+  - FAILURE_TO_INVESTIGATE_EFFECTIVELY
+  - PROTECTION_OR_IMPUNITY
+  - COMMAND_RESPONSIBILITY_FINDING
+
+locks:
+  - Chain of command exists != every harm ordered from the top.
+  - No recovered direct order != no superior responsibility.
+  - Command allowance != direct command unless evidence supports both.
+  - Institutionally distinct != personnel independent.
+  - Personnel kinship != identical institution.
+  - Hebrew != truth and English != lie by default.
+  - Material audience divergence must be preserved when evidenced.
+  - Self-investigation != independent adjudication.
+  - Self-exoneration != debunking.
+  - Repeated self-exoneration + external contradiction + weak consequences can lower institutional trust rationally.
+  - ICC reasonable-grounds finding != conviction.
