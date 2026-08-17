@@ -1,0 +1,151 @@
+schema: unum-lattice-news/node/v0.2
+id: benjamin-netanyahu
+title: Benjamin Netanyahu
+entity_type: person
+actor_roles:
+  - public_official
+  - authority
+status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Prime Minister of Israel and high-authority political actor in the Gaza war, occupied-West-Bank settlement and
+    territorial-policy field, and regional security/buffer-zone policy. His public record requires paired audience
+    analysis because documented Hebrew-facing domestic and English-facing international statements sometimes differ
+    materially in policy presentation. Current lattice posture separates rhetoric, policy, command, implementation,
+    effects, external legal/fact findings and self/official denials.
+  posture: observed
+aliases:
+  - Binyamin Netanyahu
+  - Benjamin "Bibi" Netanyahu
+hashtags:
+  - person/BenjaminNetanyahu
+  - institution/PrimeMinisterIsrael
+  - domain/IsraelPalestine
+  - mechanism/AudienceDifferentiatedFraming
+  - mechanism/TerritorialControl
+  - mechanism/CommandResponsibility
+
+authority:
+  has_authority: true
+  seat: Prime Minister of Israel
+  source: Government of Israel
+  jurisdiction: Israel
+  level: national
+  term_start: 2022-12-29
+  term_end: null
+  oversight:
+    - Knesset
+    - Israeli courts and legal oversight bodies
+    - international courts and fact-finding bodies within their jurisdictions/mandates
+  appeal_or_review: []
+vulnerability:
+  roles: []
+  protection_needs: []
+funding:
+  gives_to: []
+  receives_from: []
+constituencies: []
+current_evidence:
+  observed:
+    - Netanyahu directs or participates in high-level Israeli security, war and territorial policy through the prime-ministerial authority seat.
+    - His Hebrew domestic and English international public records contain documented cases of materially divergent policy presentation.
+  stated:
+    - Netanyahu has repeatedly framed Gaza operations as necessary to defeat/disarm Hamas and prevent future threats.
+    - He has publicly rejected Palestinian statehood in multiple recent domestic and parliamentary settings.
+    - He has described post-October-7 Israeli security doctrine as moving security envelopes inside Gaza, Lebanon and Syria.
+  adjudicated:
+    - The ICC Pre-Trial Chamber issued an arrest warrant after finding reasonable grounds within the warrant standard concerning alleged crimes and civilian-superior responsibility; this is not a conviction.
+  alleged: []
+  supported_inferences:
+    - Audience, venue, diplomatic pressure, electoral pressure and coalition pressure are relevant variables when interpreting Netanyahu's public messaging.
+  disputed:
+    - Netanyahu and the Israeli government dispute major international allegations/findings concerning war crimes, genocide, civilian targeting and unlawful conduct.
+  ambiguous:
+    - The degree to which any specific audience divergence reflects strategic deception, genuine reversal, coalition management, legal positioning or changed circumstances must be traced separately.
+  unknowns:
+    - Complete paired Hebrew/English corpus for 2023-2026 has not yet been compiled.
+    - Full order-by-order responsibility chain for all documented civilian-targeting and territorial-control practices remains incomplete.
+  missing_or_withheld: []
+  counterevidence:
+    - Some official English-language Netanyahu statements are themselves highly explicit about territorial-security doctrine; therefore English messaging is not uniformly sanitized.
+
+evidence_extensions:
+  audience_divergence:
+    - id: 2015-palestinian-statehood
+      posture: MATERIAL_POLICY_PRESENTATION_DIVERGENCE
+      summary: >-
+        Hebrew domestic pre-election statement rejected a Palestinian state while he remained prime minister; three days later an English NBC interview stated support for a sustainable peaceful two-state solution while denying a policy change.
+      source: source-netanyahu-audience-differentiated-framing-2015-2026
+    - id: 2023-2024-gaza-displacement
+      posture: MATERIAL_POLICY_PRESENTATION_DIVERGENCE
+      summary: >-
+        Hebrew Likud-meeting remarks were reported as Netanyahu actively working on voluntary migration and seeking recipient countries; shortly afterward an English international-facing message stated Israel had no intention of displacing Gaza's civilian population.
+      source: source-netanyahu-audience-differentiated-framing-2015-2026
+    - id: 2025-back-to-back-pressers
+      posture: AUDIENCE_DIFFERENTIATED_FRAMING
+      summary: >-
+        Same-day English and Hebrew press conferences emphasized different legitimating frames: international denial/rebuttal versus domestic victory/continuation messaging.
+      source: source-netanyahu-audience-differentiated-framing-2015-2026
+  command_and_accountability:
+    - id: icc-civilian-superior-responsibility
+      posture: COMMAND_RESPONSIBILITY_FINDING
+      summary: >-
+        ICC Pre-Trial Chamber warrant-stage finding attributed civilian-superior responsibility at the reasonable-grounds standard; preserve separately from final criminal conviction.
+      source: source-israel-bilingual-narrative-security-kinship-accountability-2023-2026
+
+timeline:
+  - date: 2015-03-16
+    event: Hebrew domestic campaign statement rejected Palestinian statehood while he remained prime minister.
+    posture: STATED_OBJECTIVE
+  - date: 2015-03-19
+    event: English NBC interview stated support for a sustainable peaceful two-state solution.
+    posture: STATED_OBJECTIVE
+  - date: 2023-12-25
+    event: Hebrew Likud-meeting remarks reported Netanyahu working on voluntary migration of Gazans and seeking receiving countries.
+    posture: STATED_OBJECTIVE
+  - date: 2024-01-10
+    event: English international-facing statement said Israel had no intention of displacing Gaza's civilian population.
+    posture: STATED_OBJECTIVE
+  - date: 2025-08-10
+    event: Back-to-back English and Hebrew press conferences used materially different audience framing of Gaza policy.
+    posture: AUDIENCE_DIFFERENTIATED_FRAMING
+  - date: 2026-07-14
+    event: Official English translation of Negev Conference remarks described security envelopes as now lying inside Gaza, Lebanon and Syria.
+    posture: STATED_OBJECTIVE
+relations:
+  - type: LEADS
+    target: state-of-israel
+    posture: observed
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: prime-ministerial authority
+  - type: HAS_AUDIENCE_DIFFERENTIATED_FRAMING
+    target: research/investigations/NETANYAHU_HEBREW_ENGLISH_AUDIENCE_DIVERGENCE_2015_2026.md
+    posture: supported
+    evidence:
+      - source-netanyahu-audience-differentiated-framing-2015-2026
+    scope: Hebrew domestic and English international public messaging
+  - type: SUBJECT_OF_COMMAND_RESPONSIBILITY_FINDING
+    target: israeli-security-forces
+    posture: COMMAND_RESPONSIBILITY_FINDING
+    evidence:
+      - source-israel-bilingual-narrative-security-kinship-accountability-2023-2026
+    scope: ICC arrest-warrant reasonable-grounds finding
+stories: []
+unresolved_questions:
+  - Which audience divergences are followed by actual policy implementation, and which are reversed or blocked?
+  - Which differences correlate most strongly with U.S. pressure, international-court proceedings, Israeli elections, coalition instability or hostage negotiations?
+  - What exact Hebrew/English pairings exist for settlement, West Bank sovereignty, Gaza migration, humanitarian aid, Lebanon/Syria buffer zones and ceasefire/withdrawal conditions?
+corrections: []
+references:
+  - source-netanyahu-audience-differentiated-framing-2015-2026
+  - research/investigations/NETANYAHU_HEBREW_ENGLISH_AUDIENCE_DIVERGENCE_2015_2026.md
+  - lattice/ISRAEL_SECURITY_KINSHIP_NARRATIVE_ACCOUNTABILITY_EXTENSION_2026-08-17.yaml
+locks:
+  - Netanyahu != State of Israel != Israeli population != Jewish people.
+  - Hebrew != truth by default; English != lie by default.
+  - Audience divergence != proven deception unless motive is separately evidenced.
+  - Material contradiction must not be downgraded to mere tonal difference.
+  - Rhetoric != policy != order != implementation != effect.
+  - ICC warrant-stage reasonable-grounds finding != conviction.
