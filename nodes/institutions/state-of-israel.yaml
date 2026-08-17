@@ -1,0 +1,152 @@
+schema: unum-lattice-news/node/v0.2
+id: state-of-israel
+title: State of Israel
+entity_type: sovereign_state
+actor_roles:
+  - authority
+status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Sovereign state and primary public-authority seat for Israeli government policy. This node is distinct from
+    Judaism, Jewish people, Zionism as an ideology/movement, Israeli civilians, any particular government,
+    individual officials, the Israeli Security Forces, and settlers. Current Lattice investigation records
+    international findings concerning Israel's unlawful continued presence and settlement activity in the
+    Occupied Palestinian Territory, Commission findings of collective punishment and other serious violations
+    in Gaza, and Commission findings assigning the State primary responsibility for settler actions in the West
+    Bank within the cited scope. Israel disputes major UN findings and states that its military operations are
+    directed at armed groups rather than civilians.
+  posture: supported_inference
+aliases:
+  - Israel
+hashtags:
+  - state/Israel
+  - domain/IsraelPalestine
+  - mechanism/Occupation
+  - mechanism/SettlementExpansion
+  - mechanism/CollectivePunishment
+  - mechanism/TerritorialControl
+
+authority:
+  has_authority: true
+  seat: sovereign state / executive, legislative, administrative and security authority
+  source: constitutional, statutory, governmental and international legal record
+  jurisdiction: Israel and state action affecting occupied or externally controlled territories
+  level: sovereign
+  term_start: null
+  term_end: null
+  oversight:
+    - Israeli judiciary and domestic oversight bodies
+    - international legal and treaty bodies where jurisdiction or mandate applies
+  appeal_or_review: []
+vulnerability:
+  roles: []
+  protection_needs: []
+funding:
+  gives_to: []
+  receives_from: []
+constituencies: []
+current_evidence:
+  observed:
+    - Israeli state institutions fund, authorize, administer and protect settlement infrastructure in the occupied West Bank.
+    - Israeli officials continue to describe military and territorial measures using security, counterterrorism and self-defence rationales.
+  stated:
+    - Israel states that its Gaza military operations are directed against Hamas, Islamic Jihad and other armed groups and that it does not intentionally target civilians.
+    - Israel rejects the UN Commission's findings of systematic sexual and gender-based violence and disputes the Commission's methodology and impartiality.
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Official security language must be tested against policy, observed conduct, effects, external findings and territorial persistence rather than accepted as the Lattice's own classification.
+  disputed:
+    - Israel disputes multiple UN Commission findings concerning collective punishment, deliberate civilian targeting, systematic sexual violence and genocide.
+  ambiguous: []
+  unknowns:
+    - The complete current command, policy and accountability chain for every documented incident remains event- and unit-specific.
+  missing_or_withheld: []
+  counterevidence:
+    - Israeli institutions publish civilian-harm mitigation rules, legal positions and internal-investigation claims; those records are preserved as counterposition and policy evidence and must be compared against practice and independent findings.
+
+evidence_extensions:
+  legal_advisory_findings:
+    - date: 2024-07-19
+      body: International Court of Justice
+      finding: >-
+        Israel's continued presence in the Occupied Palestinian Territory is unlawful; Israel must end it as rapidly
+        as possible, immediately cease new settlement activity and evacuate settlers from the territory.
+      posture: LEGAL_ADVISORY_FINDING
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  external_fact_findings:
+    - date: 2024-06
+      body: UN Independent International Commission of Inquiry
+      finding: >-
+        The Gaza total siege and withholding of life-sustaining necessities constituted collective punishment; the
+        Commission also found starvation as a method of war, forcible transfer, intentionally directing attacks
+        against civilians/civilian objects and other serious violations within its scope.
+      posture: COLLECTIVE_PUNISHMENT_FINDING
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    - date: 2026-06
+      body: UN Independent International Commission of Inquiry
+      finding: >-
+        The State of Israel is primarily responsible for actions of Israeli settlers in the West Bank, with violent
+        settler activity functioning as a means of implementing State policy toward settlement entrenchment,
+        annexation and Palestinian displacement.
+      posture: EXTERNAL_FACT_FINDING
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  territorial_effects:
+    - scope: occupied West Bank
+      effect: settlement expansion, land-control changes, Palestinian displacement and reduced territorial continuity
+      posture: DOCUMENTED_EFFECT
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    - scope: southern Lebanon
+      effect: Israeli military presence in a declared security/buffer-zone framework with withdrawal tied to Hezbollah disarmament
+      posture: CROSS_THEATER_ANALOGUE
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    - scope: southern Syria / 1974 disengagement area and adjacent seized territory
+      effect: Israeli military presence after the 2024 fall of Assad remains a subject of withdrawal/security negotiations
+      posture: CROSS_THEATER_ANALOGUE
+      source: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+
+timeline:
+  - date: 2023-10-09
+    event: Defense Minister Yoav Gallant announced a complete siege on Gaza cutting electricity, food, water and fuel.
+    posture: stated
+  - date: 2024-07-19
+    event: ICJ issued advisory opinion finding Israel's continued presence in the Occupied Palestinian Territory unlawful and requiring an end to new settlement activity and evacuation of settlers.
+    posture: LEGAL_ADVISORY_FINDING
+  - date: 2026-07-24
+    event: Netanyahu and Defense Minister Katz announced measures including checkpoints/traffic separation and acceleration of farm-outpost legalization and establishment after West Bank attacks.
+    posture: FORMAL_POLICY
+relations:
+  - type: COMMANDS_OR_CONTROLS
+    target: israeli-security-forces
+    posture: observed
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: state civilian/military command and institutional authority
+    notes: Exact command responsibility for particular incidents remains separately traceable.
+  - type: MAINTAINS
+    target: israeli-settlement-enterprise
+    posture: supported_inference
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: occupied West Bank settlement policy, infrastructure and territorial administration
+    notes: Settlers remain distinct individual/non-state actors even where state responsibility, support or shared objectives are established.
+stories: []
+unresolved_questions:
+  - Which cabinet, military, administrative and settler-network decisions directly produced each current displacement corridor and settlement expansion?
+  - Which state orders and rules govern civilian treatment around Gaza control lines after the October 2025 ceasefire?
+  - Which internal investigations resulted in criminal accountability for civilian targeting or sexual violence, and which were closed or narrowed?
+corrections: []
+references:
+  - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+  - docs/STATED_JUSTIFICATION_VS_OBSERVED_CONDUCT_v0_1.md
+  - docs/EXTENSIBLE_EVIDENCE_GRAMMAR_v0_1.md
+locks:
+  - Judaism != Zionism != State of Israel.
+  - State of Israel != every Israeli citizen or Jew.
+  - State policy != personal intent of every state employee.
+  - State responsibility can exist without collapsing settlers, soldiers, ministers and agencies into one actor.
+  - Security justification != observed conduct or legality.
+  - State denial != debunking.
+  - External fact finding != final criminal conviction.
+  - Advisory opinion != criminal conviction.
