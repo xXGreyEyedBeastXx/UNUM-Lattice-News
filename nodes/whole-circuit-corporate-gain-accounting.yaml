@@ -1,0 +1,108 @@
+schema: unum-lattice-news/node/v0.1
+id: whole-circuit-corporate-gain-accounting
+title: Whole-circuit corporate gain accounting
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Reusable accounting operator that decomposes a corporate money circuit into legally and
+    economically distinct carriers, then requires recomposition at the firm, executive, creditor,
+    and ownership seats. Its purpose is to prevent precise subledgers from hiding aggregate gain:
+    worker compensation, public assistance, public revenue, tax preferences, operating profit,
+    executive compensation, dividends, buybacks, retained earnings, and ownership concentration
+    remain separate for attribution but must be rejoined before the investigation closes.
+  posture: working_framework
+
+core_rule:
+  decomposition: >-
+    Separate each carrier far enough to identify who legally receives it, who economically bears
+    it, and what transformation occurs next.
+  recomposition: >-
+    After carrier-level attribution, reassemble all compatible flows at the corporate and ownership
+    seats. A legal beneficiary or intermediate recipient is not automatically the terminal economic
+    beneficiary.
+  invariant: >-
+    Separation for evidentiary precision must not become fragmentation that erases aggregate gain,
+    aggregate cost, or a recurring return path.
+
+corporate_circuit:
+  inflows:
+    - customer_revenue
+    - government_contract_or_program_revenue
+    - public_assistance_supported_consumption
+    - tax_preferences_and_credits
+    - subsidized_finance_or_public_infrastructure
+    - other_public_or_private_revenue
+  labor_and_operating_costs:
+    - wages_and_salaries
+    - employee_benefits
+    - supplier_costs
+    - occupancy_and_land_costs
+    - capital_expenditure
+    - taxes
+    - interest
+    - environmental_and_compliance_costs
+  public_cost_supplementation:
+    - medicaid_or_public_health_coverage_used_by_workers
+    - snap_or_food_assistance_used_by_worker_households
+    - housing_or_income_support_used_by_worker_households
+    - refundable_tax_credits_or_other_support
+  surplus_and_control_seats:
+    - operating_income
+    - net_income
+    - executive_compensation
+    - dividends
+    - share_repurchases
+    - retained_earnings
+    - equity_appreciation
+    - creditor_returns
+  terminal_or_reseated_ownership:
+    - controlling_or_large_shareholders
+    - institutional_shareholders
+    - employee_shareholders
+    - dispersed_shareholders
+    - executives_with_equity_compensation
+
+required_recomposition_questions:
+  - How much value entered the firm from private customers versus public programs, contracts, tax preferences, or publicly supported consumption?
+  - How much compensation went to ordinary workers, and how many worker households still required public support?
+  - What public costs would plausibly have been borne privately under a different compensation or benefit structure?
+  - What profit remained after operating costs?
+  - How much surplus was returned through dividends and buybacks, retained, or converted into executive equity compensation?
+  - Who owned the shares receiving dividends, buyback effects, and appreciation?
+  - What portion of the same underlying earnings pool has already been counted elsewhere?
+  - Which public benefits also return to the same firm through retail, pharmacy, healthcare, housing, finance, or other revenue channels?
+
+double_count_controls:
+  - A SNAP or Medicaid dollar paid for a worker household is counted first as household support; only an independently estimated employer-incidence share may also be attributed as employer cost supplementation.
+  - Retail redemption of a public benefit is corporate revenue, not an additional public outlay beyond the original benefit.
+  - Net income is not added to dividends, buybacks, and retained earnings as if all were independent gains; those are dispositions or seats of the same or overlapping surplus.
+  - Buybacks are not cash payments to every continuing shareholder; they are a corporate use of cash that changes share count, ownership fractions, and per-share economics.
+  - Executive stock awards and shareholder appreciation may overlap with firm-level equity gains and require lineage.
+  - Gross revenue is never owner gain.
+
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: REQUIRES
+    target: public-assistance-labor-cost-supplementation
+    posture: working_framework
+  - type: REQUIRES
+    target: public-to-private-revenue-and-ownership-return
+    posture: working_framework
+  - type: REQUIRES
+    target: labor-market-power-and-wage-extraction
+    posture: working_framework
+
+locks:
+  - Decomposition must recompose.
+  - Legal recipient != terminal economic beneficiary.
+  - Worker benefit != employer capture, but worker benefit also != proof that the employer receives no indirect economic benefit.
+  - Profit != wrongdoing, and lawful compensation != adequacy.
+  - Executive pay, worker pay, public assistance, and shareholder return may be compared in one corporate circuit without asserting that one dollar literally moved from one named person to another.
+  - Ownership concentration changes the distribution of corporate returns and must not be omitted from the terminal seat.
+  - A corporation may create genuine public value while simultaneously participating in extractive or externalizing mechanisms; both remain traceable.
