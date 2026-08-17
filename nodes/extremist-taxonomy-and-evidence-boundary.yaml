@@ -9,19 +9,35 @@ updated: 2026-08-17
 summary:
   text: >-
     Preserves exact distinctions among ideology, organization, participation, membership, source classification,
-    conduct, and criminal liability when reporting on extremist or hate-group activity. Precision is protective:
-    an overbroad label can obscure the actual evidence and give a documented actor an avoidable route to dispute the
-    record on terminology rather than conduct.
+    conduct, criminal liability, recruitment/normalization mechanisms, and movement-level objectives when reporting
+    on extremist or hate-group activity. Precision is protective: an overbroad label can obscure actual evidence,
+    while an over-compressed label can erase causally important recruitment or normalization machinery.
   posture: evidence_bound
 current_source_classifications:
   - SPLC_designates_Proud_Boys_as_a_hate_group
   - SPLC_tracks_Ku_Klux_Klan_as_a_white_supremacist_hate_group_family
   - SPLC_tracks_neo_Nazi_groups_as_antisemitic_white_supremacist_hate_groups
   - SPLC_defines_white_nationalist_groups_as_white_supremacist_or_white_separatist_movements
-  - ADL_identifies_White_Lives_Matter_as_a_white_supremacist_phrase_and_campaign
+  - ADL_describes_the_current_White_Lives_Matter_network_as_white_supremacist_and_advocating_eventual_white_ethnostates
+movement_specific_corrections:
+  White_Lives_Matter_April_2021_initiative:
+    posture: confirmed_from_primary_document_research_with_external_corroboration
+    findings:
+      - primary_movement_manuals_previously_reviewed_in_UNUM_Extremism_Watch_support_an_explicit_99_percent_plus_White_demographic_objective
+      - primary_movement_manuals_support_a_White_Nationalist_worldview_as_the_ideological_endpoint
+      - primary_movement_manuals_support_a_deliberate_normalization_and_recruitment_strategy_aimed_at_mainstream_White_families
+      - approachable_public_activism_is_described_as_a_doorway_toward_a_White_Nationalist_worldview
+      - public_facing_WLM_activity_is_presented_more_socially_approachably_while_more_explicit_extremist_material_remains_in_the_broader_ecosystem
+      - a_federal_court_order_recounts_complaint_allegations_describing_the_national_WLM_goal_as_a_future_for_White_children_in_a_99_percent_White_Land
+      - ADL_describes_the_network_as_advocating_eventual_white_ethnostates_and_using_recruitment_efforts
+    safety_lock: >-
+      Preserve the existence, target, and causal role of recruitment/normalization without reproducing tactical,
+      evasion, anonymity, or event-execution instructions from extremist manuals.
 required_trace:
   - exact_actor_or_group_name
   - ideology_or_self_description
+  - movement_level_objective_if_documented
+  - recruitment_or_normalization_mechanism_if_causally_material
   - source_classification_and_source_type
   - membership_participation_affiliation_or_event_attendance
   - observed_statement_symbol_or_conduct
@@ -38,19 +54,23 @@ classification_locks:
   - group_member != responsibility_for_every_group_act
   - source_monitor_hate_group_designation != government_terrorist_designation
   - ideological_classification != criminal_liability
+  - movement_level_recruitment_strategy != proof_of_specific_person_recruitment
   - hateful_or_extremist_views_do_not_erase_human_dignity_or_evidentiary_burden
   - named_membership_or_participation_requires_actor_specific_evidence
 publication_examples:
   preferred:
     - SPLC_designates_the_Proud_Boys_as_a_hate_group
-    - ADL_identifies_White_Lives_Matter_as_a_white_supremacist_campaign
+    - ADL_describes_the_current_WLM_network_as_white_supremacist_and_advocating_white_ethnostates
+    - primary_WLM_manual_research_supports_a_99_percent_plus_demographic_objective_and_deliberate_normalization_pathway
     - records_show_person_X_participated_in_event_Y_organized_by_group_Z
   avoid_without_separate_evidence:
     - every_nationalist_is_a_hate_group_member
+    - every_person_using_the_phrase_White_Lives_Matter_is_a_member_of_the_April_2021_network
     - every_event_participant_is_a_Proud_Boy_or_KKK_member
     - monitor_designation_means_federal_terrorist_designation
 source_bundle:
   - source-proof-chain-closure-2026-08-17
+  - source-wlm-normalization-recruitment-ethnostate-2026-08-17
 relations:
   - type: EXTENDS
     target: entity-kinship-and-identity-resolution
@@ -58,3 +78,5 @@ relations:
     target: accusation-reversal-and-actor-dependent-moral-laundering
   - type: EXTENDS
     target: truth-laundering-and-citation-lineage-capture
+  - type: EXTENDS
+    target: white-lives-matter-normalization-recruitment-and-ethnostate-objective
