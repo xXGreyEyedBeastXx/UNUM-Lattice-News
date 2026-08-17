@@ -1,0 +1,91 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-self-exoneration-accountability-israel-trump-2025-2026
+title: Self-exoneration, oversight independence, and accountability decay — Israel / Trump administration comparison
+accessed: 2026-08-17
+purpose: >-
+  Support a structural comparison of how internal review loses evidentiary weight when independent oversight is weakened,
+  politically dependent, depleted, or repeatedly contradicted by external findings. This is not a moral-equivalence or
+  identical-conduct claim between the Israeli state/security system and the Trump administration.
+
+sources:
+  - id: reuters-trump-ig-purge-2025
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.investing.com/news/world-news/trump-fires-at-least-12-independent-inspectors-general-washington-post-reports-3830741
+    supports:
+      - Trump fired 17 inspectors general across federal agencies in January 2025
+      - CIGIE said dismissals appeared not legally sufficient under statutory notice requirements
+      - removals cleared positions that could be filled by new appointees
+    limitations:
+      - removal of watchdogs does not prove every replacement lacks independence
+
+  - id: washingtonpost-ig-independence-2026
+    publisher: Washington Post
+    source_class: high_quality_news_investigation
+    url: https://www.washingtonpost.com/politics/2026/03/19/inspector-general-independence-trump/
+    supports:
+      - 2026 review found increased White House and political influence over inspectors general
+      - many IG positions remained vacant and watchdog offices suffered substantial staffing losses
+      - several Trump nominees had partisan or prior-administration relationships raising independence concerns
+      - agency control over hiring/resources had in some cases constrained acting watchdogs
+    limitations:
+      - some current/former officials defend reforms or criticize prior IG system; independence must be assessed office by office
+
+  - id: reuters-doj-watchdogs-gutted-2026
+    publisher: Reuters
+    source_class: high_quality_news_investigation
+    url: https://www.reuters.com/legal/litigation/trumps-doj-watchdogs-gutted-misconduct-complaints-soar-2026-08-06/
+    supports:
+      - DOJ Office of Professional Responsibility workforce fell sharply during Trump's second term
+      - DOJ Inspector General also lost substantial staff
+      - misconduct complaints rose while internal oversight output declined
+      - former staff described chilling effects and fear of political retaliation
+      - federal judges repeatedly accused DOJ officials of false statements, noncompliance and political harassment
+    limitations:
+      - staffing/output decline does not prove every uninvestigated complaint is meritorious
+
+  - id: reuters-blanche-doj-independence-2026
+    publisher: Reuters / current reporting corroborated by NBC interview coverage
+    source_class: high_quality_news
+    url: https://www.reuters.com/legal/litigation/us-attorney-general-blanche-publicly-backs-pirro-after-trump-criticism-over-2026-08-16/
+    supports:
+      - Attorney General Todd Blanche declined to frame DOJ as fully independent from White House influence in individual matters
+      - President Trump publicly pressured federal prosecutorial decision-making in a live case context
+    limitations:
+      - Blanche also said decisions should be lawful and evidence-based; White House influence does not prove predetermined outcome in every case
+
+  - id: idf-internal-accountability-position
+    publisher: Israel Defense Forces / Military Advocate General Corps
+    source_class: primary_internal_accountability_statement
+    url: https://www.idf.il/en/mini-sites/military-advocate-generals-corps/addressing-alleged-misconduct-in-the-context-of-the-war-in-gaza-published-february-24-2024/
+    supports:
+      - IDF says MAG is professionally independent and FFA mechanism detached from operational chain
+      - decisions can be challenged through Israeli civilian legal channels
+    limitations:
+      - internal description must be tested against practical independence and outcomes
+
+  - id: aoav-idf-accountability-review-2025
+    publisher: Action on Armed Violence
+    source_class: specialist_open_source_accountability_review
+    url: https://aoav.org.uk/2025/88-of-israeli-investigations-into-recent-gaza-abuse-allegations-stalled-or-closed-without-findings-with-just-one-leading-to-criminal-sentencing/
+    supports:
+      - review of 52 public probes found most unresolved or closed without wrongdoing and only one prison sentence
+    limitations:
+      - not an official complete universe of IDF cases; methodology differs from IDF case counts
+
+  - id: un-coi-impunity-june2026
+    publisher: UN Independent International Commission of Inquiry
+    source_class: international_fact_finding_statement
+    url: https://www.un.org/unispal/document/statement-by-coi-15jun26/
+    supports:
+      - Commission described continuing violations as occurring with complete impunity
+    limitations:
+      - institutional-level statement; individual criminal responsibility still requires separate legal process
+
+locks:
+  - Structural analogy != moral equivalence.
+  - Weak oversight != every internal finding false.
+  - Internal exoneration != independent adjudication.
+  - Watchdog removal != automatic proof replacement is dishonest.
+  - Staffing loss != proof any specific complaint is true.
+  - Repeated external contradiction + weak consequence + reduced independence can rationally lower evidentiary trust in future self-exoneration.
