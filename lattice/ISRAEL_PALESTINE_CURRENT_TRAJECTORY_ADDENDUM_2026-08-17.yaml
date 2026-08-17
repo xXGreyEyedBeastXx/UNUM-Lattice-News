@@ -1,0 +1,108 @@
+schema: unum-lattice-news/evidence-lattice-extension/v0.1
+id: israel-palestine-current-trajectory-addendum-2026-08-17
+extends: lattice/ISRAEL_PALESTINE_WORDS_CONDUCT_TERRITORIAL_CONTROL_2026-08-17.yaml
+as_of: 2026-08-17
+status: active_addendum
+source_bundle: sources/source-israel-current-leadership-territorial-trajectory-2026-08-17.yaml
+purpose: >-
+  Update the base lattice with post-hostage Gaza control, current leadership rhetoric and contemporary buffer/security-zone
+  practices without rewriting earlier evidence or treating a changed rationale as if prior conduct disappeared.
+
+new_facts:
+  - id: final-hostage-return-completed
+    date: 2026-01-26
+    proposition: The remains of the final Israeli hostage in Gaza were recovered; Netanyahu publicly stated there were no more hostages in Gaza.
+    posture: observed
+  - id: gaza-control-expanded-after-hostage-phase
+    date: 2026-05-28
+    proposition: Netanyahu directed expansion of Israeli territorial control in Gaza toward 70 percent after the hostage-return objective had ended.
+    posture: FORMAL_POLICY
+  - id: cross-theater-buffer-framing
+    date: 2026-05-28
+    proposition: Netanyahu characterized Israeli-held areas in Gaza, Syria and Lebanon as buffer zones intended to prevent future militant attacks.
+    posture: STATED_JUSTIFICATION
+  - id: gaza-territorial-barrier
+    date: 2026-07
+    proposition: Israeli forces constructed a long earthen barrier inside Gaza that entrenched the yellow-line territorial division across/during demolition of Palestinian communities.
+    posture: TERRITORIAL_EFFECT
+  - id: ben-gvir-killing-emigration-settlement-advocacy
+    date: 2026-08-16
+    proposition: >-
+      National Security Minister Itamar Ben-Gvir advocated nightly targeted killings in Gaza, mass Palestinian emigration
+      and renewed Israeli settlement in Gaza while criticizing reduced strikes.
+    posture: STATED_OBJECTIVE
+    authority_limit: Ben-Gvir does not command the IDF; do not convert his advocacy into an IDF order.
+
+rationale_transition:
+  before_2026_01_26:
+    stated_objectives:
+      - destroy or defeat Hamas
+      - release Israeli hostages
+      - prevent future threats
+  after_2026_01_26:
+    hostage_status: no hostages remained in Gaza according to Israeli government/military record
+    continuing_stated_objectives:
+      - Hamas disarmament / demilitarization
+      - Israeli security control / buffer zones
+      - prevention of future attacks
+    observed_territorial_trajectory:
+      - expanded Israeli control of Gaza
+      - physical entrenchment of yellow-line division
+      - withdrawal conditioned on adversary disarmament
+      - senior-government advocacy for renewed Gaza settlement and Palestinian emigration
+
+supported_inference:
+  text: >-
+    The end of the hostage-return objective removes one major explanatory membrane for later operations. Continued killing,
+    territorial expansion, control-line enforcement and resistance to withdrawal must therefore be evaluated primarily
+    against the remaining disarmament/security rationale and against independently evidenced political-territorial goals.
+    Current evidence supports investigating a transition from hostage-recovery framing toward durable security/territorial
+    control; it does not yet license treating every later strike or every controlled area as motivated by annexation.
+  posture: supported
+
+cross_theater_update:
+  Gaza:
+    mechanism: expanded control + yellow-line barrier + withdrawal conditioned on Hamas disarmament
+    posture: documented
+  southern_Lebanon:
+    mechanism: military presence/security zone + withdrawal conditioned on Hezbollah disarmament
+    posture: documented
+  southern_Syria:
+    mechanism: Israeli troops remain on territory seized after Assad's fall while withdrawal/security arrangement is negotiated
+    posture: documented
+  comparison:
+    posture: CROSS_THEATER_ANALOGUE
+    invariant_candidate: >-
+      external threat -> security/buffer zone -> territorial military control -> civilian exclusion or restricted return -> withdrawal made conditional on adversary/security transformation
+    lock: Similarity of transformation does not establish same legal status, same intent or unified command doctrine.
+
+leadership_rhetoric_status:
+  Ben_Gvir_2026_08_16:
+    role: National Security Minister
+    military_command_over_IDF: false
+    relevant_to:
+      - political intent and trajectory
+      - normalization of mass killing rhetoric
+      - emigration / displacement advocacy
+      - settlement advocacy
+    not_sufficient_for:
+      - proof of IDF command order
+      - proof that every Israeli leader shares his stated objectives
+  Netanyahu_buffer_language:
+    role: Prime Minister
+    relevant_to:
+      - executive security rationale
+      - cross-theater territorial framing
+      - withdrawal conditions
+    requires_follow_up:
+      - exact legal status and intended duration of each buffer/control zone
+      - cabinet/military orders implementing territorial control
+
+locks:
+  - Hostage objective ended != all Israeli security objectives ended.
+  - Continued security rationale != all later conduct lawful.
+  - Continued Hamas targeting != civilians not targeted.
+  - Buffer-zone language != temporary status.
+  - Senior minister advocacy != military order when command authority is absent.
+  - Political rhetoric can be relevant evidence of trajectory even when it is not operational command.
+  - Changed stated rationale must be recorded rather than retroactively used to explain conduct that occurred after the old rationale ended.
