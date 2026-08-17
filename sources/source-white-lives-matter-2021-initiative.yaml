@@ -1,29 +1,39 @@
 schema: unum-lattice-news/source-bundle/v0.1
 id: source-white-lives-matter-2021-initiative
 title: White Lives Matter April 2021 initiative source bundle
-accessed: 2026-08-13
+accessed: 2026-08-17
 sources:
   - id: wlm-activist-manual-v3-2024
     publisher: White Lives Matter Official / Internet Archive copy
     source_class: primary_movement_document
     date: 2024
     url: https://archive.org/details/wlm-activist-manual-3.0
+    local_artifact_sha256: df1724fc6992a32aa40429501d7e9a7312912976875232ce4f2a5f3e28af9eef
+    custody_note: user supplied a local PDF copy on 2026-08-17; repository preserves hash and page-level findings rather than republishing the raw recruitment/OPSEC document
     supports:
       - the initiative identifies white racial consciousness as its organizing purpose
       - the initiative states a long-term objective of populations above 99 percent white in countries and continents it identifies as white-built
       - the initiative centers the white-supremacist slogan commonly known as the 14 Words
       - the initiative describes public-facing outreach as a pathway toward a White Nationalist worldview
       - the initiative states that overt Nazi, fascist, MAGA, antisemitic, anti-LGBT, and other polarizing public messaging should be excluded from WLM-branded outreach because it can reduce mainstream recruitment effectiveness
-      - the initiative establishes a recurring monthly activism tradition
+      - the initiative establishes a recurring monthly global activism tradition and common movement message
+      - the initiative describes local efforts governed by common manuals, admin expectations, vetting, branding, conduct rules, and shared infrastructure while continuing to call itself decentralized
+      - the initiative distinguishes itself from prior WLM groups but does not deny continuity with the broader pro-White / white-nationalist movement lineage
   - id: wlm-activist-manual-v2-2022
     publisher: White Lives Matter Official / Internet Archive copy
     source_class: primary_movement_document
     date: 2022-01
     url: https://archive.org/details/wlm-activist-manual
+    local_artifact_sha256: 0061c79104bc9a052337a43fc4357f9a00b55d598c577314d0cca115665c6a71
+    custody_note: user supplied a local PDF copy on 2026-08-17; repository preserves hash and page-level findings rather than republishing the raw recruitment/OPSEC document
     supports:
       - the earlier manual stated an objective of a 99 percent white population and racially restricted citizenship in envisioned white states
       - the earlier manual welcomed multiple strands of white-nationalist and fascist ideology under a race-first coalition while discouraging overtly divisive public branding
       - the earlier manual recommended white-nationalist, antisemitic, fascist, and Holocaust-revisionist media and literature
+      - the manual says the April 2021 initiative has no connection to prior WLM groups while separately saying it continues a much older white-racial-consciousness / pro-White effort regardless of prior naming
+      - the manual says WLM is continuing the fight under a new and not-so-new name
+      - the manual describes an ideal of many small autonomous local nests that act as a unit and work toward the same stated goals
+      - the manual prescribes common local-channel naming, admin selection, vetting, recurring events, branding, message discipline, and conduct rules
   - id: splc-white-lives-matter-background
     publisher: Southern Poverty Law Center
     source_class: secondary_extremism_analysis
@@ -32,12 +42,19 @@ sources:
       - historical White Lives Matter organizing has been classified by SPLC as white supremacist and neo-Nazi
       - the 14 Words are identified as a white-supremacist slogan originating with David Lane
 limitations:
-  - The 2024 and 2022 manuals explicitly claim that the April 2021 initiative has no organizational connection to earlier groups using the White Lives Matter name; this bundle does not independently establish or defeat that claim.
+  - The 2024 and 2022 manuals claim that the April 2021 initiative is not the same as prior groups using the White Lives Matter name. That statement is evidence of a claimed group/organizational distinction, not evidence that the initiative is disconnected from the broader White Lives Matter or pro-White movement lineage.
+  - The manuals themselves affirm broader movement continuity while distinguishing the 2021 initiative from particular earlier WLM groups.
+  - Formal decentralization, local autonomy, or individual-responsibility language does not establish causal independence where common manuals, vetting, branding, schedules, infrastructure, or movement recognition are documented.
+  - Shared movement infrastructure does not establish that every local act is centrally commanded; event-specific attribution remains required.
   - SPLC background material includes earlier White Lives Matter formations and must not be used to attribute specific earlier leaders or conduct to the April 2021 initiative without additional evidence.
   - A recurring action tradition does not establish that a particular locality or state will hold an event on any given date.
   - Anonymous participation prevents responsible attribution of individual identities without separate recoverable evidence.
+related_source_bundles:
+  - source-white-lives-matter-distributed-cell-topology-2026-08-17
 locks:
-  - Preserve the distinction between the April 2021 initiative and prior organizations unless evidence establishes a relation.
-  - Preserve extremist material only as evidence; do not reproduce operational instructions or recruitment guidance.
+  - Prior-group identity, broader movement lineage, local-cell relation, and individual-act attribution are separate questions.
+  - Denial of one relation type must not erase other demonstrated relation types.
+  - Decentralized does not mean disconnected.
+  - Preserve extremist material only as evidence; do not reproduce operational instructions or recruitment guidance beyond what is necessary for evidentiary identification.
   - Do not infer criminal conduct from ideology, anonymous channel participation, or attendance alone.
   - Do not publish private identities, addresses, or doxxing material.
