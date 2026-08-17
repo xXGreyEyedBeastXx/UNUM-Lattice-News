@@ -1,0 +1,50 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-zionism-parent-ideology-and-buber-scope-2026-08-17
+title: Zionism parent-ideology classification and Martin Buber scope correction
+accessed: 2026-08-17
+sources:
+  - id: wzo-jerusalem-program-current
+    publisher: World Zionist Organization
+    source_class: primary_movement_platform
+    url: https://www.wzo.org.il/sub/na/TheJerusalemProgram/en
+    supports:
+      - the World Zionist Organization defines Zionism as the national liberation movement of the Jewish people
+      - the official platform centers a Jewish, Zionist State of Israel, Jewish national continuity, aliyah, national Zionist interests, and settlement of the country
+  - id: knesset-nation-state-basic-law-2018
+    publisher: Knesset
+    source_class: primary_law
+    date: 2018-07-19
+    url: https://main.knesset.gov.il/EN/News/PressReleases/Pages/Pr13978_pg.aspx
+    supports:
+      - Israel is defined as the nation-state of the Jewish people
+      - the law states that exercise of national self-determination in Israel is unique to the Jewish people
+      - the state is open to Jewish immigration and treats Jewish settlement as a national value
+  - id: stanford-martin-buber-current
+    publisher: Stanford Encyclopedia of Philosophy
+    source_class: scholarly_reference
+    url: https://plato.stanford.edu/entries/buber/
+    supports:
+      - Buber participated in Zionist institutions and retained a Zionist self-identification
+      - Buber became an opposition voice against dominant Zionist state-building policy
+      - Buber rejected pursuit of Jewish sovereign statehood and Jewish majority rule over the Arab population
+      - Buber and Ihud advocated a binational state instead of the Jewish state program adopted by mainstream Zionist leadership
+      - Buber's positions won few friends in the Zionist establishment
+  - id: stanford-martin-buber-2016-archive
+    publisher: Stanford Encyclopedia of Philosophy
+    source_class: scholarly_reference
+    url: https://plato.stanford.edu/archives/sum2016/entries/buber/
+    supports:
+      - Buber advocated demographic parity rather than pursuit of a Jewish majority
+      - Buber advocated a binational rather than Jewish state
+      - Buber did not expect these political positions to sway the Zionist majority
+limitations:
+  - Zionism has a long and internally contested intellectual history; subtype labels may describe real disagreements but must not be used to erase the parent nationalist structure when the actor or institution still supports it.
+  - A person's self-identification as Zionist does not by itself establish that every political position they hold instantiates the dominant or institutional Zionist program.
+  - Buber's participation in and self-identification with Zionism is historically relevant, but his anti-majoritarian and binational program is evidence of internal dissent, not evidence that the dominant Zionist state-building project lacked its nationalist structure.
+  - Classification of a movement as nationalist or ethnonationalist does not by itself establish every downstream harm, discriminatory act, or individual participant's intent; those require separate evidence.
+locks:
+  - Do not use a reformer, dissident, or outlier as representative counterevidence against the documented parent ideology or dominant institutional program.
+  - Self-identification is evidence of claimed identity, not automatic proof of faithful ideological instantiation.
+  - Subtype difference does not erase the parent ideology.
+  - Outlier conduct may demonstrate internal contestation without demonstrating that the movement as a whole shares the outlier's program.
+  - Keep Judaism, Jewish people, Zionism, the State of Israel, Israeli governments, and particular Zionist organizations or currents as distinct nodes and relation types.
