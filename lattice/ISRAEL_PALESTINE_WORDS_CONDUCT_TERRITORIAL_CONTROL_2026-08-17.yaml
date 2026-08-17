@@ -1,0 +1,404 @@
+schema: unum-lattice-news/evidence-lattice/v0.1
+id: israel-palestine-words-conduct-territorial-control-2026-08-17
+title: Israel / Palestine — Words, Conduct, Civilian Harm, Settlement-Displacement and Territorial Control
+status: active_investigative_lattice
+as_of: 2026-08-17
+verdict: none
+source_bundle: sources/source-israel-palestine-state-conduct-and-territorial-control-2023-2026.yaml
+methodology:
+  - docs/STATED_JUSTIFICATION_VS_OBSERVED_CONDUCT_v0_1.md
+  - docs/EXTENSIBLE_EVIDENCE_GRAMMAR_v0_1.md
+purpose: >-
+  Compare Israeli state and security-force language with policy, local orders, observed conduct, effects,
+  external fact findings, legal findings and territorial outcomes. Preserve Gaza, West Bank, Lebanon and Syria
+  as distinct theaters while testing whether recurring security/buffer/settlement practices produce a common
+  transformation toward civilian displacement, reduced returnability and durable Israeli territorial control.
+  Preserve Hamas and other Palestinian armed-group crimes separately; they are not offsets for Israeli conduct.
+
+root_locks:
+  - WORDS != ORDERS != CONDUCT != EFFECT != INTENT
+  - SECURITY_JUSTIFICATION != LEGALITY
+  - DENIAL != DEBUNKING
+  - HAMAS_TARGET_PRESENT != CIVILIANS_NOT_TARGETED
+  - MILITARY_TARGET_PRESENT != ATTACK_LAWFUL
+  - EVACUATION_ORDER != VOLUNTARY_DEPARTURE
+  - BUFFER_OR_SECURITY_ZONE != TEMPORARY_BY_DEFINITION
+  - SETTLER != STATE_EMPLOYEE_BY_DEFAULT
+  - SETTLER_PRIVATE_STATUS != STATE_INDEPENDENCE_WHEN_STATE_RESPONSIBILITY_OR_SHARED_OBJECTIVES_ARE_EVIDENCED
+  - DIFFERENT_THEATERS != CAUSALLY_UNRELATED_PRACTICES
+  - CROSS_THEATER_PATTERN != ONE_COMMAND_STRUCTURE
+  - CIVILIAN_DEATH != DELIBERATE_TARGETING_BY_ITSELF
+  - DELIBERATE_TARGETING_FINDING != CLAIM_THAT_EVERY_CIVILIAN_DEATH_WAS_INTENDED
+  - COMMISSION_FINDING != FINAL_CRIMINAL_CONVICTION
+  - COMMISSION_GENOCIDE_FINDING != FINAL_ICJ_MERITS_JUDGMENT
+
+grammar_extensions:
+  - term: STATED_JUSTIFICATION
+    parent: stated
+    meaning: actor's declared security, military, legal or moral reason
+  - term: FORMAL_POLICY
+    parent: observed
+    meaning: enacted policy, executive direction, official administrative action or formal rule
+  - term: LOCAL_ORDER
+    parent: observed
+    meaning: documented unit, commander, facility, checkpoint or control-zone instruction
+  - term: OPERATING_PROCEDURE
+    parent: supported
+    meaning: practice found to be formal or de facto procedure
+  - term: SYSTEMATIC_PATTERN
+    parent: supported
+    meaning: repeated conduct established across sufficient incidents/locations/time
+  - term: LEADERSHIP_ENCOURAGEMENT
+    parent: supported
+    meaning: evidence that leadership implicitly encouraged a conduct pattern
+  - term: LEADERSHIP_ORDER
+    parent: supported
+    meaning: evidence of explicit leadership direction for the conduct
+  - term: EXTERNAL_FACT_FINDING
+    parent: observed
+    meaning: finding by competent international or independent investigative body
+  - term: LEGAL_ADVISORY_FINDING
+    parent: adjudicated
+    meaning: authoritative advisory legal determination distinct from criminal judgment
+  - term: DELIBERATE_TARGETING_FINDING
+    parent: EXTERNAL_FACT_FINDING
+    meaning: competent finding that protected civilians or a protected civilian class were deliberately targeted
+  - term: COLLECTIVE_PUNISHMENT_FINDING
+    parent: EXTERNAL_FACT_FINDING
+    meaning: competent finding that prohibited collective punishment occurred
+  - term: DOCUMENTED_EFFECT
+    parent: observed
+    meaning: evidenced death, injury, deprivation, destruction, displacement, access loss or similar consequence
+  - term: TERRITORIAL_EFFECT
+    parent: DOCUMENTED_EFFECT
+    meaning: evidenced change in control, settlement, access, boundary practice, displacement or returnability
+  - term: DENIAL_OR_COUNTERPOSITION
+    parent: disputed
+    meaning: actor's denial, alternative account or legal position preserved without automatic priority
+  - term: CROSS_THEATER_ANALOGUE
+    parent: supported
+    meaning: similar transformation in a distinct theater without automatic identity, legal equivalence or common command
+
+nodes:
+  authorities:
+    - id: state-of-israel
+      ref: nodes/institutions/state-of-israel.yaml
+      type: sovereign_state
+    - id: israeli-security-forces
+      ref: nodes/institutions/israeli-security-forces.yaml
+      type: security_institution_umbrella
+    - id: israeli-settlement-enterprise
+      ref: nodes/israeli-settlement-enterprise.yaml
+      type: state_settler_ecology
+
+  affected_populations:
+    - id: palestinian-civilians-gaza
+      ref: nodes/palestinian-civilians-gaza.yaml
+      type: affected_population
+    - id: palestinian-residents-west-bank
+      ref: nodes/palestinian-residents-west-bank.yaml
+      type: affected_population
+    - id: palestinian-children-opt
+      type: affected_population
+      scope: Gaza and occupied West Bank including East Jerusalem
+    - id: palestinian-detainees
+      type: affected_population
+    - id: lebanese-civilians-south
+      type: affected_population
+    - id: syrian-residents-south
+      type: affected_population
+
+  conduct_and_mechanism_propositions:
+    - id: stated-destroy-hamas-release-hostages-prevent-threats
+      type: stated_objective
+    - id: collective-punishment-gaza
+      type: conduct_finding
+    - id: intentionally-directed-attacks-civilians-gaza
+      type: conduct_finding
+    - id: systematic-sexual-violence-against-palestinians
+      type: conduct_pattern
+    - id: deliberate-targeting-palestinian-children
+      type: conduct_finding
+    - id: settlement-entrenchment-annexation-displacement
+      type: territorial_strategy_finding
+    - id: security-buffer-control-zone
+      type: territorial_control_mechanism
+    - id: reduced-returnability
+      type: consequence
+
+claim_matrix:
+  - id: C1-official-objectives
+    proposition: >-
+      Israeli authorities presented Gaza military objectives as destroying Hamas, releasing hostages and preventing
+      future threats to Israel.
+    posture: STATED_JUSTIFICATION
+    support:
+      - un-coi-gaza-2024
+      - idf-civilian-targeting-position
+    counterposition: none
+    scope: public state/security rationale
+
+  - id: C2-siege-collective-punishment
+    proposition: >-
+      The Gaza siege and withholding/weaponization of life-sustaining necessities constituted collective punishment
+      and were used for strategic/political leverage.
+    posture: COLLECTIVE_PUNISHMENT_FINDING
+    support:
+      - un-coi-gaza-2024
+    additional_mechanism:
+      - Defense Minister Gallant publicly announced a complete siege cutting electricity, food, water and fuel and used dehumanizing/retributive language.
+    counterposition:
+      - idf-civilian-targeting-position
+    counterposition_summary: Israel rejects collective-punishment characterization and says operations target Hamas/PIJ rather than Gaza civilians.
+    status_note: >-
+      This is stronger than a pattern inference: it includes explicit siege policy plus an independent Commission finding.
+
+  - id: C3-civilians-deliberately-targeted
+    proposition: >-
+      Within the UN Commission's investigated Gaza scope, Israeli authorities/security forces intentionally directed
+      attacks against civilians and civilian objects; later soldier testimony separately describes local shoot orders
+      and permissive no-go/control-zone practices.
+    posture: DELIBERATE_TARGETING_FINDING
+    support:
+      - un-coi-gaza-2024
+      - ap-israeli-soldier-refusal-testimony-2025
+      - sky-israeli-reservist-testimony-2025
+      - ap-yellow-line-soldier-testimony-2026
+    counterposition:
+      - idf-civilian-targeting-position
+      - idf-aid-site-deliberate-fire-denial-2025
+    scope_lock: >-
+      Do not infer that every Israeli strike or every civilian death was intentional; preserve incident- and unit-level attribution.
+
+  - id: C4-sexual-violence-systematic
+    proposition: >-
+      Sexual and gender-based violence against Palestinians, including rape and sexualized torture, was systematic
+      within the Commission's documented pattern, with some forms found to be de facto ISF operating procedures and
+      rape/genital violence found committed under explicit orders or implicit encouragement from top civilian and military leadership.
+    posture: OPERATING_PROCEDURE
+    support:
+      - un-coi-sexual-violence-2025
+      - un-sg-crsv-2026
+    counterposition:
+      - israel-mfa-coi-sgbv-rejection-2025
+    verified_case_layer: >-
+      2026 Secretary-General reporting independently verified rape, gang rape, attempted rape and other sexual violence
+      against Palestinians by named Israeli armed/security institutions and listed Israeli armed/security forces among
+      parties credibly suspected of patterns of conflict-related sexual violence.
+    agenda_typing:
+      - SYSTEMATIC_PATTERN
+      - OPERATING_PROCEDURE
+      - LEADERSHIP_ENCOURAGEMENT
+    not_yet_typed_as:
+      - STATED_OBJECTIVE_TO_COMMIT_RAPE
+      - UNIVERSAL_POLICY_ACROSS_ALL_UNITS
+
+  - id: C5-children-deliberately-targeted
+    proposition: >-
+      The 2026 UN Commission found that Israeli authorities/security forces deliberately targeted and killed Palestinian
+      children, including direct shooting of vital organs using precision weapons such as quadcopters and snipers.
+    posture: DELIBERATE_TARGETING_FINDING
+    support:
+      - un-coi-children-2026
+    counterposition:
+      - idf-civilian-targeting-position
+    agenda_typing:
+      - DELIBERATE_TARGETING_FINDING
+      - SYSTEMATIC_PATTERN
+    not_yet_typed_as:
+      - FORMAL_WRITTEN_POLICY_TO_KILL_CHILDREN
+      - CLAIM_EVERY_CHILD_DEATH_WAS_INTENTIONAL
+    note: >-
+      The Commission further treated deliberate child targeting as a key element supporting its genocidal-intent finding.
+
+  - id: C6-settler-state-relation
+    proposition: >-
+      Violent settler activity in the occupied West Bank functions as a means of implementing Israeli State policy,
+      with the State and violent settler actors pursuing overlapping strategic objectives including occupation
+      maintenance, settlement entrenchment, annexation and Palestinian displacement.
+    posture: EXTERNAL_FACT_FINDING
+    support:
+      - un-coi-settlers-2026
+      - icj-opt-advisory-2024
+      - reuters-west-bank-settlement-push-2026
+      - israel-pm-defense-west-bank-outposts-2026
+    scope_lock: >-
+      Do not convert state responsibility/shared objective into identity of every settler with the State or attribution of every settler crime to a direct state order.
+
+  - id: C7-settlement-illegality-and-obligation
+    proposition: >-
+      The ICJ found Israel's continued presence in the Occupied Palestinian Territory unlawful and stated Israel must
+      cease all new settlement activity and evacuate settlers.
+    posture: LEGAL_ADVISORY_FINDING
+    support:
+      - icj-opt-advisory-2024
+    counterposition: Israel disputes the international legal characterization of the territorial/settlement regime.
+
+  - id: C8-cross-theater-security-control
+    proposition: >-
+      Israeli security/buffer-zone practices in Gaza, southern Lebanon and southern Syria can be compared as distinct
+      territorial-control transformations in which security threats are used to justify military presence, control
+      zones and conditional withdrawal; legal regimes and causal chains remain distinct.
+    posture: CROSS_THEATER_ANALOGUE
+    support:
+      - reuters-lebanon-security-zone-withdrawal-2026
+      - reuters-syria-security-talks-2026
+      - ap-yellow-line-soldier-testimony-2026
+    unknowns:
+      - whether one unified doctrine or several overlapping doctrines explain the cross-theater recurrence
+      - degree of long-term territorial intent in each theater
+
+words_vs_conduct_pairs:
+  - words:
+      actor: Israeli state / IDF
+      text_class: STATED_JUSTIFICATION
+      proposition: operations target Hamas/PIJ/armed groups and do not intentionally target civilians
+    conduct_and_findings:
+      - intentionally directed attacks against civilians/civilian objects found by UN Commission within investigated scope
+      - deliberate targeting of Palestinian children found by 2026 UN Commission
+      - soldier testimony describing local shoot-on-entry/control-zone orders
+    correct_read: >-
+      Preserve the civilian-protection statement as doctrine/denial evidence; do not allow it to override contradictory conduct findings.
+
+  - words:
+      actor: Israeli state
+      text_class: STATED_JUSTIFICATION
+      proposition: siege/security measures are necessary against Hamas and for hostage/security objectives
+    conduct_and_findings:
+      - complete siege formally cut life-sustaining necessities
+      - UN Commission found weaponization of necessities for strategic/political gains
+      - UN Commission classified the siege as collective punishment
+    correct_read: >-
+      Security motive may coexist with punitive motive and unlawful collective effect; stated security purpose does not exhaust causal interpretation.
+
+  - words:
+      actor: Israeli state / defenders of settlement policy
+      text_class: STATED_JUSTIFICATION
+      proposition: settlements/outposts/security measures serve security, community or territorial interests
+    conduct_and_findings:
+      - explicit ministerial statements link expansion to preventing Palestinian statehood and strengthening Israeli control
+      - ICJ requires cessation of settlements and evacuation of settlers
+      - UN Commission finds settler violence implementing State policy toward entrenchment, annexation and displacement
+    correct_read: >-
+      Treat private-settler and security vocabulary as relation questions, not automatic severance from state territorial policy.
+
+movement_paths:
+  - id: gaza-punishment-control-path
+    path:
+      - Hamas attack / security threat
+      - complete siege and deprivation policy
+      - strategic leverage through necessities
+      - collective punishment finding
+      - mass deprivation / displacement / infrastructure collapse
+    posture: supported
+
+  - id: civilian-targeting-path
+    path:
+      - civilian-protection doctrine stated
+      - permissive local control-zone orders reported by soldiers in some units/periods
+      - repeated civilian deaths and direct-fire cases
+      - independent findings of intentional civilian attacks and deliberate child targeting
+      - accountability/command trace remains incident-specific
+    posture: supported
+
+  - id: sexual-violence-path
+    path:
+      - detention / occupation coercive authority
+      - forced stripping / sexual humiliation / threats / assault
+      - repeated incidents across facilities and operations
+      - verified rape and gang rape cases
+      - de facto operating-procedure finding for specific forms
+      - explicit-order or implicit-top-leadership-encouragement finding for sexualized torture including rape/genital violence
+      - systematic impunity finding / accountability weakness
+    posture: supported
+
+  - id: west-bank-settlement-displacement-path
+    path:
+      - settlement/outpost expansion and state support
+      - land/access/movement constraint
+      - settler and/or military coercion or violence in documented cases
+      - Palestinian displacement / reduced returnability
+      - settlement entrenchment and territorial fragmentation
+      - annexation objective stated by some senior officials and found as shared strategic objective by UN Commission
+    posture: supported
+
+  - id: cross-theater-security-zone-path
+    path:
+      - identified external/armed threat
+      - exceptional security presence or buffer/control zone
+      - civilian movement constraint / evacuation / territorial separation
+      - withdrawal tied to adversary disarmament or other security conditions
+      - military presence persists while conditions remain unmet
+    posture: CROSS_THEATER_ANALOGUE
+    theaters:
+      - Gaza
+      - southern Lebanon
+      - southern Syria
+    lock: Similar transformation does not establish identical legality, intent or one command doctrine.
+
+agenda_decomposition:
+  collective_punishment:
+    status:
+      - FORMAL_POLICY
+      - COLLECTIVE_PUNISHMENT_FINDING
+    basis: complete siege order, retributive language, weaponization of necessities and Commission finding
+  rape_and_sexualized_torture:
+    status:
+      - SYSTEMATIC_PATTERN
+      - OPERATING_PROCEDURE
+      - LEADERSHIP_ENCOURAGEMENT
+      - EXTERNAL_FACT_FINDING
+    basis: UN Commission findings plus independently verified 2026 UN cases
+    not_claimed: a public written state objective explicitly ordering rape across all forces
+  deliberate_killing_of_children:
+    status:
+      - DELIBERATE_TARGETING_FINDING
+      - SYSTEMATIC_PATTERN
+    basis: 2026 Commission finding including precision-fire cases
+    not_claimed: every child death was deliberate or a universal written kill-children policy
+
+alternative_models:
+  strongest_state_defense:
+    statement: >-
+      Israel faces armed groups embedded in civilian areas; military operations target those groups, civilian harm is
+      unintended, siege/territorial controls are security measures, and UN bodies are biased or methodologically flawed.
+    evidence:
+      - idf-civilian-targeting-position
+      - israel-mfa-coi-sgbv-rejection-2025
+      - idf-aid-site-deliberate-fire-denial-2025
+  discriminator: >-
+    The state defense weakens where independent evidence demonstrates deliberate targeting, collective punishment,
+    systematic operating procedures, leadership encouragement, repeated conduct after consequences are known, or
+    territorial outcomes that persist after the original stated rationale changes. It remains relevant for incidents
+    where military target evidence, feasible precautions, proportionality and genuine accountability are independently established.
+
+unresolved_questions:
+  - Which Israeli civilian leaders and military commanders are tied by source to specific child-targeting units or rules of engagement?
+  - Which rape/sexual-violence cases were ordered, encouraged, tolerated, investigated, charged, dismissed or punished, by facility and unit?
+  - What is the complete post-October-2025 Gaza yellow-line rules-of-engagement history and civilian casualty record?
+  - Which West Bank settler organizations, ministries, military units, donors and councils form the highest-conductance displacement chains?
+  - Which displaced West Bank communities remain unable to return and why?
+  - Where did Israeli state rationales change while territorial control or civilian exclusion remained stable?
+  - Does cross-theater recurrence reflect one coherent security-expansion doctrine, multiple overlapping doctrines, or convergent institutional incentives?
+  - How do Israeli internal accountability outcomes compare with the severity/frequency findings of external bodies?
+
+cross_lattice_stitches:
+  - target: nodes/zionism.yaml
+    relation: >-
+      State conduct and Zionist ideology remain distinct objects; investigate typed ideological/policy relations without
+      assigning state conduct to all Zionists or Jewish people.
+  - target: spreads/2023-10-07-event-complex.yaml
+    relation: >-
+      October 7 Hamas and other armed-group crimes remain causally relevant context and independently accountable harms;
+      they do not function as offsets for subsequent Israeli state conduct.
+  - target: docs/IDENTITY_IDEOLOGY_CONDUCT_CLASSIFICATION_v0_1.md
+    relation: identity/ideology/state/organization/conduct must remain separate.
+
+next_searches:
+  - extract named units and commanders from A/HRC/62/CRP.2 child-targeting report
+  - map Ben Gvir detention-policy directives and prison-facility sexual-violence cases
+  - recover Israeli military-investigation outcomes for verified sexual-violence and civilian-targeting incidents
+  - build West Bank settlement/outpost funding and ministry-control graph
+  - map Qusra, Jalud and other 2026 displacement events at household/community level without exposing private identities unnecessarily
+  - trace current Gaza yellow-line shooting incidents against soldier testimony and IDF rules
+  - compare Lebanon/Syria/Gaza security-zone withdrawal conditions and returnability without collapsing legal regimes
