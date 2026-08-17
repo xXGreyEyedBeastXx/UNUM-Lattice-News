@@ -1,0 +1,60 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-wlm-normalization-recruitment-ethnostate-2026-08-17
+title: White Lives Matter normalization, recruitment, and ethnostate objective
+status: active
+as_of: 2026-08-17
+purpose: >-
+  Preserve the source lineage establishing that the April 2021 White Lives Matter initiative is not merely a generic
+  slogan or loose white-supremacist identity marker. The evidence supports an explicit demographic/ethnostate objective
+  and a deliberate normalization/recruitment pathway, while intentionally excluding tactical recruitment, evasion,
+  anonymity, or event-execution instructions.
+sources:
+  - id: unum-extremism-watch-wlm-profile
+    class: internal_research_profile_with_primary_document_lineage
+    repository: xXGreyEyedBeastXx/UNUM-Extremism-Watch
+    path: groups/white-lives-matter-2021/PROFILE.yaml
+    supports:
+      - 2022_and_2024_primary_movement_manuals_were_reviewed
+      - explicit_99_percent_plus_White_demographic_objective
+      - White_Nationalist_worldview_as_ideological_endpoint
+      - mainstream_family_appeal_and_public_normalization_strategy
+      - public_facing_avoidance_of_overtly_polarizing_extremist_symbols
+      - approachable_activism_as_doorway_toward_White_Nationalist_worldview
+      - ideological_overlap_with_fascist_neo_Nazi_and_white_nationalist_ecosystem_without_proving_organizational_identity
+    safety_boundary: operational_evasion_recruitment_and_event_execution_instructions_not_reproduced
+  - id: unum-extremism-watch-wlm-source-ledger
+    class: internal_source_ledger
+    repository: xXGreyEyedBeastXx/UNUM-Extremism-Watch
+    path: groups/white-lives-matter-2021/SOURCES.md
+    supports:
+      - Activist_Manual_2_0_as_primary_movement_document_January_2022
+      - Activist_Manual_3_0_as_primary_movement_document_2024
+      - explicit_near_total_or_99_percent_plus_White_demographic_objective
+      - deliberate_strategy_of_socially_approachable_public_presentation
+      - distinction_between_sanitized_public_presentation_and_more_explicit_ideological_material
+      - recurring_real_world_activism_model
+    publication_lock: preserved_source_copy_should_be_rechecked_before_consequential_external_direct_quotation
+  - id: community-church-v-penny-order-2024
+    class: federal_court_order_recounting_pleaded_allegations
+    url: https://law.justia.com/cases/federal/district-courts/ohio/ohndce/1%3A2024cv00642/305503/31/
+    supports:
+      - court_recounts_complaint_allegation_that_national_WLM_organization_goal_includes_99_percent_White_Land
+      - court_recounts_allegations_of_real_life_activism_requirement_and_WLM_Ohio_alignment_with_national_agenda
+    limitation: >-
+      The quoted organizational propositions appear in the court's discussion of complaint allegations at the motion-to-dismiss stage;
+      this is not a final adjudication that every pleaded factual allegation is true.
+  - id: adl-white-lives-matter-backgrounder
+    class: specialist_extremism_monitor
+    url: https://www.adl.org/resources/backgrounder/white-lives-matter
+    supports:
+      - WLM_network_described_as_white_supremacist
+      - eventual_formation_of_white_ethnostates_in_North_America_Europe_and_Australia
+      - raising_white_racial_consciousness
+      - recruitment_efforts_as_part_of_movement_activity
+    limitation: specialist_monitor_assessment_not_criminal_adjudication
+locks:
+  - movement_level_objective != individual_membership
+  - recruitment_strategy != proof_of_successful_recruitment_of_a_specific_person
+  - white_ethnostate_objective != organizational_identity_with_every_other_white_supremacist_group
+  - court_recounting_of_pleaded_allegations != final_fact_finding
+  - high_level_recruitment_analysis_is_preserved_but_tactical_extremist_instructions_are_not
