@@ -1,0 +1,30 @@
+schema: unum-lattice-news/node/v0.1
+id: walton-enterprises
+title: Walton Enterprises, LLC
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Walton-family-related ownership entity and major Walmart shareholder. The node exists to
+    preserve the terminal ownership seat for Walmart dividends, voting power, buybacks, and
+    equity-value changes without collapsing family identity into corporate or moral culpability.
+  posture: observed
+current_evidence:
+  observed:
+    - Walmart's 2026 proxy reported Walton Enterprises with 3,002,673,393 Walmart shares held directly as of April 10, 2026.
+    - The same proxy reported 3,516,197,849 shares, or 44.11 percent of the class, as beneficially owned when voting power over shares held by Walton Family Holdings Trust is included.
+  unknowns:
+    - Record-date ownership for each fiscal 2026 dividend payment.
+    - Shares sold into or retained through each Walmart repurchase period.
+relations:
+  - type: OWNS
+    target: walmart
+    posture: observed
+sources:
+  - source-walmart-2026-proxy
+locks:
+  - Walton Enterprises' 44.11 percent beneficial-ownership figure includes voting power over Walton Family Holdings Trust shares and must not be added again to the trust's 6.44 percent dispositive interest.
+  - Ownership establishes a seat for distributions and voting power, not authorship of every Walmart policy.
