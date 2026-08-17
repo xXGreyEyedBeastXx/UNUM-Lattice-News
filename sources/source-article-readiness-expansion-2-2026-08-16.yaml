@@ -1,0 +1,170 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-article-readiness-expansion-2-2026-08-16
+title: Article readiness expansion 2 — healthcare, housing ownership, data centers, labor, and servicing
+status: active
+as_of: 2026-08-16
+purpose: >-
+  Preserve primary and high-authority evidence for a third article-readiness fill pass covering public-healthcare
+  finance and capital return, private-equity rental ownership, Tennessee data-center cost shifting, carceral labor,
+  detected wage extraction, and the federal student-loan servicing ecosystem. Sources support scoped claims only.
+sources:
+  - id: sec-unitedhealth-2025-10k
+    class: primary_corporate_filing
+    url: https://www.sec.gov/Archives/edgar/data/731766/000073176626000062/unh-20251231.htm
+    supports:
+      - CMS_premium_revenue_44_percent_of_2025_consolidated_revenue
+      - UnitedHealthcare_2025_revenue_344_903_billion
+      - Optum_Rx_2025_revenue_154_726_billion
+      - consolidated_2025_operating_earnings_18_964_billion
+      - 2025_cash_dividends_paid_7_916_billion
+      - 2025_common_share_repurchases_about_5_5_billion
+      - affiliated_segment_transactions_and_vertical_integration
+  - id: hhs-oig-ma-denials-2022
+    class: primary_government_oversight
+    url: https://oig.hhs.gov/reports/all/2022/some-medicare-advantage-organization-denials-of-prior-authorization-requests-raise-concerns-about-beneficiary-access-to-medically-necessary-care/
+    supports:
+      - sampled_MAO_denials_can_delay_or_block_medically_necessary_care
+      - 13_percent_of_sampled_denied_prior_authorizations_met_Medicare_coverage_rules
+      - 18_percent_of_sampled_denied_payment_requests_met_Medicare_coverage_and_MAO_billing_rules
+    limits:
+      - sampled_15_large_MAOs_not_actor_specific_to_UnitedHealth
+      - sample_period_was_2019
+  - id: cms-ma-utilization-management-2026
+    class: primary_government
+    url: https://www.cms.gov/medicare/audits-compliance/part-c-part-d-compliance-audits/part-c-utilization-management-um-annual-data-submission
+    supports:
+      - MAOs_required_beginning_2026_to_submit_internal_coverage_criteria_for_prior_authorization
+      - increased_transparency_and_oversight_of_utilization_management
+  - id: ftc-pbm-interim-report-2025
+    class: primary_government_enforcement_research
+    url: https://www.ftc.gov/news-events/news/press-releases/2025/01/ftc-releases-second-interim-staff-report-prescription-drug-middlemen
+    supports:
+      - Big_Three_PBM_specialty_generic_markups
+      - more_than_7_3_billion_revenue_above_estimated_acquisition_cost
+      - about_1_4_billion_spread_pricing_income
+      - affiliated_pharmacy_reimbursement_advantage
+  - id: doj-livcor-realpage-2025
+    class: primary_government_enforcement
+    url: https://www.justice.gov/opa/pr/justice-department-reaches-proposed-consent-decree-livcor-one-americas-largest-landlords
+    supports:
+      - LivCor_is_Blackstone_portfolio_company
+      - DOJ_alleged_LivCor_used_competitor_sensitive_data_and_common_pricing_algorithms
+      - proposed_consent_decree_restricts_algorithmic_coordination_and_information_sharing
+  - id: doj-realpage-case-2026
+    class: primary_government_case_index
+    url: https://www.justice.gov/atr/case/us-and-plaintiff-states-v-realpage-inc
+    supports:
+      - current_case_status_and_settlement_lineage
+      - final_judgment_Greystar_March_2026
+      - settlements_or_proposed_judgments_RealPage_LivCor_Cortland_Willow_Bridge
+  - id: sec-blackstone-livcor-2026
+    class: primary_corporate_filing
+    url: https://www.sec.gov/Archives/edgar/data/1662972/000162828026021765/bstt-20260327.htm
+    supports:
+      - LivCor_controlled_or_owned_by_Blackstone_advised_investment_vehicles
+      - Blackstone_advised_entities_use_multiple_specialized_property_management_portfolio_companies
+  - id: tennessee-openecd-data-center-incentives
+    class: primary_state_government
+    url: https://www.tn.gov/ecd/resources/openecd/openecd-tax-incentives.html
+    supports:
+      - qualified_data_centers_are_eligible_business_category
+      - state_and_local_sales_tax_exemption_for_certain_hardware_and_software
+      - company_specific_tax_information_is_confidential_under_state_law
+  - id: tennessee-hb1847-data-center-costs-2026
+    class: primary_legislation
+    url: https://wapp.capitol.tn.gov/apps/Billinfo/Default?BillNumber=HB1847&ga=114
+    supports:
+      - Public_Chapter_961_enacted_2026
+      - generally_prohibits_municipality_or_electric_utility_from_paying_or_absorbing_data_center_electrical_infrastructure_cost
+      - fiscal_note_estimated_unquantified_cost_avoidance_above_10_million
+      - law_targets_data_centers_projected_at_50MW_or_more_under_defined_conditions
+    limits:
+      - prospective_rule_does_not_establish_prior_unlawful_cost_shifting_by_any_named_data_center
+  - id: virginia-jlarc-data-centers-2024
+    class: primary_state_legislative_audit
+    url: https://jlarc.virginia.gov/landing-2024-data-centers-in-virginia.asp
+    supports:
+      - data_center_growth_drives_large_electricity_demand
+      - new_generation_and_transmission_can_raise_system_costs_for_non_data_center_customers
+      - estimated_residential_cost_increase_range_under_modeled_Virginia_future
+    limits:
+      - Virginia_specific_model_not_Tennessee_cost_estimate
+  - id: bop-work-programs
+    class: primary_government
+    url: https://www.bop.gov/inmates/custody_and_care/work_programs.jsp
+    supports:
+      - medically_able_sentenced_federal_inmates_are_required_to_work
+      - ordinary_institution_work_assignments_pay_12_to_40_cents_per_hour
+  - id: bop-unicor
+    class: primary_government
+    url: https://www2.fed.bop.gov/inmates/custody_and_care/unicor_about.jsp
+    supports:
+      - UNICOR_is_wholly_owned_government_corporation
+      - typical_UNICOR_inmate_pay_23_cents_to_1_15_per_hour
+      - BOP_states_reentry_and_recidivism_benefits
+      - participation_capacity_is_limited_relative_to_demand
+  - id: doj-oig-fpi-2025
+    class: primary_government_oversight
+    url: https://oig.justice.gov/reports/audit-federal-prison-industries-inc-annual-financial-statements-fiscal-year-2025
+    supports:
+      - current_FPI_financial_oversight
+      - pending_recommendations_on_revenue_accounting_controls
+  - id: dol-wage-hour-2025-all-acts
+    class: primary_government_enforcement_data
+    url: https://www.dol.gov/agencies/whd/data/charts/all-acts
+    supports:
+      - FY2025_back_wages_259_294_764
+      - 176_957_workers_received_back_wages
+      - 16_924_concluded_compliance_actions
+  - id: dol-flsa-2025
+    class: primary_government_enforcement_data
+    url: https://www.dol.gov/agencies/whd/data/charts/fair-labor-standards-act
+    supports:
+      - FY2025_FLSA_back_wages_184_425_856
+      - 145_798_workers_received_FLSA_back_wages
+      - minimum_wage_violation_back_wages_27_530_083
+  - id: dol-government-contracts-2025
+    class: primary_government_enforcement_data
+    url: https://www.dol.gov/agencies/whd/data/charts/government-contracts
+    supports:
+      - FY2025_government_contract_back_wages_64_474_403
+      - 23_147_workers_received_back_wages_under_government_contract_laws
+    limits:
+      - recovered_back_wages_are_detected_and_remedied_violations_not_estimate_of_total_wage_theft
+  - id: gao-student-loan-servicer-oversight-2026
+    class: primary_government_oversight
+    url: https://www.gao.gov/products/gao-26-108534
+    supports:
+      - four_of_five_servicers_failed_accuracy_standards_in_tested_quarters
+      - FSA_stopped_accuracy_and_call_quality_assessments_February_2025
+      - staffing_capacity_reduction_cited
+      - recommendation_to_resume_assessments
+  - id: sec-nelnet-2025-10k
+    class: primary_corporate_filing
+    url: https://www.sec.gov/Archives/edgar/data/1258602/000125860226000014/nni-20251231.htm
+    supports:
+      - serviced_434_5_billion_government_owned_student_loans_for_11_4_million_borrowers
+      - Department_of_Education_largest_customer_21_percent_of_2025_revenue
+      - 363_970_million_2025_government_loan_servicing_revenue
+  - id: fsa-servicer-list
+    class: primary_government
+    url: https://fsapartners.ed.gov/help-center/fsa-customer-service-center/loan-servicer-contact-information-for-schools
+    supports:
+      - current_servicer_ecosystem_including_Aidvantage_CRI_ECSI_Edfinancial_MOHELA_Nelnet
+  - id: sec-maximus-2025-10k
+    class: primary_corporate_filing
+    url: https://www.sec.gov/Archives/edgar/data/1032220/000103222025000053/mms-20250930.htm
+    supports:
+      - Maximus_assists_borrowers_with_Department_of_Education_originated_loans
+      - 55_2_percent_of_2025_total_revenue_from_US_federal_government_agencies
+      - government_program_operations_and_contact_center_business_model
+      - contractor_relationship_management_material_to_business
+    limits:
+      - filing_does_not_disaggregate_Aidvantage_student_loan_revenue
+locks:
+  - public_payment_is_not_private_profit_dollar_for_dollar
+  - system_level_harm_evidence_must_not_be_falsely_attributed_to_a_specific_company_without_actor_specific_evidence
+  - settlement_or_enforcement_action_does_not_establish_every_allegation_against_every_actor
+  - recovered_wages_are_a_floor_on_detected_remedied_harm_not_a_total_prevalence_estimate
+  - rehabilitative_benefit_does_not_remove_compulsion_from_mandatory_prison_work
+  - tax_incentive_or_public_contract_is_not_capture_by_definition

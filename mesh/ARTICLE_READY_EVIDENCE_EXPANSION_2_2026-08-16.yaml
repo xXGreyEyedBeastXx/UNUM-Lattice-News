@@ -1,0 +1,145 @@
+schema: unum-lattice-news/mesh/v0.1
+id: article-ready-evidence-expansion-2-2026-08-16
+title: Article-ready evidence expansion 2 — whole circuits and hard redress cases
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - article-ready-evidence-packages-2026-08-16
+  - unum-harm-mesh-2026-08-16
+source_bundle:
+  - source-article-readiness-expansion-2-2026-08-16
+purpose: >-
+  Extend article-ready harm auditing with cases where money, dependency, coercion, ownership, and redress can be
+  reconstructed from primary records. This pass favors explicit whole-circuit paths and actor-resolution seats.
+packages:
+  public_healthcare_to_conglomerate_return:
+    readiness: HIGH_FOR_PUBLIC_MONEY_CIRCUIT_WITH_SYSTEM_HARM_SECTION
+    supported_claim: >-
+      UnitedHealth's own 2025 filing shows very large dependence on CMS premium revenue inside a vertically
+      integrated insurance, care, data, and pharmacy conglomerate that also returned billions to shareholders.
+      Separately, HHS OIG has documented inappropriate or avoidable denial mechanisms in the Medicare Advantage
+      market. The system-level denial evidence must not be falsely attributed to UnitedHealth without actor-specific proof.
+    observed_money_flow:
+      - CMS_premium_revenue_equals_44_percent_of_UnitedHealth_2025_consolidated_revenue
+      - UnitedHealthcare_revenue_344_903_billion
+      - Optum_Rx_revenue_154_726_billion
+      - 2025_cash_dividends_paid_7_916_billion
+      - 2025_common_share_repurchases_about_5_5_billion
+    harm_path:
+      public_financing_and_patient_need -> private_plan_or_PBM_gatekeeper -> coverage_formulary_network_or_prior_authorization_decision -> care_or_payment_access -> segment_revenue_and_operating_income -> parent_capital_allocation -> shareholder_return
+    limits:
+      - public_payment_funds_claims_care_administration_reserves_and_other_costs_not_only_profit
+      - OIG_MA_denial_sample_is_not_UnitedHealth_specific
+      - shareholder_return_cannot_be_traced_dollar_for_dollar_to_CMS_premiums
+    article_hook: When public healthcare money enters a vertically integrated insurer, where can it go before it reaches the patient?
+
+  blackstone_livcor_rental_ownership:
+    readiness: HIGH_FOR_OWNERSHIP_RECOMPOSITION_SECTION
+    supported_claim: >-
+      DOJ identifies LivCor as a Blackstone portfolio company in the RealPage rental-pricing case, while SEC filings
+      confirm Blackstone-advised investment vehicles control or own LivCor and related rental-housing service entities.
+      This creates a recoverable path from tenant rent and pricing decisions through property management into a broader
+      investment-ownership ecology.
+    harm_path:
+      tenant_need -> property_and_management_control -> pricing_system_and_competitor_information -> rent_payment -> property_revenue_and_asset_value -> investment_vehicle_or_owner_return
+    limits:
+      - RealPage_case_contains_allegations_and_settlements_with_defendant_specific_postures
+      - not_all_Blackstone_rental_assets_or_LivCor_properties_are_proven_to_share_the_same_pricing_conduct
+      - rent_is_affected_by_supply_financing_taxes_insurance_and_operating_costs_too
+    article_hook: The landlord name on the lease may not be the final ownership seat receiving the economic benefit.
+
+  tennessee_data_center_cost_shift:
+    readiness: HIGH_FOR_POLICY_AND_RISK_ARTICLE
+    supported_claim: >-
+      Tennessee offers qualified data centers tax advantages and in 2026 enacted a law intended to prevent utilities
+      or municipalities from absorbing electrical infrastructure costs caused by large data centers. The fiscal note
+      estimated statewide cost avoidance above ten million dollars but could not quantify the exact amount.
+    harm_path:
+      large_new_electric_load -> generation_transmission_distribution_investment -> allocation_rule -> data_center_or_other_ratepayer_cost -> corporate_operating_advantage_or_public_customer_burden
+    redress_or_correction:
+      - Public_Chapter_961_generally_prohibits_utility_or_municipality_cost_absorption_for_covered_data_center_infrastructure
+      - complaint_and_public_finding_mechanisms_are_created_for_rate_increases_under_defined_conditions
+    limits:
+      - law_is_prospective_and_does_not_prove_prior_actor_specific_cost_shifting
+      - tax_exemptions_can_be_part_of_legitimate_economic_development_policy
+      - benefits_jobs_tax_base_and_grid_investment_must_be_measured_against_costs
+    article_hook: If a data center needs the grid expanded, who should pay for the wires and transformers?
+
+  carceral_labor_captive_work:
+    readiness: HIGH_FOR_LEGAL_COERCION_ARTICLE
+    supported_claim: >-
+      The federal prison system explicitly requires medically able sentenced inmates to work and pays ordinary
+      institutional work assignments cents per hour. UNICOR pays more but remains prison labor within a captive
+      setting and is a self-sustaining government corporation. BOP also presents work as rehabilitative and cites
+      reentry benefits, which must remain in the record.
+    harm_path:
+      conviction_and_confinement -> legal_custody -> mandatory_work_rule -> captive_labor -> institution_or_FPI_output -> low_worker_compensation -> state_or_program_capacity
+    counterevidence:
+      - BOP_cites_skills_employment_and_reduced_recidivism_benefits
+      - UNICOR_participation_is_limited_and_desired_by_more_inmates_than_can_be_placed
+    lock: >-
+      Rehabilitation benefit and worker preference can coexist with a coercive legal baseline; do not collapse
+      voluntary program demand and mandatory prison-work authority into one category.
+    article_hook: What does voluntary work mean after the state has removed the worker's freedom to leave?
+
+  detected_wage_extraction:
+    readiness: HIGH_FOR_BASELINE_LABOR_HARM_ARTICLE
+    supported_claim: >-
+      Federal enforcement recovered more than 259 million dollars in back wages for nearly 177,000 workers in FY2025.
+      FLSA recoveries alone exceeded 184 million dollars, and government-contract-law recoveries exceeded 64 million.
+      These are documented recovered violations rather than estimates of total wage theft.
+    harm_path:
+      labor_performed -> legally_owed_compensation -> underpayment_or_nonpayment -> employer_retained_value -> enforcement -> partial_or_full_wage_return_to_worker
+    limits:
+      - enforcement_data_are_not_prevalence_estimates
+      - some cases_overlap_acts_and_cannot_be_sum_added_without_deduplication
+      - recovered_wage_amount_is_not_identical_to_employer_profit
+    article_hook: Before debating whether workers are asking for too much, count wages employers were legally required to pay and did not.
+
+  student_loan_servicing_ecosystem:
+    readiness: HIGH_FOR_OUTSOURCED_GATEKEEPER_ARTICLE
+    supported_claim: >-
+      Federal Student Aid relies on a multi-contractor servicing ecosystem. GAO found four of five tested servicers
+      missed accuracy standards before FSA stopped direct accuracy and call-quality assessments because of staffing
+      capacity. Nelnet reports 364 million dollars in 2025 Department of Education servicing revenue and 434.5
+      billion dollars of government-owned student loans under servicing. Maximus confirms it assists borrowers with
+      Education-originated loans while deriving a majority of company revenue from U.S. federal agencies, although
+      its filing does not isolate Aidvantage revenue.
+    harm_path:
+      public_loan -> outsourced_servicer -> record_payment_plan_and_information_gate -> error_or_delay_risk -> public_oversight -> contractor_revenue_and_relationship_dependency
+    limits:
+      - not_every_servicer_failed_every_metric
+      - GAO_did_not_say_every_borrower_record_is_wrong
+      - Maximus_Aidvantage_revenue_is_not_disaggregated_in_its_10K
+    article_hook: When the government owns the debt but a contractor controls the borrower's daily interface, who checks the contractor?
+
+cross_case_invariants:
+  - public_finance_can_create_private_revenue_without_public_money_being_equivalent_to_profit
+  - captive_or_survival_dependency_changes_the_meaning_of_formal_consent
+  - ownership_resolution_is_required_before_accepting_a_property_manager_or_brand_as_terminal_beneficiary
+  - enforcement_recovery_is_evidence_that_a_harm_mechanism_exists_but_not_a_complete_measure_of_unseen_prevalence
+  - corrective_law_is_evidence_of_recognized_risk_or_failure_mode_not_automatic_proof_of_every_prior_allegation
+  - public_private_outsourcing_can_increase_administrative_distance_between_harm_and_accountability
+article_priority_after_this_pass:
+  tier_1:
+    - public_healthcare_money_and_vertical_integration
+    - algorithmic_rent_and_private_equity_ownership
+    - detected_wage_extraction
+    - federal_student_debt_gatekeepers
+    - boycott_bans_and_nonviolent_redress
+  tier_2:
+    - Tennessee_data_center_cost_shifting_and_tax_incentives
+    - carceral_labor_and_the_cost_of_refusal
+    - immigration_enforcement_private_revenue
+    - public_AI_security_contracting
+  next_fill:
+    - hospital_and_medical_debt_collection
+    - utility_shutoffs_and_energy_burden
+    - private_equity_healthcare_facility_ownership
+    - defense_procurement_to_owner_return_company_cases
+    - food_and_agriculture_market_power
+    - lobbying_and_campaign_finance_return_loops_for_the_high_readiness_cases
+publication_lock: >-
+  The article may make a strong moral argument only after the reader can reconstruct the factual carrier without
+  accepting the author's political label. Mechanism first; label later if the evidence earns it.

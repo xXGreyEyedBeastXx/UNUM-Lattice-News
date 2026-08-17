@@ -1,0 +1,44 @@
+schema: unum-lattice-news/node/v0.1
+id: tennessee-data-center-cost-shift-and-incentive
+title: Tennessee data-center cost shifting and incentives
+family: analysis_framework
+subtype: utility_and_public_support_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Traces how large data centers receive tax treatment, impose new electric-load infrastructure needs, and may
+    create cost-shift risks for utilities and other customers. Tennessee's 2026 Public Chapter 961 is treated as
+    a corrective rule and evidence of recognized cost-allocation risk, not proof of prior actor-specific abuse.
+  posture: evidence_bound
+current_evidence:
+  - Tennessee_ECD_lists_qualified_data_centers_as_eligible_for_state_and_local_sales_tax_exemptions_on_certain_hardware_and_software.
+  - Public_Chapter_961_generally_prohibits_municipalities_or_electric_utilities_from_paying_or_absorbing_covered_data_center_electrical_infrastructure_costs.
+  - legislative_fiscal_note_estimated_statewide_cost_avoidance_above_10_million_but_could_not_quantify_exact_amount.
+  - Virginia_JLARC_found_large_data_center_growth_can_increase_generation_and_transmission_costs_for_non_data_center_customers_in_its_market.
+required_trace:
+  - tax_exemption_credit_or_other_incentive
+  - projected_peak_load
+  - generation_transmission_distribution_and_water_need
+  - infrastructure_cost
+  - utility_rate_class_and_contract
+  - who_pays_upfront
+  - who_bears_stranded_asset_or_demand_risk
+  - jobs_tax_base_and_local_benefits
+  - environmental_and_public_health_cost
+  - customer_rate_effect
+  - public_disclosure_and_complaint_path
+locks:
+  - tax_incentive_is_not_wrongdoing_by_definition.
+  - Tennessee_2026_law_is_not_proof_that_a_named_data_center_previously_shifted_costs.
+  - Virginia_cost_estimates_are_not_Tennessee_estimates.
+source_bundle:
+  - source-article-readiness-expansion-2-2026-08-16
+relations:
+  - type: EXTENDS
+    target: asymmetric-public-support-and-private-gain
+  - type: EXTENDS
+    target: environmental-cost-externalization
+  - type: EXTENDS
+    target: consumer-pass-through-versus-extraction-burden

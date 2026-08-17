@@ -1,0 +1,39 @@
+schema: unum-lattice-news/node/v0.1
+id: detected-wage-extraction-and-enforcement-return
+title: Detected wage extraction and enforcement return
+family: analysis_framework
+subtype: labor_harm_and_redress_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Uses enforcement recoveries as a minimum documented measure of legally owed compensation withheld or unpaid,
+    while distinguishing detected/remedied cases from total prevalence and tracing whether redress returns value to workers.
+  posture: evidence_bound
+current_evidence:
+  - DOL_WHD_recovered_259_294_764_in_back_wages_for_176_957_workers_in_FY2025_across_all_acts.
+  - FLSA_back_wage_recoveries_were_184_425_856_for_145_798_workers.
+  - government_contract_law_back_wage_recoveries_were_64_474_403_for_23_147_workers.
+required_trace:
+  - worker_and_job
+  - hours_or_compensation_legally_owed
+  - underpayment_nonpayment_or_misclassification_mechanism
+  - employer_or_contractor
+  - value_temporarily_retained
+  - investigation_or_private_action
+  - back_wage_damages_or_penalty_return
+  - repeat_violation_or_compliance_change
+locks:
+  - recovered_back_wages_are_not_a_prevalence_estimate.
+  - act_level_recoveries_can_overlap_and_must_not_be_sum_added_without_deduplication.
+  - withheld_wages_are_not_identical_to_profit.
+source_bundle:
+  - source-article-readiness-expansion-2-2026-08-16
+relations:
+  - type: EXTENDS
+    target: labor-market-power-and-wage-extraction
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss

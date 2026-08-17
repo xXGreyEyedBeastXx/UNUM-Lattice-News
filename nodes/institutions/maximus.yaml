@@ -1,0 +1,35 @@
+schema: unum-lattice-news/node/v0.1
+id: maximus
+title: Maximus, Inc.
+family: institution
+subtype: government_program_administration_contractor
+hierarchy_class: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary: >-
+  Public contractor administering government-facing service systems across health, benefits, disability, contact-center,
+  technology, and student-loan programs. Current mesh relevance is outsourced public gatekeeping and contractor dependence
+  on government revenue.
+current_evidence:
+  - Maximus_reports_5_431_billion_total_FY2025_revenue.
+  - 55_2_percent_of_FY2025_revenue_came_from_US_federal_government_agencies.
+  - company_confirms_it_assists_borrowers_with_Department_of_Education_originated_loans_through_its_student_loan_servicing_work.
+  - company_describes_government_relationship_management_as_material_to_winning_and_retaining_contracts.
+  - filing_does_not_disaggregate_Aidvantage_student_loan_revenue.
+relations:
+  - type: CONTRACTOR_FOR
+    target: US_federal_government
+    posture: observed
+  - type: PARTICIPATES_IN
+    target: student-loan-servicing-concentration-and-outsourced-gatekeeping
+    posture: observed
+  - type: EXTENDS
+    target: administrative-moral-distance
+    posture: supported_inference
+locks:
+  - majority_federal_revenue_does_not_establish_wrongdoing.
+  - do_not_invent_Aidvantage_revenue_from_companywide_federal_revenue.
+  - government_program_administration_can_supply_real_public_service_value_and_should_be_evaluated_by_program_specific_performance.
+source_bundle:
+  - source-article-readiness-expansion-2-2026-08-16

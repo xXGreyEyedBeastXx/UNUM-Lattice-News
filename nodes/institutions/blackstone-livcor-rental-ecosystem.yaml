@@ -1,0 +1,33 @@
+schema: unum-lattice-news/node/v0.1
+id: blackstone-livcor-rental-ecosystem
+title: Blackstone / LivCor rental-housing ecosystem
+family: institution
+subtype: investment_and_property_management_ecology
+hierarchy_class: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary: >-
+  Identity and ownership seat for rental-housing investigations involving LivCor and Blackstone-advised investment
+  vehicles. It exists to prevent property-manager naming from prematurely terminating the ownership trace.
+current_evidence:
+  - DOJ_identifies_LivCor_as_a_Blackstone_portfolio_company.
+  - SEC_filings_state_LivCor_is_controlled_or_owned_by_Blackstone_advised_investment_vehicles.
+  - DOJ_alleged_LivCor_participated_in_RealPage_related_competitor_information_and_algorithmic_pricing_conduct.
+  - proposed_consent_decree_would_restrict_algorithmic_coordination_and_competitor_information_sharing.
+relations:
+  - type: CONTROL_OR_OWNERSHIP_LINK
+    target: LivCor
+    posture: observed
+  - type: PARTICIPATES_IN
+    target: housing-private-equity-ownership-and-pricing
+    posture: observed
+  - type: CASE_LINK
+    target: rent-algorithm-coordination-and-landlord-capture
+    posture: alleged_and_settlement_bounded
+locks:
+  - Blackstone_affiliation_does_not_make_every_Blackstone_property_part_of_the_RealPage_case.
+  - proposed_consent_decree_is_not_an_admission_of_every_allegation.
+  - ownership_relation_requires_fund_and_property_specific_resolution_for_terminal_beneficiary_claims.
+source_bundle:
+  - source-article-readiness-expansion-2-2026-08-16
