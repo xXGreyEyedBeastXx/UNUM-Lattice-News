@@ -1,0 +1,169 @@
+schema: unum-lattice-news/mesh/v0.1
+id: complaint-redress-and-corporate-support-mesh-2026-08-16
+title: Complaint, redress, corporate support, and ideological threat-labeling mesh
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - unum-harm-mesh-2026-08-16
+operators:
+  - complaint-to-mechanism-translation
+  - ideological-threat-labeling-and-redress-delegitimization
+  - asymmetric-public-support-and-private-gain
+  - downward-scapegoat-upward-extraction-inversion
+  - accusation-reversal-and-actor-dependent-moral-laundering
+  - compulsory-dependency-and-survival-enclosure
+  - coerced-complicity-through-survival-dependency
+  - redress-capture-and-correction-failure
+source_bundle:
+  - source-left-complaints-corporate-support-and-threat-labeling-2026-08-16
+purpose: >-
+  Recover what labor, progressive, socialist, and public-interest constituencies are actually complaining
+  about, translate those complaints into measurable mechanisms, and test whether ideological threat labels
+  delegitimize or disable redress while public support and protection for concentrated private capital remain
+  normalized under different names.
+complaint_census:
+  status: REPRESENTATIVE_NOT_EXHAUSTIVE
+  recurring_families:
+    wages_and_work:
+      complaints:
+        - pay_not_matching_productivity_or_cost_of_living
+        - precarious_gig_and_misclassified_work
+        - union_suppression_and_low_bargaining_power
+        - unsafe_understaffed_or_degrading_work
+      mechanism_tests:
+        - labor_market_power
+        - union_avoidance
+        - wage_theft_and_underpayment
+        - healthcare_and_benefit_dependency
+        - fissuring_outsourcing_and_misclassification
+    housing:
+      complaints:
+        - rent_burden
+        - landlord_and_private_equity_power
+        - lack_of_affordable_or_social_housing
+      mechanism_tests:
+        - land_and_housing_concentration
+        - pricing_coordination
+        - debt_and_interest
+        - zoning_and_supply_constraints
+        - public_subsidy_and_ownership_return
+    healthcare:
+      complaints:
+        - care_as_profit_center
+        - insurance_and_drug_prices
+        - denial_delay_and_understaffing
+        - job_tied_healthcare_dependency
+      mechanism_tests:
+        - insurer_pbm_provider_pharma_vertical_integration
+        - monopoly_and_patent_exclusivity
+        - public_program_to_private_revenue
+        - labor_cost_suppression_and_understaffing
+    corporate_power:
+      complaints:
+        - monopoly_and_mega_mergers
+        - billionaire_and_corporate_political_influence
+        - corporate_tax_avoidance_and_subsidies
+        - privatization_of_public_goods
+      mechanism_tests:
+        - concentration_and_bargaining_power
+        - lobbying_campaign_finance_and_revolving_door
+        - tax_expenditure_and_procurement_incidence
+        - public_risk_private_upside
+    immigration_and_division:
+      complaints:
+        - immigrants_used_as_scapegoats_for_material_pressure
+        - raids_and_status_precarity_increase_worker_exploitability
+        - division_weakens_worker_solidarity
+      mechanism_tests:
+        - downward_blame_upward_extraction
+        - employer_control_of_status_and_work
+        - detention_surveillance_and_contract_revenue
+        - union_and_wage_effects
+    democracy_and_civil_liberties:
+      complaints:
+        - voting_and_election_interference
+        - suppression_of_speech_association_and_protest
+        - attacks_on_unions_watchdogs_and_public_institutions
+      mechanism_tests:
+        - redress_capture
+        - retaliation
+        - ideological_threat_labeling
+        - administrative_and_coercive_capacity_accumulation
+    ecology_and_foreign_policy:
+      complaints:
+        - pollution_and_climate_cost_externalization
+        - extractive_foreign_policy
+        - war_and_security_spending_over_human_needs
+      mechanism_tests:
+        - environmental_externalization
+        - externalized_resource_extraction_and_statecraft
+        - public_to_private_defense_and_security_revenue
+        - consumer_pass_through_vs_extraction_burden
+rhetorical_crossings:
+  anti_fascism_to_terrorism:
+    observed:
+      - white_house_2025_antifa_designation
+      - white_house_2025_memorandum_places_self_described_anti_fascism_inside_domestic_terrorism_frame
+      - white_house_2026_global_radical_left_terrorism_campaign
+    test: >-
+      Separate prosecution of violent criminal conduct from ideological, associational, funding, protest,
+      and civil-liberties categories. Track whether enforcement scope expands past evidenced crimes.
+  equity_to_marxism_or_communism:
+    observed:
+      - white_house_budget_material_used_marxist_agenda_language_for_equity_related_programs
+      - white_house_dei_order_applies_contractual_penalties_to_defined_dei_activity
+      - white_house_proclamation_frames socialism_and_communism_as_domestic_evils_to_prevent
+    test: >-
+      Determine whether targeted policy is discriminatory conduct, universal redistribution, anti-discrimination
+      remediation, or another mechanism before accepting the ideological label.
+  public_support_asymmetry:
+    observed:
+      - government_supports_private_firms_through_large_procurement_tax_finance_and_industrial_policy_rails
+      - government_and_allied_rhetoric_frequently_describes_some_household_equity_or_collective_programs_as_dependency_marxism_socialism_or_communism
+    analytic_translation: >-
+      The user phrase corporate communism is retained as a complaint label. The mesh uses the more precise
+      mechanism socialized risk/cost plus privately retained ownership/upside, because U.S. corporate support
+      does not constitute communism in the technical ownership sense.
+public_support_baseline:
+  federal_contracts:
+    state: CONFIRMED
+    fy2025_obligations: about_793_billion
+    lock: contracts_purchase_goods_and_services_not_automatic_welfare
+  tax_expenditures:
+    state: CONFIRMED_AS_SPENDING_LIKE_POLICY_INSTRUMENT
+    lock: beneficiary_and_incidence_must_be_resolved
+  industrial_policy:
+    state: CONFIRMED_IN_CASES
+    chips_example: 30_9_billion_awarded_to_19_companies_for_40_projects_by_july_2025
+  external_finance:
+    state: CONFIRMED_IN_CASES
+    links:
+      - externalized-resource-extraction-and-statecraft-2026-08-16
+core_hypothesis:
+  proposition: >-
+    Ideological and security threat labels can protect concentrated economic and political arrangements when
+    they delegitimize the collective redress mechanisms most capable of changing those arrangements, while
+    public support for incumbent capital is normalized as investment, security, development, competitiveness,
+    or market policy.
+  state: SUPPORTED_AS_GENERAL_MECHANISM_HYPOTHESIS_NOT_PROVEN_AS_UNIVERSAL_OR_SINGLE_ACTOR_MOTIVE
+  discriminators:
+    - whether threat labels are narrowly tied to proven violent_or_discriminatory_conduct
+    - whether lawful advocacy_association_or_funding_is_swept_into_enforcement
+    - whether comparable public support receives different scrutiny depending_on_recipient_power
+    - whether policies following the label weaken unions_protest_voting_regulation_antitrust_or_social_provision
+    - whether beneficiaries of preserved arrangements can be traced through money_ownership_and_policy
+next_growth:
+  - Build a dollar-normalized corporate-support census by contracts tax expenditures grants loans guarantees insurance and public equity.
+  - Separate procurement value from subsidy/rent by competition margin and counterfactual-cost tests.
+  - Build a household-support comparison ledger including work requirements means tests sanctions and administrative burden.
+  - Map union-busting and anti-organizing expenditure to firms that also receive public support.
+  - Trace monopoly protection patent exclusivity and regulated scarcity as noncash public support.
+  - Build case studies where a reform demand is explicitly relabeled communist Marxist terrorist extremist or lawless, then follow the policy consequence.
+  - Search for countercases where threat labels were narrow conduct-based and did not suppress lawful redress.
+locks:
+  - Do not turn left complaints into automatic truth.
+  - Do not turn government threat labels into automatic guilt.
+  - Do not erase violence where it is proven and do not infer violence from ideology alone.
+  - Do not use corporate communism as a technical economic classification.
+  - Compare ownership risk return conditions and democratic control rather than arguing from labels.

@@ -1,0 +1,147 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-left-complaints-corporate-support-and-threat-labeling-2026-08-16
+title: Left/labor complaint census, corporate public support, and ideological threat-labeling baseline
+status: active
+as_of: 2026-08-16
+purpose: >-
+  Preserve representative current complaint surfaces from labor, progressive, socialist, and public-interest
+  organizations alongside primary government rhetoric and official public-finance baselines. This bundle
+  records what is being complained about and what public institutions are actually doing; it does not assume
+  that either side's causal interpretation is correct merely because it is stated.
+sources:
+  - id: wh-antifa-order-2025-09-22
+    class: primary_government
+    url: https://www.whitehouse.gov/presidential-actions/2025/09/designating-antifa-as-a-domestic-terrorist-organization/
+    supports:
+      - executive_designation_language
+      - investigation_disruption_and_funding_language
+  - id: wh-domestic-terrorism-memo-2025-09-25
+    class: primary_government
+    url: https://www.whitehouse.gov/presidential-actions/2025/09/countering-domestic-terrorism-and-organized-political-violence/
+    supports:
+      - self_described_anti_fascism_characterized_as_domestic_terrorism_rallying_cry
+      - anti_capitalism_and_other_ideological_markers_in_threat_frame
+  - id: wh-radical-left-terrorism-2026-07-16
+    class: primary_government
+    url: https://www.whitehouse.gov/releases/2026/07/trump-administration-unleashes-global-campaign-to-crush-radical-left-terrorism/
+    supports:
+      - global_radical_left_terrorism_campaign
+      - civil_liberties_claims_described_by_miller_as_pretextual
+  - id: wh-fy2026-budget-marxist-agenda
+    class: primary_government
+    url: https://www.whitehouse.gov/briefings-statements/2025/05/the-white-house-office-of-management-and-budget-releases-the-presidents-fiscal-year-2026-skinny-budget/
+    supports:
+      - equity_and_dei_programs_framed_as_woke_marxist_agenda
+  - id: wh-dei-contractors-2026-03-26
+    class: primary_government
+    url: https://www.whitehouse.gov/presidential-actions/2026/03/addressing-dei-discrimination-by-federal-contractors/
+    supports:
+      - contract_suspension_termination_or_debarment_for_defined_dei_activity
+  - id: wh-captive-nations-2026-07-20
+    class: primary_government
+    url: https://www.whitehouse.gov/presidential-actions/2026/07/captive-nations-week-2026/
+    supports:
+      - socialism_and_communism_described_as_evil_ideologies_not_to_take_root_domestically
+  - id: crs-domestic-terrorism-r47885
+    class: congressional_research
+    url: https://www.congress.gov/crs-product/R47885
+    supports:
+      - domestic_terrorism_defined_but_not_standalone_charge
+      - historical_absence_of_formal_domestic_terrorist_organization_designation_process
+  - id: congress-stop-antifa-act-s2936
+    class: legislative_record
+    url: https://www.congress.gov/bill/119th-congress/senate-bill/2936
+    supports:
+      - introduced_not_enacted_bill_seeking_statutory_designation_and_network_disruption
+  - id: aflcio-resolution-1-2026
+    class: labor_primary
+    url: https://aflcio.org/resolutions/resolution-1-you-its-better-union
+    supports:
+      - economic_pressure_instability_corporate_concentration_democratic_erosion
+  - id: aflcio-resolution-4-2026
+    class: labor_primary
+    url: https://aflcio.org/resolutions/resolution-4-we-refuse-be-divided
+    supports:
+      - immigration_scapegoating_as_distraction_from_corporate_favoring_policy
+  - id: aflcio-resolution-6-2026
+    class: labor_primary
+    url: https://aflcio.org/resolutions/resolution-6-we-want-decent-living-all
+    supports:
+      - wages_not_matching_costs
+      - housing_healthcare_childcare_energy_costs
+      - monopoly_and_private_equity_healthcare_concerns
+  - id: aflcio-resolution-7-2026
+    class: labor_primary
+    url: https://aflcio.org/resolutions/resolution-7-we-want-good-jobs-today-and-tomorrow
+    supports:
+      - precarious_work_misclassification_gig_work_bargaining_power
+  - id: aflcio-resolution-9-2026
+    class: labor_primary
+    url: https://aflcio.org/resolutions/resolution-9-we-want-just-and-peaceful-world
+    supports:
+      - corporations_unaccountable_unions_attacked_migrants_scapegoated_public_goods_stripped
+      - war_and_international_law_concerns
+  - id: aflcio-resolution-25-2026
+    class: labor_primary
+    url: https://aflcio.org/resolutions/resolution-25-protecting-union-jobs-against-anti-competitive-corporate-behavior
+    supports:
+      - merger_concentration_worker_and_consumer_harm_claims
+  - id: wfp-sotu-response-2026
+    class: political_organization_primary
+    url: https://workingfamilies.org/2026/02/watch-2026-wfp-response-to-the-state-of-the-union/
+    supports:
+      - rent_healthcare_childcare_education_union_jobs_immigration_environment_war_and_corporate_profiteering_complaints
+  - id: dsa-program-2026
+    class: political_organization_primary
+    url: https://democraticleft.dsausa.org/2026/07/17/dsa-launches-new-program/
+    supports:
+      - working_class_communities_foreign_policy_democracy_labor_and_care_work
+  - id: dsa-housing-2026
+    class: political_organization_primary
+    url: https://democraticleft.dsausa.org/2026/07/22/housing-tenancy-and-organizing-for-dignified-living/
+    supports:
+      - tenant_power_decommodification_community_control_complaints
+  - id: epi-union-power-2026
+    class: research_advocacy
+    url: https://www.epi.org/publication/the-case-for-tripling-union-membership-how-rebuilding-union-power-would-strengthen-workers-the-economy-and-our-democracy/
+    supports:
+      - union_decline_and_distribution_claims
+      - modeled_wage_effects_of_higher_union_density
+  - id: public-citizen-corporate-support-critique-2026
+    class: public_interest_advocacy
+    url: https://www.citizen.org/article/amidst-federal-grants-freeze-chaos-corporations-get-off-scot-free/
+    supports:
+      - explicit_complaint_that_anti_marxist_grant_scrutiny_spares_corporate_support_channels
+  - id: public-citizen-zero-tax-political-spending-2026
+    class: public_interest_advocacy
+    url: https://www.citizen.org/article/the-current-price-of-zero/
+    supports:
+      - 88_large_corporations_reported_zero_federal_income_tax_in_2025_and_852m_political_spending_claim
+  - id: gao-fy2025-contracting
+    class: primary_oversight
+    url: https://www.gao.gov/blog/snapshot-government-wide-contracting-fy-2025-interactive-dashboard
+    supports:
+      - about_793_billion_federal_contract_obligations_fy2025
+  - id: treasury-tax-expenditures
+    class: primary_government
+    url: https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures
+    supports:
+      - definition_of_tax_expenditures_as_revenue_losses_and_alternative_policy_instruments
+      - large_fy2026_tax_expenditure_baselines
+  - id: gao-tax-expenditures
+    class: primary_oversight
+    url: https://www.gao.gov/tax-expenditures
+    supports:
+      - tax_expenditures_can_have_same_net_budget_effect_as_spending
+      - many_not_subject_to_annual_appropriation_or_reauthorization
+  - id: gao-chips-2025
+    class: primary_oversight
+    url: https://www.gao.gov/products/gao-26-107882
+    supports:
+      - 30_9_billion_awarded_across_40_semiconductor_projects_to_19_companies_by_july_2025
+locks:
+  - Representative complaint sources are not a census of every left-wing or labor constituency.
+  - Advocacy organizations are evidence of claims and framing; use their underlying data separately for factual promotion.
+  - Federal contracts purchase goods and services and are not automatically corporate welfare.
+  - Tax expenditures require incidence analysis before assigning corporate benefit.
+  - Violence, criminal conduct, ideology, association, protest, and funding must remain separately typed.

@@ -1,0 +1,78 @@
+schema: unum-lattice-news/node/v0.1
+id: asymmetric-public-support-and-private-gain
+title: Asymmetric public support and private gain
+family: analysis_framework
+subtype: public_resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+aliases:
+  public_terms:
+    - corporate_welfare
+    - socialized_risk_privatised_gain
+  caution:
+    - corporate_communism_is_a_polemical_label_not_a_technical_economic_classification
+summary:
+  text: >-
+    Tests whether public money, credit, tax preference, insurance, infrastructure, legal privilege,
+    monopoly protection, procurement, bailout capacity, or externalized risk supports privately owned
+    firms while upside remains disproportionately private and downside is shifted to taxpayers,
+    workers, consumers, communities, or future generations. It compares this support with the
+    conditions, stigma, work requirements, means tests, and enforcement attached to support for
+    households and workers.
+  posture: working_framework
+core_invariant:
+  - public_support_for_private_enterprise_is_not_free_market_by_definition
+  - public_support_is_not_wrongdoing_by_definition
+  - procurement_payment_is_not_welfare_without_a_value_competition_and_margin_test
+  - socialization_of_risk_and_privatisation_of_upside_is_a_distributional_mechanism_not_technical_communism
+  - household_and_corporate_support_must_be_compared_by_conditions_risk_return_and_power_not_only_nominal_dollars
+support_forms_to_trace:
+  - contracts_and_procurement
+  - grants_and_direct_subsidies
+  - refundable_and_nonrefundable_tax_credits
+  - exclusions_deductions_deferrals_and_preferential_rates
+  - loans_guarantees_and_political_risk_insurance
+  - emergency_bailout_or_liquidity_support
+  - public_infrastructure_and_below_market_access
+  - intellectual_property_and_exclusivity
+  - natural_resource_leases_and_concessions
+  - externalized_environmental_health_or_cleanup_cost
+  - public_research_and_workforce_development
+required_public_return_test:
+  - public_resource_committed
+  - private_resource_committed
+  - competition_and_counterfactual_price
+  - ownership_before_and_after_support
+  - public_equity_royalty_revenue_share_or_clawback
+  - labor_and_wage_conditions
+  - price_pass_through_to_consumers
+  - supplier_and_local_procurement_distribution
+  - downside_risk_bearer
+  - upside_gain_bearer
+  - executive_compensation_dividends_buybacks_and_asset_appreciation
+  - lobbying_and_policy_feedback
+  - public_value_actually_delivered
+current_baseline:
+  - FY2025_federal_contract_obligations_about_793_billion_GAO
+  - Treasury_tax_expenditures_are_spending_like_revenue_losses_and_include_large_2026_preferences
+  - GAO_notes_tax_expenditures_can_have_same_net_budget_effect_as_spending_and_often_escape_annual_reauthorization
+  - Commerce_had_awarded_30_9_billion_across_40_CHIPS_projects_to_19_companies_by_July_2025
+  - DFC_EXIM_and_other_public_finance_rails_support_private_strategic_projects_including_resource_supply_chains
+comparison_question: >-
+  When collective public support for households is attacked as dependency, socialism, or communism,
+  while collective public support for private firms is described as investment, competitiveness,
+  national security, development, or market policy, compare the actual structure of ownership,
+  conditions, risk, return, and democratic control instead of accepting either label.
+relations:
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+  - type: EXTENDS
+    target: power-capacity-accumulation
+  - type: EXTENDS
+    target: patronage-return-laundering
+locks:
+  - Do not count every government contract as corporate welfare.
+  - Do not count every tax expenditure as a corporate subsidy; resolve beneficiary incidence.
+  - Do not erase genuine public value from industrial policy, procurement, research, or infrastructure.
+  - Do not let genuine public value terminate the downstream ownership and risk trace.
