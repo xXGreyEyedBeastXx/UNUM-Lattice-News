@@ -1,0 +1,262 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-oct7-nova-foreknowledge-border-allocation-2018-2026
+title: October 7 / Nova foreknowledge, Gaza-border warning, force-allocation and Huwara source custody
+accessed: 2026-08-17
+purpose: >-
+  Preserve source lineage for the October 7 / Nova clue chain without collapsing strategic foreknowledge,
+  operational-plan possession, capability warnings, last-night alerts, Nova approval/protection failures,
+  Gaza-to-West-Bank force allocation, and Huwara enforcement into one undifferentiated claim.
+  This bundle supports investigation of calculated exposure / knowingly tolerated vulnerability while preserving
+  the higher evidentiary burden for deliberate setup or calculated sacrifice.
+
+linked_investigations:
+  - research/investigations/OCT7_FOREKNOWLEDGE_LADDER_ISRAELI_INTERNAL_RECORD_2018_2026.md
+  - research/investigations/GAZA_BORDER_PRE_OCT7_YEAR_TIMELINE_2022_2023.md
+  - research/investigations/NOVA_PROTECTION_ALLOCATION_ASYMMETRY_2023-10-05_TO_2023-10-07.md
+  - research/investigations/HUWARA_ASYMMETRIC_COERCIVE_ENFORCEMENT_2023.md
+  - research/investigations/NOVA_CALCULATED_EXPOSURE_VS_CALCULATED_SACRIFICE_2026-08-17.md
+  - research/investigations/OCT7_OPERATIONAL_NARRATIVE_CLUE_CHAIN_2022_2023.md
+  - research/investigations/OCT7_NOVA_CLUE_RETENTION_LEDGER_2018_2023.md
+
+sources:
+  - id: ynet-2018-broad-invasion-assessment-2026-report
+    publisher: Ynet / Yedioth Ahronoth
+    source_class: israeli_investigative_reporting_on_internal_record
+    date_reported: 2026-02-10
+    record_date: 2018-04-16
+    url: https://www.ynet.co.il/news/article/yokra14674771
+    supports:
+      - Israeli Military Intelligence distributed a broad Hamas invasion assessment years before October 7.
+      - The scenario reportedly included roughly 3,000 fighters, attacks on Gaza Division bases and civilian targets, fence breaches and large rocket salvos.
+      - Reporting says distribution reached senior security offices including the military secretaries of the prime minister and defense minister, NSC, Shin Bet, Mossad and Chief of Staff office.
+      - Reporting says the assessment entered the prime minister's controlled weekend-reading process.
+    limitations:
+      - Later investigative reporting about a 2018 internal record; underlying classified document should be preferred if publicly released.
+      - PM-office receipt does not prove Netanyahu personally read every document.
+      - Do not silently identify the 2018 assessment with the later detailed Jericho Wall document.
+
+  - id: toi-jericho-wall-unit8200-warning
+    publisher: Times of Israel / Channel 12 reporting
+    source_class: major_israeli_news_on_internal_intelligence_record
+    date: 2024-07-05
+    url: https://www.timesofisrael.com/the-sword-is-coming-idf-email-warned-of-hamas-plans-days-before-oct-7-report/amp/
+    supports:
+      - A Unit 8200 NCO warned days before October 7 that Jericho Wall had become an operative, practiced plan.
+      - The NCO warned that the 'sword is coming' and urged preparation to reduce damage.
+      - The warning followed a September 19 dossier describing large-scale invasion training.
+      - The email was reportedly dismissed by senior Gaza Division intelligence officers.
+    limitations:
+      - Media reporting on internal email; exact distribution list and original email should remain recovery targets.
+
+  - id: toi-sept19-invasion-training-dossier
+    publisher: Times of Israel / Kan reporting
+    source_class: major_israeli_news_on_internal_intelligence_record
+    record_date: 2023-09-19
+    date_reported: 2024-06-17
+    url: https://www.timesofisrael.com/weeks-before-oct-7-idf-said-to-have-been-warned-of-hamas-plan-to-take-250-hostages/amp/
+    supports:
+      - Gaza Division intelligence possessed a September 19 document describing Hamas training for a large-scale invasion.
+      - Training included raids on towns and military posts and hostage-taking preparations.
+      - The document was reportedly brought to at least some senior Gaza Division intelligence officials.
+    limitations:
+      - Reporting did not fully resolve every recipient or whether top political leaders saw this specific dossier.
+
+  - id: ap-hamas-public-training-2023
+    publisher: Associated Press
+    source_class: independent_video_geolocation_investigation
+    date: 2023-10-13
+    url: https://apnews.com/article/aa0b0f5f3613b6c6882cf37168e8e8ed
+    supports:
+      - AP reviewed more than 100 Hamas videos from the preceding year and geolocated multiple training sites.
+      - September 12, 2023 Strong Pillar exercise publicly rehearsed breaching a replica border gate, destroying mock defensive infrastructure, entering by pickup truck and clearing a mock Israeli locality.
+      - A December 2022 exercise simulated overrunning an Israeli military position and taking soldier hostages.
+      - Some training sites were close to the Israeli border and observable from Israeli positions.
+    limitations:
+      - Public training does not establish exact-date foreknowledge by Israeli decision-makers.
+      - Hamas propaganda footage documents displayed capability/training, not the complete operational plan.
+
+  - id: reuters-erez-reopening-sept28-2023
+    publisher: Reuters
+    source_class: international_wire_reporting
+    date: 2023-09-28
+    url: https://www.shorenewsnetwork.com/israel-reopens-gaza-crossings/
+    canonical_media_record: https://www.reutersconnect.com/item/israel-ends-ban-on-workers-from-gaza-as-erez-crossing-reopened-in-gaza-city/dGFnOnJldXRlcnMuY29tLDIwMjM6bmV3c21sX1JDMkdIM0FWSkpYVg
+    supports:
+      - Israel reopened Gaza crossings after nearly two weeks of closure prompted by violent border protests.
+      - Roughly 18,000 Gazans held permits to work outside Gaza.
+      - Reopening followed mediation and reduced tensions.
+    limitations:
+      - Reopening is evidence of contemporaneous risk assessment / calibrated-control policy; it does not prove knowledge of the October 7 date.
+
+  - id: ap-september-border-violence-erez-closure
+    publisher: Associated Press
+    source_class: independent_news_reporting
+    date: 2023-09
+    url: https://apnews.com/article/cfd165eeead027bea372db9b1cc67874
+    supports:
+      - Violent protests and confrontations occurred along the Gaza border in September 2023.
+      - Israel closed Erez and restricted thousands of laborers during the escalation.
+      - Israeli force and strikes were used amid the confrontation.
+    limitations:
+      - Individual incidents and initiators must remain event-specific; the source does not establish that all escalation was directed by one actor.
+
+  - id: toi-commando-redeployment-huwara
+    publisher: Times of Israel / Kan reporting
+    source_class: major_israeli_news
+    date: 2023-12-05
+    event_date: 2023-10-05
+    url: https://www.timesofisrael.com/2-commando-companies-said-diverted-from-gaza-border-to-west-bank-days-before-oct-7/amp/
+    supports:
+      - Two Commando Brigade companies, around 100 soldiers, were moved from Gaza-border reinforcement to Huwara two days before October 7.
+      - IDF said these were backup / General Staff reinforcement forces and that routine Gaza-border deployment was unchanged.
+    limitations:
+      - The source does not establish the exact tasking of every redeployed soldier in Huwara.
+      - Backup-force removal can reduce surge capacity without changing the nominal routine roster.
+
+  - id: toi-huwara-oct5-security-and-settler-mobilization
+    publisher: Times of Israel
+    source_class: major_israeli_news
+    date: 2023-10-06
+    url: https://www.timesofisrael.com/no-injuries-as-terrorists-open-fire-on-israeli-family-in-west-banks-huwara/
+    supports:
+      - A Palestinian gunman fired on an Israeli family in Huwara on October 5 without physically injuring the family.
+      - Religious Zionism MK Zvi Sukkot erected a sukkah on Huwara's main road and ultranationalist settlers gathered.
+      - Additional military capacity was used to secure the settler/political gathering.
+    limitations:
+      - Genuine armed-attack context and settler/far-right mobilization must both remain in the causal field.
+      - Do not assume the separately reported additional infantry company and the two redeployed commando companies were the same unit/tasking.
+
+  - id: idf-huwara-oct5-statement
+    publisher: Israel Defense Forces
+    source_class: primary_military_statement_hebrew
+    date: 2023-10-05
+    url: https://www.idf.il/%D7%9B%D7%AA%D7%91%D7%95%D7%AA-%D7%95%D7%A2%D7%93%D7%9B%D7%95%D7%A0%D7%99%D7%9D/2023/%D7%90%D7%95%D7%A7%D7%98%D7%95%D7%91%D7%A8/%D7%9B%D7%95%D7%97%D7%95%D7%AA-%D7%A6%D7%94-%D7%9C-%D7%A4%D7%95%D7%A2%D7%9C%D7%99%D7%9D-%D7%9C%D7%A4%D7%99%D7%96%D7%95%D7%A8-%D7%94%D7%A2%D7%99%D7%9E%D7%95%D7%AA-%D7%91%D7%99%D7%9F-%D7%99%D7%A9%D7%A8%D7%90%D7%9C%D7%99%D7%9D-%D7%9C%D7%A4%D7%9C%D7%A1%D7%98%D7%99%D7%A0%D7%99%D7%9D-%D7%91%D7%97%D7%95%D7%95%D7%90%D7%A8%D7%94/
+    supports:
+      - IDF acknowledged Israeli and Palestinian civilians threw stones and forces used crowd-dispersal measures.
+      - IDF said soldiers fired after a Palestinian allegedly threw a block at an Israeli vehicle and reported a hit.
+    limitations:
+      - Primary institutional account, not independent adjudication of disputed fatal-shot attribution.
+
+  - id: ap-huwara-closures-oct2023
+    publisher: Associated Press
+    source_class: independent_news_reporting
+    date: 2023-10-06
+    url: https://apnews.com/article/ed4c7a1c1f3f3e499eac7da8f3489d21
+    supports:
+      - Palestinian shops and movement in Huwara were restricted after the October 5 events.
+      - The security response had durable effects on Palestinian civic/commercial life.
+    limitations:
+      - Later closure persistence and broader pattern require additional sources; do not infer every specific unit's role from town-level effects.
+
+  - id: toi-nova-idf-probe-2025
+    publisher: Times of Israel reporting on IDF investigation
+    source_class: major_israeli_news_on_internal_military_probe
+    date: 2025-04-03
+    url: https://www.timesofisrael.com/idf-okayed-nova-music-festival-but-didnt-inform-troops-deployed-at-border-probe-finds/
+    supports:
+      - IDF approved the Nova event but made no tailored defensive adjustments.
+      - No dedicated IDF force or military liaison was assigned to the party.
+      - Gaza-border troops were unaware that more than 3,500 people were gathered there.
+      - Nova was not raised during overnight military discussions despite suspicious Hamas indicators.
+      - The internal probe found the IDF failed to defend festival-goers.
+      - Probe concluded Nova was not a predetermined Hamas target and attackers encountered it after deviating from the route toward Netivot.
+    limitations:
+      - Internal military probe is evidence and requires independence/scope comparison.
+      - The investigation focused on Nova/Re'im-area events and did not resolve every broader command/political decision.
+
+  - id: ynet-nova-approval-force-concern
+    publisher: Ynet / Ynetnews
+    source_class: israeli_news_reporting_on_internal_probe
+    date: 2025
+    url: https://www.ynet.co.il/news/article/bytoy0qpkg
+    secondary_url: https://www.ynetnews.com/article/by00khoqpkg
+    supports:
+      - Local/brigade-level concern existed about available forces around the weekend/event approval.
+      - Higher-level approval ultimately allowed the event to proceed.
+    limitations:
+      - Publication-grade attribution should recover the actual approval file, objections, reversal and authorizing communications rather than rely only on later summaries.
+
+  - id: ynet-ronen-bar-affidavit-2025
+    publisher: Ynetnews reporting on sworn Supreme Court affidavit
+    source_class: sworn_official_account_via_major_israeli_news
+    date: 2025
+    url: https://www.ynetnews.com/article/sj8i6tq1xg
+    supports:
+      - Former Shin Bet chief Ronen Bar supplied a sworn account of unusual indicators and overnight warning/notification activity before October 7.
+      - Bar stated that the warning level assigned by Shin Bet was inadequate and accepted responsibility for failure.
+    limitations:
+      - Some exact notification times and completed contacts are disputed in later filings/reporting.
+      - Bar's account is a sworn participant account, not independent adjudication of every inter-agency timeline dispute.
+
+  - id: toi-ronen-bar-0303-warning
+    publisher: Times of Israel
+    source_class: reporting_on_sworn_affidavit
+    date: 2025
+    url: https://fr.timesofisrael.com/ronen-bar-netanyahu-sattendait-a-ce-que-je-lui-obeisse-en-cas-de-crise-constitutionnelle/
+    supports:
+      - Bar said all security agencies received a 03:03 alert concerning unusual preparations and possible Hamas offensive intentions.
+      - Bar said he later ordered the prime minister's military secretary updated.
+      - Bar explicitly said the alert level was wrong and constituted a Shin Bet failure.
+    limitations:
+      - French Times of Israel rendering of affidavit; original court filing should be retained if/when directly accessible.
+
+  - id: ynet-shinbet-internal-probe-2025
+    publisher: Ynetnews
+    source_class: reporting_on_shin_bet_internal_investigation
+    date: 2025
+    url: https://www.ynetnews.com/article/sju9cseoyl
+    supports:
+      - Shin Bet internal investigation said different action by the agency in prior years and the night of October 7 could have prevented the massacre.
+      - Ronen Bar publicly accepted responsibility for agency failure.
+      - Probe criticized long-running policy assumptions and coordination failures.
+    limitations:
+      - Internal review requires independence/scope audit and does not by itself assign political responsibility.
+
+  - id: idf-oct7-inquiries-hub
+    publisher: Israel Defense Forces
+    source_class: primary_internal_inquiry_repository
+    url: https://m.www.idf.il/en/mini-sites/710-the-inquiries/
+    supports:
+      - IDF publicly hosts multiple operational inquiries into October 7 battles, perceptions and preparedness.
+      - Inquiry purpose is operational learning and public presentation subject to security limitations.
+    limitations:
+      - Operational inquiry repository is not a substitute for independent state commission or criminal adjudication.
+
+  - id: idf-turgeman-expert-review-2025
+    publisher: Israel Defense Forces
+    source_class: primary_internal_expert_review
+    date: 2025-11
+    url: https://www.idf.il/315803
+    supports:
+      - Expert review of October 7 investigations concluded the surprise did not arise from an information vacuum and that unusual/high-quality information existed across IDF bodies.
+      - Review found that professional analysis could and should have produced a significant operational alert.
+      - Review identified years-long conceptual/intelligence failures, mismatch between threat and force posture, and failures to act meaningfully in critical hours.
+    limitations:
+      - Internal military review; exact individual knowledge and political responsibility remain separate questions.
+      - If the public URL changes, recover through the IDF October 7 inquiry archive and retained citations.
+
+  - id: ap-idf-systemic-probe-2025
+    publisher: Associated Press
+    source_class: independent_reporting_on_idf_probe
+    date: 2025-02-28
+    url: https://apnews.com/article/34988076bd5283686cb80678aff799ad
+    supports:
+      - IDF inquiry found Israel underestimated Hamas intentions and capabilities and was unprepared for the scale of the assault.
+      - The belief that Hamas did not want war influenced decisions during the final night.
+      - Attack signs existed in the hours before the assault.
+    limitations:
+      - Reporting on summarized military findings; use primary inquiry records for precise institutional wording.
+
+locks:
+  - STRATEGIC_SCENARIO_FOREKNOWLEDGE != EXACT_DATE_TIME_SCALE_FOREKNOWLEDGE.
+  - OPERATIONAL_PLAN_FOREKNOWLEDGE != CERTAINTY_OF_EXECUTION.
+  - CAPABILITY_SHIFT_WARNING != PROOF EVERY SENIOR OFFICIAL RECEIVED THE WARNING.
+  - SYSTEM_KNOWLEDGE != IDENTICAL_INDIVIDUAL_KNOWLEDGE.
+  - REPEATED_WARNING + NONACTION is a causal/accountability clue; it is not automatically deliberate setup.
+  - NOVA_APPROVAL + PROTECTION_GAP != PROOF NOVA WAS PLACED AS BAIT.
+  - NOVA_NOT_PREDETERMINED_HAMAS_TARGET is relevant counterevidence to a Nova-specific preplanned-target theory.
+  - GAZA_REINFORCEMENT_REDEPLOYMENT != PROOF EACH REDEPLOYED SOLDIER WAS TASKED TO PROTECT SETTLER MOBILIZATION.
+  - HUWARA_GENUINE_SECURITY_TRIGGER and HUWARA_FAR_RIGHT_SETTLER_MOBILIZATION can both be true.
+  - ASYMMETRIC_COERCIVE_ENFORCEMENT != IDEOLOGICAL_INTENT_OF_EVERY_SOLDIER.
+  - PROTECTION_ALLOCATION_ASYMMETRY != CALCULATED_SACRIFICE.
+  - CALCULATED_EXPOSURE requires conscious risk acceptance; CALCULATED_SACRIFICE additionally requires the accepted-death / instrumental-benefit edge.
