@@ -1,0 +1,43 @@
+schema: unum-lattice-news/node/v0.1
+id: medical-debt-credit-reporting-redress-reversal
+title: Medical-debt credit reporting and redress reversal
+family: analysis_framework
+subtype: consumer_credit_and_redress_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Tracks how medical debt can migrate from a care relationship into consumer-credit consequences, and how legal,
+    regulatory, voluntary industry, and judicial changes alter that pathway over time. The operator treats rulemaking,
+    vacatur, and private reporting practices as distinct seats rather than a single political verdict.
+  posture: evidence_bound
+current_state:
+  - nationwide_credit_reporting_practices_exclude_paid_medical_collections_and_many_low_balance_or_recent_medical_collections.
+  - current_CFPB_guidance_says_unpaid_medical_debt_over_500_and_more_than_365_days_delinquent_can_appear_on_credit_reports.
+  - CFPB_issued_a_January_2025_rule_to_broadly_restrict_medical_debt_reporting_and_creditor_use.
+  - federal_district_court_vacated_that_rule_July_11_2025_after_the_Bureau_and_plaintiffs_agreed_it_exceeded_FCRA_authority.
+  - current_CFPB_materials_mark_the_2025_rule_as_vacated_and_reference_only.
+required_trace:
+  - medical_bill_and_validity
+  - provider_or_collector
+  - furnishing_to_consumer_reporting_agency
+  - reporting_threshold_and_age
+  - credit_or_other_adverse_effect
+  - dispute_or_correction
+  - rule_or_case_change
+  - state_level_protections_if_any
+locks:
+  - rule_vacatur_is_not_evidence_that_medical_debt_has_no_harmful_credit_effect.
+  - the_vacated_rule_cannot_be_described_as_current_law.
+  - voluntary_credit_bureau_practices_and_federal_statutory_limits_are_not_the_same_authority.
+  - court_ruling_should_be_described_by_its_legal_holding_not_as_proof_of_partisan_or_corrupt_motive.
+source_bundle:
+  - source-medical-debt-and-nursing-home-ownership-2026-08-16
+relations:
+  - type: EXTENDS
+    target: medical-debt-and-extraordinary-collection-enforcement
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+  - type: EXTENDS
+    target: legality-laundering-and-false-voluntariness

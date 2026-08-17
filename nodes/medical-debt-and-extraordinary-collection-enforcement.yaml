@@ -1,0 +1,55 @@
+schema: unum-lattice-news/node/v0.1
+id: medical-debt-and-extraordinary-collection-enforcement
+title: Medical debt and extraordinary collection enforcement
+family: analysis_framework
+subtype: healthcare_debt_and_coercion_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Traces the transformation of medically necessary care into household debt and the enforcement channels that can
+    follow nonpayment, including collections, credit reporting, liens, lawsuits, attachment, garnishment, and delayed
+    care. For tax-exempt hospitals, federal tax law requires financial-assistance safeguards before extraordinary
+    collection actions; the operator tests whether those safeguards function in practice.
+  posture: evidence_bound
+core_trace:
+  - illness_injury_or_medical_need
+  - provider_and_insurance_payment_decision
+  - patient_balance
+  - financial_assistance_eligibility_and_notice
+  - payment_plan_financing_or_debt_sale
+  - collection_or_credit_reporting
+  - lien_lawsuit_attachment_garnishment_or_care_deferral_where_used
+  - household_income_asset_credit_or_health_consequence
+  - collector_provider_or_finance_revenue
+  - correction_appeal_or_debt_relief
+current_legal_baseline:
+  - covered_501c3_hospitals_must_make_reasonable_efforts_to_determine_FAP_eligibility_before_ECAs.
+  - IRS_ECA_categories_include_debt_sales_credit_reporting_care_deferral_or_denial_and_legal_process.
+  - IRS_examples_include_liens_foreclosure_bank_or_property_attachment_civil_actions_arrest_body_attachment_and_wage_garnishment.
+  - if_a_patient_is_found_FAP_eligible_hospitals_can_be_required_to_refund_excess_payments_and_reverse_available_ECAs.
+  - current_CFPB_guidance_says_unpaid_medical_debt_over_500_and_more_than_365_days_delinquent_can_appear_on_credit_reports.
+required_discriminators:
+  - whether_provider_is_subject_to_501r
+  - whether_bill_is_valid_and_correct
+  - whether_No_Surprises_Act_or_other_protection_applies
+  - whether_financial_assistance_was_available_and_effectively_disclosed
+  - whether_ECA_was_taken_and_by_whom
+  - whether_debt_was_sold
+  - realized_household_consequence
+  - collection_revenue_and_terminal_beneficiary
+locks:
+  - medical_debt_is_not_predatory_collection_by_definition.
+  - ability_to_use_an_ECA_is_not_evidence_that_every_hospital_uses_it.
+  - 501r_requirements_apply_to_covered_tax_exempt_hospital_facilities_not_every_provider_or_creditor.
+  - legitimate_collection_of_a_valid_bill_must_remain_distinct_from_failure_to_apply_required_assistance_or_abusive_collection.
+source_bundle:
+  - source-medical-debt-and-nursing-home-ownership-2026-08-16
+relations:
+  - type: EXTENDS
+    target: compulsory-dependency-and-survival-enclosure
+  - type: EXTENDS
+    target: public-healthcare-to-conglomerate-return
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure

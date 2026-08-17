@@ -1,0 +1,52 @@
+schema: unum-lattice-news/node/v0.1
+id: nursing-home-ownership-opacity-and-care-quality-risk
+title: Nursing-home ownership opacity and care-quality risk
+family: analysis_framework
+subtype: long_term_care_ownership_and_quality_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Traces Medicare/Medicaid-financed nursing-home care through facility ownership, parent companies, private equity,
+    REITs, real-estate leases, management companies, staffing companies, cash-management services, and other parties
+    that can shape cost, staffing, and care. Ownership type is an investigative variable, not a quality verdict.
+  posture: evidence_bound
+current_evidence:
+  - CMS_requires_detailed_SNF_and_nursing_facility_ownership_management_and_additional_party_disclosure.
+  - CMS_defines_and_collects_private_equity_and_REIT_status_for_relevant_owners_or_managers.
+  - CMS_monthly_public_owner_data_include_ownership_percentage_private_equity_REIT_holding_company_management_company_investment_firm_trust_parent_company_and_other_fields.
+  - CMS_cites_research_associating_some_private_equity_or_REIT_ownership_with_worse_resident_outcomes_staffing_or_spending.
+  - HHS_OIG_2025_SFF_review_found_some_owners_stood_out_as_owning_many_low_quality_nursing_homes_and_said_ownership_matters_to_quality_improvement.
+  - HHS_OIG_has_an_active_project_examining_CMS_and_state_response_to_quality_declines_after_changes_in_ownership.
+required_trace:
+  - facility_and_CMS_certification
+  - Medicare_Medicaid_and_private_payment
+  - direct_owner
+  - parent_company
+  - private_equity_fund_or_other_investment_vehicle
+  - REIT_or_real_estate_owner_and_lease
+  - management_staffing_consulting_financial_and_cash_management_parties
+  - related_party_payments_or_fees
+  - staffing_levels_and_turnover
+  - deficiencies_hospitalizations_mortality_and_other_quality_measures
+  - change_of_ownership_timeline
+  - survey_enforcement_and_corrective_action
+  - owner_or_investor_return_where_recoverable
+locks:
+  - ownership_type_is_not_a_quality_verdict.
+  - research_association_is_not_actor_specific_causation.
+  - Medicare_or_Medicaid_revenue_is_not_owner_profit_dollar_for_dollar.
+  - a_complex_LLC_REIT_or_fund_structure_is_not_wrongdoing_by_definition.
+  - quality_comparison_requires_facility_level_risk_adjustment_timing_and_counterevidence.
+source_bundle:
+  - source-medical-debt-and-nursing-home-ownership-2026-08-16
+relations:
+  - type: EXTENDS
+    target: entity-kinship-and-identity-resolution
+  - type: EXTENDS
+    target: public-healthcare-to-conglomerate-return
+  - type: EXTENDS
+    target: administrative-moral-distance
+  - type: EXTENDS
+    target: whole-circuit-corporate-gain-accounting
