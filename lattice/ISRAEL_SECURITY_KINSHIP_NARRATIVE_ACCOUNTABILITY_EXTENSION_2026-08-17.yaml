@@ -6,20 +6,28 @@ status: active_extension
 sources:
   - sources/source-israel-bilingual-narrative-security-kinship-accountability-2023-2026.yaml
   - sources/source-self-exoneration-accountability-israel-trump-2025-2026.yaml
+  - sources/source-netanyahu-audience-differentiated-framing-2015-2026.yaml
 methodology:
   - docs/SELF_INVESTIGATION_INDEPENDENCE_AND_ACCOUNTABILITY_v0_1.md
   - docs/STATED_JUSTIFICATION_VS_OBSERVED_CONDUCT_v0_1.md
   - docs/EXTENSIBLE_EVIDENCE_GRAMMAR_v0_1.md
+  - docs/CLUE_RETENTION_AND_NONCOMPRESSION_v0_1.md
 
 new_nodes:
   - id: israeli-security-institutional-kinship
     ref: nodes/israeli-security-institutional-kinship.yaml
     type: ecology
+  - id: benjamin-netanyahu
+    ref: nodes/people/benjamin-netanyahu.yaml
+    type: person
 
 new_grammar:
   - term: AUDIENCE_DIFFERENTIATED_FRAMING
     parent: STATED_JUSTIFICATION
-    meaning: materially different framing supplied to different linguistic or political audiences; does not itself prove deception
+    meaning: materially different framing supplied to different linguistic or political audiences; requires a recoverable comparison surface and does not itself prove deception
+  - term: MATERIAL_POLICY_PRESENTATION_DIVERGENCE
+    parent: AUDIENCE_DIFFERENTIATED_FRAMING
+    meaning: paired or near-paired statements on substantially the same policy object materially differ in the presented policy position
   - term: TRANSLATION_DISPUTE
     parent: disputed
     meaning: dispute over translation or semantic scope that materially affects interpretation
@@ -78,11 +86,31 @@ narrative_findings:
       IDF later said maximum damage referred to Hamas military capabilities, rejected the paraphrase damage-not-accuracy, and argued diyuk should be translated as exactness in context.
     correct_read: preserve both records and compare against observed conduct; do not let the later clarification replace the original statement surface.
   - id: smotrich-de-facto-sovereignty
-    relation: AUDIENCE_DIFFERENTIATED_FRAMING
+    relation: STATED_OBJECTIVE
     Hebrew_domestic_record: >-
       Knesset record quotes Smotrich describing de facto sovereignty, normalization of settlements and administrative/legal preparation for later formal sovereignty in the West Bank.
     correct_read: >-
-      Explicit domestic annexation preparation is relevant to territorial-purpose analysis and should not be flattened into generic security/administrative vocabulary.
+      This is an explicit domestic territorial-purpose statement by a senior minister. It is relevant to annexation/territorial-purpose analysis and should not be flattened into generic security or administrative vocabulary. It is not, by itself, AUDIENCE_DIFFERENTIATED_FRAMING because no paired English/international surface is required or supplied here.
+  - id: netanyahu-2015-statehood-pair
+    relation: MATERIAL_POLICY_PRESENTATION_DIVERGENCE
+    domestic_surface: >-
+      Hebrew domestic pre-election statement said a Palestinian state would not arise while Netanyahu remained prime minister.
+    international_surface: >-
+      Three days later Netanyahu told NBC in English that he wanted a sustainable peaceful two-state solution while denying a policy change.
+    correct_read: >-
+      Preserve election timing, same-speaker identity and Netanyahu's denial of a policy change; material divergence does not by itself prove deceptive motive.
+  - id: netanyahu-2023-2024-displacement-pair
+    relation: MATERIAL_POLICY_PRESENTATION_DIVERGENCE
+    domestic_surface: >-
+      A Hebrew Likud faction-meeting report quoted Netanyahu saying he was working to facilitate voluntary migration of Gazans and that the obstacle was finding receiving states.
+    international_surface: >-
+      Sixteen days later an English international-facing message said Israel had no intention of displacing Gaza's civilian population.
+    correct_read: >-
+      This is stronger than tonal difference. Danny Danon's attribution of the reversal to international pressure is relevant named testimony but not independent proof of Netanyahu's private motive.
+  - id: netanyahu-2025-same-day-pressers
+    relation: AUDIENCE_DIFFERENTIATED_FRAMING
+    correct_read: >-
+      Same-day English and Hebrew press conferences used materially different emphasis, but current evidence supports differentiated framing more clearly than direct policy contradiction.
 
 accountability_findings:
   - id: idf-formal-independence-claim
@@ -112,6 +140,12 @@ responsibility_pathways:
   - PROTECTION_OR_IMPUNITY
   - COMMAND_RESPONSIBILITY_FINDING
 
+recovery_surfaces:
+  - research/investigations/ISRAEL_HEBREW_ENGLISH_NARRATIVE_AND_ACCOUNTABILITY_SPLIT_2026-08-17.md
+  - research/investigations/NETANYAHU_HEBREW_ENGLISH_AUDIENCE_DIVERGENCE_2015_2026.md
+  - research/investigations/SELF_EXONERATION_ACCOUNTABILITY_DECAY_ISRAEL_TRUMP_2026-08-17.md
+  - docs/SELF_INVESTIGATION_INDEPENDENCE_AND_ACCOUNTABILITY_v0_1.md
+
 locks:
   - Chain of command exists != every harm ordered from the top.
   - No recovered direct order != no superior responsibility.
@@ -120,6 +154,7 @@ locks:
   - Personnel kinship != identical institution.
   - Hebrew != truth and English != lie by default.
   - Material audience divergence must be preserved when evidenced.
+  - A single domestic-language statement != audience-differentiated framing without a comparison surface.
   - Self-investigation != independent adjudication.
   - Self-exoneration != debunking.
   - Repeated self-exoneration + external contradiction + weak consequences can lower institutional trust rationally.
