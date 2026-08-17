@@ -1,0 +1,146 @@
+schema: unum-lattice-news/node/v0.2
+id: christian-nationalism
+title: Christian Nationalism
+entity_type: movement
+actor_roles:
+  - advocate
+status: seed
+updated: 2026-08-17
+summary:
+  text: >-
+    A political-nationalist ideology and movement that seeks to bind national identity, public authority,
+    law, and social order to a privileged conception of Christianity. It is not Christianity itself and
+    should not be inferred from Christian identity. In the contemporary United States, peer-reviewed research
+    links Christian nationalism to nationalist pronatalism, selective pronatalism, replacement-threat beliefs,
+    and more punitive anti-abortion attitudes. These findings support investigation of a broader reproductive-
+    autonomy convergence involving pronatalism, abortion restriction, patriarchal gender ordering, barriers to
+    care for pregnant minors, and some defenses of minor marriage. The evidence supports pattern-level
+    convergence; it does not establish that every Christian nationalist supports every such policy or that all
+    relevant states and organizations operate under a single command structure.
+  posture: supported inference
+aliases:
+  - Christian nationalist movement
+hashtags:
+  - christian-nationalism
+  - nationalism
+  - pronatalism
+  - reproductive-autonomy
+  - bodily-autonomy
+  - gender-order
+
+authority:
+  has_authority: false
+  seat: political ideology / trans-organizational movement
+  source: distributed movement, political, religious, advocacy, electoral, and policy networks
+  jurisdiction: United States with transnational analogues requiring separate evidence
+  level: other
+  term_start: null
+  term_end: null
+  oversight: []
+  appeal_or_review: []
+
+vulnerability:
+  roles: []
+  protection_needs: []
+
+funding:
+  gives_to: []
+  receives_from: []
+
+constituencies: []
+
+current_evidence:
+  observed: []
+  stated: []
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Christian nationalism is distinct from Christianity, Christian identity, or ordinary religious commitment; it is a political ideology concerning nation, authority, and social order.
+    - Peer-reviewed nationally representative research identifies Christian nationalism as a strong predictor of nationalist pronatalism.
+    - 2026 peer-reviewed research distinguishes general pronatalism from selective pronatalism and finds Christian nationalism, unlike ordinary religious commitment, associated with selective pronatalism aimed at preserving demographic dominance and with replacement-theory belief.
+    - Peer-reviewed research finds Christian nationalism and White nationalism independently associated with support for arresting women who obtain abortions, with the strongest support where the two overlap.
+    - Anti-abortion policy is a reproductive-autonomy constraint as a matter of legal effect because it removes or narrows the pregnant person's authority to terminate pregnancy; supporters' fetal-protection rationale is relevant to motive but does not erase that effect.
+    - A pattern-level reproductive-control investigation is warranted where pronatalism, abortion restriction or punishment, patriarchal gender-order beliefs, barriers to minor abortion assistance, and defenses of minor marriage repeatedly converge.
+    - Distributed state implementation does not itself defeat a movement-level pattern; coordination, common funding, model legislation, shared personnel, rhetoric, and organizations remain separate relation questions.
+  disputed: []
+  ambiguous:
+    - The degree to which any particular anti-abortion, pronatalist, child-marriage, or parental-control campaign is organizationally connected to Christian-nationalist institutions must be established case by case.
+    - Some relevant policies may arise from conservative religious, partisan, patriarchal, economic, or other motives without a demonstrable Christian-nationalist causal edge.
+  unknowns:
+    - The full donor, legal-network, model-legislation, church, think-tank, political-party, and personnel conductance connecting the currently identified policy clusters has not yet been exhaustively mapped.
+    - The extent to which selective pronatalism and white-nationalist demographic politics directly shape particular state bills remains unresolved without actor-specific evidence.
+  missing_or_withheld: []
+  counterevidence:
+    - Many Christians reject Christian nationalism, and Christian identity alone is not evidence of Christian-nationalist ideology.
+    - The research does not show that every Christian nationalist supports child marriage, lowering age of consent, rape, or criminal punishment of abortion patients.
+    - Opposition to abortion can arise from non-nationalist moral or religious beliefs; actor-level classification requires more than an anti-abortion position.
+
+timeline:
+  - date: 2022
+    event: Peer-reviewed research reported a strong association between Christian nationalism and nationalist pronatalism.
+    posture: observed
+  - date: 2025-06-28
+    event: Peer-reviewed research reported Christian nationalism and White nationalism as strong predictors of support for arresting women who obtain abortions.
+    posture: observed
+  - date: 2026-03-14
+    event: Peer-reviewed research distinguished general from selective pronatalism and linked Christian nationalism specifically to selective pronatalism and replacement-theory belief.
+    posture: observed
+  - date: 2026-08-17
+    event: UNUM Lattice News opened a parent ideology node and convergence investigation linking reproductive-autonomy mechanisms while preserving separate proof burdens for coordination and actor intent.
+    posture: observed
+
+relations:
+  - type: ASSOCIATED_WITH
+    target: nationalist-pronatalism
+    posture: supported_inference
+    evidence:
+      - source-christian-nationalism-reproductive-autonomy-convergence-2026-08-17
+    scope: population-level ideological association
+    notes: Association is established in peer-reviewed survey research; individual support requires actor-specific evidence.
+  - type: ASSOCIATED_WITH
+    target: selective-pronatalism
+    posture: supported_inference
+    evidence:
+      - source-christian-nationalism-reproductive-autonomy-convergence-2026-08-17
+    scope: demographic-dominance pronatalism
+    notes: 2026 research associates Christian nationalism and replacement-theory belief with selective rather than merely general pronatalism.
+  - type: CONVERGES_WITH
+    target: reproductive-autonomy-constraint
+    posture: supported_inference
+    evidence:
+      - source-christian-nationalism-reproductive-autonomy-convergence-2026-08-17
+      - source-sexual-autonomy-protection-asymmetry-2026-08-14
+    scope: pattern-level investigation
+    notes: >-
+      This relation records converging mechanisms and research associations, not a claim that every relevant law,
+      state, legislator, church, or organization is centrally coordinated by Christian nationalism.
+
+stories: []
+
+unresolved_questions:
+  - Which organizations and funders connect Christian-nationalist pronatalism to specific abortion, parental-control, child-marriage, and reproductive-policy campaigns?
+  - Which model-bill, litigation, church, think-tank, activist, and donor networks provide conductance across state boundaries?
+  - Where do White-nationalist or replacement-theory networks overlap personnel, funding, rhetoric, or policy with Christian-nationalist reproductive politics?
+  - Which documented child-marriage opponents of reform are connected to Christian-nationalist organizations, and which are better explained by other religious, patriarchal, libertarian, or local traditions?
+  - Which attempts to change age-of-consent law actually occurred after 2021, and which claims instead concern marriage-age or marital exemptions and must remain separately typed?
+  - How often do rape/incest abortion exceptions fail in practice because of reporting, gestational, provider, parental-consent, or travel barriers even where an exception exists on paper?
+
+corrections: []
+references:
+  - source-christian-nationalism-reproductive-autonomy-convergence-2026-08-17
+  - source-sexual-autonomy-protection-asymmetry-2026-08-14
+
+locks:
+  - Christianity != Christian nationalism.
+  - Christian identity != Christian-nationalist ideology.
+  - Anti-abortion rationale != absence of bodily-autonomy constraint.
+  - Convergence != coordination.
+  - Lack of proven central coordination != lack of movement-level pattern.
+  - Different states, churches, or organizations do not become causally independent merely because implementation is distributed.
+  - Shared outcome alone does not prove common command.
+  - Child marriage != rape in every case.
+  - Minimum marriage age != age of consent.
+  - Marital exemption != proof a particular offender used it.
+  - Do not infer that every Christian nationalist supports every reproductive-control policy.
+  - Do not use Christians who reject Christian nationalism as counterevidence to what Christian-nationalist actors or institutions demonstrably advocate.
+  - Claims about rape facilitation, abuse protection, intent, coordination, or criminal conduct require their own evidence chains.
