@@ -1,0 +1,73 @@
+schema: unum-lattice-news/node/v0.2
+id: white-lives-matter-movement-lineage
+title: White Lives Matter Movement Lineage
+entity_type: movement
+actor_roles:
+  - advocate
+status: seed
+updated: 2026-08-17
+summary:
+  text: >-
+    A white-supremacist slogan and movement lineage that predates the April 2021 Telegram initiative.
+    External monitoring traces the phrase's white-supremacist use to early 2015 as a racist counter-response
+    to Black Lives Matter. The April 2021 initiative explicitly distinguishes itself from prior WLM groups
+    while also describing itself as continuing a broader, older pro-White / white-racial-consciousness struggle.
+    Organizational identity, personnel continuity, movement lineage, and local-cell relation are therefore
+    separate evidentiary questions and must not be collapsed into a single connected/disconnected binary.
+  posture: supported inference
+aliases:
+  - WLM movement
+  - White Lives Matter movement
+hashtags:
+  - WhiteLivesMatter
+  - white-supremacy
+  - white-nationalism
+current_evidence:
+  observed: []
+  stated:
+    - The April 2021 initiative's manuals say it is not the same as prior WLM groups while separately situating itself within a longer pro-White / white-racial-consciousness effort.
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - The WLM slogan/movement lineage predates the April 2021 Telegram initiative.
+    - The 2021 initiative is a later movement instantiation / organizing configuration rather than the origin of the WLM slogan or broader white-supremacist movement lineage.
+  disputed: []
+  ambiguous:
+    - The exact personnel, administrator, infrastructure, and organizational continuity between pre-2021 WLM formations and the April 2021 initiative remains relation-specific and incompletely resolved.
+  unknowns:
+    - The full genealogy of channels, groups, organizers, and successor surfaces between earlier WLM formations and the April 2021 initiative.
+  missing_or_withheld:
+    - Manual 1.0 or any earlier version referenced by the existence of Manual 2.0 has not been recovered in the current evidence set.
+  counterevidence: []
+timeline:
+  - date: 2015
+    event: External extremist-monitoring sources document white-supremacist promotion of the White Lives Matter phrase as a racist response to Black Lives Matter.
+    posture: observed
+  - date: 2016
+    event: External reporting documents WLM movement activity involving multiple white-supremacist actors and organizations while noting ambiguity in WLM's organizational form.
+    posture: observed
+  - date: 2021-04
+    event: The current Telegram-centered WLM initiative states that it launched in April 2021 as a new initiative while continuing the broader pro-White struggle.
+    posture: stated
+relations:
+  - type: HAS_LATER_INSTANTIATION
+    target: white-lives-matter-2021-initiative
+    posture: supported_inference
+    evidence:
+      - source-white-lives-matter-movement-lineage
+    scope: movement lineage versus organizational identity
+    notes: >-
+      This relation does not assert that the April 2021 initiative is the same legal organization as any prior WLM group.
+stories: []
+unresolved_questions:
+  - What pre-2021 WLM channels, organizers, slogans, branding, documents, or infrastructure can be traced into the 2021 initiative with recoverable evidence?
+  - Can Manual 1.0 or an earlier WLM activist-manual version be recovered and dated?
+  - Which continuity claims are ideological, tactical, personnel-based, infrastructural, organizational, or merely nominal?
+corrections: []
+references:
+  - source-white-lives-matter-movement-lineage
+locks:
+  - Organizational discontinuity is not movement discontinuity.
+  - First recovered version is not first version; first recovered document is not the origin event.
+  - Missing proof of a relation is not affirmative proof of causal disconnection.
+  - Do not attribute earlier actors' conduct to the April 2021 initiative without relation-specific evidence.
