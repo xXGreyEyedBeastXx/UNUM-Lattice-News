@@ -1,0 +1,161 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-nova-organizer-affiliations-and-boundary-analysis-2018-2026
+title: Nova organizer identities, affiliations, institutional crossings, and boundary analysis
+accessed: 2026-08-17
+purpose: >-
+  Distinguish the Nova festival's public peace/love/internationalist ethos from the actual affiliations,
+  organizational identities, security relationships, funding relationships, and political/national attachments
+  of its organizers and successor bodies. Test whether cosmopolitan or cross-national sociality coexists with
+  exclusion or indifference toward Palestinians in Gaza and the occupied West Bank without assuming that
+  internationalism equals anti-nationalism or Palestinian solidarity.
+
+sources:
+  - id: ynet-kzat-laneshama-organizers-2023
+    publisher: Ynet
+    source_class: high_quality_news_hebrew
+    url: https://www.ynet.co.il/news/article/hjt6ar676
+    supports:
+      - Nimrod Arnin, Omri Sassi and Omri Kochavi identified as organizers from Kzat LaNeshama and founders of Nova
+      - Arnin said the company was created to unite young people who wanted to dance
+    limitations:
+      - post-attack statement; does not establish pre-attack political ideology
+
+  - id: checkid-kzat-laneshama-2026
+    publisher: CheckID
+    source_class: business_registry_aggregator
+    url: https://www.checkid.co.il/company/%D7%A7%D7%A6%D7%AA-%D7%9C%D7%A0%D7%A9%D7%9E%D7%94-%D7%91%D7%A2~%D7%9E-515797660
+    supports:
+      - KZAT LANESHAMA LTD is an active Israeli private company incorporated in 2018
+      - 2026 company data identifies Ofir Amir as shareholder/director and legal records connect Omri Sassi and Yagil Rimoni to the company
+    limitations:
+      - current registry snapshot may reflect ownership/role changes after October 2023
+      - use official Companies Authority records for publication-grade historical ownership if needed
+
+  - id: nova-exhibition-founders-current
+    publisher: Nova Exhibition
+    source_class: primary_organization_site
+    url: https://novaexhibition.squarespace.com/about-the-exhibit
+    supports:
+      - current exhibition surface lists Omri Sassi, Yoni Feingold, Ofir Amir and Yagil Rimoni as Nova founders
+      - exhibit has U.S., Canadian, UK and UJA partners
+    limitations:
+      - later memorial/exhibition identity must not be silently equated with October 2023 legal event-production ownership
+
+  - id: tribe-of-nova-current
+    publisher: Nova Tribe Community Association
+    source_class: primary_organization_site
+    url: https://www.tribeofnova.com/
+    supports:
+      - festival described as attracting people from 36 countries under friends, love and infinite freedom framing
+      - current association is a survivor/bereaved-family support and advocacy body
+      - current organization has international teams and philanthropic infrastructure
+    limitations:
+      - post-October-7 association is not identical to pre-attack festival production company
+
+  - id: tribe-of-nova-hebrew-objectives
+    publisher: Nova Tribe Community Association
+    source_class: primary_organization_site_hebrew
+    url: https://tribeofnova.co.il/pages/%D7%9E%D7%98%D7%A8%D7%95%D7%AA-%D7%94%D7%A2%D7%9E%D7%95%D7%AA%D7%94
+    supports:
+      - association objectives include social responsibility, fraternity, unconditional love, tolerance, acceptance of the other, volunteering, leadership, ecology and environmental protection
+    limitations:
+      - values document does not by itself establish the political boundaries of who is included in 'the other'
+
+  - id: tribe-of-nova-hebrew-team-2026
+    publisher: Nova Tribe Community Association
+    source_class: primary_organization_site_hebrew
+    url: https://tribeofnova.org.il/%D7%A6%D7%95%D7%95%D7%AA-%D7%94%D7%A2%D7%9E%D7%95%D7%AA%D7%94/
+    supports:
+      - Omri Kochavi currently serves as survivor/project manager
+      - association has a dedicated public-advocacy/resource-development function described in Hebrew as hasbara
+    limitations:
+      - current staff structure is post-attack and must not be back-projected into 2023 event ideology
+
+  - id: ctech-high-tech-command-center-2023
+    publisher: CTech / Calcalist
+    source_class: high_quality_business_news
+    url: https://www.calcalistech.com/ctechnews/article/sjcr8mfxa
+    supports:
+      - Guy Katsovich contacted Nimrod Arnin immediately after October 7 and their work became part of a High-Tech Command Center
+      - command center located missing people and distributed equipment to more than 200 IDF units
+      - Arnin and Nova production data were part of the initial operational response
+    limitations:
+      - post-attack conduct; does not establish pre-attack intelligence affiliation or ideology
+
+  - id: katsovich-linkedin-command-center
+    publisher: Guy Katsovich / LinkedIn
+    source_class: primary_personal_statement
+    url: https://www.linkedin.com/posts/guykatsovich_%D7%A9%D7%9C%D7%95%D7%A9%D7%94-%D7%95%D7%97%D7%A6%D7%99-%D7%A9%D7%91%D7%95%D7%A2%D7%95%D7%AA-%D7%9E%D7%90%D7%96-%D7%A9%D7%91%D7%AA-%D7%94%D7%A9%D7%97%D7%95%D7%A8%D7%94-1-%D7%91-8-activity-7125214046458425344-R0q7
+    supports:
+      - Katsovich says he and Arnin built an authoritative missing-persons database used by command centers and security bodies
+    limitations:
+      - describes emergency response and missing-person work, not targeting operations in Gaza
+
+  - id: arnins-current-linkedin
+    publisher: Nimrod Arnin / LinkedIn
+    source_class: primary_profile
+    url: https://il.linkedin.com/in/nimrod-arnin
+    supports:
+      - Arnin identifies as Tribe of Nova community founder and business/tech professional
+    limitations:
+      - current indexed profile does not expose all historical roles
+
+  - id: grayzone-cobalt-complex-lead-2025
+    publisher: The Grayzone
+    source_class: adversarial_investigative_lead
+    url: https://thegrayzone.com/2025/04/22/nova-founder-israeli-intel/
+    supports:
+      - reports, based on an archived/observed Arnin LinkedIn description, that Arnin co-founded Cobalt Complex to support Israeli intelligence and that it was later integrated into Aman
+    limitations:
+      - high-claim partisan source; primary historical LinkedIn record or official military documentation should be recovered before promoting the Aman-integration claim to confirmed
+      - article makes additional broader claims not adopted by this source bundle
+
+  - id: jpost-organizers-love-country-2023
+    publisher: Jerusalem Post / Walla
+    source_class: news_report
+    url: https://www.jpost.com/arab-israeli-conflict/gaza-news/article-774287
+    supports:
+      - organizers Omri Sassi and Nimrod Arnin publicly said their love for the country persisted after October 7
+    limitations:
+      - patriotic attachment does not establish a particular nationalist ideology, party affiliation, settlement position or view of Palestinians
+
+  - id: afmda-gala-sassi-2024
+    publisher: Israel National News / AFMDA event reporting
+    source_class: event_report
+    url: https://www.israelnationalnews.com/news/400723
+    supports:
+      - Omri Sassi performed as DJ at an AFMDA gala whose host organization explicitly described the evening as Jewish and Zionist pride
+    limitations:
+      - performance at an event != endorsement of every organizer statement or a personal ideological affiliation
+
+  - id: uja-nova-support
+    publisher: UJA-Federation of New York
+    source_class: primary_funder_site
+    url: https://www.ujafedny.org/israel-at-war
+    supports:
+      - Tribe of Nova is a significant recipient within UJA's post-October-7 Israel relief portfolio
+    limitations:
+      - funding relationship is post-attack and survivor-support oriented; does not establish pre-attack organizer ideology
+
+  - id: ocha-gaza-movement-july-2023
+    publisher: UN OCHA occupied Palestinian territory
+    source_class: international_humanitarian_monitoring
+    url: https://www.ochaopt.org/content/movement-and-out-gaza-update-covering-july-2023
+    supports:
+      - before October 7, most Gaza Palestinians were not eligible even to apply for Israeli exit permits
+      - exit categories were limited primarily to laborers, traders, patients/companions and aid workers
+      - Gaza movement was highly restricted under the blockade
+    limitations:
+      - structural access restriction does not show Nova organizers personally denied a Palestinian applicant or designed the permit regime
+
+locks:
+  - FESTIVAL_ETHOS != ORGANIZER_IDEOLOGY.
+  - INTERNATIONAL_ATTENDANCE != PALESTINIAN_INCLUSION.
+  - COSMOPOLITANISM != ANTI_NATIONALISM.
+  - LOVE_PEACE_FREEDOM_RHETORIC != POSITION_ON_OCCUPATION_OR_PALESTINIAN_RIGHTS.
+  - POST_ATTACK_SECURITY_AFFILIATION != PRE_ATTACK_INTELLIGENCE_ROLE without historical evidence.
+  - PATRIOTIC_ATTACHMENT != SETTLER_OR_RELIGIOUS_NATIONALIST_IDEOLOGY.
+  - EVENT_APPEARANCE != PERSONAL_IDEOLOGICAL_ENDORSEMENT.
+  - PHILANTHROPIC_PARTNERSHIP != CONTROL.
+  - ORGANIZER_ROSTER_CHANGED_OVER_TIME; resolve legal/company/festival/foundation/exhibition identities separately.
+  - Gaza residents' structural inability to attend != organizer-specific exclusion policy.
