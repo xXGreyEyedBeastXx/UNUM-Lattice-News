@@ -1,0 +1,128 @@
+schema: unum-lattice-news/mesh/v0.1
+id: compulsory-dependency-and-survival-enclosure-2026-08-16
+title: Compulsory dependency, survival enclosure, and substantive freedom
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - unum-harm-mesh-2026-08-16
+operators:
+  - compulsory-dependency-and-survival-enclosure
+  - legality-laundering-and-false-voluntariness
+  - labor-market-power-and-wage-extraction
+  - public-assistance-labor-cost-supplementation
+  - power-capacity-accumulation
+  - redress-capture-and-correction-failure
+source_bundle:
+  - source-compulsory-dependency-legal-baseline-2026-08-16
+
+core_question: >-
+  When formal legal freedom coexists with state-backed or institutionally enforced conditions on
+  healthcare, food, employment, confinement, housing, legal status, or other necessities, how much
+  meaningful refusal, exit, bargaining, movement, and self-direction remains, what is extracted through
+  the condition, who gains power or value from it, and what peaceful correction paths remain usable?
+
+root_distinctions:
+  - literal_legal_ownership != structural_domination
+  - regulation != ownership
+  - formal_choice != meaningful_choice
+  - legal_freedom != practical_exit
+  - benefit_recipient != free_bargaining_position
+  - payment_or_employment != proof_of_noncoercive_exchange
+  - survival_dependency != consent_to_any_terms_offered
+
+current_us_baseline:
+  federal_health_insurance:
+    state: NO_CURRENT_FEDERAL_MONETARY_PENALTY_FOR_NONCOVERAGE
+    evidence:
+      - source-irs-individual-shared-responsibility-2026
+    note: >-
+      The federal minimum-essential-coverage provision remains in law, but the federal shared-responsibility
+      payment has been zero since 2019. State-level mandates and employer-linked dependency require separate tracing.
+  medicaid_work_condition:
+    state: EXPANDING_STATUTORY_CONDITION
+    evidence:
+      - source-cms-medicaid-community-engagement-2026
+      - source-cms-medicaid-eligibility-changes-2026
+    note: >-
+      Public Law 119-21 conditions eligibility for many applicable adults on community engagement beginning
+      January 1 2027 unless states implement earlier; CMS describes an 80-hour monthly threshold.
+  snap_work_condition:
+    state: ACTIVE_STATUTORY_CONDITION
+    evidence:
+      - source-usda-snap-work-requirements-2026
+    note: >-
+      Many ABAWD recipients must satisfy 80 hours per month of work or qualifying activity or face time limits
+      and benefit loss unless exempt.
+  prison_labor:
+    state: CONSTITUTIONAL_EXCEPTION_FOR_COMPELLED_LABOR_AFTER_CONVICTION
+    evidence:
+      - source-constitution-thirteenth-amendment
+      - source-constitution-thirteenth-exception
+  liberty:
+    state: PROTECTED_BUT_NOT_CATEGORICAL_EXIT_FROM_GOVERNMENT
+    evidence:
+      - source-constitution-individual-rights
+      - source-constitution-liberty-due-process
+    note: >-
+      Constitutional liberty limits government power in important domains, but current constitutional doctrine
+      does not recognize a general right to live wholly outside taxation, law, or government regulation.
+
+mesh_trace:
+  - necessity_or_liberty_interest
+  - state_or_private_gatekeeper
+  - condition_of_access
+  - enforcement_or_loss_mechanism
+  - realistic_alternatives
+  - cost_of_refusal
+  - labor_money_data_behavior_or_subordination_extracted
+  - public_private_or_state_capacity_gain
+  - health_material_or_agency_harm
+  - appeal_exit_union_vote_litigation_or_other_redress
+  - reproduced_or_broken_dependency
+
+survival_enclosure_test:
+  - Is the resource optional or necessary for health, food, shelter, liberty, legal presence, or livelihood?
+  - Can a person refuse without catastrophic material loss?
+  - Does a public rule force dependence on a private intermediary or employer-linked gatekeeper?
+  - Does private control of a necessity become enforceable through public law, eligibility, debt, licensing, policing, or confinement?
+  - Is labor formally voluntary while health insurance, housing, food, transportation, or legal status make exit unrealistic?
+  - Who captures the value, cost saving, compliance, or capacity created by the condition?
+  - Who has power to change the rule and who bears the consequences of refusing it?
+
+harm_measurement:
+  material:
+    - lost_benefit_or_coverage
+    - uncompensated_or_undercompensated_labor
+    - debt_or_fee_burden
+    - foregone_income
+    - housing_food_or_health_instability
+  agency:
+    - constrained_exit
+    - constrained_refusal
+    - constrained_movement
+    - dependency_on_employer_or_program
+    - confinement
+    - compelled_labor
+  power:
+    - employer_bargaining_power
+    - administrative_control
+    - surveillance_or_compliance_capacity
+    - detention_or_penal_capacity
+    - weakened_collective_bargaining_or_redress
+
+locks:
+  - Do not call every regulation slavery.
+  - Do not use the legal difference from chattel slavery to erase other forms of coercion, domination, or survival-conditioned dependency.
+  - Compare mechanisms by constraint, enforcement, exit cost, extracted value, and power effect.
+  - A formally optional benefit can still be structurally necessary to survive; necessity must be measured rather than presumed either way.
+  - A government program can protect freedom in one relation while restricting it in another; trace the specific mechanism.
+  - The mesh should ask how much substantive self-sovereignty remains, not merely whether formal legal personhood is intact.
+
+next_growth:
+  - Trace employer-sponsored health insurance as a labor-retention and exit-cost mechanism, including job lock and benefit concentration.
+  - Trace current Medicaid and SNAP work-condition implementation by state, exemptions, administrative burden, coverage/benefit losses, and labor-market effects.
+  - Trace prison labor by jurisdiction, compensation, contractor/public beneficiary, working conditions, and revenue/cost savings.
+  - Trace housing, debt, immigration status, licensing, and transportation as survival-enclosure gates.
+  - Compare public provision models that reduce dependency on private gatekeepers with models that intensify it.
+  - Connect preventable morbidity and mortality to specific enclosure mechanisms only where causal evidence supports the path.
