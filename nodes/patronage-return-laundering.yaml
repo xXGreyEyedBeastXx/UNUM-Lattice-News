@@ -1,0 +1,42 @@
+schema: unum-lattice-news/node/v0.1
+id: patronage-return-laundering
+title: Patronage-return laundering
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for systems that extract broadly or concentrate control, return a smaller or selective
+    portion as discretionary benefit, charity, subsidy, spectacle, relief, employment, or patronage,
+    and then use the return to obscure the preceding extraction or create dependency-based legitimacy.
+  posture: working_framework
+trace:
+  - broad_extraction_or_concentrated_control
+  - accumulated_resource_or_capacity
+  - selective_return_or_benefit
+  - benefactor_or_provider_narrative
+  - dependency_gratitude_or_legitimacy_effect
+  - obscured_upstream_extraction
+required_tests:
+  - measure_gross_extraction_and_burden
+  - measure_returned_value_and_distribution
+  - identify_who_controls_access_to_return
+  - identify_whether_return_is_right_entitlement_contract_or_discretionary_patronage
+  - test_whether_return_changes_or_preserves_underlying_power
+historical_discovery_surface:
+  - Roman conquest, elite accumulation, grain/cash distributions, public works, spectacles, and patronage systems
+modern_candidate_surfaces:
+  - employer_charity_or_bonuses_after_low_compensation
+  - corporate_philanthropy_adjacent_to_externalized_cost
+  - selective_public_relief_with_upstream_private_capture
+  - political_patronage_and_targeted_benefit_distribution
+locks:
+  - A benefit remains a real benefit even when embedded in an extractive system.
+  - Do not subtract unrelated generosity from documented harm.
+  - Demonstrate the shared resource/power lineage before calling a return laundering.
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework

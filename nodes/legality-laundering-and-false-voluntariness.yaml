@@ -1,0 +1,54 @@
+schema: unum-lattice-news/node/v0.1
+id: legality-laundering-and-false-voluntariness
+title: Legality laundering and false voluntariness
+family: analysis_framework
+subtype: causal_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for testing whether legality, contract form, signature, market transaction, plea,
+    employment agreement, sale, migration choice, or other formal consent is being used as proof of
+    legitimacy or meaningful voluntariness without examining the constraint envelope surrounding it.
+  posture: working_framework
+core_invariants:
+  - legal_does_not_mean_legitimate
+  - signed_does_not_mean_meaningfully_voluntary
+  - formal_choice_does_not_mean_realistic_exit
+  - market_transaction_does_not_mean_equal_bargaining_power
+constraint_envelope:
+  - confinement
+  - threat_or_retaliation
+  - poverty_or_material_dependency
+  - monopoly_or_oligopoly
+  - employer_control
+  - landlord_control
+  - immigration_status
+  - discrimination_or_legal_exclusion
+  - information_asymmetry
+  - health_or_disability_dependency
+  - debt_or_asset_lock_in
+  - state_coercion
+  - lack_of_realistic_exit
+trace:
+  - formally_valid_rule_or_transaction
+  - surrounding_constraint_envelope
+  - available_refusal_exit_or_bargaining_routes
+  - distribution_of_power
+  - material_transfer_or_harm
+  - later_use_of_legality_or_signature_as_moral_exculpation
+historical_discovery_surfaces:
+  - Nazi-era Aryanization and formally private transfers under state coercion and discrimination
+  - legally institutionalized historical labor, property, and extraction systems
+locks:
+  - Constraint does not automatically eliminate all agency; measure degree and alternatives.
+  - Illegal does not automatically mean harmful and legal does not automatically mean harmless.
+  - Historical correspondence requires present-case evidence.
+relations:
+  - type: EXTENDS
+    target: causal-partition-laundering
+    posture: working_framework
+  - type: SUPPORTS
+    target: redress-capture-and-correction-failure
+    posture: working_framework

@@ -1,0 +1,43 @@
+schema: unum-lattice-news/node/v0.1
+id: administrative-moral-distance
+title: Administrative moral distance
+family: analysis_framework
+subtype: institutional_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for harms distributed across many ordinary legal, bureaucratic, commercial, technical,
+    logistical, or professional tasks such that each participant can describe a locally narrow action
+    while the composed transformation produces severe deprivation, coercion, exclusion, extraction,
+    or violence.
+  posture: working_framework
+trace:
+  - system_level_harm
+  - decomposition_into_local_tasks
+  - participant_specific_action_and_knowledge
+  - handoff_to_next_actor_or_system
+  - cumulative_composed_effect
+  - responsibility_redress_or_evasion
+required_questions:
+  - What did each participant actually do?
+  - What could each participant reasonably know or foresee?
+  - Which handoffs were necessary for the harm to occur?
+  - Which participants had power to refuse, alter, expose, delay, prevent, or repair?
+  - Does local legality or routine character obscure the composed consequence?
+  - Where does responsibility genuinely diffuse and where is diffusion being used as insulation?
+historical_discovery_surfaces:
+  - Nazi deportation, confiscation, forced-labor, administrative, transport, commercial, and record systems
+  - large coercive bureaucratic systems in which no single local task describes the whole harm
+locks:
+  - Distributed causation is not collective guilt.
+  - Participation, knowledge, authority, alternatives, and causal contribution remain actor-specific.
+  - Small local actions can be causally necessary without carrying equal responsibility.
+relations:
+  - type: EXTENDS
+    target: causal-partition-laundering
+    posture: working_framework
+  - type: SUPPORTS
+    target: redress-capture-and-correction-failure
+    posture: working_framework

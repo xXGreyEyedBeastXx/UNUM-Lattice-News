@@ -1,0 +1,57 @@
+schema: unum-lattice-news/node/v0.1
+id: accusation-reversal-and-actor-dependent-moral-laundering
+title: Accusation reversal and actor-dependent moral laundering
+family: analysis_framework
+subtype: attribution_routing_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for testing whether an actor who condemns a harmful mechanism in an opponent performs
+    the same or a materially analogous mechanism while renaming or morally reclassifying its own
+    conduct. It compares conduct rather than inferring psychological projection.
+  posture: working_framework
+trace:
+  accusation_side:
+    - accuser
+    - accused_actor_or_population
+    - alleged_conduct
+    - underlying_harm_mechanism
+    - evidence_for_allegation
+  mirror_side:
+    - accuser_or_allied_actor
+    - observed_conduct
+    - underlying_mechanism
+    - evidence
+    - naming_or_justification
+  comparison:
+    - SAME_MECHANISM
+    - ANALOGOUS_MECHANISM
+    - MATERIALLY_DIFFERENT
+    - INSUFFICIENT_EVIDENCE
+    - CONTRADICTED_MIRROR
+required_test: >-
+  If actor names were swapped while the causal mechanism and material consequences stayed the same,
+  would the stated moral classification also stay the same? If not, investigate actor-dependent
+  moral laundering.
+current_research_families:
+  - weaponization_and_state_retaliation
+  - censorship_or_viewpoint_retaliation
+  - election_interference_or_election_control
+  - law_and_order_vs_noncompliance
+  - protection_of_violent_or_criminal_allies
+  - corruption_self_dealing_and_conflict_claims
+  - political_violence_rhetoric_and_normalization
+locks:
+  - Similar words are not enough; compare mechanisms and evidence.
+  - Mirrored conduct does not prove the original accusation false.
+  - Do not infer motive or clinical psychology when conduct comparison suffices.
+  - Apply the same mechanism test across parties and institutions.
+relations:
+  - type: EXTENDS
+    target: attribution-routing-and-grievance-redirection
+    posture: working_framework
+  - type: EXTENDS
+    target: truth-laundering-and-citation-lineage-capture
+    posture: working_framework

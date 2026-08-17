@@ -1,0 +1,70 @@
+schema: unum-lattice-news/node/v0.1
+id: entity-kinship-and-identity-resolution
+title: Entity kinship and identity resolution
+family: analysis_framework
+subtype: causal_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for resolving when differently named people, companies, agencies,
+    organizations, funds, trusts, brands, subsidiaries, predecessors, successors, or other legal
+    bodies are identical, related, commonly controlled, operationally dependent, or genuinely
+    independent. It prevents names and legal forms from being mistaken for causal separation while
+    preserving distinctions between related bodies.
+  posture: working_framework
+core_invariants:
+  - different_name_does_not_prove_independence
+  - shared_relation_does_not_prove_same_identity
+  - legal_distinction_does_not_erase_evidenced_control_or_flow
+  - related_bodies_remain_distinct_unless_identity_is_established
+relation_classes_to_test:
+  - SAME_ENTITY_AS
+  - ALIAS_OF
+  - DBA_OF
+  - BRAND_OF
+  - DIVISION_OF
+  - SUBSIDIARY_OF
+  - PARENT_OF
+  - CONTROLLED_BY
+  - BENEFICIALLY_OWNED_BY
+  - VOTING_CONTROLLED_BY
+  - COMMON_CONTROL_WITH
+  - PREDECESSOR_OF
+  - SUCCESSOR_TO
+  - MERGED_INTO
+  - SPUN_OFF_FROM
+  - ACQUIRED_BY
+  - SHARES_EXECUTIVE_WITH
+  - SHARES_BOARD_MEMBER_WITH
+  - FUNDED_BY
+  - CONTRACTS_WITH
+  - JOINT_VENTURE_WITH
+  - INVESTS_IN
+  - CREDITOR_OF
+  - MANAGED_BY
+required_questions:
+  - What legal body is named in the record?
+  - What parent, subsidiary, holding, trust, fund, or beneficial-owner structure surrounds it?
+  - Who controls votes, appointments, budgets, contracts, or operating decisions?
+  - Did the entity rename, merge, spin off, reorganize, or transfer assets/liabilities?
+  - Are financial results consolidated elsewhere?
+  - Where does residual gain ultimately reseat?
+  - Which shared-personnel or infrastructure links establish only adjacency versus actual control?
+false_positive_locks:
+  - Same address alone does not establish common control.
+  - Same registered agent, lawyer, vendor, investor, or director alone does not establish shared intent.
+  - Institutional investment alone does not establish operational control.
+  - Network proximity is not guilt.
+relations:
+  - type: EXTENDS
+    target: causal-partition-laundering
+    posture: working_framework
+  - type: SUPPORTS
+    target: whole-circuit-corporate-gain-accounting
+    posture: working_framework
+locks:
+  - Resolve identity before accepting separation.
+  - Resolve relations before declaring independence.
+  - Keep distinct bodies distinct while keeping evidenced crossings traversable.

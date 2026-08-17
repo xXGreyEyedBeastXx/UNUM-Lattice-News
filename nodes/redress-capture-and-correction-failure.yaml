@@ -1,0 +1,73 @@
+schema: unum-lattice-news/node/v0.1
+id: redress-capture-and-correction-failure
+title: Redress capture and correction failure
+family: analysis_framework
+subtype: institutional_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for tracing whether institutions and practices that should return harm to its source or
+    permit peaceful democratic correction remain functional, or are captured, defunded, intimidated,
+    bypassed, delayed, rendered noncompliant, deprived of quorum, made inaccessible, or converted into
+    legitimacy theater.
+  posture: working_framework
+redress_channels:
+  - elections_and_election_administration
+  - courts_and_appeals
+  - regulators_and_enforcement
+  - inspectors_auditors_ethics_and_watchdogs
+  - unions_and_collective_bargaining
+  - journalism_public_records_and_whistleblowers
+  - scientific_statistical_and_expert_review
+  - legislative_petition_and_representation
+  - protest_boycott_strike_and_other_nonviolent_collective_action
+  - internal_complaint_and_correction_systems
+failure_modes:
+  - CAPTURED
+  - DEFUNDED
+  - INTIMIDATED
+  - RETALIATED_AGAINST
+  - BYPASSED
+  - DELAYED
+  - QUORUM_DESTROYED
+  - NONCOMPLIANT_WITH_ORDER
+  - INACCESSIBLE
+  - INFORMATION_WITHHELD
+  - CONFLICTED
+  - SYMBOLIC_ONLY
+  - FUNCTIONING_WITH_LIMITS
+  - FUNCTIONING
+trace:
+  - underlying_harm_or_claim
+  - available_redress_channel
+  - attempted_use_or_barrier
+  - institutional_response
+  - correction_returned_or_failed
+  - legitimacy_and_future_behavior_effect
+  - repair_or_escalation_path
+violence_prevention_lock: >-
+  Repeated harm plus failed redress can increase the risk that people abandon legitimate correction
+  paths, but this does not make violence inevitable, justified, or responsibility-free. The mesh
+  should expose correction failure early enough to strengthen voting, organizing, litigation,
+  regulation, journalism, labor action, and other nonviolent return paths.
+priority_current_lane:
+  - election_administration_and_voting_as_democratic_return
+  - healthcare_regulatory_and_court_enforcement
+  - labor_and_union_redress
+  - corporate_regulatory_capture
+  - executive_noncompliance_or_bypass
+locks:
+  - A bad outcome does not prove the redress channel was captured; trace the mechanism.
+  - Settlement is not automatically abandonment or success.
+  - Stay is not shutdown.
+  - Official oversight is not automatically independent.
+  - Continued scrutiny is not automatically adequate scrutiny.
+relations:
+  - type: EXTENDS
+    target: power-capacity-accumulation
+    posture: working_framework
+  - type: EXTENDS
+    target: truth-laundering-and-citation-lineage-capture
+    posture: working_framework
