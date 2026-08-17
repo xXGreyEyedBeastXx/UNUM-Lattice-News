@@ -1,0 +1,97 @@
+schema: unum-lattice-news/node/v0.1
+id: boycott-bans-and-selective-economic-redress
+title: Boycott bans and selective economic redress
+family: analysis_framework
+subtype: nonviolent_redress_and_public_contracting_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for laws, contract clauses, investment restrictions, grant conditions,
+    tax penalties, and other state actions that punish, discourage, or condition access to public
+    money on a person's or company's refusal to buy from, sell to, invest in, or otherwise deal with
+    a targeted country, industry, company, or class. Boycott activity must be separated into political
+    advocacy, association, picketing, coordinated consumer choice, commercial refusals to deal,
+    discriminatory conduct, and foreign-government boycott compliance because constitutional and
+    statutory treatment differs across those seats.
+  posture: working_framework
+core_invariant:
+  - boycott_is_a_nonviolent_redress_tool_but_not_every_boycott_act_has_identical_legal_status
+  - government_is_not_neutral_when_it_conditions_public_money_on_participation_or_nonparticipation_in_a_boycott
+  - loss_of_public_contract_or_investment_access_is_a_material_penalty_even_when_no_criminal_ban_exists
+  - actor_country_and_industry_identity_must_not_substitute_for_mechanism_analysis
+  - government_permission_to_boycott_or_refuse_a_boycott_is_itself_a_power_relation
+required_trace:
+  - grievance_or_policy_goal
+  - boycott_target
+  - boycotting_actor
+  - conduct_type
+  - state_rule_or_contract_condition
+  - stated_nondiscrimination_security_or_industrial_policy_rationale
+  - public_money_or_legal_access_conditioned
+  - penalty_for_refusal_or_participation
+  - protected_beneficiary_country_industry_or_firm
+  - cost_to_taxpayer_or_public_entity
+  - chilling_or_redress_effect
+  - constitutional_or_statutory_review
+  - lobbying_or_policy_authorship_if_evidenced
+current_case_seats:
+  tennessee_israel_contracting:
+    status: CURRENT_STATUTORY_RESTRICTION
+    notes:
+      - Tennessee_Public_Chapter_775_enacted_2022_requires_covered_public_contracts_to_include_certification_that_company_is_not_and_will_not_engage_in_boycott_of_Israel.
+      - statutory_exemptions_apply_below_250000_total_contract_value_or_for_contractors_with_fewer_than_10_employees.
+      - statutory_definition_includes_Israel_and_Israeli_controlled_territories.
+  arkansas_israel_contracting:
+    status: CIRCUIT_UPHELD
+    notes:
+      - Eighth_Circuit_en_banc_upheld_Arkansas_anti_BDS_contracting_law_by_treating_covered_refusals_to_deal_as_nonexpressive_commercial_conduct.
+      - Supreme_Court_denied_certiorari_February_21_2023_so_no_nationwide_merits_resolution_was_created.
+  texas_energy_firearms_israel:
+    status: ACTIVE_MULTI_TARGET_BOYCOTT_POLICY
+    notes:
+      - Texas_has_used_public_contract_and_investment_restrictions_for_companies_that_boycott_Israel_boycott_energy_companies_or_discriminate_against_firearm_entities.
+      - Texas_SB13_energy_boycott_law_was_declared_unconstitutional_by_district_court_in_February_2026.
+      - Fifth_Circuit_stayed_that_injunction_May_29_2026_pending_appeal_allowing_enforcement_to_continue_during_appeal.
+      - Chicago_Fed_research_estimated_Texas_anti_ESG_underwriter_restrictions_created_300_to_500_million_in_additional_interest_on_31_8_billion_borrowed_in_first_eight_months_after_enactment.
+  federal_unsanctioned_foreign_boycotts:
+    status: CURRENT_FEDERAL_ANTIBOYCOTT_REGIME
+    notes:
+      - BIS_Office_of_Antiboycott_Compliance_administers_rules_that_discourage_and_in_some_cases_prohibit_US_persons_from_supporting_unsanctioned_foreign_boycotts.
+      - Arab_League_boycott_of_Israel_is_identified_by_BIS_as_principal_current_unsanctioned_foreign_boycott.
+      - reporting_and_civil_or_criminal_penalties_can_apply.
+constitutional_baseline:
+  - Claiborne_Hardware_protects_speech_nonviolent_picketing_solicitation_and_association_used_to_organize_a_political_boycott.
+  - Arkansas_Times_creates_a_current_circuit_level_distinction_between_protected_advocacy_and_the_covered_commercial_refusal_itself.
+  - precise_boundary_remains_context_and_jurisdiction_sensitive.
+selective_permission_test:
+  question: >-
+    If the same economic tactic is used against a different target, does government still describe it
+    as discrimination or unacceptable coercion, or does it describe the tactic as legitimate market
+    choice, sanctions, divestment, national security, procurement policy, or industrial protection?
+  comparison_targets:
+    - Israel_and_Israeli_controlled_territories
+    - fossil_fuel_companies
+    - firearms_industry
+    - foreign_government_imposed_boycotts
+    - labor_boycotts_and_strikes
+    - civil_rights_boycotts
+    - sanctions_and_state_directed_divestment
+locks:
+  - boycott_ban_is_often_a_public_money_condition_not_a_general_criminal_prohibition.
+  - anti_discrimination_rationales_must_be_tested_against_actual_target_definition_and_conduct.
+  - criticism_of_Israel_Israelis_or_Zionism_must_not_be_collapsed_into_antisemitism_without_evidence_of_anti_Jewish_conduct_or_targeting.
+  - boycott_of_a_state_or_company_is_not_identical_to_boycott_of_people_based_on_ethnicity_religion_or_national_origin.
+  - constitutional_status_must_be_recorded_case_by_case_and_current_appeal_posture_preserved.
+relations:
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+  - type: EXTENDS
+    target: accusation-reversal-and-actor-dependent-moral-laundering
+  - type: EXTENDS
+    target: asymmetric-public-support-and-private-gain
+  - type: EXTENDS
+    target: ideological-threat-labeling-and-redress-delegitimization
+source_bundle:
+  - source-boycott-bans-and-selective-economic-redress-2026-08-16

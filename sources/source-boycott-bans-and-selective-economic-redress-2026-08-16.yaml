@@ -1,0 +1,98 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-boycott-bans-and-selective-economic-redress-2026-08-16
+title: Boycott bans, anti-boycott law, public contracting, and selective economic redress baseline
+status: active
+as_of: 2026-08-16
+purpose: >-
+  Preserve primary statutory, regulatory, judicial, and empirical sources showing how U.S. federal and
+  state governments condition contracts, investments, tax treatment, or enforcement on participation
+  in or refusal of boycotts. The bundle distinguishes political-boycott advocacy from commercial
+  refusal-to-deal conduct and preserves conflicting constitutional rulings rather than treating
+  'boycott' as a single legal category.
+sources:
+  - id: tn-hb2050-public-chapter-775-2022
+    class: primary_state_legislation
+    url: https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2050&ga=112
+    supports:
+      - Tennessee_enacted_public_contract_non_boycott_Israel_certification
+      - exemptions_for_contracts_under_250000_and_contractors_under_10_employees
+  - id: tn-code-12-4-119-ctas
+    class: state_local_government_technical_guidance
+    url: https://www.ctas.tennessee.edu/eli/non-boycott-israel
+    supports:
+      - current_contract_certification_guidance
+      - boycott_definition_and_contract_voiding_rule
+      - Israel_definition_including_Israeli_controlled_territories
+  - id: constitution-annotated-claiborne-boycott
+    class: primary_constitutional_annotation
+    url: https://constitution.congress.gov/browse/essay/amdt1-7-14-4/ALDE_00000042/
+    supports:
+      - political_boycott_speech_picketing_solicitation_and_association_protection
+      - violence_and_unprotected_conduct_remain_separately_reachable
+  - id: arkansas-times-en-banc-2022
+    class: federal_appellate_opinion
+    url: https://law.justia.com/cases/federal/appellate-courts/ca8/19-1378/19-1378-2022-06-22.html
+    supports:
+      - Eighth_Circuit_upheld_Arkansas_anti_BDS_contracting_law
+      - covered_commercial_refusal_characterized_as_nonexpressive_conduct
+  - id: scotus-arkansas-times-docket-22-379
+    class: primary_court_docket
+    url: https://www.supremecourt.gov/docket/docketfiles/html/public/22-379.html
+    supports:
+      - certiorari_denied_2023_02_21
+      - no_Supreme_Court_merits_opinion_on_Arkansas_Times
+  - id: texas-ag-anti-boycott-guidance-2023
+    class: primary_state_government
+    url: https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-issues-enforcement-guidance-state-laws-prohibiting-public-contracts
+    supports:
+      - Texas_contract_restrictions_cover_Israel_energy_and_firearms
+      - certification_and_due_diligence_requirements
+  - id: asbc-v-hegar-district-2026
+    class: federal_district_opinion
+    url: https://law.justia.com/cases/federal/district-courts/texas/txwdce/1%3A2024cv01010/1172802258/50/
+    supports:
+      - district_court_declared_Texas_SB13_unconstitutional_First_and_Fourteenth_Amendments
+  - id: asbc-v-hegar-fifth-circuit-stay-2026
+    class: federal_appellate_order
+    url: https://law.justia.com/cases/federal/appellate-courts/ca5/26-50111/26-50111-2026-05-29.html
+    supports:
+      - Fifth_Circuit_stayed_injunction_pending_appeal
+      - Judge_Ho_concurrence_compares_energy_firearms_and_Israel_anti_boycott_laws
+  - id: chicago-fed-gas-guns-governments-2023
+    class: primary_research_working_paper
+    url: https://www.chicagofed.org/publications/working-papers/2023/2023-07
+    supports:
+      - reduced_underwriter_competition_after_Texas_anti_ESG_laws
+      - estimated_300_to_500_million_additional_interest_on_31_8_billion_borrowed_first_eight_months
+  - id: bis-office-antiboycott-compliance-2026
+    class: primary_federal_government
+    url: https://www.bis.gov/about-bis/bis-leadership-and-offices/OAC
+    supports:
+      - federal_Anti_Boycott_Act_and_EAR_part_760
+      - restrictions_and_reporting_for_unsanctioned_foreign_boycotts
+      - Arab_League_boycott_of_Israel_as_principal_current_example
+      - civil_and_criminal_enforcement_capacity
+  - id: irs-form-5713-2026
+    class: primary_federal_tax
+    url: https://www.irs.gov/forms-pubs/about-form-5713
+    supports:
+      - reporting_and_tax_consequence_structure_for_international_boycott_participation
+  - id: dfars-secondary-arab-boycott-2026
+    class: primary_federal_procurement_rule
+    url: https://www.acquisition.gov/dfars/225.7601-restriction.
+    supports:
+      - DoD_restriction_on_contracting_with_foreign_entity_unless_it_certifies_noncompliance_with_secondary_Arab_boycott_of_Israel
+  - id: fema-2025-boycott-condition-attempt
+    class: independent_reporting_historical_policy_state
+    url: https://www.reuters.com/world/us/us-links-19-billion-state-disaster-funds-israel-boycott-stance-2025-08-04/
+    supports:
+      - 2025_FEMA_terms_temporarily_linked_preparedness_grants_to_nonboycott_condition
+    lock: >-
+      Later August 2025 terms reportedly removed the explicit condition; treat as attempted_or_transient_policy,
+      not as current FY2026 FEMA grant rule.
+locks:
+  - laws_differ_by_target_scope_entity_size_contract_value_and_conduct_definition.
+  - Supreme_Court_denial_of_certiorari_is_not_merits_approval.
+  - district_court_injunction_and_appellate_stay_are_distinct_procedural_states.
+  - anti_boycott_law_can_have_anti_discrimination_justifications_and_still_require_scope_and_viewpoint_tests.
+  - empirical_borrowing_cost_estimate_is_specific_to_Texas_anti_ESG_financial_market_changes_not_all_boycott_bans.

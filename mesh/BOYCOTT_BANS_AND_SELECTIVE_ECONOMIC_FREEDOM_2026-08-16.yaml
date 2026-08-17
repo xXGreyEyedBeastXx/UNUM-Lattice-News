@@ -1,0 +1,169 @@
+schema: unum-lattice-news/mesh/v0.1
+id: boycott-bans-and-selective-economic-freedom-2026-08-16
+title: Boycott bans, selective economic freedom, and nonviolent redress
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - complaint-redress-and-corporate-support-mesh-2026-08-16
+  - complaint-beneficiary-matching-2026-08-16
+  - unum-harm-mesh-2026-08-16
+operators:
+  - boycott-bans-and-selective-economic-redress
+  - redress-capture-and-correction-failure
+  - ideological-threat-labeling-and-redress-delegitimization
+  - accusation-reversal-and-actor-dependent-moral-laundering
+  - asymmetric-public-support-and-private-gain
+source_bundle:
+  - source-boycott-bans-and-selective-economic-redress-2026-08-16
+purpose: >-
+  Trace how governments classify and condition nonviolent economic refusal. The mesh asks when boycott,
+  divestment, refusal to contract, refusal to invest, sanctions, and procurement exclusions are treated
+  as legitimate public policy and when materially similar tactics are penalized as discrimination,
+  disloyalty, or unacceptable market coercion.
+
+core_redress_relation:
+  - grievance
+  - coordinated_nonviolent_economic_exit
+  - target_experiences_financial_or_reputational_pressure
+  - government_permits_discourages_or_penalizes_the_exit
+  - public_contract_investment_tax_or_grant_access_changes
+  - protected_target_or_protected_industry_retains_or_recovers_market_access
+  - redress_capacity_strengthens_or_weakens
+
+constitutional_baseline:
+  claiborne_hardware:
+    state: PROTECTED_POLITICAL_BOYCOTT_COMPONENTS
+    protected_components:
+      - speech
+      - nonviolent_picketing
+      - solicitation_to_join
+      - association
+    lock: violent_conduct_and_other_unprotected_conduct_remain_reachable
+  arkansas_times:
+    state: EIGHTH_CIRCUIT_UPHELD_ANTI_BDS_LAW
+    holding_surface:
+      - covered_commercial_refusal_treated_as_nonexpressive_conduct
+      - certification_treated_as_not_unconstitutional_compelled_speech
+    supreme_court_state:
+      - certiorari_denied_2023_02_21
+      - no_nationwide_merits_precedent_created_by_denial
+  texas_sb13:
+    state: ACTIVE_APPEAL_WITH_ENFORCEMENT_ALLOWED_PENDING_APPEAL
+    chronology:
+      - 2026_02_district_court_declared_energy_boycott_law_unconstitutional
+      - 2026_05_29_Fifth_Circuit_stayed_injunction_pending_appeal
+    discriminator:
+      - eventual_merits_ruling_and_whether_commercial_conduct_or_viewpoint_expression_controls
+
+state_case_surfaces:
+  tennessee:
+    current_state: IN_EFFECT
+    mechanism:
+      - covered_public_contract_requires_company_nonboycott_Israel_certification
+      - contract_under_250000_exempt
+      - contractor_under_10_employees_exempt
+      - failure_to_include_required_certification_makes_covered_contract_void
+    target_definition:
+      - State_of_Israel
+      - Israeli_controlled_territories
+      - companies_or_entities_doing_business_in_or_with_Israel_with_statutory_qualifications
+    mesh_effect:
+      - access_to_large_public_contract_market_conditioned_on_foregoing_defined_boycott_activity
+    open_questions:
+      - current_contract_volume_subject_to_certification
+      - companies_excluded_or_deterred
+      - lobbying_and_advocacy_network_that_authored_or_promoted_2022_law
+      - interaction_with_2026_Tennessee_Judea_and_Samaria_terminology_policy
+  texas:
+    current_state: MULTI_TARGET_ANTI_BOYCOTT_REGIME
+    protected_targets:
+      - Israel
+      - energy_companies
+      - firearm_entities_and_trade_associations
+    mechanism:
+      - public_contract_certifications
+      - investment_or_divestment_rules
+      - municipal_bond_underwriter_eligibility
+    observed_public_cost:
+      - Chicago_Fed_research_estimated_300_to_500_million_extra_interest_on_31_8_billion_borrowed_during_first_eight_months_after_2021_energy_and_firearms_restrictions
+    lock: estimate_does_not_measure_Israel_anti_boycott_law
+
+federal_case_surfaces:
+  unsanctioned_foreign_boycotts:
+    current_state: ACTIVE
+    mechanism:
+      - federal_rules_discourage_or_prohibit_US_person_support_for_unsanctioned_foreign_boycotts
+      - reporting_to_BIS
+      - tax_reporting_and_possible_loss_of_tax_benefits
+      - administrative_or_criminal_penalties_in_covered_cases
+    primary_current_target:
+      - Arab_League_boycott_of_Israel
+    analytical_significance: >-
+      Federal law explicitly distinguishes sanctioned from unsanctioned boycott participation. The legal
+      question is therefore not whether government ever regulates economic refusal, but which actor, target,
+      foreign-policy alignment, and conduct type determine permission or penalty.
+  defense_procurement:
+    current_state: ACTIVE
+    mechanism:
+      - DoD_contracting_restriction_requires_foreign_entity_certification_of_noncompliance_with_secondary_Arab_boycott_of_Israel_subject_to_exceptions_or_waivers
+  fema_2025_attempt:
+    state: TRANSIENT_OR_WITHDRAWN_EXPLICIT_CONDITION
+    notes:
+      - 2025_grant_terms_were_reported_as_conditioning_preparedness_funds_on_nonboycott_of_Israeli_companies
+      - explicit_term_was_reported_removed_in_later_August_2025_terms
+    lock: do_not_project_this_condition_into_FY2026_without_current_primary_text
+
+actor_dependent_permission_test:
+  compare:
+    - private_consumer_boycott
+    - labor_boycott_or_strike
+    - civil_rights_boycott
+    - anti_BDS_contract_condition
+    - anti_energy_boycott_condition
+    - anti_firearms_boycott_condition
+    - federal_sanctions
+    - government_divestment
+    - federal_unsanctioned_foreign_boycott_prohibition
+  questions:
+    - Who is withdrawing economic cooperation?
+    - What target is being pressured?
+    - Is the pressure individual collective corporate foreign_government or state_directed?
+    - Is public money used to force participation or nonparticipation?
+    - Is the same tactic renamed when government itself performs it?
+    - What concrete discrimination interest exists and is the rule narrowly tied to that interest?
+    - What protected market or political arrangement survives when the boycott is disabled?
+
+beneficiary_and_harm_paths:
+  protected_target_gain:
+    - reduced_risk_of_economic_isolation
+    - preserved_access_to_public_contractors_or_investors
+    - reduced_divestment_pressure
+  state_capacity_gain:
+    - procurement_leverage
+    - investment_leverage
+    - foreign_policy_alignment_enforcement
+  redress_loss:
+    - chilled_collective_economic_exit
+    - loss_of_public_contract_opportunity
+    - reduced_nonviolent_pressure_on_target
+  public_cost_candidate:
+    - reduced_vendor_or_underwriter_competition
+    - higher_financing_or_procurement_cost
+    - administrative_compliance_cost
+
+next_growth:
+  - Normalize_all_Tennessee_public_contracts_containing_12_4_119_certification_where_records_are_available.
+  - Trace_sponsors_donors_advocacy_groups_and_model_legislation_lineage_for_Tennessee_and_comparator_states_without_assuming_funding_equals_control.
+  - Build_state_by_state_crosswalk_of_Israel_energy_firearms_and_other_anti_boycott_targets_with_current_litigation_status.
+  - Compare_anti_boycott_rules_with_state_and_federal_sanctions_divestment_and_procurement_blacklists_using_same_mechanism_test.
+  - Measure_realized_public_costs_vendor_exclusions_and_policy_changes_after_boycott_bans.
+  - Trace_whether_nonviolent_Palestinian_rights_advocacy_is_materially_chilled_separately_from_antisemitic_discrimination_cases.
+
+locks:
+  - Jewish_people_Judaism_Israel_Israeli_government_Zionism_and_BDS_are_not_interchangeable_categories.
+  - anti_Jewish_discrimination_is_real_harm_and_must_remain separately traceable from political boycott of a state or policy.
+  - boycott_of_Israel_or_settlement_related_commerce_is_not_by_definition_proof_of_antisemitic_intent.
+  - government_has_legitimate_nondiscrimination_interests_but_target_specific_rules_still_require_mechanism_and_viewpoint_review.
+  - do_not_call_every_contract_condition_a_criminal_ban.
+  - do_not_call_every_boycott_protected_without_typing_conduct_and_jurisdiction.
