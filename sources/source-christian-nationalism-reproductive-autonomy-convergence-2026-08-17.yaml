@@ -1,0 +1,155 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-christian-nationalism-reproductive-autonomy-convergence-2026-08-17
+title: Christian nationalism, pronatalism, abortion coercion, minor pregnancy, and child-marriage convergence
+accessed: 2026-08-17
+purpose: >-
+  Preserve evidence for a pattern-level investigation of Christian nationalism and reproductive autonomy.
+  This bundle distinguishes Christianity from Christian nationalism; convergence from coordination; and
+  movement-level association from claims about every adherent, legislator, state, or anti-abortion activist.
+
+sources:
+  - id: perry-et-al-nationalist-pronatalism-2022
+    publisher: Sociological Forum / Wiley
+    source_class: peer_reviewed_research
+    date: 2022
+    url: https://onlinelibrary.wiley.com/doi/10.1111/socf.12854
+    supports:
+      - nationally representative data found Christian nationalist ideology strongly associated with nationalist pronatalism
+      - the study defines nationalist pronatalism as promoting fertility to strengthen the nation and avoid national decline
+      - perceived threat to Christians and Whites also predicted nationalist pronatalism
+    limitations:
+      - association does not establish that every Christian nationalist supports the same policy or that pronatalism alone establishes coercive intent
+
+  - id: perry-selective-pronatalism-2026
+    publisher: Journal for the Scientific Study of Religion / Wiley
+    source_class: peer_reviewed_research
+    date: 2026-03-14
+    url: https://onlinelibrary.wiley.com/doi/10.1111/jssr.70034
+    supports:
+      - distinguishes general pronatalism from selective pronatalism aimed at preserving demographic dominance
+      - Christian nationalism and belief in replacement theory predicted selective pronatalism
+      - conventional religiosity predicted general pronatalism differently from Christian nationalism
+    limitations:
+      - survey association does not prove participation in any specific organization or policy campaign
+
+  - id: walker-complementarianism-reproductive-rights-2026
+    publisher: Journal for the Scientific Study of Religion / Wiley
+    source_class: peer_reviewed_research
+    date: 2026
+    url: https://onlinelibrary.wiley.com/doi/10.1111/jssr.70073
+    supports:
+      - complementarian gender beliefs were associated with national pronatalism and preferences for state control of women's fertility
+      - the study separately evaluates access to birth control, abortion care, and travel restrictions
+    limitations:
+      - complementarianism and Christian nationalism overlap in some environments but are not identical ideologies
+
+  - id: perry-white-christian-nationalism-abortion-arrest-2025
+    publisher: Social Problems / Oxford Academic
+    source_class: peer_reviewed_research
+    date: 2025-06-28
+    url: https://academic.oup.com/socpro/article/73/3/893/8178223
+    supports:
+      - Christian nationalism and White nationalism were among the strongest predictors of support for arresting women who obtain abortions, after anti-abortion sentiment
+      - support was strongest where Christian nationalism and warmer attitudes toward White nationalism overlapped
+      - the article documents an abortion-abolitionist submovement grounded in conservative Christian / Christian-nationalist arguments that advocates criminal sanction of women who obtain abortions
+    limitations:
+      - fewer than one in ten respondents in the study supported arresting women; the association must not be converted into a claim that all Christian nationalists or all anti-abortion people support criminal punishment
+
+  - id: kff-abortion-ban-exceptions-2026
+    publisher: KFF
+    source_class: health_policy_analysis
+    date: 2026-04-01
+    url: https://www.kff.org/womens-health-policy/exceptions-in-state-abortion-bans-and-early-gestational-limits/
+    supports:
+      - as of April 1 2026, nine states enforcing abortion bans or early gestational limits had no rape or incest exception
+      - five states had no general health exception
+    limitations:
+      - state legal status is temporally unstable and must be refreshed before publication when current status matters
+
+  - id: tn-sb1971-abortion-trafficking-minor-2024
+    publisher: Tennessee General Assembly
+    source_class: primary_state_legislative_record
+    date: 2024
+    url: https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=SB1971&GA=113
+    supports:
+      - Tennessee enacted an offense covering adults who intentionally recruit, harbor, or transport a pregnant unemancipated minor for specified abortion-related purposes without required parental or guardian consent
+      - the enacted legislative history expressly made the minor's consent insufficient as a defense to the offense
+      - the law creates barriers to third-party assistance for a pregnant minor seeking abortion care outside parental control
+    limitations:
+      - the statute contains exceptions and later legal challenges or amendments must be checked before current-law claims
+      - this source does not establish Christian-nationalist motive for every sponsor or vote
+
+  - id: tn-hb2603-under-13-abortion-exception-failed-2024
+    publisher: Tennessee General Assembly
+    source_class: primary_state_legislative_record
+    date: 2024
+    url: https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB2603&ga=113
+    supports:
+      - a bill to exempt abortions performed on patients under 13 from Tennessee's criminal-abortion offense failed in the Population Health Subcommittee by a 2-5 vote
+      - the failed proposal provides direct evidence that an attempted child-age exception did not obtain sufficient legislative support
+    limitations:
+      - the bill did not require that the pregnancy result from rape, although pregnancy below the age of consent can independently implicate child-sex-abuse law depending on facts
+      - votes establish legislative action, not an unstated motive
+
+  - id: tn-hb1440-rape-incest-exception-proposal-2023
+    publisher: Tennessee General Assembly
+    source_class: primary_state_legislative_record
+    date: 2023
+    url: https://wapp.capitol.tn.gov/apps/BillInfo/Default?BillNumber=HB1440&GA=113
+    supports:
+      - a proposed rape/incest exception required reporting to law enforcement or a rape crisis center, contemplated forensic examination, and imposed gestational limits
+      - the proposal included a mandatory minimum sentence for false reports made to obtain an abortion
+    limitations:
+      - a proposed bill is evidence of an attempted policy design, not enacted law
+      - requirements should not be described as universal features of rape exceptions
+
+  - id: van-roost-child-marriage-statutory-rape-2022
+    publisher: Journal of Adolescent Health / PubMed
+    source_class: peer_reviewed_research
+    date: 2022
+    url: https://pubmed.ncbi.nlm.nih.gov/35184836/
+    supports:
+      - child marriage and marital exemptions to statutory-rape laws can create legal loopholes for sexual conduct with minors that would otherwise constitute crimes
+      - in the study period, 33 states had some or all statutory-rape provisions exempting sex between married persons
+      - child marriages violated statutory-rape laws in 14 states during the studied period
+    limitations:
+      - the study covers laws and marriages through 2020 and is not a current fifty-state legal survey
+      - child marriage is not identical to rape in every case
+
+  - id: lattice-sexual-autonomy-asymmetry-2026-08-14
+    publisher: UNUM Lattice News prior source bundle
+    source_class: internal_research_lineage
+    url: sources/source-sexual-autonomy-protection-asymmetry-2026-08-14.yaml
+    supports:
+      - preserves prior sourced examples in Missouri and New Hampshire where lawmakers used pregnancy, fertility, or abortion reasoning while resisting complete child-marriage bans
+      - preserves prior evidence concerning child-marriage/statutory-rape loopholes and institutional protection asymmetry
+    limitations:
+      - inherit each underlying source's limitations; internal synthesis is not independent corroboration
+
+pattern_findings:
+  established:
+    - Christian nationalism is analytically distinct from Christianity and from ordinary Christian religious identity.
+    - Anti-abortion law constrains a pregnant person's legal authority to terminate a pregnancy; that autonomy effect exists regardless of whether supporters frame the policy as protecting fetal life.
+    - Christian nationalism has a documented statistical relationship with nationalist and selective pronatalism and with punitive abortion attitudes.
+    - Some current state abortion regimes deny rape/incest exceptions, including for minors unless another exception applies.
+    - U.S. child-marriage and statutory-rape law have historically intersected in ways that can legalize or shield sexual conduct that would otherwise be criminal.
+  supported_inference:
+    - Pronatalism, patriarchal gender-order beliefs, abortion restriction/punishment, barriers to minor abortion assistance, and resistance to closing some child-marriage loopholes can be studied as a converging reproductive-control ecology where multiple independently evidenced mechanisms reduce reproductive or sexual autonomy.
+    - Repeated convergence across actors and jurisdictions can establish a movement-level pattern without establishing a single command structure.
+  not_established:
+    - A unified secret plan directing every relevant state law or organization.
+    - That every Christian nationalist supports child marriage, lowered age of consent, rape, or punishment of abortion patients.
+    - That every opponent of abortion or child-marriage reform is a Christian nationalist.
+    - That advocacy for minor marriage by itself proves an intent to facilitate sexual abuse.
+
+locks:
+  - Christianity != Christian nationalism.
+  - Christian identity != Christian-nationalist ideology.
+  - Anti-abortion rationale != absence of bodily-autonomy constraint.
+  - Convergence != coordination, but lack of proven coordination != lack of pattern.
+  - Different states or organizations implementing similar constraints do not become causally independent merely because authority is distributed.
+  - Shared outcome alone does not prove common command; trace rhetoric, personnel, organizations, funding, model policy, legal strategy, and institutional relations separately.
+  - Child marriage != rape in every case.
+  - Minimum marriage age != age of consent.
+  - Marital exemption != proof a particular offender used it.
+  - Failure to prove an intent to protect abusers does not erase an evidenced legal effect that can reduce a victim's exit, care, or accountability options.
