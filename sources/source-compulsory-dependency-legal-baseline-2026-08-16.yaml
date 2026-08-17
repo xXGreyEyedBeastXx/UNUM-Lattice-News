@@ -1,0 +1,81 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-compulsory-dependency-legal-baseline-2026-08-16
+title: U.S. compulsory dependency, work-conditioned benefits, insurance mandate, and involuntary-servitude baseline
+accessed: 2026-08-16
+purpose: >-
+  Preserve current primary legal and administrative sources for distinguishing literal legal ownership,
+  involuntary servitude, benefit-conditioned work, health-insurance requirements, protected liberty,
+  and broader structural dependency. This bundle does not treat unlike mechanisms as legally identical.
+sources:
+  - id: source-constitution-thirteenth-amendment
+    publisher: Constitution Annotated / Congress.gov
+    source_class: primary_constitutional_text_and_official_annotation
+    title: Thirteenth Amendment
+    url: https://constitution.congress.gov/constitution/amendment-13/
+    supports:
+      - Slavery and involuntary servitude are constitutionally prohibited except as punishment for crime after conviction.
+    limitations:
+      - The constitutional category of involuntary servitude is narrower than every form of economic or structural dependency.
+  - id: source-constitution-thirteenth-exception
+    publisher: Constitution Annotated / Congress.gov
+    source_class: official_constitutional_annotation
+    title: Exceptions Clause
+    url: https://constitution.congress.gov/browse/essay/amdt13-S1-4/ALDE_00013213/
+    supports:
+      - The punishment exception permits government-compelled labor after conviction.
+      - The exception does not authorize criminal enforcement of ordinary private labor contracts.
+  - id: source-irs-individual-shared-responsibility-2026
+    publisher: Internal Revenue Service
+    source_class: primary_federal_tax_guidance
+    title: Questions and answers on the individual shared responsibility provision
+    date: 2026-07-22
+    url: https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-individual-shared-responsibility-provision
+    supports:
+      - Federal law retains the minimum-essential-coverage provision.
+      - The federal shared-responsibility payment has been zero since tax year 2019.
+    limitations:
+      - Does not address separate state insurance mandates or every practical dependency created by employer-linked coverage.
+  - id: source-cms-medicaid-community-engagement-2026
+    publisher: Centers for Medicare & Medicaid Services
+    source_class: primary_federal_program_guidance
+    title: Community Engagement
+    url: https://www.medicaid.gov/resources-for-states/working-families-tax-cut-legislation/community-engagement
+    supports:
+      - Public Law 119-21 requires Medicaid community-engagement conditions for many applicable adults beginning January 1 2027 unless states implement earlier.
+      - CMS implementation materials were active in 2026.
+    limitations:
+      - Exemptions and state implementation details matter for individual cases.
+  - id: source-cms-medicaid-eligibility-changes-2026
+    publisher: Centers for Medicare & Medicaid Services
+    source_class: primary_federal_program_guidance
+    title: Medicaid Eligibility Changes
+    url: https://www.medicaid.gov/renew-info
+    supports:
+      - Current CMS public guidance describes an 80-hour monthly work, education, training, or service threshold for people to whom the new requirement applies.
+  - id: source-usda-snap-work-requirements-2026
+    publisher: USDA Food and Nutrition Service
+    source_class: primary_federal_program_guidance
+    title: SNAP Work Requirements
+    date: 2026-07-16
+    url: https://www.fna.usda.gov/snap/work-requirements
+    supports:
+      - Many ABAWD recipients must satisfy an 80-hour monthly work or work-program requirement or face time limits and loss of benefits unless exempt.
+      - Workfare can count toward the requirement.
+    limitations:
+      - Exemptions and household circumstances materially change application.
+  - id: source-constitution-individual-rights
+    publisher: Constitution Annotated / Congress.gov
+    source_class: official_constitutional_annotation
+    title: Individual Rights and the Constitution
+    url: https://constitution.congress.gov/browse/essay/intro.7-2-4/ALDE_00000033/
+    supports:
+      - The Constitution protects specific individual rights and liberties from government interference.
+    limitations:
+      - The Constitution does not establish a categorical right to live outside all government regulation.
+  - id: source-constitution-liberty-due-process
+    publisher: Constitution Annotated / Congress.gov
+    source_class: official_constitutional_annotation
+    title: Liberty Deprivations and Due Process
+    url: https://constitution.congress.gov/browse/essay/Amdt14-S1-5-2/ALDE_00013748
+    supports:
+      - Due-process liberty historically includes freedom from confinement and broader interests in lawful livelihood and movement.
