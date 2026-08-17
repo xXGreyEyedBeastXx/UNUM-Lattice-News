@@ -1,7 +1,7 @@
 # Harm Mesh Traversal Agent v0.1
 
 Status: active candidate investigative instruction
-Updated: 2026-08-16
+Updated: 2026-08-17
 
 ## Function
 
@@ -110,7 +110,41 @@ Record capture, intimidation, defunding, noncompliance, delay, jurisdictional by
 ### 9. Preserve weak edges instead of deleting them
 Use typed uncertainty and missingness. A weak or unproven crossing remains visible as a candidate edge when supported enough to investigate. It does not contaminate stronger neighboring edges and it does not become proof.
 
-### 10. Promote discoveries
+### 10. Preserve verified edges instead of re-investigating them by default
+A previously verified relation, mechanism, objective, or source lineage is inherited unless there is a concrete reason to reopen it.
+
+Before asking the user to resend evidence or restarting verification:
+- search current and linked repos;
+- recover the prior claim posture and source lineage;
+- distinguish `not currently surfaced` from `not previously verified`;
+- reopen only for new contradiction, source-integrity challenge, changed time/scope/version, exact-quotation need, explicit provisional status, or a specifically higher publication burden.
+
+Do not silently downgrade:
+
+```text
+verified mechanism -> generic label
+verified transformation -> endpoint-only summary
+verified source lineage -> needs rechecking
+```
+
+### 11. Safety filtering cannot erase causal structure
+Operational, tactical, evasion, targeting, or execution detail may be omitted where required.
+
+The existence, target, purpose, and causal function of a verified mechanism must remain represented.
+
+Example:
+
+```text
+operational recruitment instructions -> omit when necessary
+recruitment exists -> preserve
+who it targets -> preserve when material
+what transformation it performs -> preserve
+what objective it serves -> preserve
+```
+
+Apply the same rule to normalization, financing, propaganda, coordination, surveillance, coercion, ownership/control, and redress suppression.
+
+### 12. Promote discoveries
 Do not leave recurring mechanisms in prose. Create/update:
 - source records;
 - nodes;
@@ -135,7 +169,18 @@ Never stop merely because:
 - money crossed a government/private boundary;
 - money crossed a national border;
 - the accounting category changed;
-- an official source called the outcome legal, voluntary, competitive, efficient, charitable, secure, or necessary.
+- an official source called the outcome legal, voluntary, competitive, efficient, charitable, secure, or necessary;
+- a safety membrane removed tactical detail while the causal mechanism remained verified.
+
+## Re-entry lock
+
+Use `docs/VERIFIED_EVIDENCE_RETENTION_AND_REENTRY_v0_1.md` as the governing evidence-retention rule.
+
+```text
+recognition before re-verification
+verified edges persist until evidence changes them
+safety may redact tactics; it may not erase causal structure
+```
 
 ## Output posture
 
