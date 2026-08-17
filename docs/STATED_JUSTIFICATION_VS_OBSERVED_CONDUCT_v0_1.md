@@ -9,6 +9,45 @@ Prevent an actor's preferred vocabulary from becoming the lattice's classificati
 
 A state, military, movement, corporation, police force, armed group, or other actor may describe conduct as security, counterterrorism, evacuation, self-defence, protection, buffer-zone creation, voluntary migration, law enforcement, deterrence, humanitarian action, or another legitimating category. That language is evidence of the actor's stated position. It is not, by itself, a finding about mechanism, legality, target selection, proportionality, voluntariness, temporariness, or consequence.
 
+## Root correction: clues before narratives
+
+**Official narratives are clues. They are not the organizing frame of the investigation.**
+
+For contested conduct, start with what can be independently reconstructed from behavior and circumstance, then compare the actor's explanation against that body of clues.
+
+Preferred traversal:
+
+```text
+BEHAVIOR
+-> RESOURCE / PROTECTION ALLOCATION
+-> TIMING / SEQUENCE
+-> OMISSIONS / NON-ACTIONS
+-> ORDERS / RULES / PROCEDURES
+-> PERSONNEL / INSTITUTIONAL KINSHIP
+-> MATERIAL EFFECTS
+-> CONTRADICTIONS / CHANGED EXPLANATIONS
+-> INDEPENDENT FINDINGS
+-> OFFICIAL NARRATIVE / DENIAL / JUSTIFICATION
+-> COMPETING CAUSAL MODELS
+-> DISCRIMINATORS
+```
+
+This ordering is epistemic, not metaphysical. A statement may itself be decisive evidence when it directly records an objective, order, admission, threat, or policy. The lock is against giving a self-serving account automatic first-seat authority merely because it is official.
+
+```text
+OFFICIAL_STATUS != EVIDENTIARY_PRIMACY
+SELF_DESCRIPTION != CAUSAL_FRAME
+DENIAL != NULLIFICATION_OF_CLUES
+CLUE != PROOF BY ITSELF
+CONVERGING_INDEPENDENT_CLUES -> STRONGER_PATTERN_INFERENCE
+```
+
+A useful question is not first `What does the institution say happened?` but:
+
+> What would we infer from the allocation, timing, conduct, omissions, consequences and independent records if the institution had issued no explanatory press release at all?
+
+Only then add the official account and ask what it explains, contradicts, omits, reframes, or changes.
+
 ## Core lock
 
 ```text
@@ -26,16 +65,42 @@ FORMAL_NONSTATE_STATUS != INDEPENDENCE_WHEN_STATE_RELATION_IS_EVIDENCED
 
 ## Required evidence seats
 
-For contested state or armed-force conduct, preserve at least these seats separately:
+For contested state or armed-force conduct, preserve at least these seats separately. The order below is the default investigative traversal, not a hierarchy of truth:
 
-1. **WORDS / STATED PURPOSE** — exact speaker or institution, date, authority seat, wording, and scope.
-2. **ORDER / POLICY / RULE** — enacted policy, operational rule, directive, official procedure, or documented command structure.
-3. **OBSERVED CONDUCT** — what forces, officials, settlers, contractors, or other relevant actors actually did.
-4. **EFFECT** — deaths, injuries, detention, deprivation, displacement, destruction, territorial change, access loss, reproductive harm, or other consequence.
-5. **EXTERNAL FINDING** — court, commission, UN body, inspector, investigation, or other competent review, preserving its exact authority and evidentiary posture.
-6. **INTENT / CAUSAL INFERENCE** — only after words, policy, conduct, effects, repetition, alternatives, correction response, and external findings are compared.
+1. **OBSERVED CONDUCT** — what forces, officials, settlers, contractors, or other relevant actors actually did.
+2. **ALLOCATION / TIMING / OMISSION** — where people, money, protection, attention and capacity moved; what happened immediately before/after; what was known but not acted on.
+3. **ORDER / POLICY / RULE** — enacted policy, operational rule, directive, official procedure, or documented command structure.
+4. **PERSONNEL / KINSHIP / CONTROL** — shared personnel, reserve service, appointments, command, funding, institutional crossings and oversight relations.
+5. **EFFECT** — deaths, injuries, detention, deprivation, displacement, destruction, territorial change, access loss, reproductive harm, or other consequence.
+6. **EXTERNAL FINDING** — court, commission, UN body, inspector, investigation, or other competent review, preserving its exact authority and evidentiary posture.
+7. **WORDS / STATED PURPOSE / DENIAL** — exact speaker or institution, date, authority seat, wording, audience, language and scope.
+8. **INTENT / CAUSAL INFERENCE** — only after conduct, allocation, timing, orders, kinship, effects, repetition, alternatives, correction response, independent findings and statements are compared.
 
-Do not promote seat 1 into seats 2-6 merely because the actor has authority or speaks in legal language.
+Do not promote seat 7 into the other seats merely because the actor has authority or speaks in legal language. Do not ignore seat 7 either: contradictions, admissions, threats, audience divergence and policy statements can materially change the causal model.
+
+## Clue families
+
+The lattice should actively preserve clues that official narratives commonly flatten:
+
+- force and protection allocation;
+- staffing and redeployment;
+- budget and procurement changes;
+- who received warning and who did not;
+- what was approved despite known constraints;
+- repeated failure after consequences became known;
+- selective enforcement or selective protection;
+- changes in rules of engagement or local practice;
+- personnel circulation between nominally separate bodies;
+- internal versus external language;
+- domestic versus international audience framing;
+- unexplained timing coincidences;
+- destroyed, withheld, inaccessible or missing evidence;
+- investigation closures and disciplinary outcomes;
+- whether explanations changed after outside scrutiny;
+- whether conduct continued after the stated justification ceased or changed;
+- who materially benefited or acquired control after the event, without treating benefit alone as causation.
+
+Each clue must keep its own posture. A clue is neither nothing nor automatic proof.
 
 ## Rhetorical membrane audit
 
@@ -48,6 +113,8 @@ When official vocabulary carries an exculpatory or legitimating function, ask:
 - Did the actor continue the same conduct after civilian or other harmful consequences were known?
 - Did the stated justification change while the conduct or territorial effect persisted?
 - Are there independent findings that classify the conduct differently?
+- What clues existed before the official explanation was issued?
+- Would the same explanation be persuasive if offered by an adversary rather than the investigated actor?
 
 Examples:
 
@@ -58,6 +125,8 @@ Examples:
 "voluntary migration" -> asserted voluntariness; must be tested against coercive conditions and available alternatives
 "settler violence" -> identifies direct actor; does not establish independence from state policy, protection, finance, or participation
 "targeting Hamas" -> stated target class; does not falsify deliberate civilian targeting, indiscriminate attack, disproportionate attack, or collective punishment
+"routine staffing unchanged" -> may coexist with removal of backup/reinforcement capacity
+"internal investigation found no wrongdoing" -> internal finding; requires independence/outcome audit before exculpatory weight is assigned
 ```
 
 ## Pattern and agenda typing
@@ -89,6 +158,22 @@ Current source posture includes:
 
 These findings do not make every Israeli, every Jew, every Zionist, every soldier, or every state employee responsible for every act. Attribution remains actor-, unit-, policy-, event-, and evidence-specific.
 
+The October 5-7 Nova / Gaza-border force-allocation trace is a useful clue-first specimen. The investigative sequence is not `IDF says routine security was unchanged -> accept or reject`. It is:
+
+```text
+backup/reinforcement capacity existed at Gaza border
+-> approximately 100 Commando Brigade soldiers were redeployed to Huwara
+-> West Bank security and settler-protection demands consumed additional military capacity
+-> Nova was approved near Gaza despite force-availability concerns
+-> no dedicated IDF protection or liaison was assigned
+-> local border troops were not told the event existed
+-> warning signs did not result in event warning/evacuation
+-> catastrophic protection failure occurred
+-> later internal explanation and investigation are compared against that clue chain
+```
+
+The clues support a protection-allocation / threat-assessment failure and revealed-priority inquiry. They do not by themselves establish advance knowledge, deliberate abandonment or intentional sacrifice.
+
 ## Locks
 
 - Judaism != Zionism != State of Israel != Israeli government != Israeli security forces != individual Israeli or Jew.
@@ -102,3 +187,5 @@ These findings do not make every Israeli, every Jew, every Zionist, every soldie
 - A military target can coexist with unlawful civilian targeting or an otherwise unlawful attack.
 - Denial is a stated position, not adjudication.
 - Security language receives no automatic evidentiary privilege over observed effects.
+- Official narrative receives no automatic priority over the clue field it is attempting to explain.
+- Clues can justify investigation and pattern inference without being silently promoted into proof of the strongest hypothesis.
