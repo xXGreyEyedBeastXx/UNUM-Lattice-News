@@ -1,0 +1,212 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+title: Israel / Palestine state conduct, civilian harm, sexual violence, child targeting, settlement-displacement, and territorial control
+accessed: 2026-08-17
+purpose: >-
+  Support an evidence-first comparison between Israeli leadership/security vocabulary and independently documented
+  conduct in Gaza and the occupied West Bank, with bounded cross-theater comparison to Israeli security/buffer-zone
+  practices in Lebanon and Syria. Preserve words, policy, orders, conduct, effects, external findings, denials,
+  territorial consequences, and responsibility as separate evidence seats.
+
+sources:
+  - id: un-coi-gaza-2024
+    publisher: UN Independent International Commission of Inquiry
+    source_class: international_fact_finding_report
+    url: https://www.un.org/unispal/document/coi-report-a-hrc-56-26-27may24/
+    supports:
+      - Israel publicly stated objectives of destroying Hamas, releasing hostages and preventing future threats
+      - the 9 October 2023 complete siege cut electricity, water, food and fuel
+      - the Commission found officials used necessities for strategic and political leverage
+      - the Commission found the siege and withholding of necessities constituted collective punishment
+      - the Commission found starvation as a method of war, forcible transfer, murder or wilful killing, intentionally directing attacks against civilians and civilian objects, sexual violence and other serious violations within its scope
+      - the Commission found official actions and consequences indicated motives including vengeance and collective punishment beyond stated military objectives
+    limitations:
+      - fact-finding commission report is not a final criminal conviction of every official, commander or soldier
+      - report scope is time-bounded and incident attribution must remain specific
+
+  - id: un-coi-sexual-violence-2025
+    publisher: UN Independent International Commission of Inquiry
+    source_class: international_fact_finding_report
+    url: https://www.un.org/unispal/document/report-of-the-commission-of-inquiry-israel-gender-based-violence-13march2025/
+    supports:
+      - systematic sexual, reproductive and other gender-based violence against Palestinians
+      - widespread and systematic abuse in Israeli detention
+      - forced stripping, sexual harassment including rape threats and sexual assault as de facto parts of ISF standard operating procedures
+      - rape and genital violence among forms of sexualized torture found committed under explicit orders or implicit encouragement from top civilian and military leadership
+      - sexual and gender-based violence increasingly used as a method of war according to the Commission
+      - sexual and reproductive healthcare facilities in Gaza were systematically destroyed
+    limitations:
+      - does not establish that every Israeli official, commander, soldier, settler, prison or detention episode involved rape or sexual violence
+      - Israel rejects the report and disputes its methodology and corroboration standard
+
+  - id: un-sg-crsv-2026
+    publisher: United Nations Secretary-General / Special Representative on Sexual Violence in Conflict
+    source_class: secretary_general_verified_monitoring_report
+    url: https://www.un.org/unispal/document/conflict-related-sexual-violence-report-of-the-secretary-general-s-2026-321/
+    supports:
+      - UN verified sexual violence against Palestinian men, women, boys and a girl
+      - verified acts included rape with objects, gang rape, attempted rape, genital violence, targeted shooting of genitals, forced nudity and rape threats
+      - rape and gang rape were verified against nine victims, majority from Gaza
+      - perpetrators in verified cases included IDF, Israel Prison Service units and Yamam
+      - Israeli armed and security forces were listed among parties credibly suspected of patterns of rape or other conflict-related sexual violence
+      - access barriers mean verified cases are indicative rather than comprehensive
+    limitations:
+      - report also lists Hamas for conflict-related sexual violence; harms by one side do not erase harms by the other
+      - verified case set is not a universal attribution to every member of the named institutions
+
+  - id: un-coi-children-2026
+    publisher: UN Independent International Commission of Inquiry
+    source_class: international_fact_finding_report
+    url: https://www.un.org/unispal/document/coi-report-23jun26/
+    supports:
+      - deliberate targeting and killing of Palestinian children, including after the October 2025 ceasefire
+      - documented direct shooting at children's vital organs using precision weapons such as quadcopters and snipers
+      - documented use of high-impact weapons in widespread and systematic attacks on civilian infrastructure crowded with children
+      - Commission found deliberate child targeting a key element supporting its genocidal-intent finding in Gaza
+      - Commission found Israel responsible for failing to protect West Bank children from soldiers and settlers and for allowing, enabling and encouraging settler violence that entrenches settlements, annexes land and forces Palestinians from land
+    limitations:
+      - deliberate-targeting finding does not mean every child death was individually intended
+      - Commission genocide finding is distinct from a final ICJ merits judgment
+
+  - id: un-coi-settlers-2026
+    publisher: UN Independent International Commission of Inquiry
+    source_class: international_fact_finding_report
+    url: https://www.un.org/unispal/document/report-coi-opt-9jun26/
+    supports:
+      - State of Israel found primarily responsible for actions of Israeli settlers in West Bank including East Jerusalem
+      - settler violence functions as a means of implementing Israeli State policy
+      - State and violent settler groups/individuals found working toward shared strategic objectives including occupation maintenance, settlement entrenchment, annexation and Palestinian displacement
+      - settler violence against children and threatened/committed sexual violence documented
+    limitations:
+      - does not erase differences among settlers or establish that every settler commits violence
+      - actor and event attribution remain specific
+
+  - id: icj-opt-advisory-2024
+    publisher: International Court of Justice
+    source_class: international_court_advisory_opinion
+    url: https://www.icj-cij.org/node/204176
+    supports:
+      - Court found Israel's continued presence in the Occupied Palestinian Territory unlawful
+      - Israel obligated to end unlawful presence as rapidly as possible
+      - Israel obligated to cease all new settlement activity immediately
+      - Israel obligated to evacuate all settlers from the Occupied Palestinian Territory
+      - reparation obligation for damage caused
+    limitations:
+      - advisory opinion is authoritative international-court legal analysis but not a criminal conviction
+
+  - id: israel-mfa-coi-sgbv-rejection-2025
+    publisher: Permanent Mission of Israel to the UN and International Organizations in Geneva
+    source_class: primary_state_response
+    url: https://embassies.gov.il/ungeneva/en/news/12-03-2025
+    supports:
+      - Israel categorically rejects the Commission's finding of systematic SGBV by the IDF
+      - Israel alleges bias and inadequate corroboration methodology
+    limitations:
+      - official denial is evidence of Israel's stated position, not independent adjudication of the underlying conduct
+
+  - id: idf-civilian-targeting-position
+    publisher: Israel Defense Forces / Ministry of Foreign Affairs
+    source_class: primary_state_security_statement
+    url: https://www.idf.il/en/mini-sites/israel-at-war/all-articles/the-war-against-hamas-answering-your-most-pressing-questions/
+    supports:
+      - IDF states operations are solely directed at Hamas, Islamic Jihad and other armed groups
+      - IDF states it does not intentionally target civilians and rejects collective-punishment accusations
+      - IDF describes targeting and civilian-harm mitigation procedures
+    limitations:
+      - self-description and stated doctrine must be compared against orders, observed conduct and external findings
+
+  - id: idf-aid-site-deliberate-fire-denial-2025
+    publisher: Israel Defense Forces
+    source_class: primary_state_security_statement
+    url: https://www.idf.il/en/articles/secret-links/idf-response-regarding-allegations-of-deliberate-idf-fire-toward-gazan-civilians-waiting-for-humanitarian-aid
+    supports:
+      - IDF states directives prohibit deliberate attacks on civilians
+      - IDF denies instructing forces to deliberately shoot civilians approaching aid distribution sites
+    limitations:
+      - denial concerns specified allegations and does not adjudicate other incidents or broader practice
+
+  - id: ap-israeli-soldier-refusal-testimony-2025
+    publisher: Associated Press
+    source_class: high_quality_news_direct_testimony
+    url: https://apnews.com/article/717c44de6c13e2b3af2e8b7fb77ebb16
+    supports:
+      - multiple Israeli soldiers described Palestinians being indiscriminately killed and homes destroyed
+      - officer Yotam Vilk described instructions to shoot unauthorized persons entering an Israeli-controlled buffer zone and observed an unarmed teenager killed
+      - soldiers described unnecessary destruction, looting and burning/demolition of homes
+      - IDF response stated it seeks to minimize civilian harm and condemns refusal to serve
+    limitations:
+      - individual soldier testimony is evidence of local orders/practice and requires corroboration before universalizing to all units or command levels
+
+  - id: sky-israeli-reservist-testimony-2025
+    publisher: Sky News
+    source_class: high_quality_news_direct_testimony
+    url: https://news.sky.com/story/bluesky-13393422
+    supports:
+      - anonymous reservist in IDF 252nd Division said orders in certain no-go areas were to kill anyone entering regardless of threat
+      - witness described arbitrary civilian killing dependent on commander-level rules
+    limitations:
+      - anonymous testimony requires corroboration and cannot alone establish army-wide command policy
+
+  - id: ap-yellow-line-soldier-testimony-2026
+    publisher: Associated Press
+    source_class: high_quality_news_direct_testimony
+    url: https://www.washingtonpost.com/world/2026/05/30/gaza-war-yellow-line-israeli-soldiers/4f68b6e8-5be6-11f1-8a9d-afb1148204e1_story.html
+    supports:
+      - soldiers described post-ceasefire orders to shoot persons crossing the yellow line
+      - soldiers described unclear rules of engagement and some commanders privately wanting fighting to continue
+    limitations:
+      - testimony reflects interviewed soldiers and units; requires unit/order-level tracing for broader attribution
+
+  - id: reuters-west-bank-settlement-push-2026
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.reuters.com/world/middle-east/israel-plans-big-west-bank-settlement-push-many-see-illegal-2026-06-03/
+    supports:
+      - major 2026 settlement expansion approvals
+      - Finance Minister Bezalel Smotrich presented settlement expansion as strengthening Israeli control and preventing a Palestinian state
+    limitations:
+      - specific approved projects and implementation should be tracked separately
+
+  - id: israel-pm-defense-west-bank-outposts-2026
+    publisher: Government of Israel / Ministry of Foreign Affairs
+    source_class: primary_state_statement
+    url: https://www.gov.il/en/pages/joint-statement-from-pm-netanyahu-and-defense-minister-katz-24-july-2026?embed=true
+    supports:
+      - Netanyahu and Katz announced response measures including forceful action in Palestinian villages, traffic separation/checkpoints, and accelerating legalization of farm outposts and establishment of new ones
+    limitations:
+      - stated policy measures do not by themselves establish every downstream displacement event
+
+  - id: reuters-lebanon-security-zone-withdrawal-2026
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.reuters.com/world/middle-east/after-us-criticism-israel-ties-lebanon-withdrawal-hezbollah-disarmament-2026-08-13/
+    supports:
+      - Israel maintained troops in southern Lebanon and tied withdrawal to Hezbollah disarmament
+      - U.S. officials said continued presence must comply with the negotiated framework
+    limitations:
+      - Lebanon theater is a bounded cross-theater comparison and should not be collapsed into the OPT legal regime
+
+  - id: reuters-syria-security-talks-2026
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.investing.com/news/world-news/syria-israel-resume-usmediated-security-talks-4429750
+    supports:
+      - Syria sought withdrawal of Israeli troops from territory seized after Assad's fall
+      - talks focused on reviving the 1974 disengagement/buffer-zone arrangement
+    limitations:
+      - Syria theater has distinct legal and security conditions; pattern comparison does not establish one unified command doctrine
+
+locks:
+  - Judaism != Zionism != Israel != Israeli government != Israeli security forces != individual Israeli or Jew.
+  - Hamas war crimes and sexual violence remain separately documented and are not offsets for Israeli state harms.
+  - Israel's denial is evidence of stated position; it does not automatically debunk external findings.
+  - UN Commission finding != final criminal conviction of every alleged perpetrator.
+  - UN Commission genocide finding != final ICJ merits judgment.
+  - Advisory opinion != criminal judgment.
+  - Soldier testimony != army-wide policy without corroboration.
+  - Multiple corroborated testimonies plus official documents, repeated effects and independent findings can support stronger mechanism inference.
+  - Civilian death != deliberate civilian targeting by itself.
+  - Deliberate civilian-targeting finding != proof every civilian death was deliberate.
+  - Military target present != civilians not targeted.
+  - Security/buffer terminology does not establish legality, temporariness, proportionality or absence of territorial expansion.
+  - Different theaters must remain distinct even when a cross-theater transformation pattern is investigated.
