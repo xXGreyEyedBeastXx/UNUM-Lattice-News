@@ -1,0 +1,167 @@
+schema: unum-lattice-news/lattice/v0.1
+id: walmart-whole-circuit-2026-08-16
+title: Walmart whole-circuit labor, public-support, executive-pay, and ownership return case
+status: active
+as_of: 2026-08-16
+authority: evidence_lattice_not_verdict
+purpose: >-
+  Keep Walmart's worker compensation, public-assistance incidence, firm surplus, executive
+  compensation, shareholder distributions, and concentrated ownership inside one recoverable
+  economic circuit. The case decomposes carriers for accuracy and then recomposes them so legal
+  or accounting categories do not erase aggregate distributional gain.
+
+parent_lattice: material-extraction-and-upward-recirculation-2026-08-16
+operators:
+  - whole-circuit-corporate-gain-accounting
+  - public-assistance-labor-cost-supplementation
+  - labor-market-power-and-wage-extraction
+  - money-flow-benefit-enforced-loss
+
+nodes:
+  corporation:
+    - walmart
+  ownership_seats:
+    - walton-enterprises
+    - walton-family-holdings-trust
+  populations:
+    - us-means-tested-benefit-recipient-households
+    - us-low-income-households
+    - us-high-wealth-households
+  resources:
+    - means-tested-public-transfers
+
+sources:
+  - source-walmart-public-assistance-employment-2026
+
+observed_circuit:
+  worker_and_public_support:
+    - id: walmart-georgia-medicaid-workers-2025
+      posture: observed
+      source: source-gao-working-medicaid-snap-employers-2026
+      value: 4595
+      unit: working adult Medicaid enrollees employed by Walmart in Georgia, September 2025
+      limits:
+        - selected-state count, not national total
+        - does not identify cause of eligibility
+    - id: walmart-tennessee-snap-workers-2025
+      posture: observed
+      source: source-gao-working-medicaid-snap-employers-2026
+      value: 3513
+      unit: working adult SNAP recipients employed by Walmart in Tennessee, September 2025
+      limits:
+        - selected-state count, not national total
+        - SNAP is household-based and eligibility depends on more than one worker's wage
+    - id: walmart-average-us-hourly-wage-fye2026
+      posture: stated
+      source: source-walmart-people-fye2026
+      value: 18
+      unit: dollars per hour, approximate company-reported U.S. average
+      limits:
+        - average does not describe distribution, hours, household income, or benefit eligibility
+
+  firm_surplus:
+    - id: walmart-fy2026-net-sales
+      posture: observed
+      source: source-walmart-fy2026-10k
+      value: 706.413
+      unit: billion dollars
+    - id: walmart-fy2026-operating-income
+      posture: observed
+      source: source-walmart-fy2026-10k
+      value: 29.825
+      unit: billion dollars
+    - id: walmart-fy2026-net-income-attributable
+      posture: observed
+      source: source-walmart-fy2026-10k
+      value: 21.893
+      unit: billion dollars
+
+  executive_and_median_worker_compensation:
+    - id: walmart-fy2026-ceo-total-compensation
+      posture: observed
+      source: source-walmart-2026-proxy
+      value: 29240930
+      unit: dollars
+      seat: then-CEO Doug McMillon
+    - id: walmart-fy2026-median-associate-total-compensation
+      posture: observed
+      source: source-walmart-2026-proxy
+      value: 30520
+      unit: dollars
+      seat: proxy-defined median associate
+    - id: walmart-fy2026-ceo-pay-ratio
+      posture: observed
+      source: source-walmart-2026-proxy
+      value: 958
+      unit: CEO total compensation to median associate total compensation
+      limits:
+        - pay ratio is distributional evidence, not a causal estimate of public-assistance use
+
+  shareholder_return:
+    - id: walmart-fy2026-dividends-paid
+      posture: observed
+      source: source-walmart-fy2026-10k
+      value: 7.507
+      unit: billion dollars
+    - id: walmart-fy2026-share-repurchases
+      posture: observed
+      source: source-walmart-fy2026-10k
+      value: 8.088
+      unit: billion dollars
+    - id: walmart-fy2026-total-dividends-plus-repurchases
+      posture: derived_arithmetic
+      source:
+        - source-walmart-fy2026-10k
+        - source-walmart-2026-proxy
+      value: 15.595
+      unit: billion dollars
+      notes:
+        - Consistent with Walmart proxy statement's rounded 15.6 billion dollars returned to shareholders.
+      limits:
+        - Dividends and buybacks are distinct mechanisms and should remain separately visible.
+        - Buybacks are not cash distributions to every continuing shareholder.
+
+  concentrated_ownership:
+    - id: walmart-family-related-shareholding-2026-04-10
+      posture: observed
+      source: source-walmart-2026-proxy
+      value: approximately 44
+      unit: percent of outstanding Walmart shares held by Walton-family-related entities
+      notes:
+        - Walton Enterprises' 44.11 percent beneficial/voting figure includes shares held by Walton Family Holdings Trust under irrevocable proxy.
+        - The trust's 6.44 percent dispositive share is therefore not additive to 44.11 percent.
+      limits:
+        - April 10 ownership is not the exact record-date ownership for every fiscal 2026 dividend payment.
+
+recomposition:
+  supported_observation: >-
+    In the same broad corporate system and near-adjacent measurement period, Walmart had thousands
+    of working adult Medicaid or SNAP beneficiaries in selected state employer datasets, reported a
+    958-to-1 CEO-to-median-associate compensation ratio, generated 21.893 billion dollars of net
+    income attributable to Walmart, returned about 15.6 billion dollars through dividends and share
+    repurchases, and had roughly 44 percent of its shares held by Walton-family-related entities.
+  interpretation_posture: path_forward
+  interpretation: >-
+    These facts establish a strongly unequal distributional circuit worth testing for labor-cost
+    supplementation and upward recirculation. They do not by themselves establish the dollar amount
+    of public assistance causally attributable to Walmart compensation, nor do they prove that a
+    public-benefit dollar directly funded an executive payment, dividend, or buyback. The analysis
+    must preserve those attribution limits while keeping every seat visible in the recomposed flow.
+
+next_money_trace:
+  - Recover national or larger-state employer-linked Medicaid/SNAP incidence where data permit.
+  - Estimate program cost associated with Walmart-employed households without assuming causation from employment alone.
+  - Model counterfactual employer compensation/benefit cost required to reduce public-assistance incidence.
+  - Trace SNAP redemption at Walmart and public healthcare/pharmacy revenue received by Walmart-linked businesses.
+  - Reconstruct fiscal-year dividend record-date ownership to estimate distributions by concentrated, institutional, employee, executive, and dispersed ownership seats.
+  - Trace buyback participation and continuing-holder ownership effects separately from dividends.
+  - Compare changes in ordinary-worker compensation, executive compensation, net income, and shareholder return over multiple years.
+
+locks:
+  - Decomposition must recompose.
+  - Do not stop the trace at the legal public-benefit recipient.
+  - Do not relabel the legal public benefit as a direct corporate payment.
+  - Do not allow those two rules to cancel each other; the employer-incidence question remains open until measured.
+  - Net income, dividends, buybacks, and appreciation are overlapping economic seats, not independent additive gains.
+  - CEO pay ratio is not proof of causation, but it is part of the same distributional body and must not be omitted as irrelevant.
+  - Ownership concentration is a terminal return operator and must remain in the money path.
