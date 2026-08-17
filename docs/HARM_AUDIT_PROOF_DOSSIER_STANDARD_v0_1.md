@@ -30,6 +30,33 @@ Every material arrow must be either:
 
 The goal is not to make disagreement impossible. **The goal is to make disagreement specific.**
 
+### Verified-evidence retention lock
+
+Publication review does not reset the investigation to zero.
+
+A relation, mechanism, objective, or source lineage that has already been verified and recorded is inherited unless a specific re-open condition exists.
+
+Do not silently convert:
+
+```text
+verified mechanism -> vague thematic summary
+verified transformation -> endpoint-only description
+verified source lineage -> repeated demand for proof
+verified movement objective -> generic ideological label
+```
+
+Re-open only for:
+- new contradictory evidence;
+- a specific source-integrity problem;
+- changed time, jurisdiction, actor, version, or scope;
+- exact quotation requiring the preserved source;
+- prior provisional/incomplete/citation-lineage uncertainty;
+- a named incremental publication burden that was not satisfied by the earlier verification.
+
+Use `docs/VERIFIED_EVIDENCE_RETENTION_AND_REENTRY_v0_1.md` for the full rule.
+
+**Publication may increase citation precision. It must not erase or repeatedly re-litigate a verified causal relation without cause.**
+
 ---
 
 ## 2. Reader-facing dossier structure
@@ -86,6 +113,8 @@ what would weaken or falsify the edge
 ```
 
 Do not hide an inferential jump inside prose between two well-cited endpoints.
+
+For previously verified edges, preserve the prior verification state and lineage. Add only the incremental evidence required for the present publication burden.
 
 ### D. Money / resource ledger
 
@@ -228,6 +257,8 @@ Examples:
 - evidence that gain was passed through to workers or consumers;
 - functioning redress that materially repaired the harm.
 
+Countercase review can change a verified edge, but only when the counterevidence actually bears on that edge. Do not use the existence of a countercase review as a reason to discard prior verification by default.
+
 ### K. What would change the assessment
 
 End the evidence section with explicit re-entry conditions.
@@ -258,8 +289,11 @@ Ask:
 10. Did we hide the strongest claim-specific counterevidence?
 11. Is a current legal or institutional status actually current?
 12. What exact edge would a good-faith critic have to defeat to change the conclusion?
+13. Did we accidentally erase an already-verified intermediary transformation while compressing the article?
+14. Did a safety or privacy filter remove tactical detail but also improperly remove the causal mechanism itself?
+15. Are we asking for re-verification because the evidence changed, or merely because we failed to recognize an existing verified record?
 
-If the answer to 1-10 reveals a real defect, return the article to investigation.
+If the answer to 1-15 reveals a real defect, return the article to investigation or recovery as appropriate.
 
 ---
 
@@ -284,6 +318,8 @@ The article should not demand that the reader accept the entire worldview in ord
 
 A skeptical reader should be able to enter at any edge, inspect the evidence, and move outward.
 
+Compression must preserve the causal skeleton. If shortening a section would make a verified transformation disappear between two cited endpoints, keep the transformation visible.
+
 ---
 
 ## 5. Extremism and adversarial audiences
@@ -304,6 +340,18 @@ hate-group designation by a monitor != government terrorist designation
 This precision is not a concession to extremist ideology. It protects the evidentiary chain from an avoidable terminology failure.
 
 Do not dehumanize an actor. Do not reduce evidentiary burdens because an actor holds hateful views. Do not allow hateful ideology to shield evidenced conduct from scrutiny either.
+
+### Extremism causal-retention lock
+
+When primary or otherwise verified records establish recruitment, normalization, propaganda, financing, coordination, or organizational-capacity mechanisms, preserve those mechanisms at a non-operational analytical level.
+
+```text
+safety/privacy filter may remove tactical instructions
+!=
+causal mechanism disappears from the dossier
+```
+
+The WLM April-2021 initiative is the explicit failure case: the verified 99%+ demographic objective, normalization strategy, recruitment/activist-conversion pathway, decentralized participation, and optics refinement must remain linked. Do not reduce that chain to the generic label `white supremacist campaign` and thereby erase how the movement says it grows.
 
 ---
 
