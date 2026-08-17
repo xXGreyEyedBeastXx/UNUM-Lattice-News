@@ -1,0 +1,60 @@
+schema: unum-lattice-news/node/v0.1
+id: extremist-taxonomy-and-evidence-boundary
+title: Extremist taxonomy and evidence boundary
+family: analysis_framework
+subtype: identity_and_extremism_classification_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Preserves exact distinctions among ideology, organization, participation, membership, source classification,
+    conduct, and criminal liability when reporting on extremist or hate-group activity. Precision is protective:
+    an overbroad label can obscure the actual evidence and give a documented actor an avoidable route to dispute the
+    record on terminology rather than conduct.
+  posture: evidence_bound
+current_source_classifications:
+  - SPLC_designates_Proud_Boys_as_a_hate_group
+  - SPLC_tracks_Ku_Klux_Klan_as_a_white_supremacist_hate_group_family
+  - SPLC_tracks_neo_Nazi_groups_as_antisemitic_white_supremacist_hate_groups
+  - SPLC_defines_white_nationalist_groups_as_white_supremacist_or_white_separatist_movements
+  - ADL_identifies_White_Lives_Matter_as_a_white_supremacist_phrase_and_campaign
+required_trace:
+  - exact_actor_or_group_name
+  - ideology_or_self_description
+  - source_classification_and_source_type
+  - membership_participation_affiliation_or_event_attendance
+  - observed_statement_symbol_or_conduct
+  - leadership_or_operational_role_if_any
+  - criminal_or_civil_adjudication_if_any
+  - overlap_with_other_groups_or_networks
+  - contradictory_or_exculpatory_identity_evidence
+  - time_window
+classification_locks:
+  - nationalist != white_nationalist
+  - white_nationalist != KKK_member
+  - supremacist != neo_Nazi_without_additional_evidence
+  - rally_or_channel_participant != formal_group_member
+  - group_member != responsibility_for_every_group_act
+  - source_monitor_hate_group_designation != government_terrorist_designation
+  - ideological_classification != criminal_liability
+  - hateful_or_extremist_views_do_not_erase_human_dignity_or_evidentiary_burden
+  - named_membership_or_participation_requires_actor_specific_evidence
+publication_examples:
+  preferred:
+    - SPLC_designates_the_Proud_Boys_as_a_hate_group
+    - ADL_identifies_White_Lives_Matter_as_a_white_supremacist_campaign
+    - records_show_person_X_participated_in_event_Y_organized_by_group_Z
+  avoid_without_separate_evidence:
+    - every_nationalist_is_a_hate_group_member
+    - every_event_participant_is_a_Proud_Boy_or_KKK_member
+    - monitor_designation_means_federal_terrorist_designation
+source_bundle:
+  - source-proof-chain-closure-2026-08-17
+relations:
+  - type: EXTENDS
+    target: entity-kinship-and-identity-resolution
+  - type: EXTENDS
+    target: accusation-reversal-and-actor-dependent-moral-laundering
+  - type: EXTENDS
+    target: truth-laundering-and-citation-lineage-capture

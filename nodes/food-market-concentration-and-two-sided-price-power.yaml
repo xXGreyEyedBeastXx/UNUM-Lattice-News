@@ -1,0 +1,59 @@
+schema: unum-lattice-news/node/v0.1
+id: food-market-concentration-and-two-sided-price-power
+title: Food-market concentration and two-sided price power
+family: analysis_framework
+subtype: essential_goods_market_power_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Investigates essential-food markets where concentrated buyers or processors may exercise power over suppliers
+    while concentrated processors or retailers may also influence downstream prices. The operator tests both sides of
+    the market and requires costs, margins, scale economies, entry conditions, and local/product market definition
+    before promoting concentration into an extraction claim.
+  posture: evidence_bound
+current_evidence:
+  - USDA_reports_four_largest_beef_packers_handle_about_85_percent_of_steer_and_heifer_purchases
+  - USDA_reports_four_largest_pork_packers_handle_about_67_percent_of_hog_purchases
+  - USDA_reviews_recent_evidence_that_reduced_competition_can_lower_cattle_prices
+  - USDA_also_preserves_scale_economy_evidence_that_larger_plants_can_reduce_costs_and_consumer_prices
+  - USDA_reports_county_level_food_retail_concentration_rose_94_percent_from_1990_to_2019
+core_trace:
+  - farmer_rancher_or_food_supplier
+  - local_or_product_market_definition
+  - buyer_processor_or_packer's_market_share
+  - price_paid_to_supplier
+  - processing_cost_and_margin
+  - wholesaler_or_distributor
+  - retailer_market_share_and_margin
+  - price_paid_by_consumer
+  - quality_quantity_or_service_change
+  - ownership_return
+  - entry_barriers_merger_policy_and_antitrust_redress
+required_discriminators:
+  - concentration_measure_and_geographic_market
+  - input_cost_change
+  - supplier_price_change
+  - processor_margin_change
+  - retail_margin_change
+  - consumer_price_and_quantity
+  - productivity_or_scale_savings
+  - imports_exports_and_substitution
+  - evidence_of_coordination_exclusion_or_unilateral_power
+locks:
+  - concentration != collusion
+  - concentration != price_gouging
+  - lower_supplier_price != higher_consumer_price_automatically
+  - scale_economies_can_create_real_savings_and_must_be_measured
+  - national_market_share_can_hide_local_or_product_specific_variation
+  - actor_specific_wrongdoing_requires_actor_specific_evidence
+source_bundle:
+  - source-proof-chain-closure-2026-08-17
+relations:
+  - type: EXTENDS
+    target: price-power-and-essential-goods-extraction
+  - type: EXTENDS
+    target: whole-circuit-corporate-gain-accounting
+  - type: EXTENDS
+    target: consumer-pass-through-versus-extraction-burden

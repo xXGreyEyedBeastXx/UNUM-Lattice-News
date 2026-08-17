@@ -1,0 +1,180 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-proof-chain-closure-2026-08-17
+title: Proof-chain closure — terminal beneficiaries, influence, redress, and extremist taxonomy
+status: active
+as_of: 2026-08-17
+purpose: >-
+  Close evidentiary gaps that remain after the article-readiness passes. This bundle emphasizes primary records
+  showing terminal capital allocation, direct lobbying on revenue-relevant programs, institutional redress capacity,
+  and careful typing of extremist or hate-group identities. It does not treat lobbying as proof of policy control,
+  financial return as dollar-for-dollar tracing of a public payment, or ideological labels as substitutes for conduct.
+sources:
+  - id: geo-2025-10k
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/923796/000119312526071747/geo-20251231.htm
+    supports:
+      - ICE_accounted_for_47_6_percent_of_2025_consolidated_revenue
+      - 2025_total_revenue_2_631549_billion
+      - 2025_share_repurchases_about_91_million
+  - id: geo-2025-q4-lda
+    class: primary_lobbying_disclosure
+    url: https://lda.gov/filings/public/filing/7dd31f33-8ca4-4f35-8c23-94c6d29e0e47/print/
+    supports:
+      - 340000_dollars_Q4_2025_lobbying_expense
+      - ICE_immigration_enforcement_and_alternatives_to_detention
+      - homeland_security_appropriations
+      - contacts_with_ICE_DHS_OMB_Congress
+      - public_private_detention_reentry_supervision_and_location_monitoring_promotion
+    limitation: >-
+      GEO states it does not lobby for the basis or length of an individual's detention. Preserve this stated scope.
+  - id: corecivic-2025-10k
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1070985/000119312526060669/cxw-20251231.htm
+    supports:
+      - ICE_accounted_for_35_percent_of_2025_total_revenue
+      - 2025_total_revenue_2_211182_billion
+      - 2025_share_repurchases_218_4_million
+  - id: corecivic-venture-2025-lda
+    class: primary_lobbying_disclosure
+    url: https://lda.senate.gov/filings/public/filing/44e96b38-04b7-476f-9a9e-b291c35613c2/print/
+    supports:
+      - lobbying_on_funding_for_BOP_USMS_detention_trustee_and_ICE
+      - FY26_DHS_appropriations
+      - HR1_Public_Law_119_21
+    limitation: >-
+      Filing states the lobbyist does not lobby for or against policies determining the basis for incarceration or detention.
+  - id: unitedhealth-2025-10k
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/731766/000073176626000062/unh-20251231.htm
+    supports:
+      - CMS_premium_revenue_44_percent_of_2025_consolidated_revenue
+      - 2025_cash_dividends_7_916_billion
+      - 2025_common_share_repurchases_5_545_billion_cash_flow_or_about_5_482_billion_program_cost
+      - 8_4_million_Medicare_Advantage_members_at_year_end_2025
+  - id: unitedhealth-2025-q4-lda
+    class: primary_lobbying_disclosure
+    url: https://lda.senate.gov/filings/public/filing/1fc67c5e-f865-43ae-bbec-01341df637a4/print/
+    supports:
+      - 2_52_million_Q4_2025_in_house_lobbying_expense
+      - Medicare_Advantage_program
+      - prior_authorization
+      - PBM_and_drug_pricing_reforms
+      - CMS_Congress_and_White_House_contacts
+  - id: unitedhealth-lda-search-2025
+    class: primary_lobbying_database
+    url: https://lda.senate.gov/filings/public/filing/search/?client=unitedhealth&search=search
+    supports:
+      - Q1_2025_amended_in_house_expense_3_99_million
+      - Q2_2025_in_house_expense_3_68_million
+      - Q3_2025_in_house_expense_1_55_million
+      - Q4_2025_in_house_expense_2_52_million
+      - summed_2025_in_house_expense_11_74_million_using_superseding_Q1_amendment
+    anti_double_counting: >-
+      Do not add the superseded Q1 3.29 million filing to the amended 3.99 million filing. Outside-firm filings are separate and should not be added without a normalized annual census.
+  - id: grassley-unitedhealth-risk-adjustment-2026
+    class: congressional_oversight
+    url: https://www.grassley.senate.gov/news/news-releases/grassley-report-details-unitedhealths-record-of-appearing-to-game-the-medicare-advantage-system-turning-risk-adjustment-into-its-own-business
+    supports:
+      - congressional_review_of_more_than_50000_pages_of_UnitedHealth_material
+      - oversight_concern_about_Medicare_Advantage_risk_adjustment_practices
+    limitation: congressional_staff_report_and_oversight_conclusion_not_criminal_adjudication
+  - id: lockheed-2025-10k
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/936468/000162828026004195/lmt-20251231.htm
+    supports:
+      - 2025_sales_75_billion
+      - 72_percent_of_sales_from_US_government
+      - 2025_net_earnings_5_017_billion
+      - 2025_share_repurchases_3_billion
+      - 2025_dividends_declared_3_126_billion
+  - id: lockheed-2025-lda
+    class: primary_lobbying_disclosure
+    url: https://lda.gov/filings/public/filing/784b1f0a-c904-4d6e-8467-d747f7190303/print/
+    supports:
+      - 3_89_million_reported_lobbying_expense_for_the_filing_period
+      - defense_budget_and_appropriations_lobbying
+    limitation: report_period_must_be_preserved_when_used; do_not_treat_one_quarter_as_annual_total
+  - id: lockheed-defense-issues-2025-lda
+    class: primary_lobbying_disclosure
+    url: https://lda.senate.gov/filings/public/filing/4afe0e35-b26d-46bf-8e60-30b5cbadd5ff/print/
+    supports:
+      - FY25_and_FY26_defense_appropriations_and_authorization
+      - shipbuilding_submarines_ground_vehicles_air_defense_aircraft_ammunition_cloud_and_other_programs
+  - id: nlrb-members-1935-current
+    class: primary_federal_agency
+    url: https://www.nlrb.gov/about-nlrb/who-we-are/the-board/members-of-the-nlrb-since-1935
+    supports:
+      - board_composition_by_date
+      - two_member_or_one_member_period_after_Wilcox_removal_and_Kaplan_expiration
+      - three_member_board_from_2026_01_07
+  - id: nlrb-quorum-restored-2026-01-07
+    class: primary_federal_agency
+    url: https://www.nlrb.gov/news-outreach/news-story/james-murphy-and-scott-mayer-sworn-in-as-board-members-0
+    supports:
+      - new_members_sworn_2026_01_07
+      - NLRB_statement_that_board_now_had_quorum_to_conduct_agency_business
+  - id: supreme-court-wilcox-24A966
+    class: primary_court_docket
+    url: https://www.supremecourt.gov/docket/docketfiles/html/public/24a966.html
+    supports:
+      - Supreme_Court_stay_of_orders_reinstating_Wilcox_in_2025
+  - id: supreme-court-wilcox-26-5
+    class: primary_court_docket
+    url: https://www.supremecourt.gov/search.aspx?filename=/docket/docketfiles/html/public/26-5.html
+    supports:
+      - Wilcox_certiorari_petition_docketed_2026_07_01
+      - dispute_remained_live_as_of_2026_08_17
+  - id: usda-meatpacking-concentration-2024
+    class: primary_federal_research
+    url: https://www.ers.usda.gov/amber-waves/2024/january/concentration-in-u-s-meatpacking-industry-and-how-it-affects-competition-and-cattle-prices
+    supports:
+      - top_four_packers_handle_85_percent_of_steer_and_heifer_purchases
+      - current_evidence_of_reduced_competition_and_lower_cattle_prices
+      - scale_economies_and_consumer_price_benefits_as_counterevidence
+    limitation: concentration_alone_does_not_prove_anticompetitive_conduct
+  - id: usda-food-retail-concentration-2023
+    class: primary_federal_research
+    url: https://ers.usda.gov/publications/105557
+    supports:
+      - county_level_food_retail_concentration_rose_94_percent_1990_to_2019
+    limitation: concentration_metric_is_not_itself_price_gouging_or_collusion
+  - id: splc-proud-boys
+    class: specialist_extremism_monitor
+    url: https://www.splcenter.org/resources/extremist-files/proud-boys/
+    supports:
+      - SPLC_designated_hate_group
+      - documented_affiliations_and_bigoted_extremist_rhetoric
+    limitation: SPLC_designation_is_a_source_classification_not_a_government_terrorist_designation
+  - id: splc-kkk
+    class: specialist_extremism_monitor
+    url: https://www.splcenter.org/resources/extremist-files/ku-klux-klan/
+    supports:
+      - KKK_as_hate_group_family
+      - white_supremacist_targeting_and_violence_history
+  - id: splc-neo-nazi
+    class: specialist_extremism_monitor
+    url: https://www.splcenter.org/resources/extremist-files/neo-nazi/
+    supports:
+      - neo_Nazi_hate_group_family
+      - antisemitic_and_white_supremacist_ideology
+  - id: splc-white-nationalist
+    class: specialist_extremism_monitor
+    url: https://www.splcenter.org/resources/extremist-files/white-nationalist/
+    supports:
+      - white_nationalist_groups_as_white_supremacist_or_separatist_movements
+    limitation: nationalist_without_white_or_ethnonationalist_content_is_too_broad_for_this_classification
+  - id: adl-white-lives-matter
+    class: specialist_extremism_monitor
+    url: https://www.adl.org/resources/hate-symbol/white-lives-matter
+    supports:
+      - WLM_as_white_supremacist_phrase_and_campaign
+    limitation: symbol_or_phrase_use_should_be_evaluated_in_context
+locks:
+  - lobbying_activity != proof_of_policy_authorship_or_control
+  - campaign_or_PAC_activity != proof_of_quid_pro_quo
+  - public_revenue != shareholder_return_dollar_for_dollar
+  - corporate_revenue != profit
+  - high_concentration != anticompetitive_conduct_by_definition
+  - extremist_monitor_classification != criminal_adjudication
+  - nationalist_alone != white_nationalist_or_hate_group
+  - named_group_membership_or_participation_requires_actor_specific_evidence

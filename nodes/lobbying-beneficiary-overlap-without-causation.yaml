@@ -1,0 +1,60 @@
+schema: unum-lattice-news/node/v0.1
+id: lobbying-beneficiary-overlap-without-causation
+title: Lobbying-beneficiary overlap without causation
+family: analysis_framework
+subtype: policy_influence_and_beneficiary_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Investigates cases where an actor materially benefits from a public program, contract, appropriation, tax rule,
+    or regulatory environment and also lobbies on that same policy surface. The overlap is evidence of incentive and
+    attempted influence, not proof that the actor authored, purchased, controlled, or corruptly caused the policy.
+  posture: evidence_bound
+required_trace:
+  - public_program_contract_rule_or_appropriation
+  - actor_revenue_cost_or_asset_exposure
+  - lobbying_registrant_and_client
+  - reporting_period_and_expense_or_income
+  - exact_issue_language
+  - agencies_or_legislative_bodies_contacted
+  - policy_change_or_funding_outcome
+  - counterfactual_and_other_influences
+  - terminal_beneficiary_or_capital_allocation
+  - evidence_of_authorship_coordination_or_quid_pro_quo_if_any
+observed_case_examples:
+  GEO:
+    - ICE_47_6_percent_of_2025_revenue
+    - Q4_2025_lobbying_340000
+    - lobbying_topics_include_ICE_immigration_enforcement_alternatives_to_detention_and_appropriations
+    - 2025_share_repurchases_about_91_million
+  CoreCivic:
+    - ICE_35_percent_of_2025_revenue
+    - lobbying_filings_cover_ICE_and_detention_funding_and_DHS_appropriations
+    - 2025_share_repurchases_218_4_million
+  UnitedHealth:
+    - CMS_premiums_44_percent_of_2025_consolidated_revenue
+    - 2025_in_house_lobbying_11_74_million_using_superseding_Q1_amendment
+    - lobbying_topics_include_Medicare_Advantage_prior_authorization_PBM_and_drug_pricing
+    - 2025_dividends_7_916_billion_and_share_repurchases_about_5_5_billion
+  Lockheed_Martin:
+    - US_government_72_percent_of_2025_sales
+    - lobbying_on_defense_appropriations_authorization_and_program_funding
+    - 2025_dividends_declared_3_126_billion_and_share_repurchases_3_billion
+locks:
+  - lobbying != bribery
+  - lobbying != policy_authorship
+  - lobbying != proof_of_success
+  - beneficiary != policy_author
+  - public_revenue != shareholder_return_dollar_for_dollar
+  - a_company_can_legitimately_advocate_for_its_business_interests_while_the_overlap_remains_relevant_to_power_mapping
+source_bundle:
+  - source-proof-chain-closure-2026-08-17
+relations:
+  - type: EXTENDS
+    target: power-capacity-accumulation
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+  - type: EXTENDS
+    target: whole-circuit-corporate-gain-accounting

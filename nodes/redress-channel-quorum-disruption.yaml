@@ -1,0 +1,54 @@
+schema: unum-lattice-news/node/v0.1
+id: redress-channel-quorum-disruption
+title: Redress-channel quorum disruption
+family: analysis_framework
+subtype: institutional_redress_capacity_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Tracks when an oversight, adjudication, election, labor, regulatory, or correction body remains legally existent
+    but loses a quorum or other minimum institutional capacity needed to exercise a material portion of its authority.
+    The operator distinguishes total shutdown from partial function and records restoration separately from the prior gap.
+  posture: evidence_bound
+current_case:
+  institution: National_Labor_Relations_Board
+  observed:
+    - Gwynne_Wilcox_service_ended_2025_01_28_after_presidential_removal
+    - Supreme_Court_stayed_lower_court_reinstatement_orders_in_2025
+    - NLRB_membership_records_show_fewer_than_three_members_from_2025_01_28_until_2026_01_07
+    - NLRB_announced_on_2026_01_07_that_Murphy_and_Mayer_swore_in_and_restored_a_quorum
+  legal_baseline:
+    - National_Labor_Relations_Act_requires_three_members_for_Board_quorum
+  present_state:
+    - quorum_restored_2026_01_07
+    - board_currently_has_three_members
+    - Wilcox_removal_litigation_remains_live_at_Supreme_Court_as_of_2026_08_17
+  effect_posture: >-
+    Board-level adjudicative capacity was materially impaired during the no-quorum period, but regional offices,
+    investigations, elections, delegated functions, and other agency activity did not all disappear.
+required_trace:
+  - statutory_or_rule_based_capacity_requirement
+  - membership_or_office_status_timeline
+  - function_that_requires_quorum_or_official
+  - functions_that_continue_without_it
+  - actor_or_event_causing_vacancy
+  - litigation_or_oversight
+  - duration
+  - backlog_or_case_effect_if_measurable
+  - restoration
+locks:
+  - quorum_loss != total_agency_shutdown
+  - later_restoration != evidence_that_prior_gap_was_inconsequential
+  - disputed_legality_must_remain_disputed_until_resolved
+  - institutional_impairment_does_not_by_itself_prove_intent_to_suppress_a_specific_party_or_union
+source_bundle:
+  - source-proof-chain-closure-2026-08-17
+relations:
+  - type: EXTENDS
+    target: redress-capture-and-correction-failure
+  - type: EXTENDS
+    target: union-avoidance-and-bargaining-power-preservation
+  - type: EXTENDS
+    target: power-capacity-accumulation
