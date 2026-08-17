@@ -1,0 +1,128 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-us-material-extraction-and-upward-recirculation-2026-08-16
+title: U.S. labor, land, public-to-private revenue, tax preference, and environmental externalization baseline
+accessed: 2026-08-16
+purpose: >-
+  Supply recoverable evidence for tracing material value from workers, tenants/producers,
+  taxpayers, public programs, land and natural resources into firms, landlords, creditors,
+  asset owners, and cleanup liabilities. This bundle supports a harm audit; it does not treat
+  profit, ownership, rent, contracting, or wealth as wrongdoing without a bounded mechanism.
+sources:
+  - id: source-dol-whd-fy2025-back-wages
+    publisher: U.S. Department of Labor Wage and Hour Division
+    source_class: primary_government_enforcement
+    title: US Department of Labor recovers more than $259M in back wages for workers in 2025
+    date: 2026-01-08
+    url: https://www.dol.gov/newsroom/releases/whd/whd20260108
+    supports:
+      - more than 259 million dollars in back wages recovered for nearly 177000 workers in fiscal year 2025
+    limitations:
+      - enforcement recoveries are not an estimate of all wage theft or underpayment
+      - recovered back wages do not measure lawful wage suppression through employer market power
+
+  - id: source-treasury-labor-market-competition-2022
+    publisher: U.S. Department of the Treasury
+    source_class: primary_government_analysis
+    title: The State of Labor Market Competition in the U.S. Economy
+    date: 2022-03-07
+    url: https://home.treasury.gov/news/press-releases/jy0634
+    supports:
+      - Treasury concluded U.S. labor markets depart materially from perfect competition due to employer concentration and anticompetitive practices
+      - report estimated lack of competition causes wage declines of roughly 20 percent relative to a more competitive benchmark
+    limitations:
+      - model estimate is not a firm-by-firm extraction measure
+      - labor-market conditions vary by occupation, geography, and time
+
+  - id: source-usda-total-2024-landlords
+    publisher: U.S. Department of Agriculture National Agricultural Statistics Service
+    source_class: primary_government_survey
+    title: Most of the U.S. Rented Farmland is Owned by Non-Farmers
+    date: 2026-03-12
+    url: https://www.nass.usda.gov/Newsroom/2026/03-12-2026.php
+    supports:
+      - 348 million rented farmland acres in 2024
+      - 79 percent of rented acres owned by non-farming landlords
+      - rented land and buildings valued above 1.6 trillion dollars
+      - landlords received 34.1 billion dollars in rental income and incurred 12.0 billion dollars in operating expenses in 2024
+    limitations:
+      - landlord status does not establish absenteeism, wealth percentile, or harm
+      - rental income is not the same as net economic rent after costs and contribution
+
+  - id: source-gao-federal-oil-gas-oversight-2025
+    publisher: U.S. Government Accountability Office
+    source_class: primary_government_oversight
+    title: Federal Oil and Gas: Challenges for Providing Effective Oversight
+    date: 2025
+    url: https://www.gao.gov/products/gao-25-108130
+    supports:
+      - BOEM held about 3.5 billion dollars in supplemental bonds against 40 to 70 billion dollars in estimated post-production costs as of June 2023
+      - insufficient financial assurance can expose the federal government to cleanup risk after delay, bankruptcy, or default
+    limitations:
+      - estimated post-production cost is not realized taxpayer expenditure
+      - obligations and safeguards can change over time
+
+  - id: source-epa-superfund-enforcement-fy2025
+    publisher: U.S. Environmental Protection Agency
+    source_class: primary_government_enforcement
+    title: Enforcement and Compliance Assurance Annual Results for FY 2025 — Superfund Cleanup Enforcement
+    date: 2026
+    url: https://www.epa.gov/enforcement/enforcement-and-compliance-assurance-annual-results-fy-2025-superfund-cleanup
+    supports:
+      - EPA secured about 714.3 million dollars in FY2025 cleanup commitments from responsible and third parties
+      - EPA recovered more than 174.1 million dollars for past cleanup costs
+      - enforcement preserves public funds for sites where liable parties cannot be made to pay
+    limitations:
+      - Superfund includes many kinds of responsible parties and contamination histories
+      - recovery totals do not measure total externalized ecological or health cost
+
+  - id: source-lockheed-2025-10k
+    publisher: U.S. Securities and Exchange Commission / Lockheed Martin filing
+    source_class: primary_corporate_filing
+    title: Lockheed Martin Corporation 2025 Form 10-K
+    date: 2026-01
+    url: https://www.sec.gov/Archives/edgar/data/936468/000162828026004195/lmt-20251231.htm
+    supports:
+      - 75.0 billion dollars in 2025 sales
+      - 72 percent of sales from the U.S. Government as prime contractor or subcontractor
+      - 5.017 billion dollars in net earnings
+      - 3.0 billion dollars in common-stock repurchases
+      - 3.126 billion dollars in dividends declared
+    limitations:
+      - company-wide distributions cannot be assigned dollar-for-dollar to specific government contracts
+      - sales are gross revenue and include wages, suppliers, capital, taxes, and other costs before owner return
+
+  - id: source-treasury-tax-expenditures-fy2026
+    publisher: U.S. Department of the Treasury
+    source_class: primary_government_budget_analysis
+    title: Tax Expenditures
+    date: 2026
+    url: https://home.treasury.gov/policy-issues/tax-policy/tax-expenditures
+    supports:
+      - Treasury treats exclusions, deductions, credits, preferential rates, and deferrals as revenue losses relative to the reference tax system
+      - FY2026 estimates include 135 billion dollars for capital gains tax expenditure and other large exclusions and deferrals
+    limitations:
+      - tax expenditures generally cannot simply be summed because provisions interact
+      - revenue loss is not cash spending
+
+  - id: source-cbo-major-tax-expenditures-2019
+    publisher: Congressional Budget Office
+    source_class: primary_government_distributional_analysis
+    title: The Distribution of Major Tax Expenditures in 2019
+    date: 2021-10
+    url: https://www.cbo.gov/publication/57585
+    supports:
+      - 95 percent of benefits from preferential rates on capital gains and dividends accrued to the highest income quintile in 2019
+      - 75 percent of those benefits accrued to the top 1 percent
+      - qualified business income deduction benefits were also strongly concentrated toward the top
+    limitations:
+      - 2019 distribution is historical and tax law has changed
+      - incidence assignment and behavioral responses are model-dependent
+locks:
+  - Recovered wage theft != total wage theft.
+  - Lawful low wages != wage theft.
+  - Rent != wrongdoing by definition.
+  - Gross government contract value != owner capture.
+  - Company-wide dividends or buybacks != traceable use of a particular tax dollar.
+  - Tax expenditure != cash outlay.
+  - Estimated environmental liability != realized public expenditure.
+  - Ownership gain, operating profit, dividends, buybacks, and asset appreciation require anti-double-counting lineage.

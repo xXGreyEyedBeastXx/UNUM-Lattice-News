@@ -1,0 +1,34 @@
+schema: unum-lattice-news/node/v0.1
+id: lockheed-martin
+title: Lockheed Martin Corporation
+family: actor
+subtype: institution
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Publicly traded aerospace and defense corporation used here as a concrete case for tracing
+    public procurement revenue through a private firm and onward to costs, earnings, dividends,
+    buybacks, retained capital, workers, suppliers, and shareholders. Inclusion is not a claim
+    that all shareholder distributions are funded by or attributable to government contracts.
+  posture: observed
+current_evidence:
+  observed:
+    - The company reported 75.0 billion dollars in 2025 sales, with 72 percent from the U.S. Government as prime contractor or subcontractor.
+    - The company reported 5.017 billion dollars in 2025 net earnings.
+    - The company reported 3.0 billion dollars of common-stock repurchases and 3.126 billion dollars of dividends declared in 2025.
+  unknowns:
+    - The precise marginal profit and shareholder distribution attributable to each government program or contract.
+    - Counterfactual revenue, employment, investment, and shareholder distributions absent particular public procurements.
+relations:
+  - type: TESTED_THROUGH
+    target: public-to-private-revenue-and-ownership-return
+    posture: observed
+locks:
+  - Government sales share != shareholder distribution attribution.
+  - Contract performance, wages, suppliers, capital investment, taxes, profit, dividends, and buybacks are separate downstream seats.
+  - Public procurement may create public value; that value must be evaluated separately from private return.
+  - Inclusion in a harm audit is not a verdict of wrongdoing.
+references:
+  - https://www.sec.gov/Archives/edgar/data/936468/000162828026004195/lmt-20251231.htm

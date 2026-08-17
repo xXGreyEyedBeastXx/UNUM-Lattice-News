@@ -1,0 +1,48 @@
+schema: unum-lattice-news/node/v0.1
+id: land-rent-and-resource-capture
+title: Land rent and resource capture
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    A reusable operator for tracing income and wealth flows created by control of land or
+    natural-resource access: tenant or producer rent payments, land appreciation, royalty
+    structures, lease terms, public infrastructure capitalization, and costs imposed on
+    communities or ecosystems. It separates ownership, use, productive contribution,
+    appreciation, rent, extraction, and environmental consequence.
+  posture: working_framework
+core_trace:
+  - land_or_resource
+  - owner_or_control_seat
+  - user_tenant_or_extractor
+  - rent_royalty_or_access_payment
+  - public_or_private_value_inputs
+  - operating_costs
+  - owner_income_or_asset_appreciation
+  - environmental_or_community_cost
+  - repair_or_reclamation_obligation
+current_evidence:
+  observed:
+    - USDA reported that 348 million acres of U.S. farmland were rented in 2024 and that 79 percent of rented acres were owned by non-farming landlords.
+    - USDA reported more than 34.1 billion dollars in landlord rental income on that farmland in 2024, with rented land and buildings valued above 1.6 trillion dollars.
+  supported_inferences:
+    - Land ownership can create a direct income flow from producers or tenants to owners independent of the owner's direct labor on the rented land.
+  unknowns:
+    - Distribution of rental income and land appreciation across wealth percentiles and ownership entities.
+    - Amount of land appreciation attributable to public infrastructure, subsidies, zoning, scarcity, or private improvements.
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+locks:
+  - Land ownership != wrongdoing.
+  - Rent != extraction by definition; harm requires burden, power, alternatives, contribution, and consequence to be traced.
+  - Appreciation != cash income and must not be double-counted with rent or realized capital gain.
+  - Productive farming, land stewardship, speculation, absentee ownership, and resource extraction are distinct seats.
+  - Environmental cost must be traced independently from property-value gain.
+references:
+  - https://www.nass.usda.gov/Newsroom/2026/03-12-2026.php
+  - https://www.ers.usda.gov/topics/farm-economy/land-use-land-value-tenure/farmland-value
