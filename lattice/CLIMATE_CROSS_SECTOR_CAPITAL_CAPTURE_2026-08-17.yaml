@@ -1,0 +1,394 @@
+schema: unum-lattice-news/lattice/v0.1
+id: climate-cross-sector-capital-capture-2026-08-17
+title: Climate forcing, damage demand, scarcity, and cross-sector capital capture
+status: active_investigation
+as_of: 2026-08-17
+authority: evidence_lattice_not_verdict
+purpose: >-
+  Preserve the full cross-sector circuit linking climate-forcing assets, capital ownership and
+  governance, direct conglomerate integration, physical climate consequences, building repair and
+  replacement demand, agricultural and land scarcity, concentrated food-system seats, and capital
+  return. The lattice is explicitly non-collapsing: ownership, influence, control, knowledge,
+  benefit, responsibility, and specific intent are distinct edges with distinct evidence posture.
+
+source_bundles:
+  - source-climate-cross-sector-capital-capture-2026-08-17
+
+operators:
+  - portfolio-level-climate-moral-hazard
+  - whole-circuit-corporate-gain-accounting
+  - environmental-cost-externalization
+  - land-rent-and-resource-capture
+  - food-market-concentration-and-two-sided-price-power
+  - lobbying-beneficiary-overlap-without-causation
+  - interlocking-domination
+
+seats:
+  upstream_climate_forcing:
+    - exxonmobil
+    - koch-flint-hills-resources
+  capital_governance:
+    - vanguard
+    - blackrock
+    - state-street
+    - koch-inc-parent-control
+  building_repair_replacement:
+    - owens-corning
+    - vulcan-materials
+    - home-depot
+    - georgia-pacific
+    - guardian-industries
+  agriculture_inputs_processing_land:
+    - adm
+    - farmland-partners
+    - koch-ag-and-energy-solutions
+    - koch-fertilizer
+    - bayer
+    - corteva
+    - syngenta
+    - basf
+    - concentrated-meatpacking-seat
+  portfolio_climate_analytics:
+    - blackrock-investment-institute
+    - aladdin-climate
+  harm_bearers_and_public_backstops:
+    - households
+    - tenants
+    - homeowners
+    - workers
+    - small_and_midsize_farmers
+    - communities
+    - governments
+    - ecosystems
+
+edges:
+  ownership_overlap:
+    - id: vanguard-blackrock-exxon
+      posture: observed
+      investigation_state: CONFIRMED
+      from: [vanguard, blackrock]
+      to: exxonmobil
+      evidence:
+        - exxonmobil-2026-proxy-beneficial-owners
+      detail:
+        Vanguard: 10.4_percent_reported_beneficial_ownership
+        BlackRock: 6.5_percent_reported_beneficial_ownership
+      limits:
+        - asset_manager_beneficial_ownership_is_not_ultimate_personal_ownership
+        - ownership_alone_does_not_establish_a_specific_directive
+
+    - id: vanguard-blackrock-adm
+      posture: observed
+      investigation_state: CONFIRMED
+      from: [vanguard, blackrock]
+      to: adm
+      evidence:
+        - adm-2026-proxy-beneficial-owners
+      detail:
+        Vanguard: 12.79_percent_reported_beneficial_ownership
+        BlackRock: 9.40_percent_reported_beneficial_ownership
+      limits:
+        - food_processing_exposure_does_not_prove_climate_exploitation
+
+    - id: vanguard-blackrock-owens-corning
+      posture: observed
+      investigation_state: CONFIRMED
+      from: [vanguard, blackrock]
+      to: owens-corning
+      evidence:
+        - owens-corning-2026-proxy-beneficial-owners
+        - owens-corning-blackrock-2026-13g
+      detail:
+        Vanguard_proxy: 12.21_percent
+        BlackRock_proxy: 9.79_percent
+        BlackRock_2026_05_31_13g: 10.0_percent
+      limits:
+        - reporting_dates_differ
+        - Schedule_13G_ordinary_course_certification_preserved
+
+    - id: vanguard-blackrock-vulcan
+      posture: observed
+      investigation_state: CONFIRMED
+      from: [vanguard, blackrock]
+      to: vulcan-materials
+      evidence:
+        - vulcan-materials-2026-proxy-beneficial-owners
+      detail:
+        Vanguard: 12.6_percent
+        BlackRock: 6.8_percent
+      limits:
+        - shareholder_engagement_channel_does_not_identify_every_request_or_effect
+
+    - id: vanguard-blackrock-farmland-partners
+      posture: observed
+      investigation_state: CONFIRMED
+      from: [vanguard, blackrock]
+      to: farmland-partners
+      evidence:
+        - farmland-partners-2026-proxy-beneficial-owners
+      detail:
+        Vanguard: 10.8_percent
+        BlackRock: 9.3_percent
+      limits:
+        - Farmland_Partners_is_one_vehicle_not_the_US_farmland_system
+
+  governance_and_coordination_capacity:
+    - id: common-shareholding-can-be-active
+      posture: observed_legal_theory_with_unadjudicated_case_allegations
+      investigation_state: CONFIRMED_WITH_BOUNDARY
+      trace:
+        - commonly_managed_competing_company_shares
+        - possible_shareholder_engagement_or_influence
+        - possible_market_wide_operational_request
+      evidence:
+        - doj-ftc-common-shareholding-coal-2025
+      observed:
+        - DOJ_and_FTC_distinguish_typical_passive_investing_from_potentially_anticompetitive_active_use_of_common_shareholdings
+      disputed:
+        - whether_BlackRock_State_Street_and_Vanguard_committed_the_alleged_coal_conduct
+      limits:
+        - allegation != adjudication
+        - coal_case != proof_of_cross_sector_climate_damage_strategy
+
+    - id: vulcan-shareholder-engagement-channel
+      posture: observed
+      investigation_state: CONFIRMED
+      trace:
+        - large_shareholders
+        - corporate_governance_engagement
+        - potential_policy_or_strategy_dialogue
+      evidence:
+        - vulcan-materials-2026-proxy-beneficial-owners
+      limits:
+        - actual_content_and_effect_of_each_engagement_not_established
+
+  direct_conglomerate_integration:
+    - id: koch-cross-sector-operating-integration
+      posture: observed
+      investigation_state: CONFIRMED
+      trace:
+        - koch-inc-parent-control
+        - refining_and_energy
+        - chemicals_and_polymers
+        - fertilizer_and_agronomic_services
+        - commodity_trading
+        - building_products_and_glass
+        - engineering_and_construction_capabilities
+        - real_estate_and_investment_entities
+      evidence:
+        - koch-companies-current
+        - koch-subsidiary-realignment-2022
+        - koch-leadership-integration-2024
+        - koch-investment-companies-current
+      observed:
+        - Koch_explicitly_describes_knowledge_sharing_capability_building_capital_sourcing_and_platform_alignment
+        - current_leadership_reporting_lines_cross_multiple_relevant_operating_sectors
+      limits:
+        - direct_coordination_capacity != proven_climate_harm_motive
+
+  climate_knowledge_and_analytics:
+    - id: exxon-warming-knowledge
+      posture: peer_reviewed_supported_observation
+      investigation_state: CONFIRMED
+      trace:
+        - company_scientific_records
+        - global_warming_projections_1977_2003
+        - subsequent_observed_warming
+      evidence:
+        - supran-rahmstorf-oreskes-exxon-projections-2023
+      finding: most_evaluated_company_projections_accurately_forecast_subsequent_warming
+      limits:
+        - accurate_forecast != desire_for_warming
+
+    - id: blackrock-climate-portfolio-modeling
+      posture: company_stated_capability
+      investigation_state: CONFIRMED
+      trace:
+        - climate_scenarios
+        - issuer_and_security_level_analysis
+        - physical_and_transition_risk
+        - portfolio_risk_and_opportunity
+        - asset_allocation_or_risk_workflow
+      evidence:
+        - blackrock-climate-aware-investing
+        - blackrock-aladdin-climate-current
+        - blackrock-transition-investing-framework
+      finding: sophisticated_cross_portfolio_climate_risk_and_opportunity_modeling_exists
+      limits:
+        - analytic_capability != particular_investment_decision_or_harmful_intent
+
+  damage_to_demand:
+    - id: storm-damage-to-roofing-demand
+      posture: company_stated_business_relation
+      investigation_state: CONFIRMED
+      trace:
+        - major_storm_damage
+        - roof_damage
+        - repair_or_replacement_need
+        - Owens_Corning_Roofing_demand
+      evidence:
+        - owens-corning-2025-10k-storm-demand
+      limits:
+        - storm_damage_demand != storm_creation
+        - event_specific_climate_attribution_required
+
+    - id: storm-absence-to-home-improvement-demand
+      posture: company_stated_business_relation
+      investigation_state: CONFIRMED
+      trace:
+        - low_storm_activity
+        - lower_weather_related_repair_need
+        - Home_Depot_category_pressure
+        - earnings_expectation_miss
+      evidence:
+        - home-depot-q3-2025-lack-of-storms
+      limits:
+        - ordinary_weather_variability_and_climate_trend_must_be_separated
+
+  scarcity_to_asset_value:
+    - id: farmland-scarcity-investor-thesis
+      posture: company_stated_investment_thesis
+      investigation_state: CONFIRMED
+      trace:
+        - increasing_food_demand
+        - scarcity_of_high_quality_farmland
+        - rental_demand_and_asset_value
+        - dividends_or_appreciation
+        - investors
+      evidence:
+        - farmland-partners-2025-10k-scarcity-thesis
+      related_factors:
+        - water_availability
+        - development
+        - regulation
+        - commodity_conditions
+        - conflict
+        - interest_rates
+      limits:
+        - climate_change_is_not_the_only_scarcity_driver
+        - scarcity_thesis != desire_to_create_scarcity
+
+    - id: institutional-farmland-scale-boundary
+      posture: observed_counterevidence
+      investigation_state: CONFIRMED
+      trace:
+        - US_farmland
+        - owner_operators_and_nonoperator_landlords
+        - institutional_investors
+      evidence:
+        - usda-farmland-ownership-tenure-2026
+        - farmland-partners-2025-10k-scarcity-thesis
+      observed:
+        - just_over_60_percent_of_US_land_in_farms_owner_operated
+        - company_estimate_places_institutional_investors_below_5_percent_of_US_farmland
+      consequence: prevents_false_claim_that_institutional_investors_own_most_US_farmland
+      limits:
+        - acreage_share_does_not_measure_input_processing_finance_or_water_control
+
+  food_system_concentration:
+    - id: meatpacking-concentration
+      posture: observed_with_mixed_competition_evidence
+      investigation_state: CONFIRMED_WITH_BOUNDARY
+      evidence:
+        - usda-meatpacking-concentration-2024
+      magnitude:
+        top_four_steer_heifer_purchases: 85_percent
+        top_four_hog_purchases: 67_percent
+      limits:
+        - concentration != collusion
+        - USDA_preserves_scale_economies_and_mixed_historical_price_evidence
+
+    - id: seed-agchemical-concentration
+      posture: observed
+      investigation_state: CONFIRMED
+      evidence:
+        - usda-seed-agchemical-concentration-2023
+      magnitude:
+        Bayer_plus_Corteva: more_than_half_of_US_corn_soybean_cotton_retail_seed_sales_2018_2020
+        Bayer_Corteva_Syngenta_BASF: majority_of_crop_seed_and_agchemical_sales
+      limits:
+        - concentration_and_integration != climate_harm_intent
+
+whole_circuit_hypotheses:
+  ordinary_diversification:
+    posture: live_countermodel
+    chain:
+      - broad_indexing
+      - repeated_large_asset_manager_names
+      - cross_sector_positions_without_common_harm_strategy
+
+  governance_aware_portfolio_optimization:
+    posture: strongly_compatible_with_evidence
+    chain:
+      - cross_sector_holdings
+      - voting_stewardship_or_parent_control
+      - climate_risk_and_opportunity_analytics
+      - portfolio_or_company_strategy_adjustment
+      - no_required_desire_for_underlying_harm
+
+  portfolio_level_climate_moral_hazard:
+    posture: supported_working_hypothesis
+    chain:
+      - capital_exposure_to_climate_forcing_assets
+      - capital_exposure_to_consequence_side_assets
+      - externalized_physical_or_public_costs
+      - heterogeneous_private_losses_and_gains
+      - potential_incentive_misalignment_with_nondiversified_harm_bearers
+
+  cross_sector_climate_rent_extraction:
+    posture: supported_investigation_hypothesis
+    chain:
+      - known_climate_forcing_persists
+      - damage_scarcity_or_adaptation_need_grows
+      - concentrated_or_owned_consequence_side_seats_capture_revenue_rent_or_appreciation
+      - capital_returns_to_shared_or_parent_ownership_seat
+
+  deliberate_damage_generation_for_downstream_profit:
+    posture: UNRESOLVED_NOT_ESTABLISHED
+    required_chain:
+      - actor_forecasts_downstream_gain_from_incremental_warming
+      - actor_has_capacity_to_reduce_or_preserve_upstream_forcing
+      - actor_preserves_or_increases_forcing
+      - downstream_gain_is_an_evidenced_reason_for_that_choice
+    current_missing_edge: downstream_gain_as_actor_specific_motive_for_additional_warming
+
+anti_double_counting_and_attribution:
+  - Do_not_add_gross_revenue_to_profit_or_shareholder_return_as_independent_gains.
+  - Do_not_count_the_same_asset_manager_position_as_both_manager_personal_wealth_and_client_wealth.
+  - Do_not_treat_managed_beneficial_ownership_as_terminal_beneficiary_without_fund_client_lineage.
+  - Do_not_count_storm_repair_revenue_as_net_social_gain_without_physical_losses_replacement_costs_insurance_and_public_spending.
+  - Do_not_treat_land_appreciation_rent_and_food_price_increases_as_independent_if_they_are_reseatings_of_the_same_scarcity_signal.
+  - Do_not_attribute_every_weather_event_to_climate_change_without_event_specific_support.
+  - Do_not_attribute_every_downstream_sector_gain_to_the_same_upstream_emitter without causal attribution.
+
+path_forward:
+  - Trace BlackRock_Vanguard_and_State_Street_proxy_votes_and_stewardship at major fossil producers on emissions_capex_lobbying_and_transition proposals.
+  - Trace fossil-company financing and ownership changes against asset-manager climate-model outputs.
+  - Map post-disaster acquisitions in housing_land_building_suppliers_water_and_distressed assets.
+  - Add insurance_reinsurance_catastrophe_bond_and_public_disaster_backstop seats to the circuit.
+  - Trace water rights and high-quality farmland acquisition against projected climate scarcity.
+  - Expand food-chain ownership from seed_fertilizer_farmland to storage_processing_distribution_and_grocery.
+  - Search trade associations_lobbying coalitions_and director interlocks spanning fossil_building_agriculture_finance_and_insurance.
+  - Test product durability specifications against foreseeable future heat_humidity_UV_and_weather exposure over expected service life.
+  - Quantify same-owner cross-sector gains and losses before asserting net portfolio benefit from incremental warming.
+  - Search internal strategy_board_risk_committee_and_litigation discovery records for explicit downstream-profit motive.
+
+recovery_surfaces:
+  full_investigation: research/investigations/CLIMATE_CROSS_SECTOR_CAPITAL_CAPTURE_INVESTIGATION_2026-08-17.md
+  retention_ledger: research/investigations/CLIMATE_CROSS_SECTOR_CAPITAL_CAPTURE_RETENTION_LEDGER_2026-08-17.md
+  node: nodes/portfolio-level-climate-moral-hazard.yaml
+  source_bundle: sources/source-climate-cross-sector-capital-capture-2026-08-17.yaml
+
+locks:
+  - The_lattice_may_orient_the_pattern_but_may_not_replace_the_underlying_clues.
+  - ownership != intent
+  - ownership != irrelevance
+  - governance_capacity != proven_scoped_use
+  - corporate_integration != harmful_motive
+  - knowledge != desire
+  - foreseeable_harm != desired_harm
+  - profit_from_damage != proof_of_upstream_causation
+  - concentration != collusion
+  - institutional_farmland_interest != ownership_of_most_US_farmland
+  - a_missing_motive_document_does_not_erase_confirmed_ownership_control_knowledge_demand_or_scarcity_edges
+  - universal_actor_blame_requires_universal_actor_specific_evidence_and_is_not_inherited_from_this_lattice
