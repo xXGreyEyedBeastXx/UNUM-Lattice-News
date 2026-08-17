@@ -1,0 +1,108 @@
+schema: unum-lattice-news/node/v0.2
+id: israeli-security-institutional-kinship
+title: Israeli Security Institutional Kinship
+entity_type: ecology
+actor_roles:
+  - authority
+status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Cross-institutional security ecology linking the IDF, Israel Police, Border Police, Yamam, Shin Bet,
+    Israel Prison Service and related bodies through compulsory-service placement, prior IDF service,
+    reserve duty, accelerated career recruitment, joint operations and shared state-security authority.
+    The bodies remain legally and organizationally distinct, but they must not be treated as presumptively
+    independent social or personnel systems merely because their institutional names differ.
+  posture: supported
+aliases:
+  - Israeli security personnel ecology
+  - IDF-police-security kinship
+hashtags:
+  - institution/IsraeliSecurityForces
+  - mechanism/PersonnelOverlap
+  - mechanism/InstitutionalKinship
+  - mechanism/CommandAndControl
+  - domain/IsraelPalestine
+
+authority:
+  has_authority: true
+  seat: cross-institutional military, police, intelligence and detention security ecology
+  source: Israeli law, compulsory service, reserve system, institutional recruitment and joint operations
+  jurisdiction: Israel and territories/theaters in which participating bodies operate
+  level: national
+  term_start: null
+  term_end: null
+  oversight:
+    - Israeli civilian government
+    - institution-specific legal and command structures
+  appeal_or_review: []
+vulnerability:
+  roles: []
+  protection_needs: []
+funding:
+  gives_to: []
+  receives_from: []
+constituencies: []
+current_evidence:
+  observed:
+    - Israeli law permits compulsory-service IDF soldiers to be stationed in Israel Police units through at least the end of 2026 under the cited temporary provision.
+    - Israel Police states compulsory placement into Border Police is handled through IDF recruitment authorities.
+    - Israel Police operates accelerated command tracks specifically recruiting discharged IDF officers and crediting prior military rank/experience.
+    - Yamam states most of its fighters are veterans of IDF combat and elite units and that it conducts counterterrorism in cooperation with the IDF and Shin Bet.
+    - Israel maintains a large reserve system in which civilians who completed IDF service return to military units during reserve duty.
+  stated: []
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Formal institutional separation does not justify treating these bodies as personnel-independent or socially isolated.
+    - Personnel can carry training, norms, relationships, intelligence practices and operational culture across institutional boundaries even when command authority changes.
+    - Cross-institutional investigations involving personnel drawn from the same security ecology require an independence audit rather than automatic classification as external review.
+  disputed: []
+  ambiguous:
+    - The exact proportion of police, IPS, Shin Bet and other security personnel simultaneously liable for or performing IDF reserve duty is not established by the current source set.
+    - Operational command remains incident-specific; personnel kinship does not itself prove a shared order in any particular event.
+  unknowns:
+    - Unit-level dual-seat/reserve-duty map for personnel involved in documented Gaza, West Bank and detention incidents.
+    - Appointment, promotion and transfer pathways between IDF, police, IPS, Shin Bet and military/legal investigative bodies.
+  missing_or_withheld: []
+  counterevidence:
+    - The IDF, police, Yamam, Shin Bet and IPS have distinct statutory mandates and command structures; personnel kinship does not erase those distinctions.
+
+relations:
+  - type: PERSONNEL_PIPELINE_WITH
+    target: israeli-security-forces
+    posture: supported
+    evidence:
+      - source-israel-bilingual-narrative-security-kinship-accountability-2023-2026
+    scope: umbrella security ecology
+    notes: Includes compulsory placement, former-IDF recruitment, reserve service and joint operations.
+  - type: INSTITUTIONALLY_DISTINCT_FROM
+    target: state-of-israel
+    posture: observed
+    evidence:
+      - source-israel-bilingual-narrative-security-kinship-accountability-2023-2026
+    scope: security institutions remain component bodies of state system rather than identical to sovereign state
+  - type: REQUIRES_INDEPENDENCE_AUDIT_FOR
+    target: self-investigation-accountability
+    posture: supported
+    evidence:
+      - source-israel-bilingual-narrative-security-kinship-accountability-2023-2026
+    scope: internal or cross-security-body investigations
+
+stories: []
+unresolved_questions:
+  - Which investigators, prosecutors and fact-finding personnel previously served in units or institutions they later review?
+  - How frequently do Israel Police, Yamam, IPS and Shin Bet employees perform active IDF reserve duty during the same conflict period?
+  - Which joint operations place police/security personnel under military operational command or vice versa?
+  - Which accountability bodies have appointment, budget or career dependencies on the institutions they investigate?
+corrections: []
+references:
+  - source-israel-bilingual-narrative-security-kinship-accountability-2023-2026
+  - docs/SELF_INVESTIGATION_INDEPENDENCE_AND_ACCOUNTABILITY_v0_1.md
+locks:
+  - Different institution names != personnel independence.
+  - Institutional kinship != institutional identity.
+  - Prior IDF service != current IDF command.
+  - Reserve eligibility != proof a named person served in reserves during a named incident.
+  - Joint operation != one permanent command structure.
+  - Personnel overlap is a reason to test independence, not automatic proof of collusion or false investigation.
