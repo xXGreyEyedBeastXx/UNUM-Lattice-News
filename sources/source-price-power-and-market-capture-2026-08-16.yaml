@@ -1,0 +1,56 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-price-power-and-market-capture-2026-08-16
+title: Price power, labor-market power, grocery margins, and rental-pricing coordination baseline
+accessed: 2026-08-16
+purpose: >-
+  Preserve primary evidence that ordinary market labels can conceal materially noncompetitive
+  price or wage formation. This bundle supports a harm audit of price extraction and does not treat
+  every high price, profit, rent, or low wage as unlawful or extractive without mechanism evidence.
+sources:
+  - id: source-treasury-labor-market-competition-2022
+    publisher: U.S. Department of the Treasury
+    source_class: primary_government_analysis
+    title: The State of Labor Market Competition in the U.S. Economy
+    date: 2022-03-07
+    url: https://home.treasury.gov/news/press-releases/jy0634
+    supports:
+      - Treasury found U.S. labor markets materially depart from perfect competition because of employer concentration and anticompetitive practices.
+      - Treasury estimated lack of competition can reduce wages by roughly 20 percent relative to a more competitive benchmark.
+    limitations:
+      - This is not a uniform employer-by-employer extraction rate.
+      - Conditions vary by occupation, geography, time, and worker bargaining position.
+
+  - id: source-ftc-grocery-supply-chain-2024
+    publisher: Federal Trade Commission
+    source_class: primary_government_staff_report
+    title: Feeding America in a Time of Crisis: The United States Grocery Supply Chain and the COVID-19 Pandemic
+    date: 2024-03
+    url: https://www.ftc.gov/reports/feeding-america-time-crisis-ftc-staff-report-united-states-grocery-supply-chain-covid-19-pandemic
+    supports:
+      - FTC found grocery retailer profits rose and remained elevated after pandemic supply disruptions.
+      - FTC reported some grocery firms appeared to use rising costs as an opportunity to raise prices further and increase profits.
+      - Large firms could use purchasing power and supplier penalties to obtain favorable allocations compared with smaller competitors.
+    limitations:
+      - Findings do not establish that every grocery price increase or every retailer was engaged in price gouging.
+      - Pandemic conditions created genuine supply and cost shocks that must remain in the causal accounting.
+
+  - id: source-doj-realpage-2024-2026
+    publisher: U.S. Department of Justice Antitrust Division
+    source_class: primary_government_case_record
+    title: U.S. and Plaintiff States v. RealPage, Inc.
+    date_range: 2024-08-23_to_2026-07-06
+    url: https://www.justice.gov/atr/case/us-and-plaintiff-states-v-realpage-inc
+    supports:
+      - DOJ alleged RealPage used landlords' nonpublic competitively sensitive information in rent-pricing software and facilitated aligned pricing among competitors.
+      - DOJ expanded the case to major landlords and obtained settlements or proposed judgments with several defendants.
+      - A November 2025 proposed RealPage settlement required restrictions on competitor data use, pricing-alignment features, and market-survey practices.
+    limitations:
+      - Allegations against nonsettled defendants must not be represented as final findings of liability.
+      - Settlement does not establish every rent produced using revenue-management software was unlawfully inflated.
+
+locks:
+  - Market wage != proven competitive wage.
+  - Market rent != proven independently formed rent.
+  - Competitive pricing is an empirical proposition, not a label that closes inquiry.
+  - Genuine cost shocks, scarcity, and productive costs remain part of the accounting.
+  - Price extraction requires evidence about market power, price formation, burden, and downstream gain.
