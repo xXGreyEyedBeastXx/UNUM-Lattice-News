@@ -1,0 +1,85 @@
+schema: unum-lattice-news/node/v0.2
+id: palestinian-residents-west-bank
+title: Palestinian Residents of the Occupied West Bank
+entity_type: population
+actor_roles:
+  - constituency
+status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Palestinian civilian residents of the occupied West Bank including East Jerusalem, preserved separately from
+    Palestinian armed actors and political institutions. Current evidence documents settlement expansion, settler
+    and military violence, land and movement restrictions, demolitions, forced displacement, detention and other
+    coercive conditions. The 2026 UN Commission found violent settler activity functioning as a means of Israeli
+    State policy toward settlement entrenchment, annexation and Palestinian displacement.
+  posture: observed
+aliases: []
+hashtags:
+  - population/PalestinianResidents
+  - place/WestBank
+  - mechanism/SettlementExpansion
+  - mechanism/Displacement
+  - right/Housing
+  - right/FreedomOfMovement
+authority:
+  has_authority: false
+  seat: affected civilian population
+  source: population, human-rights and occupation records
+  jurisdiction: occupied West Bank including East Jerusalem
+  level: other
+  term_start: null
+  term_end: null
+  oversight: []
+  appeal_or_review: []
+vulnerability:
+  roles:
+    - affected_population
+  protection_needs:
+    - protection from violence and forced displacement
+    - secure access to home, land, water and livelihood
+    - freedom of movement
+    - protection from arbitrary detention and coercion
+    - remedy and return where displacement occurs
+funding:
+  gives_to: []
+  receives_from: []
+constituencies: []
+current_evidence:
+  observed:
+    - Palestinian communities have been displaced in documented cases following settler violence, access restriction, land seizure, military action or combinations of these mechanisms.
+    - Settlement and outpost expansion continues to alter access, territorial continuity and returnability.
+  stated: []
+  adjudicated: []
+  alleged: []
+  supported_inferences: []
+  disputed: []
+  ambiguous: []
+  unknowns: []
+  missing_or_withheld: []
+  counterevidence:
+    - Israeli authorities have at times intervened against individual violent settlers or illegal outposts; those events remain event-specific and do not erase broader state-policy or displacement findings.
+relations:
+  - type: AFFECTED_BY
+    target: israeli-settlement-enterprise
+    posture: EXTERNAL_FACT_FINDING
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: occupied West Bank settlement/displacement pattern
+  - type: SUBJECT_TO
+    target: israeli-security-forces
+    posture: observed
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: occupation, checkpoints, detention, raids and security operations
+stories: []
+unresolved_questions:
+  - Which displaced communities remain unable to return, and what mechanism currently blocks return in each case?
+  - Where do settler violence, military orders, land administration and state financing combine into the same displacement chain?
+corrections: []
+references:
+  - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+locks:
+  - Palestinian resident != militant or armed-group member by default.
+  - Settler violence and state policy must be related only where evidence establishes the relation.
+  - Formal private status of a settler does not erase demonstrated state responsibility, support or shared strategic objective.
