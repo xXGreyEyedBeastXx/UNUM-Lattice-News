@@ -16,17 +16,9 @@ hashtags:
   - health
   - law_governance_accountability
 historical_spine: docs/CONTROVERSY_MEMBRANE_v0_1.md
-contribution_index:
-  - lattice/SEXUAL_AUTONOMY_PROTECTION_ASYMMETRY_2026-08-14.yaml
+contribution_index: []
 harm_rating_windows: []
-direct_relations:
-  - type: CROSS_LATTICE
-    target: sexual-autonomy-protection-asymmetry-2026-08-14
-    posture: active_investigation
-    note: >-
-      Tests where abortion law, rape/incest exceptions, parental involvement, helper liability,
-      child-marriage rules, and statutory-rape exceptions alter a survivor's practical exit power.
-      The lattice is cross-spectrum and does not infer partisan causation from state control alone.
+direct_relations: []
 timeline_stories: []
 current_disputes:
   - abortion access and restriction
@@ -34,10 +26,6 @@ current_disputes:
   - reproductive surveillance and data enforcement
   - interstate assistance and helper liability
   - parental involvement and minors
-  - rape/incest exceptions and post-assault bodily autonomy
-  - child-marriage and statutory-rape exception crossings
-unknowns:
-  - whether partisan control independently predicts victim-exit restrictions after region, religiosity, wealth, age, and institutional confounders are controlled
-sources:
-  - sources/source-sexual-autonomy-protection-asymmetry-2026-08-14.yaml
+unknowns: []
+sources: []
 last_reviewed: "2026-08-14"
