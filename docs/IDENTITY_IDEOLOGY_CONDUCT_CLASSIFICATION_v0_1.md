@@ -268,6 +268,39 @@ When encountering a potentially extremist, insurgent, terrorist, militant, or st
 10. What remains unknown?
 11. What threat follows from the evidenced conduct and capability rather than from identity?
 
+## 13. Parent ideology, subtype, and outlier scope
+
+Classification must preserve the relationship between a parent ideology and its internal currents without allowing either collapse or false separation.
+
+```text
+SELF_IDENTIFIES_AS(X) != REPRESENTATIVE_INSTANTIATION_OF(X)
+SUBTYPE_OF(X) != ABSENCE_OF_PARENT_IDEOLOGY(X)
+OUTLIER_WITHIN(X) != COUNTEREVIDENCE_TO_PARENT_INVARIANT(X)
+EXISTS_WITHIN_MOVEMENT != REPRESENTS_MOVEMENT
+```
+
+A branch or subtype can represent a genuine difference in tactics, institutions, theology, economics, borders, or desired outcomes. Those differences should be recorded. They must not be used automatically to erase parent commitments that remain evidenced.
+
+Likewise, a reformer, dissident, humane participant, or internal opposition figure may demonstrate that contestation exists without demonstrating that the movement as a whole shares that person's program.
+
+When an example substantially departs from the dominant or institutional program, record whether the person or faction is mainstream, minority, dissident, opposition, outlier, or unresolved in the relevant period. State explicitly whether the example is being used to demonstrate internal contestation or representativeness.
+
+Do not use representative-exception substitution:
+
+```text
+one reformist/outlier actor retains movement label
+-> actor rejects or softens a parent commitment
+-> INVALID: parent movement therefore lacks that commitment
+```
+
+A self-applied ideological label is evidence of claimed identity. The actor's actual program determines what they instantiate.
+
+For the current Zionism specimen and Martin Buber scope correction, see:
+
+- `docs/IDEOLOGY_PARENT_INVARIANT_AND_OUTLIER_SCOPE_v0_1.md`
+- `sources/source-zionism-parent-ideology-and-buber-scope-2026-08-17.yaml`
+- `nodes/zionism.yaml`
+
 ## Core locks
 
 ```text
@@ -279,4 +312,6 @@ Designation is not proof.
 Religious identity is not collective culpability.
 Threat is assessed from capability, conduct, trajectory, and constraint interaction.
 No body is exempt from the evidence standard.
+A dissident does not become representative merely by retaining the parent label.
+An outlier does not falsify a parent ideological invariant without evidence of representativeness.
 ```
