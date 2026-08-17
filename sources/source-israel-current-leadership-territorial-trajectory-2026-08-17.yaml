@@ -1,0 +1,99 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-israel-current-leadership-territorial-trajectory-2026-08-17
+title: Current Israeli leadership rhetoric, post-hostage Gaza control, and cross-theater territorial trajectory
+accessed: 2026-08-17
+purpose: >-
+  Preserve current leadership statements and territorial-control developments that materially change the interpretation
+  of older hostage/security rationales. Distinguish rhetoric, formal policy, territorial effect, and command authority.
+
+sources:
+  - id: reuters-last-hostage-returned-2026
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.reuters.com/world/middle-east/israel-retrieves-remains-last-gaza-hostage-military-says-2026-01-26/
+    supports:
+      - remains of the final Israeli hostage held in Gaza were recovered on 26 January 2026
+      - the hostage-return phase was completed and attention shifted to reconstruction, demilitarization and Israeli withdrawal questions
+    limitations:
+      - end of hostage captivity does not itself determine legality or motive of every later Israeli action
+
+  - id: knesset-netanyahu-no-more-hostages-2026
+    publisher: Knesset press record
+    source_class: primary_state_statement
+    url: https://main.knesset.gov.il/EN/News/PressReleases/Pages/press26126s.aspx
+    supports:
+      - Netanyahu publicly stated there were no more hostages in Gaza after Ran Gvili's remains were recovered
+    limitations:
+      - source page is primarily a Knesset event record; use Netanyahu statement only for hostage-status/rationale chronology
+
+  - id: reuters-netanyahu-expand-gaza-control-2026
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.reuters.com/world/middle-east/netanyahu-directs-israeli-forces-expand-gaza-control-70-percent-2026-05-28/
+    supports:
+      - Netanyahu directed Israeli forces to expand control over Gaza toward 70 percent
+      - Reuters reported Netanyahu characterizing seized territory in Gaza, Syria and Lebanon as buffer zones intended to prevent future attacks
+      - expansion occurred after the hostage-return objective had ended
+    limitations:
+      - territorial-control expansion does not by itself establish a permanent-annexation intention for every controlled area
+
+  - id: ap-ben-gvir-nightly-killings-emigration-settlement-2026
+    publisher: Associated Press
+    source_class: high_quality_news_direct_statement
+    url: https://apnews.com/article/53f98e92686746f3c9bccd7cf59f26ad
+    supports:
+      - National Security Minister Itamar Ben-Gvir advocated targeted killing of 30 to 40 people in Gaza nightly
+      - he advocated mass Palestinian emigration and renewed Israeli settlement in Gaza
+      - he criticized reduced Israeli strikes
+    limitations:
+      - Ben-Gvir does not command the IDF and his statement is leadership rhetoric/trajectory evidence, not proof of an IDF operational order
+      - exact target categories in his advocacy must be preserved from the source rather than generalized to every Gazan
+
+  - id: reuters-netanyahu-rejects-withdrawal-until-disarmament-2026
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.reuters.com/world/middle-east/gaza-board-peace-official-says-plan-is-still-operative-2026-08-10/
+    supports:
+      - Netanyahu rejected immediate Israeli withdrawal from Gaza absent full Hamas disarmament
+      - Israel maintained extensive territorial control after the hostage-return phase
+    limitations:
+      - disarmament/security rationale remains relevant to stated policy even where other motives or effects are evidenced
+
+  - id: reuters-lebanon-withdrawal-conditioned-2026
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.reuters.com/world/middle-east/after-us-criticism-israel-ties-lebanon-withdrawal-hezbollah-disarmament-2026-08-13/
+    supports:
+      - Israel tied withdrawal from southern Lebanon to Hezbollah disarmament
+      - Israel prepared for a prolonged presence while the condition remained unmet
+    limitations:
+      - Lebanon is a distinct legal/security theater and should be compared by transformation, not collapsed into Gaza/West Bank
+
+  - id: reuters-syria-withdrawal-security-talks-2026
+    publisher: Reuters
+    source_class: high_quality_news
+    url: https://www.investing.com/news/world-news/syria-israel-resume-usmediated-security-talks-4429750
+    supports:
+      - Syria sought Israeli withdrawal from territory seized after Assad's fall
+      - negotiations centered on security and the prior disengagement/buffer-zone arrangement
+    limitations:
+      - Syria theater is legally and politically distinct from the Occupied Palestinian Territory
+
+  - id: ap-gaza-earthen-barrier-yellow-line-2026
+    publisher: Associated Press
+    source_class: high_quality_news_satellite_and_field_reporting
+    url: https://www.washingtonpost.com/world/2026/07/21/israel-gaza-yellow-line-barrier-ceasefire/08f25cf0-84c2-11f1-9cec-0fb26676f07e_story.html
+    supports:
+      - Israeli military construction of a long earthen barrier inside Gaza along/near the yellow-line control area
+      - barrier entrenches territorial division and runs through Palestinian communities demolished by the military
+      - Israeli control remained over more than half of Gaza in the reporting period
+    limitations:
+      - physical barrier demonstrates territorial effect; long-term legal/political status remains contested
+
+locks:
+  - Completion of hostage recovery removes hostage return as a current factual objective but does not erase other stated Israeli security objectives.
+  - Current security/disarmament rationale != proof that territorial control is temporary.
+  - Territorial control != annexation without evidence of permanence/legal incorporation/settlement or equivalent indicators.
+  - Ben-Gvir rhetoric != IDF command because he lacks IDF command authority.
+  - Senior-minister rhetoric remains relevant to political intent, normalization, policy pressure and trajectory even without military command.
+  - Cross-theater buffer-zone language is evidence of a recurring framing and territorial mechanism, not proof of identical legality or one master plan.
