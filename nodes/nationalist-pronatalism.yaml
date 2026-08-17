@@ -1,0 +1,45 @@
+schema: unum-lattice-news/node/v0.2
+id: nationalist-pronatalism
+title: Nationalist Pronatalism
+entity_type: concept
+actor_roles: []
+status: seed
+updated: 2026-08-17
+summary:
+  text: >-
+    A political orientation that promotes higher fertility as a means of strengthening, preserving, or preventing
+    decline of a nation or dominant national community. It is distinct from ordinary personal desire for children,
+    family support policy, or religious encouragement of parenthood. Peer-reviewed U.S. research finds Christian
+    nationalism strongly associated with nationalist pronatalism.
+  posture: supported inference
+aliases:
+  - national pronatalism
+hashtags:
+  - pronatalism
+  - nationalism
+  - fertility
+current_evidence:
+  observed: []
+  stated: []
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Nationalist pronatalism treats fertility as a national-strength or national-survival concern rather than solely a private family choice.
+    - Christian nationalism is strongly associated with nationalist pronatalism in nationally representative peer-reviewed research.
+  disputed: []
+  ambiguous: []
+  unknowns: []
+  missing_or_withheld: []
+  counterevidence:
+    - Support for family assistance, children, or higher birth rates does not by itself establish nationalist pronatalism.
+timeline: []
+relations: []
+stories: []
+unresolved_questions: []
+corrections: []
+references:
+  - source-christian-nationalism-reproductive-autonomy-convergence-2026-08-17
+locks:
+  - Pronatalism != coercion by itself.
+  - National concern about birth rates != selective racial or religious pronatalism unless preference for a population is evidenced.
+  - Individual parenthood preference != nationalist political program.
