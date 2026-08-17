@@ -1,0 +1,69 @@
+schema: unum-lattice-news/node/v0.2
+id: white-lives-matter-distributed-local-efforts
+title: White Lives Matter Distributed Local Efforts
+entity_type: network
+actor_roles: []
+status: seed
+updated: 2026-08-17
+summary:
+  text: >-
+    The distributed regional/state/local channel and activist ecology recognized by the April 2021 WLM initiative.
+    The movement's manuals and official public channel describe local efforts as decentralized/autonomous while
+    binding them through common goals, manuals, branding, recurring action schedules, local-admin expectations,
+    vetting, submission/routing infrastructure, and movement recognition. The official channel has itself used a
+    cell metaphor for these local efforts. This network node represents typed movement relation, not a claim that
+    every local effort is the same legal entity, centrally commanded in every act, or equally responsible for every
+    participant's conduct.
+  posture: supported inference
+aliases:
+  - WLM local cells
+  - WLM regional chapters
+  - WLM state channels
+hashtags:
+  - WhiteLivesMatter
+  - extremist-networks
+current_evidence:
+  observed:
+    - The official WLM public channel maintains or has maintained a structured navigator of state/regional WLM channels and repeatedly forwards activity attributed to those local efforts.
+    - Publicly observable WLM channels have changed handles or successor numbers over time, so channel-name change alone is not a reliable independence boundary.
+  stated:
+    - The manuals prescribe local-admin roles, vetting, common messaging, conduct standards, movement branding, recurring action dates, and shared communication/submission surfaces.
+    - Manual 2.0 describes an ideal of many small autonomous nests acting as a unit toward the same goal.
+    - The official WLM channel has described local efforts using a cell metaphor and a shared-success framing.
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Recognized local WLM efforts are movement cells/chapters/local efforts rather than presumptively independent actors.
+    - Local autonomy and distributed responsibility coexist with common movement infrastructure and standards.
+  disputed: []
+  ambiguous:
+    - The exact authority relationship between central WLM surfaces and each local administrator or cell varies and is incompletely observable.
+  unknowns:
+    - The complete successor history of banned, renamed, backup, recreated, inactive, or merged channels.
+    - Which local cells share administrators or participants with other white-supremacist organizations.
+  missing_or_withheld:
+    - administrator and participant identities are intentionally obscured in many channels
+  counterevidence:
+    - Movement-cell relation does not establish central command over every local act or guilt by association.
+timeline: []
+relations:
+  - type: DISTRIBUTED_COMPONENT_OF
+    target: white-lives-matter-2021-initiative
+    posture: supported_inference
+    evidence:
+      - source-white-lives-matter-distributed-cell-topology-2026-08-17
+    scope: movement topology
+    notes: Local efforts remain distinct attribution seats inside a documented shared movement ecology.
+stories: []
+unresolved_questions:
+  - Which local channel handles are predecessors/successors of later numbered replacements?
+  - Which listed regional channels were officially recognized through the WLM navigator or forwarding at each historical date?
+  - Which local cells have separately evidenced coordination, personnel overlap, funding, or joint activity with other extremist organizations?
+corrections: []
+references:
+  - source-white-lives-matter-distributed-cell-topology-2026-08-17
+locks:
+  - Network membership does not establish common command, shared intent, guilt, or equal responsibility.
+  - Decentralized does not mean disconnected.
+  - Channel rename, deletion, ban, backup, or successor creation does not by itself create a new independent actor.
+  - Search-result similarity alone is not affiliation evidence; prefer movement recognition, official routing, shared infrastructure, or other recoverable relations.
