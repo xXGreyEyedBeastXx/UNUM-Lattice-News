@@ -1,0 +1,60 @@
+schema: unum-lattice-news/node/v0.2
+id: reproductive-autonomy-constraint
+title: Reproductive Autonomy Constraint
+entity_type: concept
+actor_roles: []
+status: seed
+updated: 2026-08-17
+summary:
+  text: >-
+    A cross-case analytical node for laws, policies, institutions, or movement strategies that reduce a person's
+    practical or legal ability to decide whether to continue a pregnancy, avoid pregnancy, obtain pregnancy-related
+    care, or exit reproductive consequences imposed through coercion or abuse. This node records direction of effect,
+    not a single ideology, actor, or motive. Anti-abortion laws are reproductive-autonomy constraints by legal effect
+    because they restrict termination choices even when supporters describe their motive as protecting fetal life.
+  posture: supported inference
+aliases:
+  - bodily autonomy constraint
+  - reproductive control
+hashtags:
+  - bodily-autonomy
+  - reproductive-autonomy
+  - abortion
+  - sexual-autonomy
+current_evidence:
+  observed: []
+  stated: []
+  adjudicated: []
+  alleged: []
+  supported_inferences:
+    - Abortion prohibitions and early gestational limits reduce legal control over whether a pregnancy continues.
+    - Absence or narrowness of rape/incest exceptions can force or pressure survivors, including minors, to continue pregnancies resulting from sexual violence unless another exception or out-of-state option is available.
+    - Parental-consent and anti-transport provisions can further restrict a minor's ability to obtain abortion care independently of a parent or guardian.
+    - Child-marriage rules and marital exemptions to statutory-rape law can reduce sexual-autonomy protection where conduct that would otherwise be criminal becomes lawful or harder to prosecute through marriage.
+    - These mechanisms can converge on the same autonomy-reducing outcome without proving a single coordinator or identical motive.
+  disputed: []
+  ambiguous:
+    - The causal relation between any specific ideology and any specific law must be separately traced through sponsors, organizations, donors, legal networks, rhetoric, or other evidence.
+  unknowns: []
+  missing_or_withheld: []
+  counterevidence:
+    - Some jurisdictions strengthen rape/incest exceptions, raise marriage ages, remove marital exemptions, or otherwise increase survivor autonomy; these are genuine countervailing mechanisms and should remain visible.
+timeline: []
+relations: []
+stories: []
+unresolved_questions:
+  - Which policy networks repeatedly produce autonomy-reducing laws across jurisdictions?
+  - Which mechanisms most strongly affect minors who are pregnant from rape, incest, or other abuse?
+  - Where are formally available exceptions practically inaccessible because of reporting, gestational, provider, travel, parental-control, or cost barriers?
+corrections: []
+references:
+  - source-christian-nationalism-reproductive-autonomy-convergence-2026-08-17
+  - source-sexual-autonomy-protection-asymmetry-2026-08-14
+locks:
+  - Direction of effect != proof of motive.
+  - Fetal-protection rationale != absence of autonomy loss to the pregnant person.
+  - Convergence != coordination.
+  - Lack of central command != absence of a recurring system-level pattern.
+  - Child marriage != rape in every case.
+  - Minimum marriage age != age of consent.
+  - A legal exception on paper != practical access in every case.
