@@ -8,31 +8,60 @@ lifecycle_status: active
 updated: 2026-08-17
 summary:
   text: >-
-    Preserves the April 2021 White Lives Matter initiative as more than a generic white-supremacist slogan. Primary
-    movement manuals previously reviewed in UNUM-Extremism-Watch support an explicit 99%+ White demographic objective,
-    a White Nationalist ideological endpoint, and a deliberate normalization/recruitment strategy in which approachable
-    public activism is used to reach mainstream White families and move participants toward a White Nationalist worldview.
-    Operational recruitment, evasion, anonymity, and event-execution instructions are intentionally not reproduced.
-  posture: evidence_bound
+    Preserves the April 2021 White Lives Matter initiative as more than a generic white-supremacist slogan. Direct review
+    of user-supplied primary copies of Activist Manual 2.0 (2022) and 3.0 (2024) establishes an explicit 99% or 99%+
+    White demographic objective, a White Nationalist ideological endpoint, and a deliberate normalization/recruitment
+    strategy. The strategy uses simple, positive, family-centered and socially approachable public messaging as an entry
+    surface, then seeks to move sympathetic people into deeper ideological material, recurring activism, local networks,
+    and movement capacity. Operational recruitment, evasion, anonymity, vetting, and event-execution instructions are
+    intentionally not reproduced.
+  posture: primary_source_verified
 movement_level_findings:
-  - primary_movement_documents_support_a_long_term_99_percent_plus_White_demographic_objective_in_designated_countries_or_continents
-  - primary_movement_documents_center_the_14_words_and_a_White_Nationalist_worldview
-  - primary_movement_documents_describe_approachable_public_activism_as_a_doorway_toward_that_worldview
-  - primary_movement_documents_emphasize_appeal_to_mainstream_White_families_rather_than_only_hardcore_extremist_fringe_audiences
-  - primary_movement_documents_direct_public_facing_WLM_activity_to_avoid_overtly_polarizing_extremist_symbols_that_could_interfere_with_the_racial_message
-  - primary_movement_documents_distinguish_sanitized_public_presentation_from_more_ideologically_explicit_material_in_the_broader_pro_White_ecosystem
-  - federal_court_records_recount_a_complaint_alleging_the_national_WLM_organization_sought_a_future_for_White_children_in_a_99_percent_White_Land
-  - ADL_describes_the_current_WLM_network_as_advocating_eventual_white_ethnostates_in_North_America_Europe_and_Australia_and_using_recruitment_efforts
+  - both_2022_and_2024_primary_manuals_preserve_a_99_percent_or_99_percent_plus_White_demographic_endpoint
+  - 2022_manual_is_more_explicit_about_racially_restricted_citizenship_and_near_total_demographic_control
+  - 2024_manual_retains_the_same_demographic_endpoint_while_streamlining_public_facing_language
+  - 2024_manual_explicitly_prioritizes_mainstream_White_families_over_hardcore_fringe_audiences
+  - 2024_manual_explicitly_describes_approachable_public_activism_as_a_doorway_toward_a_White_Nationalist_worldview
+  - both_versions_treat_public_activism_as_a_recruitment_and_conversion_surface_not_merely_expression
+  - the_manuals_measure_success_by_growth_joining_recurring_participation_and_conversion_of_sympathizers_into_activists
+  - the_manuals_describe_local_network_functions_for_recruitment_vetting_marketing_teaching_logistics_and_event_scaling
+  - the_manuals_deliberately_separate_publicly_approachable_message_and_optics_from_more_explicit_extremist_or_polarizing_content
+  - 2024_manual_describes_step_by_step_development_of_pro_White_sentiments_and_later_explicitly_requires_transforming_potential_sympathizers_into_activists
+  - movement_capacity_is_directed_toward_an_absolute_White_majority_and_exclusive_White_spaces_backed_by_legal_measures
+  - user_supplied_Telegram_search_screenshots_show_WLM_branded_state_country_material_event_and_backup_or_viewing_surfaces_including_a_recent_result_labeled_WLM_TENNESSEE
+  - user_supplied_WLM_branded_propaganda_visually_combines_self_improvement_socialization_family_formation_and_white_reproduction_with_the_official_Telegram_link
+versioned_transformation:
+  2022:
+    chain: >-
+      extinction_or_replacement_grievance -> mass_message_spread -> Telegram_or_local_contact -> ideological_material ->
+      vetting_and_recurring_activism -> decentralized_local_cells -> increased_visible_and_organizational_capacity ->
+      explicit_99_percent_White_demographic_and_racial_citizenship_objective
+  2024:
+    chain: >-
+      simple_positive_White_Lives_Matter_message -> approachable_mainstream_family_contact -> reduced_symbolic_friction ->
+      White_racial_consciousness -> doorway_to_White_Nationalist_worldview -> recurring_monthly_activism_and_local_network ->
+      movement_capacity -> 99_percent_plus_White_demographic_objective_and_exclusive_spaces
+cross_version_inference:
+  posture: supported_inference
+  text: >-
+    The 2024 revision appears to refine optics and public accessibility rather than abandon the 2022 movement's core
+    demographic endpoint. The inference is supported not merely by wording differences but by 3.0's own explicit emphasis
+    on approachability, mainstream-family appeal, message separation, step-by-step ideological development, and a retained
+    99%+ White long-term goal.
+  lock: do_not_call_wording_change_deception_without_separate_evidence_of_intent_beyond_the_manuals_explicit_message_control_and_approachability_strategy
 core_transformation: >-
-  racial_grievance_or_identity_message -> approachable_public_activism -> normalization_and_contact -> deeper_white_nationalist_worldview -> recurring_participation_or_recruitment -> movement_capacity_directed_toward_ethnostate_objective
+  racial_grievance_or_identity_message -> sanitized_or_approachable_public_entry -> normalization_and_contact ->
+  ideological_deepening -> conversion_to_recurring_activism -> decentralized_local_capacity -> ethnostate_demographic_objective
 required_trace:
   - movement_document_or_public_statement
+  - version_and_date
   - stated_demographic_or_political_objective
   - public_facing_message
   - normalization_or_recruitment_function
   - audience_or_population_targeted
   - ideological_endpoint
-  - recurring_participation_or_local_network_if_evidenced
+  - conversion_or_recurring_participation_measure
+  - local_network_or_channel_if_evidenced
   - overlap_with_other_extremist_ecologies
   - individual_membership_or_role_only_if_actor_specific_evidence_exists
   - conduct_and_harm
@@ -40,15 +69,18 @@ required_trace:
 classification_locks:
   - WLM_movement_level_ethnostate_objective != proof_that_every_person_using_the_phrase_is_a_movement_member
   - movement_recruitment_strategy != proof_that_every_contacted_person_adopts_the_ideology
+  - Telegram_channel_search_result != verified_channel_operator_or_offline_chapter
+  - subscriber_count != active_membership
   - white_nationalist_ideological_overlap != organizational_identity_with_KKK_neo_Nazi_or_fascist_groups
   - participation != membership != leadership
   - court_recounting_of_complaint_allegations != final_adjudication_of_every_allegation
   - ADL_or_SPLC_classification != criminal_liability
-  - do_not_reproduce_operational_recruitment_evasion_anonymity_or_event_execution_instructions
+  - do_not_reproduce_operational_recruitment_evasion_anonymity_vetting_or_event_execution_instructions
 safety_and_provenance:
   - high_level_recruitment_and_normalization_mechanisms_are_preserved_because_they_are_causally_material_to_harm_analysis
   - tactical_or_operational_extremist_instructions_remain_excluded
-  - primary_manual_findings_are_inherited_from_UNUM_Extremism_Watch_and_should_be_checked_against_the_preserved_source_copy_before_consequential_direct_quotation
+  - primary_manual_copies_were_directly_rechecked_2026_08_17
+  - user_supplied_private_medical_or_appointment_screenshot_was_unrelated_and_was_not_used_or_archived
 source_bundle:
   - source-wlm-normalization-recruitment-ethnostate-2026-08-17
 relations:
@@ -58,5 +90,7 @@ relations:
     target: ideological-threat-labeling-and-redress-delegitimization
   - type: RELATES_TO
     target: truth-laundering-and-citation-lineage-capture
+  - type: RELATES_TO
+    target: moral-laundering-through-renaming-and-partition
   - type: RELATES_TO
     target: power-capacity-accumulation
