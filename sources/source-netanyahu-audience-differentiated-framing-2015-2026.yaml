@@ -1,0 +1,146 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-netanyahu-audience-differentiated-framing-2015-2026
+title: Benjamin Netanyahu audience-differentiated Hebrew / English framing, 2015-2026
+accessed: 2026-08-17
+purpose: >-
+  Preserve paired or near-paired Netanyahu statements to different linguistic and political audiences without assuming
+  that Hebrew is inherently candid or English inherently deceptive. Test whether materially different policy,
+  territorial, displacement, security or Palestinian-statehood positions are presented across audience surfaces.
+
+sources:
+  - id: netanyahu-2015-hebrew-no-palestinian-state
+    publisher: NRG reporting preserved by JTA / Reuters-syndicated coverage
+    source_class: domestic_hebrew_campaign_statement
+    date: 2015-03-16
+    url: https://www.jta.org/2015/03/16/israel/netanyahu-no-palestinian-state-on-my-watch
+    supports:
+      - Netanyahu answered affirmatively when asked whether no Palestinian state would arise while he remained prime minister.
+      - The statement was made in a Hebrew domestic-election context while appealing to right-wing voters.
+    limitations:
+      - campaign context matters and does not itself establish later policy implementation.
+
+  - id: netanyahu-2015-english-two-state
+    publisher: NBC News
+    source_class: international_english_interview
+    date: 2015-03-19
+    url: https://nbcuniversalnewsgroup.com/nbcnews/2015/03/19/netanyahu-to-nbc-news-i-dont-want-a-one-state-solution-i-want-a-sustainable-two-state-solution/
+    supports:
+      - Three days after the Hebrew campaign statement, Netanyahu told NBC he wanted a sustainable peaceful two-state solution.
+      - He denied changing policy and said circumstances had changed.
+    limitations:
+      - this is a post-election international interview; comparison is audience- and timing-sensitive.
+
+  - id: netanyahu-2023-hebrew-voluntary-migration
+    publisher: Israel Hayom
+    source_class: domestic_hebrew_party_meeting_report
+    date: 2023-12-25
+    url: https://www.israelhayom.co.il/news/politics/article/15001615
+    supports:
+      - At a Likud faction meeting, Netanyahu was reported saying he was working to facilitate voluntary migration of Gazans to other countries.
+      - He said the practical problem was finding countries willing to receive them.
+    limitations:
+      - reported party-meeting remarks rather than a Prime Minister's Office transcript.
+      - precise wording should be rechecked against any surviving audio/video or official minutes if publication requires verbatim quotation.
+
+  - id: netanyahu-2024-english-no-displacement
+    publisher: Times of Israel preserving Netanyahu English-language video and contemporaneous reporting
+    source_class: international_english_public_statement
+    date: 2024-01-10
+    url: https://www.timesofisrael.com/netanyahu-let-me-be-clear-israel-has-no-intention-of-displacing-gazas-population/
+    supports:
+      - Netanyahu said in English that Israel had no intention of permanently occupying Gaza or displacing its civilian population.
+      - The statement was released immediately before ICJ genocide-case hearings.
+      - Likud MK Danny Danon told the outlet Netanyahu had recently said voluntary migration was a good idea and attributed the apparent reversal to international pressure.
+    limitations:
+      - Danon's account is a named political witness, not independent documentary proof of Netanyahu's private motive.
+
+  - id: netanyahu-2024-congress-no-resettlement
+    publisher: Israeli Prime Minister / U.S. Congress transcript reproduced by Israeli sources
+    source_class: international_english_speech
+    date: 2024-07-24
+    url: https://he.wikisource.org/wiki/%D7%A0%D7%90%D7%95%D7%9D_%D7%A8%D7%90%D7%A9_%D7%94%D7%9E%D7%9E%D7%A9%D7%9C%D7%94_%D7%91%D7%A0%D7%99%D7%9E%D7%99%D7%9F_%D7%A0%D7%AA%D7%A0%D7%99%D7%94%D7%95_%D7%91%D7%A4%D7%A0%D7%99_%D7%A9%D7%A0%D7%99_%D7%91%D7%AA%D7%99_%D7%94%D7%A7%D7%95%D7%A0%D7%92%D7%A8%D7%A1_%D7%94%D7%90%D7%9E%D7%A8%D7%99%D7%A7%D7%90%D7%99
+    supports:
+      - Netanyahu told Congress Israel was not interested in resettling Gaza.
+      - He simultaneously said Israel should retain security control for the foreseeable future.
+    limitations:
+      - source above is a transcript mirror; official PMO/Congress transcript should be preferred for publication-grade quotation.
+
+  - id: netanyahu-2025-hebrew-trump-migration-plan
+    publisher: Channel 14
+    source_class: domestic_hebrew_interview
+    date: 2025-02-06
+    url: https://www.c14.co.il/article/1113691
+    supports:
+      - Netanyahu discussed Trump's Gaza removal/migration concept as a serious postwar idea rather than rejecting it.
+      - He said Trump was in contact with leaders of several countries regarding voluntary migration.
+      - Netanyahu explicitly rejected Palestinian statehood in the interview.
+    limitations:
+      - Channel 14 is strongly aligned with Netanyahu and is used here primarily as a record of the interview, not as an independent evaluator.
+
+  - id: netanyahu-2025-back-to-back-pressers
+    publisher: Times of Israel
+    source_class: comparative_reporting_same_day
+    date: 2025-08-11
+    url: https://www.timesofisrael.com/daily-briefing-aug-11-day-675-pm-spells-out-gaza-plan-in-english-hebrew-pressers/
+    supports:
+      - Netanyahu held back-to-back English and Hebrew press conferences on 2025-08-10.
+      - In English he emphasized rebutting international-media claims, denying an intention to occupy Gaza and disputing starvation allegations.
+      - In Hebrew he emphasized Israeli battlefield victories and the justification for continuing/expanding the campaign, while also addressing reserve-force strain.
+    limitations:
+      - this pair demonstrates strong audience-differentiated emphasis more clearly than a direct policy contradiction.
+
+  - id: netanyahu-2026-negev-english-explicit-buffer-doctrine
+    publisher: Prime Minister's Office
+    source_class: official_english_translation_of_domestic_speech
+    date: 2026-07-14
+    url: https://www.gov.il/en/pages/event-dimona140726
+    supports:
+      - Netanyahu said the Gaza envelope was now inside Gaza, the Lebanon envelope inside Lebanon and the Golan envelope inside Syria.
+      - He described this as a deliberate post-October-7 shift from containment to initiative, action and attack.
+    limitations:
+      - important counterexample to any rule that English-language Netanyahu messaging is always sanitized or materially softer.
+
+paired_comparisons:
+  - id: pair-2015-palestinian-statehood
+    earlier_surface: netanyahu-2015-hebrew-no-palestinian-state
+    later_surface: netanyahu-2015-english-two-state
+    relation: MATERIAL_POLICY_PRESENTATION_DIVERGENCE
+    interval_days: 3
+    supported_read: >-
+      Domestic Hebrew campaign messaging and subsequent English international messaging presented materially different
+      answers to whether Palestinian statehood remained an intended outcome. Netanyahu denied changing policy.
+
+  - id: pair-2023-2024-gaza-displacement
+    earlier_surface: netanyahu-2023-hebrew-voluntary-migration
+    later_surface: netanyahu-2024-english-no-displacement
+    relation: MATERIAL_POLICY_PRESENTATION_DIVERGENCE
+    interval_days: 16
+    supported_read: >-
+      A domestic Hebrew party-meeting statement reported Netanyahu actively working on voluntary migration and seeking
+      recipient countries; shortly afterward an English international-facing statement said Israel had no intention of
+      displacing Gaza's civilian population. This is stronger than a mere tonal difference and requires audience,
+      diplomatic-pressure and implementation tracing.
+
+  - id: pair-2025-same-day-pressers
+    earlier_surface: netanyahu-2025-back-to-back-pressers
+    later_surface: netanyahu-2025-back-to-back-pressers
+    relation: AUDIENCE_DIFFERENTIATED_FRAMING
+    interval_days: 0
+    supported_read: >-
+      Same-day English and Hebrew pressers used materially different emphasis: international denial/legitimation versus
+      domestic victory/continuation framing. This is not by itself a direct contradiction.
+
+counterexamples:
+  - source: netanyahu-2026-negev-english-explicit-buffer-doctrine
+    reason: >-
+      Netanyahu's official English-language record can itself be unusually explicit about territorial-security doctrine.
+      Therefore HEBREW=TRUTH / ENGLISH=LIE is not a valid classifier.
+
+methodological_locks:
+  - Audience difference can be evidentially meaningful without proving deception.
+  - Material contradiction or reversal should be typed separately from tonal/emphasis differences.
+  - Hebrew is not automatically more truthful and English is not automatically false.
+  - Compare the same speaker, close time windows, same policy object, authority seat, audience and downstream conduct.
+  - Later clarification must not erase the earlier statement surface.
+  - Diplomatic pressure is a causal hypothesis unless directly evidenced; named insider testimony may support but not conclusively prove motive.
+  - Words remain distinct from policy, orders, implementation and effect.
