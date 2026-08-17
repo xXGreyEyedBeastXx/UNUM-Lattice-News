@@ -1,0 +1,133 @@
+schema: unum-lattice-news/node/v0.1
+id: portfolio-level-climate-moral-hazard
+title: Portfolio-level climate moral hazard
+family: analysis_framework
+subtype: cross_sector_externality_and_return_operator
+landing_status: proposed_investigation_node
+lifecycle_status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Investigates whether a diversified capital holder, asset manager, conglomerate, insurer,
+    creditor, or other ownership seat can remain exposed to activities that generate climate
+    externalities while simultaneously holding or controlling businesses that receive repair,
+    replacement, adaptation, scarcity, reconstruction, land-appreciation, or concentrated-market
+    returns from consequences of the same externality. The node measures the whole circuit without
+    treating cross-sector ownership as proof of specific harmful intent or treating diversified
+    ownership as economically irrelevant.
+  posture: supported_working_framework
+
+core_question: >-
+  Does diversification, governance capacity, direct corporate integration, insurance, public
+  backstops, market power, or capital mobility allow a capital seat to hedge or capture climate
+  consequences more successfully than households, workers, tenants, small farmers, communities,
+  governments, or ecosystems that bear the physical loss?
+
+required_trace:
+  - upstream_climate_forcing_actor_or_asset
+  - ownership_financing_or_control_seat
+  - actor_knowledge_and_climate_notice
+  - governance_voting_stewardship_or_parent_control_channel
+  - persistence_mitigation_escalation_or_exit_after_notice
+  - physical_climate_effect_or_risk_change
+  - downstream_damage_scarcity_or_adaptation_need
+  - downstream_firm_asset_or_market_seat
+  - revenue_margin_rent_appreciation_or_loss
+  - insurance_or_public_backstop
+  - ultimate_or_reseated_capital_beneficiary
+  - cross_portfolio_losses
+  - net_effect_if_measurable
+  - actor_specific_intent_evidence_if_any
+
+current_evidence:
+  observed:
+    - Vanguard_and_BlackRock_are_reported_large_beneficial_owners_across_ExxonMobil_Owens_Corning_Vulcan_Materials_ADM_and_Farmland_Partners_in_2026_filings
+    - relevant_SEC_filings_report_nonzero_voting_or_dispositive_power_for_named_institutional_holders
+    - Koch_directly_integrates_refining_polymers_fertilizer_agronomic_services_building_products_glass_commodity_trading_and_investment_or_real_estate_seats
+    - Koch_describes_cross_company_knowledge_sharing_capability_building_capital_sourcing_and_platform_alignment
+    - Owens_Corning_states_major_storm_damage_can_significantly_increase_roofing_demand
+    - Home_Depot_states_lack_of_storms_reduced_expected_2025_Q3_demand
+    - Farmland_Partners_states_investors_can_benefit_from_food_demand_in_the_face_of_growing_scarcity_of_high_quality_farmland
+    - USDA_documents_high_concentration_in_meatpacking_and_seed_agchemical_markets
+    - BlackRock_explicitly_models_climate_risks_and_opportunities_across_investment_portfolios
+    - peer_reviewed_analysis_finds_Exxon_ExxonMobil_internal_projections_accurately_anticipated_warming
+  supported_inferences:
+    - the_same_capital_management_or_parent_company_seat_can_occupy_both_climate_forcing_and_climate_consequence_economic_positions
+    - physical_harm_can_create_private_repair_replacement_scarcity_or_asset_repricing_opportunities_while_remaining_a_social_or_ecological_loss
+    - common_ownership_direct_control_and_portfolio_analytics_create_real_channels_that_require_actor_specific_coordination_testing
+    - a_portfolio_level_incentive_can_differ_from_the_welfare_incentive_of_people_or_ecologies_that_cannot_diversify_away_physical_harm
+  unresolved:
+    - net_gain_or_loss_to_named_capital_holders_from_incremental_warming
+    - whether_actual_proxy_votes_engagements_or_financing_decisions_preserved_fossil_output_because_of_downstream_gain
+    - whether_climate_models_guided_specific_land_water_building_material_or_disaster_recovery_acquisitions
+    - whether_product_durability_was_deliberately_underbuilt_relative_to_foreseeable_climate_exposure
+    - whether_downstream_climate_damage_returns_ever_appear_as_a_motive_for_upstream_emissions_persistence
+  counterevidence:
+    - asset_managers_often_hold_positions_for_clients_and_index_funds_rather_than_as_personal_assets
+    - ordinary_diversification_predicts_repeated_large_manager_names_across_many_public_companies
+    - institutional_investors_do_not_currently_own_most_US_farmland
+    - climate_damage_can_produce_large_losses_elsewhere_in_the_same_diversified_portfolio
+    - adaptation_investment_can_be_defensive_or_socially_useful_without_desire_for_the_underlying_harm
+
+hypothesis_ladder:
+  H0:
+    name: ordinary_diversification
+    posture: live_countermodel
+    claim: repeated_cross_sector_ownership_is_expected_without_meaningful_coordinated_strategy
+  H1:
+    name: governance_aware_portfolio_optimization
+    posture: strongly_compatible_with_evidence
+    claim: climate_risk_and_opportunity_are_seen_and_managed_across_portfolios_without_desiring_climate_harm
+  H2:
+    name: portfolio_level_climate_moral_hazard
+    posture: supported_working_hypothesis
+    claim: simultaneous_exposure_to_causal_and_consequence_side_returns_can_weaken_incentive_alignment_with_external_harm_bearers
+  H3:
+    name: cross_sector_climate_rent_extraction
+    posture: supported_investigation_hypothesis
+    claim: known_climate_forcing_can_feed_damage_scarcity_and_adaptation_markets_from_which_connected_capital_seats_capture_returns
+  H4:
+    name: deliberate_damage_generation_for_downstream_profit
+    posture: unresolved_not_established
+    claim: actor_preserves_or_increases_warming_because_expected_downstream_damage_or_scarcity_returns_are_a_motivating_objective
+
+relations:
+  - type: EXTENDS
+    target: whole-circuit-corporate-gain-accounting
+    posture: supported_working_framework
+  - type: EXTENDS
+    target: environmental-cost-externalization
+    posture: supported_working_framework
+  - type: INTERLOCKS_WITH
+    target: land-rent-and-resource-capture
+    posture: supported_inference
+  - type: INTERLOCKS_WITH
+    target: food-market-concentration-and-two-sided-price-power
+    posture: supported_inference
+  - type: TESTS
+    target: lobbying-beneficiary-overlap-without-causation
+    posture: evidence_bound
+  - type: REQUIRES
+    target: interlocking-domination
+    posture: bounded_structural_correspondence
+
+source_bundle:
+  - source-climate-cross-sector-capital-capture-2026-08-17
+
+recovery_surfaces:
+  - research/investigations/CLIMATE_CROSS_SECTOR_CAPITAL_CAPTURE_INVESTIGATION_2026-08-17.md
+  - research/investigations/CLIMATE_CROSS_SECTOR_CAPITAL_CAPTURE_RETENTION_LEDGER_2026-08-17.md
+  - lattice/CLIMATE_CROSS_SECTOR_CAPITAL_CAPTURE_2026-08-17.yaml
+
+locks:
+  - This_node_is_an_index_and_operator_not_a_replacement_for_the_full_investigation_or_retention_ledger.
+  - common_ownership != specific_directive
+  - common_ownership != economic_irrelevance
+  - beneficial_ownership != ultimate_personal_ownership
+  - governance_capacity != proven_use_of_that_capacity_for_the_scoped_harm
+  - direct_conglomerate_integration != proof_of_harmful_motive
+  - climate_knowledge != desire_for_climate_damage
+  - profit_from_damage != proof_of_causing_damage
+  - foreseeable_harm_plus_persistence_can_strengthen_responsibility_without_proving_desire
+  - net_portfolio_benefit_must_be_measured_not_assumed
+  - universal_culpability_claims_require_specific_actor_mechanism_evidence

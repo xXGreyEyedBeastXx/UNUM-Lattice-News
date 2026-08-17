@@ -1,0 +1,288 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-climate-cross-sector-capital-capture-2026-08-17
+title: Climate forcing, cross-sector ownership, damage demand, land scarcity, and food concentration
+status: active
+as_of: 2026-08-17
+purpose: >-
+  Preserve primary and high-quality evidence for the investigation of whether capital networks that
+  are materially exposed to fossil-fuel production are also positioned to receive returns from
+  building repair and replacement, agricultural inputs and processing, farmland appreciation,
+  climate-risk analytics, and other sectors affected by climate-driven damage or scarcity. This
+  bundle deliberately does not collapse common ownership, direct corporate control, active
+  governance, climate knowledge, profit opportunity, and specific harmful intent into one claim.
+
+sources:
+  - id: exxonmobil-2026-proxy-beneficial-owners
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/34088/000119312526147614/d16317ddef14a.htm
+    date: 2026
+    supports:
+      - Vanguard_reported_as_10_4_percent_beneficial_owner_of_ExxonMobil
+      - BlackRock_reported_as_6_5_percent_beneficial_owner_of_ExxonMobil
+      - State_Street_reported_as_5_1_percent_beneficial_owner_of_ExxonMobil
+    limitations:
+      - Beneficial ownership reported in a proxy does not mean the asset manager is the ultimate economic owner of every share.
+      - Reporting dates and underlying Schedule 13G dates differ and must be preserved.
+
+  - id: adm-2026-proxy-beneficial-owners
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/7084/000119312526126218/d911479ddef14a.htm
+    date: 2026
+    supports:
+      - Vanguard_reported_as_12_79_percent_beneficial_owner_of_ADM
+      - BlackRock_reported_as_9_40_percent_beneficial_owner_of_ADM
+      - State_Street_reported_as_6_95_percent_beneficial_owner_of_ADM
+      - filing_reports_voting_and_dispositive_power_for_named_institutional_holders
+    limitations:
+      - Beneficial ownership and voting power are governance-capacity evidence, not proof of a specific coordinated climate strategy.
+
+  - id: owens-corning-2026-proxy-beneficial-owners
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1370946/000137094626000107/oc-20260312.htm
+    date: 2026
+    supports:
+      - Vanguard_reported_as_12_21_percent_beneficial_owner_of_Owens_Corning
+      - BlackRock_reported_as_9_79_percent_beneficial_owner_of_Owens_Corning
+      - Vanguard_shared_voting_and_dispositive_power_reported
+      - BlackRock_sole_voting_and_dispositive_power_reported
+    limitations:
+      - The proxy relies on Schedule 13G information with different measurement dates.
+      - Large institutional ownership is not itself evidence that the institution caused a storm or ordered product failure.
+
+  - id: owens-corning-blackrock-2026-13g
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1370946/000201238326001869/xslSCHEDULE_13G_X02/primary_doc.xml
+    date: 2026-06-04
+    supports:
+      - BlackRock_reported_10_0_percent_of_Owens_Corning_as_of_2026_05_31
+      - BlackRock_reported_sole_voting_power_over_7_816_343_shares
+      - BlackRock_reported_sole_dispositive_power_over_8_069_391_shares
+      - filing_states_various_persons_have_right_to_receive_dividends_or_sale_proceeds
+    limitations:
+      - The filing certifies ordinary-course ownership under Rule 13d-1b and does not itself evidence intent to control the issuer.
+      - Ultimate economic beneficiaries are distributed among clients and investment vehicles.
+
+  - id: vulcan-materials-2026-proxy-beneficial-owners
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1396009/000162828026020812/vmc-20260324.htm
+    date: 2026
+    supports:
+      - Vanguard_reported_as_12_6_percent_beneficial_owner_of_Vulcan_Materials
+      - BlackRock_reported_as_6_8_percent_beneficial_owner_of_Vulcan_Materials
+      - Vanguard_reported_shared_voting_power_and_dispositive_power
+      - BlackRock_reported_sole_voting_and_dispositive_power
+      - company_reports_shareholder_engagement_with_holders_representing_about_70_percent_of_outstanding_shares
+    limitations:
+      - Shareholder engagement demonstrates a governance channel but does not identify the content or effect of every engagement.
+
+  - id: farmland-partners-2026-proxy-beneficial-owners
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1591670/000110465926029548/tm261399-1_def14a.htm
+    date: 2026
+    supports:
+      - Vanguard_reported_as_10_8_percent_beneficial_owner_of_Farmland_Partners
+      - BlackRock_reported_as_9_3_percent_beneficial_owner_of_Farmland_Partners
+    limitations:
+      - Farmland Partners is one publicly traded farmland owner and does not represent all U.S. farmland ownership.
+
+  - id: doj-ftc-common-shareholding-coal-2025
+    class: primary_federal_antitrust_statement
+    url: https://www.justice.gov/opa/pr/justice-department-and-federal-trade-commission-file-statement-interest-anticompetitive-uses
+    date: 2025-05-22
+    supports:
+      - DOJ_and_FTC_recognize_that_common_shareholding_can_move_beyond_passive_investment_when_used_to_encourage_market_wide_output_changes
+      - states_lawsuit_alleges_BlackRock_State_Street_and_Vanguard_used_management_of_competing_coal_company_stock_to_induce_output_reductions
+      - agencies_distinguish_typical_passive_index_investing_from_potentially_anticompetitive_use_of_common_shareholdings
+    limitations:
+      - The underlying conduct is alleged in litigation; the DOJ_FTC statement is not an adjudication that the allegations are true.
+      - This source concerns coal-market competition, not proof of a climate-damage-profit conspiracy.
+
+  - id: koch-companies-current
+    class: primary_corporate
+    url: https://www.kochinc.com/Companies/
+    supports:
+      - Koch_operating_company_family_includes_Flint_Hills_Resources_Georgia_Pacific_Guardian_INVISTA_and_Koch_Ag_and_Energy_Solutions
+      - Georgia_Pacific_manufactures_building_products
+      - Guardian_manufactures_architectural_residential_and_technical_glass
+      - INVISTA_manufactures_chemical_intermediates_polymers_and_fibers
+    limitations:
+      - Common corporate ownership establishes direct integration but not a particular harmful motive.
+
+  - id: koch-subsidiary-realignment-2022
+    class: primary_corporate
+    url: https://archive.news.kochinc.com/en-us/media-resources/press-releases/2022/koch-industries-announces-subsidiary-realignment
+    date: 2022-02-28
+    supports:
+      - Koch_describes_platform_alignment_as_increasing_knowledge_sharing_capability_building_and_capital_sourcing
+      - Koch_Solutions_combined_ag_energy_engineering_minerals_trading_and_Colonial_Pipeline_interest
+      - listed_businesses_include_fertilizer_agronomic_services_commodity_trading_logistics_engineering_and_construction
+    limitations:
+      - Corporate collaboration across sectors does not establish collaboration for the purpose of worsening climate damage.
+
+  - id: koch-leadership-integration-2024
+    class: primary_corporate
+    url: https://www.kochinc.com/media-resources/koch-long-term-leader-razook-to-retire%3B-new-leadership-positions-announced
+    date: 2024-11-21
+    supports:
+      - senior_Koch_leadership_responsibility_spans_Flint_Hills_INVISTA_Guardian_engineering_and_environmental_capabilities
+      - separate_senior_leadership_responsibility_spans_Georgia_Pacific_Koch_Ag_and_Energy_and_Koch_Minerals_and_Trading
+      - leadership_mobility_links_refining_polymers_building_products_and_fertilizer_businesses
+    limitations:
+      - Shared reporting lines establish corporate coordination capacity, not a climate-harm directive.
+
+  - id: koch-investment-companies-current
+    class: primary_corporate
+    url: https://www.kochinc.com/career-opportunities/koch-investment-companies
+    supports:
+      - Koch_investment_entities_include_Koch_Disruptive_Technologies_Koch_Equity_Development_Koch_Investment_Management_and_Koch_Real_Estate_Investments
+      - Koch_states_investment_involvement_can_strengthen_Koch_capabilities
+    limitations:
+      - Broad investment scope alone does not make every portfolio-company outcome a Koch-directed outcome.
+
+  - id: owens-corning-2025-10k-storm-demand
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1370946/000137094626000067/oc-20251231.htm
+    date: 2026
+    supports:
+      - roofing_damage_from_major_storms_can_significantly_increase_Roofing_segment_demand
+      - Owens_Corning_sells_roofing_insulation_and_door_products
+    limitations:
+      - Storm-driven repair demand is not proof that the company causes storms or climate change.
+      - Not every individual major storm can be attributed to anthropogenic climate change.
+
+  - id: home-depot-q3-2025-lack-of-storms
+    class: primary_sec_exhibit_company_earnings_release
+    url: https://www.sec.gov/Archives/edgar/data/354950/000035495025000238/hd_exhibit991x11022025.htm
+    date: 2025-11-18
+    supports:
+      - Home_Depot_CEO_said_Q3_results_missed_expectations_primarily_due_to_lack_of_storms
+      - company_guidance_reflected_continued_pressure_from_lack_of_storm_activity
+    limitations:
+      - Retail weather sensitivity does not establish intent to worsen weather or climate.
+
+  - id: farmland-partners-2025-10k-scarcity-thesis
+    class: primary_sec_filing
+    url: https://www.sec.gov/Archives/edgar/data/1591670/000110465926017533/fpi-20251231x10k.htm
+    date: 2026
+    supports:
+      - Farmland_Partners_describes_itself_as_a_leading_institutional_acquirer_owner_and_manager_of_high_quality_farmland
+      - company_states_investors_receive_economic_benefit_from_increasing_food_demand_in_face_of_growing_scarcity_of_high_quality_farmland
+      - company_seeks_rental_income_and_asset_appreciation
+      - company_identifies_water_availability_as_essential_to_productivity_and_value
+      - company_says_institutional_investors_are_less_than_5_percent_of_total_US_farmland
+    limitations:
+      - The scarcity thesis includes urban development_demographics_regulation_and_other_nonclimate_drivers.
+      - Institutional investors do not currently own most U.S. farmland.
+
+  - id: usda-farmland-ownership-tenure-2026
+    class: primary_federal_research
+    url: https://www.ers.usda.gov/topics/farm-economy/land-use-land-value-tenure/farmland-ownership-and-tenure
+    date: 2026-02-13
+    supports:
+      - just_over_60_percent_of_US_land_in_farms_is_owner_operated_based_on_2022_Census_of_Agriculture
+      - owner_operated_share_has_been_relatively_stable_over_about_50_years
+      - majority_of_rented_acres_are_owned_by_non_operator_landlords
+    limitations:
+      - Ownership statistics do not by themselves measure corporate control of agricultural processing_inputs_finance_or_water.
+
+  - id: usda-meatpacking-concentration-2024
+    class: primary_federal_research
+    url: https://www.ers.usda.gov/amber-waves/2024/january/concentration-in-u-s-meatpacking-industry-and-how-it-affects-competition-and-cattle-prices
+    date: 2024-01-25
+    supports:
+      - four_largest_firms_handle_85_percent_of_steer_and_heifer_purchases
+      - four_largest_firms_handle_67_percent_of_hog_purchases
+      - recent_evidence_exists_of_reduced_competition_and_lower_cattle_prices
+    limitations:
+      - USDA also notes earlier research found limited evidence that concentration itself caused reduced livestock prices.
+      - Concentration_is_not_collusion_by_definition.
+
+  - id: usda-seed-agchemical-concentration-2023
+    class: primary_federal_research
+    url: https://www.ers.usda.gov/data-products/charts-of-note/107516
+    date: 2023-10-02
+    supports:
+      - Bayer_and_Corteva_together_provided_more_than_half_of_US_retail_corn_soybean_and_cotton_seed_sales_in_2018_2020
+      - Bayer_Corteva_Syngenta_and_BASF_control_majority_of_crop_seed_and_agricultural_chemical_sales
+      - USDA_describes_seed_sector_as_highly_integrated_with_agricultural_chemicals_and_more_concentrated
+    limitations:
+      - Concentration and integration do not establish climate-harm intent.
+
+  - id: blackrock-climate-aware-investing
+    class: primary_corporate_investment_research
+    url: https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/investing-in-climate-awareness
+    supports:
+      - BlackRock_states_climate_risk_is_investment_risk
+      - BlackRock_incorporates_climate_effects_into_return_expectations_and_strategic_asset_allocation
+      - BlackRock_describes_climate_transition_as_creating_investment_opportunity
+    limitations:
+      - Climate-risk awareness is not evidence of a strategy to worsen climate risk.
+
+  - id: blackrock-aladdin-climate-current
+    class: primary_corporate_product_documentation
+    url: https://www.blackrock.com/aladdin/platforms/products/aladdin-climate
+    supports:
+      - Aladdin_Climate_analyzes_climate_risk_and_opportunities_across_public_and_private_assets
+      - platform_uses_scenario_analysis_stress_testing_and_security_or_issuer_level_analysis
+      - BlackRock_reports_millions_of_securities_and_geolocations_assessed
+    limitations:
+      - Product capability establishes sophisticated awareness and modeling capacity, not the content of every BlackRock portfolio decision.
+
+  - id: blackrock-transition-investing-framework
+    class: primary_corporate_investment_framework
+    url: https://www.blackrock.com/corporate/investor-relations/transition-investing
+    supports:
+      - BlackRock_says_investors_need_to_measure_and_model_the_net_zero_transition
+      - Aladdin_Climate_analyzes_how_securities_and_portfolios_are_impacted_by_and_contribute_to_forward_looking_climate_scenarios
+      - BlackRock_says_tools_can_help_identify_new_investment_opportunities
+    limitations:
+      - Modeling contribution_to_climate_scenarios_does_not_by_itself_establish_control_over_emissions_at_portfolio_companies.
+
+  - id: supran-rahmstorf-oreskes-exxon-projections-2023
+    class: peer_reviewed_quantitative_document_analysis
+    url: https://pubmed.ncbi.nlm.nih.gov/36634176/
+    date: 2023-01-13
+    supports:
+      - Exxon_and_ExxonMobil_scientists_documented_and_in_many_cases_modeled_global_warming_projections_between_1977_and_2003
+      - most_evaluated_company_projections_accurately_forecast_subsequent_warming
+      - company_science_was_consistent_with_independent_academic_and_government_models
+    limitations:
+      - This source establishes knowledge and forecasting accuracy; it does not prove that warming itself was desired as an end.
+
+claim_partition:
+  directly_observed_or_stated:
+    - overlapping_reported_institutional_beneficial_ownership_across_fossil_fuel_building_materials_food_processing_and_farmland_companies
+    - direct_Koch_operating_integration_across_refining_polymers_building_products_fertilizer_commodity_trading_and_investment_businesses
+    - severe_storm_damage_can_raise_roofing_and_home_improvement_demand
+    - Farmland_Partners_explicitly_markets_food_demand_and_high_quality_farmland_scarcity_as_an_investment_thesis
+    - US_food_and_seed_markets_show_high_concentration_in_named_segments
+    - BlackRock_explicitly_models_climate_risk_and_opportunity_in_investment_workflows
+    - Exxon_internal_scientific_work_quantitatively_anticipated_warming
+  supported_inferences:
+    - diversified_capital_can_be_exposed_to_returns_on_both_climate_forcing_and_climate_damage_or_scarcity_sides_of_the_economy
+    - common_ownership_and_direct_conglomerate_control_create_real_governance_and_coordination_channels_that_should_be_traced_rather_than_treated_as_unrelated_coincidence
+    - climate_damage_can_generate_replacement_demand_and_asset_repricing_that_is economically legible to sophisticated investors
+  unresolved:
+    - whether_BlackRock_Vanguard_or_other_named_asset_managers_used_governance_power_to_preserve_fossil_emissions_for_the_purpose_of_creating_downstream_damage_or_scarcity_returns
+    - whether_any_corporate_board_or_investment_committee_explicitly_linked_additional_global_warming_to_higher_replacement_demand_land_values_food_market_power_or_reconstruction_revenue
+    - net_portfolio_gain_or_loss_from_additional_warming_after_all_cross_sector_losses_and_gains_are counted
+    - actor_specific_knowledge_and_decision_paths_for_each_cross_sector_allocation
+  affirmatively_not_established:
+    - universal_claim_that_BlackRock_or_Vanguard_caused_every_major_current_harm
+    - proof_that_major_storms_are intentionally generated by these firms
+    - proof_that_product_lifetime_reduction_was_the_original purpose of fossil emissions
+
+locks:
+  - common_ownership != specific_directive
+  - common_ownership != no_coordination_capacity
+  - asset_manager_beneficial_ownership != ultimate_economic_ownership_of_every_share
+  - direct_conglomerate_control != proof_of_harmful_motive
+  - climate_knowledge != desire_for_every_climate_harm
+  - foreseeable_damage_plus_persistence_can_strengthen_responsibility_without_proving_desire
+  - storm_damage_demand != storm_creation
+  - climate_change_can_amplify_weather_risk_without_making_every_storm_climate_attributable
+  - farmland_scarcity_investment_thesis != proof_that_investors_caused_the_scarcity
+  - institutional_farmland_interest != institutional_ownership_of_most_US_farmland
+  - concentration != collusion
+  - profit_opportunity != culpability_without_actor_specific_mechanism
+  - preserve_each_edge_even_when_the_whole_circuit_is_not_yet_proven
