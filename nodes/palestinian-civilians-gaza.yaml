@@ -1,0 +1,80 @@
+schema: unum-lattice-news/node/v0.2
+id: palestinian-civilians-gaza
+title: Palestinian Civilians in Gaza
+entity_type: population
+actor_roles:
+  - constituency
+status: active
+updated: 2026-08-17
+summary:
+  text: >-
+    Civilian Palestinian population in the Gaza Strip, preserved as an affected-population seat rather than
+    collapsed into Hamas, armed groups, combatants or state actors. UN investigations have documented collective
+    punishment, starvation/deprivation, forcible transfer, attacks on civilians and civilian objects, sexual and
+    reproductive harms, large-scale killing and injury of children, and destruction of civilian infrastructure.
+  posture: observed
+aliases: []
+hashtags:
+  - population/PalestinianCivilians
+  - place/Gaza
+  - mechanism/CollectivePunishment
+  - mechanism/Displacement
+  - right/CivilianProtection
+authority:
+  has_authority: false
+  seat: affected civilian population
+  source: civilian-protection and population records
+  jurisdiction: Gaza Strip
+  level: other
+  term_start: null
+  term_end: null
+  oversight: []
+  appeal_or_review: []
+vulnerability:
+  roles:
+    - affected_population
+  protection_needs:
+    - protection from attack
+    - food, water, shelter and medical care
+    - freedom from collective punishment and forcible transfer
+    - safe return and movement
+    - accountability and remedy
+funding:
+  gives_to: []
+  receives_from: []
+constituencies: []
+current_evidence:
+  observed:
+    - Civilians in Gaza have experienced mass displacement, deprivation, destruction of homes and infrastructure, death and injury during Israeli military operations and siege measures.
+  stated: []
+  adjudicated: []
+  alleged: []
+  supported_inferences: []
+  disputed: []
+  ambiguous: []
+  unknowns: []
+  missing_or_withheld: []
+  counterevidence: []
+relations:
+  - type: SUBJECT_TO
+    target: collective-punishment-gaza
+    posture: EXTERNAL_FACT_FINDING
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: UN Commission findings
+  - type: AFFECTED_BY
+    target: israeli-security-forces
+    posture: observed
+    evidence:
+      - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+    scope: Gaza military and security operations
+stories: []
+unresolved_questions: []
+corrections: []
+references:
+  - source-israel-palestine-state-conduct-and-territorial-control-2023-2026
+locks:
+  - Palestinian civilian != Hamas member or combatant by default.
+  - Civilian status is not forfeited by remaining in or moving through a dangerous area absent conduct that changes protected status under applicable law.
+  - Presence of armed-group infrastructure or members does not erase civilian-protection obligations.
+  - Population-level harm does not erase individual incident attribution.
