@@ -1,0 +1,134 @@
+schema: unum-lattice-news/source-bundle/v0.1
+id: source-white-lives-matter-distributed-cell-topology-2026-08-17
+title: White Lives Matter distributed cell / regional-channel topology evidence
+accessed: 2026-08-17
+purpose: >-
+  Preserve evidence for the relation between the April 2021 WLM initiative and its local/regional
+  Telegram efforts without collapsing every channel or participant into one legal entity. This bundle
+  also distinguishes official movement routing from search-result coincidence.
+
+sources:
+  - id: wlm-manual-v2-local-effort-topology
+    publisher: White Lives Matter Official
+    source_class: primary_movement_document
+    artifact_sha256: 0061c79104bc9a052337a43fc4357f9a00b55d598c577314d0cca115665c6a71
+    artifact_name: WLM Activist Manual 2.0.pdf
+    custody: user_supplied_local_artifact
+    pages:
+      - 3
+      - 6
+      - 8
+      - 9
+      - 16
+      - 17
+      - 25
+    supports:
+      - the April 2021 initiative denies identity with prior WLM groups while explicitly situating itself inside a longer pro-White / white-racial-consciousness movement lineage
+      - the initiative invites individuals and established groups to participate under common WLM rules and goals
+      - the initiative describes itself as decentralized while prescribing local-channel naming, local admins, vetting, common manuals, recurring events, common branding, and common conduct rules
+      - the manual describes an ideal of millions of small autonomous nests that act as a unit and work toward the same stated goal
+      - the manual distinguishes the movement from particular established groups rather than denying movement continuity
+    limitations:
+      - the manual is a self-description and cannot by itself establish the identity of every person behind every local channel
+      - decentralization does not establish absence of coordination, but common rules do not establish command over every local act
+
+  - id: wlm-manual-v3-local-effort-topology
+    publisher: White Lives Matter Official
+    source_class: primary_movement_document
+    artifact_sha256: df1724fc6992a32aa40429501d7e9a7312912976875232ce4f2a5f3e28af9eef
+    artifact_name: WLM Activist Manual 3.0 - Copy.pdf
+    custody: user_supplied_local_artifact
+    pages:
+      - 3
+      - 4
+      - 5
+      - 8
+      - 9
+      - 10
+      - 11
+      - 12
+      - 15
+    supports:
+      - the initiative maintains one unified racial message and recurring global action schedule while organizing through local efforts
+      - local admins are selected through a common intake process and are required to apply the manual, common message, conduct rules, and local-channel structure
+      - the manual explicitly distinguishes exoteric public messaging from more explicit nationalist/racial material and describes WLM outreach as a doorway toward a White Nationalist worldview
+      - the initiative disassociates unlawful conduct from itself while simultaneously maintaining shared standards, vetting, branding, infrastructure, and event practices
+    limitations:
+      - an individual local act still requires local attribution evidence
+      - a common movement relation does not make every local channel, ally, or participant the same legal entity
+
+  - id: wlm-official-public-cell-description
+    publisher: White Lives Matter Official public Telegram preview
+    source_class: primary_movement_public_channel
+    url: https://t.me/s/WhiteLivesMatterOfficial/10647
+    supports:
+      - the official channel describes WLM as a decentralized global initiative whose purpose is to create local pro-White efforts using the manual to spread the common goal
+      - the official channel analogizes the local efforts to cells in a body and frames success as shared across the initiative
+    limitations:
+      - this is the movement's own public description and should not be treated as proof of legal identity among cells
+
+  - id: wlm-official-public-state-navigator
+    publisher: White Lives Matter Official public Telegram preview
+    source_class: primary_movement_public_channel
+    url: https://t.me/s/WhiteLivesMatterOfficial?before=7096
+    supports:
+      - the official channel publishes and routes users to a structured family of state channels using a common WLM_USA_STATE naming convention
+      - the official channel treats the state channels as local WLM efforts rather than unrelated name matches
+    limitations:
+      - channel presence in the navigator does not establish the identity of every administrator or participant
+
+  - id: wlm-official-public-local-forwards
+    publisher: White Lives Matter Official public Telegram preview
+    source_class: primary_movement_public_channel
+    url: https://t.me/s/WhiteLivesMatterOfficial
+    supports:
+      - the official channel repeatedly forwards and attributes activity to WLM Tennessee, Montana, Pennsylvania, United Kingdom, Germany, and other regional efforts
+      - local efforts route material back through shared WLM infrastructure and branding
+    limitations:
+      - individual forwarded claims may require separate verification for event details
+      - forwarding establishes a movement-recognized relation, not legal identity or responsibility for every local act
+
+user_supplied_captures:
+  - id: telegram-search-wlm-0900
+    artifact_sha256: 6f438ae196deb893980c299eaad60ca19eacb413d21127ec4ad00faf417c94b0
+    artifact_kind: screenshot
+    observed:
+      - WLM Tennessee appears in recent results
+      - WLM-branded materials, backup, viewing, Montana, events, Pennsylvania, and United Kingdom channels appear in global search
+      - unrelated search results also appear, so search-result coincidence alone is not affiliation evidence
+  - id: telegram-search-wlm-g-0901
+    artifact_sha256: 7180ec47fd839d9c3d36f1f04662603ccad2cb2dd920c0ddc497da1730d2f558
+    artifact_kind: screenshot
+    observed:
+      - WLM-branded Germany, Georgia chat, Greece, Germany chat, and Germany materials channels appear in search
+      - these captures are discovery evidence; official-channel routing or cross-forwarding is the stronger affiliation test
+  - id: wlm-lifestyle-recruitment-poster
+    artifact_sha256: d76abd5af1e0b33ce92ab0feb6755a39cded156b5f45c8e7ab65c8fa0c3710b5
+    artifact_kind: screenshot_or_image
+    observed:
+      - WLM branding is paired with books, physical training, heterosexual social/family imagery, and white reproduction messaging
+    limitations:
+      - image provenance should be tied to the source post before using it for a time-specific claim
+  - id: fundraiser-14-words-capture
+    artifact_sha256: e63dff53cd06877e7cd6356172f956474281791a81ab4cfc2807ba6cc19bac79
+    artifact_kind: screenshot
+    observed:
+      - an anonymous donor message reproduces the 14 Words on a fundraiser page
+    limitations:
+      - this capture alone does not establish a WLM relation to the donor, beneficiary, fundraiser, or platform
+      - retain as an unresolved ideological-signal lead unless additional provenance establishes a relation
+
+relation_posture:
+  movement_to_local_efforts: documented
+  local_efforts_same_legal_entity: not_established
+  local_efforts_independent_actors: not_established
+  shared_manual_branding_schedule_infrastructure: documented
+  individual_local_act_attribution: requires_event_specific_evidence
+
+locks:
+  - Decentralized does not mean disconnected.
+  - Cell or chapter relation does not erase local attribution requirements.
+  - Formal separation does not erase documented movement, infrastructure, messaging, or coordination relations.
+  - Search-result similarity alone is not affiliation evidence; prefer official navigator placement, official forwarding, shared infrastructure, or other recoverable relation evidence.
+  - Preserve extremist material as evidence without reproducing recruitment or operational instructions beyond what is necessary to identify the evidentiary relation.
+  - Do not publish private identities, addresses, or doxxing material.
