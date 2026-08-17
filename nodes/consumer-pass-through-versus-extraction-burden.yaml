@@ -1,0 +1,56 @@
+schema: unum-lattice-news/node/v0.1
+id: consumer-pass-through-versus-extraction-burden
+title: Consumer pass-through versus extraction burden
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Operator for testing whether lower consumer prices, cheaper inputs, faster logistics, or other
+    downstream gains are proportionate to the extraction, subsidy, public risk, labor burden,
+    ecological cost, displacement, coercive cost, or foreign-policy support used to obtain them.
+    A lower price is a benefit seat, not a complete welfare verdict.
+  posture: working_framework
+core_trace:
+  - public_or_private_enabling_cost
+  - resource_or_supply_chain_intervention
+  - extraction_and_transport_cost_reduction
+  - producer_trader_processor_or_importer_saving
+  - downstream_price_change
+  - consumer_pass_through
+  - retained_margin_or_asset_gain
+  - host_country_revenue_and_local_value_capture
+  - labor_ecological_displacement_and_security_burden
+  - net_distribution_by_population_and_ownership
+required_measurements:
+  - baseline_and_post_intervention_resource_price
+  - logistics_or_input_cost_change
+  - wholesale_and_retail_price_pass_through
+  - corporate_margin_change
+  - contract_or_offtake_terms
+  - host_country_taxes_royalties_and_ownership_share
+  - local_wages_procurement_and_downstream_processing
+  - public_financing_cost_and_contingent_risk
+  - displacement_compensation_and_livelihood_loss
+  - ecological_remediation_and_future_liability
+  - security_or_repression_cost_where_evidenced
+core_question: >-
+  Of the value created or costs reduced by the intervention, how much reaches ordinary consumers and
+  host-country populations, how much is retained by firms, creditors, owners, or strategic state
+  capacity, and who absorbs the non-price harms that make the lower price possible?
+locks:
+  - Lower consumer prices are real when measured, but they do not erase upstream extraction or harm.
+  - A reduction in transport or input cost is not proof that retail prices fall by the same amount.
+  - Do not treat consumer surplus as identical to corporate surplus; measure both.
+  - Do not compare a recurring extraction burden with a one-time consumer saving without time normalization.
+  - Do not monetize lethal, coercive, rights, displacement, or ecological harms as if a dollar-equivalent automatically resolves moral weight.
+  - The host population is not one seat; separate workers, landholders, displaced residents, local consumers, state revenue recipients, elites, and owners.
+relations:
+  - type: EXTENDS
+    target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: REQUIRES
+    target: externalized-resource-extraction-and-economic-statecraft
+    posture: working_framework

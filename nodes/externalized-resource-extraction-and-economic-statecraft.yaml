@@ -1,0 +1,67 @@
+schema: unum-lattice-news/node/v0.1
+id: externalized-resource-extraction-and-economic-statecraft
+title: Externalized resource extraction and economic statecraft
+family: analysis_framework
+subtype: resource_distribution_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-16
+summary:
+  text: >-
+    Investigative operator for tracing when public money, public credit, diplomacy, security assistance,
+    covert action, development finance, export finance, infrastructure, or political influence is used
+    to secure access to resources, supply chains, export markets, or commercial terms abroad, while
+    material, ecological, political, or coercive burdens are borne primarily by local populations.
+    The operator distinguishes development benefit from extraction rather than assuming either one.
+  posture: working_framework
+core_trace:
+  - us_public_money_credit_or_state_capacity
+  - foreign_government_elite_or_project_counterparty
+  - political_security_or_financial_enabling_mechanism
+  - land_resource_mine_field_port_pipeline_rail_or_concession
+  - extraction_processing_transport_or_offtake
+  - host_state_revenue_local_jobs_and_public_benefits
+  - corporate_revenue_margin_contract_right_or_supply_access
+  - us_or_allied_downstream_industry_benefit
+  - labor_displacement_ecological_or_security_burden
+  - ownership_or_state_capacity_recomposition
+  - redress_and_local_bargaining_power
+financial_forms_to_trace:
+  - grant
+  - direct_loan
+  - loan_guarantee
+  - export_credit
+  - equity
+  - political_risk_insurance
+  - technical_assistance
+  - military_financing
+  - security_assistance
+  - public_private_partnership
+  - sovereign_or_state_owned_enterprise_agreement
+  - covert_expenditure
+required_questions:
+  - What public exposure was committed, obligated, disbursed, guaranteed, insured, or placed at risk?
+  - What resource or market access was an explicit or implicit strategic objective?
+  - Which foreign political actors, state-owned enterprises, private firms, traders, and investors control the deal?
+  - What local value remains through wages, taxes, royalties, ownership, infrastructure, procurement, technology transfer, and downstream processing?
+  - What value leaves through extraction, transfer pricing, debt service, dividends, offtake, management fees, procurement, or imported inputs?
+  - What harms or risks fall on workers, displaced residents, Indigenous or rural communities, civilians, ecosystems, or future generations?
+  - Does security or political support strengthen actors who can suppress local opposition or bargaining?
+  - Who owns the corporate claims that capture the downstream gain?
+locks:
+  - Foreign aid, development finance, export finance, security assistance, and private investment are distinct accounting seats but may participate in one mesh.
+  - Public financing is not synonymous with a grant or budget outlay; distinguish loans, guarantees, equity, insurance, and contingent exposure.
+  - Host-country jobs, infrastructure, taxes, royalties, or lower transport costs are real benefits when evidenced; they do not terminate the extraction trace.
+  - Corporate participation does not prove that the project is harmful; distribution, constraint, and burden must be measured.
+  - Anti-communist, national-security, development, or supply-chain rationales may coexist with commercial interests; do not erase one because another is present.
+  - Historical evidence of regime intervention does not prove identical present-day conduct.
+relations:
+  - type: EXTENDS
+    target: public-to-private-revenue-and-ownership-return
+    posture: working_framework
+  - type: REQUIRES
+    target: entity-kinship-and-identity-resolution
+    posture: working_framework
+  - type: REQUIRES
+    target: power-capacity-accumulation
+    posture: working_framework

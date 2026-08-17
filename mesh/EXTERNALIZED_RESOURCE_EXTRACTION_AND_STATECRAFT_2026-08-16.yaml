@@ -1,0 +1,136 @@
+schema: unum-lattice-news/mesh/v0.1
+id: externalized-resource-extraction-and-statecraft-2026-08-16
+title: Externalized resource extraction, economic statecraft, and local burden mesh
+status: active
+as_of: 2026-08-16
+authority: evidence_mesh_not_verdict
+parent_mesh:
+  - unum-harm-mesh-2026-08-16
+operators:
+  - externalized-resource-extraction-and-economic-statecraft
+  - consumer-pass-through-versus-extraction-burden
+  - entity-kinship-and-identity-resolution
+  - public-to-private-revenue-and-ownership-return
+  - power-capacity-accumulation
+  - victim-to-resource-conversion
+  - legality-laundering-and-false-voluntariness
+  - truth-laundering-and-citation-lineage-capture
+source_bundle:
+  - source-externalized-resource-extraction-and-economic-statecraft-2026-08-16
+core_question: >-
+  When U.S. public money, credit, diplomacy, security capacity, development finance, export finance,
+  or covert power helps reorganize access to resources abroad, how much value remains with ordinary
+  people in the host country and with ordinary consumers, how much is captured by corporations,
+  creditors, owners, or strategic state capacity, and which vulnerable populations bear the harms
+  that make the arrangement possible?
+
+current_public_finance_mesh:
+  dfc:
+    state: CONFIRMED
+    financial_forms:
+      - debt
+      - equity
+      - political_risk_insurance
+      - technical_assistance
+    observed:
+      - DFC describes itself as an instrument of American economic statecraft.
+      - June 2026 approvals totaled $2.5 billion across strategic infrastructure, energy, supply-chain, and related investments.
+      - Critical-mineral transactions include a $600 million DFC investment in the Orion consortium and exploratory financing of up to $700 million for a Kazakhstan tungsten project.
+      - DFC invested $75 million in the U.S.-Ukraine Reconstruction Investment Fund for critical minerals and other strategic sectors.
+  exim:
+    state: CONFIRMED
+    observed:
+      - EXIM explicitly finances projects that help U.S. exporters participate in natural-resource extraction and infrastructure abroad.
+      - EXIM reports $78.656 billion in project and structured finance from 1993 through June 2026 across resource, infrastructure, and other sectors.
+      - EXIM's critical-mineral supply-chain initiative ties financing of foreign projects to long-term offtake commitments with U.S. companies.
+  security_finance:
+    state: CONFIRMED_AS_PARALLEL_PUBLIC_CAPACITY_RAIL
+    observed:
+      - FY2024 FMS-system activity included $11.8 billion funded through Foreign Military Financing and $9.2 billion through DOD building-partner-capacity and State security-assistance programs.
+    lock: >-
+      Security assistance must be connected to resource concessions, political support, or extraction only when case-specific evidence establishes the crossing.
+
+lobito_case:
+  state: ACTIVE_DISTRIBUTION_TEST
+  public_capacity:
+    - U.S. officials reported more than $4 billion mobilized for the Lobito Corridor by September 2024, roughly $3 billion through U.S. tools at that point.
+    - DFC financing includes a $553 million railway/mineral-port loan.
+  resource_objective:
+    - copper
+    - cobalt
+    - critical_minerals
+  stated_and_projected_benefits:
+    - mineral transport cost reduction up to 30 percent
+    - transit time reduced by about 29 days
+    - more than $350 million projected local procurement over five years
+    - more than 1,000 projected additional full-time Angolan jobs
+    - infrastructure and broader trade access
+  strategic_and_corporate_benefits:
+    - stronger U.S. and allied access to critical-mineral supply chains
+    - procurement opportunities for U.S. industries
+    - commercial-diplomacy and geopolitical influence
+    - private consortium revenue and transport rights
+  harm_and_constraint_edges:
+    - DOL documents forced-labor indicators in parts of the DRC cobalt sector.
+    - Sector-level labor abuse does not establish project-specific causation by Lobito financing.
+    - Community-displacement and land-rights claims around corridor expansion require project-specific source normalization and counterevidence before promotion.
+  missing_measurement:
+    - exact distribution of the 30 percent logistics saving among miners traders processors manufacturers and retail consumers
+    - host-country tax royalty and ownership capture across the mines served by the corridor
+    - displacement compensation and livelihood effects
+    - final beneficial ownership of project and downstream corporate returns
+
+historical_regime_resource_coupling:
+  iran_1953_1954:
+    state: STRONGLY_DOCUMENTED_CASE
+    trace:
+      - oil_nationalization_and_conflict
+      - cia_program_to_support_shah_and_remove_mossadegh
+      - explicit_objective_of_government_willing_to_accept_oil_settlement
+      - covert_intervention_and_restoration_of_shah
+      - us_financial_backing_and_strengthening_of_security_state
+      - increased_authoritarian_repression_censorship_and_prosecution
+      - 1954_oil_consortium
+      - 40_percent_american_company_participation
+      - long_term_resource_and_geopolitical_reseating
+    locks:
+      - The record supports both Cold War/anti-communist objectives and oil-commercial objectives; do not erase either.
+      - Iran received a 50 percent net-profit share under the consortium agreement; local/national benefit was not literally zero.
+      - The relevant harm question is distribution, sovereignty, coercion, and counterfactual control, not whether Iran received any revenue.
+  guatemala_1954:
+    state: DOCUMENTED_OVERLAP_WITH_MOTIVE_CAUTION
+    trace:
+      - agrarian_reform_and_expropriation_of_unused_large_landholdings
+      - large_effect_on_united_fruit_land
+      - us_compensation_pressure_on_behalf_of_united_fruit
+      - anti_communist_and_hemisphere_security_policy
+      - cia_pbsuccess_up_to_3_million
+      - overthrow_of_arbenz_and_installation_of_castillo_armas
+      - political_restriction_and_reversal_or_narrowing_of_reform
+    locks:
+      - Corporate property interests were explicitly present in U.S. policy documents.
+      - The evidence does not justify reducing PBSUCCESS to United Fruit as the sole motive.
+
+consumer_pass_through_test:
+  status: OPEN_HIGH_PRIORITY
+  proposition: >-
+    A resource intervention may lower transport or input costs while a smaller share of the resulting
+    gain reaches ordinary consumers than is retained in margins, ownership, strategic capacity, or
+    foreign counterparties, and while non-price harms remain externalized.
+  required_test:
+    - measure cost reduction at extraction transport and wholesale seats
+    - measure downstream industrial and retail price reduction
+    - measure retained margin and ownership gain
+    - measure host-country revenue local wages and local procurement
+    - measure public financing cost and contingent risk
+    - measure displacement ecological labor and security harm separately
+  lock: >-
+    Do not assert the proposition as an aggregate fact until pass-through and burden data are assembled;
+    do not use the existence of any consumer benefit to terminate the upstream harm trace.
+
+next_growth:
+  - Build a complete U.S. external resource-finance census by agency and financial instrument.
+  - Add company and ownership nodes for Trafigura, Mota-Engil, Vecturis, Orion Resource Partners, ADQ, Mercuria, Gecamines joint ventures, TechMet, Syrah Resources, and major EXIM resource-project counterparties where evidence supports recurrence.
+  - Resolve U.S. corporate buyers and offtake agreements receiving minerals from supported projects.
+  - Add historical Chile as a separate pressure/corporate-compensation case with the explicit lock that U.S. covert pressure is documented while direct U.S. sponsorship of the 1973 coup is not established by the cited CIA record.
+  - Compare development claims against realized local tax, wage, ownership, infrastructure, health, displacement, and ecological outcomes.
