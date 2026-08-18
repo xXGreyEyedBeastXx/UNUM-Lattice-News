@@ -1,4 +1,4 @@
-schema: unum-lattice-news/spread/v0.1
+schema: unum-lattice-news/spread/v0.2
 
 spread:
   id: spread-example
@@ -14,57 +14,23 @@ spread:
     intake_candidate_ids: []
 
   lenses:
-    health:
-      findings: []
-      unknowns: []
-    disability_accessibility:
-      findings: []
-      unknowns: []
-    geopolitics_jurisdiction:
-      findings: []
-      unknowns: []
-    culture:
-      findings: []
-      unknowns: []
-    ideology_worldview:
-      findings: []
-      unknowns: []
-    economy_finance_ownership:
-      findings: []
-      unknowns: []
-    labor_care_dependency:
-      findings: []
-      unknowns: []
-    law_governance_accountability:
-      findings: []
-      unknowns: []
-    technology_data_infrastructure:
-      findings: []
-      unknowns: []
-    ecology_climate_material:
-      findings: []
-      unknowns: []
-    housing_land_migration:
-      findings: []
-      unknowns: []
-    education_science_knowledge:
-      findings: []
-      unknowns: []
-    media_information_language:
-      findings: []
-      unknowns: []
-    conflict_security_carceral:
-      findings: []
-      unknowns: []
-    history_memory:
-      findings: []
-      unknowns: []
-    community_resistance_repair:
-      findings: []
-      unknowns: []
-    future_generations_recoverability:
-      findings: []
-      unknowns: []
+    health: {findings: [], unknowns: []}
+    disability_accessibility: {findings: [], unknowns: []}
+    geopolitics_jurisdiction: {findings: [], unknowns: []}
+    culture: {findings: [], unknowns: []}
+    ideology_worldview: {findings: [], unknowns: []}
+    economy_finance_ownership: {findings: [], unknowns: []}
+    labor_care_dependency: {findings: [], unknowns: []}
+    law_governance_accountability: {findings: [], unknowns: []}
+    technology_data_infrastructure: {findings: [], unknowns: []}
+    ecology_climate_material: {findings: [], unknowns: []}
+    housing_land_migration: {findings: [], unknowns: []}
+    education_science_knowledge: {findings: [], unknowns: []}
+    media_information_language: {findings: [], unknowns: []}
+    conflict_security_carceral: {findings: [], unknowns: []}
+    history_memory: {findings: [], unknowns: []}
+    community_resistance_repair: {findings: [], unknowns: []}
+    future_generations_recoverability: {findings: [], unknowns: []}
 
   node_exposure:
     existing_nodes: []
@@ -75,19 +41,49 @@ spread:
         exposed_by: []
         why_existing_nodes_are_insufficient: ""
         affected_surfaces: []
-        uncertainty_and_counterevidence: []
+        uncertainty: []
+        evidence_effects: []
         review_status: candidate_unreviewed
     promoted_nodes: []
 
+  trajectory_state:
+    direction: null
+    attempt: null
+    capacity: null
+    realized_result: null
+    surviving_resistance: null
+
   relations: []
-  counterevidence: []
+
+  evidence_effects:
+    - evidence_ref: ""
+      target: ""
+      function: "" # CLAIM_DEFEATING | SCOPE_LIMITING | DIRECTION | ATTEMPT | CAPACITY | REALIZED_OUTCOME | CONSTRAINT_RESISTANCE | MOTIVE_LIMITING | RELATION_LIMITING | ALTERNATIVE_SUPPORTING | RELIABILITY_MODIFYING | NON_RESPONSIVE
+      effect: ""
+
+  laundering_claims:
+    - type: "" # CAUSAL_PARTITION_LAUNDERING | TRUTH_CITATION_LAUNDERING | LEGALITY_LAUNDERING | VOLUNTARINESS_LAUNDERING | MORAL_LAUNDERING | ETHICAL_LAUNDERING | REPUTATION_LAUNDERING | PATRONAGE_RETURN_LAUNDERING | FINANCIAL_PROVENANCE_OBSCURATION | MONEY_LAUNDERING_LEGAL_CLAIM | LITERAL_LAUNDRY
+      posture: ""
+      target: ""
+      transformation: ""
+      evidence_effect_refs: []
+
+  legacy_counterevidence: [] # migration-only; new work should use evidence_effects
   unresolved_questions: []
   corrections: []
 
   review:
+    evidence_jurisdiction_reviewed: false
+    laundering_labels_reviewed: false
     consequential_claims_reviewed: false
     source_rights_reviewed: false
     reviewer: ""
     reviewed_at: null
     notes: ""
 
+locks:
+  - Evidence updates only the claim, edge, or variable it actually bears on.
+  - Successful resistance is not counterevidence to the existence of an attempted objective.
+  - Laundering labels require a traced transformation, not rhetorical resemblance.
+  - MONEY_LAUNDERING_LEGAL_CLAIM requires legal evidentiary grounding.
+  - LITERAL_LAUNDRY is just laundry.

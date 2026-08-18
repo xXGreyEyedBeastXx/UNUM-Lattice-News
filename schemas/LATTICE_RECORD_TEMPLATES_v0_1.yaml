@@ -1,5 +1,20 @@
-version: v0_1
+version: v0_2
 status: active_review
+
+# Evidence jurisdiction functions for all record types:
+evidence_effect_function:
+  - CLAIM_DEFEATING
+  - SCOPE_LIMITING
+  - DIRECTION
+  - ATTEMPT
+  - CAPACITY
+  - REALIZED_OUTCOME
+  - CONSTRAINT_RESISTANCE
+  - MOTIVE_LIMITING
+  - RELATION_LIMITING
+  - ALTERNATIVE_SUPPORTING
+  - RELIABILITY_MODIFYING
+  - NON_RESPONSIVE
 
 source_record:
   id: source_slug
@@ -34,7 +49,8 @@ story_record:
   proposed_relations: []
   contributions: []
   affected_participants_or_ecologies: []
-  counterevidence: []
+  evidence_effects: []
+  legacy_counterevidence: []
   unknowns: []
   sources: []
   corrections: []
@@ -54,6 +70,7 @@ node_record:
   direct_relations: []
   timeline_stories: []
   current_disputes: []
+  evidence_effects: []
   unknowns: []
   sources: []
   last_reviewed: "YYYY-MM-DD"
@@ -69,7 +86,8 @@ relation_record:
   start_date: null
   end_date: null
   evidence: []
-  counterevidence: []
+  evidence_effects: []
+  legacy_counterevidence: []
   confidence: low | moderate | high
   debunking_record: null
   last_reviewed: "YYYY-MM-DD"
@@ -93,6 +111,12 @@ contribution_record:
   responsibility_grade: R0 | R1 | R2 | R3 | R4 | R5
   investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
   claim_posture: observed | stated | adjudicated | supported_inference | alleged | disputed | ambiguous | unknown
+  trajectory_state:
+    direction: null
+    attempt: null
+    capacity: null
+    realized_result: null
+    surviving_resistance: null
   harm_assessment:
     counts_toward_confirmed_hierarchy: false
     rating_scope: ""
@@ -119,7 +143,18 @@ contribution_record:
       catastrophic_risk_score: null
     score_justification: []
   evidence: []
-  counterevidence: []
+  evidence_effects:
+    - evidence_ref: ""
+      target: ""
+      function: CLAIM_DEFEATING | SCOPE_LIMITING | DIRECTION | ATTEMPT | CAPACITY | REALIZED_OUTCOME | CONSTRAINT_RESISTANCE | MOTIVE_LIMITING | RELATION_LIMITING | ALTERNATIVE_SUPPORTING | RELIABILITY_MODIFYING | NON_RESPONSIVE
+      effect: ""
+  laundering_claims:
+    - type: CAUSAL_PARTITION_LAUNDERING | TRUTH_CITATION_LAUNDERING | LEGALITY_LAUNDERING | VOLUNTARINESS_LAUNDERING | MORAL_LAUNDERING | ETHICAL_LAUNDERING | REPUTATION_LAUNDERING | PATRONAGE_RETURN_LAUNDERING | FINANCIAL_PROVENANCE_OBSCURATION | MONEY_LAUNDERING_LEGAL_CLAIM | LITERAL_LAUNDRY
+      posture: null
+      target: null
+      transformation: null
+      evidence_effect_refs: []
+  legacy_counterevidence: []
   unknowns: []
   path_forward: []
   debunking_record:
@@ -147,7 +182,6 @@ harm_hierarchy_record:
   scope: ""
   eligible_contribution_states: [CONFIRMED]
   rating_tuple: [realized_harm_score, structural_harm_score, catastrophic_risk_score]
-  ranking_method: "See docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md and docs/HARM_SCORING_RUBRIC_v0_1.md"
   entries: []
   shared_harm_deduplication_notes: []
   pending_and_path_forward_not_counted: []
@@ -169,7 +203,8 @@ rendition_record:
   supported_inferences: []
   trajectories: []
   documented_harms: []
-  counterevidence: []
+  evidence_effects: []
+  legacy_counterevidence: []
   disputed_or_unsupported_claims: []
   affected_participants_or_ecologies: []
   protective_options: []
@@ -178,6 +213,8 @@ rendition_record:
   review_required: true
 
 nonclaims:
+  - evidence_updates_only_the_edge_or_variable_it_bears_on
+  - successful_resistance_does_not_erase_attempt
   - hashtag_cooccurrence_is_not_a_relation
   - relation_is_not_automatic_culpability
   - contribution_is_not_automatic_culpability
@@ -188,4 +225,6 @@ nonclaims:
   - pending_is_not_debunked
   - searched_not_found_is_not_debunked
   - hierarchy_score_is_not_legal_guilt
+  - money_laundering_legal_claim_requires_legal_grounding
+  - literal_laundry_is_not_an_investigative_laundering_inference
   - generated_rendition_is_not_published_fact_without_review

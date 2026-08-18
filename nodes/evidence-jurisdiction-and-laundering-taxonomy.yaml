@@ -1,0 +1,101 @@
+schema: unum-lattice-news/node/v0.1
+id: evidence-jurisdiction-and-laundering-taxonomy
+title: Evidence jurisdiction and laundering taxonomy
+family: analysis_framework
+subtype: epistemic_routing_and_accountability_operator
+landing_status: landed
+lifecycle_status: active
+updated: 2026-08-18
+
+summary:
+  text: >-
+    Prevents evidence from acquiring blanket exculpatory or incriminating force outside the exact
+    claim, edge, variable, or model component it bears on, while providing a typed family of laundering
+    operators for cases where harmful, financial, causal, moral, ethical, legal, or evidentiary relations
+    are made to appear cleaner or disconnected through renaming, partition, provenance loss, institutional
+    form, accounting, or narrative.
+  posture: working_framework
+
+prime_law:
+  - evidence_updates_only_the_edge_or_variable_it_actually_bears_on
+  - true_context_can_be_non_responsive_to_a_scoped_claim
+  - successful_resistance_does_not_retroactively_defend_an_attempted_objective
+
+trajectory_axes:
+  D: demonstrated_direction_or_objective
+  A: attempted_implementation
+  C: available_capacity
+  R: realized_result
+  S: surviving_resistance_or_constraint
+  lock: A_1_R_0_S_1_means_attempted_blocked_and_resistance_worked_not_partly_unattempted
+
+evidence_effect_functions:
+  - CLAIM_DEFEATING
+  - SCOPE_LIMITING
+  - DIRECTION
+  - ATTEMPT
+  - CAPACITY
+  - REALIZED_OUTCOME
+  - CONSTRAINT_RESISTANCE
+  - MOTIVE_LIMITING
+  - RELATION_LIMITING
+  - ALTERNATIVE_SUPPORTING
+  - RELIABILITY_MODIFYING
+  - NON_RESPONSIVE
+
+laundering_classes:
+  CAUSAL_PARTITION_LAUNDERING:
+    test: causal_path_split_into_compartments_that_hide_responsibility_gain_or_dependency
+  TRUTH_CITATION_LAUNDERING:
+    test: inherited_claim_gains_false_independence_or_authority_through_repetition_or_citation
+  LEGALITY_LAUNDERING:
+    test: legal_or_formally_compliant_status_used_as_proof_of_legitimacy_or_harmlessness
+  VOLUNTARINESS_LAUNDERING:
+    test: formal_choice_or_signature_obscures_coercion_dependency_asymmetry_or_lack_of_exit
+  MORAL_LAUNDERING:
+    test: naming_reputation_role_or_institutional_partition_changes_moral_treatment_without_changing_underlying_transformation
+  ETHICAL_LAUNDERING:
+    test: ethics_review_code_disclosure_recusal_or_compliance_process_is_used_as_proof_of_ethical_resolution_while_material_conflict_or_harm_remains
+  REPUTATION_LAUNDERING:
+    test: unrelated_prestige_charity_credentials_or_beneficial_conduct_used_to_offset_or_obscure_scoped_harm
+  PATRONAGE_RETURN_LAUNDERING:
+    test: benefit_returns_through_intermediaries_access_appointments_contracts_donations_clemency_or_networks_while_appearing_disconnected
+  FINANCIAL_PROVENANCE_OBSCURATION:
+    test: source_ownership_destination_beneficial_control_or_purpose_of_funds_is_obscured_without_asserting_criminal_money_laundering
+  MONEY_LAUNDERING_LEGAL_CLAIM:
+    test: reserved_for_legally_grounded_money_laundering_claim_with_jurisdiction_specific_predicate_proceeds_transaction_and_required_knowledge_or_intent_evidence
+  LITERAL_LAUNDRY:
+    test: washing_clothes_linens_uniforms_or_other_textiles
+
+locks:
+  - Laundering is a transformation claim, not an insult.
+  - A contested label is not automatically laundering.
+  - Money laundering is a legal/financial term and must not be used metaphorically in a legal claim field.
+  - Financial opacity alone is not proof of money laundering.
+  - Moral or ethical laundering requires a demonstrated change in treatment or accountability surface, not mere disagreement.
+  - Literal laundry does not imply moral, ethical, causal, epistemic, or financial laundering.
+  - A washing machine is not a causal conspiracy edge.
+
+relations:
+  - type: GOVERNS
+    target: causal-partition-laundering
+    posture: working_framework
+  - type: GOVERNS
+    target: truth-laundering-and-citation-lineage-capture
+    posture: working_framework
+  - type: GOVERNS
+    target: legality-laundering-and-false-voluntariness
+    posture: working_framework
+  - type: GOVERNS
+    target: moral-laundering-through-renaming-and-partition
+    posture: working_framework
+  - type: GOVERNS
+    target: patronage-return-laundering
+    posture: working_framework
+  - type: GOVERNS
+    target: accusation-reversal-and-actor-dependent-moral-laundering
+    posture: working_framework
+
+references:
+  - docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md
+  - docs/NEWS_OPERATIONS_v0_2.md

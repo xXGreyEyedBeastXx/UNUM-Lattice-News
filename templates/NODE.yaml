@@ -1,11 +1,9 @@
-schema: unum-lattice-news/node/v0.2
+schema: unum-lattice-news/node/v0.3
 id: ""
 title: ""
 
-# What the entity is. Keep distinct from the role it occupies in a story.
 entity_type: "" # person | institution | movement | technology | policy | place | population | ecology | concept | sovereign_state | international_organization | court | other
-actor_roles: [] # victim | survivor | complainant | witness | accused | defendant | authority | public_official | donor | funder | lobbyist | journalist | advocate | contractor | regulator | intermediary | constituency | other
-
+actor_roles: []
 status: seed
 updated: YYYY-MM-DD
 
@@ -21,14 +19,14 @@ authority:
   seat: ""
   source: ""
   jurisdiction: ""
-  level: "" # local | subnational | federal | national | sovereign | supranational | international | private | other
+  level: ""
   term_start: null
   term_end: null
   oversight: []
   appeal_or_review: []
 
 vulnerability:
-  roles: [] # victim | survivor | complainant | witness | whistleblower | affected_population | other
+  roles: []
   protection_needs: []
 
 funding:
@@ -47,33 +45,43 @@ current_evidence:
   ambiguous: []
   unknowns: []
   missing_or_withheld: []
-  counterevidence: []
+  evidence_effects:
+    - evidence_ref: ""
+      target: ""
+      function: "" # CLAIM_DEFEATING | SCOPE_LIMITING | DIRECTION | ATTEMPT | CAPACITY | REALIZED_OUTCOME | CONSTRAINT_RESISTANCE | MOTIVE_LIMITING | RELATION_LIMITING | ALTERNATIVE_SUPPORTING | RELIABILITY_MODIFYING | NON_RESPONSIVE
+      effect: ""
+  legacy_counterevidence: [] # migration-only
+
+trajectory_state:
+  direction: null
+  attempt: null
+  capacity: null
+  realized_result: null
+  surviving_resistance: null
+
+laundering_claims:
+  - type: "" # CAUSAL_PARTITION_LAUNDERING | TRUTH_CITATION_LAUNDERING | LEGALITY_LAUNDERING | VOLUNTARINESS_LAUNDERING | MORAL_LAUNDERING | ETHICAL_LAUNDERING | REPUTATION_LAUNDERING | PATRONAGE_RETURN_LAUNDERING | FINANCIAL_PROVENANCE_OBSCURATION | MONEY_LAUNDERING_LEGAL_CLAIM | LITERAL_LAUNDRY
+    posture: ""
+    target: ""
+    transformation: ""
+    evidence_effect_refs: []
 
 timeline: []
-
 relations: []
-# Example relation entry:
-# - type: CONTRACTS_WITH
-#   target: node-id
-#   posture: observed
-#   evidence:
-#     - source-id
-#   scope: ""
-#   notes: ""
-
 stories: []
-
 unresolved_questions: []
 corrections: []
 references: []
 
 locks:
   - Node inclusion is not an accusation.
+  - Evidence updates only the edge or variable it actually bears on.
+  - Successful resistance does not erase an attempted objective.
   - Entity identity is not the same as event role or authority seat.
   - Victim or survivor is a relational role, not a total identity.
   - Authority changes capacity and provenance, not truth value.
   - Alleged is not false; unknown is not absent; adjudicated is not metaphysical certainty.
   - Benefit from an outcome is not proof of causation.
-  - Hashtag co-occurrence is not evidence of coordination or culpability.
   - Consequential relations require recoverable evidence.
-  - Collective identity does not inherit the actions of individual members or institutions.
+  - MONEY_LAUNDERING_LEGAL_CLAIM requires legal evidentiary grounding.
+  - LITERAL_LAUNDRY is not an investigative laundering inference.

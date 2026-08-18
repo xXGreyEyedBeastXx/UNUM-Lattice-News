@@ -1,4 +1,4 @@
-version: 0.1
+version: 0.2
 status: working
 purpose: >-
   Machine-readable envelope for scoped trust and threat assessments.
@@ -8,7 +8,7 @@ purpose: >-
 assessment_record:
   id: ""
   assessment_type: "" # trust | threat
-  subject_ref: "" # source/node/relation/claim/event identifier
+  subject_ref: ""
   scope:
     claim: null
     domain: null
@@ -21,10 +21,31 @@ assessment_record:
   status: "" # draft | reviewed | superseded | withdrawn
 
   evidence:
-    supporting: []
-    counterevidence: []
+    supporting: [] # legacy convenience list; does not replace evidence_effects
+    evidence_effects:
+      - evidence_ref: ""
+        target: ""
+        function: "" # CLAIM_DEFEATING | SCOPE_LIMITING | DIRECTION | ATTEMPT | CAPACITY | REALIZED_OUTCOME | CONSTRAINT_RESISTANCE | MOTIVE_LIMITING | RELATION_LIMITING | ALTERNATIVE_SUPPORTING | RELIABILITY_MODIFYING | NON_RESPONSIVE
+        effect: ""
+    legacy_counterevidence: [] # migration-only; no new untyped entries
     source_lineage: []
     missingness: []
+
+  trajectory_state:
+    direction: null
+    attempt: null
+    capacity: null
+    realized_result: null
+    surviving_resistance: null
+    notes: ""
+
+  laundering_claims:
+    - type: "" # CAUSAL_PARTITION_LAUNDERING | TRUTH_CITATION_LAUNDERING | LEGALITY_LAUNDERING | VOLUNTARINESS_LAUNDERING | MORAL_LAUNDERING | ETHICAL_LAUNDERING | REPUTATION_LAUNDERING | PATRONAGE_RETURN_LAUNDERING | FINANCIAL_PROVENANCE_OBSCURATION | MONEY_LAUNDERING_LEGAL_CLAIM | LITERAL_LAUNDRY
+      posture: ""
+      target: ""
+      transformation: ""
+      evidence_effect_refs: []
+      notes: ""
 
   confidence: "" # low | medium | high
   confidence_notes: ""
@@ -76,6 +97,8 @@ assessment_record:
     superseded_by: null
 
 locks:
+  - "evidence updates only the edge or variable it actually bears on"
+  - "constraint success does not erase an attempted objective"
   - "trust != truth"
   - "trust != moral goodness"
   - "threat != enemy"
@@ -83,5 +106,6 @@ locks:
   - "score != action authority"
   - "missing != zero"
   - "confidence != score"
-  - "listen before scoring"
+  - "MONEY_LAUNDERING_LEGAL_CLAIM requires legal evidentiary grounding"
+  - "LITERAL_LAUNDRY is not an investigative laundering inference"
   - "deterministic evidence packet must survive score removal"

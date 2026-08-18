@@ -2,11 +2,9 @@
 
 ## Purpose
 
-UNUM Lattice News is an evidence-traced relational reporting and analysis surface. Its credibility depends on preserving the difference between evidence, allegation, inference, uncertainty, and judgment.
+UNUM Lattice News is an evidence-traced relational reporting and analysis surface. Its credibility depends on preserving the difference between evidence, allegation, inference, uncertainty, judgment, and the exact evidentiary function a fact performs.
 
-Repository-wide investigations should also follow [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md). That operations layer coordinates this evidence standard with power, constraint/agency, harm/consequence/beneficiary, missingness, competing-model, oversight, correction, and re-entry review. It does not override this standard.
-
-Harm-first investigations should additionally follow [docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md](docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md).
+Repository-wide investigations should follow `docs/NEWS_OPERATIONS_v0_2.md` and `docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md`.
 
 ## Claim posture
 
@@ -24,18 +22,53 @@ Use explicit posture when it matters:
 
 Do not silently promote one posture into another.
 
-When absence itself matters, use the typed missingness states defined in `NEWS_OPERATIONS_v0_2.md` rather than collapsing all absence into `Unknown` or `no evidence`.
+## Evidence jurisdiction
+
+Prime law:
+
+> **Evidence updates only the claim, edge, variable, or model component it actually bears on.**
+
+For consequential evidence, name both the target and function. Preferred functions:
+
+`CLAIM_DEFEATING | SCOPE_LIMITING | DIRECTION | ATTEMPT | CAPACITY | REALIZED_OUTCOME | CONSTRAINT_RESISTANCE | MOTIVE_LIMITING | RELATION_LIMITING | ALTERNATIVE_SUPPORTING | RELIABILITY_MODIFYING | NON_RESPONSIVE`
+
+A true fact may be non-responsive to a nearby claim. Do not let favorable or unfavorable facts bleed across unrelated edges.
+
+Examples:
+
+```text
+court blocks an order
+-> CONSTRAINT_RESISTANCE + REALIZED_OUTCOME
+!= evidence that the order was not attempted
+
+explicit condemnation of extremist group
+-> CLAIM_DEFEATING for "never condemned"
+-> possibly MOTIVE_LIMITING for a specific endorsement claim
+!= erasure of independently evidenced policy, amplification, clemency, appointment, or reception edges
+```
+
+### Direction / attempt / capacity / result / resistance
+
+Keep separate:
+
+```text
+D = demonstrated direction/objective
+A = attempted implementation
+C = available capacity
+R = realized result
+S = surviving resistance/constraint
+```
+
+Failure of an attempted objective limits realized harm and demonstrated capacity. It does not retroactively defend the attempt.
 
 ## Investigation state for adversarial harm review
 
-Claim posture and investigation state are independent fields.
+Use:
 
-Use exactly four top-level investigation states for harm-audit workflow:
-
-- **PENDING** — unresolved; evidence, attribution, mechanism, scope, or causation remains insufficient or materially conflicted.
-- **PATH_FORWARD** — a concrete recoverable evidence route is identified but not completed.
-- **CONFIRMED** — the scoped claim is sufficiently established for repository use under this standard.
-- **DEBUNKED** — the scoped claim has been affirmatively defeated after reconstructing the strongest version of the claim and documenting why the recovered evidence contradicts or makes it untenable.
+- **PENDING** — unresolved.
+- **PATH_FORWARD** — concrete evidence route identified but incomplete.
+- **CONFIRMED** — scoped claim sufficiently established for repository use.
+- **DEBUNKED** — scoped claim affirmatively defeated after reconstructing its strongest form.
 
 `DEBUNKED` carries a higher burden than failure to confirm.
 
@@ -46,121 +79,87 @@ EXPECTED_BUT_MISSING != DEBUNKED
 authority denial != DEBUNKED
 lack of charges != DEBUNKED
 procedural dismissal != automatic factual DEBUNKING
+successful resistance != DEBUNKING of the attempt
 ```
-
-A debunking record should preserve the claim tested, strongest support, expected evidence, recovered evidence, decisive failure, explanation, and any narrower residual claim that survives.
-
-Only `CONFIRMED` contributions may add to the confirmed harm hierarchy. Pending and path-forward material remains visible for investigation but does not count as confirmed realized harm.
 
 ## Adversarial search posture
 
-Power-bearing actors do not receive a charitable presumption merely because their conduct is official, legal, bipartisan, allied, popular, or described as security policy.
+Power-bearing actors do not receive a charitable presumption merely because conduct is official, legal, bipartisan, allied, popular, or described as security policy.
 
-The harm audit may intentionally search for the strongest negative case first, especially where civilians, vulnerable populations, public rights, land, ecology, or democratic accountability bear the downside.
-
-This search posture does not authorize a predetermined factual or legal conclusion.
-
-The repository must distinguish:
+Adversarial investigation does not authorize predetermined guilt.
 
 ```text
-adversarial investigation != presumption of legal guilt
 suspicion != finding
 harmful consequence != proof of private intent
 institutional authority != credibility privilege
 ```
 
-## Threat assessment
-
-Threat records should separate at least three dimensions:
-
-1. **Likelihood / evidence posture** — how supported or expected is the causal route?
-2. **Consequence** — what happens if it occurs, and to whom or what?
-3. **Confidence** — how confident are we in the assessment given source quality and missing information?
-
-A low-confidence catastrophic possibility may deserve investigation without being presented as established fact. Observed harm does not automatically prove universal intent.
-
-Threat assessment is not enemy designation and does not itself authorize intervention.
-
 ## Source discipline
 
-Prefer primary and direct evidence where available. Preserve enough information to recover the source, date, author or institution, and relevant context.
+Prefer primary/direct evidence where available. Preserve source, date, institution/author, context, and claim lineage.
 
-Useful source classes include:
-
-- primary documents and datasets;
-- legislation, court records, regulatory filings, and public records;
-- official statements;
-- peer-reviewed or technically inspectable research;
-- high-quality investigative reporting;
-- direct interviews and testimony;
-- secondary analysis and commentary, clearly identified as such.
-
-When sources materially disagree, expose the disagreement rather than manufacturing certainty.
-
-Repeated reports are not automatically independent corroboration. Where later accounts inherit a claim from the same upstream source, preserve that claim lineage rather than counting repetition as independent evidence.
+Repeated reports are not automatically independent corroboration. Citation inheritance must remain visible.
 
 ## Relational mapping
 
-A documented relationship is not automatically evidence of coordination, control, guilt, or conspiracy.
+A documented relationship is not automatically coordination, control, guilt, conspiracy, membership, or causation.
 
-Maps should distinguish relationships such as ownership, investment, contract, employment, partnership, dependency, infrastructure, public statement, regulatory authority, litigation, technical integration, and chronological proximity.
+Distinguish ownership, investment, contract, employment, partnership, dependency, infrastructure, public statement, regulatory authority, litigation, technical integration, chronological proximity, and other relation types.
 
-Do not collapse distinct relation types into an unlabeled edge.
+## Laundering classification discipline
 
-For mature investigations, also distinguish the relation's function within the linked power, constraint/agency, and harm/consequence/beneficiary maps defined in `NEWS_OPERATIONS_v0_2.md`.
+Use laundering labels only as typed transformation claims.
+
+Recognized classes include causal-partition, truth/citation-lineage, legality, voluntariness, moral, ethical, reputation, patronage-return, financial-provenance obscuration, and legally grounded money-laundering claims.
+
+`MONEY_LAUNDERING_LEGAL_CLAIM` is reserved for an actual legal/financial claim with the required jurisdiction-specific elements. Do not use it as metaphor for ordinary conflicts, donations, shell structures, opacity, or disliked financial conduct.
+
+`LITERAL_LAUNDRY` means washing textiles. It is not evidence of any other laundering class.
 
 ## Human and ecological protection
 
-Analysis should examine consequences for dignity, consent, refusal, exit, appeal, bodily and cognitive sovereignty, labor, democratic accountability, plural life, ecological continuity, and sustaining material environments.
+Analysis should examine consequences for dignity, consent, refusal, exit, appeal, bodily/cognitive sovereignty, labor, democratic accountability, plural life, ecological continuity, and sustaining material environments.
 
-Institutions, corporations, governments, movements, ethnic groups, religions, populations, and individuals are not interchangeable categories. Collective blame and dehumanization are prohibited.
-
-Accountability attaches to evidenced conduct, participation, authority, causal contribution, and institutional machinery. Human dignity remains under consequence.
+Institutions, governments, movements, ethnic groups, religions, populations, and individuals are not interchangeable categories. Collective blame and dehumanization are prohibited.
 
 ### Negative-only harm ledger rule
 
-A harm audit is not a net-morality ledger. Beneficial conduct elsewhere does not cancel or numerically offset a documented harm.
+A harm audit is not a net-morality ledger. Beneficial conduct elsewhere does not cancel documented harm.
 
-Do not add unrelated accomplishments merely to create rhetorical balance.
+Do not add unrelated accomplishments merely for rhetorical balance.
 
-Counterevidence must still be preserved when it bears on the claim's identity, chronology, mechanism, scope, causation, magnitude, attribution, or evidentiary reliability.
+Evidence that bears on the scoped claim must be preserved under its actual jurisdiction. Unrelated favorable conduct is `NON_RESPONSIVE`, not counterweight.
 
 ## Harm hierarchy discipline
 
-Harm rankings must be time-bounded and category-bounded.
+Harm rankings must be time-bounded and category-bounded. Separate institutions, leaders, non-leader actors, and affected populations where necessary.
 
-Maintain separate hierarchy surfaces for institutions, leaders, and non-leader actors. Do not force unlike actor classes into one scalar ranking when that destroys legibility.
+Shared underlying harms must not be multiplied across every responsible actor.
 
-Every ranked entry should remain traceable to individual confirmed contribution records and affected populations.
-
-Where multiple actors contributed to the same underlying death, deprivation, displacement, or other harm, preserve the shared harm object and actor-specific responsibility instead of multiplying the underlying victim count across every actor.
-
-A harm rating is an accountability summary, not a finding of criminal liability and not permission for punishment.
+A harm rating is an accountability summary, not criminal liability and not permission for punishment.
 
 ## Privacy and safety
 
-Do not publish private addresses, credentials, private medical or family information, unnecessary identifying information, private source identities without consent, or operational details whose primary value would be facilitating violence, sabotage, stalking, or abuse.
+Do not publish private addresses, credentials, unnecessary medical/family information, protected source identities, or operational detail whose primary value is facilitating violence, stalking, sabotage, or abuse.
 
-Opacity is not itself wrongdoing. Distinguish privacy that protects vulnerable people or sources from secrecy that shields concentrated power or accountability bypass. Transparency pressure should be proportional to power and public consequence.
+Opacity is not itself wrongdoing. Distinguish protective privacy from accountability-shielding secrecy.
 
 ## Copyright and provenance
 
-Do not reproduce complete copyrighted articles or substantial protected works merely because they are relevant. Prefer links, citations, short necessary quotations, and original synthesis.
-
-Third-party material must retain its provenance and applicable rights information.
+Prefer links, citations, short necessary quotations, and original synthesis. Preserve third-party provenance and rights.
 
 ## Corrections
 
-Material errors should be corrected visibly. Preserve the correction trail and explain what changed when practical.
+Correct material errors visibly. Preserve what changed, why, and what remains unresolved.
 
-A consequential conclusion should retain a re-entry path: what evidence would change the assessment, what remains missing, and how a later reviewer can reconstruct the source lineage and reasoning.
-
-A claim previously marked `CONFIRMED` may return to `PENDING` or become `DEBUNKED` if new evidence actually defeats the earlier basis. Status changes must retain lineage.
+A `CONFIRMED` claim may return to `PENDING` or become `DEBUNKED` when evidence actually defeats its basis. Status changes retain lineage.
 
 ## Agent boundary
 
-Automated or AI-assisted research may locate, compare, organize, calculate, cluster, map, and draft from sources. It must not independently publish accusations, erase uncertainty or material counterevidence, fabricate citations, infer private facts, expose protected identities, or convert threat classification into permission for punitive action.
+Automated or AI-assisted research may locate, compare, organize, calculate, cluster, map, and draft. It must not independently publish consequential accusations, fabricate citations, erase uncertainty, infer private facts, expose protected identities, or use evidence outside its declared jurisdiction.
 
-Human review remains required for public claims that could materially affect identifiable people or organizations until a later governance process explicitly establishes a narrower safe authority.
+Human review remains required for consequential public claims until governance explicitly grants narrower safe authority.
 
-Automation may support a public-record investigation by producing candidate entities, typed relations, chronologies, money/resource traces, source-lineage comparisons, missingness ledgers, harm vectors, provisional hierarchy views, and competing-model discriminators. These outputs remain review objects until promoted under the repository's explicit gates.
+## Tiny lock
+
+> A fact may be true and still be answering the wrong question. Route it before you weigh it.

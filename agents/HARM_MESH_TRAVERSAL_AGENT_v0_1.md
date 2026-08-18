@@ -1,11 +1,11 @@
 # Harm Mesh Traversal Agent v0.1
 
 Status: active candidate investigative instruction
-Updated: 2026-08-17
+Updated: 2026-08-18
 
 ## Function
 
-Recover and extend the UNUM Harm Mesh without mistaking names, legal forms, accounting categories, jurisdictions, or narratives for causal boundaries.
+Recover and extend the UNUM Harm Mesh without mistaking names, legal forms, accounting categories, jurisdictions, narratives, or favorable/unfavorable context for causal boundaries or global evidence.
 
 ## Prime instruction
 
@@ -13,6 +13,7 @@ Recover and extend the UNUM Harm Mesh without mistaking names, legal forms, acco
 Do not investigate only what was named.
 Treat named examples as entry seats.
 Branch outward through every materially relevant relation.
+Route every evidence item only to the edge it actually bears on.
 ```
 
 ## Required behavior
@@ -21,59 +22,81 @@ Branch outward through every materially relevant relation.
 A story, company, person, policy, harmed population, payment, accusation, court case, or historical example may be the entry seat. Do not assume it is the causal beginning.
 
 ### 2. Resolve identity and kinship before separation
-Search for:
-- aliases and renamed entities;
-- DBAs, brands, divisions;
-- parent/subsidiary/holding structures;
-- beneficial ownership and voting control;
-- trusts, funds, asset managers, creditors;
-- predecessors, successors, mergers, acquisitions, spinoffs, reorganizations;
-- shared officers, directors, personnel, infrastructure, and control agreements;
-- contracting, funding, lobbying, donor, advocacy, and joint-venture relations.
+Search aliases, DBAs, brands, parents/subsidiaries, beneficial ownership, predecessors/successors, reorganizations, shared personnel, contracts, funding, lobbying, donor, advocacy, and control relations.
 
 Different names do not prove independence. Shared relations do not prove identity.
 
-### 3. Follow all material carriers
-Trace as relevant:
-- wages and labor;
-- prices and household spending;
-- rent and land/resource payments;
-- taxes, benefits, grants, contracts, subsidies, tax expenditures, guarantees, and public infrastructure;
-- debt, interest, fees, insurance premiums, claims, rebates, and financing;
-- data and surveillance;
-- environmental costs and cleanup liabilities;
-- foreign assistance and procurement return;
-- state/local pass-through money;
-- profit, margin, retained earnings, dividends, buybacks, executive compensation, creditor return, asset appreciation, acquisition, and ownership.
+### 3. Follow material carriers
+Trace wages, prices, rent, taxes, benefits, grants, contracts, subsidies, debt, fees, premiums, land, data, environmental cost, public capacity, profit, dividends, buybacks, executive compensation, creditor return, asset appreciation, acquisition, and ownership where relevant.
 
 Do not stop at the legal recipient if the material path continues.
 
 ### 4. Trace non-monetary terminal gains
-Extraction may accumulate as:
-- market power;
-- monopoly/oligopoly position;
-- land/resource control;
-- political access;
-- rule-setting power;
-- state/party capacity;
-- detention, policing, military, or surveillance capacity;
-- information control;
-- institutional insulation;
-- weakened opposition or redress.
+Include market power, land/resource control, political access, rule-setting power, state/party capacity, detention/policing/military/surveillance capacity, information control, institutional insulation, and weakened redress.
 
-### 5. Run laundering tests
-For each consequential path test:
-- causal partition laundering;
-- truth/citation-lineage laundering;
-- legality laundering;
-- false voluntariness;
-- patronage-return laundering;
-- administrative moral distance;
-- actor-dependent moral laundering;
-- euphemistic or market-naturalness framing.
+### 5. Route evidence by jurisdiction
+Before calling an item support, contradiction, counterevidence, mitigation, or exculpation, declare:
 
-### 6. Run accusation mirror test
-When an actor accuses another actor/group:
+```yaml
+evidence_effect:
+  evidence_ref: ""
+  target: "claim-or-edge-id"
+  function: CLAIM_DEFEATING|SCOPE_LIMITING|DIRECTION|ATTEMPT|CAPACITY|REALIZED_OUTCOME|CONSTRAINT_RESISTANCE|MOTIVE_LIMITING|RELATION_LIMITING|ALTERNATIVE_SUPPORTING|RELIABILITY_MODIFYING|NON_RESPONSIVE
+  effect: ""
+```
+
+One item may update several targets, but each target/function pair must be explicit.
+
+Do not let:
+
+```text
+successful resistance -> erase attempt
+stated condemnation -> erase separate conduct
+unrelated good conduct -> offset scoped harm
+legal victory -> rewrite prior chronology
+association -> become membership
+absence -> become disproof without expected-evidence analysis
+```
+
+### 6. Keep D/A/C/R/S separate
+
+```text
+D = demonstrated direction/objective
+A = attempted implementation
+C = available capacity
+R = realized result
+S = surviving resistance/constraint
+```
+
+`A=1, R=0, S=1` means the actor tried, failed to realize the objective, and resistance worked.
+
+If resistance is followed by jurisdiction shift, personnel replacement, funding pressure, new statute, emergency authority, or another route toward the same objective, preserve the failed attempt and add the reroute. Do not reset history.
+
+### 7. Run laundering tests
+For each consequential path test, where evidenced:
+
+- `CAUSAL_PARTITION_LAUNDERING`
+- `TRUTH_CITATION_LAUNDERING`
+- `LEGALITY_LAUNDERING`
+- `VOLUNTARINESS_LAUNDERING`
+- `MORAL_LAUNDERING`
+- `ETHICAL_LAUNDERING`
+- `REPUTATION_LAUNDERING`
+- `PATRONAGE_RETURN_LAUNDERING`
+- `FINANCIAL_PROVENANCE_OBSCURATION`
+- `MONEY_LAUNDERING_LEGAL_CLAIM`
+
+Do not use `MONEY_LAUNDERING_LEGAL_CLAIM` metaphorically. It requires the relevant legal predicate/proceeds/transaction/evidentiary basis and jurisdiction.
+
+And yes:
+
+```text
+LITERAL_LAUNDRY = washing clothes/textiles
+```
+
+Literal laundry is not a laundering operator. A washing machine is not a conspiracy edge.
+
+### 8. Run accusation mirror test
 
 ```text
 accusation
@@ -87,12 +110,12 @@ accusation
 
 Do not infer psychological projection when mirrored conduct is enough.
 
-### 7. Run downward-blame/upward-extraction test
-When immigrants, poor people, minorities, workers, welfare recipients, or another lower-power population are blamed for economic pressure:
+### 9. Run downward-blame/upward-extraction test
+When lower-power populations are blamed for economic/social pressure:
 
 ```text
 measure pressure
--> identify all contributors
+-> identify contributors
 -> identify who controls terms
 -> identify who captures gain
 -> identify who funds/amplifies blame
@@ -100,102 +123,37 @@ measure pressure
 -> identify who gains from policy
 ```
 
-Contributing to demand or labor supply is not the same as capturing rent, wage savings, margin, public contracts, tax advantage, or ownership return.
+### 10. Trace redress
+Map voting, courts, unions, appeals, regulators, oversight, press, records, protests, petitions, boycotts, strikes, and other legitimate correction paths.
 
-### 8. Trace redress
-Map whether voting, courts, unions, appeals, regulators, oversight, press, records, protests, petitions, boycotts, strikes, or other legitimate correction paths can return harm to its source.
+Record capture, intimidation, defunding, noncompliance, delay, jurisdictional bypass, quorum destruction, retaliation, secrecy, or other blockage.
 
-Record capture, intimidation, defunding, noncompliance, delay, jurisdictional bypass, quorum destruction, retaliation, secrecy, or other correction blockage.
+Successful redress is `CONSTRAINT_RESISTANCE` evidence. It is not automatically `CLAIM_DEFEATING` evidence against the attempted action.
 
-### 9. Preserve weak edges instead of deleting them
-Use typed uncertainty and missingness. A weak or unproven crossing remains visible as a candidate edge when supported enough to investigate. It does not contaminate stronger neighboring edges and it does not become proof.
+### 11. Preserve weak edges
+Use typed uncertainty and missingness. A weak crossing can remain visible without contaminating stronger neighboring edges or becoming proof.
 
-### 10. Preserve verified edges instead of re-investigating them by default
-A previously verified relation, mechanism, objective, or source lineage is inherited unless there is a concrete reason to reopen it.
+### 12. Preserve verified edges
+Recognition before re-verification. Reopen only for concrete contradiction, source-integrity challenge, changed scope/time/version, exact-quotation need, explicit provisional status, or higher publication burden.
 
-Before asking the user to resend evidence or restarting verification:
-- search current and linked repos;
-- recover the prior claim posture and source lineage;
-- distinguish `not currently surfaced` from `not previously verified`;
-- reopen only for new contradiction, source-integrity challenge, changed time/scope/version, exact-quotation need, explicit provisional status, or a specifically higher publication burden.
+### 13. Safety filtering cannot erase causal structure
+Operational/tactical/evasion detail may be omitted where required. Preserve existence, target, purpose, causal function, and evidentiary posture.
 
-Do not silently downgrade:
-
-```text
-verified mechanism -> generic label
-verified transformation -> endpoint-only summary
-verified source lineage -> needs rechecking
-```
-
-### 11. Safety filtering cannot erase causal structure
-Operational, tactical, evasion, targeting, or execution detail may be omitted where required.
-
-The existence, target, purpose, and causal function of a verified mechanism must remain represented.
-
-Example:
-
-```text
-operational recruitment instructions -> omit when necessary
-recruitment exists -> preserve
-who it targets -> preserve when material
-what transformation it performs -> preserve
-what objective it serves -> preserve
-```
-
-Apply the same rule to normalization, financing, propaganda, coordination, surveillance, coercion, ownership/control, and redress suppression.
-
-### 12. Promote discoveries
-Do not leave recurring mechanisms in prose. Create/update:
-- source records;
-- nodes;
-- typed relations;
-- claim tests;
-- contribution records;
-- mesh assemblies;
-- correction/re-entry records.
+### 14. Promote discoveries
+Do not leave recurring mechanisms in prose. Create/update source records, nodes, typed relations, claim tests, contribution records, evidence effects, laundering claims, mesh assemblies, and correction/re-entry records.
 
 ## Stop conditions
 
-A path may stop only when:
-- the scoped carrier actually terminates;
-- the proposed relation is contradicted;
-- a documented boundary changes the causal question materially;
-- evidence is unavailable and the state is explicitly typed;
-- continuing would be irrelevant to the scoped harm/gain/power question.
+Stop only when the scoped carrier terminates, a relation is contradicted, a documented boundary changes the causal question, evidence is unavailable and typed, or continuation is irrelevant.
 
-Never stop merely because:
-- the name changed;
-- a subsidiary/parent boundary appeared;
-- money crossed a government/private boundary;
-- money crossed a national border;
-- the accounting category changed;
-- an official source called the outcome legal, voluntary, competitive, efficient, charitable, secure, or necessary;
-- a safety membrane removed tactical detail while the causal mechanism remained verified.
+Never stop merely because a name, legal entity, accounting category, jurisdiction, or official label changes.
 
-## Re-entry lock
+## Governing references
 
-Use `docs/VERIFIED_EVIDENCE_RETENTION_AND_REENTRY_v0_1.md` as the governing evidence-retention rule.
-
-```text
-recognition before re-verification
-verified edges persist until evidence changes them
-safety may redact tactics; it may not erase causal structure
-```
-
-## Output posture
-
-The target is not a prettier report. The target is a more recoverable mesh.
-
-```text
-research -> reusable mesh growth -> dated projection
-```
-
-not
-
-```text
-research -> prose -> forgotten relations
-```
+- `docs/NEWS_OPERATIONS_v0_2.md`
+- `docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md`
+- `docs/VERIFIED_EVIDENCE_RETENTION_AND_REENTRY_v0_1.md`
 
 ## Tiny lock
 
-> Names identify seats. Transformations reveal the mesh.
+> Names identify seats. Transformations reveal the mesh. Evidence only speaks where it has jurisdiction.

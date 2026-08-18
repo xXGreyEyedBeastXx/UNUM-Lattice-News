@@ -1,57 +1,44 @@
 # UNUM-Lattice-News — News Operations v0.2
 
 **Status:** active working operations layer  
+**Updated:** 2026-08-18  
 **Purpose:** unify intake, investigation, evidence, power mapping, harm governance, review, correction, and publication under one traceable operating cycle.
+
+This file now incorporates `docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md` as a mandatory evidence-routing rule.
 
 ## 1. Operating orientation
 
 UNUM-Lattice-News is not an accusation engine, enemy list, partisan scoring system, or net-morality ledger. It is a public evidence-traced relational analysis surface.
-
-Operational lock:
 
 ```text
 Recover what is present.
 Name what is absent.
 Preserve the relation.
 Type the crossing.
+Route evidence only where it bears.
 Follow power and consequence.
 Test what matters.
 Protect dignity.
 Keep the return path open.
 ```
 
-HeartSeed-compatible restraint:
-
-```text
-Explore freely.
-Protect decisively.
-Judge carefully.
-Human dignity remains.
-Harmful machinery need not.
-```
-
 No claim, source, actor, institution, ideology, party, movement, government, corporation, donor, victim, witness, or investigator is exempt from the evidence standard.
 
 ### Harm-audit scope lock
 
-The current accountability lane is intentionally harm-first.
-
 ```text
-unrelated beneficial conduct != counterevidence
+unrelated beneficial conduct != claim-defeating evidence
 public-service accomplishment != offset for documented harm
 charity != credit against coercion
 positive reputation != reduced causal responsibility
+successful resistance != retroactive defense of the attempted objective
 ```
 
-Do not interrupt a harm trace to construct a balanced moral biography. Beneficial conduct belongs only when it materially changes the scoped claim being tested: attribution, mechanism, scope, causation, chronology, magnitude, identity, necessity, or evidentiary reliability.
-
-Evidence that directly weakens, narrows, or defeats a harm claim remains mandatory. The audit may be one-sided in subject matter without becoming one-sided in evidence.
+A harm audit may be one-sided in subject matter without becoming one-sided in evidence. Evidence that truly weakens, narrows, defeats, reroutes, or changes confidence in a scoped claim remains mandatory.
 
 ---
 
 ## 2. Investigative lifecycle
-
-Use the HeartCore spine as the operational lifecycle:
 
 ```text
 FIELD
@@ -64,22 +51,22 @@ FIELD
 ```
 
 ### FIELD
-Define the environment: time window, jurisdiction, affected populations, material conditions, historical context, active institutions, and source-access conditions.
+Define time window, jurisdiction, affected populations, material conditions, historical context, active institutions, and source-access conditions.
 
 ### STRUCTURE
 Resolve entities and relation types without guilt by association. Identify people, institutions, systems, instruments, events, populations, ecologies, resources, claims, and responses.
 
 ### CONSTRAINT
-Map what changes available agency: law, money, employment, force, surveillance, dependency, information access, health, housing, immigration status, contracts, market concentration, social pressure, censorship, retaliation, secrecy, or protective regulation.
+Map what changes available agency: law, money, employment, force, surveillance, dependency, information access, health, housing, immigration status, contracts, market concentration, retaliation, secrecy, or protective regulation.
 
 ### TRANSFORM
-Record consequential operations: election, appointment, lobbying, donation, contract, investment, tariff, regulation, enforcement, detention, prosecution, pardon, merger, subsidy, strike, protest, censorship, publication, data transfer, or other state change.
+Record consequential operations: election, appointment, lobbying, donation, contract, investment, tariff, regulation, enforcement, detention, prosecution, pardon, merger, subsidy, strike, protest, publication, data transfer, or other state change.
 
 ### PROJECTION
-Separate what actors say the action means from what the action materially does. Record public framing, advertising, ideology, legal justification, media classification, institutional narrative, and symbolic language without treating them as outcomes.
+Separate what actors say the action means from what it materially does. Public framing, ideology, legal justification, media classification, and symbolic language are evidence surfaces, not automatic outcomes.
 
 ### COHERENCE
-Compare stated purpose, incentives, implementation, distribution of harm, distribution of gain or insulation produced by the harmful machinery, claim-specific counterevidence, and observed outcomes. Coherence is not truth by itself; it is a review question.
+Compare stated purpose, incentives, implementation, distribution of harm, distribution of gain/insulation, typed evidence effects, competing explanations, and observed outcomes. Coherence is not truth by itself.
 
 ### RE-ENTRY
 Preserve correction, appeal, source challenge, restitution, policy reversal, democratic removal, rehabilitation, archive lineage, and the path by which a future reviewer can reconstruct or revise the conclusion.
@@ -88,56 +75,26 @@ Preserve correction, appeal, source challenge, restitution, policy reversal, dem
 
 ## 3. Three simultaneous maps
 
-Every mature investigation should be capable of rendering three linked views.
-
 ### Power Map
-Ask who can:
-
-- cause or prevent the outcome;
-- allocate money or resources;
-- define categories;
-- control records or evidence;
-- appoint, remove, investigate, prosecute, pardon, regulate, contract, or censor;
-- delay adjudication;
-- impose costs on dissent;
-- repair the harm.
+Ask who can cause/prevent outcomes; allocate money/resources; define categories; control records; appoint/remove/investigate/prosecute/pardon/regulate/contract; impose costs on dissent; or repair harm.
 
 ### Constraint / Agency Map
-For each materially affected actor or population, ask:
-
-- what pressures exist;
-- what meaningful alternatives exist;
-- what refusal, exit, appeal, or repair routes remain;
-- whether deprivation or dependency converts nominal choice into structural coercion;
-- whether privacy protects agency or opacity shields concentrated power.
+Ask what pressures exist; what meaningful alternatives remain; what refusal, exit, appeal, or repair routes exist; and whether dependency converts nominal choice into structural coercion.
 
 ### Harm / Consequence / Beneficiary Map
-Trace:
+Trace direct/distributed harm, deprivation, rights loss, private profit, asset gain, institutional/political/coercive capacity, public-resource transfer, ecological effects, downside risk, and terminal/reseated beneficiaries.
 
-- direct harm;
-- distributed and delayed harm;
-- material deprivation and rights loss;
-- private profit or asset gain tied to the mechanism;
-- institutional, political, or coercive capacity gained through the mechanism;
-- public-resource transfers and opportunity costs;
-- ecological consequences;
-- future-generation effects;
-- who bears downside risk;
-- who gains durable authority, revenue, access, insulation, or control from the harmful arrangement.
-
-`beneficiary` here means a participant receiving an evidenced gain from the mechanism under study. It does not mean morally good, socially beneficial, or deserving of offset credit.
-
-Do not infer moral equivalence from symmetric mapping.
+`beneficiary` means an evidenced recipient of gain in the scoped mechanism. It is not moral approval and does not establish causation by itself.
 
 ---
 
-## 4. Evidence and claim states
+## 4. Evidence, claim, and missingness states
 
-Use the existing editorial postures and keep them independent from confidence and consequence:
+Claim posture remains:
 
 `Observed | Stated | Supported inference | Potential | Possible | Probable/Likely | Alleged | Disputed | Unknown`
 
-Add explicit missingness where absence matters:
+Missingness remains:
 
 ```text
 NOT_SEARCHED
@@ -150,61 +107,110 @@ CONTRADICTED
 AFFIRMATIVELY_DISPROVEN
 ```
 
-A missing record is exculpatory only in proportion to how strongly it should have existed and survived if the hypothesis were true.
-
-Repeated reporting is not automatically independent corroboration. Track claim lineage and citation inheritance when later sources descend from the same upstream account.
+Repeated reporting is not automatically independent corroboration. Track citation inheritance.
 
 ---
 
-## 5. Adversarial model, counterevidence, and discriminators
+## 5. Evidence jurisdiction, competing models, and discriminators
 
-For consequential interpretations, maintain at least three seats:
+### Prime law
 
-1. **Harm / abuse / capture model** — reconstruct the strongest evidence-supported account of wrongdoing, exploitation, coercion, corruption, avoidable harm, institutional failure, or concentrated-power abuse.
-2. **Claim-specific counterevidence / falsification model** — reconstruct the strongest evidence that the scoped claim is misidentified, misattributed, causally weak, chronologically impossible, materially overstated, narrower than alleged, protective against a concrete threat, or otherwise defeated or constrained by the record.
-3. **Discriminators** — observations that would materially change the weight between the models.
+> **Evidence updates only the edge, claim, variable, or model component it actually bears on.**
 
-The counterevidence seat is not a charitable biography and does not require unrelated accomplishments, positive reputation, ordinary public-service achievements, or moral credit.
+Do not treat evidence as globally pro-actor or anti-actor.
 
-Do not use counterevidence to launder demonstrated harm. Do not use the harm model to convert suspicion into proof.
+Required `evidence_effect.function` values:
 
-Where possible, ask:
+```text
+CLAIM_DEFEATING
+SCOPE_LIMITING
+DIRECTION
+ATTEMPT
+CAPACITY
+REALIZED_OUTCOME
+CONSTRAINT_RESISTANCE
+MOTIVE_LIMITING
+RELATION_LIMITING
+ALTERNATIVE_SUPPORTING
+RELIABILITY_MODIFYING
+NON_RESPONSIVE
+```
 
-> What would we expect to observe if this particular harm attribution, mechanism, scope, or magnitude were wrong?
+Every effect should name its target. One evidence item may have multiple effects only through separately declared target/function pairs.
 
-Actively search for that evidence.
+### Direction / attempt / capacity / result / resistance
+
+Keep independent:
+
+```text
+D = demonstrated direction/objective
+A = attempted implementation
+C = available capacity
+R = realized result
+S = surviving resistance/constraint
+```
+
+`A=1, R=0, S=1` means the objective was attempted, not realized, and resistance worked. It does not weaken the historical fact of the attempt.
+
+A blocked attempt can limit realized harm and demonstrated capacity while still supporting persistence of direction. If the actor returns through another mechanism, preserve both the original attempt and the reroute.
+
+### Competing-model seats
+
+For consequential interpretations maintain:
+
+1. **Harm / abuse / capture model** — strongest evidence-supported account of harmful mechanism.
+2. **Alternative / narrowing model** — strongest claim-specific account that changes attribution, mechanism, scope, necessity, motive, magnitude, chronology, relation, or reliability.
+3. **Discriminators** — observations that would materially change the scoped edge/model.
+
+Do not use a generalized `counterevidence` bucket for new work. Existing legacy records may retain it until migrated.
+
+Where possible ask:
+
+> What observation would defeat, narrow, or reroute this exact claim, rather than merely make the actor look better?
 
 ---
 
 ## 6. Accountability dimensions
 
-Where meaningful alternatives exist, evaluate accountability through the intersection of:
+Evaluate choice, knowledge/foreseeability, power/authority, alternatives, repetition/persistence, causal contribution, severity, vulnerability, irreversibility, repair capacity, response after warning, accountability behavior, and institutional insulation.
 
-- choice;
-- knowledge and foreseeability;
-- power and authority;
-- available alternatives;
-- repetition or persistence;
-- causal contribution;
-- severity and scale of harm;
-- vulnerability of affected populations;
-- irreversibility;
-- capacity to prevent or repair;
-- response after warning;
-- acceptance or evasion of accountability;
-- institutional insulation.
-
-Pressure and indoctrination may explain participation. They do not automatically erase agency.
-
-Do not convert a harmful act into a disposable identity. Accountability is for conduct, participation, institutions, and machinery; human dignity remains.
+Pressure may explain participation without automatically erasing agency.
 
 ---
 
-## 7. Opacity, privacy, and dark-money handling
+## 7. Laundering audit
+
+Apply `docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md`.
+
+Candidate classes include:
+
+```text
+CAUSAL_PARTITION_LAUNDERING
+TRUTH_CITATION_LAUNDERING
+LEGALITY_LAUNDERING
+VOLUNTARINESS_LAUNDERING
+MORAL_LAUNDERING
+ETHICAL_LAUNDERING
+REPUTATION_LAUNDERING
+PATRONAGE_RETURN_LAUNDERING
+FINANCIAL_PROVENANCE_OBSCURATION
+MONEY_LAUNDERING_LEGAL_CLAIM
+LITERAL_LAUNDRY
+```
+
+Do not infer laundering from rhetoric alone. Trace the material transformation, partition, provenance change, accountability effect, and beneficiary.
+
+`MONEY_LAUNDERING_LEGAL_CLAIM` is reserved for an actual legally grounded money-laundering allegation/finding. Use `FINANCIAL_PROVENANCE_OBSCURATION` for obscured funds/ownership where the criminal elements are not established.
+
+`LITERAL_LAUNDRY` means washing clothes/textiles and is not an investigative laundering class.
+
+---
+
+## 8. Opacity and privacy
 
 `hidden`, `anonymous`, `dark money`, and `non-disclosed` are not moral verdicts.
 
-Type the function of opacity when evidence permits:
+Type function where possible:
 
 ```text
 NONDISCLOSURE_LEGAL_ROUTINE
@@ -217,68 +223,29 @@ EVASION_SUPPORTED
 SOURCE_RISK_UNKNOWN
 ```
 
-Ask what the opacity does:
-
-```text
-opacity -> protection -> preserved agency
-```
-
-or
-
-```text
-opacity -> accountability bypass -> concentrated influence
-```
-
-or another evidenced route.
-
-Transparency pressure should be proportional to power and public consequence. Do not expose private source identities, vulnerable activists, witnesses, survivors, or low-power individuals merely because their privacy limits investigative convenience.
+Transparency pressure should be proportional to power and public consequence. Do not expose vulnerable/private people merely because privacy limits investigative convenience.
 
 ---
 
-## 8. Oversight as conductance control
+## 9. Oversight as conductance control
 
-Oversight is not only another actor node. It changes the resistance encountered by other power pathways.
+Oversight changes the resistance encountered by power pathways. Track norm-setting, adjudication, enforcement, and independent harm audit separately.
 
-Track separately:
+Record actions that strengthen, weaken, bypass, capture, defund, intimidate, remove, or restore courts, inspectors, auditors, ethics offices, watchdogs, journalists, whistleblower channels, unions, and internal review.
 
-1. norm-setting;
-2. adjudication;
-3. enforcement;
-4. independent harm audit.
+Important evidence-jurisdiction lock:
 
-Ask whether these functions are meaningfully independent or collapse into one self-policing body.
-
-Record actions that strengthen, weaken, bypass, capture, defund, intimidate, remove, or restore courts, inspectors, auditors, ethics offices, watchdogs, journalists, whistleblower channels, internal review, union protections, or other constraint systems.
-
-Do not assume oversight output is true merely because it is official. Do not assume oversight is meaningless merely because it is imperfect.
+```text
+oversight successfully blocks attempt
+-> CONSTRAINT_RESISTANCE / REALIZED_OUTCOME evidence
+!= automatic CLAIM_DEFEATING evidence against direction or attempt
+```
 
 ---
 
-## 9. Investigation organ constellation
+## 10. Investigation organ constellation
 
-Until a dedicated investigative-intelligence organ is accepted, News should compose existing functions rather than pretend a new skill is already canonical.
-
-Suggested constellation:
-
-```yaml
-primary_function: public-record and relational investigation
-supporting:
-  - classify-without-promoting
-  - govern-harm-with-dignity
-  - reconcile-concept-surfaces, when claims drift across sources
-  - translate-theory-into-tests, for unresolved causal claims
-guards:
-  - separate-theory-layers
-  - check-architecture-seams
-observers:
-  - provenance trace
-  - correction lineage
-  - missingness ledger
-```
-
-The recurring investigative function should enter the normal missing-organ lifecycle only after overlap analysis and representative validation.
-
-Candidate function boundary to test:
+Candidate investigative function:
 
 ```text
 source acquisition
@@ -290,18 +257,15 @@ source acquisition
 -> money/resource/influence tracing
 -> contradiction and source-lineage analysis
 -> affected-population and harm mapping
--> claim-specific counterevidence search
+-> evidence-jurisdiction routing
+-> laundering tests
 -> confidence and missingness review
 -> portable investigative packet
 ```
 
-Do not promote this candidate merely because it has a useful name.
-
 ---
 
-## 10. Standard investigative packet
-
-A consequential investigation should be recoverable to a structure approximating:
+## 11. Standard investigative packet
 
 ```yaml
 investigation:
@@ -316,11 +280,17 @@ sources:
   advocacy_or_partisan: []
   unavailable: []
 claims:
-  - proposition: ""
+  - id: ""
+    proposition: ""
     posture: ""
     source_lineage: []
     confidence: low|medium|high
     missingness: []
+evidence_effects:
+  - evidence_ref: ""
+    target: "claim-or-edge-id"
+    function: CLAIM_DEFEATING|SCOPE_LIMITING|DIRECTION|ATTEMPT|CAPACITY|REALIZED_OUTCOME|CONSTRAINT_RESISTANCE|MOTIVE_LIMITING|RELATION_LIMITING|ALTERNATIVE_SUPPORTING|RELIABILITY_MODIFYING|NON_RESPONSIVE
+    effect: ""
 relations:
   - source_node: ""
     relation_type: ""
@@ -332,9 +302,10 @@ constraint_agency_map: []
 harm_consequence_beneficiary_map: []
 competing_models:
   harm_model: []
-  counterevidence_model: []
+  alternative_model: []
   discriminators: []
-counterevidence: []
+laundering_claims: []
+legacy_counterevidence: [] # migration-only; do not add new undifferentiated items
 corrections: []
 re_entry:
   next_searches: []
@@ -346,69 +317,44 @@ Empty fields are preferable to invented content.
 
 ---
 
-## 11. Publication and automation boundary
+## 12. Publication and automation boundary
 
-Automation may discover, normalize, cluster, compare, calculate, route, draft, and expose candidate relations.
+Automation may discover, normalize, cluster, compare, calculate, route, draft, and expose candidate relations. It may not independently publish accusations, convert candidate relations into guilt, erase uncertainty, use evidence outside its declared jurisdiction, expose protected identities, infer private facts from proximity, or convert threat classification into punitive authority.
 
-It may not, without separately reviewed authority:
-
-- independently publish accusations about identifiable people or organizations;
-- convert a candidate relation into a landed guilt edge;
-- erase material counterevidence;
-- expose protected identities;
-- treat threat assessment as permission for punitive action;
-- silently rewrite corrections;
-- infer private facts from network proximity;
-- convert ideology, religion, ethnicity, nationality, or group membership into collective culpability.
-
-A deterministic structured packet should remain valid even if all generated connective prose is removed.
+A deterministic structured packet should remain valid if connective prose is removed.
 
 ---
 
-## 12. Symmetry and priority scrutiny
+## 13. Symmetry and priority scrutiny
 
-Apply the same evidentiary machinery across parties, movements, institutions, corporations, governments, unions, nonprofits, and ideological groups.
+Apply the same evidentiary machinery across parties, movements, institutions, corporations, governments, unions, nonprofits, and ideologies.
 
 Symmetry of method does not require symmetry of conclusion.
 
 Power receives priority scrutiny because powerful actors possess greater capacity to shape evidence, impose constraints, distribute harm, and prevent adjudication.
 
-Low-power or vulnerable actors receive stronger privacy protection where disclosure itself creates material risk.
-
-The lattice should be able to return any of these outcomes without embarrassment:
-
-- allegation supported;
-- allegation narrowed or weakened;
-- allegation affirmatively disproven;
-- legal but structurally conflicted;
-- ordinary systemic failure rather than actor-specific wrongdoing;
-- actor-specific intensification of an older system;
-- insufficient evidence.
-
-No positive-balance conclusion is required by the harm-audit lane.
-
 ---
 
-## 13. Operations re-entry test
+## 14. Operations re-entry test
 
-Before promotion or publication, ask whether a fresh reviewer can recover:
+Before promotion/publication, a fresh reviewer must be able to recover:
 
-- the bounded question;
-- the source lineage;
-- the exact claim postures;
-- what is observed versus inferred;
-- the important relations without unlabeled edges;
-- who has power and who bears consequences;
-- what meaningful alternatives existed;
-- what evidence cuts against the current harm claim;
-- what remains missing and why;
-- what would change the assessment;
-- what correction, appeal, or re-entry path exists.
+- bounded question;
+- source lineage;
+- exact claim posture;
+- observed vs inferred;
+- important typed relations;
+- power and consequence;
+- meaningful alternatives;
+- each evidence item's target/function jurisdiction;
+- direction/attempt/capacity/result/resistance without cross-subtraction;
+- laundering claims as typed transformations rather than insults;
+- missingness;
+- evidence that would change the assessment;
+- correction/appeal/re-entry path.
 
-If not, the investigation is not ready to advance.
-
----
+If not, the investigation is not ready.
 
 ## Tiny lock
 
-> Follow power without worshipping it. Follow harm without manufacturing enemies. Preserve privacy where it protects agency, expose secrecy where it shields concentrated power, and never let a beautiful graph outrun its evidence.
+> Follow power without worshipping it. Follow harm without manufacturing enemies. Evidence gets jurisdiction, not a team jersey. And if the laundry contains socks, that is finally allowed to be literal.
