@@ -1,5 +1,7 @@
 # Lattice Operating Model
 
+Updated: 2026-08-21
+
 ## Purpose
 
 UNUM Lattice News organizes public evidence through distinct cooperating structures:
@@ -13,7 +15,7 @@ source -> story -> node -> relation -> rendition
 confirmed contribution
         |
         v
-harm assessment
+harm / accountability assessment
         |
         v
 category-bounded harm hierarchy
@@ -52,16 +54,21 @@ Stories should remain temporally bounded. They may propose updates to nodes, rel
 
 ## Node
 
-A node is the durable, independently readable home for a person, institution, technology, policy, movement, place, population, ecology, or other recurring subject.
+A node is the durable, independently readable home for a recurring subject.
+
+New nodes use the canonical `family` / `subtype` classification in `schemas/NODE_TYPE_REGISTRY_v0_1.yaml`. Existing nodes using legacy `node_type` or `entity_type` fields remain valid migration surfaces and do not require cosmetic rewrites merely to erase schema history.
+
+Canonical families include actors, networks, systems, instruments, events/actions, places/jurisdictions, populations/communities, ecologies/living systems, conditions/lived states, resource flows, claims/propositions, ideologies/cultural frames, consequences, responses/repairs, and analysis frameworks.
 
 A node should contain only enough context to understand that subject locally:
 
-- identity and node type;
+- identity and canonical family/subtype;
 - current bounded summary;
 - direct evidence-backed relationships;
 - timeline pointers;
 - contribution index where relevant;
 - harm-rating windows where relevant;
+- authority, vulnerability, or accountability state where relevant;
 - hashtag neighborhoods;
 - current disputes and unknowns;
 - sources and correction history.
@@ -80,6 +87,8 @@ affected_population
 not_scored
 ```
 
+Node family does not determine relation role. An institution may be a funder, employer, regulator, gatekeeper, beneficiary, loss-bearer, term-setter, repair actor, or another role only where the relevant relation is evidenced.
+
 ## Contribution
 
 A contribution is a reusable accountability record for a specific actor's participation in a bounded causal field.
@@ -88,7 +97,7 @@ It answers:
 
 > What did this actor contribute, through what mechanism, during what period, to which causal field, with what evidence and what limits?
 
-Contribution types may include policy, vote, funding, contract, procurement, deployment, transfer, lobbying, statement, operational action, regulatory action, omission under a defined duty, correction, or other consequential participation.
+Contribution types may include policy, vote, funding, contract, procurement, deployment, transfer, lobbying, statement, operational action, regulatory action, intentional term-setting, omission under a defined duty, correction, or other consequential participation.
 
 A contribution should preserve:
 
@@ -101,8 +110,15 @@ A contribution should preserve:
 - affected participants or ecologies;
 - evidence posture;
 - investigation state;
+- responsibility grade;
+- intentional action/term-setting where material and evidenced;
+- intended gain, cost reduction, or capacity increase where material and evidenced;
+- harmful-endpoint intent where material and evidenced;
+- knowledge, capacity to know, foreseeability, and credible notice where accountability turns on them;
+- capacity to correct and response after notice;
+- gain or insulation retained after notice where relevant;
 - harm assessment where relevant;
-- counterevidence and unknowns;
+- evidence effects, unknowns, and limitations;
 - path-forward objects where unresolved;
 - debunking record where a claim is affirmatively defeated;
 - related stories, relations, and nodes;
@@ -130,9 +146,41 @@ These are not substitutes for evidentiary posture.
 
 See `docs/HARM_HIERARCHY_LEGIBILITY_ADVERSARIAL_AUDIT_v0_1.md` and `EDITORIAL_STANDARD.md`.
 
+## Accountability state
+
+Where knowledge, intent, or persistence materially affects responsibility, keep the following separations visible:
+
+```text
+intentional action / term-setting
+intended gain / cost reduction / capacity increase
+harmful-endpoint intent
+knowledge state
+capacity to know
+foreseeability
+credible notice
+capacity to correct
+response after notice
+gain or insulation retained after notice
+repair or mitigation
+```
+
+The lattice does not require proof that an actor desired every downstream harm before recognizing a deliberately chosen term or mechanism as intentional.
+
+Likewise:
+
+```text
+capacity to know != actual knowledge
+foreseeability != desire
+should have known != automatic legal negligence finding
+deliberate avoidance requires evidence
+absence of harmful-endpoint intent != absence of accountability
+```
+
+See `docs/HARMFUL_INTENT_AND_TRAJECTORY_MODEL_v0_1.md` and `nodes/harm-domination-protection-weighting.yaml`.
+
 ## Harm assessment
 
-A harm assessment is a structured read of a contribution's consequences and power effects.
+A harm assessment is a structured read of a contribution's consequences, power effects, and—where separately established—harmful intent or trajectory.
 
 It preserves a decomposed harm vector rather than hiding the entire judgment inside one scalar score.
 
@@ -168,11 +216,13 @@ leaders
 non-leader actors
 ```
 
-The public rating remains a tuple:
+The public rating is a four-axis tuple:
 
 ```text
-[realized harm, structural harm, catastrophic risk]
+[realized harm, structural harm, catastrophic risk, harmful intent / trajectory]
 ```
+
+The first three axes describe realized/structural harm and risk. The fourth preserves evidenced harmful intent, attempted harmful policy, preparation, or trajectory so blocked attempts do not vanish and rhetoric is not falsely counted as realized injury.
 
 Do not silently convert that tuple into a claim of criminal guilt or moral essence.
 
@@ -187,18 +237,23 @@ Examples:
 ```text
 #domain/Neurotechnology
 #mechanism/Surveillance
+#flow/UpwardRecirculation
+#constraint/LackOfMeaningfulExit
+#accountability/CredibleNotice
 #right/MentalPrivacy
 #institution/UNESCO
 #status/Observed
 ```
 
-Hashtag co-occurrence does not establish coordination, guilt, causation, ownership, agreement, or identity.
+Hashtag co-occurrence does not establish coordination, guilt, causation, ownership, agreement, knowledge, intent, or identity.
 
-Hashtags provide high recall. Typed relations provide higher-precision claims.
+Hashtags provide high recall. Typed relations, claims, contributions, and accountability records provide higher-precision findings.
+
+Where a tag begins carrying case-specific evidentiary meaning, promote the underlying claim or relation instead of making the hashtag do evidentiary work.
 
 ## Relation
 
-A relation is an explicit, typed, evidence-backed edge between nodes or between a node and a proposition, event, capability, population, ecology, or contribution.
+A relation is an explicit, typed, evidence-backed edge between nodes or between a node and a proposition, event, capability, population, ecology, resource, consequence, or contribution.
 
 Examples:
 
@@ -209,6 +264,7 @@ A --[USES]-------------> system
 A --[WARNS_ABOUT]------> risk
 A --[AFFECTS]----------> population
 A --[CONTRACTS_WITH]---> institution
+A --[EXTERNALIZES_COST_TO]--> population
 ```
 
 Every consequential edge should preserve its evidence and scope.
@@ -219,7 +275,7 @@ Co-occurrence is not an edge.
 
 A spread is a reader-facing discovery/review surface assembled from underlying records for a bounded question, event complex, or time window.
 
-It may pull together sources, stories, nodes, relations, contribution records, harm assessments, and renditions without becoming their permanent evidence container.
+It may pull together sources, stories, nodes, relations, contribution records, harm assessments, accountability states, and renditions without becoming their permanent evidence container.
 
 The same contribution may therefore participate in multiple spreads without duplication.
 
@@ -238,7 +294,8 @@ A rendition should separate:
 - supported inferences;
 - possible or likely trajectories;
 - documented harms;
-- counterevidence that bears on the claim;
+- accountability findings about intent, knowledge, notice, persistence, or repair where actually supported;
+- evidence that bears on the exact claim under review;
 - disputed or unsupported claims;
 - affected people and ecologies;
 - protective options;
@@ -257,7 +314,7 @@ Automation and agents may:
 - propose contribution records;
 - identify connected stories;
 - surface contradictions, stale claims, and missing evidence;
-- produce provisional harm vectors and hierarchy candidates;
+- produce provisional harm vectors, accountability-state candidates, and hierarchy candidates;
 - draft bounded renditions.
 
 Automation and agents may not independently:
@@ -266,9 +323,11 @@ Automation and agents may not independently:
 - convert hashtag co-occurrence into a relation;
 - convert study membership into causal contribution;
 - convert contribution into culpability;
+- convert capacity to know into actual knowledge;
+- convert continued harm into a secret motive without evidence;
 - promote allegation into fact;
 - infer private facts;
-- erase claim-relevant counterevidence or uncertainty;
+- erase claim-relevant evidence or uncertainty;
 - mark a claim debunked merely because a search failed;
 - turn threat assessment into enemy designation;
 - turn a harm hierarchy into punishment authorization;
@@ -284,6 +343,9 @@ Contribution != culpability.
 Benefit != causation.
 Beneficial action != offset for unrelated harm.
 Capability != intent.
+Intentional term-setting != intent to cause every downstream harm.
+Capacity to know != actual knowledge.
+Foreseeability != desire.
 Historical context != justification.
 Pending != debunked.
 Searched-not-found != debunked.
