@@ -1,5 +1,11 @@
 # UNUM Lattice News — Operating Model
 
+**Status:** compatibility overview  
+**Updated:** 2026-08-21  
+**Current operational authority:** `docs/NEWS_OPERATIONS_v0_2.md`, `LATTICE_MODEL.md`, `docs/HARM_MESH_OPERATING_MODEL_v0_1.md`, and the active schema/registry surfaces.
+
+This document remains a compact human-readable overview. Where it conflicts with the current operations layer, lattice model, node-type registry, evidence-jurisdiction rules, harm model, or record templates, the newer specialized surface controls. Older `entity_type`, flat node lists, `counterevidence`, and three-axis harm references should be read as schema-history rather than as instructions to undo later work.
+
 ## Purpose
 
 UNUM Lattice News is intended to become a self-resurfacing public evidence lattice rather than a conventional chronological news feed.
@@ -7,51 +13,52 @@ UNUM Lattice News is intended to become a self-resurfacing public evidence latti
 The basic cycle is:
 
 ```text
-source → story → node updates → evidenced relations → hashtag neighborhoods → bounded rendition
-                                      ↑                         ↓
-                                      └──── correction/review ──┘
+source -> story -> node updates -> evidenced relations -> hashtag neighborhoods -> bounded rendition
+                                      ^                         |
+                                      +---- correction/review --+
 ```
 
 The system should make consequential relationships easier to inspect without forcing a reader through every connected subject at once.
 
-## Five public objects
+## Core public objects
 
-### 1. Story
+### Story
 
 A **story** is a dated evidence surface describing an event, publication, decision, deployment, statement, discovery, or consequential change.
 
 Stories should preserve sources and propose updates to durable nodes. A story is not the only place where information about a subject lives.
 
-### 2. Node
+### Node
 
-A **node** is the bounded durable home for one subject: a person, institution, movement, technology, policy, place, population, ecology, concept, or other clearly identified subject.
+A **node** is the bounded durable home for one recurring subject. New records use the canonical `family` / `subtype` registry in `schemas/NODE_TYPE_REGISTRY_v0_1.yaml`; older `entity_type` or `node_type` fields remain migration-compatible.
 
 A node should remain locally understandable. It may contain:
 
-- identity and type;
+- identity and canonical type;
 - current evidence-bounded summary;
 - timeline;
 - direct evidenced relations;
 - active hashtags;
-- relevant stories;
+- relevant stories and contributions;
+- authority, vulnerability, or accountability state where relevant;
 - unresolved questions;
-- counterevidence;
+- evidence effects;
 - corrections;
 - references.
 
 Nodes should not drag readers through the entire lattice. They expose doors outward.
 
-### 3. Hashtag
+### Hashtag
 
 A **hashtag** is a discovery route across independently readable nodes and stories.
 
-Hashtags identify shared neighborhoods, themes, mechanisms, rights, harms, technologies, institutions, movements, or other useful cross-cuts. Co-occurrence under a hashtag does **not** establish coordination, agreement, guilt, causation, or conspiracy.
+Hashtags identify shared neighborhoods, domains, mechanisms, material flows, constraints, accountability questions, rights, harms, technologies, institutions, movements, or other useful cross-cuts. Co-occurrence under a hashtag does **not** establish coordination, agreement, guilt, causation, knowledge, intent, or conspiracy.
 
-Human-facing tags may remain simple (`#AntiWoke`, `#MilitaryAI`, `#LaborRights`). The registry may also assign typed namespaces internally so machines can distinguish people, institutions, mechanisms, rights, harms, domains, and other roles.
+Human-facing tags may remain simple. The typed registry distinguishes entity, domain, mechanism, flow, constraint, accountability, right, harm, governance, status, and source neighborhoods.
 
-### 4. Relation / Edge
+### Relation / Edge
 
-A **relation** is an evidenced, typed connection between two nodes or between a node and a proposition/event.
+A **relation** is an evidenced, typed connection between two nodes or between a node and a proposition/event/resource/consequence.
 
 Examples include:
 
@@ -68,12 +75,23 @@ Examples include:
 - `SUPPORTS`
 - `CLAIMS`
 - `AFFECTS`
+- `EXTERNALIZES_COST_TO`
 
 Every consequential edge should be recoverable to evidence. Two nodes appearing in the same story or hashtag neighborhood is not enough to create an edge.
 
-### 5. Rendition
+### Contribution
 
-A **rendition** is a dated, bounded synthesis across selected nodes, stories, relations, and hashtags.
+A **contribution** is a bounded accountability record for an actor's participation in a causal field. It preserves mechanism, evidence, investigation state, responsibility grade, harm assessment, and—where material—intentional term-setting, knowledge/notice, correction capacity, persistence, or repair.
+
+Contribution is not automatic culpability.
+
+### Spread
+
+A **spread** is a bounded investigation/review surface that assembles reusable records without becoming their permanent evidence container.
+
+### Rendition
+
+A **rendition** is a dated, bounded synthesis across selected nodes, stories, relations, contributions, sources, and hashtags.
 
 It asks:
 
@@ -85,7 +103,8 @@ A rendition may include:
 - publicly stated positions or ambitions;
 - supported inferences;
 - documented harms;
-- credible counterarguments;
+- claim-specific evidence effects and competing models;
+- accountability findings where supported;
 - disputed and unsupported claims;
 - trajectories;
 - affected people and ecologies;
@@ -101,25 +120,28 @@ Automation and agents may assist with:
 
 ```text
 ingest source
-→ extract candidate entities
-→ suggest hashtags
-→ identify existing nodes
-→ suggest candidate relations
-→ find connected stories
-→ surface contradictions and counterevidence
-→ update timelines
-→ identify missing evidence
-→ draft bounded renditions
+-> extract candidate entities
+-> suggest hashtags
+-> identify existing nodes
+-> suggest candidate relations
+-> find connected stories
+-> surface contradictions and evidence effects
+-> update timelines
+-> identify missing evidence
+-> propose contribution/accountability records
+-> draft bounded renditions
 ```
 
 But the following locks remain:
 
 ```text
-suggested relation ≠ established relation
-generated synthesis ≠ published finding
-association ≠ culpability
-threat ≠ enemy
-capability ≠ intent
+suggested relation != established relation
+generated synthesis != published finding
+association != culpability
+threat != enemy
+capability != intent
+capacity_to_know != actual_knowledge
+intentional_term_setting != harmful_endpoint_intent
 ```
 
 Consequential public claims about identifiable people or organizations require evidence review before publication until a later governance process explicitly establishes a narrower safe authority.
@@ -150,9 +172,11 @@ Examples of mechanisms worth tracing include:
 - ecological externalization;
 - information manipulation;
 - surveillance and classification;
-- institutional capture.
+- institutional capture;
+- intentional material term-setting with externalized harm;
+- grievance routing and downward scapegoating.
 
-No ideological label automatically establishes safety or danger. The evidence, mechanism, consequence, and trajectory must do the work.
+No ideological label automatically establishes safety or danger. The evidence, mechanism, consequence, trajectory, and accountability path must do the work.
 
 ## Protection target
 
@@ -161,6 +185,7 @@ The lattice exists to improve the visibility of conditions affecting:
 - human dignity;
 - bodily, mental, cognitive, and relational self-sovereignty;
 - meaningful consent, refusal, exit, and appeal;
+- material security and access to life-sustaining necessities;
 - democratic and institutional accountability;
 - plural human and nonhuman life;
 - ecological continuity and life-support systems;
@@ -169,4 +194,4 @@ The lattice exists to improve the visibility of conditions affecting:
 
 ## Tiny lock
 
-> Do not tell the reader whom to hate. Show what connects, what happened, what the evidence supports, what remains uncertain, who bears the consequences, and where the trajectory appears to lead.
+> Do not tell the reader whom to hate. Show what connects, what happened, what the evidence supports, what remains uncertain, who bears the consequences, who gains or is insulated, what the powerful actor could know or correct, and where the trajectory appears to lead.
