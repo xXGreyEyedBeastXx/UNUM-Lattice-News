@@ -5,13 +5,19 @@ family: actor
 subtype: institution
 landing_status: landed
 lifecycle_status: active
-updated: 2026-08-16
+updated: 2026-08-21
+hashtags:
+  - '#institution/Walmart'
+  - '#domain/Labor'
+  - '#domain/PublicFinance'
+  - '#domain/CorporateGovernance'
+  - '#mechanism/PublicAssistanceLaborCostSupplementation'
+  - '#flow/UpwardRecirculation'
+  - '#accountability/IntentionalTermSetting'
+  - '#accountability/CapacityToKnow'
 summary:
   text: >-
-    Large U.S. retailer and employer used as a whole-circuit corporate case node. The node traces
-    ordinary-worker compensation, worker-household public-assistance participation, operating
-    surplus, executive compensation, shareholder distributions, and concentrated ownership in one
-    body so legally distinct carriers do not disappear from the aggregate economic picture.
+    Large U.S. retailer and employer used as a whole-circuit corporate case node. The node traces ordinary-worker compensation, worker-household public-assistance participation, operating surplus, executive compensation, shareholder distributions, concentrated ownership, and the accountability path around intentionally set compensation terms, capacity to know material consequences, notice, correction capacity, persistence, and retained gain. Legally distinct carriers remain separate for attribution but must be recomposed so the aggregate economic picture is not lost.
   posture: observed
 
 current_evidence:
@@ -58,12 +64,50 @@ current_evidence:
       - April 10, 2026 ownership does not prove identical ownership on each fiscal 2026 dividend record date.
       - Ownership creates an economic seat for dividends and equity-value changes but does not establish authorship of every corporate policy.
 
+accountability_trace:
+  intentional_action_or_term_setting:
+    posture: supported_inference
+    finding: >-
+      Walmart's wage and benefit structure is an employer-controlled compensation system rather than an accidental market event. The current source bundle establishes Walmart's reported compensation levels and benefit programs but does not yet reconstruct every internal decision-maker, wage algorithm, market constraint, or historical wage-setting decision.
+  intended_gain_cost_reduction_or_capacity_increase:
+    posture: path_forward
+    finding: >-
+      Labor cost is part of the corporate cost structure and compensation choices affect operating surplus, but the current record does not yet quantify the portion of fiscal 2026 profit or shareholder return attributable to compensation levels associated with public-assistance incidence.
+  harmful_endpoint_intent:
+    posture: not_established
+    finding: >-
+      The current evidence does not establish that Walmart intended workers to experience poverty, food insecurity, healthcare insecurity, or eligibility for Medicaid or SNAP.
+  knowledge_state:
+    posture: path_forward
+    current_state: KNOWLEDGE_UNKNOWN
+    finding: >-
+      The 2026 GAO report is a public notice surface showing Walmart prominently in selected-state employer tables. Public availability alone does not prove which Walmart decision-makers received or reviewed the report. Historical notice predating 2026 has not yet been reconstructed in this node.
+  capacity_to_know:
+    posture: supported_inference
+    finding: >-
+      Walmart's scale, payroll/benefits administration, public filings, compensation reporting, and ability to manage wage and benefit programs support treating the corporation as having substantial practical capacity to study compensation, workforce composition, benefit design, and related public-policy consequences. Capacity to know is not actual knowledge.
+  capacity_to_correct:
+    posture: supported_inference
+    finding: >-
+      Walmart has demonstrated practical capacity to change wages, benefits, staffing policy, and capital allocation. This does not establish that any particular proposed compensation change would eliminate program eligibility or be costless, but it makes correction capacity a live accountability variable rather than an assumed null.
+  response_after_notice:
+    posture: path_forward
+    finding: >-
+      Build a historical notice-and-response chronology before assigning continued-after-notice, mitigation, escalation, refusal-to-correct, or deliberate-avoidance states.
+  gain_or_insulation_after_notice:
+    posture: path_forward
+    finding: >-
+      Once notice chronology is established, compare worker compensation and benefit changes against profit, dividends, repurchases, executive compensation, and ownership return over the same periods.
+
 whole_circuit_questions:
   - What share of worker-household public support is attributable to compensation structure versus household circumstances unrelated to Walmart?
   - What share of SNAP benefits used by Walmart-employed households is redeemed at Walmart stores?
   - What Medicaid or other public healthcare spending connected to Walmart-employed households returns to Walmart pharmacies or health businesses versus unrelated providers?
   - How much of fiscal 2026 shareholder distributions accrued to concentrated family, institutional, executive, employee, and dispersed ownership seats on the relevant record dates?
   - How do ordinary-worker compensation, public supplementation, executive compensation, firm surplus, and shareholder return change together over time?
+  - When did Walmart leadership or compensation decision-makers first receive credible notice that substantial numbers of working Walmart households relied on Medicaid, SNAP, or comparable public support?
+  - What wage, scheduling, benefit, staffing, or public-policy changes followed each major notice event?
+  - How do employer payroll-tax effects, worker tax-base effects, corporate income-tax effects, tax preferences/credits, and public-assistance costs change under plausible compensation counterfactuals without double counting?
 
 relations:
   - type: TESTED_THROUGH
@@ -72,6 +116,9 @@ relations:
   - type: TESTED_THROUGH
     target: public-assistance-labor-cost-supplementation
     posture: observed
+  - type: TESTED_THROUGH
+    target: harm-domination-protection-weighting
+    posture: working_framework
   - type: PARTICIPATES_IN
     target: labor-market-power-and-wage-extraction
     posture: path_forward
@@ -95,4 +142,8 @@ locks:
   - Public assistance may still create an indirect employer-side economic benefit; do not erase that possibility merely because the legal recipient is the worker.
   - Executive compensation, worker compensation, public assistance, net income, dividends, buybacks, and ownership concentration must remain jointly visible even though they are different accounting categories.
   - A recurring employer-beneficiary association is evidence for labor-cost incidence investigation, not automatic proof of wage theft or illegality.
+  - Intentional compensation term-setting != proven intent to cause public-assistance eligibility or deprivation.
+  - Lack of harmful-endpoint intent != accidental compensation policy and != absence of accountability for foreseeable or credibly noticed consequences.
+  - Capacity to know != actual knowledge; deliberate avoidance requires separate evidence.
+  - Do not use uncertainty about motive to erase observed benefit incidence, firm surplus, or ownership return; uncertainty gets jurisdiction only over the motive/knowledge edge it actually bears on.
   - Do not double count Walton Family Holdings Trust shares inside and outside Walton Enterprises' beneficial/voting total.
