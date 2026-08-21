@@ -1,11 +1,9 @@
-schema: unum-lattice-news/relation-vocabulary/v0.1
+schema: unum-lattice-news/relation-vocabulary/v0.2
 id: attribution-routing-relations-v0-1
 status: active_review
-updated: 2026-08-16
+updated: 2026-08-21
 purpose: >-
-  Provide typed relation names for tracing pressure, attribution, message funding,
-  amplification, mobilization, policy response, beneficiary gain, and correction without
-  collapsing those stages into a single accusation.
+  Provide typed relation names for tracing pressure, attribution, message funding, amplification, mobilization, policy response, material term-setting, value/loss distribution, knowledge/notice, persistence, beneficiary gain, and correction without collapsing those stages into a single accusation.
 
 relations:
   EXPERIENCES_PRESSURE_FROM:
@@ -63,6 +61,25 @@ relations:
       - institution_or_actor
       - policy_or_action
       - evidence_of_causal_authority
+
+  SETS_MATERIAL_TERMS_FOR:
+    requires:
+      - term_setting_actor_or_institution
+      - affected_counterparty_or_population
+      - wage_price_rent_fee_access_eligibility_contract_or_other_term
+      - evidence_of_term_setting_authority_or_action
+    does_not_establish:
+      - harmful_endpoint_intent
+      - extraction
+      - illegality
+  PURSUES_GAIN_OR_COST_REDUCTION_THROUGH:
+    requires:
+      - actor_or_institution
+      - mechanism_or_term
+      - evidence_of_intended_gain_cost_reduction_or_capacity_increase
+    does_not_establish:
+      - intent_to_harm
+      - realized_gain
   BENEFITS_FROM_TRANSFORM:
     requires:
       - beneficiary
@@ -83,6 +100,77 @@ relations:
       - actor_or_system
       - affected_participant_or_population
       - cost_path
+  SUPPLEMENTS_COST_OF:
+    requires:
+      - public_household_or_third_party_resource
+      - actor_or_system_whose_private_cost_is_allegedly_reduced
+      - supported_incidence_or_counterfactual_path
+    does_not_establish:
+      - direct_payment_to_actor
+      - full_capture_of_resource
+
+  HAS_CAPACITY_TO_KNOW_ABOUT:
+    requires:
+      - actor_or_institution
+      - consequence_or_mechanism
+      - evidence_of_relevant_information_capacity
+    does_not_establish:
+      - actual_knowledge
+      - receipt_of_specific_notice
+      - deliberate_avoidance
+  RECEIVES_CREDIBLE_NOTICE_OF:
+    requires:
+      - actor_or_institution
+      - consequence_or_mechanism
+      - dated_notice_source_or_delivery_path
+    does_not_establish:
+      - agreement_with_notice
+      - harmful_endpoint_intent
+  CONTINUES_AFTER_NOTICE:
+    requires:
+      - actor_or_institution
+      - mechanism_or_term
+      - prior_credible_notice_edge
+      - evidence_of_continuation_after_notice
+    does_not_establish:
+      - secret_motive
+      - deliberate_avoidance
+      - legal_recklessness
+  ESCALATES_AFTER_NOTICE:
+    requires:
+      - actor_or_institution
+      - mechanism_or_term
+      - prior_credible_notice_edge
+      - evidence_of_increased_scale_intensity_or_reach
+    does_not_establish:
+      - intent_to_cause_every_downstream_harm
+  MITIGATES_AFTER_NOTICE:
+    requires:
+      - actor_or_institution
+      - mechanism_or_harm
+      - prior_credible_notice_edge
+      - evidenced_mitigation_action
+  REPAIRS_AFTER_NOTICE:
+    requires:
+      - actor_or_institution
+      - harm_or_loss
+      - prior_credible_notice_edge
+      - evidenced_repair_restitution_or_restoration
+  RETAINS_GAIN_AFTER_NOTICE:
+    requires:
+      - actor_or_institution
+      - prior_credible_notice_edge
+      - evidenced_gain_cost_saving_insulation_or_capacity_retained_after_notice
+    does_not_establish:
+      - amount_caused_by_the_harm_without_additional_accounting
+  DELIBERATELY_AVOIDS_RELEVANT_INFORMATION:
+    requires:
+      - actor_or_institution
+      - relevant_information_or_notice_surface
+      - evidence_of_intentional_avoidance_suppression_compartmentalization_refusal_or_insulation
+    does_not_establish:
+      - criminal_mens_rea_without_separate_legal_analysis
+
   CONTRADICTS_ATTRIBUTION:
     requires:
       - source_or_evidence
@@ -98,4 +186,9 @@ locks:
   - Relation names classify evidenced crossings; they do not supply evidence themselves.
   - A chain is only as strong as its weakest consequential edge.
   - Missing intermediate edges remain explicit rather than inferred for narrative completeness.
-  - Funding, amplification, persuasion, voting, policy production, and beneficiary gain are separate relations.
+  - Funding, amplification, persuasion, voting, policy production, beneficiary gain, term-setting, knowledge, notice, persistence, and repair are separate relations.
+  - Intentional term-setting does not establish intent to cause every downstream harm.
+  - Capacity to know does not establish actual knowledge.
+  - Notice does not establish agreement with the warning or secret motive.
+  - Continuation after notice is an accountability fact when evidenced; its legal or moral classification requires the appropriate separate analysis.
+  - Gain after notice must not be treated as caused by the harm unless the causal accounting separately establishes that edge.
