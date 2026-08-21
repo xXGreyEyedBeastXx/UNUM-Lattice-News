@@ -1,12 +1,15 @@
 # Harmful Intent and Trajectory Model v0.1
 
-Status: active review / harm-hierarchy extension
+Status: active review / harm-hierarchy extension  
+Updated: 2026-08-21
 
 ## Purpose
 
 The Harm Hierarchy Legibility Adversarial Audit needs to distinguish what an actor **wanted or tried to do** from what the actor successfully enacted and from what harm actually occurred.
 
 A failed attempt to impose harm is still evidence about the actor. It must not be counted as realized harm, but it should remain legible as intent, preparation, attempted exercise of power, and future trajectory.
+
+The model also distinguishes **intentional action, term-setting, or gain-seeking** from **intent to produce every downstream harm**. Requiring proof that an actor desired deprivation, injury, or suffering before treating a deliberately chosen value-transfer mechanism as intentional can erase the actual decision that moved value, imposed a condition, or preserved a profitable arrangement.
 
 This model therefore adds a fourth public axis beside realized harm, structural harm, and catastrophic risk:
 
@@ -37,6 +40,49 @@ actor implements it and people are actually harmed
 ```
 
 The earlier harm model captured the last two more clearly than the middle cases. This extension preserves the middle.
+
+## Intentional mechanism / gain versus harmful endpoint
+
+Keep these variables separate:
+
+```text
+T = intentional action or term-setting
+G = intended or knowingly pursued gain / cost reduction / capacity increase
+H = intent to produce the downstream harmful endpoint
+K = knowledge or credible notice of downstream consequence
+F = foreseeability of downstream consequence
+P = persistence after notice or correction opportunity
+```
+
+Therefore:
+
+```text
+T=1, G=1, H=unknown
+```
+
+can still describe an intentionally chosen economic or institutional mechanism even when evidence does not establish that the actor desired every downstream deprivation.
+
+Examples include deliberately setting wages, prices, rents, fees, benefit conditions, access rules, staffing levels, procurement terms, enforcement priorities, or capital-allocation policy in order to preserve or increase margin, revenue, asset value, cost savings, authority, or organizational capacity.
+
+When an extraction or capture claim is made, the lattice must still trace:
+
+```text
+loss-bearer / payer
+-> intentionally chosen term or mechanism
+-> immediate recipient
+-> costs / productive contribution / counterfactual
+-> surplus, avoided cost, rent, margin, asset gain, or capacity increase
+-> terminal or reseated beneficiary
+```
+
+Do not infer intentional extraction merely from the existence of profit. But once a traced transfer is shown to result from a deliberately chosen term or mechanism, do not relabel the transfer accidental merely because intent to cause poverty, hunger, illness, insecurity, or another downstream harm is not separately established.
+
+```text
+intent to capture value != intent to cause every downstream harm
+lack of harmful-endpoint intent != lack of intentional term-setting
+profit != proof of extraction
+traced intentional value transfer != accidental merely because motive is disputed
+```
 
 ## Intent evidence classes
 
@@ -135,7 +181,7 @@ Recommended authority multiplier uses the existing R0-R5 responsibility scale wh
 
 ## Investigation-state rule
 
-Only `CONFIRMED` evidence of the statement, proposal, order, attempted action, or preparation can enter HIS.
+Only `CONFIRMED` evidence of the statement, proposal, order, attempted action, preparation, intentionally chosen term, or other claimed intentional conduct can enter the corresponding confirmed intent field.
 
 A disputed interpretation of what the actor meant remains `PENDING` unless the mechanism itself resolves the ambiguity.
 
@@ -172,23 +218,64 @@ bad outcome -> actor secretly wanted it
 
 unless additional evidence supports that inference.
 
+## Power-conditioned knowledge and culpable ignorance
+
+Knowledge is not binary, and concentrated power changes the reasonable capacity to know.
+
+A large corporation, government, military, regulator, major landlord, insurer, creditor, or other high-capacity institution may possess analysts, internal records, legal counsel, compliance systems, market data, complaints, audits, research, and the practical ability to investigate consequences that a low-power participant cannot inspect.
+
+Greater power does not prove actual knowledge or guilt. It can, however, increase:
+
+```text
+capacity_to_know
+capacity_to_model_consequences
+capacity_to_receive_notice
+capacity_to_change_course
+capacity_to_repair
+accountability_for_ignoring_repeated_warning
+```
+
+Use the following non-exclusive epistemic states where supported:
+
+```text
+KNOWLEDGE_UNKNOWN
+REASONABLY_UNAWARE
+SHOULD_HAVE_KNOWN
+CREDIBLE_NOTICE
+ACTUAL_KNOWLEDGE
+DELIBERATE_AVOIDANCE_SUPPORTED
+DISPUTED
+```
+
+`SHOULD_HAVE_KNOWN` is an accountability judgment requiring a stated basis in foreseeability, institutional capacity, available information, duty, or repeated warning. It is not a shortcut from actor size to guilt.
+
+`DELIBERATE_AVOIDANCE_SUPPORTED` requires evidence that the actor intentionally avoided, suppressed, compartmentalized, refused, or insulated itself from information relevant to the consequence. Do not infer it merely because the actor failed to investigate.
+
+These are investigative accountability states, not automatic findings of criminal mens rea or legal willful blindness.
+
 ## Notice and persistence
 
-Intent evidence strengthens when an actor receives credible notice of harm and nevertheless preserves, escalates, or repeats the mechanism.
+Intent and responsibility evidence strengthen when an actor receives credible notice of harm and nevertheless preserves, escalates, or repeats the mechanism.
 
 This is not automatic proof that the actor desired every resulting injury.
 
 Record separately:
 
 ```text
-initial intent
-notice of harm
-ability to correct
+initial intentional act / term / objective
+initial knowledge state
+foreseeability
+credible notice events
+capacity to investigate
+capacity to correct
 response after notice
 escalation / continuation / mitigation / reversal
+private or institutional gain retained after notice
 ```
 
-A leader who continues a policy after documented harm may accumulate stronger responsibility or recklessness evidence even when the original stated purpose was different.
+A leader or institution that continues a policy or economic arrangement after documented harm may accumulate stronger responsibility, recklessness, or persistence evidence even when the original stated purpose was different.
+
+The first occurrence and the fiftieth repetition are not epistemically identical. Repeated studies, lawsuits, worker complaints, audits, regulator findings, internal warnings, public hearings, community reports, or observed outcomes can change the knowledge state even when the underlying mechanism is unchanged.
 
 ## Attempted harm and democratic constraint
 
@@ -210,6 +297,8 @@ If the same policy has a genuine protective purpose and a harmful mechanism, pre
 
 A claimed protective intention cannot erase a directly intended harmful endpoint.
 
+Likewise, the absence of a harmful endpoint motive cannot be used to erase a deliberately chosen term, transfer, or mechanism whose gain and consequences are separately established.
+
 ## Current hierarchy display
 
 For each actor, institution, or leader within a declared time window display:
@@ -219,6 +308,7 @@ Confirmed Realized Harm Points
 Confirmed Structural Harm Points
 Catastrophic Risk Headline
 Harmful Intent / Trajectory Headline
+Knowledge / Notice / Persistence state where material
 Pending Harm Claims
 Path-Forward Investigations
 Debunked Claims with explanation
@@ -230,11 +320,17 @@ This prevents a low-current-power extremist actor from disappearing simply becau
 
 ```text
 intent != realized harm
+intentional action != intent to cause every downstream harm
+intentional gain-seeking != automatic proof of harmful-endpoint motive
 failed attempt != no evidence about actor
 statement != implementation
 implementation != every downstream harm
+profit != extraction by itself
 foreseeability != desire
+capacity to know != actual knowledge
+absence of harmful desire != absence of accountability
 continuation after notice may strengthen responsibility
+credible notice + capacity to correct + persistence must remain visible
 protective rhetoric != automatic benign intent
 hostile rhetoric != automatic proof of every alleged motive
 ```
