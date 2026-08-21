@@ -1,14 +1,11 @@
 schema: unum-lattice-news/lattice/v0.1
 id: walmart-whole-circuit-2026-08-16
-title: Walmart whole-circuit labor, public-support, executive-pay, and ownership return case
+title: Walmart whole-circuit labor, public-support, executive-pay, ownership-return, and accountability case
 status: active
-as_of: 2026-08-16
+as_of: 2026-08-21
 authority: evidence_lattice_not_verdict
 purpose: >-
-  Keep Walmart's worker compensation, public-assistance incidence, firm surplus, executive
-  compensation, shareholder distributions, and concentrated ownership inside one recoverable
-  economic circuit. The case decomposes carriers for accuracy and then recomposes them so legal
-  or accounting categories do not erase aggregate distributional gain.
+  Keep Walmart's worker compensation, public-assistance incidence, firm surplus, executive compensation, shareholder distributions, concentrated ownership, and knowledge/notice/correction path inside one recoverable economic circuit. The case decomposes carriers for accuracy and then recomposes them so legal or accounting categories do not erase aggregate distributional gain and uncertainty about harmful motive does not erase intentionally chosen compensation terms or foreseeable consequences.
 
 parent_lattice: material-extraction-and-upward-recirculation-2026-08-16
 operators:
@@ -16,6 +13,7 @@ operators:
   - public-assistance-labor-cost-supplementation
   - labor-market-power-and-wage-extraction
   - money-flow-benefit-enforced-loss
+  - harm-domination-protection-weighting
 
 nodes:
   corporation:
@@ -133,20 +131,55 @@ observed_circuit:
       limits:
         - April 10 ownership is not the exact record-date ownership for every fiscal 2026 dividend payment.
 
+accountability_trace:
+  intentional_compensation_term_setting:
+    posture: supported_inference
+    state: true
+    note: >-
+      Walmart's compensation and benefit structure is an employer-managed set of terms. The current evidence does not yet reconstruct every internal wage-setting decision, role, algorithm, or market constraint, but compensation is not treated as an accidental consequence merely because harmful-endpoint motive is unknown.
+  intended_gain_or_cost_reduction:
+    posture: path_forward
+    note: >-
+      Compensation affects corporate labor cost and therefore can affect surplus, but the current evidence does not quantify the share of profit or owner return causally attributable to compensation levels associated with public-assistance incidence.
+  harmful_endpoint_intent:
+    posture: not_established
+    note: >-
+      No current source in this bundle establishes that Walmart intended workers to experience poverty, food insecurity, healthcare insecurity, or public-assistance eligibility.
+  knowledge_state:
+    posture: path_forward
+    state: KNOWLEDGE_UNKNOWN
+    note: >-
+      The 2026 GAO report is a public notice surface. Publication does not prove which Walmart decision-makers actually received or reviewed it, and the earlier notice history remains to be reconstructed.
+  capacity_to_know:
+    posture: supported_inference
+    level: high
+    note: >-
+      Walmart's scale, payroll and benefit administration, compensation reporting, public filings, and demonstrated ability to alter wages and benefits create substantial practical capacity to investigate workforce compensation and benefit-incidence patterns. This is not proof of actual knowledge.
+  foreseeability:
+    posture: path_forward
+    note: >-
+      Determine when public-assistance incidence among Walmart workers became sufficiently documented that continued reliance was reasonably foreseeable to relevant compensation decision-makers.
+  capacity_to_correct:
+    posture: supported_inference
+    level: high
+    note: >-
+      Walmart has practical capacity to change compensation, benefits, scheduling, staffing policy, and capital allocation. This does not establish that a particular change would eliminate program eligibility or be costless.
+  response_after_notice:
+    posture: path_forward
+    state: unknown
+    note: >-
+      Build an evidence-backed chronology of major notice events and Walmart wage, benefit, scheduling, lobbying, public-policy, and capital-allocation responses before assigning continued, mitigated, repaired, escalated, or refused-to-correct states.
+  gain_or_insulation_after_notice:
+    posture: path_forward
+    note: >-
+      Once notice dates are established, compare compensation changes with net income, dividends, repurchases, executive compensation, ownership returns, and public-support incidence over matched periods.
+
 recomposition:
   supported_observation: >-
-    In the same broad corporate system and near-adjacent measurement period, Walmart had thousands
-    of working adult Medicaid or SNAP beneficiaries in selected state employer datasets, reported a
-    958-to-1 CEO-to-median-associate compensation ratio, generated 21.893 billion dollars of net
-    income attributable to Walmart, returned about 15.6 billion dollars through dividends and share
-    repurchases, and had roughly 44 percent of its shares held by Walton-family-related entities.
+    In the same broad corporate system and near-adjacent measurement period, Walmart had thousands of working adult Medicaid or SNAP beneficiaries in selected state employer datasets, reported a 958-to-1 CEO-to-median-associate compensation ratio, generated 21.893 billion dollars of net income attributable to Walmart, returned about 15.6 billion dollars through dividends and share repurchases, and had roughly 44 percent of its shares held by Walton-family-related entities.
   interpretation_posture: path_forward
   interpretation: >-
-    These facts establish a strongly unequal distributional circuit worth testing for labor-cost
-    supplementation and upward recirculation. They do not by themselves establish the dollar amount
-    of public assistance causally attributable to Walmart compensation, nor do they prove that a
-    public-benefit dollar directly funded an executive payment, dividend, or buyback. The analysis
-    must preserve those attribution limits while keeping every seat visible in the recomposed flow.
+    These facts establish a strongly unequal distributional circuit worth testing for labor-cost supplementation and upward recirculation. They do not by themselves establish the dollar amount of public assistance causally attributable to Walmart compensation, nor do they prove that a public-benefit dollar directly funded an executive payment, dividend, or buyback. The analysis must preserve those attribution limits while keeping every seat visible. It must also preserve the difference between intentionally set compensation terms, any intended gain or cost reduction, harmful-endpoint intent, knowledge/notice, and persistence after correction opportunities.
 
 next_money_trace:
   - Recover national or larger-state employer-linked Medicaid/SNAP incidence where data permit.
@@ -156,6 +189,9 @@ next_money_trace:
   - Reconstruct fiscal-year dividend record-date ownership to estimate distributions by concentrated, institutional, employee, executive, and dispersed ownership seats.
   - Trace buyback participation and continuing-holder ownership effects separately from dividends.
   - Compare changes in ordinary-worker compensation, executive compensation, net income, and shareholder return over multiple years.
+  - Build the historical notice ledger: government reports, public hearings, worker complaints, lawsuits, shareholder proposals, internal documents where public, corporate statements, and major media investigations concerning Walmart worker reliance on public benefits.
+  - After notice is bounded, test whether compensation/benefit changes reduced incidence, whether the mechanism persisted, and what gain or cost saving remained.
+  - Build a matched tax-and-public-cost ledger separating employer payroll taxes, worker payroll/income taxes, corporate income taxes, tax preferences/credits, and means-tested public costs; do not collapse these into one generic tax claim.
 
 locks:
   - Decomposition must recompose.
@@ -165,3 +201,8 @@ locks:
   - Net income, dividends, buybacks, and appreciation are overlapping economic seats, not independent additive gains.
   - CEO pay ratio is not proof of causation, but it is part of the same distributional body and must not be omitted as irrelevant.
   - Ownership concentration is a terminal return operator and must remain in the money path.
+  - Intentional compensation term-setting != harmful-endpoint intent.
+  - Harmful-endpoint intent not established != compensation policy accidental.
+  - Capacity to know != actual knowledge.
+  - Public notice != proof of internal receipt by a particular decision-maker.
+  - Continued conduct after credible notice, where correction capacity exists, is an accountability fact distinct from the original motive and should be traced rather than rhetorically assumed or erased.
