@@ -172,6 +172,7 @@ Accountability tags are especially high-risk for semantic leakage. Use them only
 ```text
 #status/Observed
 #status/Stated
+#status/Adjudicated
 #status/SupportedInference
 #status/Potential
 #status/Possible
@@ -179,8 +180,11 @@ Accountability tags are especially high-risk for semantic leakage. Use them only
 #status/Likely
 #status/Alleged
 #status/Disputed
+#status/Ambiguous
 #status/Unknown
 ```
+
+The status hashtag must match the scoped evidentiary posture, not merely the overall reputation of the source or actor.
 
 ## Use rule
 
