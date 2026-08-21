@@ -39,6 +39,11 @@ response_after_notice_state:
   - disputed
   - unknown
 
+relation_vocabulary:
+  primary: schemas/ATTRIBUTION_ROUTING_RELATIONS_v0_1.yaml
+  rule: >-
+    Use a typed evidenced relation from the active relation vocabulary where available. OTHER remains valid when a required relation is not yet registered; do not force a semantically wrong relation merely to satisfy a list.
+
 source_record:
   id: source_slug
   title: ""
@@ -104,7 +109,7 @@ node_record:
 relation_record:
   id: relation_slug
   from: node_id
-  relation_type: DEVELOPS | USES | ADOPTS | FUNDS | OWNS | CONTRACTS_WITH | REGULATES | WARNS_ABOUT | AFFECTS | OPPOSES | SUPPORTS | STATES | STUDIES | OTHER
+  relation_type: "" # use active typed relation vocabulary; OTHER is allowed when no registered relation fits
   to: node_or_proposition_id
   investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
   claim_posture: observed | stated | adjudicated | supported_inference | alleged | disputed | ambiguous | unknown
