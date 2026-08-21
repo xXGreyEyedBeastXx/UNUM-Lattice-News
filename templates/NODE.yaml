@@ -1,8 +1,11 @@
-schema: unum-lattice-news/node/v0.3
+schema: unum-lattice-news/node/v0.4
 id: ""
 title: ""
 
-entity_type: "" # person | institution | movement | technology | policy | place | population | ecology | concept | sovereign_state | international_organization | court | other
+family: "" # required for new records; see schemas/NODE_TYPE_REGISTRY_v0_1.yaml
+subtype: "" # must belong to family
+entity_type: null # migration-only compatibility field for older nodes; do not use for new records
+hierarchy_class: not_scored # institution | leader | non_leader_actor | affected_population | not_scored
 actor_roles: []
 status: seed
 updated: YYYY-MM-DD
@@ -59,6 +62,21 @@ trajectory_state:
   realized_result: null
   surviving_resistance: null
 
+accountability_state:
+  intentional_action_or_term_setting: unknown # true | false | disputed | unknown
+  intended_gain_cost_reduction_or_capacity_increase: unknown # supported | not_established | disputed | unknown
+  harmful_endpoint_intent: unknown # supported | not_established | disputed | unknown
+  knowledge_state: KNOWLEDGE_UNKNOWN # see schemas/LATTICE_RECORD_TEMPLATES_v0_1.yaml
+  capacity_to_know: unknown # low | moderate | high | unknown
+  foreseeability: unknown # low | moderate | high | unknown
+  credible_notice_events: []
+  capacity_to_correct: unknown # low | moderate | high | unknown
+  response_after_notice: unknown
+  gain_or_insulation_after_notice: []
+  repair_or_mitigation: []
+  evidence: []
+  limitations: []
+
 laundering_claims:
   - type: "" # CAUSAL_PARTITION_LAUNDERING | TRUTH_CITATION_LAUNDERING | LEGALITY_LAUNDERING | VOLUNTARINESS_LAUNDERING | MORAL_LAUNDERING | ETHICAL_LAUNDERING | REPUTATION_LAUNDERING | PATRONAGE_RETURN_LAUNDERING | FINANCIAL_PROVENANCE_OBSCURATION | MONEY_LAUNDERING_LEGAL_CLAIM | LITERAL_LAUNDRY
     posture: ""
@@ -75,11 +93,15 @@ references: []
 
 locks:
   - Node inclusion is not an accusation.
+  - New node identity uses canonical family/subtype; legacy entity_type is migration-only.
   - Evidence updates only the edge or variable it actually bears on.
   - Successful resistance does not erase an attempted objective.
   - Entity identity is not the same as event role or authority seat.
   - Victim or survivor is a relational role, not a total identity.
   - Authority changes capacity and provenance, not truth value.
+  - Greater power may increase capacity to know, prevent, correct, and repair; it does not automatically prove knowledge or guilt.
+  - Intentional action or term-setting is distinct from intent to cause every downstream harm.
+  - Capacity to know is distinct from actual knowledge; deliberate avoidance requires evidence.
   - Alleged is not false; unknown is not absent; adjudicated is not metaphysical certainty.
   - Benefit from an outcome is not proof of causation.
   - Consequential relations require recoverable evidence.
