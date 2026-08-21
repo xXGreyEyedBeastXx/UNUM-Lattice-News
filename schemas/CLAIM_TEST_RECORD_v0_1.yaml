@@ -1,6 +1,7 @@
-version: v0_1
+version: v0_2
 status: active_review
 schema: unum-lattice-news/claim-test/v0.1
+updated: 2026-08-21
 
 claim_test_record:
   id: claim_test_slug
@@ -10,12 +11,14 @@ claim_test_record:
   target_nodes: []
   first_observed: null
   last_observed: null
+  investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
+  claim_posture: observed | stated | adjudicated | supported_inference | potential | possible | probable | likely | alleged | disputed | ambiguous | unknown
   rhetoric_context:
     source_ids: []
     exact_quote_or_paraphrase: ""
     audience: []
     policy_context: []
-  claim_type: causal | prevalence | historical | predictive | normative | legal | capability | intent | attribution | identity | classification | other
+  claim_type: causal | causal_system | mechanism | distributional | prevalence | historical | predictive | normative | legal | capability | intent | knowledge | attribution | identity | classification | other
   testability: directly_testable | indirectly_testable | partially_testable | not_currently_testable | nonfactual_value_claim
   scope:
     population: ""
@@ -33,6 +36,24 @@ claim_test_record:
     contradicts: []
     contextualizes: []
     insufficient_or_ambiguous: []
+  evidence_effects:
+    - evidence_ref: ""
+      target: ""
+      function: CLAIM_DEFEATING | SCOPE_LIMITING | DIRECTION | ATTEMPT | CAPACITY | REALIZED_OUTCOME | CONSTRAINT_RESISTANCE | MOTIVE_LIMITING | RELATION_LIMITING | ALTERNATIVE_SUPPORTING | RELIABILITY_MODIFYING | NON_RESPONSIVE
+      effect: ""
+  accountability_state: # use only when intent/knowledge/persistence is material to the claim
+    intentional_action_or_term_setting: unknown
+    intended_gain_cost_reduction_or_capacity_increase: unknown
+    harmful_endpoint_intent: unknown
+    knowledge_state: KNOWLEDGE_UNKNOWN
+    capacity_to_know: unknown
+    foreseeability: unknown
+    credible_notice_events: []
+    capacity_to_correct: unknown
+    response_after_notice: unknown
+    gain_or_insulation_after_notice: []
+    evidence: []
+    limitations: []
   reasoning_checks:
     correlation_vs_causation: not_applicable | passed | failed | unresolved
     prevalence_vs_incidence: not_applicable | passed | failed | unresolved
@@ -44,8 +65,11 @@ claim_test_record:
     ecological_fallacy: not_applicable | passed | failed | unresolved
     scope_overreach: not_applicable | passed | failed | unresolved
     alternative_explanations_addressed: not_applicable | passed | failed | unresolved
+    motive_vs_mechanism_separated: not_applicable | passed | failed | unresolved
+    knowledge_vs_capacity_to_know_separated: not_applicable | passed | failed | unresolved
+    notice_and_persistence_traced: not_applicable | passed | failed | unresolved
   current_assessment:
-    status: untested | testing | unsupported | weakly_supported | mixed | supported | strongly_supported | falsified | not_testable | value_claim
+    status: untested | testing | unsupported | weakly_supported | partially_supported | mixed | supported | supported_as_multi_mechanism | strongly_supported | falsified | not_testable | value_claim | other_bounded_status
     confidence: low | moderate | high
     summary: ""
     what_is_established: []
@@ -70,3 +94,8 @@ locks:
   - Failure to disprove a claim is not evidence that the claim is true.
   - Rhetorical force, emotional salience, and policy usefulness must not substitute for evidence.
   - Unsupported claims may remain visible as rhetoric when their influence is itself newsworthy, but must not generate factual relations.
+  - Intentional action or term-setting is distinct from intent to cause every downstream harm.
+  - Capacity to know is distinct from actual knowledge.
+  - Foreseeability is distinct from desire.
+  - DELIBERATE_AVOIDANCE_SUPPORTED requires evidence of deliberate avoidance, not merely failure to investigate.
+  - Evidence about motive or knowledge does not globally update the mechanism, outcome, or beneficiary edges unless it actually bears on them.
