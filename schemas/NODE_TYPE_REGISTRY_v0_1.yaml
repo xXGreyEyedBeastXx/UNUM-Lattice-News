@@ -1,6 +1,7 @@
-version: v0_1
+version: v0_2
 status: active_review
 schema: unum-lattice-news/node-type-registry/v0.1
+updated: 2026-08-21
 
 canonical_families:
   actor:
@@ -9,6 +10,10 @@ canonical_families:
       - institution
       - collective
       - movement
+      - government
+      - sovereign_state
+      - international_organization
+      - court
   network:
     subtypes:
       - political_institutional
@@ -56,8 +61,15 @@ canonical_families:
       - labor
       - data
       - land
+      - food
+      - water
+      - housing
+      - healthcare
       - energy
       - supply
+      - public_revenue
+      - public_benefit
+      - debt
   claim_proposition:
     subtypes:
       - claim
@@ -91,21 +103,39 @@ canonical_families:
 migration_aliases:
   person: {family: actor, subtype: person}
   institution: {family: actor, subtype: institution}
+  corporation: {family: actor, subtype: institution}
   movement: {family: actor, subtype: movement}
+  government: {family: actor, subtype: government}
+  sovereign_state: {family: actor, subtype: sovereign_state}
+  international_organization: {family: actor, subtype: international_organization}
+  court: {family: actor, subtype: court}
   technology: {family: system, subtype: technology}
   policy: {family: instrument, subtype: policy}
+  law: {family: instrument, subtype: law}
+  program: {family: instrument, subtype: program}
+  contract: {family: instrument, subtype: contract}
   place: {family: place_jurisdiction, subtype: place}
+  jurisdiction: {family: place_jurisdiction, subtype: jurisdiction}
   population: {family: population_community, subtype: population}
+  community: {family: population_community, subtype: community}
   ecology: {family: ecology_living_system, subtype: ecology}
   condition: {family: condition_lived_state, subtype: lived_state, review_required: true}
   disability: {family: condition_lived_state, subtype: disability_status}
   proposition: {family: claim_proposition, subtype: proposition}
-  concept: {family: claim_proposition, subtype: claim}
+  concept: {family: claim_proposition, subtype: claim, review_required: true}
   other: {family: condition_lived_state, subtype: lived_state, review_required: true}
 
 relation_role_rule:
   actor_is_also_a_relation_role: true
-  note: A node family does not determine its role in a relation. A person or institution may be actor, funder, regulator, target, beneficiary, affected party, or another evidenced role.
+  note: A node family does not determine its role in a relation. A person or institution may be actor, funder, regulator, target, beneficiary, affected party, loss-bearer, gatekeeper, term-setter, or another evidenced role.
+
+identity_vs_jurisdiction_rule:
+  note: >-
+    Government, sovereign-state, international-organization, and court nodes are durable actors or institutions. Their territory or jurisdiction may also require a separate place_jurisdiction node. Do not force actor identity and territorial jurisdiction into one node merely because the same name is used in ordinary language.
+
+resource_flow_rule:
+  note: >-
+    Resource-flow nodes may represent necessities or value carriers such as food, water, housing, healthcare, public benefits, debt, money, labor, land, or energy. A resource node does not by itself establish a right, deprivation, gatekeeper, extraction mechanism, or harmful condition; those remain typed relations, claims, or consequence nodes.
 
 network_rule:
   note: A network node represents a typed mesh of evidenced or explicitly provisional relations. It is not a collective actor, shared intent, command structure, or conspiracy unless those properties are independently established.
@@ -115,6 +145,16 @@ condition_rule:
 
 analysis_framework_rule:
   note: Analysis-framework nodes describe reusable investigative operators or map structures. They are not evidence that a worldly actor, harm, relation, or causal mechanism exists in a particular case. Case-specific edges still require evidence.
+
+legacy_field_compatibility:
+  new_records:
+    preferred_fields: [family, subtype]
+    legacy_fields_allowed: false
+  migrated_or_existing_records:
+    accepted_legacy_fields: [node_type, entity_type]
+    action: preserve_and_map_through_migration_aliases_without_forced_rewrite
+  note: >-
+    The repository contains older nodes using node_type or entity_type and newer nodes using family/subtype. Do not treat this schema-era difference as an identity difference or rewrite historical records solely for cosmetic uniformity.
 
 validation:
   new_records:
@@ -133,6 +173,7 @@ locks:
   - Relation roles are established by evidence, not inherited from node family.
   - Network membership does not establish common command, shared intent, guilt, or equal responsibility.
   - Analysis frameworks are maps and operators, not case evidence by themselves.
+  - Resource or necessity classification does not establish deprivation or extraction by itself.
   - Migration aliases preserve old records without silently rewriting history.
   - Affected populations and ecologies should not be fragmented merely because a source lists them.
   - A diagnostic or institutional label is not the whole lived reality of a participant.
