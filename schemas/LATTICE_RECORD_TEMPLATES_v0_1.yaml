@@ -1,5 +1,6 @@
-version: v0_2
+version: v0_3
 status: active_review
+updated: 2026-08-21
 
 # Evidence jurisdiction functions for all record types:
 evidence_effect_function:
@@ -15,6 +16,28 @@ evidence_effect_function:
   - ALTERNATIVE_SUPPORTING
   - RELIABILITY_MODIFYING
   - NON_RESPONSIVE
+
+# Investigative accountability states. These are not automatic legal mens rea findings.
+knowledge_state:
+  - KNOWLEDGE_UNKNOWN
+  - REASONABLY_UNAWARE
+  - SHOULD_HAVE_KNOWN
+  - CREDIBLE_NOTICE
+  - ACTUAL_KNOWLEDGE
+  - DELIBERATE_AVOIDANCE_SUPPORTED
+  - DISPUTED
+
+response_after_notice_state:
+  - none_documented
+  - investigated
+  - mitigated
+  - repaired
+  - reversed
+  - continued
+  - escalated
+  - refused_to_correct
+  - disputed
+  - unknown
 
 source_record:
   id: source_slug
@@ -41,7 +64,7 @@ story_record:
   published: "YYYY-MM-DD"
   status: draft | reviewed | published | corrected | archived
   investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
-  claim_posture: observed | stated | supported_inference | potential | possible | probable | likely | alleged | disputed | unknown
+  claim_posture: observed | stated | adjudicated | supported_inference | potential | possible | probable | likely | alleged | disputed | ambiguous | unknown
   summary: ""
   what_changed: []
   nodes: []
@@ -58,11 +81,14 @@ story_record:
 node_record:
   id: node_slug
   label: ""
-  node_type: person | institution | technology | policy | movement | place | population | ecology | proposition | other
+  family: "" # required for new records; use schemas/NODE_TYPE_REGISTRY_v0_1.yaml
+  subtype: "" # must belong to family
+  legacy_node_type: null # migration-only; preserve old records without forcing rewrite
   hierarchy_class: institution | leader | non_leader_actor | affected_population | not_scored
   status: active | historical | disputed_identity | archived
   summary: ""
   aliases: []
+  actor_roles: []
   hashtags: []
   historical_spine: null
   contribution_index: []
@@ -81,7 +107,7 @@ relation_record:
   relation_type: DEVELOPS | USES | ADOPTS | FUNDS | OWNS | CONTRACTS_WITH | REGULATES | WARNS_ABOUT | AFFECTS | OPPOSES | SUPPORTS | STATES | STUDIES | OTHER
   to: node_or_proposition_id
   investigation_state: PENDING | PATH_FORWARD | CONFIRMED | DEBUNKED
-  claim_posture: observed | stated | supported_inference | alleged | disputed | unknown
+  claim_posture: observed | stated | adjudicated | supported_inference | alleged | disputed | ambiguous | unknown
   scope: ""
   start_date: null
   end_date: null
@@ -97,7 +123,7 @@ contribution_record:
   title: ""
   contributor_node: node_id
   mechanism_node: null
-  contribution_type: policy | vote | funding | contract | procurement | deployment | transfer | lobbying | statement | operational_action | regulatory_action | omission_under_duty | correction | other
+  contribution_type: policy | vote | funding | contract | procurement | deployment | transfer | lobbying | statement | operational_action | regulatory_action | intentional_term_setting | omission_under_duty | correction | other
   start_date: null
   end_date: null
   scope: ""
@@ -117,6 +143,20 @@ contribution_record:
     capacity: null
     realized_result: null
     surviving_resistance: null
+  accountability_state:
+    intentional_action_or_term_setting: unknown # true | false | disputed | unknown
+    intended_gain_cost_reduction_or_capacity_increase: unknown # supported | not_established | disputed | unknown
+    harmful_endpoint_intent: unknown # supported | not_established | disputed | unknown
+    knowledge_state: KNOWLEDGE_UNKNOWN
+    capacity_to_know: unknown # low | moderate | high | unknown
+    foreseeability: unknown # low | moderate | high | unknown
+    credible_notice_events: []
+    capacity_to_correct: unknown # low | moderate | high | unknown
+    response_after_notice: unknown
+    gain_or_insulation_after_notice: []
+    repair_or_mitigation: []
+    evidence: []
+    limitations: []
   harm_assessment:
     counts_toward_confirmed_hierarchy: false
     rating_scope: ""
@@ -137,10 +177,19 @@ contribution_record:
       irreversibility: null
       vulnerability: null
     catastrophic_pathway_support: null
+    harmful_intent_trajectory:
+      intent_class: null # I0 | I1 | I2 | I3 | I4 | I5
+      harm_severity_intended: null
+      specificity: null
+      capability: null
+      preparation: null
+      persistence: null
+      target_vulnerability: null
     score_summary:
       realized_harm_score: null
       structural_harm_score: null
       catastrophic_risk_score: null
+      harmful_intent_trajectory_score: null
     score_justification: []
   evidence: []
   evidence_effects:
@@ -181,7 +230,7 @@ harm_hierarchy_record:
     end: null
   scope: ""
   eligible_contribution_states: [CONFIRMED]
-  rating_tuple: [realized_harm_score, structural_harm_score, catastrophic_risk_score]
+  rating_tuple: [realized_harm_score, structural_harm_score, catastrophic_risk_score, harmful_intent_trajectory_score]
   entries: []
   shared_harm_deduplication_notes: []
   pending_and_path_forward_not_counted: []
@@ -203,6 +252,7 @@ rendition_record:
   supported_inferences: []
   trajectories: []
   documented_harms: []
+  accountability_findings: []
   evidence_effects: []
   legacy_counterevidence: []
   disputed_or_unsupported_claims: []
@@ -221,6 +271,11 @@ nonclaims:
   - benefit_is_not_causation
   - beneficial_action_does_not_offset_unrelated_harm
   - capability_is_not_intent
+  - intentional_action_or_term_setting_is_not_automatic_harmful_endpoint_intent
+  - lack_of_harmful_endpoint_intent_does_not_make_an_intentional_mechanism_accidental
+  - capacity_to_know_is_not_actual_knowledge
+  - foreseeability_is_not_desire
+  - deliberate_avoidance_requires_evidence
   - threat_assessment_is_not_enemy_designation
   - pending_is_not_debunked
   - searched_not_found_is_not_debunked
