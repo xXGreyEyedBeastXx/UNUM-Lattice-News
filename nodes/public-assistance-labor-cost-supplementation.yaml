@@ -5,19 +5,14 @@ family: analysis_framework
 subtype: resource_distribution_operator
 landing_status: landed
 lifecycle_status: active
-updated: 2026-08-16
+updated: 2026-08-21
 summary:
   text: >-
-    A reusable operator for tracing employment arrangements in which workers or their
-    households receive means-tested public benefits while employed. The operator keeps
-    distinct the legal recipient of the benefit, the employer's compensation package,
-    household eligibility conditions, the public cost, and any indirect employer benefit
-    created when public programs cover necessities that otherwise would require greater
-    private compensation or household resources.
+    A reusable operator for tracing employment arrangements in which workers or their households receive means-tested public benefits while employed. The operator keeps distinct the legal recipient of the benefit, the employer's intentionally set compensation package, household eligibility conditions, the public cost, any indirect employer benefit created when public programs cover necessities that otherwise would require greater private compensation or household resources, and the employer's knowledge, notice, correction capacity, persistence, and retained gain where accountability is being tested.
   posture: working_framework
 core_trace:
   - labor_performed
-  - employer_compensation
+  - employer_compensation_term_setting
   - household_income_and_eligibility
   - unmet_or_publicly_covered_need
   - public_program
@@ -25,6 +20,10 @@ core_trace:
   - public_cost
   - employer_cost_supplementation_candidate
   - ownership_or_margin_effect_candidate
+  - knowledge_and_notice_state
+  - capacity_to_change_compensation_or_benefits
+  - response_after_notice
+  - gain_or_cost_saving_retained_after_notice
   - correction_or_counterfactual
 required_fields:
   - employer
@@ -33,6 +32,7 @@ required_fields:
   - jurisdiction
   - household_eligibility_rule
   - wage_or_compensation_measure
+  - compensation_setting_authority_or_process_if_available
   - benefit_recipient
   - benefit_amount_or_enrollment_count
   - employer_health_or_other_benefits
@@ -42,6 +42,19 @@ required_fields:
   - public_cost
   - evidence
   - limitations
+accountability_fields_when_claimed:
+  - intentional_compensation_or_term_setting
+  - intended_gain_or_cost_reduction_if_evidenced
+  - harmful_endpoint_intent_if_evidenced
+  - capacity_to_know
+  - foreseeability
+  - credible_notice_events
+  - actual_knowledge_if_evidenced
+  - capacity_to_correct
+  - response_after_notice
+  - gain_or_cost_saving_retained_after_notice
+  - repair_or_mitigation
+  - repetition_or_escalation
 adversarial_tests:
   - Benefit receipt does not itself prove the employer caused eligibility.
   - Eligibility may depend on household size, other household income, work hours, disability, age, or program rules.
@@ -49,12 +62,19 @@ adversarial_tests:
   - A public benefit paid to a worker is not a direct cash payment to the employer.
   - An indirect employer subsidy claim requires a counterfactual or incidence argument showing that public provision reduces compensation pressure or employer-borne cost.
   - Employee benefit counts from selected states are not national employer totals unless a source establishes national coverage.
+  - The absence of evidence that an employer intended workers to qualify for public assistance does not make the employer's compensation policy accidental.
+  - Intentional compensation term-setting and intent to cause public-assistance eligibility are separate claims and require separate evidence.
+  - Repeated public evidence, audits, litigation, worker complaints, or internal warnings can change the employer knowledge state even when the underlying compensation mechanism is unchanged.
+  - Capacity to know is not actual knowledge; actual knowledge and deliberate avoidance require their own evidence.
 relations:
   - type: EXTENDS
     target: labor-market-power-and-wage-extraction
     posture: working_framework
   - type: EXTENDS
     target: money-flow-benefit-enforced-loss
+    posture: working_framework
+  - type: TESTED_THROUGH
+    target: harm-domination-protection-weighting
     posture: working_framework
 locks:
   - Worker benefit receipt != worker culpability.
@@ -63,3 +83,6 @@ locks:
   - Public cost and employer indirect benefit are separate quantities.
   - Do not count the same public benefit once as worker assistance and again in full as employer capture.
   - Count employer-side capture only to the extent a supported incidence or counterfactual analysis attributes value to the employer.
+  - Intentional compensation policy != proven intent to cause poverty, hunger, illness, or program eligibility.
+  - Lack of harmful-endpoint intent != lack of accountability for foreseeable or credibly noticed consequences.
+  - Continued conduct after credible notice, where the actor has meaningful capacity to correct, is a separate accountability fact and must remain visible.
