@@ -1,5 +1,6 @@
-version: 0.2
+version: 0.3
 status: working
+updated: 2026-08-21
 purpose: >-
   Machine-readable envelope for scoped trust and threat assessments.
   Assessment records are projections over evidence and must not be used as identity labels,
@@ -38,6 +39,21 @@ assessment_record:
     realized_result: null
     surviving_resistance: null
     notes: ""
+
+  accountability_state:
+    intentional_action_or_term_setting: unknown
+    intended_gain_cost_reduction_or_capacity_increase: unknown
+    harmful_endpoint_intent: unknown
+    knowledge_state: KNOWLEDGE_UNKNOWN
+    capacity_to_know: unknown
+    foreseeability: unknown
+    credible_notice_events: []
+    capacity_to_correct: unknown
+    response_after_notice: unknown
+    gain_or_insulation_after_notice: []
+    repair_or_mitigation: []
+    evidence: []
+    limitations: []
 
   laundering_claims:
     - type: "" # CAUSAL_PARTITION_LAUNDERING | TRUTH_CITATION_LAUNDERING | LEGALITY_LAUNDERING | VOLUNTARINESS_LAUNDERING | MORAL_LAUNDERING | ETHICAL_LAUNDERING | REPUTATION_LAUNDERING | PATRONAGE_RETURN_LAUNDERING | FINANCIAL_PROVENANCE_OBSCURATION | MONEY_LAUNDERING_LEGAL_CLAIM | LITERAL_LAUNDRY
@@ -99,6 +115,12 @@ assessment_record:
 locks:
   - "evidence updates only the edge or variable it actually bears on"
   - "constraint success does not erase an attempted objective"
+  - "intentional action or term-setting != harmful-endpoint intent"
+  - "capacity to know != actual knowledge"
+  - "foreseeability != desire"
+  - "credible notice != proof of secret motive"
+  - "deliberate avoidance requires evidence"
+  - "uncertainty about motive or knowledge does not erase independently supported mechanism, outcome, loss, gain, or beneficiary edges"
   - "trust != truth"
   - "trust != moral goodness"
   - "threat != enemy"
