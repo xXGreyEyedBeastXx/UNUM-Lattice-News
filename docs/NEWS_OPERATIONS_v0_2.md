@@ -1,10 +1,10 @@
 # UNUM-Lattice-News — News Operations v0.2
 
 **Status:** active working operations layer  
-**Updated:** 2026-08-18  
+**Updated:** 2026-08-21  
 **Purpose:** unify intake, investigation, evidence, power mapping, harm governance, review, correction, and publication under one traceable operating cycle.
 
-This file now incorporates `docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md` as a mandatory evidence-routing rule.
+This file incorporates `docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md` as a mandatory evidence-routing rule and `docs/HARMFUL_INTENT_AND_TRAJECTORY_MODEL_v0_1.md` for intent, knowledge, notice, and persistence where those questions are material.
 
 ## 1. Operating orientation
 
@@ -32,6 +32,7 @@ public-service accomplishment != offset for documented harm
 charity != credit against coercion
 positive reputation != reduced causal responsibility
 successful resistance != retroactive defense of the attempted objective
+absence of harmful motive != accidental conduct
 ```
 
 A harm audit may be one-sided in subject matter without becoming one-sided in evidence. Evidence that truly weakens, narrows, defeats, reroutes, or changes confidence in a scoped claim remains mandatory.
@@ -60,13 +61,13 @@ Resolve entities and relation types without guilt by association. Identify peopl
 Map what changes available agency: law, money, employment, force, surveillance, dependency, information access, health, housing, immigration status, contracts, market concentration, retaliation, secrecy, or protective regulation.
 
 ### TRANSFORM
-Record consequential operations: election, appointment, lobbying, donation, contract, investment, tariff, regulation, enforcement, detention, prosecution, pardon, merger, subsidy, strike, protest, publication, data transfer, or other state change.
+Record consequential operations: election, appointment, lobbying, donation, contract, investment, tariff, regulation, enforcement, detention, prosecution, pardon, merger, subsidy, strike, protest, publication, data transfer, intentional term-setting, pricing/wage/rent/access changes, or other state change.
 
 ### PROJECTION
 Separate what actors say the action means from what it materially does. Public framing, ideology, legal justification, media classification, and symbolic language are evidence surfaces, not automatic outcomes.
 
 ### COHERENCE
-Compare stated purpose, incentives, implementation, distribution of harm, distribution of gain/insulation, typed evidence effects, competing explanations, and observed outcomes. Coherence is not truth by itself.
+Compare stated purpose, incentives, implementation, distribution of harm, distribution of gain/insulation, knowledge/notice where material, typed evidence effects, competing explanations, and observed outcomes. Coherence is not truth by itself.
 
 ### RE-ENTRY
 Preserve correction, appeal, source challenge, restitution, policy reversal, democratic removal, rehabilitation, archive lineage, and the path by which a future reviewer can reconstruct or revise the conclusion.
@@ -76,13 +77,13 @@ Preserve correction, appeal, source challenge, restitution, policy reversal, dem
 ## 3. Three simultaneous maps
 
 ### Power Map
-Ask who can cause/prevent outcomes; allocate money/resources; define categories; control records; appoint/remove/investigate/prosecute/pardon/regulate/contract; impose costs on dissent; or repair harm.
+Ask who can cause/prevent outcomes; allocate money/resources; define categories; control records; appoint/remove/investigate/prosecute/pardon/regulate/contract; set wages, prices, rents, access conditions, or benefit rules; impose costs on dissent; or repair harm.
 
 ### Constraint / Agency Map
 Ask what pressures exist; what meaningful alternatives remain; what refusal, exit, appeal, or repair routes exist; and whether dependency converts nominal choice into structural coercion.
 
 ### Harm / Consequence / Beneficiary Map
-Trace direct/distributed harm, deprivation, rights loss, private profit, asset gain, institutional/political/coercive capacity, public-resource transfer, ecological effects, downside risk, and terminal/reseated beneficiaries.
+Trace direct/distributed harm, deprivation, rights loss, private profit, avoided cost, rent, margin, asset gain, institutional/political/coercive capacity, public-resource transfer, ecological effects, downside risk, and terminal/reseated beneficiaries.
 
 `beneficiary` means an evidenced recipient of gain in the scoped mechanism. It is not moral approval and does not establish causation by itself.
 
@@ -92,7 +93,7 @@ Trace direct/distributed harm, deprivation, rights loss, private profit, asset g
 
 Claim posture remains:
 
-`Observed | Stated | Supported inference | Potential | Possible | Probable/Likely | Alleged | Disputed | Unknown`
+`Observed | Stated | Adjudicated | Supported inference | Potential | Possible | Probable/Likely | Alleged | Disputed | Ambiguous | Unknown`
 
 Missingness remains:
 
@@ -159,7 +160,7 @@ A blocked attempt can limit realized harm and demonstrated capacity while still 
 For consequential interpretations maintain:
 
 1. **Harm / abuse / capture model** — strongest evidence-supported account of harmful mechanism.
-2. **Alternative / narrowing model** — strongest claim-specific account that changes attribution, mechanism, scope, necessity, motive, magnitude, chronology, relation, or reliability.
+2. **Alternative / narrowing model** — strongest claim-specific account that changes attribution, mechanism, scope, necessity, motive, magnitude, chronology, relation, knowledge, or reliability.
 3. **Discriminators** — observations that would materially change the scoped edge/model.
 
 Do not use a generalized `counterevidence` bucket for new work. Existing legacy records may retain it until migrated.
@@ -172,9 +173,79 @@ Where possible ask:
 
 ## 6. Accountability dimensions
 
-Evaluate choice, knowledge/foreseeability, power/authority, alternatives, repetition/persistence, causal contribution, severity, vulnerability, irreversibility, repair capacity, response after warning, accountability behavior, and institutional insulation.
+Evaluate choice, knowledge, capacity to know, foreseeability, power/authority, alternatives, repetition/persistence, causal contribution, severity, vulnerability, irreversibility, repair capacity, response after warning, gain or insulation retained after notice, accountability behavior, and institutional insulation.
 
 Pressure may explain participation without automatically erasing agency.
+
+### Intent partition
+
+Keep separate:
+
+```text
+intentional action or term-setting
+intended gain / cost reduction / capacity increase
+intent to produce the harmful endpoint
+actual outcome
+```
+
+An actor may intentionally set a wage, price, rent, fee, access condition, eligibility rule, staffing level, enforcement priority, or other consequential term without evidence that the actor desired every downstream deprivation.
+
+```text
+intentional term-setting != harmful-endpoint intent
+lack of harmful-endpoint intent != accidental mechanism
+profit or gain alone != extraction
+traced intentional transfer != accidental merely because motive is disputed
+```
+
+Where extraction or capture is alleged, trace the payer/loss-bearer, mechanism, immediate recipient, productive contribution/costs, counterfactual, surplus or avoided cost, and terminal/reseated beneficiary.
+
+### Power-conditioned knowledge
+
+Greater power does not prove guilt or actual knowledge. It can increase practical capacity to know, model, receive warning, change course, and repair.
+
+Use these investigative states where material and supported:
+
+```text
+KNOWLEDGE_UNKNOWN
+REASONABLY_UNAWARE
+SHOULD_HAVE_KNOWN
+CREDIBLE_NOTICE
+ACTUAL_KNOWLEDGE
+DELIBERATE_AVOIDANCE_SUPPORTED
+DISPUTED
+```
+
+`SHOULD_HAVE_KNOWN` requires a stated basis in foreseeability, available information, institutional capacity, duty, or repeated warning.
+
+`DELIBERATE_AVOIDANCE_SUPPORTED` requires evidence of intentional avoidance, suppression, compartmentalization, refusal, or insulation from relevant information. Failure to investigate by itself is not enough.
+
+These are investigative accountability states, not automatic legal findings of negligence, recklessness, willful blindness, or other mens rea categories.
+
+### Notice and persistence
+
+Record separately:
+
+```text
+initial intentional act / term / objective
+initial knowledge state
+foreseeability
+credible notice events
+capacity to investigate
+capacity to correct
+response after notice
+continuation / escalation / mitigation / reversal
+gain or insulation retained after notice
+repair or refusal to repair
+```
+
+The first occurrence and a repeated mechanism after credible notice are not epistemically identical.
+
+```text
+foreseeability != desire
+capacity_to_know != actual_knowledge
+credible_notice != proof of secret motive
+credible_notice + capacity_to_correct + persistence -> stronger accountability evidence
+```
 
 ---
 
@@ -258,6 +329,7 @@ source acquisition
 -> contradiction and source-lineage analysis
 -> affected-population and harm mapping
 -> evidence-jurisdiction routing
+-> intent / knowledge / notice / persistence analysis where material
 -> laundering tests
 -> confidence and missingness review
 -> portable investigative packet
@@ -300,6 +372,18 @@ relations:
 power_map: []
 constraint_agency_map: []
 harm_consequence_beneficiary_map: []
+accountability_state:
+  intentional_action_or_term_setting: unknown
+  intended_gain_cost_reduction_or_capacity_increase: unknown
+  harmful_endpoint_intent: unknown
+  knowledge_state: KNOWLEDGE_UNKNOWN
+  capacity_to_know: unknown
+  foreseeability: unknown
+  credible_notice_events: []
+  capacity_to_correct: unknown
+  response_after_notice: unknown
+  gain_or_insulation_after_notice: []
+  repair_or_mitigation: []
 competing_models:
   harm_model: []
   alternative_model: []
@@ -319,7 +403,7 @@ Empty fields are preferable to invented content.
 
 ## 12. Publication and automation boundary
 
-Automation may discover, normalize, cluster, compare, calculate, route, draft, and expose candidate relations. It may not independently publish accusations, convert candidate relations into guilt, erase uncertainty, use evidence outside its declared jurisdiction, expose protected identities, infer private facts from proximity, or convert threat classification into punitive authority.
+Automation may discover, normalize, cluster, compare, calculate, route, draft, and expose candidate relations. It may not independently publish accusations, convert candidate relations into guilt, convert capacity-to-know into actual knowledge, infer secret harmful motive from continued harm alone, erase uncertainty, use evidence outside its declared jurisdiction, expose protected identities, infer private facts from proximity, or convert threat classification into punitive authority.
 
 A deterministic structured packet should remain valid if connective prose is removed.
 
@@ -331,7 +415,7 @@ Apply the same evidentiary machinery across parties, movements, institutions, co
 
 Symmetry of method does not require symmetry of conclusion.
 
-Power receives priority scrutiny because powerful actors possess greater capacity to shape evidence, impose constraints, distribute harm, and prevent adjudication.
+Power receives priority scrutiny because powerful actors possess greater capacity to shape evidence, impose constraints, distribute harm, receive and investigate warning, correct mechanisms, and prevent adjudication.
 
 ---
 
@@ -348,6 +432,8 @@ Before promotion/publication, a fresh reviewer must be able to recover:
 - meaningful alternatives;
 - each evidence item's target/function jurisdiction;
 - direction/attempt/capacity/result/resistance without cross-subtraction;
+- intentional action/term-setting versus harmful-endpoint intent where material;
+- knowledge, capacity to know, notice, correction capacity, and persistence where material;
 - laundering claims as typed transformations rather than insults;
 - missingness;
 - evidence that would change the assessment;
@@ -357,4 +443,4 @@ If not, the investigation is not ready.
 
 ## Tiny lock
 
-> Follow power without worshipping it. Follow harm without manufacturing enemies. Evidence gets jurisdiction, not a team jersey. And if the laundry contains socks, that is finally allowed to be literal.
+> Follow power without worshipping it. Follow harm without sanding off the teeth that make it legible. Evidence gets jurisdiction, not a team jersey. And if the laundry contains socks, that is finally allowed to be literal.
