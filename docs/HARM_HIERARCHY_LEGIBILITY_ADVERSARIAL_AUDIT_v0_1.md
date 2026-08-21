@@ -1,6 +1,7 @@
 # Harm Hierarchy Legibility Adversarial Audit v0.1
 
-Status: active review / architecture refactor
+Status: active review / architecture refactor  
+Updated: 2026-08-21
 
 ## Purpose
 
@@ -37,7 +38,7 @@ FUNDER / ENABLER / PROTECTOR / NORMALIZER
 
 Follow the chain as far backward and outward as evidence permits.
 
-Do not stop at the last actor who physically implemented the harm when upstream authority, funding, procurement, policy, lobbying, command, legal protection, institutional obstruction, or political normalization is independently evidenced.
+Do not stop at the last actor who physically implemented the harm when upstream authority, funding, procurement, policy, lobbying, command, legal protection, institutional obstruction, political normalization, intentional term-setting, or cost externalization is independently evidenced.
 
 ## Negative-only audit rule
 
@@ -52,7 +53,7 @@ good policy elsewhere != discount on detention death
 charity != credit against coercion
 ```
 
-Counterevidence remains mandatory only when it materially bears on the claim being tested: attribution, scope, causation, chronology, magnitude, mechanism, identity, or evidentiary reliability.
+Counterevidence remains mandatory only when it materially bears on the claim being tested: attribution, scope, causation, chronology, magnitude, mechanism, identity, motive, knowledge, or evidentiary reliability.
 
 Do not pad a harm record with unrelated accomplishments for balance.
 
@@ -92,6 +93,7 @@ command chronology
 agency memo
 named witness or testimony
 corporate filing
+internal or public notice chronology
 historical comparison set
 ```
 
@@ -167,7 +169,7 @@ The statement is confirmed as a statement; the truth of the statement's content 
 
 The harm hierarchy exists for legibility, not to hide complexity inside one number.
 
-Every scored contribution therefore carries both a **harm vector** and sortable summary scores.
+Every scored contribution therefore carries a **harm vector**, sortable harm scores, and—where independently established—a separate harmful-intent / trajectory axis.
 
 ### Harm vector
 
@@ -179,9 +181,9 @@ confinement_coercion          detention, forced displacement, coercive instituti
 material_deprivation          food, healthcare, housing, income, benefits, property, essential services
 rights_agency_harm            bodily autonomy, speech, due process, voting, labor, family, identity, refusal, exit
 land_sovereignty_displacement land seizure, Indigenous sovereignty, sacred sites, forced migration, occupation
-Ecological_future_harm        pollution, habitat loss, climate/material degradation, future-generation burden
+ecological_future_harm        pollution, habitat loss, climate/material degradation, future-generation burden
 democratic_epistemic_harm     oversight destruction, retaliation, evidence control, politicized justice, censorship/propaganda mechanisms
-power_concentration           increased coercive, surveillance, military, police, executive, carceral, or monopoly capacity
+power_concentration           increased coercive, surveillance, military, police, executive, carceral, monopoly, or essential-system chokepoint capacity
 catastrophic_risk_imposition  nuclear, mass-casualty, systemic-war, ecological-collapse, or other extreme-tail risk imposed on civilians
 ```
 
@@ -213,27 +215,56 @@ R5 direct operational control
 
 R0 contributes no actor harm score by itself. Adjacency is a lead, not harm attribution.
 
-### Three scores, not one hidden scalar
+### Four public axes, not one hidden scalar
 
 Each confirmed contribution may expose:
 
 1. **Realized Harm Score (RHS)** — confirmed realized human/material/rights/land/ecological/democratic harm attributable to the actor.
 2. **Structural Harm Score (SHS)** — confirmed expansion of concentrated coercive or unaccountable power, even where the full downstream injury has not yet occurred.
 3. **Catastrophic Risk Score (CRS)** — supported extreme-tail risk imposed by the action; kept separate so forecast risk is not numerically confused with realized deaths.
+4. **Harmful Intent / Trajectory Score (HIS)** — confirmed evidenced harmful objective, attempted harmful action, preparation, persistence, or operational trajectory as defined in `docs/HARMFUL_INTENT_AND_TRAJECTORY_MODEL_v0_1.md`.
 
 The public harm rating is the tuple:
 
 ```text
-HR = [RHS, SHS, CRS]
+HR = [RHS, SHS, CRS, HIS]
 ```
 
-Do not collapse this tuple into a single moral essence.
+`HIS` does not convert rhetoric into realized harm. It preserves direction and attempted harmful action so a blocked attempt does not disappear from the actor's trajectory.
+
+Intentional action or term-setting that is not itself evidence of a harmful endpoint may still be recorded in the contribution's accountability state without automatically increasing `HIS`. Intent to capture value, reduce cost, or preserve capacity and intent to cause a downstream deprivation are separate claims.
+
+### Power-conditioned knowledge and persistence
+
+Where responsibility depends on what an actor knew or reasonably could know, preserve:
+
+```text
+knowledge state
+capacity to know
+foreseeability
+credible notice
+capacity to correct
+response after notice
+gain or insulation retained after notice
+repair or mitigation
+```
+
+Greater power does not prove knowledge or guilt. It may increase the actor's practical capacity to investigate, model, receive warning, correct, and repair.
+
+```text
+capacity to know != actual knowledge
+foreseeability != desire
+absence of harmful-endpoint intent != absence of accountability
+credible notice + capacity to correct + persistence = accountability evidence, not automatic proof of secret motive
+```
+
+See `docs/HARMFUL_INTENT_AND_TRAJECTORY_MODEL_v0_1.md` and `nodes/harm-domination-protection-weighting.yaml`.
 
 ### Contribution scoring
 
-For hierarchy purposes, only `CONFIRMED` contribution records may add to the confirmed harm totals.
+For hierarchy purposes, only `CONFIRMED` contribution records may add to the confirmed harm totals or confirmed intent/trajectory axis.
 
-`PENDING` and `PATH_FORWARD` may appear in an exposed-risk appendix but do not count as confirmed realized harm.
+`PENDING` and `PATH_FORWARD` may appear in an exposed-risk or accountability appendix but do not count as confirmed realized harm or confirmed intent.
 
 `DEBUNKED` claims contribute zero and retain their explanatory record.
 
@@ -328,12 +359,14 @@ Questions:
 2. What exactly was lost?
 3. What mechanism produced the loss?
 4. Who implemented it?
-5. Who authorized it?
+5. Who authorized it or intentionally set the consequential terms?
 6. Who funded or materially enabled it?
-7. Who protected the mechanism from accountability?
-8. Who profited or gained authority?
-9. What evidence establishes each edge?
-10. What claim remains pending, has a path forward, is confirmed, or is actually debunked?
+7. What did the relevant actors know, reasonably have capacity to know, or receive credible notice of?
+8. Who could correct or repair the mechanism, and what happened after notice?
+9. Who protected the mechanism from accountability?
+10. Who profited, avoided cost, or gained authority?
+11. What evidence establishes each edge?
+12. What claim remains pending, has a path forward, is confirmed, or is actually debunked?
 
 ## Symmetry rule
 
@@ -353,7 +386,7 @@ The stable object of concern is the harmed person, population, ecology, or democ
 
 A high harm rating means:
 
-> Within the declared time window and evidence set, the actor has a larger amount of confirmed attributable harm and/or structural/catastrophic risk according to the published rubric.
+> Within the declared time window and evidence set, the actor has a larger amount of confirmed attributable harm, structural/catastrophic risk, and/or evidenced harmful intent/trajectory according to the published rubric.
 
 It does **not** mean:
 - the actor is legally a criminal absent the required legal showing;
