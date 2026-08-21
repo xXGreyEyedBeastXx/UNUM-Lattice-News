@@ -1,12 +1,12 @@
 # Harm Mesh Operating Model v0.1
 
-Status: active working operations extension
-Updated: 2026-08-16
+Status: active working operations extension  
+Updated: 2026-08-21  
 Applies with: `docs/NEWS_OPERATIONS_v0_2.md`, `LATTICE_MODEL.md`, `MESH_MODEL.md`
 
 ## Purpose
 
-This document corrects a recurring investigative failure: treating precise legal, accounting, institutional, market, or naming distinctions as if they proved the underlying causal system was disconnected.
+This document corrects a recurring investigative failure: treating precise legal, accounting, institutional, market, naming, motive, or knowledge distinctions as if they proved the underlying causal system was disconnected.
 
 UNUM Lattice News stores evidence as recoverable records. The investigation itself must recover the **harm mesh**.
 
@@ -22,6 +22,28 @@ investigate the world
 Do not make prose the canonical home of a discovered mechanism.
 When a relation repeatedly matters, promote it into reusable structure.
 
+### Anti-smoothing rule
+
+Precision must expose the mechanism, not sand it down.
+
+A correct limitation on one edge must not leak into neighboring edges as generalized exculpation.
+
+```text
+motive unknown != conduct accidental
+harmful-endpoint intent not established != intentional term-setting not established
+capacity_to_know != actual_knowledge
+actual_knowledge unknown != consequence nonexistent
+benefit paid to worker != employer-incidence question closed
+lawful != harmless
+complex causal system != no accountable participants
+```
+
+When a qualifier is added, name exactly which claim it limits and continue traversing every other supported edge.
+
+The harm-first posture deliberately resists **causal smoothing**: the tendency to soften a visible mechanism because motive is disputed, the actor is complex, the conduct is legal, the harm is distributed, or responsibility is partitioned across many ledgers.
+
+---
+
 ## Required traversal
 
 For consequential investigations:
@@ -29,19 +51,21 @@ For consequential investigations:
 1. Enter at the available seat without treating it as the origin.
 2. Resolve names, aliases, legal entities, parents, subsidiaries, predecessors, successors, beneficial owners, funds, trusts, shared control, and other evidenced kinship.
 3. Expand materially relevant relations instead of following only the user's named examples.
-4. Trace money, labor, land, data, resources, public capacity, coercive capacity, and information through every transformation that matters to harm or gain.
+4. Trace money, labor, land, food, water, housing, healthcare, data, resources, public capacity, coercive capacity, and information through every transformation that matters to harm or gain.
 5. Separate carriers for attribution and anti-double-counting.
 6. Recompose compatible flows before closure.
-7. Trace terminal or reseated gain: private wealth, ownership, creditor return, executive equity, asset appreciation, state capacity, party capacity, surveillance, coercion, political insulation, or informational control.
-8. Test legitimizing narratives, legal labels, market labels, and official categories against the actual transformation.
-9. Test accusation reversals and downward scapegoating when powerful actors assign causal blame.
-10. Trace correction and redress: vote, court, union, appeal, oversight, press, regulation, protest, petition, boycott, strike, or other nonviolent return path.
-11. Record whether redress returns, stalls, is captured, or is destroyed.
-12. Preserve discriminators that would weaken or defeat the current interpretation.
+7. Trace terminal or reseated gain: private wealth, ownership, creditor return, executive equity, asset appreciation, avoided cost, state capacity, party capacity, surveillance, coercion, political insulation, or informational control.
+8. Where an actor sets consequential terms, separate intentional action/term-setting, intended gain or cost reduction, harmful-endpoint intent, actual outcome, and beneficiary.
+9. Where foreseeability or knowledge matters, trace capacity to know, credible notice, capacity to correct, response after notice, and gain or insulation retained after notice.
+10. Test legitimizing narratives, legal labels, market labels, and official categories against the actual transformation.
+11. Test accusation reversals and downward scapegoating when powerful actors assign causal blame.
+12. Trace correction and redress: vote, court, union, appeal, oversight, press, regulation, protest, petition, boycott, strike, or other nonviolent return path.
+13. Record whether redress returns, stalls, is captured, or is destroyed.
+14. Preserve discriminators that would weaken or defeat the current interpretation.
 
 ## False-disconnect audit
 
-Before writing `unrelated`, `independent`, `separate`, `private`, `foreign`, `market`, `voluntary`, `legal`, `beneficiary`, `contractor`, or `subsidiary` as if it ends a path, answer:
+Before writing `unrelated`, `independent`, `separate`, `private`, `foreign`, `market`, `voluntary`, `legal`, `beneficiary`, `contractor`, `subsidiary`, `unintentional`, or `unaware` as if it ends a path, answer:
 
 - What exactly changed at this boundary?
 - Did identity change or only name/form?
@@ -53,6 +77,9 @@ Before writing `unrelated`, `independent`, `separate`, `private`, `foreign`, `ma
 - Did one evidentiary lineage become many publications?
 - Did nominal consent occur under dependency, coercion, exclusion, monopoly, confinement, or lack of realistic exit?
 - Did law create the condition and then get cited as proof the condition is legitimate?
+- Did uncertainty about harmful motive get used to erase an intentionally chosen term or mechanism?
+- Did uncertainty about actual knowledge get used to erase capacity to know, public notice, or correction opportunity?
+- Did a visible legal beneficiary hide the next economic recipient or terminal return seat?
 
 ## Whole-mesh harm cycle
 
@@ -61,12 +88,15 @@ A mature study should test this family of crossings without presuming every edge
 ```text
 labor / public money / household money / land / resource / data / ecological capacity
 -> rule-setting / ownership / bargaining / pricing / coercive power
+-> intentional or structural term-setting
 -> wage suppression / price extraction / rent / denial / fee / confiscation / externalization
 -> deprivation / dependency / public supplementation / displaced risk
 -> surplus / rent / avoided cost / asset gain / state or organizational capacity
 -> executives / creditors / owners / controlling institutions / security apparatus
 -> concentrated economic and political capacity
 -> rule, price, wage, access, information, and enforcement influence
+-> notice / warning / correction opportunity where harm becomes legible
+-> continuation / escalation / mitigation / repair
 -> legitimizing narrative or scapegoat
 -> redress succeeds or fails
 -> cycle changes, repeats, or breaks
@@ -102,6 +132,7 @@ Priority promotion classes:
 - patronage-return laundering
 - administrative moral distance
 - power-capacity accumulation
+- power-conditioned knowledge / notice / persistence accountability
 - redress capture / correction failure
 
 ## Historical comparator discipline
@@ -130,4 +161,4 @@ The public value of the mesh is to make hidden causal paths legible early enough
 
 ## Tiny lock
 
-> Do not let the system's labels decide where causation ends. Follow the transformation until the path really ends, changes seat, or is defeated by evidence.
+> Do not let the system's labels decide where causation ends. Do not let uncertainty about motive make an intentional mechanism disappear. Follow the transformation until the path really ends, changes seat, or is defeated by evidence.
