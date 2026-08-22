@@ -1,15 +1,15 @@
 # Lattice Operating Model
 
-Updated: 2026-08-21
+Updated: 2026-08-22
 
 ## Purpose
 
 UNUM Lattice News organizes public evidence through distinct cooperating structures:
 
 ```text
-source -> story -> node -> relation -> rendition
-             \-> contribution ->/
-             \-----> spread <-----/
+source -> story -> state transition -> node -> relation -> rendition
+             \-> contribution -----------/
+             \----------> spread <-------/
              -> hashtags ->
 
 confirmed contribution
@@ -40,7 +40,7 @@ A source record should preserve:
 - limitations or conflicts;
 - rights or license information when known.
 
-A source may support several stories, nodes, relations, and contribution records.
+A source may support several stories, state transitions, nodes, relations, and contribution records.
 
 ## Story
 
@@ -50,7 +50,61 @@ It answers:
 
 > What happened, when, according to which evidence, and what changed?
 
-Stories should remain temporally bounded. They may propose updates to nodes, relations, and contributions, but they do not become the permanent identity of any participant.
+Stories should remain temporally bounded. They may propose updates to state transitions, nodes, relations, and contributions, but they do not become the permanent identity of any participant.
+
+## State transition
+
+A state transition is the typed intermediate crossing between a dated event/development and the durable records it may update.
+
+It answers:
+
+> Given the best recoverable prior state, what operation, event, pressure, observation, or correction occurred; what changed afterward; what remained continuous; and which clock belongs to each date?
+
+Use a transition when a free-form `what_changed` summary would collapse materially important distinctions such as:
+
+- event time versus publication or observation time;
+- newly discovered evidence versus a newly occurring event;
+- attempted change versus realized result;
+- resistance that blocks or narrows an attempt;
+- opposing pressures hidden by a small net change;
+- projection/rhetoric change versus material-state change;
+- legal, organizational, accounting, jurisdictional, or naming change with surviving causal continuity;
+- correction of the evidence state versus rewrite of the historical event.
+
+A transition should preserve:
+
+```text
+prior bounded state
+-> evidenced crossing
+-> later bounded state
+```
+
+and distinguish:
+
+```text
+changed
+continued
+unresolved
+```
+
+Keep separate clocks where material:
+
+```text
+event time
+publication time
+observation time
+access time
+state-as-of time
+correction time
+```
+
+A transition may propose node, relation, contribution, or claim updates. It does not automatically promote them.
+
+See:
+
+- `docs/NEWS_STATE_TRANSITION_MODEL_v0_1.md`;
+- `schemas/NEWS_STATE_TRANSITION_v0_1.yaml`;
+- `templates/STATE_TRANSITION.yaml`.
 
 ## Node
 
@@ -65,7 +119,7 @@ A node should contain only enough context to understand that subject locally:
 - identity and canonical family/subtype;
 - current bounded summary;
 - direct evidence-backed relationships;
-- timeline pointers;
+- timeline story and state-transition pointers;
 - contribution index where relevant;
 - harm-rating windows where relevant;
 - authority, vulnerability, or accountability state where relevant;
@@ -121,7 +175,7 @@ A contribution should preserve:
 - evidence effects, unknowns, and limitations;
 - path-forward objects where unresolved;
 - debunking record where a claim is affirmatively defeated;
-- related stories, relations, and nodes;
+- related stories, state transitions, relations, and nodes;
 - study/spread memberships;
 - correction history.
 
@@ -247,7 +301,7 @@ Examples:
 
 Hashtag co-occurrence does not establish coordination, guilt, causation, ownership, agreement, knowledge, intent, or identity.
 
-Hashtags provide high recall. Typed relations, claims, contributions, and accountability records provide higher-precision findings.
+Hashtags provide high recall. Typed relations, claims, contributions, state transitions, and accountability records provide higher-precision findings.
 
 Where a tag begins carrying case-specific evidentiary meaning, promote the underlying claim or relation instead of making the hashtag do evidentiary work.
 
@@ -275,13 +329,13 @@ Co-occurrence is not an edge.
 
 A spread is a reader-facing discovery/review surface assembled from underlying records for a bounded question, event complex, or time window.
 
-It may pull together sources, stories, nodes, relations, contribution records, harm assessments, accountability states, and renditions without becoming their permanent evidence container.
+It may pull together sources, stories, state transitions, nodes, relations, contribution records, harm assessments, accountability states, and renditions without becoming their permanent evidence container.
 
-The same contribution may therefore participate in multiple spreads without duplication.
+The same contribution or transition may therefore participate in multiple spreads without duplication.
 
 ## Rendition
 
-A rendition is a dated synthesis generated from a selected set of nodes, stories, hashtags, relations, contributions, and sources.
+A rendition is a dated synthesis generated from a selected set of nodes, stories, state transitions, hashtags, relations, contributions, and sources.
 
 It answers:
 
@@ -301,7 +355,7 @@ A rendition should separate:
 - protective options;
 - evidence that would change the assessment.
 
-A rendition is revisable. It does not rewrite the underlying sources, stories, nodes, relations, contribution records, or harm assessments.
+A rendition is revisable. It does not rewrite the underlying sources, stories, state transitions, nodes, relations, contribution records, or harm assessments.
 
 ## Self-population boundary
 
@@ -311,6 +365,7 @@ Automation and agents may:
 - extract candidate entities and hashtags;
 - suggest existing or new nodes;
 - propose relation types;
+- propose state transitions;
 - propose contribution records;
 - identify connected stories;
 - surface contradictions, stale claims, and missing evidence;
@@ -321,6 +376,8 @@ Automation and agents may not independently:
 
 - publish accusations about identifiable people or organizations;
 - convert hashtag co-occurrence into a relation;
+- convert a new publication into a new material event without evidence;
+- convert a projection delta into a material-state delta without evidence;
 - convert study membership into causal contribution;
 - convert contribution into culpability;
 - convert capacity to know into actual knowledge;
@@ -352,5 +409,9 @@ Searched-not-found != debunked.
 Threat assessment != enemy designation.
 Harm hierarchy != legal guilt.
 Rendition != canonical truth.
+New article != new event by default.
+New source != new world-state by default.
+Net zero != no opposing pressure.
+Projection delta != material delta by default.
 Correction strengthens the lattice.
 ```
