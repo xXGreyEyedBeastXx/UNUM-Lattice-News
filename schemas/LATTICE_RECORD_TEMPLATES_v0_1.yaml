@@ -1,6 +1,6 @@
-version: v0_3
+version: v0_4
 status: active_review
-updated: 2026-08-21
+updated: 2026-08-22
 
 # Evidence jurisdiction functions for all record types:
 evidence_effect_function:
@@ -56,6 +56,7 @@ source_record:
   rights_or_license: unknown
   supports:
     stories: []
+    state_transitions: []
     nodes: []
     relations: []
     contributions: []
@@ -72,6 +73,7 @@ story_record:
   claim_posture: observed | stated | adjudicated | supported_inference | potential | possible | probable | likely | alleged | disputed | ambiguous | unknown
   summary: ""
   what_changed: []
+  state_transition_refs: []
   nodes: []
   hashtags: []
   proposed_relations: []
@@ -82,6 +84,85 @@ story_record:
   unknowns: []
   sources: []
   corrections: []
+
+# A state transition is the typed intermediate crossing between a dated story/event
+# and any durable node/relation/contribution update. See:
+# - docs/NEWS_STATE_TRANSITION_MODEL_v0_1.md
+# - schemas/NEWS_STATE_TRANSITION_v0_1.yaml
+state_transition_record:
+  id: "YYYY-MM-DD-transition-slug"
+  title: ""
+  status: candidate | supported | disputed | corrected | superseded | archived
+  scope: ""
+  jurisdiction: []
+  prior_state_ref: null
+  later_state_ref: null
+  clocks:
+    event_time: null
+    publication_time: null
+    observation_time: null
+    access_time: null
+    correction_time: null
+    state_as_of_before: null
+    state_as_of_after: null
+  operation_or_event:
+    description: ""
+    story_refs: []
+    actor_or_mechanism_refs: []
+    claim_posture: unknown
+  changed:
+    - id: delta-1
+      field_or_relation: ""
+      before: null
+      after: null
+      delta_type: UNKNOWN_DELTA
+      evidence_effect_refs: []
+      confidence: low | moderate | high
+  continued:
+    - id: continuity-1
+      field_or_relation: ""
+      continuity: ""
+      evidence_effect_refs: []
+      confidence: low | moderate | high
+  unresolved:
+    - id: unresolved-1
+      question: ""
+      missingness: NOT_SEARCHED
+      why_it_matters: ""
+  opposing_pressures:
+    - pressure_id: pressure-1
+      source_actor_or_mechanism: null
+      direction: null
+      magnitude_or_strength: null
+      affected_seat: null
+      resistance_or_counterforce: null
+      evidence_effect_refs: []
+  evidence_effects:
+    - id: effect-1
+      evidence_ref: ""
+      target: delta-1
+      function: NON_RESPONSIVE
+      effect: ""
+  source_lineage: []
+  affected_participants_or_ecologies: []
+  proposed_updates:
+    nodes: []
+    relations: []
+    contributions: []
+    claims: []
+  evidence_state_change:
+    prior_claim_posture: null
+    later_claim_posture: null
+    prior_confidence: null
+    later_confidence: null
+    reason: null
+  corrections: []
+  evidence_that_would_change_assessment: []
+  re_entry:
+    next_searches: []
+    unresolved_crossings: []
+    review_path: ""
+  last_reviewed: "YYYY-MM-DD"
 
 node_record:
   id: node_slug
@@ -100,6 +181,7 @@ node_record:
   harm_rating_windows: []
   direct_relations: []
   timeline_stories: []
+  timeline_transitions: []
   current_disputes: []
   evidence_effects: []
   unknowns: []
@@ -221,6 +303,7 @@ contribution_record:
     residual_claims: []
   related_relations: []
   related_stories: []
+  related_state_transitions: []
   related_nodes: []
   corrections: []
   last_reviewed: "YYYY-MM-DD"
@@ -251,6 +334,7 @@ rendition_record:
     nodes: []
     hashtags: []
     contributions: []
+    state_transitions: []
     date_range: null
   established_facts: []
   stated_ambitions: []
@@ -288,3 +372,10 @@ nonclaims:
   - money_laundering_legal_claim_requires_legal_grounding
   - literal_laundry_is_not_an_investigative_laundering_inference
   - generated_rendition_is_not_published_fact_without_review
+  - new_article_is_not_necessarily_new_event
+  - new_source_is_not_necessarily_new_world_state
+  - changed_headline_is_not_necessarily_material_delta
+  - net_zero_is_not_no_opposing_pressure
+  - projection_delta_is_not_automatic_material_delta
+  - correction_of_claim_is_not_erasure_of_historical_event
+  - state_transition_record_does_not_automatically_promote_durable_records
