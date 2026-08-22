@@ -1,0 +1,167 @@
+version: v0_1
+status: active_review
+introduced: 2026-08-22
+purpose: >-
+  Preserve evidence-bounded state changes between dated story surfaces and durable
+  node, relation, contribution, spread, and rendition records without collapsing
+  event time, publication time, observation time, material change, projection change,
+  continuity, resistance, or uncertainty.
+
+transition_states:
+  - candidate
+  - supported
+  - disputed
+  - corrected
+  - superseded
+  - archived
+
+clock_fields:
+  event_time: null
+  publication_time: null
+  observation_time: null
+  access_time: null
+  correction_time: null
+  state_as_of_before: null
+  state_as_of_after: null
+
+claim_posture:
+  - observed
+  - stated
+  - adjudicated
+  - supported_inference
+  - potential
+  - possible
+  - probable
+  - likely
+  - alleged
+  - disputed
+  - ambiguous
+  - unknown
+
+missingness:
+  - NOT_SEARCHED
+  - SEARCHED_NOT_FOUND
+  - EXPECTED_BUT_MISSING
+  - INACCESSIBLE
+  - WITHHELD_OR_SEALED
+  - DESTROYED_OR_LOST
+  - CONTRADICTED
+  - AFFIRMATIVELY_DISPROVEN
+
+evidence_effect_function:
+  - CLAIM_DEFEATING
+  - SCOPE_LIMITING
+  - DIRECTION
+  - ATTEMPT
+  - CAPACITY
+  - REALIZED_OUTCOME
+  - CONSTRAINT_RESISTANCE
+  - MOTIVE_LIMITING
+  - RELATION_LIMITING
+  - ALTERNATIVE_SUPPORTING
+  - RELIABILITY_MODIFYING
+  - NON_RESPONSIVE
+
+delta_type:
+  - IDENTITY_DELTA
+  - RELATION_DELTA
+  - CONSTRAINT_DELTA
+  - AUTHORITY_DELTA
+  - MATERIAL_FLOW_DELTA
+  - POLICY_DELTA
+  - PRACTICE_DELTA
+  - INFORMATION_DELTA
+  - KNOWLEDGE_NOTICE_DELTA
+  - HARM_EXPOSURE_DELTA
+  - REALIZED_OUTCOME_DELTA
+  - RESISTANCE_DELTA
+  - ACCOUNTABILITY_DELTA
+  - CORRECTION_DELTA
+  - PROJECTION_DELTA
+  - NO_MATERIAL_DELTA_SUPPORTED
+  - UNKNOWN_DELTA
+
+state_transition_record:
+  id: "YYYY-MM-DD-transition-slug"
+  title: ""
+  status: candidate | supported | disputed | corrected | superseded | archived
+  scope: ""
+  jurisdiction: []
+  prior_state_ref: null
+  later_state_ref: null
+  clocks:
+    event_time: null
+    publication_time: null
+    observation_time: null
+    access_time: null
+    correction_time: null
+    state_as_of_before: null
+    state_as_of_after: null
+  operation_or_event:
+    description: ""
+    story_refs: []
+    actor_or_mechanism_refs: []
+    claim_posture: unknown
+  changed:
+    - field_or_relation: ""
+      before: null
+      after: null
+      delta_type: UNKNOWN_DELTA
+      evidence_effect_refs: []
+      confidence: low | moderate | high
+  continued:
+    - field_or_relation: ""
+      continuity: ""
+      evidence_effect_refs: []
+      confidence: low | moderate | high
+  unresolved:
+    - question: ""
+      missingness: NOT_SEARCHED
+      why_it_matters: ""
+  opposing_pressures:
+    - pressure_id: ""
+      source_actor_or_mechanism: null
+      direction: null
+      magnitude_or_strength: null
+      affected_seat: null
+      resistance_or_counterforce: null
+      evidence_effect_refs: []
+  evidence_effects:
+    - id: ""
+      evidence_ref: ""
+      target: "transition-delta-or-variable-id"
+      function: NON_RESPONSIVE
+      effect: ""
+  source_lineage: []
+  affected_participants_or_ecologies: []
+  proposed_updates:
+    nodes: []
+    relations: []
+    contributions: []
+    claims: []
+  evidence_state_change:
+    prior_claim_posture: null
+    later_claim_posture: null
+    prior_confidence: null
+    later_confidence: null
+    reason: null
+  corrections: []
+  evidence_that_would_change_assessment: []
+  re_entry:
+    next_searches: []
+    unresolved_crossings: []
+    review_path: ""
+  last_reviewed: "YYYY-MM-DD"
+
+locks:
+  - new_article_is_not_necessarily_new_event
+  - new_source_is_not_necessarily_new_world_state
+  - changed_headline_is_not_necessarily_material_delta
+  - net_zero_is_not_no_opposing_pressure
+  - successful_resistance_does_not_erase_attempt
+  - name_change_is_not_identity_change
+  - legal_separation_is_not_causal_separation
+  - projection_delta_is_not_automatic_material_delta
+  - correction_of_claim_is_not_erasure_of_historical_event
+  - evidence_updates_only_the_edge_delta_or_variable_it_bears_on
+  - transition_record_does_not_automatically_promote_node_relation_or_contribution
