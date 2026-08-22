@@ -1,0 +1,94 @@
+state_transition:
+  id: "YYYY-MM-DD-transition-slug"
+  title: ""
+  status: candidate
+  scope: ""
+  jurisdiction: []
+
+  prior_state_ref: null
+  later_state_ref: null
+
+  clocks:
+    event_time: null
+    publication_time: null
+    observation_time: null
+    access_time: null
+    correction_time: null
+    state_as_of_before: null
+    state_as_of_after: null
+
+  operation_or_event:
+    description: ""
+    story_refs: []
+    actor_or_mechanism_refs: []
+    claim_posture: unknown
+
+  changed:
+    - id: delta-1
+      field_or_relation: ""
+      before: null
+      after: null
+      delta_type: UNKNOWN_DELTA
+      evidence_effect_refs: []
+      confidence: low
+
+  continued:
+    - id: continuity-1
+      field_or_relation: ""
+      continuity: ""
+      evidence_effect_refs: []
+      confidence: low
+
+  unresolved:
+    - id: unresolved-1
+      question: ""
+      missingness: NOT_SEARCHED
+      why_it_matters: ""
+
+  opposing_pressures:
+    - pressure_id: pressure-1
+      source_actor_or_mechanism: null
+      direction: null
+      magnitude_or_strength: null
+      affected_seat: null
+      resistance_or_counterforce: null
+      evidence_effect_refs: []
+
+  evidence_effects:
+    - id: effect-1
+      evidence_ref: ""
+      target: delta-1
+      function: NON_RESPONSIVE
+      effect: ""
+
+  source_lineage: []
+  affected_participants_or_ecologies: []
+
+  proposed_updates:
+    nodes: []
+    relations: []
+    contributions: []
+    claims: []
+
+  evidence_state_change:
+    prior_claim_posture: null
+    later_claim_posture: null
+    prior_confidence: null
+    later_confidence: null
+    reason: null
+
+  corrections: []
+  evidence_that_would_change_assessment: []
+
+  re_entry:
+    next_searches: []
+    unresolved_crossings: []
+    review_path: ""
+
+  last_reviewed: "YYYY-MM-DD"
+
+# Active vocabulary and rules:
+# - docs/NEWS_STATE_TRANSITION_MODEL_v0_1.md
+# - schemas/NEWS_STATE_TRANSITION_v0_1.yaml
+# - docs/NEWS_OPERATIONS_v0_2.md
+# - MESH_MODEL.md
