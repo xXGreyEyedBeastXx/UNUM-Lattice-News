@@ -14,9 +14,11 @@ It is not a net-goodness biography and does not treat every action by the United
 
 Individual policies, orders, funding decisions, appointments, statements, clemency acts, wars, and other contributions should live in reusable contribution records and link back here.
 
-## Public accountability article
+## Public rendition status
 
-- `articles/2026-08-14_TRUMP_PUBLIC_RECORD_ACCOUNTABILITY_REPORT.md` — current public-facing synthesis of the Trump accountability record.
+No canonical `articles/` directory is currently retained on `main`. The former pointer to `articles/2026-08-14_TRUMP_PUBLIC_RECORD_ACCOUNTABILITY_REPORT.md` is retired as a stale publication reference.
+
+Do not reconstruct a missing article from memory or treat a historical rendition as the evidence container. Preserve and compile from the surviving causal/index surfaces below: sources, contributions, claims, state transitions, relations, investigation records, harm ledgers, and correction/provenance lineage.
 
 ## Master investigative indexes
 
@@ -167,6 +169,8 @@ Beneficial action elsewhere != offset for confirmed harm.
 Defensiveness != claim-defeating evidence.
 Denial != correction.
 Policy name != policy effect.
+Historical article != canonical evidence container.
+Missing rendition != missing causal web.
 High harm rating != legal finding of criminal guilt.
 Public accusation != adjudicated assault.
 Epstein association != participation in Epstein crimes.
