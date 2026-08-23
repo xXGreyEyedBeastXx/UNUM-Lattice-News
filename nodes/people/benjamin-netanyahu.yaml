@@ -6,7 +6,7 @@ actor_roles:
   - public_official
   - authority
 status: active
-updated: 2026-08-17
+updated: 2026-08-23
 summary:
   text: >-
     Prime Minister of Israel and high-authority political actor in the Gaza war, occupied-West-Bank settlement and
@@ -67,8 +67,15 @@ current_evidence:
     - Complete paired Hebrew/English corpus for 2023-2026 has not yet been compiled.
     - Full order-by-order responsibility chain for all documented civilian-targeting and territorial-control practices remains incomplete.
   missing_or_withheld: []
-  counterevidence:
-    - Some official English-language Netanyahu statements are themselves highly explicit about territorial-security doctrine; therefore English messaging is not uniformly sanitized.
+  evidence_effects:
+    - evidence_ref: source-netanyahu-audience-differentiated-framing-2015-2026
+      target: claim:netanyahu-english-messaging-uniformly-sanitized
+      function: CLAIM_DEFEATING
+      effect: >-
+        Some official English-language Netanyahu statements are themselves highly explicit about territorial-security
+        doctrine. This defeats the absolute claim that English messaging is uniformly sanitized. It does not offset,
+        mitigate or weaken separately evidenced policy, command, implementation, harm, territorial-control or
+        accountability claims.
 
 evidence_extensions:
   audience_divergence:
@@ -148,4 +155,6 @@ locks:
   - Audience divergence != proven deception unless motive is separately evidenced.
   - Material contradiction must not be downgraded to mere tonal difference.
   - Rhetoric != policy != order != implementation != effect.
+  - Official denial is a stated position, not claim-defeating evidence unless independently supported evidence gives it that function.
+  - Favorable or less-inflammatory rhetoric is NON_RESPONSIVE to unrelated harm, policy, command or implementation claims.
   - ICC warrant-stage reasonable-grounds finding != conviction.
