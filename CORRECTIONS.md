@@ -27,8 +27,33 @@ New or corrected evidence:
 What remains unresolved:
 ```
 
-## Challenges and counterevidence
+## Challenges and claim-specific contradictory evidence
 
-Good-faith challenges, contradictory primary evidence, and source-quality concerns should be evaluated on their merits regardless of whether they support or weaken an existing conclusion.
+Good-faith challenges, contradictory primary evidence, source-quality concerns, and other evidence that could weaken an existing conclusion must be evaluated on their merits regardless of whether they support or weaken the current assessment.
 
-The purpose of the record is not to win every argument. It is to become harder to fool, harder to capture, and easier to repair.
+Do not route them through a generic moral or reputational `counterevidence` bucket. For consequential work, identify the exact target and evidentiary function under the current evidence-jurisdiction grammar, such as:
+
+```text
+CLAIM_DEFEATING
+SCOPE_LIMITING
+MOTIVE_LIMITING
+RELATION_LIMITING
+ALTERNATIVE_SUPPORTING
+RELIABILITY_MODIFYING
+CONSTRAINT_RESISTANCE
+REALIZED_OUTCOME
+NON_RESPONSIVE
+```
+
+A denial is a stated position unless evidence gives it another function. Defensiveness is response behavior, not factual rebuttal by itself. A benevolent policy name is framing, not evidence that the operative mechanism was benevolent. A charitable act, beneficial program, favorable biography, institutional mission, or good outcome elsewhere is `NON_RESPONSIVE` to an unrelated harm claim.
+
+```text
+unrelated good conduct != claim-specific contradictory evidence
+protective rhetoric != proof of protective mechanism
+policy name != policy effect
+denial != correction
+defensiveness != exculpation
+successful resistance != erasure of attempted harm
+```
+
+The purpose of the record is not to win every argument or soften every conclusion. It is to become harder to fool, harder to capture, harder to launder, and easier to repair.
