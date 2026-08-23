@@ -4,7 +4,7 @@
 **Hierarchy class:** leader  
 **Status:** active  
 **Historical spine:** yes  
-**Last reviewed:** 2026-08-14
+**Last reviewed:** 2026-08-23
 
 ## Scope
 
@@ -47,6 +47,49 @@ foreign ally acted
 
 Do not collapse those seats.
 
+## Legacy counterevidence routing lock
+
+Several older linked Trump research packets predate the current evidence-jurisdiction grammar and use generic terms such as `counterevidence`, `favorable outcomes`, or `preserve beneficial outcomes`. Read those terms as historical schema language, not as instructions to build a net-morality biography or add reputational padding.
+
+For current work, every apparently favorable, exculpatory, contradictory, defensive, justificatory, or corrective fact must name the exact claim/edge it updates and use a typed evidence function where material:
+
+```text
+CLAIM_DEFEATING
+SCOPE_LIMITING
+MOTIVE_LIMITING
+RELATION_LIMITING
+ALTERNATIVE_SUPPORTING
+RELIABILITY_MODIFYING
+CONSTRAINT_RESISTANCE
+REALIZED_OUTCOME
+NON_RESPONSIVE
+```
+
+Examples:
+
+```text
+explicit condemnation of white supremacy
+-> CLAIM_DEFEATING for "Trump never condemned white supremacy"
+!= offset for separate amplification, policy, clemency, appointment, enforcement, or harm claims
+
+administration denial
+-> STATED_POSITION by default
+!= factual rebuttal unless supporting evidence bears on the disputed claim
+
+beneficial veterans policy, charity, economic outcome, or unrelated public-service action
+-> NON_RESPONSIVE to unrelated killing, detention, rights deprivation, concealment, obstruction, misdirection, or other scoped harm
+
+protective/security policy name
+-> framing / stated purpose
+!= proof of protective mechanism, necessity, proportionality, legality, or harmlessness
+
+successful court or institutional resistance
+-> CONSTRAINT_RESISTANCE / REALIZED_OUTCOME
+!= erasure of the attempted objective
+```
+
+The test is not whether a fact makes Trump or an associated institution look better. The test is whether it actually defeats, narrows, reroutes, or changes confidence in the scoped claim.
+
 ## Current contribution index
 
 ### Confirmed contribution records
@@ -79,7 +122,7 @@ Do not collapse those seats.
 - Trump/Epstein primary-record chronology;
 - sex-trafficking enforcement capacity versus immigration-enforcement resource allocation;
 - Ghislaine Maxwell interview/transfer authority and any White House involvement;
-- senior-selection sexual-misconduct/enabling allegation nodes with counterevidence;
+- senior-selection sexual-misconduct/enabling allegation nodes with claim-specific evidence effects;
 - sexual-autonomy/protection-asymmetry cross-lattice comparison without partisan presumption.
 
 ## Current high-value cross-lattice links
@@ -121,6 +164,9 @@ Leader != every subordinate action.
 Signature/order != every downstream mechanism.
 Dispute with ally != erasure of prior cooperation.
 Beneficial action elsewhere != offset for confirmed harm.
+Defensiveness != claim-defeating evidence.
+Denial != correction.
+Policy name != policy effect.
 High harm rating != legal finding of criminal guilt.
 Public accusation != adjudicated assault.
 Epstein association != participation in Epstein crimes.
