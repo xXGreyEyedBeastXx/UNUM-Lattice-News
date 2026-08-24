@@ -4,7 +4,7 @@
 **Hierarchy class:** leader  
 **Status:** active  
 **Historical spine:** yes  
-**Last reviewed:** 2026-08-23
+**Last reviewed:** 2026-08-24
 
 ## Scope
 
@@ -92,6 +92,73 @@ successful court or institutional resistance
 
 The test is not whether a fact makes Trump or an associated institution look better. The test is whether it actually defeats, narrows, reroutes, or changes confidence in the scoped claim.
 
+## Claim-strength and proper-inference discipline
+
+Trump-related claims should be as strong as the recovered evidence permits and no weaker merely because the warranted inference is socially or politically uncomfortable.
+
+Prefer converging evidence across distinct evidentiary jobs:
+
+```text
+facial / directly observable fact
++ independent corroboration where available
++ chronology
++ relationship / access / authority path
++ repeated conduct or trajectory
++ response after notice
++ survival or failure of plausible alternatives
+-> bounded supported inference
+```
+
+Citation count is not corroboration. Repeated reporting inherited from one source lineage remains one lineage until independently supported.
+
+Do not require a signed confession where role, access, direct notice, repeated warnings, documented relationships, available investigative capacity, continued conduct, or response after notice provide evidence relevant to knowledge or accountability.
+
+At the same time:
+
+```text
+capacity to know != actual knowledge
+association != coordination
+coordination != control
+harmful result != secret motive
+repeated pattern != automatic proof of every allegation
+```
+
+Where knowledge matters, preserve the strongest supported state rather than collapsing everything into `knew` versus `did not know`:
+
+```text
+access
+capacity to know
+credible notice
+repeated notice
+direct notice
+opportunity to investigate
+refusal / failure to investigate where evidenced
+control or restriction of relevant access where evidenced
+continued conduct after notice
+actual knowledge where independently supported
+```
+
+A gap in proof of private mental state must not erase documented notice, access, authority, persistence, or response after notice.
+
+## Adversarial-actor independence lock
+
+Opposition between two harmful, coercive, extremist, corrupt, or otherwise culpable actors does not create moral credit for either side and does not establish that the investigator supports either one.
+
+```text
+A opposes B
+!= A is good
+!= B is good
+!= everyone opposed to B supports A
+!= criticism of A implies support for B
+!= criticism of B implies support for A
+```
+
+The same rule applies to Trump and any opponent, ally, former ally, foreign government, lobbying organization, extremist network, political faction, media institution, or public figure.
+
+`enemy of my enemy` is not an evidence function.
+
+If two harmful actors oppose one another, preserve both harm traces independently and map the conflict relation only at the level actually evidenced.
+
 ## Current contribution index
 
 ### Confirmed contribution records
@@ -120,12 +187,16 @@ The test is not whether a fact makes Trump or an associated institution look bet
 - clemency networks beyond January 6;
 - political-enemy prosecution pressure;
 - historical contractor/nonpayment and adjudicated sexual-misconduct findings;
+- historical racial-discrimination / housing / business-conduct trajectory with settlement and attribution boundaries preserved;
+- extremist-constituency support, Trump notice/knowledge, response-after-notice, amplification, distancing, clemency, appointment, and coalition-use chronology;
 - person-by-person sexual-misconduct allegation table;
+- public remarks involving minors / sexualization chronology with primary-record extraction and exact claim typing;
 - Trump/Epstein primary-record chronology;
 - sex-trafficking enforcement capacity versus immigration-enforcement resource allocation;
 - Ghislaine Maxwell interview/transfer authority and any White House involvement;
 - senior-selection sexual-misconduct/enabling allegation nodes with claim-specific evidence effects;
-- sexual-autonomy/protection-asymmetry cross-lattice comparison without partisan presumption.
+- sexual-autonomy/protection-asymmetry cross-lattice comparison without partisan presumption;
+- historical vote choice versus current-support state for Trump-aligned constituencies and organizations, with current conduct superseding stale electoral inference where material.
 
 ## Current high-value cross-lattice links
 
@@ -165,6 +236,8 @@ Each hierarchy rating must specify the window and included confirmed contributio
 Leader != every subordinate action.
 Signature/order != every downstream mechanism.
 Dispute with ally != erasure of prior cooperation.
+Opponent of harmful actor != good actor by default.
+Enemy of my enemy != ally.
 Beneficial action elsewhere != offset for confirmed harm.
 Defensiveness != claim-defeating evidence.
 Denial != correction.
@@ -176,4 +249,7 @@ Public accusation != adjudicated assault.
 Epstein association != participation in Epstein crimes.
 Appointment despite allegation != proof of allegation or protection motive.
 Administration enforcement tradeoff != Trump personal intent unless decision path is established.
+Capacity to know != actual knowledge.
+Failure to prove private motive != erasure of notice, access, authority, persistence, or response after notice.
+Strong inference should be bounded by evidence, not weakened for politeness.
 ```
