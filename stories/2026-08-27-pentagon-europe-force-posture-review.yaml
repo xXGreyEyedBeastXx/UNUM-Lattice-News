@@ -1,0 +1,40 @@
+story_id: story-2026-08-27-pentagon-europe-force-posture-review
+title: "Pentagon Europe force-posture review gains reported timetable and criteria"
+event_date: 2026-08-27
+published: 2026-08-27
+status: reviewed
+investigation_state: CONFIRMED_REVIEW_PROCESS
+claim_posture: observed
+summary: >-
+  Reuters reports that the Pentagon's Europe force-posture review is actively generating multiple options under a
+  reported Terms of Reference, with at least four options due to the defense secretary by November 6. The review is a
+  realized process; no specific troop reduction is established as selected or implemented by this record.
+what_changed:
+  - evidence_state_now_contains_reported_internal_timetable_and_review_criteria
+  - option_generation_is_active
+  - actual_force_disposition_remains_unresolved
+nodes:
+  - U.S._Department_of_Defense
+  - Pete_Hegseth
+  - NATO
+  - U.S._forces_in_Europe
+evidence_effects:
+  - function: DIRECTION
+    target: Europe_force_posture_change_under_consideration
+  - function: ATTEMPT
+    target: option_generation_review_process
+  - function: CAPACITY
+    target: Pentagon_force_posture_decision_machinery
+  - function: NON_RESPONSIVE
+    target: claim_that_specific_troop_reduction_is_already_realized
+unknowns:
+  - September_decision_briefing
+  - November_options
+  - selected_policy
+  - actual_troop_basing_access_and_overflight_changes
+sources:
+  - UNUM-Lattice-News-Intake/claims/pentagon-europe-force-posture-review-2026-08-27.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_03.yaml
+corrections: []
+reporter_rule: >-
+  Option generation is not policy selection, and policy selection is not implementation. Preserve each clock separately.
