@@ -1,8 +1,8 @@
-schema: unum-lattice-news/anti-laundering-reasoning-regression-cases/v0.1
+schema: unum-lattice-news/anti-laundering-reasoning-regression-cases/v0.2
 status: ACTIVE_TEST_CORPUS
 purpose: >-
   Detect recurring reasoning failures where generic balancing, institutional prestige,
-  rhetorical labels, or visible resistance overwrite the actual claim seat or causal sequence.
+  rhetorical labels, repository seating, or visible resistance overwrite the actual claim seat or causal sequence.
 
 cases:
   - id: systemic_harm_benign_exception
@@ -48,6 +48,24 @@ cases:
       - review_underlying_conduct_and_evidentiary_predicate_separately
       - preserve_protected_advocacy_association_and_conduct_boundaries
     failure_class: LABEL_TO_FACT_LAUNDERING
+
+  - id: antifascism_repository_classifier_inheritance
+    proposition_seat: PRINCIPLE_AND_CLASSIFICATION
+    input_pattern: >-
+      Antifascist actors, protests, prosecutions, or government designations appear inside an extremism,
+      terrorism, political-violence, or security repository or evidence packet.
+    prohibited_response:
+      - infer_antifascism_is_extremism_from_repository_location
+      - infer_Antifa_is_terrorism_from_government_or_prosecutorial_label
+      - infer_formal_organization_from_umbrella_identity
+      - infer_initiating_aggression_from_antifascist_identity_or_resistance
+    expected:
+      - treat_repository_location_as_custody_not_classification
+      - record_official_Antifa_or_terrorism_labels_as_source_attributed_classifiers
+      - recognize_antifascism_at_principle_level_as_opposition_to_fascist_domination_and_compatible_with_democratic_defense
+      - classify_specific_actor_conduct_organization_and_legal_predicates_separately
+      - restore_prior_coercive_condition_before_assigning_aggressor_defender_roles
+    failure_class: CLASSIFIER_INHERITANCE_AND_AGGRESSOR_DEFENDER_INVERSION
 
   - id: resistance_visible_after_prior_coercion
     proposition_seat: CAUSAL_SEQUENCE
@@ -131,11 +149,12 @@ cases:
 acceptance_rule: >-
   A response passes only if qualifiers and alternative evidence remain at the proposition seat they actually update.
   Cross-seat material must be explicitly bridged or typed NON_RESPONSIVE. Fairness requires symmetric evidentiary standards,
-  not mandatory favorable counterweights.
+  not mandatory favorable counterweights. Repository placement is never itself an evidentiary classifier.
 
 references:
   - docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md
   - docs/REGIME_CONTEXT_AND_CAUSAL_ROLE_GATE_v0_1.md
+  - docs/ANTIFASCISM_CLASSIFIER_AND_DEMOCRATIC_ALIGNMENT_LOCK_v0_1.md
   - agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md
   - docs/TRUMP_SELF_DESCRIPTION_BACKEND_VERIFICATION_LOCK_v0_1.md
   - schemas/AGGRESSION_DEFENSE_RESISTANCE_PASSPORT_v0_1.yaml
