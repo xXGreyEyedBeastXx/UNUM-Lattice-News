@@ -1,0 +1,150 @@
+schema: unum-lattice-news/backlog-claim-promotions/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTIONS
+as_of: 2026-08-27
+purpose: >-
+  Promote exact earned claims from five already claim-tested Intake packets without waiting for every neighboring
+  discriminator, harm total, motive question, or legal classification to close. Intake retains source custody and
+  unresolved-edge review.
+
+promotion_rule:
+  - promote_claim_by_claim_not_story_perfection
+  - unresolved_neighbor_does_not_block_earned_edge
+  - specialist_routes_do_not_create_corroboration
+  - source_custody_stays_with_Intake
+  - corrections_and_demotion_remain_live
+
+records:
+  - id: durable-trump-gaza-permanent-displacement-direction-2025
+    intake_return_path: UNUM-Lattice-News-Intake/claims/TRUMP_GAZA_PERMANENT_DISPLACEMENT_DIRECTION_2025.yaml
+    investigation_state: CONFIRMED_AT_DIRECTION_EDGE
+    scope: Donald Trump public Gaza population-removal/control proposals, 2025-01-25 through 2025-05-15
+    promoted_claims:
+      - proposition: Trump publicly advocated relocation/removal of Palestinians from Gaza to other countries.
+        posture: CONFIRMED
+        effects: [DIRECTION]
+      - proposition: Trump developed the proposal as permanent displacement rather than only temporary evacuation.
+        posture: CONFIRMED
+        effects: [DIRECTION]
+      - proposition: Trump paired Palestinian removal with proposed U.S. ownership/control and redevelopment of Gaza.
+        posture: CONFIRMED
+        effects: [DIRECTION, CAPACITY]
+      - proposition: Permanent population removal is the factual causal content under review even where legal or moral labels remain separately adjudicated.
+        posture: SUPPORTED_CLASSIFICATION_BOUNDARY
+        effects: [SCOPE_LIMITING]
+    not_promoted:
+      - full_operational_implementation_of_displacement_plan
+      - realized_displacement_causally_attributed_to_this_plan_without_intervening_edges
+    resistance_preserved:
+      - Palestinian_rejection
+      - Egyptian_rejection
+      - Jordanian_rejection
+      - broader_Arab_state_and_international_opposition
+
+  - id: durable-trump-mass-deportation-trajectory-2024-2026
+    intake_return_path: UNUM-Lattice-News-Intake/claims/TRUMP_MASS_DEPORTATION_DIRECTION_AND_IMPLEMENTATION_2024_2026.yaml
+    investigation_state: CONFIRMED_DIRECTION_SUPPORTED_IMPLEMENTATION
+    scope: advertised mass-removal objective and second-term implementation machinery
+    promoted_claims:
+      - proposition: Trump explicitly campaigned on conducting the largest deportation operation in U.S. history.
+        posture: CONFIRMED
+        effects: [DIRECTION]
+      - proposition: The second-term administration built and used machinery to increase arrests removals detention and self-deportation pressure in pursuit of that objective.
+        posture: SUPPORTED
+        effects: [ATTEMPT, CAPACITY, REALIZED_OUTCOME]
+      - proposition: Current enforcement cannot be accurately framed only as removal of people convicted of crimes.
+        posture: SUPPORTED
+        effects: [SCOPE_LIMITING, REALIZED_OUTCOME]
+      - proposition: Restrictions/status-removal pressure expanded beyond unauthorized border crossing into legal-entry and asylum-related populations.
+        posture: SUPPORTED
+        effects: [DIRECTION, ATTEMPT, REALIZED_OUTCOME]
+    not_promoted:
+      - every_arrest_or_deportation_is_unlawful
+      - universal_ethnic_or_political_motive
+      - final_full_advertised_endpoint_realized
+    unresolved:
+      - reconcile_primary_DHS_ICE_totals
+      - detention_and_removal_outcomes_by_status
+      - family_medical_economic_and_due_process_harm_counts
+      - discriminatory_selection_model
+
+  - id: durable-ice-july-2026-arrest-scale-transition
+    intake_return_path: UNUM-Lattice-News-Intake/claims/ice-july-2026-arrest-surge.yaml
+    investigation_state: CONFIRMED_AS_REPORTED_PENDING_RAW_DATA_RECOVERY
+    scope: July 2026 ICE arrest scale, distribution, and tactic change as reported by AP
+    promoted_claims:
+      - proposition: AP reported nearly 50,000 ICE arrests in July 2026, the highest monthly total of Trump's second term to that point.
+        posture: REPORTED_DATA_ANALYSIS
+        effects: [REALIZED_OUTCOME, DIRECTION]
+      - proposition: AP reported July arrests increased from June and February levels.
+        posture: REPORTED_DATA_ANALYSIS
+        effects: [DIRECTION, REALIZED_OUTCOME]
+      - proposition: AP reported more than half of people in the cited July data had neither a criminal conviction nor a pending criminal charge.
+        posture: SUPPORTED_AS_REPORTED_PENDING_RAW_DATA_RECOVERY
+        effects: [SCOPE_LIMITING, CLAIM_DEFEATING]
+      - proposition: AP reported a tactical shift toward traffic-stop/community arrests alongside expanded state/local cooperation.
+        posture: REPORTED_PRACTICE
+        effects: [CAPACITY]
+    not_promoted:
+      - dangerousness_generalization
+      - individualized_harm_from_arrest_scale_alone
+    unresolved:
+      - raw_ICE_tables
+      - Deportation_Data_Project_methodology
+      - detention_release_bond_deportation_and_court_outcomes
+
+  - id: durable-us-counterterrorism-designation-and-framing-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/us-counterterrorism-far-left-palestine-action-2026-08.yaml
+    investigation_state: CONFIRMED_ACTION_UNDERLYING_CLASSIFIERS_PARTIAL
+    scope: August 2026 U.S. EO 13224 designation action and surrounding political framing
+    promoted_claims:
+      - proposition: Treasury used EO 13224 counterterrorism sanctions authority against named entities/people including Palestine Action and others in the August 26 action.
+        posture: OBSERVED
+        effects: [REALIZED_OUTCOME, CAPACITY]
+      - proposition: The designations create material economic/association constraints through blocking and sanctions mechanisms.
+        posture: SUPPORTED_INFERENCE
+        effects: [CAPACITY, REALIZED_OUTCOME]
+      - proposition: Treasury's terrorism attribution is established as a government statement, not automatically as an independent Lattice classification.
+        posture: STATED_POSITION
+        effects: [DIRECTION, SCOPE_LIMITING]
+      - proposition: Administration messaging places the action inside a broader far-left-terrorism frame.
+        posture: OBSERVED_PROJECTION
+        effects: [DIRECTION]
+      - proposition: Anti-fascism, Palestine advocacy, protest, or left-wing politics as classes are not established terrorist/extremist categories by this designation action.
+        posture: NOT_SUPPORTED_GENERALIZATION
+        effects: [CLAIM_DEFEATING, SCOPE_LIMITING]
+    unresolved:
+      - underlying_conduct_predicate_for_each_named_target
+      - protected_activity_boundary
+      - downstream_freezes_refusals_and_enforcement
+      - viewpoint_symmetry_across_ideologically_different_violent_networks
+
+  - id: durable-west-bank-settler-violence-accountability-field-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/west-bank-settler-violence-us-accountability-2026-08.yaml
+    investigation_state: CONFIRMED_FIELD_AND_ACCOUNTABILITY_PRESSURE_STATE_COMPLICITY_OPEN
+    scope: continuing West Bank settler-violence/harm environment, state response, and U.S. accountability pressure
+    promoted_claims:
+      - proposition: Forty-five U.S. Senate Democrats urged the Israeli government to curb West Bank violence and investigate deaths of U.S. citizens.
+        posture: OBSERVED
+        effects: [CONSTRAINT_RESISTANCE]
+      - proposition: UN humanitarian reporting documents continuing settler attacks, displacement, demolitions, movement restrictions, arrests, and civilian exposure, with incident-level variation preserved.
+        posture: OBSERVED_AND_REPORTED
+        effects: [REALIZED_OUTCOME]
+      - proposition: Israeli officials have condemned settler violence.
+        posture: STATED_POSITION
+        effects: [MOTIVE_LIMITING]
+      - proposition: Official condemnation does not by itself defeat separate claims about protection failure, tolerated violence, differential enforcement, failed investigation, settlement policy, or impunity.
+        posture: EVIDENCE_JURISDICTION_LOCK
+        effects: [NON_RESPONSIVE, SCOPE_LIMITING]
+    not_promoted:
+      - every_settler_attack_is_directly_ordered_by_Israeli_state
+    unresolved:
+      - arrests_prosecutions_intervention_rates_and_response_times
+      - enforcement_asymmetry
+      - incident_level_coordination_or_material_support
+
+return_and_route_state:
+  canonical_return_ledger: UNUM-Lattice-News-Intake/routing/SPECIALIST_RETURN_LEDGER_2026-08-27.yaml
+  routes_remain_analytical_not_corroborative: true
+  exact_harm_promotion_requires_Proven_Harm_gate: true
+
+last_reviewed: 2026-08-27
