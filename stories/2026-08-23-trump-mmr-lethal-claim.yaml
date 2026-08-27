@@ -1,0 +1,45 @@
+story_id: story-2026-08-23-trump-mmr-lethal-claim
+title: "Trump describes combined MMR vaccination as potentially lethal; CMS chief rejects claim"
+event_date: 2026-08-23
+published: 2026-08-23
+status: reviewed
+investigation_state: CONFIRMED_AT_STATEMENT_AND_RELIABILITY_EDGE
+claim_posture: observed
+summary: >-
+  Trump publicly described combined MMR vaccination as potentially lethal. CMS Administrator Mehmet Oz explicitly
+  rejected that characterization, and the reviewed evidence base does not support Trump's vaccine-safety claim.
+  Exact federal policy implementation and downstream measles outcomes remain separate questions.
+what_changed:
+  - presidential_MMR_safety_statement_receives_negative_topic_specific_reliability_update
+  - reported_policy_direction_toward_separating_MMR_components_requires_primary_record_followup
+nodes:
+  - Donald Trump
+  - Mehmet Oz
+  - Centers_for_Medicare_and_Medicaid_Services
+  - MMR_vaccine
+affected_participants_or_ecologies:
+  - children_and_families_making_vaccination_decisions
+  - public_health_systems
+  - clinicians_and_vaccine_programs
+evidence_effects:
+  - function: RELIABILITY_MODIFYING
+    target: Trump_as_source_on_MMR_safety
+  - function: CLAIM_DEFEATING
+    target: claim_that_combined_MMR_is_a_lethal_vaccine
+  - function: DIRECTION
+    target: reported_federal_pressure_toward_separated_components
+  - function: NON_RESPONSIVE
+    target: specific_measles_case_causation_without_additional_evidence
+unknowns:
+  - exact_executive_or_agency_directives
+  - CDC_and_FDA_guidance
+  - combined_and_separated_component_availability_cost_and_access
+  - vaccination_rate_changes
+  - specific_causal_relation_to_infection_hospitalization_or_death
+sources:
+  - UNUM-Lattice-News-Intake/claims/trump-mmr-lethal-claim-2026-08.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_02.yaml
+corrections: []
+reporter_rule: >-
+  Correct the vaccine-safety claim at its evidentiary seat; do not infer a specific disease outcome from the statement
+  or policy direction without a demonstrated causal path.
