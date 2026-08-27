@@ -1,0 +1,41 @@
+story_id: story-2026-08-22-global-ocean-sst-record
+title: "Copernicus records new daily extra-polar global-ocean SST maximum"
+event_date: 2026-08-22
+published: 2026-08-24
+status: reviewed
+investigation_state: CONFIRMED
+claim_posture: observed
+summary: >-
+  Copernicus reports that daily average sea-surface temperature across the extra-polar global ocean reached 21.1 C
+  on August 22, 2026, exceeding the prior ERA5 daily record. The global measurement is a material climate-state signal;
+  specific local ecosystem and human harms require local evidence.
+what_changed:
+  - new_ERA5_daily_extra_polar_global_ocean_SST_record
+  - stronger_evidence_of_exceptional_global_ocean_heat_in_the_measured_period
+nodes:
+  - Copernicus_Climate_Change_Service
+  - global_ocean
+  - El_Nino
+affected_participants_or_ecologies:
+  - marine_ecosystems
+  - coastal_communities
+  - fisheries_and_food_systems_as_risk_pathways_not_incident_proof
+evidence_effects:
+  - function: REALIZED_OUTCOME
+    target: measured_SST_record
+  - function: DIRECTION
+    target: exceptional_ocean_warming_trajectory
+  - function: SCOPE_LIMITING
+    target: local_harm_generalization
+unknowns:
+  - subsequent_daily_and_monthly_records
+  - regional_marine_heatwave_distribution
+  - place_specific_ecosystem_impacts
+  - place_specific_humanitarian_and_livelihood_impacts
+sources:
+  - UNUM-Lattice-News-Intake/claims/global-ocean-sst-record-2026-08-22.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_03.yaml
+corrections: []
+reporter_rule: >-
+  Global measurement establishes the measured global state, not every local consequence. Route local impacts through
+  place-, time-, and mechanism-specific evidence.
