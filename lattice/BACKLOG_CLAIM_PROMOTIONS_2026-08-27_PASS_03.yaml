@@ -1,0 +1,79 @@
+schema: unum-lattice-news/backlog-claim-promotions/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTIONS
+as_of: 2026-08-27
+purpose: >-
+  Promote low-friction measurement, review-process, and rulemaking edges that were already source-reviewed,
+  while keeping future decisions and downstream consequences separate.
+
+records:
+  - id: durable-global-ocean-sst-record-2026-08-22
+    intake_return_path: UNUM-Lattice-News-Intake/claims/global-ocean-sst-record-2026-08-22.yaml
+    investigation_state: CONFIRMED_MEASUREMENT_LOCAL_EFFECTS_OPEN
+    promoted_claims:
+      - proposition: Copernicus reports extra-polar global-ocean daily average SST reached 21.1 C on August 22, 2026, exceeding the prior ERA5 daily record of 21.09 C from March 2024.
+        posture: OBSERVED_DATASET_RECORD
+        effects: [REALIZED_OUTCOME]
+      - proposition: The ERA5 comparison used for this record extends back to 1979.
+        posture: DATASET_SCOPE
+        effects: [SCOPE_LIMITING]
+      - proposition: Copernicus attributes the extreme warmth to developing strong El Nino conditions acting on long-term human-driven ocean warming.
+        posture: SOURCE_SUPPORTED_ATTRIBUTION
+        effects: [DIRECTION]
+    not_promoted:
+      - any_specific_fishery_storm_health_displacement_or_local_ecosystem_harm_from_global_average_alone
+    open_edges:
+      - regional_marine_heatwaves
+      - fisheries_and_coral_effects
+      - coastal_and_livelihood_effects
+
+  - id: durable-pentagon-europe-force-posture-review-2026-08-27
+    intake_return_path: UNUM-Lattice-News-Intake/claims/pentagon-europe-force-posture-review-2026-08-27.yaml
+    investigation_state: CONFIRMED_REVIEW_PROCESS_FINAL_DECISION_OPEN
+    promoted_claims:
+      - proposition: Reuters reports an active Pentagon Europe force-posture review producing multiple options.
+        posture: REPORTED_REVIEW_PROCESS
+        effects: [DIRECTION, ATTEMPT, CAPACITY]
+      - proposition: A reported Terms of Reference calls for at least four options for the defense secretary by November 6, 2026.
+        posture: REPORTED_DOCUMENT
+        effects: [DIRECTION]
+      - proposition: Reported criteria include access, basing and overflight arrangements, allied defense commitments, and cyber, space, and intelligence infrastructure.
+        posture: REPORTED_DOCUMENT
+        effects: [DIRECTION, CAPACITY]
+    not_promoted:
+      - specific_Europe_troop_reduction_already_ordered_or_implemented
+    open_edges:
+      - September_decision_briefing
+      - November_options
+      - selected_policy
+      - actual_troop_basing_or_access_changes
+
+  - id: durable-eeoc-federal-sector-complaint-proposal-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/eeoc-federal-sector-complaint-rule-2026-08.yaml
+    investigation_state: CONFIRMED_PROPOSAL_REALIZED_EFFECTS_OPEN
+    promoted_claims:
+      - proposition: The EEOC advanced a proposed rewrite of federal-sector EEO complaint procedures under 29 CFR Part 1614.
+        posture: OBSERVED_PROPOSAL
+        effects: [DIRECTION, ATTEMPT]
+      - proposition: The proposal would change counseling, administrative-judge hearing access, referral, class-complaint adjudication, and other procedures.
+        posture: PRIMARY_TEXT_SUMMARY
+        effects: [DIRECTION, CAPACITY]
+      - proposition: The agency frames the changes as streamlining a slow system.
+        posture: STATED_JUSTIFICATION
+        effects: [ALTERNATIVE_SUPPORTING]
+      - proposition: Opponents argue the proposal may reduce independent administrative access and shift burden toward federal workers.
+        posture: STATED_EXPECTED_EFFECT
+        effects: [DIRECTION]
+    not_promoted:
+      - realized_change_to_worker_success_delay_abandonment_discrimination_or_litigation_rates
+      - final_bad_policy_verdict_before_implementation_evidence
+    open_edges:
+      - Federal_Register_and_comment_record
+      - final_rule
+      - litigation
+      - complaint_processing_and_outcome_metrics
+      - represented_vs_self_represented_effects
+      - class_claim_handling
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+last_reviewed: 2026-08-27
