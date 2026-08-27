@@ -1,0 +1,43 @@
+story_id: story-2026-08-25-flock-surveillance-misuse-pattern
+title: "Reporting documents repeated law-enforcement misuse allegations involving Flock surveillance access"
+event_date: 2026-08-25
+published: 2026-08-25
+status: reviewed
+investigation_state: PATH_FORWARD
+claim_posture: observed
+summary: >-
+  Public-record-based reporting documents multiple cases in which law-enforcement personnel were charged with or
+  accused of using Flock or related surveillance systems for personal tracking. A Katy case includes reported felony
+  stalking and misuse-of-official-information charges. Allegation, charge, internal finding, and adjudication remain separate.
+what_changed:
+  - surveillance_access_abuse_is_documented_as_a_repeated_risk_pattern_not_only_a_hypothetical_capability
+  - access_logging_audit_and_remedy_controls_become_material_accountability_questions
+nodes:
+  - Flock Safety
+  - law_enforcement_surveillance_systems
+  - Katy_police_case
+affected_participants_or_ecologies:
+  - people_subject_to_personal_tracking_or_stalking
+  - communities_subject_to_license_plate_and_related_surveillance
+  - law_enforcement_agencies
+  - surveillance_vendors
+evidence_effects:
+  - function: CAPACITY
+    target: privileged_database_access_misuse
+  - function: REALIZED_OUTCOME
+    target: reported_case_level_tracking_and_charge_state
+  - function: SCOPE_LIMITING
+    target: universal_claim_that_all_Flock_use_is_abusive_or_unlawful
+unknowns:
+  - case_dispositions
+  - prevalence_rate_across_all_users
+  - vendor_and_department_knowledge
+  - access_log_alerting_and_audit_effectiveness
+  - victim_notification_and_remedy
+sources:
+  - UNUM-Lattice-News-Intake/claims/flock-law-enforcement-surveillance-abuse-2026.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_02.yaml
+corrections: []
+reporter_rule: >-
+  Do not convert charges or accusations into adjudicated guilt. Do treat repeated misuse evidence as relevant to the
+  design and governance of privileged surveillance access.
