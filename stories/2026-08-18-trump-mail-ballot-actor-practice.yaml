@@ -1,0 +1,35 @@
+story_id: story-2026-08-18-trump-mail-ballot-actor-practice
+title: "Trump uses mail ballot while continuing broad attacks on mail voting"
+event_date: 2026-08-18
+published: 2026-08-18
+status: reviewed
+investigation_state: CONFIRMED
+claim_posture: observed
+summary: >-
+  Reuters reported that Donald Trump used a mail-in ballot in Florida's Republican primary while maintaining a broader
+  public record of attacking mail voting. The actor-practice contradiction updates the reliability and scope of blanket
+  method-level condemnation; it does not answer the legality of every mail-voting rule or prove absence of fraud in every case.
+what_changed:
+  - actor_practice_now_directly_conflicts_with_blanket_method_level_illegitimacy_rhetoric
+nodes:
+  - Donald Trump
+  - mail_voting
+evidence_effects:
+  - function: RELIABILITY_MODIFYING
+    target: blanket_method_level_illegitimacy_claim
+  - function: SCOPE_LIMITING
+    target: blanket_method_level_illegitimacy_claim
+  - function: NON_RESPONSIVE
+    target: specific_USPS_rule_legality_without_rule_level_evidence
+  - function: NON_RESPONSIVE
+    target: specific_incident_of_mail_ballot_fraud_without_incident_evidence
+unknowns:
+  - exact_relation_between_rhetoric_and_specific_2026_mail_rule_actions
+  - whether_policy_design_uses_the_same_method_level_claim_or_narrower_administrative_grounds
+sources:
+  - UNUM-Lattice-News-Intake/sources/reuters/items/2026/trump-voted-by-mail-florida-primary-2026-08-18/RECORD.yaml
+  - UNUM-Lattice-News/research/notes/TRUMP_MAIL_VOTING_ACTOR_PRACTICE_CONTRADICTION_2026-08-27.md
+corrections: []
+reporter_rule: >-
+  Treat personal lawful use as evidence against blanket claims that the method itself is inherently illegitimate;
+  do not treat hypocrisy or inconsistency as a substitute for rule-level legal or fraud analysis.
