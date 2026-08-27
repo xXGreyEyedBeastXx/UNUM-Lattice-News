@@ -1,0 +1,84 @@
+schema: unum-lattice-news/backlog-claim-promotions/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTIONS
+as_of: 2026-08-27
+purpose: >-
+  Promote institutional-action edges from source-reviewed packets while preserving jurisdiction, admission,
+  constitutional, coercion, implementation, and downstream-effect questions as separate open claims.
+
+records:
+  - id: durable-us-icc-sanctions-accountability-pressure-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/us-icc-sanctions-accountability-pressure-2026-08.yaml
+    investigation_state: CONFIRMED_SANCTIONS_PRESSURE_UNDERLYING_MERITS_OPEN
+    promoted_claims:
+      - proposition: U.S. sanctions pressure reached ICC President Tomoko Akane and a broader set of judicial/prosecutorial personnel.
+        posture: OBSERVED_AS_REPORTED
+        effects: [REALIZED_OUTCOME, CAPACITY]
+      - proposition: Sanctions create personal/institutional financial, travel, service-access, and compliance pressure mechanisms.
+        posture: SUPPORTED_MECHANISM
+        effects: [CAPACITY, REALIZED_OUTCOME]
+      - proposition: The U.S. frames its action as resistance to ICC jurisdiction over matters involving Israeli officials and U.S. personnel.
+        posture: STATED_POSITION
+        effects: [ALTERNATIVE_SUPPORTING]
+      - proposition: ICC officials and supporting states characterize the measures as coercive pressure against an independent accountability body.
+        posture: STATED_COUNTERPOSITION
+        effects: [CONSTRAINT_RESISTANCE]
+    not_promoted:
+      - sanctions_dispute_proves_or_disproves_underlying_criminal_liability
+      - final_jurisdictional_merits
+    open_edges:
+      - exact_designations_and_authority
+      - operational_financial_and_service_effects
+      - effects_on_cases_staffing_evidence_and_witnesses
+      - diplomatic_and_legal_constraints
+
+  - id: durable-meta-teen-safety-settlement-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/meta-teen-safety-settlement-2026-08.yaml
+    investigation_state: CONFIRMED_PROPOSED_SETTLEMENT_APPROVAL_AND_OUTCOMES_OPEN
+    promoted_claims:
+      - proposition: Meta and state plaintiffs reached a proposed nationwide settlement structure concerning teen-safety and child-privacy litigation, subject to court approval.
+        posture: OBSERVED_PROPOSED_SETTLEMENT
+        effects: [ATTEMPT, DIRECTION]
+      - proposition: The settlement contains very large guaranteed and conditional monetary components described in current sources as roughly $17B with potential headline totals near $18B.
+        posture: PROPOSED_MATERIAL_FLOW_WITH_STRUCTURE_CAUTION
+        effects: [MATERIAL_FLOW_DELTA, SCOPE_LIMITING]
+      - proposition: Reported reforms include teen time limits, overnight/school-hour restrictions, age assurance, social-feedback changes, and independent oversight.
+        posture: PROPOSED_CONSTRAINTS
+        effects: [DIRECTION, CAPACITY]
+    not_promoted:
+      - settlement_is_admission_that_every_allegation_is_true
+      - nationwide_teen_harm_reduction_already_realized
+    open_edges:
+      - final_judgment
+      - exact_payment_structure
+      - rollout_and_audits
+      - usage_and_harm_metrics
+      - age_assurance_error_rates
+      - remaining_litigation
+
+  - id: durable-dodea-western-civilization-christianity-course-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/dodea-western-civilization-christianity-course-2026-08.yaml
+    investigation_state: CONFIRMED_CURRICULUM_CHANGE_INTERPRETATION_AND_LEGALITY_OPEN
+    promoted_claims:
+      - proposition: DoDEA added a high-school course emphasizing Western civilization and Christianity in the federal school system serving military families.
+        posture: OBSERVED_CURRICULUM_CHANGE
+        effects: [REALIZED_OUTCOME, DIRECTION]
+      - proposition: Reporting connects The Golden Thread and Hillsdale-related lesson-plan work to the course's material/development ecology.
+        posture: REPORTED_RELATION
+        effects: [DIRECTION]
+      - proposition: Supporters describe the course as classical/patriotic education while quoted historians and educators dispute aspects of the historical framing.
+        posture: COMPETING_STATED_INTERPRETATIONS
+        effects: [ALTERNATIVE_SUPPORTING, DIRECTION]
+    not_promoted:
+      - unconstitutional_establishment_of_religion_already_adjudicated
+      - student_religious_coercion_already_established
+      - every_course_claim_historically_false
+    open_edges:
+      - syllabus_lesson_plans_teacher_guidance_and_assessments
+      - elective_vs_mandatory_status
+      - treatment_of_other_religions_nonreligion_and_dissent
+      - student_parent_experience
+      - legal_review
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+last_reviewed: 2026-08-27
