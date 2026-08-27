@@ -1,0 +1,110 @@
+schema: unum-lattice-news/regime-context-passport/v0.1
+status: ACTIVE_SEED
+purpose: persistent_empirical_regime_context_without_event_level_label_substitution
+
+regime_context:
+  id: null
+  polity_or_jurisdiction: null
+  time_window:
+    start: null
+    end: null
+    as_of: null
+
+  state:
+    democratic_constraint_state: UNKNOWN
+    authoritarian_formation: NOT_ASSESSED
+    fascist_pattern: NOT_ASSESSED
+    regime_classification: OPEN
+    classification_definitions_or_models: []
+    classification_sources: []
+
+  dimensions:
+    executive_personalization_or_supremacy: []
+    election_administration_interference_or_subversion: []
+    opposition_delegitimation_or_political_enemy_targeting: []
+    politicized_prosecution_or_investigation: []
+    civil_service_loyalty_control_or_purge: []
+    judicial_defiance_intimidation_bypass_or_capture: []
+    legislative_bypass_or_emergency_power_normalization: []
+    oversight_inspector_ethics_or_anticorruption_erosion: []
+    media_press_information_or_platform_coercion: []
+    academic_educational_or_cultural_control: []
+    union_collective_action_or_civil_society_suppression: []
+    protest_dissent_or_association_repression: []
+    surveillance_data_or_domestic_security_expansion: []
+    militarized_domestic_enforcement: []
+    rights_stratification_or_outgroup_targeting: []
+    ethnonationalist_religious_nationalist_or_exclusionary_state_identity: []
+    scapegoating_dehumanization_or_collective_enemy_construction: []
+    political_violence_normalization_tolerance_incentive_or_clemency: []
+    paramilitary_or_movement_state_boundary_blurring: []
+    security_terrorism_extremism_label_expansion: []
+    patronage_cronyism_corruption_or_private_power_alignment: []
+    propaganda_reality_control_or_evidence_suppression: []
+    leader_cult_or_personal_loyalty_structure: []
+    militarism_expansionism_or_irredentist_trajectory: []
+    permanent_emergency_or_exceptional_power: []
+    exit_appeal_refusal_or_remedy_contraction: []
+
+  surviving_democratic_constraints:
+    elections: []
+    courts: []
+    legislature: []
+    federalism_local_autonomy: []
+    civil_society: []
+    press: []
+    unions_collective_action: []
+    protests: []
+    professional_civil_service: []
+    inspectors_watchdogs: []
+    other: []
+
+  evidence_effects: []
+  source_lineage: []
+  competing_models: []
+  disputed_dimensions: []
+  missingness: []
+  discriminators: []
+  corrections: []
+  re_entry: []
+
+allowed_states:
+  democratic_constraint_state:
+    - FUNCTIONING
+    - STRAINED
+    - ERODING
+    - SEVERELY_ERODED
+    - PARTLY_CAPTURED
+    - CAPTURED
+    - UNKNOWN
+  authoritarian_formation:
+    - NOT_ASSESSED
+    - UNSUPPORTED
+    - INDICATORS_PRESENT
+    - SUPPORTED
+    - STRONGLY_SUPPORTED
+    - DISPUTED
+  fascist_pattern:
+    - NOT_ASSESSED
+    - UNSUPPORTED
+    - INDICATORS_PRESENT
+    - SUPPORTED
+    - STRONGLY_SUPPORTED
+    - DISPUTED
+  regime_classification:
+    - OPEN
+    - MIXED
+    - AUTHORITARIAN_SUPPORTED
+    - FASCIST_CLASSIFICATION_SUPPORTED
+    - DISPUTED
+    - UNKNOWN
+
+locks:
+  - surviving_resistance_does_not_erase_attempted_or_realized_authoritarian_change
+  - regime_label_does_not_prove_local_event_claim
+  - disagreement_over_final_regime_noun_does_not_erase_supported_dimensions
+  - election_presence_does_not_by_itself_defeat_autocratization
+  - court_resistance_is_constraint_evidence_not_retroactive_exculpation
+  - state_status_does_not_establish_defensive_causal_role
+  - resistance_does_not_establish_initiating_aggression
+  - every_dimension_requires_recoverable_evidence_and_date_scope
