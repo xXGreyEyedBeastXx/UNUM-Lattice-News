@@ -1,0 +1,92 @@
+schema: unum-lattice-news/backlog-claim-promotions/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTIONS
+as_of: 2026-08-27
+purpose: >-
+  Continue backlog digestion by promoting exact earned edges from source-reviewed claim packets while
+  retaining case adjudication, policy implementation, and downstream causation questions as explicit open edges.
+
+records:
+  - id: durable-flock-law-enforcement-surveillance-abuse-pattern-2026
+    intake_return_path: UNUM-Lattice-News-Intake/claims/flock-law-enforcement-surveillance-abuse-2026.yaml
+    investigation_state: SUPPORTED_PATTERN_CASE_ADJUDICATION_SEPARATE
+    promoted_claims:
+      - proposition: Public-record-based reporting documents multiple cases in which law-enforcement personnel were accused of misusing Flock or related surveillance systems for personal tracking.
+        posture: REPORTED_PATTERN
+        effects: [CAPACITY]
+      - proposition: A former Katy police officer was charged with felony stalking and misuse of official information after allegedly using Flock and GPS tools to monitor his ex-wife.
+        posture: CHARGE_REPORTED_NOT_ADJUDICATION
+        effects: [REALIZED_OUTCOME]
+      - proposition: Washington Post reporting identified at least 50 law-enforcement officers charged with or accused of misusing Flock or related databases.
+        posture: REPORTED_DATA_ANALYSIS
+        effects: [CAPACITY]
+      - proposition: Privileged surveillance access can be redirected from public purpose to personal tracking, making access control, logging, audit, and remedy material safeguards.
+        posture: SUPPORTED_MECHANISM
+        effects: [CAPACITY]
+    not_promoted:
+      - all_Flock_deployments_are_abusive_or_unlawful
+      - guilt_of_each_named_or_counted_officer
+      - prevalence_rate_across_all_users
+    unresolved:
+      - access_logs_and_vendor_controls
+      - department_policies_and_audits
+      - case_dispositions
+      - victim_notification_and_remedy
+
+  - id: durable-drc-bundibugyo-ebola-outbreak-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/drc-bundibugyo-ebola-outbreak-2026-08.yaml
+    investigation_state: CONFIRMED_SEVERE_OUTBREAK_CONTINUING_WATCH
+    promoted_claims:
+      - proposition: WHO reports sustained intense Ebola transmission across multiple provinces in the Democratic Republic of the Congo.
+        posture: OBSERVED_PRIMARY_PUBLIC_HEALTH_STATE
+        effects: [REALIZED_OUTCOME, DIRECTION]
+      - proposition: WHO and independent reporting describe the 2026 Bundibugyo outbreak as the largest Ebola outbreak recorded in the country and expanding faster than previous Congolese Ebola outbreaks.
+        posture: OBSERVED_AND_REPORTED
+        effects: [REALIZED_OUTCOME, DIRECTION]
+      - proposition: Response capacity is constrained by insecurity, attacks on health care, funding gaps, displacement, and absence of a licensed strain-specific vaccine or treatment.
+        posture: SUPPORTED
+        effects: [CAPACITY, CONSTRAINT_RESISTANCE]
+      - proposition: Severe in-country conditions do not by themselves establish equal regional or global risk.
+        posture: SCOPE_LIMIT
+        effects: [SCOPE_LIMITING]
+    unresolved_monitoring:
+      - weekly_cases_and_deaths
+      - health_worker_impact
+      - geographic_spread
+      - vaccine_or_candidate_vaccine_deployment
+      - response_funding
+      - cross_border_cases
+      - revised_WHO_risk_assessment
+
+  - id: durable-trump-mmr-lethal-claim-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/trump-mmr-lethal-claim-2026-08.yaml
+    investigation_state: CONFIRMED_STATEMENT_RELIABILITY_EDGE_POLICY_PARTIAL
+    promoted_claims:
+      - proposition: Trump publicly said the combined MMR vaccination could be potentially lethal when administered together.
+        posture: OBSERVED_PUBLIC_STATEMENT
+        effects: [RELIABILITY_MODIFYING]
+      - proposition: CMS Administrator Mehmet Oz explicitly stated that the MMR vaccine is not a lethal vaccine.
+        posture: OBSERVED_PUBLIC_RESPONSE
+        effects: [CLAIM_DEFEATING, RELIABILITY_MODIFYING]
+      - proposition: Trump's statement conflicts with the established vaccine-safety evidence described in the reviewed reporting.
+        posture: SUPPORTED_EVIDENCE_COMPARISON
+        effects: [CLAIM_DEFEATING, RELIABILITY_MODIFYING]
+      - proposition: Reported policy pressure toward separated MMR components is a direction edge whose exact implementation remains dependent on primary federal records.
+        posture: DIRECTION_PENDING_PRIMARY_RECORD
+        effects: [DIRECTION]
+    not_promoted:
+      - specific_measles_case_hospitalization_or_death_caused_by_Trump_statement_or_policy
+      - exact_effect_of_any_unrecovered_federal_directive
+    unresolved:
+      - executive_or_agency_directives
+      - CDC_and_FDA_guidance
+      - availability_cost_and_access_changes
+      - vaccination_rate_and_measles_outcome_trends
+      - specific_causal_path_to_realized_harm
+
+return_state:
+  source_custody: UNUM-Lattice-News-Intake
+  specialist_returns: UNUM-Lattice-News-Intake/routing/SPECIALIST_RETURN_LEDGER_2026-08-27.yaml
+  correction_and_demotion: live
+  route_copy_is_not_corroboration: true
+
+last_reviewed: 2026-08-27
