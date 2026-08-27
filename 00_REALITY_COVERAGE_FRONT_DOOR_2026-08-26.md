@@ -1,35 +1,80 @@
 # UNUM Lattice News — Reality Coverage Front Door
 
-**Status:** ACTIVE / PUBLIC-REALITY EVIDENCE SEAT
+**Status:** ACTIVE / DURABLE PUBLIC-REALITY EVIDENCE SEAT
 **Date:** 2026-08-26
+**Updated:** 2026-08-27
 
 ## Primary job
 
-`UNUM-Lattice-News` is the primary evidence-traced external sensing surface for public reality.
+`UNUM-Lattice-News` is the primary durable evidence-traced public-reality surface.
 
-It owns:
+Raw discovery and pre-durable review now enter through:
+
+```text
+UNUM-Lattice-News-Intake
+  WHAT MIGHT MATTER / WHAT SOURCE EXPOSED IT / WHAT NEEDS REVIEW
+        |
+        v
+reviewed crossing packet
+        |
+        v
+UNUM-Lattice-News
+  WHAT HAPPENED / WHAT CHANGED / WHAT PROVES IT
+```
+
+The dedicated Intake seat exists so broad gathering does not silently become durable evidence, publication, accusation, node creation, or conclusion.
+
+`UNUM-Lattice-News` owns reviewed durable records of:
 
 ```text
 public events
 claims
-sources
-chronology
+sources and citation lineage
+chronology and clocks
 state changes
 harms and consequences
 institutional behavior
 causal / accountability relations
-uncertainty
+uncertainty and typed missingness
 corrections
-provenance
+provenance and return paths
 ```
 
-It should not be forced to own every specialist interpretation of those events.
+It should not be forced to own raw intake or every specialist interpretation of reviewed events.
+
+Machine-readable custody rules live at:
+
+```text
+registries/REPOSITORY_CUSTODY.yaml
+```
+
+## Intake bridge
+
+`UNUM-Lattice-News-Intake` owns pre-durable discovery and review work such as feed/manual candidates, source verification, duplicate/citation-lineage checking, bounded claim extraction, clock separation, world-state versus evidence-state triage, competing models, evidence-effect typing, routing proposals, coverage-gap review, and rejected/deferred candidates.
+
+Crossing law:
+
+```text
+intake candidate != durable Lattice record
+source verified != every source claim verified
+new publication != new event
+new evidence != changed historical occurrence
+proposal != realized outcome
+rhetorical label != established classification
+```
+
+A candidate may cross partially. For example, the underlying event may be durable while motive remains unknown, or a new accountability statement may update only the evidence/public-process state without creating a new harm event.
+
+Existing `research/intake/` material in this repository remains valid provenance and re-entry evidence. It may be migrated or indexed gradually; do not erase original paths or commit lineage merely because the dedicated Intake repository now exists.
 
 ## Reality-coverage neighborhood
 
 ```text
+UNUM-Lattice-News-Intake
+  DISCOVERY / PRE-DURABLE REVIEW / SORTING / ROUTING PROPOSAL
+
 UNUM-Lattice-News
-  WHAT HAPPENED / WHAT CHANGED / WHAT PROVES IT
+  DURABLE EVENT / EVIDENCE / CLAIM / CHRONOLOGY / STATE CHANGE
 
 UNUM-Laundering-Map
   HOW THE CAUSAL OR MORAL PICTURE WAS FRAMED, INVERTED, SOFTENED,
@@ -52,7 +97,7 @@ UNUM-Universal-Translation
   ORIGINAL LANGUAGE / REGISTER / AMBIGUITY / TRANSLATION LOSS
 ```
 
-Domain effects may route to Earth Ecology, Medical, Chemistry, Engineering, Physics Recovery, Human-AI Alliance, or another local owner without leaving the public evidence lineage behind.
+Domain effects may route to Earth Ecology, Medical, Chemistry, Engineering, Human-AI Alliance, or another local owner without leaving the public evidence lineage behind.
 
 ## Prime bridge with Laundering
 
@@ -77,7 +122,7 @@ A rhetorical label is evidence that the label was used. It is not automatically 
 
 When a public event involves public authority, institutions, courts, elections, agencies, military/police power, administrative systems, lobbying, regulation, public finance, or oversight, route the institutional machinery to `UNUM-Governance`.
 
-Lattice keeps the event/source record. Governance adds the institution/authority/capacity/accountability model.
+Lattice keeps the durable event/source record. Governance adds the institution/authority/capacity/accountability model.
 
 ## Aggression / defense / resistance lock
 
@@ -148,11 +193,13 @@ UNUM-Lattice-News-Real-Bad-Policy
 UNUM-Lattice-News-Humanitarian-Environmentalism
 ```
 
-These are not independent truth authorities merely because they are separate repositories. Proven Harm receives evidence-earned high-confidence relations. Real Bad Policy studies policy mechanism/consequence rather than taking its name as a verdict. Humanitarian Environmentalism is a cross-domain aperture among News, Earth Ecology, Medical, and Governance.
+These are downstream apertures, not intake surfaces and not independent truth authorities merely because they are separate repositories. Proven Harm receives evidence-earned high-confidence relations. Real Bad Policy studies policy mechanism/consequence rather than taking its name as a verdict. Humanitarian Environmentalism is a cross-domain aperture among News, Earth Ecology, Medical, and Governance.
 
 ## Tiny lock
 
 ```text
+Gather in Intake.
+Cross only what earned review.
 Follow the event.
 Follow the source.
 Follow the harm.
