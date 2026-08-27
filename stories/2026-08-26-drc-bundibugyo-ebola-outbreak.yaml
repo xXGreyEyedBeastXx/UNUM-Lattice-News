@@ -1,0 +1,49 @@
+story_id: story-2026-08-26-drc-bundibugyo-ebola-outbreak
+title: "DRC Bundibugyo Ebola outbreak reaches severe expanding national state"
+event_date: 2026-08-26
+published: 2026-08-26
+status: reviewed
+investigation_state: CONFIRMED
+claim_posture: observed
+summary: >-
+  WHO reporting and independent coverage describe sustained intense Bundibugyo Ebola transmission across multiple
+  provinces in the Democratic Republic of the Congo, with the 2026 outbreak reported as the country's largest recorded
+  Ebola outbreak and faster-growing than previous Congolese outbreaks. Response capacity is materially constrained.
+what_changed:
+  - outbreak_scale_and_geographic_reach_are_severe_and_expanding
+  - health_response_capacity_is_constrained_by_insecurity_healthcare_attacks_funding_gaps_and_displacement
+  - continuing_watch_is_required_without_projecting_equal_risk_to_every_region_or_country
+nodes:
+  - Democratic_Republic_of_the_Congo
+  - World_Health_Organization
+  - Bundibugyo_ebolavirus
+affected_participants_or_ecologies:
+  - infected_people_and_families
+  - health_workers
+  - displaced_populations
+  - health_systems
+  - neighboring_regions_under_surveillance
+evidence_effects:
+  - function: REALIZED_OUTCOME
+    target: severe_in_country_outbreak
+  - function: DIRECTION
+    target: expanding_transmission
+  - function: CAPACITY
+    target: constrained_response_capacity
+  - function: SCOPE_LIMITING
+    target: unsupported_equal_regional_or_global_risk_generalization
+unknowns:
+  - weekly_cases_and_deaths
+  - health_worker_impact
+  - geographic_spread
+  - vaccine_or_candidate_vaccine_deployment
+  - response_funding
+  - cross_border_cases
+  - revised_WHO_risk_assessment
+sources:
+  - UNUM-Lattice-News-Intake/claims/drc-bundibugyo-ebola-outbreak-2026-08.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_02.yaml
+corrections: []
+reporter_rule: >-
+  Preserve the severe realized in-country state and response constraints while keeping regional and global risk
+  assessments separately sourced and date-specific.
