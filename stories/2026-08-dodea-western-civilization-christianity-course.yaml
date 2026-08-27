@@ -1,0 +1,44 @@
+story_id: story-2026-08-dodea-western-civilization-christianity-course
+title: "DoDEA adds high-school course centered on Western civilization and Christianity"
+event_date: 2026-08
+published: 2026-08
+status: reviewed
+investigation_state: CONFIRMED_CURRICULUM_CHANGE
+claim_posture: observed
+summary: >-
+  The Department of Defense Education Activity added a high-school course emphasizing Western civilization and Christianity.
+  Reporting connects course materials to The Golden Thread and Hillsdale-related lesson-plan work. Supporters describe classical
+  or patriotic education; critics dispute aspects of the historical framing. Constitutional and coercion questions remain open.
+what_changed:
+  - federal_military_school_curriculum_carries_more_explicit_civilizational_and_religious_framing_in_at_least_one_course
+nodes:
+  - Department_of_Defense_Education_Activity
+  - Hillsdale_College
+  - The_Golden_Thread
+affected_participants_or_ecologies:
+  - students_in_military_families
+  - parents_and_guardians
+  - teachers_and_curriculum_staff
+evidence_effects:
+  - function: REALIZED_OUTCOME
+    target: curriculum_change
+  - function: DIRECTION
+    target: state_narrative_and_religious_historical_framing
+  - function: ALTERNATIVE_SUPPORTING
+    target: classical_education_model_as_stated
+  - function: SCOPE_LIMITING
+    target: unconstitutional_establishment_or_student_coercion_without_further_evidence
+unknowns:
+  - full_syllabus
+  - lesson_plans_and_teacher_guidance
+  - assessment_rubrics
+  - elective_or_mandatory_status
+  - treatment_of_other_religions_nonreligion_and_dissent
+  - student_parent_experience
+  - legal_review
+sources:
+  - UNUM-Lattice-News-Intake/claims/dodea-western-civilization-christianity-course-2026-08.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_04.yaml
+corrections: []
+reporter_rule: >-
+  A course about Christianity is not automatically religious establishment, and a classical-education label is not automatically proof of neutral history instruction. Inspect the actual curriculum and implementation.
