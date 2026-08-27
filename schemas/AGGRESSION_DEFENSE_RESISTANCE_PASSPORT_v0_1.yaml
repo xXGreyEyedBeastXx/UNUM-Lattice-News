@@ -1,0 +1,111 @@
+schema: unum-lattice-news/aggression-defense-resistance-passport/v0.1
+status: ACTIVE_SEED
+purpose: reconstruct_causal_sequence_before_role_label
+
+passport:
+  id: null
+  subject: null
+  time_window: null
+  geography: null
+
+  prior_condition:
+    description: null
+    ongoing_coercion_or_control: []
+    territorial_or_occupation_context: []
+    legal_or_institutional_context: []
+    recent_precursor_events: []
+
+  initiating_act:
+    actor: null
+    act: null
+    target: null
+    timing: null
+    evidence: []
+    disputed: []
+
+  ongoing_threat:
+    description: null
+    active_at_response_time: null
+    evidence: []
+
+  response:
+    actor: null
+    act: null
+    target: null
+    stated_objective: null
+    demonstrated_objective: null
+    necessity: null
+    proportionality: null
+    civilian_targeting: null
+    distinction_or_targeting_controls: []
+    evidence: []
+
+  counter_response:
+    actor: null
+    act: null
+    target: null
+    evidence: []
+
+  context:
+    power_asymmetry: null
+    available_exit_or_redress: []
+    prior_failed_redress: []
+    detention_or_movement_constraints: []
+    occupation_or_control_relations: []
+    state_or_nonstate_status: []
+
+  later_state:
+    threat_removed_or_reduced: null
+    escalation_after_threat_removed: []
+    retaliatory_or_punitive_component: []
+    collective_punishment_concerns: []
+    continued_defensive_relation: []
+    repair_or_deescalation: []
+
+  labels_used:
+    terrorism: []
+    self_defense: []
+    security: []
+    resistance: []
+    extremism: []
+    law_and_order: []
+    other: []
+
+  classification:
+    aggression_edges: []
+    defense_edges: []
+    resistance_edges: []
+    retaliation_edges: []
+    reprisal_edges: []
+    punitive_edges: []
+    terrorism_edges: []
+    unresolved_edges: []
+
+  evidence:
+    primary_sources: []
+    independent_reporting: []
+    court_or_legal_records: []
+    international_or_monitoring_records: []
+    affected_party_sources: []
+    translations: []
+
+  crosslinks:
+    governance_records: []
+    laundering_patterns: []
+    extremism_records: []
+    human_relations_records: []
+
+  uncertainty:
+    competing_models: []
+    missing_sources: []
+    discriminators: []
+    correction_history: []
+
+locks:
+  - do_not_infer_aggression_from_resistance
+  - do_not_infer_defense_from_state_status
+  - do_not_infer_terrorism_from_designation_or_label
+  - defensive_beginning_does_not_license_unbounded_later_force
+  - oppressed_or_weaker_status_does_not_make_every_tactic_defensive_or_lawful
+  - civilian_targeting_must_be_classified_separately
+  - chronology_must_begin_before_the_visible_response_when_prior_coercion_is_relevant
