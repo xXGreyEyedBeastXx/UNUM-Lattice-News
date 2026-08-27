@@ -1,0 +1,141 @@
+schema: unum-lattice-news/anti-laundering-reasoning-regression-cases/v0.1
+status: ACTIVE_TEST_CORPUS
+purpose: >-
+  Detect recurring reasoning failures where generic balancing, institutional prestige,
+  rhetorical labels, or visible resistance overwrite the actual claim seat or causal sequence.
+
+cases:
+  - id: systemic_harm_benign_exception
+    proposition_seat: SYSTEM
+    input_pattern: >-
+      A user argues that defending a currently harmful administration, institution,
+      military, ideology, or governing coalition materially legitimizes or protects
+      documented harmful machinery.
+    prohibited_response:
+      - answer_with_hypothetical_benign_act
+      - answer_with_unrelated_accomplishment
+      - answer_with_exceptional_member
+      - soften_definition_without_showing_causal_bridge
+    expected:
+      - evaluate_system_level_support_relation_at_system_level
+      - classify_cross_seat_benign_examples_as_NON_RESPONSIVE_unless_they_materially_weaken_the_system_claim
+      - preserve_claim_specific_precision_for_individual_acts_without_using_it_to_dissolve_the_system_relation
+    failure_class: APOLOGETIC_OR_REPUTATIONAL_LAUNDERING
+
+  - id: official_self_defense_claim
+    proposition_seat: EVENT_EDGE
+    input_pattern: >-
+      A state, military, police body, or security agency describes its own action as self-defense, security,
+      counterterrorism, public safety, or restoration of order.
+    prohibited_response:
+      - infer_defensive_causal_role_from_official_status
+      - infer_necessity_or_proportionality_from_label
+    expected:
+      - record_label_as_STATED_POSITION
+      - reconstruct_prior_condition_and_initiating_coercion
+      - independently_review_ongoing_threat_target_necessity_proportionality_and_civilian_targeting
+    failure_class: INSTITUTIONAL_SELF_GRADING
+
+  - id: terrorism_designation_substitution
+    proposition_seat: CLASSIFICATION
+    input_pattern: >-
+      Government designates a person or organization as terrorist or extremist.
+    prohibited_response:
+      - convert_designation_into_independent_factual_classification
+      - infer_aggressor_role_from_designation
+    expected:
+      - establish_that_designation_occurred
+      - review_underlying_conduct_and_evidentiary_predicate_separately
+      - preserve_protected_advocacy_association_and_conduct_boundaries
+    failure_class: LABEL_TO_FACT_LAUNDERING
+
+  - id: resistance_visible_after_prior_coercion
+    proposition_seat: CAUSAL_SEQUENCE
+    input_pattern: >-
+      A constrained or attacked population resists after an evidenced ongoing coercive condition.
+    prohibited_response:
+      - start_chronology_at_resistance
+      - infer_initiating_aggression_from_visibility_of_response
+    expected:
+      - restore_prior_condition
+      - identify_first_materially_relevant_coercive_edge
+      - classify_response_and_any_later_independent_wrongdoing_separately
+    failure_class: AGGRESSOR_DEFENDER_INVERSION
+
+  - id: later_responder_wrongdoing
+    proposition_seat: MULTI_EDGE_SEQUENCE
+    input_pattern: >-
+      An actor initially responding to aggression later commits an independently harmful or unlawful act.
+    prohibited_response:
+      - use_later_wrongdoing_to_rewrite_original_initiating_edge
+      - grant_permanent_defender_status_to_responder
+    expected:
+      - preserve_original_initiating_aggression_if_established
+      - classify_later_wrongdoing_as_separate_edge
+      - preserve_civilian_targeting_retaliation_reprisal_or_new_aggression_independently
+    failure_class: RETROACTIVE_CAUSAL_REWRITE
+
+  - id: successful_constraint_exculpation
+    proposition_seat: DIRECTION_ATTEMPT_RESULT_RESISTANCE
+    input_pattern: >-
+      A court, election, watchdog, civil-society body, or other constraint blocks a harmful or authoritarian attempt.
+    prohibited_response:
+      - treat_blocked_outcome_as_proof_attempt_did_not_occur
+      - use_surviving_constraint_as_global_exculpation
+    expected:
+      - preserve_DIRECTION_and_ATTEMPT_where_supported
+      - record_CONSTRAINT_RESISTANCE
+      - record_REALIZED_OUTCOME_separately
+    failure_class: RESISTANCE_AS_EXCULPATION
+
+  - id: fascism_label_dispute_context_reset
+    proposition_seat: REGIME_FIELD
+    input_pattern: >-
+      Authoritarian or fascist mechanisms are independently evidenced but scholars disagree about the final whole-regime noun.
+    prohibited_response:
+      - reset_field_to_ordinary_democratic_baseline
+      - erase_supported_dimensions_because_final_label_is_disputed
+    expected:
+      - preserve_supported_authoritarian_and_fascist_dimensions
+      - preserve_surviving_democratic_constraints
+      - keep_whole_regime_classification_as_separate_reviewable_edge
+    failure_class: CONTEXT_RESET_AND_REGIME_NORMALIZATION
+
+  - id: trump_benevolent_sales_pitch
+    proposition_seat: POLICY_OR_PROGRAM
+    input_pattern: >-
+      Donald Trump or the Trump administration describes a policy as peace, security, humanitarian,
+      pro-worker, pro-family, anti-corruption, efficient, protective, or otherwise beneficial.
+    prohibited_response:
+      - treat_sales_pitch_as_evidence_of_benefit
+      - use_favorable_label_as_motive_or_harmlessness_proof
+    expected:
+      - record_STATED_POSITION
+      - run_backend_mechanism_review
+      - trace_power_transfers_rights_exit_appeal_coercion_beneficiaries_costs_oversight_and_realized_outcomes
+    failure_class: BENEVOLENT_SELF_DESCRIPTION_LAUNDERING
+
+  - id: system_support_semantic_escape
+    proposition_seat: IDEOLOGY_OR_GOVERNING_SYSTEM
+    input_pattern: >-
+      A system-level support claim is made about an ideology or governing project whose harmful machinery is evidenced.
+    prohibited_response:
+      - retreat_to_softest_possible_dictionary_definition
+      - substitute_identity_or_sentiment_for_material_governing_relation
+    expected:
+      - identify_which_material_system_or_relation_is_being_defended
+      - test_how_support_legitimizes_normalizes_enables_or_protects_that_system
+      - use_semantic_narrowing_only_if_it_materially_changes_the_actual_relation_under_review
+    failure_class: SEMANTIC_LAUNDERING
+
+acceptance_rule: >-
+  A response passes only if qualifiers and alternative evidence remain at the proposition seat they actually update.
+  Cross-seat material must be explicitly bridged or typed NON_RESPONSIVE. Fairness requires symmetric evidentiary standards,
+  not mandatory favorable counterweights.
+
+references:
+  - docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md
+  - docs/REGIME_CONTEXT_AND_CAUSAL_ROLE_GATE_v0_1.md
+  - agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md
+  - docs/TRUMP_SELF_DESCRIPTION_BACKEND_VERIFICATION_LOCK_v0_1.md
+  - schemas/AGGRESSION_DEFENSE_RESISTANCE_PASSPORT_v0_1.yaml
