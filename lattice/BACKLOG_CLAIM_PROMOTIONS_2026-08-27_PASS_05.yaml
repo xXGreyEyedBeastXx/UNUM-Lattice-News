@@ -1,0 +1,54 @@
+schema: unum-lattice-news/backlog-claim-promotions/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTIONS
+as_of: 2026-08-27
+purpose: >-
+  Promote the final non-election low-friction claim-split items while preserving residual cooperation and
+  money-to-policy causation as open edges.
+
+records:
+  - id: durable-nassau-287g-termination-new-york-law-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/nassau-287g-termination-new-york-law-2026-08.yaml
+    investigation_state: CONFIRMED_FORMAL_TERMINATION_RESIDUAL_COOPERATION_OPEN
+    promoted_claims:
+      - proposition: Nassau County terminated its formal 287(g) agreement with ICE to comply with New York state law.
+        posture: OBSERVED_INSTITUTIONAL_ACTION
+        effects: [CONSTRAINT_RESISTANCE, REALIZED_OUTCOME]
+      - proposition: County leadership opposed the law and joined or planned litigation challenging it.
+        posture: OBSERVED_OR_REPORTED_RESISTANCE
+        effects: [CONSTRAINT_RESISTANCE, DIRECTION]
+      - proposition: Termination constrains one formal local-federal immigration-enforcement mechanism.
+        posture: SUPPORTED_MECHANISM
+        effects: [AUTHORITY_DELTA, REALIZED_OUTCOME]
+    not_promoted:
+      - all_local_cooperation_with_federal_immigration_enforcement_ended
+    open_edges:
+      - information_sharing
+      - detainer_and_transfer_practices
+      - other_task_force_or_cooperation_mechanisms
+      - litigation
+      - practical_enforcement_outcomes
+
+  - id: durable-billionaire-corporate-midterm-spending-2026
+    intake_return_path: UNUM-Lattice-News-Intake/claims/billionaire-corporate-midterm-spending-2026.yaml
+    investigation_state: CONFIRMED_MONEY_FLOW_AND_CAPACITY_POLICY_CONTROL_OPEN
+    promoted_claims:
+      - proposition: Reuters reports record corporate spending in the 2026 midterm environment with major participation from newer high-value industries and very large billionaire spending.
+        posture: REPORTED_MONEY_FLOW_STATE
+        effects: [MATERIAL_FLOW_DELTA, CAPACITY]
+      - proposition: Concentrated spending increases political messaging, candidate-support, access-seeking, and allied-network capacity.
+        posture: SUPPORTED_CAPACITY_INFERENCE
+        effects: [CAPACITY, DIRECTION]
+      - proposition: Money flow alone does not prove control over a recipient or causation of a specific policy decision.
+        posture: CAUSAL_SCOPE_LOCK
+        effects: [SCOPE_LIMITING, NON_RESPONSIVE]
+    open_edges:
+      - entity_level_amounts_and_targets
+      - pass_through_and_dark_money_lineage
+      - independent_vs_coordinated_spending
+      - access_and_policy_communications
+      - policy_timing
+      - quid_pro_quo_or_other_corruption_elements
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+last_reviewed: 2026-08-27
