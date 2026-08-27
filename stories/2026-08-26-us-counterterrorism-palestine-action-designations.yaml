@@ -1,0 +1,44 @@
+story_id: story-2026-08-26-us-counterterrorism-palestine-action-designations
+title: "U.S. uses EO 13224 sanctions authority in Palestine Action-related designation action"
+event_date: 2026-08-26
+published: 2026-08-26
+status: reviewed
+investigation_state: CONFIRMED
+claim_posture: observed
+summary: >-
+  Treasury used EO 13224 counterterrorism sanctions authority against named entities and people in an August 26 action
+  that included Palestine Action. The material sanctions action is established; the government's terrorism attribution
+  remains a state classification that requires separate conduct-level review for each named target.
+what_changed:
+  - named_targets_acquired_real_economic_and_association_constraints_through_counterterrorism_sanctions_machinery
+  - administration_projection_expanded_a_broader_far_left_terrorism_frame
+nodes:
+  - U.S. Department of the Treasury
+  - Trump administration
+  - Palestine Action
+affected_participants_or_ecologies:
+  - designated_entities_and_people
+  - financial_counterparties
+  - advocacy_and_association_networks_potentially_affected_by_chilling_or_compliance_behavior
+evidence_effects:
+  - function: REALIZED_OUTCOME
+    target: designation_and_blocking_action
+  - function: CAPACITY
+    target: economic_and_association_constraint
+  - function: SCOPE_LIMITING
+    target: terrorism_classifier_as_independent_truth
+  - function: CLAIM_DEFEATING
+    target: class_generalization_from_named_designations_to_antifascism_Palestine_advocacy_protest_or_left_politics_as_classes
+unknowns:
+  - evidentiary_predicate_for_each_named_target
+  - distinction_among_violence_material_support_logistics_rhetoric_association_journalism_legal_aid_and_advocacy
+  - downstream_freezes_refusals_and_enforcement
+  - comparative_standard_applied_to_ideologically_different_violent_networks
+  - judicial_or_administrative_review
+sources:
+  - UNUM-Lattice-News-Intake/claims/us-counterterrorism-far-left-palestine-action-2026-08.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_01.yaml
+corrections: []
+reporter_rule: >-
+  State the designation, authority, and material consequences as facts where supported. Attribute terrorism/extremism
+  classifications to the government unless independent conduct-level evidence earns the same classifier.
