@@ -1,0 +1,41 @@
+schema: unum-lattice-news/backlog-evidence-state-transitions/v0.1
+status: DURABLE_REVIEWED_EVIDENCE_STATE
+as_of: 2026-08-27
+purpose: >-
+  Preserve new accountability, access, correction, or evidentiary developments concerning older events without
+  manufacturing duplicate world-state events.
+
+transitions:
+  - id: nasser-hospital-journalist-accountability-2026-08-25
+    intake_return_path: UNUM-Lattice-News-Intake/claims/nasser-hospital-journalist-accountability-2026-08-25.yaml
+    historical_event_time: 2025-08-25
+    evidence_state_event_time: 2026-08-25
+    world_state_delta: NONE_ESTABLISHED_FROM_STATEMENT
+    evidence_accountability_delta:
+      - Reuters_and_AP_editors_renew_demand_for_full_explanation_and_accountability
+      - editors_state_information_received_from_Israeli_authorities_remains_insufficient
+    promoted_claims:
+      - proposition: Reuters and AP editors issued a joint first-anniversary accountability statement concerning the 2025 Nasser Hospital journalist deaths.
+        posture: OBSERVED_STATEMENT
+        effects: [CONSTRAINT_RESISTANCE]
+      - proposition: The editors state that prior information from Israeli authorities remains insufficient.
+        posture: STATED_ASSESSMENT
+        effects: [RELIABILITY_MODIFYING, DIRECTION]
+    not_promoted:
+      - new_2026_strike_or_death_event_from_anniversary_statement
+      - targeting_intent_or_command_responsibility_established_by_editor_statement_alone
+      - final_legal_culpability
+    open_edges:
+      - full_Israeli_investigation_or_official_explanation
+      - incident_evidence_from_journalists_medical_personnel_and_military_records
+      - weapon_and_strike_attribution
+      - target_theory
+      - intent
+      - proportionality
+      - command_and_accountability_relations
+
+core_lock: >-
+  New accountability pressure is a real evidence/public-process change. It does not create a second historical harm event,
+  and it does not independently adjudicate every disputed edge of the original incident.
+
+last_reviewed: 2026-08-27
