@@ -1,14 +1,15 @@
 # Powell Memorandum — Corporate Power Strategy Node (1971)
 
-**Status:** HISTORICAL STRATEGY DOCUMENT / RELATION TRACE ACTIVE  
+**Status:** HISTORICAL STRATEGY DOCUMENT / HIGH-CENTRALITY LINEAGE ANCHOR  
 **Date:** 1971-08-23  
-**Primary source custody:** `UNUM-Lattice-News-Intake/sources/washington-and-lee-powell-archives/items/1971/powell-memorandum-attack-on-american-free-enterprise-system/RECORD.yaml`
+**Primary source custody:** `UNUM-Lattice-News-Intake/sources/washington-and-lee-powell-archives/items/1971/powell-memorandum-attack-on-american-free-enterprise-system/RECORD.yaml`  
+**Current lineage study:** `research/history/CORPORATE_CONSERVATIVE_COUNTERMOBILIZATION_LINEAGE_1971_2026.md`
 
 ## Why it belongs in the Lattice
 
 Lewis F. Powell Jr.'s memorandum **Attack on American Free Enterprise System**, sent to Eugene B. Sydnor Jr. of the U.S. Chamber of Commerce, is a primary historical document advocating coordinated institutional power-building by American business.
 
-The memo is useful to the Lattice because it explicitly joins several domains that are often studied separately:
+It joins domains often studied separately:
 
 ```text
 business grievance / threat perception
@@ -22,148 +23,91 @@ business grievance / threat perception
 -> courts as instruments of social / economic / political change
 ```
 
-This makes it a strong **historical strategy node** for tracing later relations among corporate power, legal infrastructure, political mobilization, media influence, universities, think tanks, courts, and policy.
-
-## What is directly established
+## Directly established from the memo
 
 ```yaml
 memo_authorship: DOCUMENTED
 memo_date: 1971-08-23
 recipient_and_chamber_relation: DOCUMENTED
-confidential_initial_circulation: DOCUMENTED
 strategy_for_coordinated_business_response: DOCUMENTED
 advocacy_of_political_power_cultivation: DOCUMENTED
 advocacy_of_academic_scholar_speaker_and_textbook_strategy: DOCUMENTED
 advocacy_of_media_monitoring_and_response: DOCUMENTED
 advocacy_of_chamber_legal_staff_and_selective_litigation: DOCUMENTED
 courts_described_as_major_instrument_of_change: DOCUMENTED
-public_exposure_in_1972: DOCUMENTED
 ```
 
-## What is not established merely by reading the memo
+## Lineage update — 2026-08-27
+
+The historical posture has advanced beyond resemblance-only analysis.
+
+The U.S. Chamber of Commerce states that the **National Chamber Litigation Center was created in 1977 following Powell's recommendation**. That earns a direct descendant edge:
 
 ```text
-Powell Memo
-!= sole cause of modern conservative movement
-!= sole cause of corporate political power
-!= proof that later think tanks descended from it
-!= proof that later legal organizations descended from it
-!= proof that Powell's Supreme Court jurisprudence implemented it
-!= proof that every later business-friendly court decision belongs to one coordinated plan
+Powell Memorandum (1971)
+-> recommendation for Chamber legal / litigation capacity
+-> National Chamber Litigation Center (1977)
 ```
 
-The Washington and Lee Powell archive itself notes that later assessments of the memo's influence diverge. The historical relation therefore needs intermediate evidence.
+Classification:
 
-## Candidate causal edges to trace
+```yaml
+relation: DOCUMENTED_IMPLEMENTATION_DESCENDANT
+confidence: HIGH
+```
 
-### Chamber implementation
+Evidence custody:
+
+`UNUM-Lattice-News-Intake/sources/us-chamber-of-commerce/items/1977/national-chamber-litigation-center-powell-lineage/RECORD.yaml`
+
+The broader 1970s-to-present conservative/corporate institution-building lineage is now treated as a **supported historical field requiring edge-specific genealogy**, not as two disconnected endpoints.
+
+This does **not** establish that every later think tank, legal organization, donor network, or policy was caused by Powell.
+
+## Counterculture / countermobilization seat
+
+The social and political transformations of the 1960s-1970s are part of the causal field, not merely background chronology. Business and conservative actors explicitly described universities, media, consumer activism, regulation, and left/social reform movements as threats requiring organized response.
+
+Relevant transformation families include:
 
 ```text
-memo recommendation
--> Chamber discussion / correspondence
--> budget / staff / institutional decision
--> created or expanded program
--> later measurable activity
+civil rights and racial integration
+antiwar mobilization
+student / campus movements
+consumer protection
+environmental regulation
+women's liberation / reproductive autonomy
+LGBTQ liberation
+labor / welfare politics
+secularization and religious-right reaction
+corporate and regulatory accountability
 ```
 
-Priority object:
+Each later countermobilization edge should identify which transformation it actually targeted rather than treating all counterculture as one object.
+
+## Current descendant study
+
+The active lineage trace now asks how strategy, institutions, people, money, doctrine, litigation, policy production, and governing capacity traveled through later organizations and into present state power.
+
+Use:
+
+`research/history/CORPORATE_CONSERVATIVE_COUNTERMOBILIZATION_LINEAGE_1971_2026.md`
+
+for the current topology and edge classes.
+
+## Core locks
 
 ```text
-National Chamber Litigation Center
+Powell Memo != sole cause of modern conservatism
+Powell Memo != sole cause of corporate political power
+documented one descendant != proof of every proposed descendant
+broad historical lineage != single command hierarchy
+independent origin != permanent independence
+later convergence can be real
+personnel transmission != automatic control of every policy
+historical ancestry != proof of downstream harm
 ```
-
-Do not infer the relation solely from resemblance or later chronology. Recover founding records and Chamber correspondence.
-
-### Legal movement
-
-Potential downstream seats include:
-
-```text
-corporate public-interest law firms
-strategic amicus practice
-regulatory litigation
-judicial-selection infrastructure
-conservative legal networks
-business constitutional-rights litigation
-```
-
-Each requires its own lineage trace.
-
-### Universities / knowledge production
-
-Potential downstream seats include:
-
-```text
-funded scholarship
-academic centers
-speaker networks
-curriculum / textbook pressure
-campus monitoring
-intellectual counter-institutions
-```
-
-Again:
-
-```text
-Powell proposed it
-!= later organization implemented it because Powell proposed it
-```
-
-### Media / semantic-power relation
-
-The memo's call for monitoring and answering television/media criticism is a candidate historical precursor to organized message discipline and institutional counter-framing.
-
-This is particularly relevant to the Lattice's semantic-power work:
-
-```text
-material interest
--> institution builds interpretation capacity
--> language / framing enters public field
--> perceived legitimacy changes
--> political / legal capacity may follow
-```
-
-Do not promote that into a modern causal lineage without intermediary evidence.
-
-## Pre-memo context matters
-
-Powell had already delivered speeches in 1970 concerning attacks on American institutions and ideological conflict. Business mobilization was also occurring independently in the period.
-
-Therefore the better historical model is initially:
-
-```text
-broader business / political reaction field
--> Powell participates in and formalizes one strategy articulation
--> Chamber receives memo
--> later organizations and practices may or may not inherit specific recommendations
-```
-
-rather than:
-
-```text
-Powell memo
--> everything later
-```
-
-## Lattice value
-
-The memo should be treated as a **known historical state of strategic intent**.
-
-That means later objects can be tested against it using actual lineage evidence:
-
-```text
-1971 stated strategy
--> personnel
--> funding
--> organization
--> doctrine
--> repeated mechanism
--> implementation
--> surviving / mutated descendants
-```
-
-If a later mechanism resembles the memo but no transmission relation is recoverable, classify it as `PARALLEL_OR_CONVERGENT` rather than inherited.
 
 ## Tiny lock
 
-> The Powell Memo is real strategy evidence. It is not permission to replace fifty years of causal history with one document.
+> The Powell Memo is real strategy evidence, and at least one major institutional descendant is directly documented. Trace the rest of the lineage instead of either mythologizing it or pretending the endpoints are unrelated.
