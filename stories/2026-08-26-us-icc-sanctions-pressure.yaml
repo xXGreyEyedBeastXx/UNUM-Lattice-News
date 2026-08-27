@@ -1,0 +1,39 @@
+story_id: story-2026-08-26-us-icc-sanctions-pressure
+title: "U.S. sanctions pressure expands across ICC judicial and prosecutorial leadership"
+event_date: 2026-08-26
+published: 2026-08-26
+status: reviewed
+investigation_state: CONFIRMED_SANCTIONS_ACTION
+claim_posture: observed
+summary: >-
+  U.S. sanctions measures reached ICC President Tomoko Akane and other court personnel, increasing personal and
+  institutional pressure on the court. The U.S. frames the measures as resistance to illegitimate jurisdiction;
+  ICC officials and supporting states frame them as coercion against an independent accountability institution.
+  The sanctions dispute does not itself adjudicate underlying criminal cases.
+what_changed:
+  - sanctions_pressure_reaches_court_presidency_and_broader_personnel
+  - personal_financial_and_service_constraints_on_accountability_institution_increase
+nodes:
+  - International_Criminal_Court
+  - Tomoko_Akane
+  - United_States_government
+evidence_effects:
+  - function: REALIZED_OUTCOME
+    target: sanctions_action
+  - function: CAPACITY
+    target: coercive_financial_and_service_pressure
+  - function: ALTERNATIVE_SUPPORTING
+    target: US_jurisdictional_rationale_as_stated
+  - function: SCOPE_LIMITING
+    target: underlying_case_criminal_liability
+unknowns:
+  - exact_operational_effects_on_ICC_finance_staffing_evidence_and_witnesses
+  - jurisdictional_merits
+  - diplomatic_countermeasures
+  - judicial_or_legislative_limits
+sources:
+  - UNUM-Lattice-News-Intake/claims/us-icc-sanctions-accountability-pressure-2026-08.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_04.yaml
+corrections: []
+reporter_rule: >-
+  Sanctions against an accountability body are a real pressure mechanism; they neither prove nor erase the merits of the underlying cases.
