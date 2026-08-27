@@ -1,0 +1,47 @@
+story_id: story-2026-08-26-eeoc-federal-sector-complaint-rule-proposal
+title: "EEOC proposes major rewrite of federal-sector discrimination complaint process"
+event_date: 2026-08-26
+published: 2026-08-26
+status: reviewed
+investigation_state: CONFIRMED_PROPOSAL
+claim_posture: observed
+summary: >-
+  The EEOC advanced a proposed rewrite of federal-sector EEO complaint procedures, including changes to counseling,
+  administrative-judge access, referral, and class-complaint adjudication. The proposal and its stated streamlining
+  rationale are established; realized worker-access, delay, discrimination, and litigation effects are not yet established.
+what_changed:
+  - formal_rulemaking_attempt_to_restructure_federal_EEO_complaint_process
+  - potential_shift_in_independent_administrative_review_and_class_claim_handling
+  - no_final_rule_or_realized_outcome_yet
+nodes:
+  - Equal_Employment_Opportunity_Commission
+  - federal_workers
+  - federal_agencies
+affected_participants_or_ecologies:
+  - federal_employees_and_applicants_using_EEO_processes
+  - self_represented_complainants
+  - federal_agency_EEO_offices
+  - administrative_judges
+evidence_effects:
+  - function: DIRECTION
+    target: procedural_restructuring
+  - function: ATTEMPT
+    target: formal_rulemaking
+  - function: ALTERNATIVE_SUPPORTING
+    target: streamlining_rationale
+  - function: NON_RESPONSIVE
+    target: future_worker_outcomes_before_implementation
+unknowns:
+  - final_rule_text_and_effective_date
+  - litigation_or_statutory_challenges
+  - complaint_volume_abandonment_and_processing_time
+  - represented_vs_self_represented_outcomes
+  - class_claim_handling
+  - district_court_cost_and_burden_displacement
+sources:
+  - UNUM-Lattice-News-Intake/claims/eeoc-federal-sector-complaint-rule-2026-08.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_03.yaml
+corrections: []
+reporter_rule: >-
+  Proposed procedural change is an attempted policy transition, not evidence that expected efficiency gains or access harms
+  have already occurred. Measure both models after implementation if the proposal becomes final.
