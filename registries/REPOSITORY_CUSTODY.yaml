@@ -1,10 +1,11 @@
-schema: unum-lattice-news/repository-custody/v0.1
+schema: unum-lattice-news/repository-custody/v0.2
 status: ACTIVE
 updated: 2026-08-27
 purpose: >-
-  Provide one machine-readable routing surface for public-reality evidence,
-  specialist interpretation, cross-repository custody, and downstream promotion
-  without allowing repository names or rhetorical labels to become evidence.
+  Provide one machine-readable routing surface for public-reality intake,
+  durable evidence custody, specialist interpretation, cross-repository routing,
+  and downstream promotion without allowing repository names or rhetorical
+  labels to become evidence.
 
 prime_laws:
   - external_evidence_precedes_project_interpretation
@@ -13,14 +14,52 @@ prime_laws:
   - rhetorical_label_is_evidence_the_label_was_used_not_proof_the_classification_is_true
   - world_state_transition_and_evidence_state_transition_remain_distinct
   - specialist_routing_does_not_transfer_primary_evidence_custody
+  - raw_intake_does_not_equal_durable_lattice_record
   - nothing_crosses_without_provenance_scope_uncertainty_and_return_path
 
-default_owner:
+upstream_intake:
+  repository: UNUM-Lattice-News-Intake
+  role: pre_durable_news_intake_and_review_seat
+  owns:
+    - feed_and_manual_discovery_candidates
+    - source_verification_drafts
+    - duplicate_and_citation_lineage_review
+    - bounded_claim_extraction_drafts
+    - clock_separation_drafts
+    - world_state_vs_evidence_state_triage
+    - evidence_effect_typing_drafts
+    - competing_models_and_discriminators
+    - proposed_repository_routes
+    - coverage_gap_reports
+    - rejected_and_deferred_candidates
+  does_not_own:
+    - durable_public_event_truth_by_repository_presence
+    - publication_authority
+    - automatic_node_or_relation_promotion
+    - automatic_harm_ideology_motive_or_causation_findings
+  crossing_requirement:
+    - source_pointers_and_citation_lineage
+    - bounded_claims_and_posture
+    - relevant_clocks
+    - world_state_and_or_evidence_state_delta
+    - exact_evidence_effects
+    - uncertainty_and_typed_missingness
+    - strongest_narrowing_or_alternative_model
+    - evidence_that_would_change_assessment
+    - proposed_specialist_routes
+    - return_path_to_intake_material
+  legacy_note: >-
+    Existing UNUM-Lattice-News/research/intake material remains valid provenance
+    and re-entry evidence. New intake should preferentially land in the dedicated
+    Intake repository; older packets may be migrated or indexed gradually while
+    preserving original paths and commit lineage.
+
+durable_owner:
   repository: UNUM-Lattice-News
   owns:
-    - public_events
-    - source_identity_and_lineage
-    - claims_and_claim_posture
+    - reviewed_public_events
+    - reviewed_source_identity_and_lineage
+    - reviewed_claims_and_claim_posture
     - chronology_and_clocks
     - public_state_transitions
     - harms_and_consequences
@@ -133,6 +172,8 @@ promotion_states:
   - SOURCE_REVIEWED
   - CLAIM_TESTED
   - STATE_TRANSITION_REVIEWED
+  - ROUTING_REVIEWED
+  - READY_FOR_LATTICE_REVIEW
   - NODE_RELATION_REVIEWED
   - SPECIALIST_ROUTE_REVIEWED
   - SATELLITE_ELIGIBLE
@@ -143,7 +184,8 @@ promotion_rule: >-
   different edges. No later state retroactively upgrades weaker evidence.
 
 crossing_packet_minimum:
-  - lattice_event_or_claim_ids
+  - intake_return_path
+  - lattice_event_or_claim_ids_when_assigned
   - source_pointers_and_citation_lineage
   - claim_posture
   - world_state_and_or_evidence_state_delta
