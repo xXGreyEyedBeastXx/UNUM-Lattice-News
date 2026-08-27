@@ -1,0 +1,42 @@
+story_id: story-2026-08-26-ice-july-arrest-surge-reported
+title: "July 2026 ICE arrest scale reaches reported second-term high"
+event_date: 2026-07-31
+published: 2026-08-26
+status: reviewed
+investigation_state: CONFIRMED
+claim_posture: observed
+summary: >-
+  Associated Press reporting using ICE data and external analysis described nearly 50,000 arrests in July 2026,
+  the highest monthly level of Trump's second term to that point, with more than half of the cited arrested population
+  reported as having neither a criminal conviction nor a pending criminal charge.
+what_changed:
+  - enforcement_scale_increased_relative_to_recent_months
+  - reported_arrest_population_cannot_be_represented_as_uniformly_convicted_or_currently_charged_criminals
+  - enforcement_tactics_shifted_toward_less_visible_traffic_stop_and_community_arrests_as_reported
+nodes:
+  - Donald Trump
+  - U.S. Immigration and Customs Enforcement
+  - Department of Homeland Security
+affected_participants_or_ecologies:
+  - people_arrested_in_immigration_enforcement
+  - families_and_communities_exposed_to_enforcement
+  - state_and_local_partners
+evidence_effects:
+  - function: REALIZED_OUTCOME
+    target: July_2026_arrest_scale
+  - function: SCOPE_LIMITING
+    target: generalized_criminality_claim
+  - function: CLAIM_DEFEATING
+    target: claim_that_arrested_population_as_a_class_was_established_dangerous_criminals
+unknowns:
+  - raw_ICE_table_recovery_and_methodology_reconciliation
+  - conviction_pending_charge_and_immigration_status_breakdowns
+  - detention_release_bond_removal_and_court_outcomes
+  - individualized_due_process_and_harm_paths
+sources:
+  - UNUM-Lattice-News-Intake/claims/ice-july-2026-arrest-surge.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_01.yaml
+corrections: []
+reporter_rule: >-
+  Report the scale and criminal-record distribution as supported reporting; do not convert arrest into conviction,
+  immigration violation into violent criminality, or aggregate enforcement scale into individualized unlawful-harm findings without additional evidence.
