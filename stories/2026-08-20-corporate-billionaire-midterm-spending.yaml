@@ -1,0 +1,38 @@
+story_id: story-2026-08-20-corporate-billionaire-midterm-spending
+title: "Corporate and billionaire political spending reaches new 2026 midterm scale"
+event_date: 2026-08-20
+published: 2026-08-20
+status: reviewed
+investigation_state: CONFIRMED_MONEY_FLOW_STATE
+claim_posture: observed
+summary: >-
+  Reuters reports record corporate spending in the 2026 midterm environment, including major participation from
+  cryptocurrency, AI, online-betting, technology, and other interests alongside very large billionaire spending.
+  The flows increase political messaging and access capacity; they do not by themselves prove control or a quid pro quo.
+what_changed:
+  - political_spending_scale_and_industry_composition_expand
+  - concentrated_message_and_candidate_support_capacity_increases
+nodes:
+  - corporate_political_spending
+  - billionaire_political_spending
+  - super_PAC_and_allied_networks
+evidence_effects:
+  - function: MATERIAL_FLOW_DELTA
+    target: 2026_midterm_political_money
+  - function: CAPACITY
+    target: messaging_candidate_support_and_access_capacity
+  - function: SCOPE_LIMITING
+    target: policy_control_or_corruption_inference_from_money_alone
+unknowns:
+  - entity_level_amounts_and_targets
+  - pass_through_entities
+  - independent_vs_coordinated_spending
+  - access_and_policy_communications
+  - timing_of_policy_actions
+  - quid_pro_quo_or_other_corruption_elements
+sources:
+  - UNUM-Lattice-News-Intake/claims/billionaire-corporate-midterm-spending-2026.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_05.yaml
+corrections: []
+reporter_rule: >-
+  Follow money as a material relation and capacity signal, then separately test access, influence, control, coordination, and corruption.
