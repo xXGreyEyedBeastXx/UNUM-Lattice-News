@@ -13,6 +13,7 @@ regime_context:
   state:
     democratic_constraint_state: UNKNOWN
     authoritarian_formation: NOT_ASSESSED
+    fascism_field_presence: NOT_ASSESSED
     fascist_pattern: NOT_ASSESSED
     regime_classification: OPEN
     classification_definitions_or_models: []
@@ -84,6 +85,13 @@ allowed_states:
     - SUPPORTED
     - STRONGLY_SUPPORTED
     - DISPUTED
+  fascism_field_presence:
+    - NOT_ASSESSED
+    - UNSUPPORTED
+    - INDICATORS_PRESENT
+    - SUPPORTED
+    - STRONGLY_SUPPORTED
+    - DISPUTED
   fascist_pattern:
     - NOT_ASSESSED
     - UNSUPPORTED
@@ -99,10 +107,18 @@ allowed_states:
     - DISPUTED
     - UNKNOWN
 
+field_presence_rule: >-
+  fascism_field_presence answers whether fascist movements, ideology, rhetoric,
+  organizational relations, governing projects, or evidenced fascist mechanisms
+  are materially present in the political field. It does not require the whole
+  state to satisfy one final regime-classification test. Whole-regime classification
+  remains a separate edge.
+
 locks:
   - surviving_resistance_does_not_erase_attempted_or_realized_authoritarian_change
   - regime_label_does_not_prove_local_event_claim
   - disagreement_over_final_regime_noun_does_not_erase_supported_dimensions
+  - disagreement_over_whole_regime_classification_does_not_erase_supported_fascism_field_presence
   - election_presence_does_not_by_itself_defeat_autocratization
   - court_resistance_is_constraint_evidence_not_retroactive_exculpation
   - state_status_does_not_establish_defensive_causal_role
