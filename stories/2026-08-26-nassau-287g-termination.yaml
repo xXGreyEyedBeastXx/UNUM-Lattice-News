@@ -1,0 +1,38 @@
+story_id: story-2026-08-26-nassau-287g-termination
+title: "Nassau County terminates formal ICE 287(g) agreement under New York law"
+event_date: 2026-08-26
+published: 2026-08-26
+status: reviewed
+investigation_state: CONFIRMED_FORMAL_TERMINATION
+claim_posture: observed
+summary: >-
+  Nassau County terminated its formal 287(g) agreement with ICE to comply with New York state law while county leadership
+  opposed the law and pursued or planned litigation. The termination is a realized constraint on one formal enforcement mechanism;
+  it does not establish that all local-federal immigration cooperation ended.
+what_changed:
+  - formal_287g_local_federal_enforcement_mechanism_terminated
+  - state_law_operates_as_realized_constraint
+  - county_political_and_legal_resistance_continues
+nodes:
+  - Nassau_County
+  - U.S._Immigration_and_Customs_Enforcement
+  - New_York_State
+evidence_effects:
+  - function: CONSTRAINT_RESISTANCE
+    target: formal_287g_cooperation
+  - function: REALIZED_OUTCOME
+    target: agreement_termination
+  - function: SCOPE_LIMITING
+    target: all_local_federal_cooperation_ended
+unknowns:
+  - information_sharing
+  - detainer_and_transfer_practices
+  - other_cooperation_mechanisms
+  - litigation_outcome
+  - practical_enforcement_change
+sources:
+  - UNUM-Lattice-News-Intake/claims/nassau-287g-termination-new-york-law-2026-08.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_05.yaml
+corrections: []
+reporter_rule: >-
+  Formal agreement termination is a real institutional constraint; do not enlarge it into total noncooperation without tracing the remaining mechanisms.
