@@ -1,0 +1,155 @@
+schema: unum-lattice-news/repository-custody/v0.1
+status: ACTIVE
+updated: 2026-08-27
+purpose: >-
+  Provide one machine-readable routing surface for public-reality evidence,
+  specialist interpretation, cross-repository custody, and downstream promotion
+  without allowing repository names or rhetorical labels to become evidence.
+
+prime_laws:
+  - external_evidence_precedes_project_interpretation
+  - evidence_updates_only_the_claim_edge_variable_or_model_component_it_bears_on
+  - repeated_projection_is_not_independent_corroboration
+  - rhetorical_label_is_evidence_the_label_was_used_not_proof_the_classification_is_true
+  - world_state_transition_and_evidence_state_transition_remain_distinct
+  - specialist_routing_does_not_transfer_primary_evidence_custody
+  - nothing_crosses_without_provenance_scope_uncertainty_and_return_path
+
+default_owner:
+  repository: UNUM-Lattice-News
+  owns:
+    - public_events
+    - source_identity_and_lineage
+    - claims_and_claim_posture
+    - chronology_and_clocks
+    - public_state_transitions
+    - harms_and_consequences
+    - causal_and_accountability_relations
+    - uncertainty_and_missingness
+    - corrections
+
+specialist_routes:
+  - repository: UNUM-Laundering-Map
+    route_when:
+      - rhetoric_or_framing_transforms_the_apparent_causal_or_moral_picture
+      - legitimacy_reputation_legality_or_selective_omission_changes_accountability_read
+    does_not_own:
+      - proof_that_the_underlying_event_occurred
+      - automatic_actor_guilt
+
+  - repository: UNUM-Governance
+    route_when:
+      - authority_procedure_capacity_enforcement_oversight_resistance_or_appeal_is_material
+    does_not_own:
+      - replacement_of_the_lattice_event_or_source_record
+
+  - repository: UNUM-Love-Truth-Governance
+    route_when:
+      - explicit_normative_comparison_is_requested_after_empirical_state_is_established
+    does_not_own:
+      - factual_establishment_of_public_events_or_institutional_authority
+
+  - repository: UNUM-Extremism-Watch
+    route_when:
+      - movement_ideology_lineage_propaganda_organization_normalization_or_violence_requires_deep_study
+    locks:
+      - membership_is_not_ideological_overlap
+      - ideological_overlap_is_not_operational_coordination
+      - association_is_not_individual_guilt
+
+  - repository: UNUM-Human-Relations
+    route_when:
+      - durable_social_relational_dependency_conformity_culture_or_interpersonal_mechanism_requires_study
+
+  - repository: UNUM-Universal-Translation
+    route_when:
+      - original_language_register_ambiguity_or_translation_loss_is_material
+
+  - repository: UNUM-Earth-Environmental-Ecology
+    route_when:
+      - environmental_system_place_scale_exposure_or_ecological_mechanism_requires_specialist_study
+
+  - repository: UNUM-Medical
+    route_when:
+      - organism_health_clinical_or_biological_mechanism_requires_specialist_study
+
+  - repository: UNUM-Chemistry
+    route_when:
+      - contaminant_reaction_composition_or_material_pathway_requires_specialist_study
+
+  - repository: UNUM-Engineering
+    route_when:
+      - infrastructure_design_failure_mechanism_or_technical_system_requires_specialist_study
+
+  - repository: UNUM-Human-AI-Alliance
+    route_when:
+      - human_ai_governance_rights_dependency_or_relational_consequence_requires_specialist_study
+
+satellite_routes:
+  - repository: UNUM-Lattice-News-Proven-Harm
+    role: downstream_high_confidence_harm_ledger
+    promotion_only: true
+    required_before_promotion:
+      - bounded_harm_claim
+      - causal_relation_and_scope
+      - primary_or_best_available_evidence
+      - materially_independent_corroboration_when_available_and_warranted
+      - typed_evidence_effects
+      - uncertainty_and_missingness
+      - confidence_or_proof_state
+      - lattice_return_path
+      - correction_and_demotion_path
+    prohibited_shortcuts:
+      - generic_PROVEN_flag_for_mixed_strength_claims
+      - repository_presence_as_proof
+      - generic_counterevidence_bucket_for_new_or_materially_revised_records
+
+  - repository: UNUM-Lattice-News-Real-Bad-Policy
+    role: policy_harm_investigation_aperture
+    title_is_verdict: false
+    required_separations:
+      - policy_name_from_policy_effect
+      - stated_purpose_from_observed_mechanism
+      - attempted_action_from_realized_implementation
+      - blocked_action_from_nonexistent_attempt
+      - observed_consequence_from_forecast_consequence
+      - mechanism_from_motive
+
+  - repository: UNUM-Lattice-News-Humanitarian-Environmentalism
+    role: humanitarian_environmental_crossing_aperture
+    primary_neighbors:
+      - UNUM-Lattice-News
+      - UNUM-Earth-Environmental-Ecology
+      - UNUM-Medical
+      - UNUM-Governance
+    required_separations:
+      - measured_from_modeled
+      - environment_system_from_human_health_claim
+      - institutional_authority_from_environmental_mechanism
+      - uncertainty_in_exact_dose_from_evidence_of_exposure_or_contamination
+
+promotion_states:
+  - INTAKE_CANDIDATE
+  - SOURCE_REVIEWED
+  - CLAIM_TESTED
+  - STATE_TRANSITION_REVIEWED
+  - NODE_RELATION_REVIEWED
+  - SPECIALIST_ROUTE_REVIEWED
+  - SATELLITE_ELIGIBLE
+  - PUBLICATION_ELIGIBLE
+
+promotion_rule: >-
+  Advancement is claim-specific. A record may occupy different states for
+  different edges. No later state retroactively upgrades weaker evidence.
+
+crossing_packet_minimum:
+  - lattice_event_or_claim_ids
+  - source_pointers_and_citation_lineage
+  - claim_posture
+  - world_state_and_or_evidence_state_delta
+  - specialist_question
+  - specialist_owner
+  - evidence_effects
+  - uncertainty_and_missingness
+  - evidence_that_would_change_assessment
+  - return_path
