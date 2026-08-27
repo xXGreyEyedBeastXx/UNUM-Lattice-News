@@ -85,6 +85,38 @@ claim-specific falsification remains mandatory
 
 Evidence that directly weakens, narrows, defeats, or reattributes a scoped claim must remain visible. Unrelated good news is not required as moral balance.
 
+## Regime context and causal-role orientation
+
+Political events do not occur in a blank field.
+
+Where a persistent authoritarian, fascist, coercive, occupation, emergency-power, or democratic-erosion context has been independently reviewed, preserve it as prior condition without allowing the regime label to substitute for proof of a local claim.
+
+```text
+persistent verified context != blank slate
+regime label != proof of every local claim
+surviving resistance != erasure of attempted authoritarian direction
+whole-regime classification dispute != erasure of supported fascist field presence
+```
+
+For war, occupation, policing, protest, rebellion, detention, emergency force, terrorism/extremism designation, or self-defense claims, reconstruct causal role before assigning aggressor/defender labels.
+
+```text
+prior condition
+-> initiating coercion / aggression
+-> response / resistance
+-> counter-response
+-> later escalation / cessation / repair
+```
+
+Do not infer defense from state status or aggression from resistance. A responder may later commit an independent harmful or aggressive act; classify that later edge separately without rewriting who initiated an earlier coercive relation.
+
+See:
+
+- [docs/REGIME_CONTEXT_AND_CAUSAL_ROLE_GATE_v0_1.md](docs/REGIME_CONTEXT_AND_CAUSAL_ROLE_GATE_v0_1.md)
+- [schemas/REGIME_CONTEXT_PASSPORT_v0_1.yaml](schemas/REGIME_CONTEXT_PASSPORT_v0_1.yaml)
+- [schemas/AGGRESSION_DEFENSE_RESISTANCE_PASSPORT_v0_1.yaml](schemas/AGGRESSION_DEFENSE_RESISTANCE_PASSPORT_v0_1.yaml)
+- [agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md](agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md)
+
 ## Protection target
 
 This repository gives particular attention to threats and pressures affecting:
@@ -123,6 +155,7 @@ Recovery agents:
 - [agents/PROVENANCE_CLAIM_INTEGRITY_AGENT_v0_1.md](agents/PROVENANCE_CLAIM_INTEGRITY_AGENT_v0_1.md)
 - [agents/LATTICE_RESURFACING_AGENT_v0_2.md](agents/LATTICE_RESURFACING_AGENT_v0_2.md)
 - [agents/HARM_MESH_TRAVERSAL_AGENT_v0_1.md](agents/HARM_MESH_TRAVERSAL_AGENT_v0_1.md)
+- [agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md](agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md)
 
 Historical material should be recovered semantically rather than blind-merged. Preserve old states as evidence; do not preserve obsolete framing as permanent authority.
 
@@ -134,19 +167,30 @@ Corrections should preserve what changed, why it changed, and what remains unres
 
 See [CORRECTIONS.md](CORRECTIONS.md).
 
-## Review-only news intake
+## News intake and review
 
-The first automation surface is deliberately narrow. A scheduled GitHub Actions workflow reads an explicit registry of official RSS/Atom feeds and emits a short-lived review artifact containing limited discovery metadata: title, canonical URL, supplied publication date, feed provenance, and configured review lenses.
+`UNUM-Lattice-News-Intake` is now the preferred upstream seat for new discovery, source verification, citation-lineage review, claim extraction, state-transition drafting, regime-context review, competing-model work, and proposed routing before a record earns durable placement here.
 
-Collected items remain `candidate_unreviewed`. The workflow cannot edit the repository, open issues, create or promote nodes, or publish stories, spreads, or renditions. Human review remains required before an intake candidate becomes a lattice record participating in the mesh.
+```text
+external public reality
+-> UNUM-Lattice-News-Intake
+-> review / verification / causal-role and regime-context gates
+-> reviewed crossing packet
+-> UNUM-Lattice-News
+```
 
+The older in-repository RSS/Atom collector remains valid implementation history and may continue to produce review-only artifacts, but new intake should preferentially land in the dedicated Intake repository rather than treating raw candidates as durable Lattice records.
+
+Collected or discovered items remain non-authoritative until reviewed. Intake cannot manufacture or publish consequential guilt, harm, ideology, motive, causation, aggression/defense role, or moral verdict from a headline, repository name, institutional status, designation, or rhetorical label.
+
+- Dedicated intake: `UNUM-Lattice-News-Intake`
 - Operations layer: [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md)
-- Mesh model: [MESH_MODEL.md](MESH_MODEL.md)
-- Feed registry: [registries/FEEDS.json](registries/FEEDS.json)
-- Intake boundary: [docs/NEWS_INTAKE_WORKFLOW_v0_1.md](docs/NEWS_INTAKE_WORKFLOW_v0_1.md)
+- Repository custody: [registries/REPOSITORY_CUSTODY.yaml](registries/REPOSITORY_CUSTODY.yaml)
+- Legacy feed registry: [registries/FEEDS.json](registries/FEEDS.json)
+- Legacy collector boundary: [docs/NEWS_INTAKE_WORKFLOW_v0_1.md](docs/NEWS_INTAKE_WORKFLOW_v0_1.md)
 - Spread model: [docs/SPREAD_SURFACE_MODEL_v0_1.md](docs/SPREAD_SURFACE_MODEL_v0_1.md)
-- Spread template: [templates/SPREAD.yaml](templates/SPREAD.yaml)
 - Automation roadmap: [docs/NEWS_AUTOMATION_ROADMAP_v0_1.md](docs/NEWS_AUTOMATION_ROADMAP_v0_1.md)
+- Alignment audit: [docs/LATTICE_REALITY_SURFACE_ALIGNMENT_AUDIT_2026-08-27.md](docs/LATTICE_REALITY_SURFACE_ALIGNMENT_AUDIT_2026-08-27.md)
 
 ## Participation
 
@@ -164,4 +208,4 @@ See [RIGHTS.md](RIGHTS.md).
 
 ## Tiny lock
 
-> Name danger without manufacturing enemies. Preserve uncertainty without using it to excuse preventable harm. Follow power, consequence, kinship, transformation, and the living systems that bear the cost.
+> Name danger without manufacturing enemies. Preserve uncertainty without using it to excuse preventable harm. Follow power, consequence, kinship, transformation, causal role, resistance, and the living systems that bear the cost.
