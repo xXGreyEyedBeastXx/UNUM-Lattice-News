@@ -1,0 +1,47 @@
+story_id: story-2026-08-26-meta-teen-safety-proposed-settlement
+title: "Meta teen-safety litigation shifts toward proposed nationwide settlement and product constraints"
+event_date: 2026-08-26
+published: 2026-08-26
+status: reviewed
+investigation_state: CONFIRMED_PROPOSED_SETTLEMENT
+claim_posture: observed
+summary: >-
+  Meta and state plaintiffs reached a proposed nationwide settlement structure in teen-safety and child-privacy litigation,
+  subject to court approval. Reported terms include large monetary obligations and product/design restrictions. The settlement
+  does not admit every allegation and has not yet demonstrated realized teen-safety outcomes.
+what_changed:
+  - litigation_moves_toward_proposed_consent_judgment
+  - prospective_product_design_and_oversight_constraints_become_concrete
+  - very_large_material_flow_obligations_become_proposed
+nodes:
+  - Meta
+  - Facebook
+  - Instagram
+  - state_attorneys_general
+affected_participants_or_ecologies:
+  - teenagers
+  - parents_and_guardians
+  - platform_users
+  - child_privacy_and_safety_regulators
+evidence_effects:
+  - function: ATTEMPT
+    target: settlement_and_constraint_regime
+  - function: DIRECTION
+    target: product_design_changes
+  - function: MATERIAL_FLOW_DELTA
+    target: proposed_settlement_payments
+  - function: SCOPE_LIMITING
+    target: liability_admission_and_realized_harm_reduction
+unknowns:
+  - final_court_approval
+  - exact_guaranteed_and_conditional_payment_structure
+  - implementation_dates
+  - compliance_audits
+  - usage_and_harm_indicators
+  - age_assurance_error_and_exclusion_rates
+sources:
+  - UNUM-Lattice-News-Intake/claims/meta-teen-safety-settlement-2026-08.yaml
+  - UNUM-Lattice-News/lattice/BACKLOG_CLAIM_PROMOTIONS_2026-08-27_PASS_04.yaml
+corrections: []
+reporter_rule: >-
+  Settlement obligations and allegations are different seats. Measure implementation and outcomes before crediting either safety success or plaintiffs' entire causal theory.
