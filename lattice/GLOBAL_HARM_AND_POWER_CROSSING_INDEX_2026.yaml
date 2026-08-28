@@ -1,0 +1,316 @@
+schema: unum-lattice-news/global-crossing-index/v0.1
+status: ACTIVE_HIGH_CENTRALITY_INDEX
+as_of: 2026-08-28
+id: global-harm-and-power-crossing-index-2026
+
+purpose: >-
+  Public-facing durable routing index for the highest-centrality current harm and power systems. It exists to show how separately
+  researched actors, states, corporations, armed groups, ideologies, resource flows, technologies, and accountability institutions
+  connect without collapsing them into one undifferentiated conspiracy, one moral category, or one country-level verdict.
+
+core_rule: >-
+  Separate actors for attribution. Reconnect systems for causality. A state, corporation, billionaire, armed group, religious network,
+  military alliance, market, or court is neither guilty nor innocent by adjacency. Every consequential crossing must return to evidence.
+
+primary_harm_axes:
+  - HUMAN_DEATH_AND_PHYSICAL_HARM
+  - CLIMATE_AND_ECOLOGICAL_HARM
+  - COERCION_AND_LOSS_OF_AGENCY
+  - MATERIAL_DEPRIVATION_AND_DISPLACEMENT
+  - DEMOCRATIC_AND_EPISTEMIC_HARM
+  - CATASTROPHIC_RISK
+  - ACCOUNTABILITY_ATTRITION
+
+crossing_dimensions:
+  - state_power
+  - private_capital
+  - billionaire_and_donor_power
+  - military_and_security_capacity
+  - weapons_and_procurement
+  - energy_and_fossil_fuel_flows
+  - minerals_land_and_resource_access
+  - finance_debt_and_sanctions
+  - technology_platforms_and_communications
+  - religion_nationalism_and_hierarchy
+  - propaganda_media_and_laundering
+  - humanitarian_access
+  - migration_and_displacement
+  - courts_investigators_and_accountability
+  - private_exit_and_public_risk
+
+priority_theater_and_system_nodes:
+  - id: russia_ukraine_europe_nato
+    label: Russia-Ukraine / Europe-NATO security ecology
+    status: ACTIVE_TRACE
+    required_actor_decomposition:
+      - Russian_state_and_military
+      - Ukrainian_state_and_military
+      - United_States
+      - NATO
+      - United_Kingdom
+      - France
+      - European_Union_and_member_states
+      - defense_industry_and_procurement_networks
+      - affected_civilian_populations
+    crossings_to_trace:
+      - invasion_and_military_force
+      - weapons_financing_and_procurement
+      - sanctions_and_energy
+      - alliance_commitments
+      - civilian_harm
+      - nuclear_and_great_power_escalation_risk
+      - accountability
+
+  - id: gaza_israel_palestine_us
+    label: Gaza / Israel-Palestine / U.S. support and accountability ecology
+    status: ACTIVE_TRACE
+    required_actor_decomposition:
+      - Israeli_state_and_military
+      - Israeli_governing_coalitions_and_relevant_leaders
+      - Hamas_and_other_Palestinian_armed_groups
+      - Palestinian_civilian_population
+      - United_States
+      - military_assistance_and_defense_contractors
+      - settler_and_settlement_institutions_where_relevant
+      - ICC_ICJ_UN_and_domestic_accountability_bodies
+    crossings_to_trace:
+      - civilian_killing_and_injury
+      - hostage_taking
+      - occupation_and_territorial_control
+      - blockade_and_humanitarian_access
+      - displacement
+      - ethnonational_hierarchy
+      - military_assistance
+      - domestic_US_political_and_contracting_alignment
+      - accountability_pressure_and_retaliation
+
+  - id: us_israel_iran_regional_war
+    label: U.S.-Israel-Iran and regional escalation ecology
+    status: ACTIVE_TRACE
+    required_actor_decomposition:
+      - United_States
+      - Israel
+      - Iran
+      - relevant_regional_armed_groups
+      - Gulf_states
+      - shipping_and_energy_markets
+      - China_and_India_where_material_to_energy_or_sanctions_edges
+      - civilian_populations
+    crossings_to_trace:
+      - initiation_and_escalation
+      - direct_military_force
+      - sanctions_finance_and_blockade
+      - energy_and_shipping_chokepoints
+      - alliance_and_proxy_relations
+      - civilian_harm
+      - global_price_and_supply_effects
+
+  - id: sudan_saf_rsf
+    label: Sudan SAF-RSF war, resource, external-support and humanitarian ecology
+    status: HIGH_PRIORITY_GAP_TRACE
+    required_actor_decomposition:
+      - Sudanese_Armed_Forces
+      - Rapid_Support_Forces
+      - relevant_commanders_and_governing_structures
+      - external_state_supporters_or_material_channels_where_evidenced
+      - gold_and_resource_flows
+      - weapons_and_logistics_networks
+      - displaced_and_targeted_civilian_populations
+      - humanitarian_and_accountability_institutions
+    crossings_to_trace:
+      - mass_killing_and_civilian_harm
+      - ethnic_targeting
+      - sexual_violence
+      - famine_and_survival_access
+      - territorial_governance
+      - resource_finance
+      - weapons_supply
+      - external_patronage
+      - accountability_and_impunity
+
+  - id: drc_rwanda_m23
+    label: DRC-Rwanda-M23 mineral, territorial, military and humanitarian ecology
+    status: HIGH_PRIORITY_GAP_TRACE
+    required_actor_decomposition:
+      - Democratic_Republic_of_the_Congo_state_and_forces
+      - Rwanda_state_and_RDF
+      - M23
+      - other_relevant_armed_groups
+      - mining_and_trading_intermediaries
+      - downstream_external_buyers_and_markets_where_evidenced
+      - displaced_civilian_populations
+      - humanitarian_health_and_accountability_institutions
+    crossings_to_trace:
+      - territorial_control
+      - armed_support_and_command
+      - mineral_extraction_and_trafficking
+      - forced_recruitment
+      - sexual_and_civilian_violence
+      - disease_and_health_system_disruption
+      - foreign_investment_and_supply_chain
+      - accountability
+
+  - id: china_taiwan_us_asia
+    label: China-Taiwan-U.S.-Asia great-power and blockade-risk ecology
+    status: ACTIVE_ESCALATION_TRACE
+    required_actor_decomposition:
+      - Peoples_Republic_of_China
+      - Taiwan
+      - United_States
+      - Japan
+      - South_Korea_where_material
+      - regional_alliance_and_trade_networks
+      - semiconductor_and_technology_supply_chains
+    crossings_to_trace:
+      - military_pressure_and_exercises
+      - blockade_and_shipping_risk
+      - semiconductor_dependency
+      - alliance_commitments
+      - sanctions_and_trade_controls
+      - nuclear_and_great_power_escalation
+      - civilian_and_economic_risk
+
+  - id: united_states_state_capital_authoritarianism
+    label: U.S. state-capital, nationalist, coercive and militarization ecology
+    status: ACTIVE_HIGH_CENTRALITY_TRACE
+    required_actor_decomposition:
+      - executive_branch
+      - Congress
+      - courts_and_state_governments
+      - major_donors_and_billionaires
+      - technology_platform_and_infrastructure_owners
+      - fossil_energy_and_defense_industry
+      - Christian_nationalist_and_Christian_Zionist_networks
+      - white_ethnonationalist_and_far_right_movements_where_evidenced
+      - immigrants_refugees_LGBT_people_poor_people_workers_and_other_affected_populations
+      - accountability_and_civil_society_institutions
+    crossings_to_trace:
+      - donor_money_and_policy_access
+      - procurement_and_private_capacity
+      - military_and_selective_service_mobilization_capacity
+      - immigration_and_border_coercion
+      - anti_LGBT_and_religious_hierarchy_policy
+      - anti_BDS_government_economic_conditioning
+      - surveillance_and_platform_power
+      - racialized_and_class_responsibility_inversion
+      - climate_and_fossil_policy
+      - support_for_foreign_wars_and_security_partners
+      - accountability_delegitimization
+
+  - id: global_fossil_capital_climate
+    label: Fossil-energy, state policy, climate and public-health harm ecology
+    status: ACTIVE_HIGH_CENTRALITY_TRACE
+    required_actor_decomposition:
+      - fossil_fuel_producers
+      - investors_and_financiers
+      - major_emitting_states
+      - regulators_and_subsidy_regimes
+      - energy_consuming_industries
+      - affected_populations_and_ecologies
+      - climate_science_and_accountability_bodies
+    crossings_to_trace:
+      - emissions
+      - air_pollution
+      - subsidy_and_regulatory_policy
+      - lobbying_and_political_finance
+      - climate_disinformation_or_delay_where_evidenced
+      - heat_food_water_displacement_and_health_harm
+      - private_exit_and_adaptation_asymmetry
+      - public_cost_private_gain
+
+  - id: billionaire_technology_power
+    label: Billionaire, technology, infrastructure and political-capacity ecology
+    status: ACTIVE_HIGH_CENTRALITY_TRACE
+    required_actor_decomposition:
+      - individual_billionaires_only_where_actor_specific_edges_are_evidenced
+      - technology_platform_companies
+      - launch_satellite_and_communications_infrastructure
+      - AI_and_surveillance_companies
+      - political_campaign_and_donor_networks
+      - state_contracting_and_regulatory_bodies
+      - workers_users_and_affected_populations
+    crossings_to_trace:
+      - ownership_and_voting_control
+      - platform_amplification
+      - political_finance_and_access
+      - state_contracts_and_subsidies
+      - surveillance_and_behavioral_control
+      - labor_and_productivity_discipline
+      - private_exit_and_bunker_or_resilience_capacity
+      - civilizational_future_setting
+      - contempt_responsibility_inversion_and_affected_population_harm
+
+  - id: transnational_religious_nationalist_coercion
+    label: Transnational Christian-nationalist, Christian-Zionist and family-values coercion ecology
+    status: ACTIVE_TRACE
+    required_actor_decomposition:
+      - domestic_religious_political_organizations
+      - transnational_advocacy_groups
+      - donors_and_funders_where_evidenced
+      - political_parties_and_state_institutions
+      - colonial_legal_inheritance
+      - local_religious_and_cultural_actors
+      - LGBT_religious_and_ethnic_minorities_and_other_affected_populations
+    crossings_to_trace:
+      - missionary_and_institutional_history
+      - colonial_criminal_law_inheritance
+      - conferences_training_and_advocacy
+      - funding_and_material_support
+      - family_child_sovereignty_and_civilizational_frames
+      - criminalization_and_civic_exclusion
+      - police_prison_and_healthcare_effects
+      - domestic_agency_and_local_adoption
+
+  - id: accountability_systems
+    label: Global and domestic accountability brake ecology
+    status: ACTIVE_HIGH_CENTRALITY_TRACE
+    required_actor_decomposition:
+      - ICC
+      - ICJ
+      - UN_investigative_and_human_rights_mechanisms
+      - domestic_courts_and_prosecutors
+      - inspectors_general_and_regulators
+      - journalists_and_civil_society
+      - governments_and_powerful_private_actors_subject_to_review
+    crossings_to_trace:
+      - investigation
+      - jurisdiction
+      - evidence_gathering
+      - sanctions_or_pressure_on_referees
+      - defunding_or_personnel_removal
+      - lawfare_or_persecution_frames
+      - compliance_noncompliance_and_evasion
+      - remedy_restitution_and_support_for_affected_populations
+
+nonseparation_locks:
+  - government != separate_from_private_capital_when_evidenced_transmission_exists
+  - private_capital != separate_from_geopolitics_when_resources_contracts_sanctions_or_infrastructure_cross
+  - geopolitics != separate_from_domestic_hierarchy_when_foreign_alignment_changes_domestic_rights_or_conditions
+  - ideology != separate_from_material_power_when_it_changes_law_funding_force_or_access
+  - technology != social_progress_by_definition
+  - state != one_actor
+  - country != population
+  - religion != nationalist_or_supremacist_project_by_definition
+  - billionaire != corporation != government
+  - ally != shared_command
+  - enemy_label != evidence
+  - theater_membership != equal_responsibility
+  - harmed_population != combatant_or_government
+  - association != culpability
+  - same_money_source != shared_intent
+
+public_use_rule: >-
+  This index should remain streamlined. Promote only high-centrality actors and systems here. Individual people belong on the top surface
+  only when their decision authority, ownership, financing, command, or repeated causal contribution is large enough to materially alter
+  the connected system. Detailed actor records, source custody, disputes, and corrections remain in the relevant sorting and intake repositories.
+
+cross_links:
+  - lattice/STATE_CAPITAL_GEOPOLITICAL_COERCION_AND_RESPONSIBILITY_INVERSION_ECOLOGY_2026.yaml
+  - lattice/HARM_CAUSER_PROTECTION_AND_AFFECTED_POPULATION_SUPPORT_ASYMMETRY_2026.yaml
+  - lattice/PRIVATE_EXIT_PUBLIC_RISK_AND_DEPENDENCY_HIERARCHY_2026.yaml
+  - lattice/COERCIVE_SURVIVAL_AND_OLIGARCHIC_POWER_ECOLOGY_1971_2026.yaml
+  - lattice/CROSS_PARTY_PAC_SECURITY_ASSISTANCE_AND_DEFENSE_CONTRACT_ECOLOGY_2024_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+correction_and_demotion: live
+route_copy_is_not_corroboration: true
