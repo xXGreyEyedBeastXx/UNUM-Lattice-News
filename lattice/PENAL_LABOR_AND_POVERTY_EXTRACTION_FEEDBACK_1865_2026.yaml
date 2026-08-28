@@ -1,0 +1,48 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: penal-labor-and-poverty-extraction-feedback-1865-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/PENAL_LABOR_WAGE_EXTRACTION_CHAIN_1865_2026.yaml
+
+promoted_relations:
+  - proposition: >-
+      The Thirteenth Amendment contains a punishment exception permitting compelled labor after criminal conviction.
+    posture: PRIMARY_CONSTITUTIONAL_FACT
+  - proposition: >-
+      Post-Reconstruction convict leasing used criminal-law enforcement and the punishment exception to create coerced labor systems that disproportionately captured Black people and generated government/private economic benefit.
+    posture: STRONGLY_DOCUMENTED_HISTORICAL_MECHANISM
+  - proposition: >-
+      Contemporary federal prison labor remains extremely low-paid relative to ordinary labor markets: most institution jobs pay roughly 12 to 40 cents per hour and UNICOR jobs typically pay roughly 23 cents to 1.15 dollars per hour.
+    posture: DOCUMENTED_CURRENT_FEDERAL_WAGE_EDGE
+  - proposition: >-
+      Low-paid or unpaid prison labor can weaken a person's ability to accumulate resources for reentry while incarceration and criminal records add barriers to housing and employment.
+    posture: SUPPORTED_SYSTEM_MECHANISM_CASE_SPECIFIC_FOR_INDIVIDUAL_CAUSATION
+
+mechanism:
+  name: PUNISHMENT_TO_LABOR_EXTRACTION
+  chain:
+    - poverty_or_instability
+    - enforcement_and_conviction_for_some_subset
+    - incarceration
+    - compelled_or_highly_constrained_labor
+    - wages_far_below_external_market_rates
+    - limited_reentry_savings_and_persistent_costs
+    - release_into_housing_employment_and_debt_barriers
+    - renewed_instability_risk
+
+core_locks:
+  - historic_convict_leasing_is_not_identical_to_all_current_prison_work
+  - present_private_company_prison_employment_is_a_small_subset_of_total_incarcerated_labor
+  - conviction_exception_does_not_generalize_to_every_detained_person
+  - state_current_wage_rates_require_state_specific_verification
+  - rehabilitation_benefit_claims_do_not_cancel_coercion_or_wage_suppression_edges
+  - coercion_effect_and_corrupt_intent_are_separate
+
+cross_links:
+  - UNUM-Lattice-News-Intake/reviews/POVERTY_ENFORCEMENT_AND_SURVIVAL_ACCESS_CHAIN_2024_2026.yaml
+  - UNUM-Lattice-News-Intake/reviews/PENAL_LABOR_WAGE_EXTRACTION_CHAIN_1865_2026.yaml
+  - UNUM-Lattice-News/lattice/POVERTY_ENFORCEMENT_AND_COERCIVE_SURVIVAL_FEEDBACK_LOOP_2024_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
