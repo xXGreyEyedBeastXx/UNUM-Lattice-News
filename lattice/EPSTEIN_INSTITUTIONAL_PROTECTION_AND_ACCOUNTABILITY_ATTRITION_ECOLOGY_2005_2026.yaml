@@ -1,0 +1,56 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: epstein-institutional-protection-and-accountability-attrition-ecology-2005-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/EPSTEIN_INSTITUTIONAL_PROTECTION_AND_ACCOUNTABILITY_ATTRITION_ECOLOGY_2005_2026.yaml
+
+scope: >-
+  Durable system-level relation documenting repeated institutional mechanisms that reduced, narrowed, delayed, privileged, or obscured accountability around Jeffrey Epstein and potential co-conspirators. This is an operational protection ecology, not a finding of one centrally coordinated conspiracy.
+
+promoted_claims:
+  - proposition: Palm Beach police developed serious probable-cause cases involving sexual offenses against minors, while the state prosecutorial pathway substantially narrowed the case and produced only a solicitation-of-prostitution indictment after limited victim presentation.
+    posture: STRONGLY_SUPPORTED
+    effects: [ACCOUNTABILITY_ATTRITION, SCOPE_NARROWING]
+
+  - proposition: The SDFL federal investigation was resolved through a pre-charge non-prosecution agreement rather than federal prosecution; DOJ OPR later found the resolution reflected poor judgment, ended the investigation before significant steps were completed, and included unusual/problematic terms.
+    posture: DOCUMENTED
+    effects: [ACCOUNTABILITY_ATTRITION, PROTECTION]
+
+  - proposition: The NPA expressly protected potential co-conspirators from federal criminal charges, naming Sarah Kellen, Adriana Ross, Lesley Groff, and Nadia Marcinkova and using broader potential-co-conspirator language.
+    posture: DIRECTLY_DOCUMENTED_TEXT
+    effects: [PROTECTION, ACCOUNTABILITY_ATTRITION]
+
+  - proposition: Victims were excluded from the NPA process and were not forthrightly informed of the federal resolution, materially impairing their ability to participate in or challenge the accountability pathway.
+    posture: DOCUMENTED
+    effects: [VICTIM_EXCLUSION, INFORMATION_ASYMMETRY, ACCOUNTABILITY_ATTRITION]
+
+  - proposition: Epstein received exceptionally generous work-release/custody conditions during his 2008-2009 sentence, including extensive time outside jail at a private office and progressively expanded privileges.
+    posture: DOCUMENTED
+    effects: [CUSTODY_PRIVILEGE, PROTECTION]
+
+  - proposition: Later grand-jury secrecy, sealing, redaction, fragmented record custody, delayed production and inter-institutional disclosure disputes repeatedly constrained or complicated reconstruction of the Epstein evidence and accountability history.
+    posture: DOCUMENTED_AS_MULTIPLE_CONFLICTS
+    effects: [EVIDENCE_ACCESS_IMPAIRMENT, ACCOUNTABILITY_ATTRITION]
+
+limiting_findings:
+  - DOJ OPR did not find evidence that Acosta's NPA decision was caused by corruption, bribery, political consideration, Epstein's wealth/status, or another impermissible consideration.
+  - institutional protection effects do not establish that every protected associate committed a crime.
+  - lawful secrecy/privacy rules can explain some access barriers and must be tested record by record.
+
+system_model:
+  police_evidence: "-> prosecutorial narrowing -> secret pre-charge resolution -> co-conspirator protection -> victim exclusion -> privileged custody -> fragmented/sealed evidence -> delayed later reconstruction"
+
+cross_reference_rule: >-
+  Trump/Epstein allegations that entered or plausibly interacted with law-enforcement or prosecutorial channels must be evaluated against this demonstrated protection/attrition environment rather than an unexamined assumption of neutral process. This context changes the weight of 'never charged' or 'never adjudicated' as exonerating rhetoric, but does not prove any particular allegation.
+
+locks:
+  - operational_protection_ecology != single_master_conspiracy
+  - no_professional_misconduct_finding != no_poor_judgment_or_no_accountability_harm
+  - non_prosecution != exoneration
+  - protected_associate != proven_criminal
+  - system_level_protection != allegation_level_proof
+  - official_self_review_is_evidence_not_sovereign_truth
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
