@@ -1,0 +1,54 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: bear-stearns-formation-network-and-harm-surface-1970s-2008
+intake_return_path: UNUM-Lattice-News-Intake/reviews/BEAR_STEARNS_INSTITUTIONAL_FORMATION_AND_HARM_ALUMNI_AUDIT_1970S_2008.yaml
+
+scope: >-
+  Bear Stearns as an institutional formation, credentialing, and network node with documented aggressive recruitment culture,
+  repeated regulatory/compliance failures, and later high-impact alumni/clients whose downstream conduct requires separate adjudicatory typing.
+
+promoted_relations:
+  - proposition: Bear Stearns explicitly cultivated a rough, results-oriented 'PSD' culture favoring people who were poor, smart, and had a deep desire to be rich.
+    posture: DOCUMENTED_CULTURE
+
+  - proposition: Bear Stearns accumulated documented regulatory findings or settled enforcement actions involving research conflicts, abusive market timing, clearing support for a fraudulent broker, and mortgage-fund investor misrepresentation allegations.
+    posture: DOCUMENTED_FIRM_LEVEL_COMPLIANCE_HISTORY
+
+  - proposition: Jeffrey Epstein's Bear Stearns tenure generated credentials, elite relationships, and later continuing financial ties that materially contributed to his ability to operate as a wealthy financial intermediary.
+    posture: STRONGLY_SUPPORTED_FORMATION_AND_NETWORK_EDGE
+
+  - proposition: Bear Stearns tolerated multiple early warning signs concerning Epstein before his resignation, including disputed credentials and internal compliance concerns.
+    posture: SUPPORTED_BY_LATER_REPORTING_AND_INTERNAL_HISTORY
+    scope_lock: This does not establish that Bear Stearns foresaw or caused Epstein's later sex crimes.
+
+  - proposition: Pete Hegseth also worked at Bear Stearns decades later as an equity-markets/capital-markets analyst.
+    posture: DOCUMENTED_SHARED_INSTITUTION_NODE
+    scope_lock: No Bear-era personal connection to Epstein or Bear-causal link to later allegations is established.
+
+  - proposition: Alan Greenberg, senior Bear Stearns leader and key Epstein sponsor/hiring figure, also served as Donald Trump's broker and handled aggressive equity accumulation for Trump.
+    posture: DOCUMENTED_CLIENT_NETWORK_EDGE
+    scope_lock: Broker-client relation does not establish shared misconduct or Epstein-Trump coordination.
+
+analysis_model:
+  - distinguish employment adjacency from formation effect
+  - distinguish alumni later conduct from firm-level causation
+  - test promotion, retention, warning-sign tolerance, sponsorship and post-employment vouching
+  - map credential/network persistence after departure
+  - compare with peer firms to control for Wall Street base rates and selection bias
+
+core_locks:
+  - shared_employer_is_not_shared_culpability
+  - later_harm_does_not_flow_backward_automatically_into_employer
+  - repeated_compliance_failure_plus_warning_tolerance_can_support_institutional_culture_review
+  - peer_comparison_required_before calling Bear uniquely harmful
+  - network_credentialing_effect can be real without proving ideological or criminal transmission
+
+cross_links:
+  - UNUM-Lattice-News-Intake/reviews/BEAR_STEARNS_INSTITUTIONAL_FORMATION_AND_HARM_ALUMNI_AUDIT_1970S_2008.yaml
+  - UNUM-Lattice-News-Intake/reviews/EPSTEIN_PROTECTION_EVENT_NETWORK_GRAPH_2005_2026.yaml
+  - UNUM-Lattice-News-Intake/reviews/PARLATORE_INDYKE_HEGSETH_EPSTEIN_BRIDGE_2022_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
