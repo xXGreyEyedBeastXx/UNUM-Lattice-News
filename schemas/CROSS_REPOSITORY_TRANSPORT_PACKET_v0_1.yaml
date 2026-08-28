@@ -1,13 +1,16 @@
-schema: unum-lattice-news/cross-repository-transport-packet/v0.1
+schema: unum-lattice-news/cross-repository-transport-packet/v0.2
 status: ACTIVE_BASELINE
 as_of: 2026-08-28
 purpose: >-
-  Carry one evidence lineage through multiple specialist repositories without duplicating evidence,
-  losing identity, inflating confidence, severing causal context, or allowing a repository boundary to
-  become a causal boundary. Specialist repositories may add analysis at their own question seat and
-  must return that analysis as a typed edge or bounded finding rather than as a new source.
+  Carry one research request and its evidence lineage from UNUM-Research into the specialist repository that owns the study,
+  then carry bounded findings and dissemination return paths without duplicating evidence, losing identity, inflating confidence,
+  severing causal context, or allowing a repository boundary to become a causal boundary.
 
 prime_laws:
+  - UNUM_Research_owns_general_request_intake_triage_routing_and_reentry_coordination
+  - specialist_repository_owns_the_actual_study_at_its_question_seat
+  - dissemination_normally_occurs_from_the_repository_that_owns_the_study_or_an_explicit_publication_surface
+  - UNUM_Lattice_News_Intake_is_a_news_specific_evidence_review_subroute_not_the_universal_front_door
   - separation_is_for_attribution
   - connection_is_for_causality
   - specialist_repository_is_not_a_causal_silo
@@ -18,6 +21,7 @@ prime_laws:
   - the_same_harm_event_or_population_must_not_be_recounted_merely_because_it_crosses_repositories
 
 identity:
+  request_id: research-intake-id
   packet_id: crossing-packet-slug
   lineage_root_id: source-or-intake-lineage-root
   projection_id: local-repository-projection-id
@@ -30,16 +34,25 @@ identity:
   local_aliases: []
 
 origin:
-  source_custody_repository: UNUM-Lattice-News-Intake
+  request_intake_repository: UNUM-Research
+  research_intake_return_path: ""
+  news_evidence_review_repository: null
+  news_evidence_review_return_path: null
   origin_repository: ""
   origin_path: ""
   origin_commit_or_blob: null
-  intake_return_path: null
-  durable_lattice_return_path: null
   source_pointers: []
   citation_lineage: []
 
+routing:
+  specialist_owner_repository: ""
+  specialist_study_path: null
+  support_service_routes: []
+  dissemination_targets: []
+  reentry_watch_path: null
+
 clocks:
+  request_time: null
   event_time: null
   publication_time: null
   observation_time: null
@@ -60,10 +73,8 @@ bounded_object:
   responses_or_resistance: []
   consequences: []
 
-specialist_route:
-  repository: ""
+specialist_study:
   question_seat: ""
-  reason_for_route: ""
   inherited_facts: []
   inherited_unknowns: []
   local_analysis: []
@@ -120,16 +131,21 @@ review:
   missingness: []
   corrections: []
   local_confidence: unknown
-  promotion_candidate: false
-  publication_candidate: false
+  dissemination_ready: false
 
 return_contract:
-  return_as:
-    - typed_relation
+  return_to_research_as:
+    - route_status
     - bounded_specialist_finding
-    - narrowing_or_contradiction
+    - contradiction_or_narrowing
     - unresolved_question
-    - repair_or_harm_state_update
+    - supersession_or_correction_signal
+    - dissemination_pointer
+  may_return_to_lattice_as:
+    - typed_relation
+    - reviewed_public_state_update
+    - harm_or_repair_state_update
+    - chronology_or_accountability_edge
   do_not_return_as:
     - duplicate_source
     - automatic_corroboration
@@ -138,15 +154,16 @@ return_contract:
   return_path: ""
 
 locks:
+  - Research_intake_does_not_make_a_claim_true
+  - specialist_route_does_not_transfer_general_intake_ownership
+  - specialist_inference_does_not_rewrite_primary_source_language
   - shared_actor_id_does_not_imply_shared_role_across_cases
   - shared_event_id_does_not_make_every_claim_about_the_event_true
   - shared_harm_id_prevents_duplicate_counting_but_does_not_resolve_contributor_share
-  - specialist_inference_does_not_rewrite_primary_source_language
   - financial_association_does_not_establish_control_without_the_relevant_power_edge
   - financial_relation_can_establish_material_control_when_enforceable_rights_dependency_veto_conditional_access_collateral_or_credible_withdrawal_power_are_evidenced
   - government_private_capital_geopolitics_ideology_ecology_and_human_harm_may_share_one_causal_field_without_sharing_one_motive_or_command
   - publication_projection_is_not_evidence_manufacture
 
 tiny_lock: >-
-  Carry the identity. Carry the evidence. Carry the uncertainty. Let each specialist add only the edge it earns,
-  then return the edge without multiplying the source or the harm.
+  Intake the request in Research. Study it where it belongs. Keep the identity, evidence, uncertainty, route, and way back. Let dissemination come from the seat that actually did the work.
