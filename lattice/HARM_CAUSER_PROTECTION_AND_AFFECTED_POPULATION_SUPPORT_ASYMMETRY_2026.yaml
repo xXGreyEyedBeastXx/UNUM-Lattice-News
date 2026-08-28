@@ -1,0 +1,125 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-28
+id: harm-causer-protection-and-affected-population-support-asymmetry-2026
+
+scope: >-
+  System model for tracing whether institutions, laws, capital structures, political coalitions, media frames, security systems,
+  and accountability practices provide greater insulation, procedural forgiveness, resource access, or recovery capacity to actors
+  who cause or materially contribute to harm than they provide support, remedy, safety, restitution, voice, or exit capacity to the
+  populations bearing that harm. This is a cross-domain relation and must not be isolated into government, capital, geopolitics,
+  criminal justice, humanitarian response, or culture as separate realities.
+
+core_proposition: >-
+  A society may produce an accountability asymmetry when the actor with greater power to cause harm also has greater access to
+  legal defense, political influence, reputational repair, institutional deference, private resilience, and repeated opportunities
+  to continue acting, while affected people face proof burdens, waiting periods, cost barriers, displacement, retaliation,
+  disbelief, or inadequate material support.
+
+core_chain:
+  - POWER_HOLDER_OR_NETWORK_HAS_CAPACITY_TO_SET_TERMS_OR_CAUSE_HARM
+  - HARM_OR_RISK_IS_IMPOSED_ON_AFFECTED_POPULATION
+  - AFFECTED_POPULATION_Bears_IMMEDIATE_MATERIAL_OR_BODILY_COST
+  - POWER_HOLDER_ACCESSES_LEGAL_POLITICAL_FINANCIAL_SECURITY_OR_REPUTATIONAL_INSULATION
+  - ACCOUNTABILITY_IS_DELAYED_NARROWED_DEFLECTED_OR_RECAST_AS_PERSECUTION
+  - AFFECTED_POPULATION_FACES_HIGHER_PROOF_REMEDY_OR_SURVIVAL_BURDEN
+  - SUPPORT_REPAIR_OR_RESTITUTION_IS_PARTIAL_DELAYED_CONDITIONAL_OR_ABSENT
+  - UPSTREAM_ACTOR_RETAINS_GAIN_CAPACITY_STATUS_OR_EXIT
+  - REPEAT_HARM_CAPACITY_PERSISTS
+
+short_form:
+  - forgive_upward
+  - burden_downward
+  - insulate_causer
+  - ration_remedy
+  - preserve_repeat_capacity
+
+relation_candidates:
+  - CAUSES_OR_CONTRIBUTES_TO_HARM_OF
+  - IMPOSES_RISK_ON
+  - HAS_GREATER_EXIT_CAPACITY_THAN
+  - RECEIVES_INSTITUTIONAL_DEFERENCE_FROM
+  - RECEIVES_LEGAL_OR_FINANCIAL_INSULATION_FROM
+  - RECEIVES_REPUTATIONAL_REHABILITATION_FROM
+  - RETAINS_GAIN_AFTER_HARM_TO
+  - RETAINS_DECISION_CAPACITY_AFTER_HARM_TO
+  - FACES_ACCOUNTABILITY_PRESSURE_FROM
+  - DELEGITIMIZES_ACCOUNTABILITY_OF
+  - SHIFTS_PROOF_BURDEN_TO
+  - CONDITIONS_REMEDY_FOR
+  - DELAYS_REMEDY_FOR
+  - WITHHOLDS_SUPPORT_FROM
+  - REQUIRES_AFFECTED_PARTY_TO_BEAR_REPAIR_COST
+  - PROVIDES_PROTECTIVE_SUPPORT_TO
+  - PROVIDES_RESTITUTION_TO
+  - NARROWS_EXIT_OPTIONS_FOR
+  - REPEATS_AFTER_NOTICE
+
+required_measurement_seats:
+  causer_side:
+    - capacity_to_cause_or_set_terms
+    - knowledge_or_notice
+    - intended_gain_or_capacity_increase
+    - harmful_endpoint_intent_if_evidenced
+    - retained_gain
+    - private_exit_capacity
+    - legal_resources
+    - political_access
+    - institutional_deference
+    - reputational_repair_capacity
+    - response_after_notice
+  affected_side:
+    - death_or_physical_harm
+    - displacement_or_confinement
+    - material_deprivation
+    - ecological_or_future_harm
+    - lost_income_or_property
+    - legal_and_proof_burden
+    - remedy_delay
+    - healthcare_or_recovery_access
+    - retaliation_risk
+    - practical_exit_options
+    - restitution_or_repair_received
+
+cross_domain_examples_to_test:
+  - war_or_security_policy -> civilian_harm -> state_or_command_insulation -> weak_or_delayed_civilian_remedy
+  - pollution_or_climate_externality -> public_health_or_ecological_harm -> private_gain -> public_adaptation_cost
+  - labor_or_platform_term_setting -> worker_precarity -> contempt_or_blame -> weakened_support_or_bargaining_power
+  - housing_health_transport_or_credit_gatekeeping -> dependency -> nonpayment_or_failure -> punitive_response
+  - donor_or_billionaire_influence -> public_policy -> material_harm -> reputational_or_legal_insulation
+  - hate_or_hierarchy_mobilization -> targeted_population_harm -> speech_or_actor_normalization -> reduced_target_support
+  - accountability_investigation -> powerful_actor_pressure -> court_media_regulator_or_investigator_delegitimization
+
+support_side_discriminator: >-
+  Do not measure accountability only by whether punishment occurred. Measure whether the harmed population received practical safety,
+  food, shelter, healthcare, income continuity, legal assistance, restitution, relocation, ecological repair, political voice, and
+  meaningful noncoercive exit. A system can punish a perpetrator symbolically while leaving the harmed population materially abandoned.
+
+forgiveness_discriminator: >-
+  Mercy, due process, rehabilitation, and correction are not themselves laundering. The asymmetry arises when procedural care,
+  contextualization, second chances, resource access, or benefit of the doubt are distributed upward to powerful harm-causers while
+  affected populations receive suspicion, austerity, coercion, abandonment, or impossible proof burdens.
+
+anti_laundering_locks:
+  - due_process_for_accused != disregard_for_harmed
+  - support_for_harmed != presumption_of_every_allegation_as_true
+  - legal_acquittal_or_noncharge != proof_no_harm_occurred_at_other_seats
+  - allegation != established_harm
+  - wealth_or_office != guilt
+  - harmed_status != infallibility
+  - forgiveness != absence_of_accountability
+  - punishment != repair
+  - compensation != full_repair_by_default
+  - public_sympathy != material_support
+  - accountability_statement != accountability_effect
+  - beneficial_conduct_elsewhere_does_not_offset_unrelated_harm
+  - same_evidentiary_burden_applies_to_powerful_and_powerless_actors
+
+cross_links:
+  - lattice/STATE_CAPITAL_GEOPOLITICAL_COERCION_AND_RESPONSIBILITY_INVERSION_ECOLOGY_2026.yaml
+  - lattice/COERCIVE_SURVIVAL_AND_OLIGARCHIC_POWER_ECOLOGY_1971_2026.yaml
+  - lattice/POVERTY_ENFORCEMENT_AND_COERCIVE_SURVIVAL_FEEDBACK_LOOP_2024_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+correction_and_demotion: live
+route_copy_is_not_corroboration: true
