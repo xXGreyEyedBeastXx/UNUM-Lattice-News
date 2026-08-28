@@ -1,0 +1,35 @@
+story_id: story-2026-08-25-kalandia-training-centre-seizure
+title: Israeli forces seize UNRWA Kalandia Training Centre and disrupt vocational education access
+date: 2026-08-25
+status: reviewed
+investigation_state: CONFIRMED_AT_SEIZURE_AND_ACCESS_EDGE
+claim_posture: directly_documented_and_reported
+summary: >-
+  Israeli security forces forcibly entered the UNRWA Kalandia Training Centre in occupied East Jerusalem on August 25,
+  and Israeli officials publicly indicated the premises had been seized. The action interfered with operation of an active
+  vocational training facility serving roughly 340 young Palestine Refugees per year, creating immediate education and service access disruption.
+what_changed:
+  - UNRWA lost or had its operational control of the facility materially interfered with
+  - vocational education access moved from threatened to directly disrupted
+nodes:
+  - UNRWA
+  - Kalandia_Training_Centre
+  - Israeli_security_forces
+  - Palestine_Refugee_youth
+evidence_effects:
+  - REALIZED_OUTCOME
+  - CONSTRAINT_DELTA
+  - SCOPE_LIMITING
+established_facts:
+  - forcible_entry_and_seizure_or_control_interference
+  - active_training_facility_serves_roughly_340_youth_per_year
+  - immediate_education_and_service_access_disruption
+not_established:
+  - permanent_loss_of_education_for_all_affected_youth
+  - exact_duration_of_seizure_or_control
+  - criminal_liability_of_named_officials
+  - final_resolution_of_every_property_sovereignty_or_immunity_claim
+sources:
+  - UNUM-Lattice-News-Intake/claims/israel-unrwa-kalandia-training-centre-seizure-2026-08-25.yaml
+confirmed_harm_ref: UNUM-Lattice-News-Proven-Harm/confirmed/KALANDIA_TRAINING_CENTRE_SEIZURE_ACCESS_DISRUPTION_2026-08-25.yaml
+reporter_rule: report_the_seizure_and_access_disruption_directly_keep_duration_and_final_legal_classification_open
