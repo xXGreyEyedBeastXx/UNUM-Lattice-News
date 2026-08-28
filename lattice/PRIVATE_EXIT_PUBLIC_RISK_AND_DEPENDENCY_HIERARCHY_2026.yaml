@@ -1,0 +1,123 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-28
+id: private-exit-public-risk-and-dependency-hierarchy-2026
+
+scope: >-
+  Cross-domain model for testing whether concentrated wealth, ownership, citizenship or residency options, private security,
+  private infrastructure, technology control, and political access allow a narrow class of actors to externalize shared risk while
+  purchasing insulation from the consequences borne by populations with fewer exit options. This model may resemble some features
+  historically associated with feudal or neo-feudal dependency, but the historical analogy is not a conclusion and must be tested
+  feature by feature.
+
+core_question: >-
+  Who can survive system failure privately, who must depend on public or employer-controlled systems, who sets the terms of access,
+  and whether unequal exit capacity feeds back into weaker incentives to maintain universal protections.
+
+mechanism:
+  - SHARED_SYSTEM_PRODUCES_OR_ACCUMULATES_RISK
+  - POWERFUL_ACTORS_HAVE_DISPROPORTIONATE_ROLE_IN_TERM_SETTING_OR_RESOURCE_USE
+  - COSTS_ARE_EXTERNALIZED_TO_PUBLIC_AFFECTED_POPULATIONS_OR_FUTURE_GENERATIONS
+  - WEALTH_AND_OWNERSHIP_FINANCE_PRIVATE_RESILIENCE_AND_EXIT
+  - LOWER_POWER_POPULATIONS_REMAIN_DEPENDENT_ON_PUBLIC_EMPLOYER_CREDITOR_LANDLORD_OR_STATE_GATES
+  - EXIT_ASYMMETRY_INCREASES_BARGAINING_AND_POLITICAL_ASYMMETRY
+  - UNIVERSAL_SYSTEM_MAINTENANCE_BECOMES_LESS_MATERIALLY_NECESSARY_FOR_THE_INSULATED_CLASS
+  - PRIVATE_ALTERNATIVES_EXPAND_WHILE_PUBLIC_CAPACITY_MAY_ERODE
+  - DEPENDENCY_HIERARCHY_DEEPENS
+
+private_exit_capacity_examples_to_trace:
+  - multiple_residences_or_jurisdictions
+  - private_security
+  - hardened_or_redundant_shelter
+  - private_energy_water_and_communications
+  - private_transport_or_aviation
+  - private_healthcare_access
+  - legal_and_financial_jurisdiction_shopping
+  - ownership_of_critical_communications_or_launch_infrastructure
+  - political_access_and_regulatory_influence
+  - large_liquid_or_diversified_asset_buffers
+
+public_dependency_examples_to_trace:
+  - wage_dependency
+  - employer_linked_healthcare
+  - car_dependent_mobility
+  - rent_or_mortgage_dependency
+  - debt_and_credit_access
+  - public_water_and_energy_grids
+  - public_disaster_response
+  - food_and_benefit_eligibility
+  - public_health_infrastructure
+  - migration_and_border_permission
+  - military_or_security_protection
+
+feudalization_discriminator:
+  purpose: >-
+    Test the user's medieval-era analogy as a structural comparison rather than a label. A stronger neo-feudal comparison requires
+    several of the following to coexist and reproduce over time.
+  features:
+    - concentrated_control_of_land_or_critical_assets
+    - survival_access_conditioned_on_relationship_to_power_holder
+    - weak_meaningful_exit_for_dependents
+    - private_or_quasi_private_security_capacity
+    - unequal_legal_or_political_access
+    - inherited_or_self_reproducing_concentration_of_power
+    - tollbooth_control_over_necessities_or_infrastructure
+    - public_cost_private_gain_feedback
+    - patronage_or_dependency_substituting_for_universal_rights
+    - accountability_asymmetry_between_elite_and_dependent_populations
+    - strong_technological_capacity_without_corresponding_expansion_of_equal_standing_or_remedy
+  scope_locks:
+    - modern_capitalism != medieval_feudalism_by_definition
+    - inequality_alone != feudalism
+    - billionaire_wealth != lordship_by_definition
+    - private_security != private_sovereignty_by_definition
+    - historical_analogy_requires_mechanism_match_not_vibe
+
+technology_discriminator: >-
+  Technological advancement is not treated as social progress by default. Measure whether a technology expands broad human agency,
+  resilience, health, knowledge, consent, and noncoercive exit, or whether its primary realized effect is to intensify surveillance,
+  extraction, military capacity, labor discipline, private insulation, or gatekeeping.
+
+relation_candidates:
+  - EXTERNALIZES_SYSTEM_RISK_TO
+  - RETAINS_INSULATION_FROM
+  - HAS_PRIVATE_EXIT_CAPACITY_FROM
+  - CONTROLS_NECESSITY_ACCESS_FOR
+  - SETS_SURVIVAL_TERMS_FOR
+  - DEPENDS_ON_FOR_SURVIVAL_ACCESS
+  - HAS_GREATER_EXIT_CAPACITY_THAN
+  - PRIVATIZES_RESILIENCE_FROM
+  - SOCIALIZES_FAILURE_COST_TO
+  - BUILDS_PRIVATE_CAPACITY_WITH_PUBLIC_SUPPORT
+  - OWNS_CRITICAL_INFRASTRUCTURE_USED_BY
+  - REDUCES_UNIVERSAL_SYSTEM_DEPENDENCE_FOR
+  - NARROWS_EXIT_OPTIONS_FOR
+  - INCREASES_BARGAINING_ASYMMETRY_OVER
+
+high_value_crossings_to_trace:
+  - fossil_energy_and_climate_externality -> public_risk -> private_resilience_and_geographic_exit
+  - technology_platform_or_infrastructure_ownership -> state_and_private_power -> surveillance_or_information_control
+  - housing_land_and_real_estate_concentration -> rent_dependency -> homelessness_or_displacement
+  - healthcare_finance_and_employer_control -> care_dependency -> constrained_exit
+  - private_space_and_launch_infrastructure -> public_subsidy_contracts_and_civilizational_future_setting
+  - defense_and_security_contracting -> public_funds -> private_capacity -> geopolitical_force -> civilian_risk
+  - disaster_and_insurance_withdrawal -> household_exposure -> wealth_based_recovery_gap
+
+anti_laundering_locks:
+  - private_preparation != proof_of_desire_for_collapse
+  - private_exit_capacity != proof_actor_caused_the_risk
+  - stated_public_benefit != proof_of_realized_public_benefit
+  - stated_malice_absent != accountability_absent
+  - technology_claimed_as_progress != progress_by_default
+  - public_private_partnership != capture_by_definition
+  - capacity_to_exit_can_be_power_even_without_explicit_coercive_intent
+  - insulation_from_harm_is_relevant_when_actor_also_sets_terms_that_create_or_preserve_the_harm
+
+cross_links:
+  - lattice/STATE_CAPITAL_GEOPOLITICAL_COERCION_AND_RESPONSIBILITY_INVERSION_ECOLOGY_2026.yaml
+  - lattice/HARM_CAUSER_PROTECTION_AND_AFFECTED_POPULATION_SUPPORT_ASYMMETRY_2026.yaml
+  - lattice/COERCIVE_SURVIVAL_AND_OLIGARCHIC_POWER_ECOLOGY_1971_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+correction_and_demotion: live
+route_copy_is_not_corroboration: true
