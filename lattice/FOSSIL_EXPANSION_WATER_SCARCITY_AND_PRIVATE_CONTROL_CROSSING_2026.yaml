@@ -1,0 +1,120 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-28
+id: fossil-expansion-water-scarcity-and-private-control-crossing-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/FOSSIL_EXPANSION_WATER_RIGHTS_PRIVATE_CONTROL_CROSSING_2026-08-28.yaml
+
+scope: >-
+  Durable cross-domain model linking evidenced fossil-fuel expansion, climate-amplified water scarcity, private water-rights accumulation,
+  public policy, infrastructure finance, and population exposure. This relation does not presume that all fossil investors and water investors
+  are the same actors or that water-rights acquisition is inherently wrongful. It preserves confirmed direct overlaps and keeps stronger
+  coordination or scarcity-profiteering claims open until proven.
+
+promoted_relations:
+  - proposition: The U.S. federal government under President Donald Trump is actively expanding fossil-fuel extraction and support capacity through leasing, drilling access, LNG policy, and coal-support measures.
+    posture: CONFIRMED_POLICY_DIRECTION
+
+  - proposition: Major private actors are currently expanding fossil production and infrastructure, including ExxonMobil, Shell, Woodside, Enbridge, and private-capital partners KKR and Apollo; Norway is also pursuing continued Arctic and continental-shelf petroleum development.
+    posture: CONFIRMED_ACTOR_SPECIFIC_EXPANSION
+
+  - proposition: Private firms and investment structures are accumulating, consolidating, developing, or monetizing large water-rights and storage portfolios in the U.S. West, including Select Water Solutions/AV Farms, Gladstone Land, D.R. Horton/Vidler, Water Asset Management, and Greenstone/GSC Farm.
+    posture: CONFIRMED_AS_ACTOR_SPECIFIC_WATER_CONTROL_EDGES
+
+  - proposition: Select Water Solutions is a direct fossil-water crossing actor: its core operations support oil-and-gas production through water sourcing, recycling, disposal, and hydraulic-fracturing/completion chemistry while it also owns a large stake in AV Farms, formed to consolidate and expand a major Colorado water-rights/storage portfolio.
+    posture: CONFIRMED_DIRECT_CROSSING
+
+  - proposition: Colorado River and western U.S. water scarcity is severe and climate-amplified, with 2026 federal management imposing major Lower Basin delivery cuts beginning in 2027.
+    posture: CONFIRMED_SYSTEM_STRESS
+
+system_feedback:
+  - FOSSIL_EXTRACTION_AND_COMBUSTION_EXPAND
+  - GREENHOUSE_GAS_FORCING_ACCUMULATES
+  - WARMING_AMPLIFIES_HYDROLOGIC_STRESS_IN_VULNERABLE_BASINS
+  - WATER_SCARCITY_AND_ALLOCATION_CONFLICT_INCREASE
+  - WATER_RIGHTS_STORAGE_AND_DELIVERY_INFRASTRUCTURE_GAIN_STRATEGIC_VALUE
+  - PRIVATE_AND_PUBLIC_ACTORS_ACQUIRE_OR_CONSOLIDATE_CONTROL
+  - ACCESS_TERMS_SHIFT_ACROSS_AGRICULTURAL_MUNICIPAL_INDUSTRIAL_AND_ECOLOGICAL_USERS
+  - HOUSEHOLDS_RURAL_COMMUNITIES_TRIBES_FARMS_AND_ECOLOGIES_MAY_BEAR_DIFFERENTIAL_SCARCITY_COSTS
+
+confirmed_direct_overlap:
+  actor: Select Water Solutions
+  fossil_side:
+    - oil_and_gas_EandP_water_sourcing_transfer_recycling_disposal
+    - hydraulic_fracturing_stimulation_cementing_and_completion_chemistry
+    - infrastructure_expansion_in_Permian_and_Delaware_Basins
+  water_control_side:
+    - approximate_39_percent_interest_in_AV_Farms_as_of_2025_2026_filings
+    - 72_million_dollars_contributed_by_early_2025
+    - planned_additional_multi_year_capital_for_water_rights_acquisition_and_infrastructure
+    - AV_Farms_portfolio_described_as_one_of_Colorados_largest_water_holdings_and_storage_portfolios
+  scope_lock: >-
+    Select also recycles produced water and can reduce freshwater demand per unit of oil-and-gas activity. That mitigation edge does not erase
+    the company's role in enabling hydrocarbon production, and the enabling role does not by itself prove malicious climate intent.
+
+private_water_control_examples:
+  - actor: Gladstone Land Corporation
+    evidence_state: March_31_2026_SEC_filing_reports_55649_acre_feet_of_California_water_assets
+  - actor: D.R. Horton / Vidler Water
+    evidence_state: Vidler_identifies_acquiring_developing_and_converting_water_rights_for_municipal_industrial_and_development_markets_as_core_business
+  - actor: Water Asset Management
+    evidence_state: documented_Colorado_farmland_and_water_rights_investment_model_with_long_term_leasing_or_transfer_options
+  - actor: Greenstone Resource Partners / GSC Farm
+    evidence_state: documented_Cibola_farmland_acquisition_and_2083_1_acre_foot_Colorado_River_transfer_path_to_Queen_Creek
+
+fossil_finance_examples:
+  - actor_pair: Enbridge + KKR + Apollo
+    evidence_state: C2_7_billion_joint_venture_for_Westcoast_natural_gas_pipeline_expansion
+  - actor_pair: Williams + Blackstone_led_consortium
+    evidence_state: 5_34_billion_dollar_investment_supporting_new_power_projects_associated_with_AI_data_center_demand
+
+interpretive_relation: >-
+  A system-level feedback is supported in which fossil expansion contributes to climate forcing, climate forcing can worsen water scarcity,
+  and water scarcity increases the strategic value of water control. What is not yet established is a single coordinated strategy in which
+  fossil-finance actors intentionally create water scarcity in order to profit from water-rights accumulation. Actor-specific motive,
+  coordination, and terminal-beneficiary claims require separate proof.
+
+relation_families:
+  - EXPANDS_FOSSIL_EXTRACTION_CAPACITY
+  - FINANCES_FOSSIL_INFRASTRUCTURE
+  - ACQUIRES_WATER_RIGHTS
+  - CONSOLIDATES_WATER_STORAGE
+  - CONVERTS_WATER_USE
+  - SETS_WATER_ACCESS_TERMS_FOR
+  - SERVES_FOSSIL_PRODUCTION_WITH_WATER_INFRASTRUCTURE
+  - EXTERNALIZES_CLIMATE_COST_TO
+  - RETAINS_INSULATION_FROM_SCARCITY
+  - BENEFITS_FROM_SCARCITY_ASSET_APPRECIATION
+  - SHIFTS_WATER_FROM_AGRICULTURAL_TO_MUNICIPAL_OR_INDUSTRIAL_USE
+  - BEARS_SCARCITY_COST_FROM
+
+high_priority_questions:
+  - Which financiers have material exposure to both fossil infrastructure and water-control assets?
+  - Which water acquisitions are motivated by farming, development, industrial demand, municipal resilience, environmental use, or financial appreciation?
+  - Which fossil, data-center, semiconductor, mining, and agricultural projects receive public water allocations or priority during shortage?
+  - Who bears mandatory conservation, rate increases, land fallowing, well failure, or ecological loss when scarcity intensifies?
+  - Do water-rights owners gain pricing or bargaining power as climate stress deepens?
+  - Which actors knew of climate and water risks when expanding fossil or water-control positions, and what did they do after notice?
+  - Where do public subsidies, leases, permits, tax policy, or eminent-domain powers increase private control of either energy or water infrastructure?
+
+locks:
+  - specialist_repository != causal_silo
+  - water_right_ownership != hoarding_by_definition
+  - water_market_transaction != exploitation_by_definition
+  - fossil_expansion != proof_of_desire_for_climate_damage
+  - climate_change != sole_cause_of_drought_or_water_shortage
+  - scarcity_asset_appreciation != proof_actor_created_scarcity_intentionally
+  - same_financial_sector != same_command_network
+  - municipal_acquisition != private_speculation
+  - recycling_and_efficiency_benefits_must_be_preserved_at_their_exact_edge
+  - beneficial_mitigation_edge_does_not_cancel_unrelated_expansion_harm
+  - repeated_system_feedback_can_exist_without_one_mastermind
+
+cross_links:
+  - lattice/GLOBAL_HARM_AND_POWER_CROSSING_INDEX_2026.yaml
+  - lattice/STATE_CAPITAL_GEOPOLITICAL_COERCION_AND_RESPONSIBILITY_INVERSION_ECOLOGY_2026.yaml
+  - lattice/PRIVATE_EXIT_PUBLIC_RISK_AND_DEPENDENCY_HIERARCHY_2026.yaml
+  - lattice/COERCIVE_SURVIVAL_AND_OLIGARCHIC_POWER_ECOLOGY_1971_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+correction_and_demotion: live
+route_copy_is_not_corroboration: true
