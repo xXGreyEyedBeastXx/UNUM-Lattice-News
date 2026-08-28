@@ -1,0 +1,65 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: coercive-survival-and-oligarchic-power-ecology-1971-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/COERCIVE_SURVIVAL_OLIGARCHIC_POWER_ECOLOGY_HYPOTHESIS_1971_2026.yaml
+
+scope: >-
+  Durable system model for testing whether overlapping corporate, donor, legal, political, media, scientific, and executive-power networks
+  have repeatedly shifted bargaining power and accountability away from ordinary people and public referees toward concentrated private and executive power.
+
+promoted_relations:
+  - proposition: The 1971 Powell Memorandum is a primary-source strategy document proposing organized business response across major social and institutional fields.
+    posture: CONFIRMED
+
+  - proposition: Project 2025 is an openly coordinated Heritage-led coalition organized around policy, personnel, training, and a 180-day implementation playbook.
+    posture: CONFIRMED
+
+  - proposition: The existing Lattice supports a broad historical field continuity from Powell-era corporate/legal counter-mobilization through later conservative legal, donor, policy, personnel, and executive-power infrastructure, while not establishing one uninterrupted command chain.
+    posture: STRONGLY_SUPPORTED_AS_FIELD_CONTINUITY
+
+  - proposition: Public confidence in U.S. legal institutions is historically low and federal sentencing disparities by race persist in available Sentencing Commission data.
+    posture: CONFIRMED_AS_MEASURED
+    scope_lock: Low trust and disparity do not prove every legal process is corrupt or every disparity intentionally discriminatory.
+
+  - proposition: Wealthy and corporate political influence constitutes a materially supported oligarchic-influence surface, though formal regime classification as oligarchy remains definition-dependent.
+    posture: SUPPORTED_STRUCTURAL_SURFACE
+
+  - proposition: Current conflicts involving scientific consensus, research funding, academic autonomy, and public-health policy create a science-referee-delegitimization surface requiring case-specific causal review.
+    posture: DOCUMENTED_CASE_SPECIFIC
+
+system_mechanism:
+  - CULTURE_SELECTION_AND_REWARD
+  - NETWORK_PERSISTENCE
+  - INSTITUTIONAL_CREDENTIALING_AND_ACCESS
+  - CAPITAL_AND_INFORMATION_CONCENTRATION
+  - POLICY_AND_PERSONNEL_TRANSMISSION
+  - ACCOUNTABILITY_ATTRITION
+  - REFEREE_DELEGITIMIZATION
+  - ACCOUNTABILITY_INVERSION
+  - REDUCED_NONCOERCIVE_EXIT_OPTIONS
+  - INCREASED_DEPENDENCY_AND_BARGAINING_ASYMMETRY
+
+classifier_state:
+  long_running_organized_power_ecology: STRONGLY_SUPPORTED_AS_RESEARCH_MODEL
+  openly_coordinated_subprojects: DOCUMENTED
+  single_continuous_1971_2026_conspiracy: NOT_ESTABLISHED
+  global_criminal_conspiracy: NOT_ESTABLISHED
+  oligarchic_influence: SUPPORTED
+  formal_oligarchy_regime_label: DEFINITION_DEPENDENT_OPEN
+  coercive_survival_hypothesis: OPEN_WITH_MATERIAL_SUPPORTING_MECHANISMS
+
+core_locks:
+  - prior_pattern_does_not_prove_new_event
+  - new_event_does_not_begin_from_empty_prior
+  - network_severance_laundering_is_prohibited
+  - adjacency_is_not_influence
+  - influence_is_not_corrupt_motive
+  - repeated_directional_effects_can_form_system_pattern_without_one_mastermind
+  - legal_process_failure_does_not_establish_underlying_guilt
+  - explicit_coordination_does_not_automatically_establish_criminal_conspiracy
+  - survival_coercion_must_be_measured_through_exit_options_dependency_and_bargaining_power
+
+source_custody: UNUM-Lattice-News-Intake
+correction_and_demotion: live
+route_copy_is_not_corroboration: true
