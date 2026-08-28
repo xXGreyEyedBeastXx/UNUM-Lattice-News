@@ -1,11 +1,12 @@
-schema: unum-lattice-news/repository-custody/v0.5
+schema: unum-lattice-news/repository-custody/v0.6
 status: ACTIVE
 updated: 2026-08-28
 purpose: >-
   Provide one machine-readable routing surface for public-reality intake,
   durable evidence custody, specialist interpretation, cross-repository routing,
-  shared-service support, downstream promotion, and publication handoff without
-  allowing repository names or rhetorical labels to become evidence.
+  shared-service support, downstream promotion, publication handoff, and adjacent
+  research-request feeding without allowing repository names or rhetorical labels
+  to become evidence.
 
 prime_laws:
   - external_evidence_precedes_project_interpretation
@@ -37,6 +38,7 @@ upstream_intake:
     - coverage_gap_reports
     - rejected_and_deferred_candidates
   does_not_own:
+    - general_cross_repository_research_request_intake
     - durable_public_event_truth_by_repository_presence
     - publication_authority
     - automatic_node_or_relation_promotion
@@ -54,9 +56,9 @@ upstream_intake:
     - return_path_to_intake_material
   legacy_note: >-
     Existing UNUM-Lattice-News/research/intake material remains valid provenance
-    and re-entry evidence. New intake should preferentially land in the dedicated
-    Intake repository; older packets may be migrated or indexed gradually while
-    preserving original paths and commit lineage.
+    and re-entry evidence. New public-news intake should preferentially land in
+    the dedicated Lattice News Intake repository; older packets may be migrated
+    or indexed gradually while preserving original paths and commit lineage.
 
 durable_owner:
   repository: UNUM-Lattice-News
@@ -72,6 +74,7 @@ durable_owner:
     - corrections
   does_not_own:
     - performing_every_specialist_analysis_locally
+    - performing_general_research_request_intake
     - duplicating_shared_service_work_available_elsewhere
 
 specialist_routes:
@@ -202,16 +205,29 @@ shared_service_routes:
   - repository: UNUM-Tools-Utilities
     role: reusable_instrument_schema_and_validation_service
 
-  - repository: UNUM-Research
-    role: librarian_suggestion_cross_repository_reawakening_and_gap_service
-    locks:
-      - suggestion_does_not_seize_specialist_custody
-      - quiet_repository_does_not_mean_dead_or_obsolete
-
   - repository: UNUM-Archives
     role: frozen_publication_history_and_historical_return_surface
     locks:
       - archived_projection_is_not_current_evidence_authority
+
+adjacent_feeder_routes:
+  - repository: UNUM-Research
+    role: general_research_request_intake_triage_and_dispatch
+    may:
+      - receive_cross_repository_research_requests
+      - gather_candidate_questions_and_source_leads
+      - identify_likely_destination_repositories
+      - dispatch_research_items_with_provenance_and_scope
+    does_not_own:
+      - the_destination_specialist_study
+      - the_destination_repository_synthesis
+      - dissemination_for_the_destination_repository
+      - Lattice_News_public_event_source_custody
+      - automatic_promotion_into_the_durable_Lattice
+    handoff_rule: >-
+      Once a research request is routed, the destination repository owns the actual
+      study and its local dissemination. Any result returning to Lattice News must
+      cross back with evidence lineage, scope, uncertainty, and typed return edges.
 
 satellite_routes:
   - repository: UNUM-Lattice-News-Proven-Harm
