@@ -1,0 +1,37 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+source_custody: UNUM-Lattice-News-Intake/reviews/TRUMP_EPSTEIN_ACCOUNTABILITY_CROSS_REFERENCE_1980S_2026.yaml
+
+promoted_claims:
+  - proposition: >-
+      At least one serious Trump-related sexual allegation was received through the 2019 FBI Epstein investigation,
+      generated four interviews, and has no identified public merits disposition.
+    posture: CONFIRMED_PROCEDURAL_FACT_WITH_UNVERIFIED_UNDERLYING_ALLEGATION
+  - proposition: >-
+      DOJ later released related interview records after saying fifteen documents had been incorrectly coded as duplicates.
+    posture: CONFIRMED_RELEASE_HISTORY
+  - proposition: >-
+      Epstein-related evidence includes both incriminating/context-strengthening edges and claim-limiting survivor/witness evidence.
+    posture: CONFIRMED_MIXED_EVIDENTIARY_FIELD
+  - proposition: >-
+      Trump/Epstein social-contact depth and later knowledge-timeline evidence materially increase the relevance of notice,
+      opportunity, and accountability questions without establishing participation in Epstein's crimes.
+    posture: SUPPORTED_BOUNDED_RELATION
+
+classifier_locks:
+  - FBI_receipt != substantiation
+  - no_charge != exoneration
+  - relationship != culpability
+  - survivor_nonaccusation != universal_exoneration
+  - release_error != concealment_intent_without_evidence
+  - Epstein_private_assertion != independent_fact
+
+priority_open_edges:
+  - exact disposition/referral of 2019 FBI Trump allegation
+  - full four-interview record and investigative closure metadata
+  - Reiter 2006 Trump knowledge-call corroboration
+  - Stacey Williams chronology against Epstein records
+  - named-accuser searches across DOJ/House corpus
+
+correction_and_demotion: live
