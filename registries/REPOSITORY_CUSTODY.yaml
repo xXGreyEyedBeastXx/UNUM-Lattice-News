@@ -1,4 +1,4 @@
-schema: unum-lattice-news/repository-custody/v0.3
+schema: unum-lattice-news/repository-custody/v0.4
 status: ACTIVE
 updated: 2026-08-27
 purpose: >-
@@ -101,6 +101,23 @@ specialist_routes:
       - replacement_of_news_source_custody
       - automatic_corruption_extraction_or_illegality_verdict
 
+  - repository: UNUM-Hierarchy-and-Supremacy-Studies
+    route_when:
+      - ranked_group_status_or_unequal_entitlement_is_a_material_question
+      - racial_ethnic_religious_caste_gender_national_colonial_or_other_supremacy_claim_requires_deep_study
+      - formal_or_operational_hierarchy_in_rights_citizenship_land_safety_resources_or_political_standing_requires_reconstruction
+      - historical_hierarchy_lineage_or_dominant_group_victimhood_inversion_requires_discriminator_review
+    locks:
+      - difference_does_not_establish_hierarchy
+      - unequal_outcome_does_not_automatically_establish_supremacist_design
+      - supremacy_finding_does_not_automatically_establish_extremism_terrorism_or_criminality
+      - extremism_finding_does_not_automatically_establish_supremacy
+      - identity_membership_does_not_transfer_a_collective_verdict
+      - historical_victimization_does_not_create_immunity_from_later_hierarchy_analysis
+    does_not_own:
+      - replacement_of_news_source_custody
+      - automatic_collective_blame_or_person_level_motive
+
   - repository: UNUM-Laundering-Map
     route_when:
       - rhetoric_or_framing_transforms_the_apparent_causal_or_moral_picture
@@ -128,6 +145,7 @@ specialist_routes:
       - membership_is_not_ideological_overlap
       - ideological_overlap_is_not_operational_coordination
       - association_is_not_individual_guilt
+      - extremism_is_not_inherited_from_a_supremacy_route
 
   - repository: UNUM-Human-Relations
     route_when:
@@ -196,6 +214,7 @@ satellite_routes:
       - UNUM-Governance
       - UNUM-Lattice-News-Geopolitics
       - UNUM-Lattice-News-Capital-and-Power
+      - UNUM-Hierarchy-and-Supremacy-Studies
     required_separations:
       - measured_from_modeled
       - environment_system_from_human_health_claim
@@ -203,6 +222,7 @@ satellite_routes:
       - uncertainty_in_exact_dose_from_evidence_of_exposure_or_contamination
       - geopolitical_context_from_harm_proof
       - capital_flow_from_corruption_or_intent_finding
+      - unequal_exposure_from_automatic_supremacy_motive
 
 promotion_states:
   - INTAKE_CANDIDATE
