@@ -1,0 +1,76 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: epstein-distributed-protection-network-and-event-zeroing-model-2005-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/EPSTEIN_PROTECTION_EVENT_NETWORK_GRAPH_2005_2026.yaml
+
+scope: >-
+  Durable model for analyzing Epstein-related accountability failures as a distributed network of protection,
+  access, intervention, institutional attrition, and information control rather than as isolated events beginning from zero.
+
+promoted_relations:
+  - proposition: Repeated Epstein accountability failures must be analyzed with inherited historical state rather than reset as independent events.
+    posture: METHODOLOGICAL_LOCK
+    mechanism: EVENT_ZEROING
+
+  - proposition: The 2007 federal non-prosecution process involved an unusually powerful defense network with substantial prior government service and professional overlap with the prosecutorial environment.
+    posture: DOCUMENTED_NETWORK_FIELD
+    note: The network field is relevant to access and bargaining-power analysis but does not itself prove corrupt influence.
+
+  - proposition: Alexander Acosta, Jay Lefkowitz and Kenneth Starr had documented Kirkland & Ellis professional overlap before or during the Epstein NPA period; Acosta later testified to prior professional contact with both Starr and Lefkowitz.
+    posture: DOCUMENTED_PROFESSIONAL_NETWORK_EDGE
+    effects: [ACCESS, RELIABILITY_MODIFYING]
+
+  - proposition: Epstein's federal NPA had a documented protection effect extending beyond Epstein to named and unnamed potential co-conspirators.
+    posture: DOCUMENTED_PROTECTION_EFFECT
+    note: DOJ OPR did not establish that the clause was adopted to protect political, celebrity or other influential associates.
+
+  - proposition: A senior JPMorgan executive later admitted sharing confidential and market-sensitive bank information with Epstein, including internal Federal Reserve communications during the 2008 financial crisis.
+    posture: DOCUMENTED_INFORMATION_ACCESS_EDGE
+    effects: [ACCESS, CAPACITY]
+    scope_lock: This does not establish Federal Reserve institutional knowledge, approval, or protection of Epstein.
+
+  - proposition: The Powell-to-Heritage/Federalist/modern conservative legal-policy ecology is a documented macro power network that may be cross-referenced when named people or institutions intersect an Epstein protection event.
+    posture: CONTEXTUAL_FIELD_RELATION
+    scope_lock: No direct causal Epstein-protection edge from Powell, Heritage, or the Federalist Society is established merely by macro-network overlap.
+
+analysis_model:
+  for_each_protection_event:
+    - identify authority seat
+    - identify documented evidence available before decision
+    - identify who had access to decisionmaker
+    - recover direct contacts and interventions
+    - recover indirect professional, firm, appointment, donor, financial, and institutional bridges
+    - compare decision before and after intervention
+    - identify beneficiary set and victim/public cost
+    - test ordinary-process comparator
+    - preserve competing explanations and resistance nodes
+    - update inherited network state rather than resetting to zero
+
+causal_ladder:
+  - ADJACENCY
+  - ACCESS
+  - INTERVENTION
+  - TEMPORAL_UPDATE
+  - MATERIAL_EFFECT
+  - CAUSAL_SUPPORT
+
+core_locks:
+  - prior_pattern_does_not_prove_new_event
+  - new_event_does_not_begin_from_empty_prior
+  - direct_personal_connection_is_not_required_for_indirect_network_edge_to_be_relevant
+  - indirect_edge_is_not_proof_of_influence
+  - influence_is_not_proof_of_corrupt_motive
+  - distributed_protection_pattern_does_not_require_one_mastermind
+  - institutional_membership_is_not_collective_culpability
+  - protection_effect_must_be_split_from_protection_intent
+  - event_zeroing_is_prohibited
+
+cross_links:
+  - UNUM-Lattice-News-Intake/reviews/CONSERVATIVE_POWER_ECOLOGY_EDGE_LEDGER_1971_2026.yaml
+  - UNUM-Lattice-News-Intake/reviews/TRUMP_EPSTEIN_ACCOUNTABILITY_CROSS_REFERENCE_1980S_2026.yaml
+  - UNUM-Lattice-News-Intake/reviews/EPSTEIN_INSTITUTIONAL_PROTECTION_AND_ACCOUNTABILITY_ATTRITION_ECOLOGY_2005_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
