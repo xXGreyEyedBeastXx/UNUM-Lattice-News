@@ -4,9 +4,9 @@
 
 ## Purpose
 
-Identify where the current Lattice News ecology is carrying too much work, where specialist receiving organs are too thin, and which shared primitives should be reinforced before additional substantive expansion increases drift or maintenance stress.
+Identify where the current research ecology is carrying too much work, where specialist receiving organs are too thin, and which shared primitives should be reinforced before additional expansion increases drift or maintenance stress.
 
-The goal is not repository symmetry. Different repositories should remain different sizes. The goal is **functional load distribution**.
+The goal is not repository symmetry. The goal is **functional load distribution**.
 
 ```text
 thin != bad
@@ -16,254 +16,328 @@ specialist != silo
 repository size != importance
 ```
 
-## Current finding
+## Architecture correction
 
-The largest present risk is not lack of subject-matter coverage.
-
-It is:
+The wider platform follows this primary routing law:
 
 ```text
-rapid growth in Lattice + Intake
-+
-new specialist repositories with uneven receiving machinery
-+
-no single canonical cross-repository transport record
-+
-shared harms / populations / claims at risk of duplicate projection
-+
-repair/accountability language not yet normalized across every route
+REQUEST / RESEARCH PRESSURE
+        |
+        v
+UNUM-Research
+request intake / recovery / triage / routing / provenance / re-entry watch
+        |
+        v
+SPECIALIST OWNER REPOSITORY
+actual study / casework / experiment / domain conclusion / local dissemination
+        |
+        +--------------------+
+        |                    |
+        v                    v
+Research return         downstream/public surface
+route status            when appropriate
 ```
 
-This creates avoidable stress in the two central repositories and makes every additional specialist crossing more expensive.
+`UNUM-Lattice-News-Intake` is **not the universal intake front door**. It is a news-specific pre-durable evidence-review subroute for public-current-event material that may feed `UNUM-Lattice-News`.
+
+The current `UNUM-Research` contract already states this directly: intake in Research, study where it belongs, Research keeps the route and watches what comes back.
+
+## Current finding
+
+The largest present weakness is not lack of subject-matter coverage.
+
+It is the uneven maturity between:
+
+```text
+strong Research intake/routing concept
++
+rapidly expanding specialist question load
++
+some specialist repositories still lacking clean study queues / reusable return grammar
++
+shared identities and relations that must survive cross-repository travel
+```
+
+That mismatch creates the temptation for Research, Lattice, or News Intake to continue doing specialist work after routing. That is the stress pattern to remove.
 
 ## Load-bearing strengths already present
 
+### UNUM-Research
+
+Research is already correctly framed as:
+
+- research-request intake;
+- source/current-state recovery;
+- exact question and seat definition;
+- specialist owner selection;
+- route history;
+- provenance;
+- re-entry/watch coordination;
+- cross-repository gap detection and reawakening.
+
+Its main reinforcement need is **dispatch and return discipline**, not more local study content.
+
+### Specialist repositories
+
+Several already possess strong local methods. Their next job is to accept routed packets cleanly, do the study there, and expose the result without forcing upstream repositories to reconstruct the analysis.
+
 ### UNUM-Lattice-News
 
-Strong central schemas already exist for:
+The durable Lattice already has strong local schemas for nodes, relations, contributions, evidence effects, knowledge/notice, harms, corrections, state transitions, and publication routing.
 
-- node families and aliases;
-- stories and state transitions;
-- typed relations;
-- contributions;
-- evidence effects;
-- knowledge and notice;
-- harm vectors and harmful trajectory;
-- shared-harm identifiers;
-- corrections;
-- publication routing.
-
-The central Lattice is therefore **not missing a conceptual model**. Its risk is becoming the place where every specialist question is also locally re-solved.
+Its risk is becoming a substitute specialist merely because many public-reality studies eventually touch it.
 
 ### UNUM-Lattice-News-Intake
 
-Intake is currently the strongest operational conveyor. It already performs source custody, claim extraction, evidence-state separation, specialist routing, lineage preservation, and return tracking.
+News Intake remains valuable for news-specific source verification, claim extraction, clock separation, evidence-state/world-state triage, and promotion staging.
 
-Its risk is throughput concentration: if every specialist remains thin, Intake becomes both the intake desk and the de facto specialist analyst.
+Its job is narrower than Research:
 
-### Laundering / Governance / Translation / Human Relations
-
-These repositories already possess comparatively clear question seats and reusable methodology. They should be used as donors rather than reimplemented inside Lattice.
+```text
+Research = general request intake and dispatcher
+News Intake = specialist news evidence-review subroute
+Lattice = durable reviewed public-reality mesh
+```
 
 ## Highest reinforcement priorities
 
-### P0 — Cross-repository identity and transport
+### P0 — Research dispatch + re-entry capacity
 
-**Problem:** specialist projections can drift in naming, IDs, scope, harm counting, clocks, and return language.
+**Highest platform priority.**
 
-**Reinforcement:** canonical `schemas/CROSS_REPOSITORY_TRANSPORT_PACKET_v0_1.yaml`.
-
-Required behavior:
+A routed request should preserve:
 
 ```text
-one evidence lineage
--> many specialist projections
--> one source identity
--> distinct local analyses
--> typed return edges
+request identity
+source/current-state pointers
+exact question / seat
+scope
+why this specialist owns it
+known evidence and unknowns
+strongest alternative / discriminator
+required neighboring routes
+return condition
+re-entry/watch path
+dissemination expectation
 ```
 
-A routed projection is never a new corroborating source merely because it resides in another repository.
+Research should not need to solve the domain question to decide where it belongs.
+
+### P0 — Cross-repository identity and transport
+
+Canonical reinforcement:
+
+- `schemas/CROSS_REPOSITORY_TRANSPORT_PACKET_v0_1.yaml`
+
+Current law:
+
+```text
+UNUM-Research request identity
+-> specialist study projection
+-> bounded finding / contradiction / unresolved edge
+-> return to Research
+-> optional durable/public crossings
+```
+
+A routed projection is never a new corroborating source merely because it lives in another repository.
 
 ### P0 — Shared harm + material repair identity
 
-**Problem:** multi-contributor harms can be double-counted and accountability can terminate at adjudication while harmed populations remain unrepaired.
+Canonical reinforcement:
 
-**Reinforcement:** canonical `schemas/SHARED_HARM_REPAIR_CONTINUITY_v0_1.yaml`.
+- `schemas/SHARED_HARM_REPAIR_CONTINUITY_v0_1.yaml`
 
 Required behavior:
 
 ```text
 count underlying harm once
-+ trace contributor responsibility separately
++ trace contributors separately
 + track repair separately from punishment
 + preserve residual harm and repeat-harm capacity
 ```
 
-### P0 — Geopolitics receiving capacity
+### P0 — Specialist study receiving capacity
 
-**Problem:** geopolitical load is now very high—Sudan, DRC/Rwanda/M23, Russia/Ukraine/NATO, Gaza/Israel/Palestine/U.S., U.S./Israel/Iran, China/Taiwan/Asia, sanctions, energy, resources—but the specialist repository remains structurally small.
+The thinnest high-load specialist seats currently need **study queues**, not independent intake systems.
 
-**Need:** an active route queue and standardized theater packet, not just broad maps.
+#### Geopolitics
 
-The repo should absorb:
+High current study pressure:
+- Sudan;
+- DRC/Rwanda/M23;
+- Russia/Ukraine/NATO;
+- Gaza/Israel/Palestine/U.S.;
+- U.S./Israel/Iran;
+- China/Taiwan/Asia;
+- sanctions, alliances, arms, strategic resources and corridors.
 
-- prior condition / initiating act / response chronology;
-- state/bloc/armed-actor separation;
-- territorial and sovereignty state;
-- military support / arms / sanctions / alliance edges;
-- strategic resource/corridor relations;
-- external patronage;
-- escalation and accountability crossings.
+Reinforcement added:
+- `UNUM-Lattice-News-Geopolitics/routing/ACTIVE_STUDY_QUEUE_2026-08-28.yaml`
 
-### P0 — Earth / environmental receiving capacity
+#### Earth / Environmental Ecology
 
-**Problem:** climate, water, fossil, mining, contamination, ocean heat, drought, ecological exposure, food systems, and war-environment relations now exceed the current route queue.
+High current study pressure:
+- climate forcing;
+- water stress;
+- fossil expansion;
+- mining;
+- contamination;
+- ocean heat;
+- drought;
+- ecological exposure;
+- food/habitat systems;
+- war-environment interactions.
 
-**Need:** a climate-water-resource stress conveyor organized by place, mechanism, scale, exposure, and ecological/human consequence.
+Reinforcement added:
+- `UNUM-Earth-Environmental-Ecology/routing/CLIMATE_WATER_RESOURCE_STUDY_QUEUE_2026-08-28.yaml`
 
-Do not let global climate evidence become automatic proof of every local harm. Do not let local uncertainty erase established global forcing.
+#### Capital-and-Power
 
-### P1 — Capital-and-Power conveyor
+Current maps are strong but incoming work needs a conveyor for:
+- ownership;
+- financing;
+- water rights;
+- fossil infrastructure;
+- health insurance;
+- mobility;
+- debt;
+- privatization;
+- procurement;
+- political access;
+- necessity gating.
 
-**Problem:** strong conceptual maps exist, but the repository is still map-heavy. Ownership, financing, water rights, fossil infrastructure, health insurance, mobility, debt, privatization, procurement, political access, and necessity gating need a queue/ledger architecture.
+Reinforcement added:
+- `UNUM-Lattice-News-Capital-and-Power/routing/ACTIVE_STUDY_QUEUE_2026-08-28.yaml`
 
-**Need:** receive a crossing, resolve:
+#### Hierarchy / Supremacy
 
-```text
-money / asset
--> rights carried with it
--> term-setting / veto / withdrawal / collateral / ownership power
--> dependency / exit
--> public input
--> beneficiary
--> loss bearer
--> retained gain / insulation
-```
+Current conceptual distinctions are strong, but repeated hierarchy propositions should be routed into a stable study queue rather than re-tested upstream.
 
-Important correction:
+Reinforcement added:
+- `UNUM-Hierarchy-and-Supremacy-Studies/routing/ACTIVE_STUDY_QUEUE_2026-08-28.yaml`
 
-```text
-payment alone != every form of control
+#### Timeline Studies
 
-but
+Timeline should operate as a routed chronology study/service seat, not a general intake desk.
 
-financial relation + evidenced enforceable power
-= may be direct material control
-```
+Reinforcement added:
+- `UNUM-Timeline-Studies/routing/LATTICE_CHRONOLOGY_STUDY_QUEUE_2026-08-28.yaml`
 
-### P1 — Hierarchy / Supremacy conveyor
+## Relation vocabulary gap
 
-**Problem:** the conceptual distinction is strong, but current work is still concentrated in maps.
+A major cross-repository stress source was that active studies already use concepts not fully normalized in the central relation vocabulary.
 
-**Need:** a queue that receives exact hierarchy propositions and returns only:
-
-- ranked status;
-- asserted entitlement;
-- formal rule or operational differential;
-- material beneficiary / burden;
-- legitimating frame;
-- strongest equality / non-hierarchy model;
-- historical lineage where proven.
-
-No identity or repository route inherits a supremacy verdict.
-
-### P1 — Timeline Studies as shared chronology service
-
-**Problem:** Timeline Studies now has the right conceptual remit, but most of its existing body predates the current public-reality workload.
-
-**Need:** route current conflict and accountability chronology into it instead of rebuilding chronology separately in every investigation.
-
-High-value initial clocks:
-
-- Sudan war / partition / external support;
-- DRC-Rwanda-M23 territorial, ceasefire, resource, and accountability transitions;
-- Russia-Ukraine-NATO escalation and support changes;
-- Gaza/Israel/Palestine ceasefire, access, attack, investigation, and accountability states;
-- U.S.-Israel-Iran escalation;
-- fossil policy / water scarcity / rights acquisition;
-- notice -> continuation -> mitigation / repair sequences.
-
-### P2 — Proven Harm and Real Bad Policy
-
-These repositories should remain comparatively sparse.
-
-Their thinness is a feature when it reflects a high promotion threshold.
-
-Strengthen their schemas and queues, but do **not** turn them into parallel intake engines.
-
-## Load redistribution model
+The relation registry has therefore been expanded to cover additional reusable edges including:
 
 ```text
-EXTERNAL REALITY
-      |
-      v
-INTAKE
-source custody / claim split / clocks / evidence effects
-      |
-      +------------------------------+
-      |                              |
-      v                              v
-SPECIALIST ROUTES               TIMELINE / TRANSLATION
-answer one question seat         shared support services
-      |                              |
-      +--------------+---------------+
-                     v
-             DURABLE LATTICE
-          recompose earned edges
-                     |
-          +----------+-----------+
-          |                      |
-          v                      v
-   PROVEN HARM / POLICY    PUBLICATION CANDIDATE
-   thresholded satellites  Radical Love handoff
+ownership / voting / veto / appointment control
+financial control
+conditional access
+necessity access
+meaningful exit / lack of meaningful exit
+dependency
+resource rights and resource-access control
+public-resource awards
+publicly supported private capacity
+military / dual-use capability transfer
+coercive capacity support
+sanctions / blockade / strategic corridors
+harm contribution
+material repair
+access restoration
+repeat-harm capacity reduction
 ```
 
-## Support-service distinction
+This reduces the chance that each specialist develops a separate dialect for the same causal crossing.
 
-Not every sibling needs to behave like a specialist verdict aperture.
+## Dissemination architecture
 
-Some repositories can reduce load by acting as shared services:
+The specialist that owns the study should normally own its local explanatory or dissemination surface.
 
 ```text
-Timeline Studies -> chronology / clocks / temporal identity
-Universal Translation -> semantic / language seat preservation
-Tools-Utilities -> reusable instruments / schemas / validators
-Research -> cross-repository librarian / suggestion and reawakening service
-Archives -> frozen publication / historical return surface
+Research
+= request + intake + route + provenance + re-entry
+
+Specialist repository
+= actual study + local conclusion + local dissemination
+
+Lattice News
+= durable reviewed public-reality relation when applicable
+
+Radical Love Revolution
+= broad human-facing synthesis when a study is intentionally translated there
+
+Archives
+= frozen historical publication state
 ```
 
-These services should lower duplicated work without seizing evidence custody.
+Do not force every specialist result through Lattice News before it can be useful. Lattice is one durable public-reality mesh, not a universal publication bottleneck.
+
+## Downstream gates
+
+`UNUM-Lattice-News-Proven-Harm` and `UNUM-Lattice-News-Real-Bad-Policy` should remain comparatively sparse.
+
+Their thinness is healthy when it reflects a high promotion threshold. They should not become alternate intake or general study engines.
+
+## Corrected load redistribution model
+
+```text
+QUESTION / REQUEST / NEW RESEARCH PRESSURE
+                 |
+                 v
+            UNUM-Research
+      intake / triage / provenance
+       owner selection / re-entry
+                 |
+       +---------+----------+
+       |                    |
+       v                    v
+SPECIALIST STUDY       SUPPORT STUDY/SERVICE
+Geo / Capital /        Timeline / Translation /
+Hierarchy / Earth /    Tools / other exact seats
+Medical / etc.                |
+       |                    |
+       +---------+----------+
+                 v
+       local result + dissemination
+                 |
+      +----------+-----------+
+      |          |           |
+      v          v           v
+ Research     Lattice      other public /
+ return       if earned    downstream surface
+```
 
 ## Stress indicators to watch
 
-A repository is becoming overloaded when several of these occur:
+A repository boundary or workflow is generating unnecessary load when:
 
-- repeated local reinvention of the same schema;
-- long mixed-domain files that contain several specialist questions;
-- specialist questions answered centrally because the specialist has no receiving queue;
-- duplicate actor, event, harm, or population IDs;
-- route copies cited as independent confirmation;
-- corrections must be manually propagated to many uncontrolled copies;
-- chronology reconstructed repeatedly from scratch;
-- publication prose becomes embedded in living analytical records;
-- downstream verdict repositories accumulate unresolved research;
-- harmed populations disappear while actor/accountability files keep growing.
+- Research keeps doing the specialist analysis after owner selection;
+- a specialist creates its own competing general intake system;
+- News Intake becomes the universal front door for non-news research;
+- Lattice locally reconstructs specialist studies instead of receiving returned edges;
+- specialist conclusions return without the original request/source lineage;
+- duplicate actor, event, harm, or population identities appear;
+- route copies are treated as independent corroboration;
+- chronology is repeatedly rebuilt from scratch;
+- corrections must be manually propagated through uncontrolled copies;
+- publication prose becomes embedded in living research records;
+- harmed populations disappear while actor/accountability records continue growing.
 
 ## Baseline reinforcement order
 
 ```text
-1. transport identity
-2. shared harm + repair continuity
-3. geopolitics receiving queue
-4. earth/environment receiving queue
-5. capital-and-power conveyor
-6. hierarchy/supremacy conveyor
-7. live Timeline routing
-8. validation of downstream promotion gates
-9. only then accelerate new topic intake
+1. Research intake / dispatch / re-entry
+2. cross-repository transport identity
+3. shared harm + repair continuity
+4. high-load specialist study queues
+5. shared chronology / translation / utility services
+6. canonical relation vocabulary
+7. validation of downstream promotion gates
+8. dissemination routes from study owners
+9. only then accelerate additional research intake
 ```
 
 ## Tiny lock
 
-> Reinforce the bridge before adding traffic. Let the central Lattice recompose the world, not personally perform every specialist job. Thin organs should receive work; strong organs should share tools; no repository boundary gets to become a causal wall.
+> Intake in Research. Study where it belongs. Publish from the seat that earned the conclusion. Keep the source, the route, the uncertainty, and the way back.
