@@ -1,194 +1,195 @@
-schema: unum-lattice-news/relation-vocabulary/v0.2
+schema: unum-lattice-news/relation-vocabulary/v0.3
 id: attribution-routing-relations-v0-1
 status: active_review
-updated: 2026-08-21
+updated: 2026-08-28
 purpose: >-
-  Provide typed relation names for tracing pressure, attribution, message funding, amplification, mobilization, policy response, material term-setting, value/loss distribution, knowledge/notice, persistence, beneficiary gain, and correction without collapsing those stages into a single accusation.
+  Provide typed relation names that routed specialist studies can reuse when returning findings to Research, Lattice News, or neighboring repositories.
+  Keep messaging, political access, ownership, financial control, resource access, military support, harm, knowledge, persistence, accountability, and repair as distinct evidenced crossings.
 
 relations:
   EXPERIENCES_PRESSURE_FROM:
-    requires:
-      - affected_participant_or_population
-      - pressure_measure_or_bounded_description
-      - evidence
+    requires: [affected_participant_or_population, pressure_measure_or_bounded_description, evidence]
   ATTRIBUTES_PRESSURE_TO:
-    requires:
-      - attributing_actor_or_population
-      - attributed_target
-      - evidence_of_belief_or_statement
+    requires: [attributing_actor_or_population, attributed_target, evidence_of_belief_or_statement]
   ASSERTS_CAUSE_IS:
-    requires:
-      - claimant
-      - causal_target_or_proposition
-      - recoverable_statement
+    requires: [claimant, causal_target_or_proposition, recoverable_statement]
   TARGETS_AS_CAUSE:
-    requires:
-      - messenger_or_campaign
-      - target
-      - evidence_of_causal_or_blame_frame
+    requires: [messenger_or_campaign, target, evidence_of_causal_or_blame_frame]
   FUNDS_MESSAGE_INFRASTRUCTURE:
-    requires:
-      - funder
-      - recipient_or_network
-      - recoverable_financial_trace
-    does_not_establish:
-      - message_control
-      - coordination
-      - persuasion
-      - policy_control
+    requires: [funder, recipient_or_network, recoverable_financial_trace]
+    does_not_establish: [message_control, coordination, persuasion, policy_control]
   AMPLIFIES_FRAME:
-    requires:
-      - amplifier
-      - frame
-      - distribution_or_repetition_evidence
+    requires: [amplifier, frame, distribution_or_repetition_evidence]
+  AMPLIFIES_IDEOLOGICAL_FRAME_FOR:
+    requires: [amplifier, actor_network_policy_or_project, frame, evidence]
+    does_not_establish: [shared_private_motive, operational_command]
+  LEGITIMATES_COERCION_AGAINST:
+    requires: [speaker_institution_or_frame, affected_population_or_target, coercive_action_or_policy, evidence_linking_frame_to_legitimation]
+    does_not_establish: [causation_of_the_coercive_action, private_hatred]
   TRIGGERS_OR_ACTIVATES_STATUS_THREAT:
-    requires:
-      - population
-      - stimulus_or_context
-      - research_or_observational_support
+    requires: [population, stimulus_or_context, research_or_observational_support]
   MOBILIZES_RESPONSE:
-    requires:
-      - frame_or_pressure
-      - response
-      - evidence_linking_exposure_or_belief_to_response
+    requires: [frame_or_pressure, response, evidence_linking_exposure_or_belief_to_response]
   SUPPORTS_POLICY_RESPONSE:
-    requires:
-      - actor_or_population
-      - policy
-      - evidence_of_support
+    requires: [actor_or_population, policy, evidence_of_support]
   PRODUCES_POLICY_TRANSFORM:
-    requires:
-      - institution_or_actor
-      - policy_or_action
-      - evidence_of_causal_authority
+    requires: [institution_or_actor, policy_or_action, evidence_of_causal_authority]
+  GAINS_POLICY_ACCESS_THROUGH:
+    requires: [actor_or_network, money_relationship_role_or_institutional_channel, evidenced_access_path]
+    does_not_establish: [policy_control, quid_pro_quo, corruption]
+  FUNDS_POLITICAL_CAPACITY_OF:
+    requires: [funder, recipient_actor_network_or_vehicle, recoverable_financial_trace]
+    does_not_establish: [control_of_every_action, bribery, shared_motive]
+
+  OWNS_CONTROLLING_INTEREST_IN:
+    requires: [owner, owned_entity_or_asset, ownership_share_or_control_basis, evidence]
+    does_not_establish: [every_downstream_operational_decision]
+  HOLDS_VOTING_CONTROL_OVER:
+    requires: [controller, entity, voting_right_or_governance_basis, evidence]
+  HOLDS_VETO_OR_APPOINTMENT_POWER_OVER:
+    requires: [controller, institution_or_entity, veto_appointment_or_removal_right, evidence]
+  CONDITIONS_FUNDING_ON:
+    requires: [funder, recipient, condition, evidence]
+    does_not_establish: [recipient_compliance_without_evidence]
+  CONTRACTS_WITH:
+    requires: [party_a, party_b, contract_or_procurement_record]
+    does_not_establish: [control, corruption, identical_motive]
+  AWARDS_PUBLIC_RESOURCES_TO:
+    requires: [public_institution, recipient, grant_contract_subsidy_right_or_other_resource, evidence]
+    does_not_establish: [improper_award, capture, net_public_harm]
+  BUILDS_STATE_CAPACITY_FOR:
+    requires: [private_or_public_actor, state_or_public_institution, capability_or_infrastructure, evidence_of_capacity_effect]
+    does_not_establish: [control_of_state_policy]
+  BUILDS_PRIVATE_CAPACITY_WITH_PUBLIC_SUPPORT:
+    requires: [private_actor, public_supporting_institution_or_resource, capability_or_asset, evidence]
+    does_not_establish: [corruption, lack_of_public_benefit]
+  EXERCISES_FINANCIAL_CONTROL_OVER:
+    requires: [controller, controlled_counterparty_or_entity, enforceable_financial_power, evidence_of_term_setting_veto_collateral_ownership_or_dependency_control]
+    does_not_establish: [control_outside_the_scoped_financial_relation, harmful_endpoint_intent]
 
   SETS_MATERIAL_TERMS_FOR:
-    requires:
-      - term_setting_actor_or_institution
-      - affected_counterparty_or_population
-      - wage_price_rent_fee_access_eligibility_contract_or_other_term
-      - evidence_of_term_setting_authority_or_action
-    does_not_establish:
-      - harmful_endpoint_intent
-      - extraction
-      - illegality
+    requires: [term_setting_actor_or_institution, affected_counterparty_or_population, wage_price_rent_fee_access_eligibility_contract_or_other_term, evidence_of_term_setting_authority_or_action]
+    does_not_establish: [harmful_endpoint_intent, extraction, illegality]
+  CONDITIONS_ACCESS_ON:
+    requires: [gatekeeper, affected_counterparty_or_population, required_condition_or_payment, evidence_of_gatekeeping_power]
+    does_not_establish: [wrongfulness, lack_of_all_alternatives]
+  CONDITIONS_NECESSITY_ACCESS_ON_PAYMENT:
+    requires: [gatekeeper, necessity, affected_population_or_counterparty, payment_or_financial_condition, evidence]
+    does_not_establish: [unlawfulness, monopoly, malicious_intent]
+  HAS_MEANINGFUL_EXIT_FROM:
+    requires: [participant_or_population, dependency_or_market_relation, evidenced_practical_alternative]
+  LACKS_MEANINGFUL_EXIT_FROM:
+    requires: [participant_or_population, dependency_or_market_relation, evidence_of_material_exit_constraints]
+    does_not_establish: [formal_legal_compulsion]
+  CREATES_OR_DEEPENS_DEPENDENCY_FOR:
+    requires: [actor_policy_or_system, affected_population_or_counterparty, dependency_mechanism, evidence_of_changed_exit_or_bargaining_position]
+    does_not_establish: [intent_to_dominate]
+  ACQUIRES_RESOURCE_RIGHTS_IN:
+    requires: [actor_or_institution, resource_or_jurisdiction, right_license_lease_entitlement_or_property_interest, evidence]
+    does_not_establish: [exclusive_control, harmful_use]
+  CONSOLIDATES_CONTROL_OF:
+    requires: [actor_or_network, asset_resource_infrastructure_or_market, evidence_of_increased_control_concentration]
+    does_not_establish: [illegal_monopoly, harmful_endpoint_intent]
+  CONTROLS_RESOURCE_ACCESS_FOR:
+    requires: [controller, resource_or_infrastructure, affected_users_or_population, legal_contractual_operational_or_physical_control_basis]
+    does_not_establish: [abuse_of_control]
+  GAINS_RESOURCE_ACCESS_THROUGH:
+    requires: [actor_state_or_network, mechanism_transaction_policy_force_or_agreement, resource_or_corridor, evidence]
+    does_not_establish: [primary_motive_for_the_broader_event]
+
   PURSUES_GAIN_OR_COST_REDUCTION_THROUGH:
-    requires:
-      - actor_or_institution
-      - mechanism_or_term
-      - evidence_of_intended_gain_cost_reduction_or_capacity_increase
-    does_not_establish:
-      - intent_to_harm
-      - realized_gain
+    requires: [actor_or_institution, mechanism_or_term, evidence_of_intended_gain_cost_reduction_or_capacity_increase]
+    does_not_establish: [intent_to_harm, realized_gain]
   BENEFITS_FROM_TRANSFORM:
-    requires:
-      - beneficiary
-      - transform
-      - measured_or_bounded_gain
+    requires: [beneficiary, transform, measured_or_bounded_gain]
   BEARS_LOSS_FROM_TRANSFORM:
-    requires:
-      - affected_participant_or_population
-      - transform
-      - measured_or_bounded_loss
+    requires: [affected_participant_or_population, transform, measured_or_bounded_loss]
   RETURNS_GAIN_OR_POWER_TO:
-    requires:
-      - transform
-      - beneficiary
-      - evidenced_return_path
+    requires: [transform, beneficiary, evidenced_return_path]
   EXTERNALIZES_COST_TO:
-    requires:
-      - actor_or_system
-      - affected_participant_or_population
-      - cost_path
+    requires: [actor_or_system, affected_participant_or_population, cost_path]
   SUPPLEMENTS_COST_OF:
-    requires:
-      - public_household_or_third_party_resource
-      - actor_or_system_whose_private_cost_is_allegedly_reduced
-      - supported_incidence_or_counterfactual_path
-    does_not_establish:
-      - direct_payment_to_actor
-      - full_capture_of_resource
+    requires: [public_household_or_third_party_resource, actor_or_system_whose_private_cost_is_allegedly_reduced, supported_incidence_or_counterfactual_path]
+    does_not_establish: [direct_payment_to_actor, full_capture_of_resource]
+  RETAINS_INSULATION_FROM:
+    requires: [actor_or_population, harm_risk_or_system_failure, evidenced_private_public_or_geographic_insulation_capacity]
+    does_not_establish: [desire_for_the_harm_or_failure]
+
+  PROVIDES_MILITARY_OR_DUAL_USE_CAPABILITY_TO:
+    requires: [provider, recipient, capability_equipment_service_or_technology, evidence_of_transfer_or_service]
+    does_not_establish: [control_of_recipient_operations, responsibility_for_every_downstream_use]
+  SUPPORTS_COERCIVE_CAPACITY_OF:
+    requires: [supporter, recipient_actor_or_institution, coercive_capability_or_resource, evidence_of_material_support]
+    does_not_establish: [shared_command, endorsement_of_every_act]
+  IMPOSES_SANCTIONS_ON:
+    requires: [sanctioning_actor_or_institution, target, sanction_measure, evidence]
+  ENFORCES_BLOCKADE_OR_ACCESS_RESTRICTION_ON:
+    requires: [enforcing_actor_or_institution, affected_territory_population_or_flow, restriction_mechanism, evidence]
+    does_not_establish: [legal_classification, proportionality]
+  DEPENDS_ON_RESOURCE_FROM:
+    requires: [dependent_actor_state_or_system, source_actor_region_or_resource, dependency_measure_or_bounded_description, evidence]
+  CONTROLS_STRATEGIC_CORRIDOR_FOR:
+    requires: [controller, corridor_route_or_chokepoint, affected_flow_or_users, evidence_of_control]
+
+  EXPOSES_TO:
+    requires: [actor_system_event_or_condition, affected_population_or_ecology, hazard_or_harmful_condition, evidence_of_exposure_path]
+    does_not_establish: [clinical_harm, intent]
+  CONTRIBUTES_TO_HARM_OF:
+    requires: [contributor, affected_population_or_ecology, shared_harm_id_or_bounded_harm, evidenced_causal_contribution]
+    does_not_establish: [sole_causation, equal_contributor_share, harmful_endpoint_intent]
+  CAUSES_DOCUMENTED_HARM_TO:
+    requires: [actor_event_or_mechanism, affected_population_or_ecology, bounded_harm, evidence_supporting_high_confidence_causal_edge]
+    does_not_establish: [criminal_classification, private_motive]
+  DISPLACES:
+    requires: [actor_event_policy_or_condition, affected_population, displacement_event_or_mechanism, evidence]
+    does_not_establish: [legal_classification_of_forcible_transfer]
 
   HAS_CAPACITY_TO_KNOW_ABOUT:
-    requires:
-      - actor_or_institution
-      - consequence_or_mechanism
-      - evidence_of_relevant_information_capacity
-    does_not_establish:
-      - actual_knowledge
-      - receipt_of_specific_notice
-      - deliberate_avoidance
+    requires: [actor_or_institution, consequence_or_mechanism, evidence_of_relevant_information_capacity]
+    does_not_establish: [actual_knowledge, receipt_of_specific_notice, deliberate_avoidance]
   RECEIVES_CREDIBLE_NOTICE_OF:
-    requires:
-      - actor_or_institution
-      - consequence_or_mechanism
-      - dated_notice_source_or_delivery_path
-    does_not_establish:
-      - agreement_with_notice
-      - harmful_endpoint_intent
+    requires: [actor_or_institution, consequence_or_mechanism, dated_notice_source_or_delivery_path]
+    does_not_establish: [agreement_with_notice, harmful_endpoint_intent]
   CONTINUES_AFTER_NOTICE:
-    requires:
-      - actor_or_institution
-      - mechanism_or_term
-      - prior_credible_notice_edge
-      - evidence_of_continuation_after_notice
-    does_not_establish:
-      - secret_motive
-      - deliberate_avoidance
-      - legal_recklessness
+    requires: [actor_or_institution, mechanism_or_term, prior_credible_notice_edge, evidence_of_continuation_after_notice]
+    does_not_establish: [secret_motive, deliberate_avoidance, legal_recklessness]
   ESCALATES_AFTER_NOTICE:
-    requires:
-      - actor_or_institution
-      - mechanism_or_term
-      - prior_credible_notice_edge
-      - evidence_of_increased_scale_intensity_or_reach
-    does_not_establish:
-      - intent_to_cause_every_downstream_harm
+    requires: [actor_or_institution, mechanism_or_term, prior_credible_notice_edge, evidence_of_increased_scale_intensity_or_reach]
+    does_not_establish: [intent_to_cause_every_downstream_harm]
   MITIGATES_AFTER_NOTICE:
-    requires:
-      - actor_or_institution
-      - mechanism_or_harm
-      - prior_credible_notice_edge
-      - evidenced_mitigation_action
+    requires: [actor_or_institution, mechanism_or_harm, prior_credible_notice_edge, evidenced_mitigation_action]
   REPAIRS_AFTER_NOTICE:
-    requires:
-      - actor_or_institution
-      - harm_or_loss
-      - prior_credible_notice_edge
-      - evidenced_repair_restitution_or_restoration
+    requires: [actor_or_institution, harm_or_loss, prior_credible_notice_edge, evidenced_repair_restitution_or_restoration]
+  PROVIDES_MATERIAL_REPAIR_TO:
+    requires: [repair_actor_or_institution, affected_population_or_ecology, repair_domain_or_action, evidence]
+    does_not_establish: [complete_repair, erasure_of_prior_harm]
+  RESTORES_ACCESS_FOR:
+    requires: [repair_actor_policy_or_system, affected_population, previously_lost_or_constrained_access, evidence_of_restoration]
+  REDUCES_REPEAT_HARM_CAPACITY_OF:
+    requires: [accountability_repair_or_governance_actor, harm_causing_actor_system_or_mechanism, capacity_reduction, evidence]
+    does_not_establish: [complete_prevention]
   RETAINS_GAIN_AFTER_NOTICE:
-    requires:
-      - actor_or_institution
-      - prior_credible_notice_edge
-      - evidenced_gain_cost_saving_insulation_or_capacity_retained_after_notice
-    does_not_establish:
-      - amount_caused_by_the_harm_without_additional_accounting
+    requires: [actor_or_institution, prior_credible_notice_edge, evidenced_gain_cost_saving_insulation_or_capacity_retained_after_notice]
+    does_not_establish: [amount_caused_by_the_harm_without_additional_accounting]
   DELIBERATELY_AVOIDS_RELEVANT_INFORMATION:
-    requires:
-      - actor_or_institution
-      - relevant_information_or_notice_surface
-      - evidence_of_intentional_avoidance_suppression_compartmentalization_refusal_or_insulation
-    does_not_establish:
-      - criminal_mens_rea_without_separate_legal_analysis
+    requires: [actor_or_institution, relevant_information_or_notice_surface, evidence_of_intentional_avoidance_suppression_compartmentalization_refusal_or_insulation]
+    does_not_establish: [criminal_mens_rea_without_separate_legal_analysis]
 
   CONTRADICTS_ATTRIBUTION:
-    requires:
-      - source_or_evidence
-      - attributed_claim
-      - explanation_of_conflict
+    requires: [source_or_evidence, attributed_claim, explanation_of_conflict]
   NARROWS_ATTRIBUTION:
-    requires:
-      - source_or_evidence
-      - attributed_claim
-      - surviving_bounded_claim
+    requires: [source_or_evidence, attributed_claim, surviving_bounded_claim]
 
 locks:
-  - Relation names classify evidenced crossings; they do not supply evidence themselves.
-  - A chain is only as strong as its weakest consequential edge.
-  - Missing intermediate edges remain explicit rather than inferred for narrative completeness.
-  - Funding, amplification, persuasion, voting, policy production, beneficiary gain, term-setting, knowledge, notice, persistence, and repair are separate relations.
-  - Intentional term-setting does not establish intent to cause every downstream harm.
-  - Capacity to know does not establish actual knowledge.
-  - Notice does not establish agreement with the warning or secret motive.
-  - Continuation after notice is an accountability fact when evidenced; its legal or moral classification requires the appropriate separate analysis.
-  - Gain after notice must not be treated as caused by the harm unless the causal accounting separately establishes that edge.
+  - Relation_names_classify_evidenced_crossings_and_do_not_supply_evidence_themselves.
+  - A_chain_is_only_as_strong_as_its_weakest_consequential_edge.
+  - Missing_intermediate_edges_remain_explicit_rather_than_inferred_for_narrative_completeness.
+  - Funding_amplification_persuasion_voting_policy_production_control_beneficiary_gain_term_setting_harm_knowledge_notice_persistence_and_repair_are_separate_relations.
+  - Payment_or_financial_association_alone_does_not_establish_every_form_of_control.
+  - A_financial_relation_may_establish_material_control_when_the_enforceable_power_edge_is_evidenced.
+  - Intentional_term_setting_does_not_establish_intent_to_cause_every_downstream_harm.
+  - Capacity_to_know_does_not_establish_actual_knowledge.
+  - Notice_does_not_establish_agreement_with_the_warning_or_secret_motive.
+  - Continuation_after_notice_is_an_accountability_fact_when_evidenced_and_its_legal_or_moral_classification_requires_separate_analysis.
+  - Gain_after_notice_must_not_be_treated_as_caused_by_the_harm_unless_causal_accounting_separately_establishes_that_edge.
+  - Punishment_or_sanction_of_an_actor_does_not_by_itself_establish_material_repair_of_the_affected_population.
