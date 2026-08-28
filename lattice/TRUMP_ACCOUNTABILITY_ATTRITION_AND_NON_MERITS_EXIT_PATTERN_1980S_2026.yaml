@@ -1,0 +1,86 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: trump-accountability-attrition-and-non-merits-exit-pattern-1980s-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/TRUMP_ACCOUNTABILITY_ATTRITION_AND_NON_MERITS_DISPOSITION_LEDGER_1980S_2026.yaml
+
+scope: >-
+  Preserve the documented distinction between factual exoneration and non-merits exits in allegations and claims
+  involving Donald J. Trump, including limitations barriers, office/immunity delay, settlement-linked withdrawal,
+  voluntary discontinuance, pleading/jurisdiction defects, legal-cost attrition, and later revival to merits review.
+
+promoted_claims:
+  - proposition: Multiple allegations or claims involving Trump ended without a merits determination for reasons that were procedural, strategic, financial, limitations-based, or claimant-driven rather than because a judge or jury found the underlying allegation false.
+    posture: CONFIRMED_AS_PATTERN_OF_NON_MERITS_DISPOSITIONS
+    effects: [RELIABILITY_MODIFYING, SCOPE_LIMITING]
+
+  - proposition: E. Jean Carroll's sexual-assault damages claim had been effectively blocked by expired limitations periods before New York enacted the Adult Survivors Act; after the revival window opened, the claim reached trial and produced a civil sexual-abuse finding against Trump.
+    posture: DIRECTLY_DOCUMENTED_NATURAL_COMPARATOR
+    effects: [REALIZED_OUTCOME, CLAIM_DEFEATING]
+    note: This defeats the inference that prior absence of adjudication is evidence that an allegation was false; it does not prove other allegations.
+
+  - proposition: Jill Harth's 1997 sexual-misconduct complaint was withdrawn in connection with settlement of a separate business dispute and did not receive merits adjudication.
+    posture: DOCUMENTED_NON_MERITS_EXIT
+    effects: [SCOPE_LIMITING]
+
+  - proposition: Summer Zervos's defamation action was delayed for years by Trump's presidential-immunity arguments and was later voluntarily discontinued without compensation shortly before anticipated deposition activity; the underlying assault allegation was never adjudicated on the merits.
+    posture: DOCUMENTED_DELAY_AND_NON_MERITS_EXIT
+    effects: [SCOPE_LIMITING, RELIABILITY_MODIFYING]
+
+  - proposition: The 2016 Jane Doe/Katie Johnson filings alleging assault by Trump and Epstein ended through pleading/procedural dismissal and voluntary withdrawal rather than merits adjudication, while separate identity and promotion concerns materially limit confidence in the allegation.
+    posture: DOCUMENTED_PROCEDURAL_HISTORY_WITH_CREDIBILITY_UNCERTAINTY
+    effects: [SCOPE_LIMITING, RELIABILITY_MODIFYING]
+
+  - proposition: Historical contractor/nonpayment reporting documents smaller Trump counterparties sometimes abandoning claims or settling for less because prolonged litigation became economically unsustainable.
+    posture: SUPPORTED_POWER_ASYMMETRY_MECHANISM
+    effects: [CAPACITY, RELIABILITY_MODIFYING]
+    scope_lock: does_not_establish_validity_of_every_invoice_or_claim
+
+not_yet_established:
+  - Trump or his agents systematically caused all sexual-misconduct allegations to be ignored by law enforcement.
+  - authorities possessed probable cause in every allegation that did not produce charges.
+  - every dismissal or withdrawal resulted from intimidation, threats, money, or misuse of office.
+  - the non-merits attrition rate for Trump is statistically unusual relative to a matched comparator population.
+
+measurement_plan:
+  denominator: all sourced person-specific allegations in the Trump personal-conduct ledger
+  stages:
+    - allegation_public_or_private
+    - contemporaneous_disclosure
+    - police_or_prosecutor_report
+    - civil_filing
+    - limitations_or_jurisdiction_screen
+    - dismissal_motion
+    - discovery
+    - settlement_or_withdrawal
+    - merits_trial_or_hearing
+    - appeal
+    - final_disposition
+  blockers_to_code:
+    - statute_of_limitations
+    - jurisdiction_or_cause_of_action
+    - presidential_immunity_or_office_delay
+    - legal_cost
+    - settlement_leverage
+    - threat_or_safety
+    - anonymity_or_identity_problem
+    - claimant_choice
+    - prosecutorial_discretion
+    - evidentiary_insufficiency
+    - unknown
+
+locks:
+  - no_merits_adjudication != exoneration
+  - procedural_dismissal != factual_disproof
+  - voluntary_withdrawal != factual_disproof
+  - never_charged != factual_disproof
+  - never_charged != proof_of_crime
+  - sufficient_to_report_or_file != probable_cause_or_trial_sufficiency
+  - statute_of_limitations != innocence
+  - settlement_without_admission != merits_finding
+  - one_later_adjudicated_case_does_not_validate_other_allegations
+  - do_not_call_authority_inaction_ignored_until_receipt_and_response_are_documented
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
