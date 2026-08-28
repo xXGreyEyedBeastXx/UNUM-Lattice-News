@@ -1,67 +1,75 @@
-schema: unum-lattice-news/repository-custody/v0.6
+schema: unum-lattice-news/repository-custody/v0.7
 status: ACTIVE
 updated: 2026-08-28
 purpose: >-
-  Provide one machine-readable routing surface for public-reality intake,
-  durable evidence custody, specialist interpretation, cross-repository routing,
-  shared-service support, downstream promotion, publication handoff, and adjacent
-  research-request feeding without allowing repository names or rhetorical labels
-  to become evidence.
+  Provide one machine-readable routing surface for public-reality evidence custody and specialist return edges while respecting the wider UNUM architecture:
+  UNUM-Research owns general research requests, intake, triage, routing, provenance coordination, and re-entry; specialist repositories own the actual studies and their local dissemination.
 
 prime_laws:
+  - UNUM_Research_is_the_general_request_intake_front_door
+  - specialist_repositories_own_actual_study_and_domain_conclusions
+  - specialist_repositories_normally_own_local_dissemination
+  - UNUM_Lattice_News_Intake_is_a_news_specific_pre_durable_evidence_review_subroute
   - external_evidence_precedes_project_interpretation
   - evidence_updates_only_the_claim_edge_variable_or_model_component_it_bears_on
   - repeated_projection_is_not_independent_corroboration
   - rhetorical_label_is_evidence_the_label_was_used_not_proof_the_classification_is_true
   - world_state_transition_and_evidence_state_transition_remain_distinct
-  - specialist_routing_does_not_transfer_primary_evidence_custody
-  - raw_intake_does_not_equal_durable_lattice_record
   - specialist_repository_is_not_a_causal_silo
   - separation_is_for_attribution_and_connection_is_for_causality
   - cross_repository_identity_follows_schemas_CROSS_REPOSITORY_TRANSPORT_PACKET_v0_1_yaml
   - shared_harm_and_repair_identity_follows_schemas_SHARED_HARM_REPAIR_CONTINUITY_v0_1_yaml
   - nothing_crosses_without_provenance_scope_uncertainty_and_return_path
 
-upstream_intake:
-  repository: UNUM-Lattice-News-Intake
-  role: pre_durable_news_intake_and_review_seat
+research_front_door:
+  repository: UNUM-Research
+  role: general_research_request_intake_recovery_triage_dispatch_provenance_and_reentry
   owns:
-    - feed_and_manual_discovery_candidates
-    - source_verification_drafts
+    - research_request_identity
+    - general_intake
+    - source_and_current_state_recovery
+    - exact_question_and_seat_definition
+    - specialist_owner_selection
+    - route_history
+    - provenance_coordination
+    - watch_conditions
+    - returned_finding_contradiction_null_and_supersession_tracking
+    - dissemination_pointer_tracking
+  does_not_own:
+    - destination_specialist_study
+    - destination_domain_conclusion
+    - destination_local_dissemination
+    - automatic_promotion_into_UNUM_Lattice_News
+  handoff_rule: >-
+    Intake in Research. Study where it belongs. The destination repository keeps the study and normally disseminates from its own seat. Research keeps the request, route, provenance, return state, and way back.
+
+news_evidence_subroute:
+  repository: UNUM-Lattice-News-Intake
+  role: news_specific_pre_durable_evidence_review_and_lattice_promotion_staging
+  receives_when:
+    - a_Research_request_needs_current_public_event_or_news_source_processing
+    - direct_news_discovery_needs_source_verification_and_claim_extraction
+    - a_public_event_candidate_may_promote_to_UNUM_Lattice_News
+  owns:
+    - news_feed_and_manual_discovery_candidates
+    - news_source_verification_drafts
     - duplicate_and_citation_lineage_review
     - bounded_claim_extraction_drafts
-    - clock_separation_drafts
+    - news_clock_separation
     - world_state_vs_evidence_state_triage
     - evidence_effect_typing_drafts
     - competing_models_and_discriminators
-    - proposed_repository_routes
-    - coverage_gap_reports
-    - rejected_and_deferred_candidates
+    - proposed_news_specialist_routes
+    - rejected_and_deferred_news_candidates
   does_not_own:
     - general_cross_repository_research_request_intake
-    - durable_public_event_truth_by_repository_presence
+    - destination_specialist_study
     - publication_authority
-    - automatic_node_or_relation_promotion
-    - automatic_harm_ideology_motive_or_causation_findings
-  crossing_requirement:
-    - source_pointers_and_citation_lineage
-    - bounded_claims_and_posture
-    - relevant_clocks
-    - world_state_and_or_evidence_state_delta
-    - exact_evidence_effects
-    - uncertainty_and_typed_missingness
-    - strongest_narrowing_or_alternative_model
-    - evidence_that_would_change_assessment
-    - proposed_specialist_routes
-    - return_path_to_intake_material
-  legacy_note: >-
-    Existing UNUM-Lattice-News/research/intake material remains valid provenance
-    and re-entry evidence. New public-news intake should preferentially land in
-    the dedicated Lattice News Intake repository; older packets may be migrated
-    or indexed gradually while preserving original paths and commit lineage.
+    - automatic_node_relation_harm_ideology_motive_or_causation_findings
 
 durable_owner:
   repository: UNUM-Lattice-News
+  role: durable_reviewed_public_reality_mesh
   owns:
     - reviewed_public_events
     - reviewed_source_identity_and_lineage
@@ -73,8 +81,8 @@ durable_owner:
     - uncertainty_and_missingness
     - corrections
   does_not_own:
+    - general_research_request_intake
     - performing_every_specialist_analysis_locally
-    - performing_general_research_request_intake
     - duplicating_shared_service_work_available_elsewhere
 
 specialist_routes:
@@ -90,9 +98,6 @@ specialist_routes:
       - transactional_crossing_does_not_establish_ideological_alliance
       - alliance_does_not_establish_control_or_shared_command
       - historical_continuity_does_not_establish_one_uninterrupted_conspiracy
-    does_not_own:
-      - replacement_of_news_source_custody
-      - automatic_aggressor_defender_or_legitimacy_verdict
 
   - repository: UNUM-Lattice-News-Capital-and-Power
     route_when:
@@ -109,55 +114,30 @@ specialist_routes:
       - profit_does_not_establish_exploitation_by_definition
       - policy_benefit_does_not_establish_quid_pro_quo
       - ownership_does_not_automatically_establish_every_downstream_operational_decision
-    does_not_own:
-      - replacement_of_news_source_custody
-      - automatic_corruption_extraction_or_illegality_verdict
 
   - repository: UNUM-Hierarchy-and-Supremacy-Studies
     route_when:
       - ranked_group_status_or_unequal_entitlement_is_a_material_question
-      - racial_ethnic_religious_caste_gender_national_colonial_or_other_supremacy_claim_requires_deep_study
-      - formal_or_operational_hierarchy_in_rights_citizenship_land_safety_resources_or_political_standing_requires_reconstruction
+      - supremacy_claim_or_institutionalized_hierarchy_requires_deep_study
       - historical_hierarchy_lineage_or_dominant_group_victimhood_inversion_requires_discriminator_review
     locks:
       - difference_does_not_establish_hierarchy
       - unequal_outcome_does_not_automatically_establish_supremacist_design
       - supremacy_finding_does_not_automatically_establish_extremism_terrorism_or_criminality
-      - extremism_finding_does_not_automatically_establish_supremacy
       - identity_membership_does_not_transfer_a_collective_verdict
-      - historical_victimization_does_not_create_immunity_from_later_hierarchy_analysis
-    does_not_own:
-      - replacement_of_news_source_custody
-      - automatic_collective_blame_or_person_level_motive
 
   - repository: UNUM-Laundering-Map
     route_when:
       - rhetoric_or_framing_transforms_the_apparent_causal_or_moral_picture
       - legitimacy_reputation_legality_or_selective_omission_changes_accountability_read
-    does_not_own:
-      - proof_that_the_underlying_event_occurred
-      - automatic_actor_guilt
 
   - repository: UNUM-Governance
     route_when:
       - authority_procedure_capacity_enforcement_oversight_resistance_or_appeal_is_material
-    does_not_own:
-      - replacement_of_the_lattice_event_or_source_record
-
-  - repository: UNUM-Love-Truth-Governance
-    route_when:
-      - explicit_normative_comparison_is_requested_after_empirical_state_is_established
-    does_not_own:
-      - factual_establishment_of_public_events_or_institutional_authority
 
   - repository: UNUM-Extremism-Watch
     route_when:
       - movement_ideology_lineage_propaganda_organization_normalization_or_violence_requires_deep_study
-    locks:
-      - membership_is_not_ideological_overlap
-      - ideological_overlap_is_not_operational_coordination
-      - association_is_not_individual_guilt
-      - extremism_is_not_inherited_from_a_supremacy_route
 
   - repository: UNUM-Human-Relations
     route_when:
@@ -187,47 +167,19 @@ specialist_routes:
     route_when:
       - human_ai_governance_rights_dependency_or_relational_consequence_requires_specialist_study
 
-shared_service_routes:
+shared_study_and_support_routes:
   - repository: UNUM-Timeline-Studies
-    role: chronology_clock_and_temporal_identity_service
-    route_when:
-      - event_publication_discovery_commit_correction_or_reentry_times_risk_collapse
-      - prior_condition_initiating_action_response_counterresponse_or_repair_sequence_is_contested
-      - historical_lineage_or_state_transition_requires_independent_temporal_reconstruction
+    role: routed_chronology_clock_and_temporal_identity_study_service
     locks:
       - later_state_does_not_rewrite_prior_path
       - recent_repository_date_does_not_imply_recent_underlying_relation
-      - chronology_support_does_not_transfer_source_custody
-
+      - chronology_support_does_not_transfer_request_intake_or_source_custody
   - repository: UNUM-Universal-Translation
     role: semantic_and_language_seat_preservation_service
-
   - repository: UNUM-Tools-Utilities
     role: reusable_instrument_schema_and_validation_service
-
   - repository: UNUM-Archives
     role: frozen_publication_history_and_historical_return_surface
-    locks:
-      - archived_projection_is_not_current_evidence_authority
-
-adjacent_feeder_routes:
-  - repository: UNUM-Research
-    role: general_research_request_intake_triage_and_dispatch
-    may:
-      - receive_cross_repository_research_requests
-      - gather_candidate_questions_and_source_leads
-      - identify_likely_destination_repositories
-      - dispatch_research_items_with_provenance_and_scope
-    does_not_own:
-      - the_destination_specialist_study
-      - the_destination_repository_synthesis
-      - dissemination_for_the_destination_repository
-      - Lattice_News_public_event_source_custody
-      - automatic_promotion_into_the_durable_Lattice
-    handoff_rule: >-
-      Once a research request is routed, the destination repository owns the actual
-      study and its local dissemination. Any result returning to Lattice News must
-      cross back with evidence lineage, scope, uncertainty, and typed return edges.
 
 satellite_routes:
   - repository: UNUM-Lattice-News-Proven-Harm
@@ -237,7 +189,6 @@ satellite_routes:
       - bounded_harm_claim
       - causal_relation_and_scope
       - primary_or_best_available_evidence
-      - materially_independent_corroboration_when_available_and_warranted
       - typed_evidence_effects
       - uncertainty_and_missingness
       - confidence_or_proof_state
@@ -245,84 +196,56 @@ satellite_routes:
       - lattice_return_path
       - correction_and_demotion_path
     prohibited_shortcuts:
-      - generic_PROVEN_flag_for_mixed_strength_claims
       - repository_presence_as_proof
-      - generic_counterevidence_bucket_for_new_or_materially_revised_records
       - duplicate_harm_counting_across_contributors_or_routes
 
   - repository: UNUM-Lattice-News-Real-Bad-Policy
     role: policy_harm_investigation_aperture
     title_is_verdict: false
-    required_separations:
-      - policy_name_from_policy_effect
-      - stated_purpose_from_observed_mechanism
-      - attempted_action_from_realized_implementation
-      - blocked_action_from_nonexistent_attempt
-      - observed_consequence_from_forecast_consequence
-      - mechanism_from_motive
 
   - repository: UNUM-Lattice-News-Humanitarian-Environmentalism
     role: humanitarian_environmental_crossing_aperture
-    primary_neighbors:
-      - UNUM-Lattice-News
-      - UNUM-Earth-Environmental-Ecology
-      - UNUM-Medical
-      - UNUM-Governance
-      - UNUM-Lattice-News-Geopolitics
-      - UNUM-Lattice-News-Capital-and-Power
-      - UNUM-Hierarchy-and-Supremacy-Studies
-    required_separations:
-      - measured_from_modeled
-      - environment_system_from_human_health_claim
-      - institutional_authority_from_environmental_mechanism
-      - uncertainty_in_exact_dose_from_evidence_of_exposure_or_contamination
-      - geopolitical_context_from_harm_proof
-      - capital_flow_from_corruption_or_intent_finding
-      - unequal_exposure_from_automatic_supremacy_motive
 
 publication_routes:
   - repository: UNUM-Radical-Love-Revolution
-    role: human_facing_synthesis_article_and_helpful_output_surface
-    receives_from: UNUM-Lattice-News
+    role: broad_human_facing_synthesis_and_publication_surface
+    receives_from:
+      - specialist_study_owners_when_their_work_warrants_public_synthesis
+      - UNUM-Lattice-News_when_a_durable_news_evidence_synthesis_is_ready
     routing_contract: PUBLICATION_ROUTING.md
     locks:
       - public_synthesis_is_not_independent_corroboration
       - publication_does_not_replace_source_lineage
       - publication_clarity_does_not_inflate_certainty
-      - later_lattice_correction_creates_downstream_correction_pressure
 
 promotion_states:
-  - INTAKE_CANDIDATE
-  - SOURCE_REVIEWED
+  - RESEARCH_INTAKE
+  - ROUTED_TO_SPECIALIST
+  - SPECIALIST_STUDY_ACTIVE
+  - SPECIALIST_FINDING_RETURNED
+  - NEWS_SOURCE_REVIEWED
   - CLAIM_TESTED
   - STATE_TRANSITION_REVIEWED
-  - ROUTING_REVIEWED
   - READY_FOR_LATTICE_REVIEW
   - NODE_RELATION_REVIEWED
-  - SPECIALIST_ROUTE_REVIEWED
   - SATELLITE_ELIGIBLE
-  - PUBLICATION_ELIGIBLE
+  - DISSEMINATION_ELIGIBLE
 
 promotion_rule: >-
-  Advancement is claim-specific. A record may occupy different states for
-  different edges. No later state retroactively upgrades weaker evidence.
+  Advancement is claim-specific. A record may occupy different states for different edges. No later state retroactively upgrades weaker evidence.
 
 crossing_packet_schema: schemas/CROSS_REPOSITORY_TRANSPORT_PACKET_v0_1.yaml
 shared_harm_repair_schema: schemas/SHARED_HARM_REPAIR_CONTINUITY_v0_1.yaml
 
 crossing_packet_minimum:
+  - UNUM_Research_request_id_and_return_path
   - packet_id_and_lineage_root_id
-  - intake_return_path
-  - lattice_event_or_claim_ids_when_assigned
-  - shared_harm_population_policy_and_actor_ids_when_assigned
-  - source_pointers_and_citation_lineage
-  - claim_posture
-  - relevant_clocks
-  - world_state_and_or_evidence_state_delta
-  - specialist_question
   - specialist_owner
-  - evidence_effects
+  - source_pointers_and_citation_lineage
+  - exact_question_and_scope
+  - relevant_clocks
+  - evidence_effects_when_applicable
   - uncertainty_and_missingness
   - strongest_competing_model_or_discriminator_when_material
   - evidence_that_would_change_assessment
-  - return_path
+  - dissemination_and_reentry_paths
