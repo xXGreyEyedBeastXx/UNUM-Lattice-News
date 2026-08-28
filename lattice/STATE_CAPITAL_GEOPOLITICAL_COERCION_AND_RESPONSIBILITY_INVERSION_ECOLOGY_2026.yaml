@@ -1,0 +1,116 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-28
+id: state-capital-geopolitical-coercion-and-responsibility-inversion-ecology-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/MANUFACTURED_PRECARITY_RESPONSIBILITY_INVERSION_AND_CONTEMPT_FEEDBACK_2026.yaml
+
+scope: >-
+  Cross-domain system model for tracing how governments, concentrated private capital, billionaire and donor networks,
+  corporations, military and security institutions, media and technology infrastructure, and geopolitical alliances can
+  transmit power and harm through one another. Specialist seats remain analytically distinct for attribution but may not be
+  treated as causally independent where evidence shows money, personnel, contracts, procurement, sanctions, weapons,
+  ownership, lobbying, resource access, ideology, or infrastructure connecting them.
+
+core_nonseparation_rule: >-
+  Government, capital, and geopolitics are not separate realities. They are separate attribution seats inside one causal field.
+  The lattice must preserve both the distinction and the crossing.
+
+system_mechanism:
+  - PRIVATE_WEALTH_AND_OWNERSHIP_ACCUMULATE
+  - PRIVATE_RESOURCES_CREATE_ACCESS_INFRASTRUCTURE_AND_BARGAINING_POWER
+  - POLITICAL_AND_STATE_INSTITUTIONS_SET_OR_ENFORCE_TERMS
+  - PUBLIC_SPENDING_PROCUREMENT_SUBSIDY_AND_SECURITY_POLICY_EXPAND_SELECTED_PRIVATE_CAPACITY
+  - PRIVATE_TECHNOLOGY_FINANCE_MEDIA_ENERGY_AND_DEFENSE_CAPACITY_EXPAND_STATE_POWER
+  - GEOPOLITICAL_COMPETITION_RESHAPES_MARKETS_RESOURCES_SANCTIONS_AND_MILITARY_DEMAND
+  - IDEOLOGICAL_FRAMES_LEGITIMATE_DOMESTIC_OR_FOREIGN_COERCION
+  - MATERIAL_AND_HUMAN_COSTS_ARE_DISTRIBUTED_DOWNWARD_OR_OUTWARD
+  - AFFECTED_POPULATIONS_MAY_BE_RECODED_AS_DEPENDENT_CRIMINAL_UNDESERVING_OR_SECURITY_THREATS
+  - RESPONSIBILITY_IS_SHIFTED_AWAY_FROM_UPSTREAM_CONTRIBUTORS
+  - POLICY_OR_FORCE_DEEPENS_DEPENDENCY_EXCLUSION_OR_HARM
+  - GAIN_CONTROL_STRATEGIC_ADVANTAGE_OR_PRIVATE_INSULATION_IS_RETAINED
+  - ACCUMULATED_POWER_INCREASES_FUTURE_RULE_SETTING_CAPACITY
+
+cross_domain_relation_families:
+  - FUNDS_POLITICAL_CAPACITY_OF
+  - GAINS_POLICY_ACCESS_THROUGH
+  - SETS_PUBLIC_TERMS_FOR
+  - AWARDS_PUBLIC_RESOURCES_TO
+  - CONTRACTS_WITH
+  - BUILDS_STATE_CAPACITY_FOR
+  - BUILDS_PRIVATE_CAPACITY_WITH_PUBLIC_SUPPORT
+  - PROVIDES_MILITARY_OR_DUAL_USE_CAPABILITY_TO
+  - GAINS_FROM_SECURITY_OR_WAR_SPENDING
+  - GAINS_RESOURCE_ACCESS_THROUGH
+  - ENFORCES_SANCTIONS_OR_BLOCKADE_ON
+  - BENEFITS_FROM_SANCTIONS_OR_MARKET_RESTRUCTURING
+  - AMPLIFIES_IDEOLOGICAL_FRAME_FOR
+  - LEGITIMATES_COERCION_AGAINST
+  - EXTERNALIZES_COST_TO
+  - RETAINS_INSULATION_FROM
+  - ATTRIBUTES_SYSTEM_CONDITION_TO_PERSONAL_FAILURE_OF
+  - SUPPORTS_PUNITIVE_RESPONSE_TO
+  - CONTINUES_AFTER_NOTICE
+  - RETURNS_GAIN_OR_POWER_TO
+
+responsibility_inversion_chain:
+  - actor_or_network_contributes_to_material_condition
+  - affected_population_experiences_dependency_precarity_displacement_deprivation_or_risk
+  - rhetoric_reframes_population_as_cause_or_moral_failure
+  - punitive_or_exclusionary_response_is_justified
+  - underlying_upstream_mechanism_is_preserved_or_strengthened
+  - gain_control_or_insulation_remains_upstream
+
+current_high_value_crossings_to_trace:
+  - fossil_energy_climate_state_subsidy_regulation_geopolitics_and_private_exit_capacity
+  - defense_contractors_public_procurement_alliance_policy_war_and_civilian_harm
+  - technology_platform_ownership_political_amplification_surveillance_and_state_capacity
+  - billionaire_donor_money_campaign_access_policy_and_regulatory_outcomes
+  - housing_healthcare_transport_debt_and_benefit_gating_into_poverty_and_coercive_dependency
+  - mineral_resource_extraction_armed_control_export_markets_and_external_capital_in_central_africa
+  - christian_nationalist_christian_zionist_ethnonational_frames_into_domestic_and_foreign_policy
+  - anti_bds_government_contracting_rules_as_foreign_policy_alignment_crossing_into_domestic_economic_conditioning
+  - accountability_institution_pressure_sanctions_defunding_or_delegitimization when investigations threaten powerful actors
+
+accountability_seats_to_keep_distinct:
+  - material_contribution
+  - direct_control
+  - conditional_or_dependency_control
+  - political_access
+  - ideological_alignment
+  - direct_coordination
+  - tactical_alliance
+  - institutional_inheritance
+  - geopolitical_strategic_interest
+  - intended_gain_or_capacity_increase
+  - harmful_endpoint_intent
+  - knowledge_or_notice
+  - foreseeable_harm
+  - response_after_notice
+  - retained_gain_or_insulation
+
+locks:
+  - specialist_repository != causal_silo
+  - state_action != independent_of_private_interest_by_default
+  - private_interest != proof_of_state_capture_by_default
+  - alliance != shared_command
+  - shared_benefit != coordination_by_itself
+  - geopolitical_interest != moral_or_legal_justification
+  - public_contract != corruption_by_definition
+  - wealth != guilt
+  - poverty != racial_identity
+  - race_neutral_language != race_neutral_effect_by_default
+  - rhetoric != material_contribution
+  - material_contribution != malicious_endpoint_intent
+  - absence_of_proven_malice != absence_of_accountability
+  - repeated_directional_effects_can_form_a_system_pattern_without_one_mastermind
+  - beneficial_conduct_elsewhere_does_not_offset_unrelated_harm
+  - route_copy_is_not_corroboration
+
+cross_links:
+  - lattice/COERCIVE_SURVIVAL_AND_OLIGARCHIC_POWER_ECOLOGY_1971_2026.yaml
+  - lattice/POVERTY_ENFORCEMENT_AND_COERCIVE_SURVIVAL_FEEDBACK_LOOP_2024_2026.yaml
+  - UNUM-Lattice-News-Capital-and-Power/maps/MANUFACTURED_PRECARITY_RESPONSIBILITY_INVERSION_AND_CONTEMPT_FEEDBACK_2026-08-28.md
+
+source_custody: UNUM-Lattice-News-Intake
+correction_and_demotion: live
+route_copy_is_not_corroboration: true
