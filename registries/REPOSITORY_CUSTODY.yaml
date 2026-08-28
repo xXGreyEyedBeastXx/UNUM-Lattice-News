@@ -115,6 +115,24 @@ specialist_routes:
       - policy_benefit_does_not_establish_quid_pro_quo
       - ownership_does_not_automatically_establish_every_downstream_operational_decision
 
+  - repository: UNUM-News-Lattice-Trafficking
+    route_when:
+      - human_trafficking_coercive_recruitment_or_control_relation_is_material
+      - sexual_or_labor_exploitation_requires_trafficking_specific_discrimination
+      - workforce_camp_boomtown_or_remote_labor_risk_architecture_requires_deep_study
+      - trafficking_related_jurisdictional_seams_notice_response_or_mitigation_require_reconstruction
+      - extractive_project_workforce_housing_and_trafficking_risk_require_project_level_analysis
+    locks:
+      - sex_work_does_not_establish_trafficking
+      - migration_does_not_establish_trafficking
+      - smuggling_does_not_establish_trafficking_automatically
+      - sexual_violence_does_not_establish_trafficking_automatically
+      - MMIP_or_MMIW_status_does_not_establish_trafficking_automatically
+      - workforce_camp_does_not_establish_trafficking_event
+      - risk_architecture_does_not_establish_realized_trafficking
+      - extraction_expansion_does_not_establish_trafficking_intent
+      - reported_increase_does_not_establish_true_prevalence_increase_without_reporting_and_denominator_review
+
   - repository: UNUM-Hierarchy-and-Supremacy-Studies
     route_when:
       - ranked_group_status_or_unequal_entitlement_is_a_material_question
