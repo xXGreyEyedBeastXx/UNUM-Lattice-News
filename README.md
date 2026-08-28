@@ -192,6 +192,51 @@ Collected or discovered items remain non-authoritative until reviewed. Intake ca
 - Automation roadmap: [docs/NEWS_AUTOMATION_ROADMAP_v0_1.md](docs/NEWS_AUTOMATION_ROADMAP_v0_1.md)
 - Alignment audit: [docs/LATTICE_REALITY_SURFACE_ALIGNMENT_AUDIT_2026-08-27.md](docs/LATTICE_REALITY_SURFACE_ALIGNMENT_AUDIT_2026-08-27.md)
 
+## Specialist routing anchors
+
+The durable Lattice should not become a pile of disconnected domain silos. Specialist repositories deepen a question and return the earned result with its source lineage intact.
+
+Two high-centrality anchors now sit directly beside the News pipeline:
+
+```text
+UNUM-Lattice-News-Geopolitics
+  -> power across borders, states, blocs, territories, wars, occupations,
+     recognition, sanctions, alliances, foreign aid, arms transfers,
+     security cooperation, strategic corridors, and sovereignty disputes
+
+UNUM-Lattice-News-Capital-and-Power
+  -> money, ownership, labor, debt, land, trade, taxation, procurement,
+     campaign finance, lobbying, contracting, beneficiary/loss-bearing paths,
+     public-private flows, and political-economy feedbacks
+```
+
+These are **specialist routing seats, not alternate truth authorities**.
+
+```text
+Intake / source custody
+-> specialist question
+-> specialist map / discriminator / deeper trace
+-> return with exact evidence lineage + uncertainty
+-> durable Lattice relation only if earned
+```
+
+A route copy is not independent corroboration. Geopolitical labels do not assign causal role, and financial association does not establish control, bribery, corruption, or shared command without the relevant edge evidence.
+
+Important neighboring surfaces remain:
+
+```text
+UNUM-Governance
+UNUM-Laundering-Map
+UNUM-Extremism-Watch
+UNUM-Human-Relations
+UNUM-Universal-Translation
+UNUM-Lattice-News-Proven-Harm
+UNUM-Lattice-News-Real-Bad-Policy
+UNUM-Lattice-News-Humanitarian-Environmentalism
+```
+
+The Lattice is the crossing surface where results from these seats can recompose into a multi-domain causal account without pretending that a repository boundary is a causal boundary.
+
 ## Participation
 
 Evidence, corrections, source suggestions, technical review, and carefully bounded contributions are welcome.
