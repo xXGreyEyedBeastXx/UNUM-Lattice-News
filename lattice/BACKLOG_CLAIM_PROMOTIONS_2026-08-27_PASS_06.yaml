@@ -1,0 +1,99 @@
+schema: unum-lattice-news/backlog-claim-promotions/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTIONS
+as_of: 2026-08-27
+purpose: >-
+  Promote high-confidence coercion, lethal-harm, medical-service impairment, and institutional-seizure edges
+  from already reviewed Intake material while keeping motive, target identity, murder/criminal classifications,
+  patient-level causation, and final legal merits separate.
+
+records:
+  - id: durable-houston-witness-detention-and-release-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/houston-ice-shooting-witness-detention-release-2026-08.yaml
+    investigation_state: CONFIRMED_WITNESS_CONFINEMENT_AND_JUDICIAL_RESISTANCE_SHOOTING_MERITS_OPEN
+    promoted_claims:
+      - proposition: Daniel Tirado Pantoja was detained for roughly seven weeks after witnessing the July 7 fatal shooting of Lorenzo Salgado Araujo by a federal immigration agent.
+        posture: SUPPORTED_AS_REPORTED
+        effects: [REALIZED_OUTCOME]
+      - proposition: A federal judge ordered Tirado Pantoja released after finding the government had not justified continued detention and had not shown him to be a danger or flight risk.
+        posture: REPORTED_COURT_FINDING
+        effects: [CONSTRAINT_RESISTANCE, ACCOUNTABILITY_DELTA]
+      - proposition: Another witness to the same shooting had previously been ordered released.
+        posture: REPORTED_COURT_ACTION
+        effects: [CONSTRAINT_RESISTANCE]
+      - proposition: DHS self-defense account and witness accounts conflict; that conflict does not resolve the shooting merits.
+        posture: DISPUTED_INCIDENT_ACCOUNT
+        effects: [RELIABILITY_MODIFYING, SCOPE_LIMITING]
+    not_promoted:
+      - shooting_was_murder_or_criminal_homicide
+      - DHS_self_defense_account_is_false_in_every_material_part
+      - witness_release_orders_prove_shooting_illegality
+
+  - id: durable-us-lethal-vessel-strike-deaths-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/us-lethal-suspected-drug-vessel-strikes-2026-08.yaml
+    investigation_state: CONFIRMED_LETHAL_HARM_TARGET_CLASSIFIER_AND_LEGALITY_OPEN
+    promoted_claims:
+      - proposition: U.S. military forces struck a vessel in the eastern Pacific on August 23, 2026, killing two people.
+        posture: CONFIRMED_AS_REPORTED
+        effects: [REALIZED_OUTCOME]
+      - proposition: U.S. military forces struck a vessel in the Caribbean on August 25, 2026, killing four people.
+        posture: CONFIRMED_AS_REPORTED
+        effects: [REALIZED_OUTCOME]
+      - proposition: Independent reporting and strike trackers report at least 227 people killed in 68 publicly acknowledged U.S. vessel strikes by August 25, 2026.
+        posture: STRONGLY_CORROBORATED_AS_REPORTED
+        effects: [REALIZED_OUTCOME, DIRECTION]
+      - proposition: SOUTHCOM's narco-trafficker/narco-terrorist classification is established as an official attribution, not as independent proof of identity, cargo, targetability, or immediate threat.
+        posture: OFFICIAL_CLASSIFIER_SCOPE_LOCK
+        effects: [SCOPE_LIMITING, RELIABILITY_MODIFYING]
+    not_promoted:
+      - every_person_killed_was_a_lawful_military_target
+      - every_person_killed_was_a_drug_trafficker
+      - each_strike_was_murder_extrajudicial_killing_or_war_crime
+      - armed_conflict_status_and_domestic_or_international_authority
+
+  - id: durable-gaza-medical-input-restriction-service-harm-2026-08
+    intake_return_path: UNUM-Lattice-News-Intake/claims/gaza-medical-oxygen-spare-parts-restrictions-2026-08.yaml
+    investigation_state: CONFIRMED_SERVICE_CAPACITY_HARM_PATIENT_LEVEL_CAUSATION_OPEN
+    promoted_claims:
+      - proposition: Israeli authorities continued to restrict entry of engine oil, generator parts, medical and rehabilitation equipment, spare parts and other critical inputs needed for Gaza health and humanitarian services.
+        posture: STRONGLY_SUPPORTED
+        effects: [CAPACITY, CONSTRAINT_DELTA]
+      - proposition: MSF reports those restrictions delayed aid and impaired or dismantled services dependent on hospital generators, ambulances, water pumps and water trucks.
+        posture: STRONGLY_SUPPORTED_AT_SERVICE_CAPACITY_EDGE
+        effects: [REALIZED_OUTCOME]
+      - proposition: WHO HeRAMS monitoring documents major continuing gaps in operational health-service availability and barriers to service provision across Gaza.
+        posture: CONFIRMED_DATASET_SCOPE
+        effects: [REALIZED_OUTCOME, DIRECTION]
+    not_promoted:
+      - every_patient_death_caused_by_one_specific_denied_item
+      - intent_to_cause_specific_patient_death
+      - universal_criminal_or_international_crime_classification_from_service_impairment_alone
+
+  - id: durable-kalandia-seizure-and-education-access-harm-2026-08-25
+    intake_return_path: UNUM-Lattice-News-Intake/claims/israel-unrwa-kalandia-training-centre-seizure-2026-08-25.yaml
+    investigation_state: CONFIRMED_SEIZURE_AND_ACCESS_DISRUPTION_DURATION_AND_FINAL_LEGALITY_OPEN
+    promoted_claims:
+      - proposition: Israeli security forces forcibly entered the UNRWA Kalandia Training Centre on August 25, 2026, and Israeli officials publicly indicated the premises had been seized.
+        posture: STRONGLY_CORROBORATED
+        effects: [REALIZED_OUTCOME, CAPACITY]
+      - proposition: The Kalandia Training Centre is an active vocational training facility serving roughly 340 young Palestine Refugees per year.
+        posture: DIRECTLY_DOCUMENTED
+        effects: [SCOPE_LIMITING]
+      - proposition: The seizure materially obstructs UNRWA control and operation of the facility and creates immediate education/service access disruption for the population it serves.
+        posture: STRONGLY_SUPPORTED
+        effects: [REALIZED_OUTCOME, CONSTRAINT_DELTA]
+    not_promoted:
+      - permanent_loss_of_education_for_all_affected_youth
+      - criminal_liability_of_named_officials
+      - every_property_sovereignty_or_immunity_question_resolved_by_occurrence_alone
+
+harm_promotion_rule:
+  - death_occurrence_can_be_confirmed_without_murder_classification
+  - confinement_can_be_confirmed_without_resolving_neighboring_shooting_legality
+  - service_capacity_harm_can_be_confirmed_without_patient_level_death_attribution
+  - seizure_and_access_disruption_can_be_confirmed_without_final_property_or_criminal_adjudication
+  - official_target_or_security_classifier_does_not_cross_as_independent_fact
+
+source_custody: UNUM-Lattice-News-Intake
+proven_harm_route: UNUM-Lattice-News-Proven-Harm
+correction_and_demotion: live
+last_reviewed: 2026-08-27
