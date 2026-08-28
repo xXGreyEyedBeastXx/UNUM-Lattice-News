@@ -1,0 +1,35 @@
+story_id: story-2026-08-25-us-lethal-vessel-strikes
+title: U.S. vessel-strike campaign kills six people in two August attacks
+date: 2026-08-25
+status: reviewed
+investigation_state: CONFIRMED_AT_LETHAL_OUTCOME_EDGE
+claim_posture: observed_and_reported
+summary: >-
+  U.S. military strikes on August 23 and August 25 killed two people in the eastern Pacific and four people in the Caribbean.
+  Independent reporting and strike trackers report at least 227 deaths in 68 publicly acknowledged vessel strikes through August 25.
+  SOUTHCOM's narco-trafficker or narco-terrorist labels remain official attributions rather than independently established identity or targetability findings.
+what_changed:
+  - lethal vessel-strike campaign resumed after a pause
+  - six additional deaths were caused by two U.S. military strikes
+  - cumulative campaign death toll rose to at least 227 as reported
+nodes:
+  - United_States_military
+  - US_Southern_Command
+  - Joint_Task_Force_Western_Hemisphere
+evidence_effects:
+  - REALIZED_OUTCOME
+  - DIRECTION
+  - SCOPE_LIMITING
+established_facts:
+  - August_23_strike_killed_two_people
+  - August_25_strike_killed_four_people
+  - U.S._military_caused_the_reviewed_deaths
+not_established:
+  - every_person_killed_was_a_drug_trafficker
+  - every_person_killed_was_a_lawful_military_target
+  - each_strike_was_lawful
+  - each_strike_was_murder_extrajudicial_killing_or_a_war_crime
+sources:
+  - UNUM-Lattice-News-Intake/claims/us-lethal-suspected-drug-vessel-strikes-2026-08.yaml
+confirmed_harm_ref: UNUM-Lattice-News-Proven-Harm/confirmed/US_LETHAL_VESSEL_STRIKE_DEATHS_2026-08.yaml
+reporter_rule: state_the_killings_and_campaign_scale_directly_preserve_target_classifier_legality_and_criminal_elements_as_separate_claims
