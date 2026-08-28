@@ -1,0 +1,35 @@
+story_id: story-2026-08-26-houston-witness-release-after-detention
+title: Federal judge orders release of witness detained after Houston immigration-agent shooting
+date: 2026-08-26
+status: reviewed
+investigation_state: CONFIRMED_AT_DETENTION_AND_RELEASE_EDGE
+claim_posture: adjudicated_and_reported
+summary: >-
+  Daniel Tirado Pantoja, a witness to the July 7 fatal shooting of Lorenzo Salgado Araujo by a federal immigration agent,
+  was detained for roughly seven weeks before a federal judge ordered his release after finding the government had not
+  justified continued detention or shown him to be a danger or flight risk.
+what_changed:
+  - prolonged witness confinement moved into judicially constrained release
+  - a second witness to the same shooting had also previously been ordered released
+  - the shooting narrative remains disputed and was not resolved by the release orders
+nodes:
+  - Daniel_Tirado_Pantoja
+  - Lorenzo_Salgado_Araujo
+  - federal_immigration_enforcement
+  - federal_court
+evidence_effects:
+  - REALIZED_OUTCOME
+  - CONSTRAINT_RESISTANCE
+  - ACCOUNTABILITY_DELTA
+  - SCOPE_LIMITING
+established_facts:
+  - roughly_seven_weeks_of_confinement_as_reported
+  - federal_judicial_release_after_continued_detention_not_justified_at_reviewed_stage
+not_established:
+  - shooting_was_murder_or_criminal_homicide
+  - DHS_self_defense_account_is_false
+  - detention_was_retaliation_or_witness_intimidation
+sources:
+  - UNUM-Lattice-News-Intake/claims/houston-ice-shooting-witness-detention-release-2026-08.yaml
+confirmed_harm_ref: UNUM-Lattice-News-Proven-Harm/confirmed/HOUSTON_WITNESS_CONFINEMENT_2026-07_08.yaml
+reporter_rule: report_the_confinement_and_release_as_established_keep_shooting_merits_separate
