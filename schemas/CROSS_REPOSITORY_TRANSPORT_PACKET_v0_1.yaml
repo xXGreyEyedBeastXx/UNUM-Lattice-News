@@ -1,0 +1,152 @@
+schema: unum-lattice-news/cross-repository-transport-packet/v0.1
+status: ACTIVE_BASELINE
+as_of: 2026-08-28
+purpose: >-
+  Carry one evidence lineage through multiple specialist repositories without duplicating evidence,
+  losing identity, inflating confidence, severing causal context, or allowing a repository boundary to
+  become a causal boundary. Specialist repositories may add analysis at their own question seat and
+  must return that analysis as a typed edge or bounded finding rather than as a new source.
+
+prime_laws:
+  - separation_is_for_attribution
+  - connection_is_for_causality
+  - specialist_repository_is_not_a_causal_silo
+  - route_copy_is_not_independent_corroboration
+  - evidence_lineage_survives_projection
+  - local_analysis_may_change_without_changing_source_identity
+  - nothing_crosses_without_provenance_scope_uncertainty_and_return_path
+  - the_same_harm_event_or_population_must_not_be_recounted_merely_because_it_crosses_repositories
+
+identity:
+  packet_id: crossing-packet-slug
+  lineage_root_id: source-or-intake-lineage-root
+  projection_id: local-repository-projection-id
+  shared_event_ids: []
+  shared_claim_ids: []
+  shared_harm_ids: []
+  shared_population_ids: []
+  shared_policy_ids: []
+  shared_actor_ids: []
+  local_aliases: []
+
+origin:
+  source_custody_repository: UNUM-Lattice-News-Intake
+  origin_repository: ""
+  origin_path: ""
+  origin_commit_or_blob: null
+  intake_return_path: null
+  durable_lattice_return_path: null
+  source_pointers: []
+  citation_lineage: []
+
+clocks:
+  event_time: null
+  publication_time: null
+  observation_time: null
+  evidence_discovery_time: null
+  repository_projection_time: null
+  correction_time: null
+  state_as_of: null
+
+bounded_object:
+  question: ""
+  scope: ""
+  claim_posture: unknown
+  world_state_delta: null
+  evidence_state_delta: null
+  affected_participants_or_ecologies: []
+  prior_condition: []
+  initiating_or_term_setting_actions: []
+  responses_or_resistance: []
+  consequences: []
+
+specialist_route:
+  repository: ""
+  question_seat: ""
+  reason_for_route: ""
+  inherited_facts: []
+  inherited_unknowns: []
+  local_analysis: []
+  proposed_relations: []
+  proposed_contributions: []
+  proposed_harm_or_repair_updates: []
+  strongest_competing_model: null
+  discriminator: null
+  evidence_that_would_change_assessment: []
+
+accountability:
+  authority_or_control_seat: []
+  knowledge_or_notice_state: []
+  capacity_to_correct: null
+  response_after_notice: null
+  retained_gain_or_insulation: []
+  repair_or_mitigation: []
+  repeat_harm_capacity_after_response: null
+
+material_flow:
+  money_or_value_flows: []
+  ownership_or_enforceable_rights: []
+  dependency_or_exit_constraints: []
+  public_inputs: []
+  private_or_state_capacity_created: []
+  beneficiaries: []
+  loss_bearers: []
+  resource_or_infrastructure_control: []
+
+harm_identity:
+  count_once_under_shared_harm_id: true
+  contributor_specific_responsibility_records: []
+  attribution_fraction: unknown
+  attribution_method: null
+  duplicate_projection_paths: []
+
+repair_identity:
+  repair_target_ids: []
+  repair_actor_ids: []
+  material_repair_domains: []
+  repair_state: unknown
+  residual_harm: []
+
+translation_and_framing:
+  source_native_terms: []
+  translated_terms: []
+  loaded_or_contested_terms: []
+  laundering_or_framing_questions: []
+  semantic_loss_notes: []
+
+review:
+  evidence_effects: []
+  uncertainty: []
+  missingness: []
+  corrections: []
+  local_confidence: unknown
+  promotion_candidate: false
+  publication_candidate: false
+
+return_contract:
+  return_as:
+    - typed_relation
+    - bounded_specialist_finding
+    - narrowing_or_contradiction
+    - unresolved_question
+    - repair_or_harm_state_update
+  do_not_return_as:
+    - duplicate_source
+    - automatic_corroboration
+    - repository_based_verdict
+    - confidence_inflation
+  return_path: ""
+
+locks:
+  - shared_actor_id_does_not_imply_shared_role_across_cases
+  - shared_event_id_does_not_make_every_claim_about_the_event_true
+  - shared_harm_id_prevents_duplicate_counting_but_does_not_resolve_contributor_share
+  - specialist_inference_does_not_rewrite_primary_source_language
+  - financial_association_does_not_establish_control_without_the_relevant_power_edge
+  - financial_relation_can_establish_material_control_when_enforceable_rights_dependency_veto_conditional_access_collateral_or_credible_withdrawal_power_are_evidenced
+  - government_private_capital_geopolitics_ideology_ecology_and_human_harm_may_share_one_causal_field_without_sharing_one_motive_or_command
+  - publication_projection_is_not_evidence_manufacture
+
+tiny_lock: >-
+  Carry the identity. Carry the evidence. Carry the uncertainty. Let each specialist add only the edge it earns,
+  then return the edge without multiplying the source or the harm.
