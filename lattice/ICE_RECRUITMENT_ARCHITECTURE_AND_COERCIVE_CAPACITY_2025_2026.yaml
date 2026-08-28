@@ -1,0 +1,67 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: ice-recruitment-architecture-and-coercive-capacity-2025-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/ICE_RECRUITMENT_AND_STATE_TERROR_CLASSIFIER_REVIEW_2025_2026.yaml
+
+scope: >-
+  Documented second-Trump-administration expansion of ICE personnel and coercive capacity, with the
+  legal/political 'terrorist organization' classification kept separate from the evidence already sufficient
+  to establish deliberate recruitment design and population-level intimidation/coercion messaging.
+
+promoted_claims:
+  - proposition: ICE/DHS deliberately constructed a rapid mass-hiring program to increase personnel capacity for the administration's mass-deportation objective.
+    posture: CONFIRMED
+    effects: [DIRECTION, CAPACITY]
+
+  - proposition: The recruitment strategy intentionally targeted military/veteran, gun-rights, tactical, patriotic and conservative-leaning audiences and used a 'wartime recruitment' frame.
+    posture: CONFIRMED_AS_REPORTED_FROM_INTERNAL_STRATEGY
+    effects: [DIRECTION, CAPACITY]
+
+  - proposition: ICE separately targeted local law-enforcement personnel frustrated with sanctuary-jurisdiction restrictions and invited them into federal immigration enforcement.
+    posture: CONFIRMED_CAMPAIGN_DESIGN
+    effects: [DIRECTION, CAPACITY]
+
+  - proposition: The hiring surge broadened eligibility/incentives and compressed portions of vetting/training, including some temporary starts before full background investigations were finished.
+    posture: STRONGLY_SUPPORTED
+    effects: [CAPACITY, RELIABILITY_MODIFYING]
+
+  - proposition: Recruitment messaging included material with documented white-nationalist/extremist cultural associations.
+    posture: SUPPORTED_CONTENT_RELATION
+    effects: [DIRECTION, RELIABILITY_MODIFYING]
+
+  - proposition: Current evidence proves DHS leadership intentionally sought violent extremists specifically because they were extremists.
+    posture: NOT_ESTABLISHED
+    effects: [SCOPE_LIMITING]
+
+  - proposition: DHS deliberately used threats of arrest, deportation and fines as a population-level communications strategy intended to induce people to leave the United States.
+    posture: DIRECTLY_DOCUMENTED
+    effects: [DIRECTION, CAPACITY]
+
+classifier_state:
+  federal_terrorist_organization_designation: NOT_APPLICABLE_NOT_DESIGNATED
+  18_USC_2331_conduct_comparator: OPEN_ELEMENT_BY_ELEMENT
+  broader_state_terror_hypothesis: OPEN_WITH_MATERIAL_SUPPORTING_EDGES
+  note: >-
+    The Lattice does not treat government status as a categorical exemption from terror-method analysis,
+    but it also does not convert coercive or authoritarian conduct into a terrorism classification without
+    establishing the relevant violence/unlawfulness and intimidation/organizational-intent edges.
+
+open_edges:
+  - full_recruitment_strategy_and_approval_chain
+  - extremist_coded_ad_approval_and_subjective_intent
+  - provisional_hire_population_and_background_clearance_timing
+  - training_cohort_to_force_incident_outcome_mapping
+  - unlawful_violence_pattern_and_command_policy_relation
+  - exact_state_terror_classifier_threshold
+
+locks:
+  - hiring_redesign_is_intentional_at_capacity_and_audience_targeting_seat
+  - intent_to_expand_aggressive_enforcement_does_not_by_itself_prove_intent_to_recruit_violent_extremists
+  - state_actor_status_does_not_defeat_terror_method_analysis
+  - criminal_or_terrorism_label_requires_exact_elements
+  - confirmed_abuse_and_negligence_do_not_need_terrorism_label_to_remain_serious
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
