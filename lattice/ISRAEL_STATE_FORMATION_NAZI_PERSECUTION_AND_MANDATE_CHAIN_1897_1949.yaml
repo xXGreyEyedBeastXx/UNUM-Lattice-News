@@ -1,0 +1,60 @@
+schema: unum-lattice-news/durable-historical-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: israel-state-formation-nazi-persecution-mandate-chain-1897-1949
+intake_return_path: UNUM-Lattice-News-Intake/reviews/ISRAEL_STATE_FORMATION_NAZI_GERMANY_AND_MANDATE_CHAIN_1897_1949.yaml
+
+promoted_relations:
+  - proposition: Political Zionism and organized Zionist state-building predate Nazi Germany by decades.
+    posture: DOCUMENTED
+  - proposition: British imperial policy and the League of Nations Mandate created formal administrative, immigration, settlement, and Jewish-Agency infrastructure supporting a Jewish national home before Nazi rule.
+    posture: DOCUMENTED
+  - proposition: Nazi persecution materially accelerated Jewish emigration from Germany and annexed territories to Mandatory Palestine during the 1930s.
+    posture: DOCUMENTED
+  - proposition: The 1933 Haavara Transfer Agreement created a real transactional crossing between Zionist institutions and Nazi German economic authorities with opposed goals but overlapping short-term interests in Jewish emigration from Germany.
+    posture: DOCUMENTED_TRANSACTIONAL_CROSSING
+  - proposition: The Holocaust and postwar Jewish displaced-person crisis materially increased political urgency and international/survivor support for Jewish statehood.
+    posture: STRONGLY_SUPPORTED
+  - proposition: UN partition, civil war, Israeli declaration and external recognition transformed prior state-building capacity into sovereignty in 1948.
+    posture: DOCUMENTED
+  - proposition: The same 1947-49 state-formation war produced mass Palestinian dispossession and refugeehood, commonly termed the Nakba.
+    posture: DOCUMENTED
+
+historical_model:
+  chain:
+    - european_antisemitism_and_nationalism
+    - political_zionist_organization
+    - british_imperial_sponsorship
+    - mandate_state_building_infrastructure
+    - nazi_persecution_and_forced_emigration
+    - haavara_transactional_asset_migration_channel
+    - holocaust_genocide
+    - postwar_displaced_person_crisis
+    - international_partition_process
+    - israel_statehood_and_recognition
+    - 1948_war
+    - palestinian_mass_displacement
+
+core_locks:
+  - opposed_actors_can_share_a_transactional_mechanism_without_shared_ideology
+  - haavara_does_not_mean_nazis_created_zionism_or_israel
+  - holocaust_causally_accelerated_statehood_without_being_the_original_source_of_zionism
+  - jewish_refugee_need_and_palestinian_dispossession_are_both_historical_realities
+  - palestinian_dispossession_is_not_negated_by_jewish_persecution
+  - jewish_persecution_is_not_negated_by_palestinian_dispossession
+  - specific_collaborators_do_not_define_whole_peoples
+  - british_or_un_support_does_not_equal_palestinian_consent
+
+forward_link:
+  next_period: 1949_present
+  questions:
+    - how_us_israel_security_relationship_deepened
+    - how_1967_occupation_changed_the_policy_ecology
+    - how_1973_and_cold_war_strategy_changed_us_aid
+    - how_modern_lobby_and_pac_infrastructure_formed
+    - how_defense_contracts_and_fmf_create_feedback_loops
+    - how_current_AIPAC_UDP_cross_party_influence_maps_back_to_the_state_security_architecture
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
