@@ -1,0 +1,77 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: cross-party-pac-security-assistance-defense-contract-ecology-2024-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/AIPAC_PAC_IDF_CONTRACT_AND_CROSS_PARTY_INFLUENCE_AUDIT_2024_2026.yaml
+
+scope: >-
+  Durable relation connecting cross-party pro-Israel electoral spending, congressional policy alignment,
+  U.S.-Israel military-assistance architecture, and private defense-industry benefit without collapsing these
+  into a single quid-pro-quo or foreign-control claim.
+
+promoted_relations:
+  - proposition: AIPAC openly supports pro-Israel congressional candidates in both major parties and its backed super PAC United Democracy Project intervenes independently in elections to support allies and defeat detractors.
+    posture: DOCUMENTED
+
+  - proposition: United Democracy Project has campaign-scale independent-expenditure capacity exceeding $100M in receipts in the 2025-2026 cycle, while AIPAC PAC separately has tens of millions in receipts.
+    posture: DOCUMENTED_FEC
+    note: Independent expenditures are legally and analytically distinct from direct contributions to candidate campaigns.
+
+  - proposition: U.S. military assistance to Israel creates recurring procurement channels through Foreign Military Sales and FMF-funded Direct Commercial Sales, some of which return U.S. public funds to private U.S. or U.S.-based defense vendors.
+    posture: DOCUMENTED_STRUCTURE
+
+  - proposition: CRS reported 751 active U.S. Foreign Military Sales cases with Israel valued at $39.2B as of April 2025, and Israel's Ministry of Defense uses a material portion of annual FMF for direct commercial contracts.
+    posture: DOCUMENTED
+
+  - proposition: Major 2026 proposed arms sales to Israel identify AM General, Boeing, and Lockheed Martin as principal contractors, demonstrating a direct government-policy-to-private-contractor benefit path.
+    posture: DOCUMENTED_APPROVAL_PATH
+    scope_lock: Proposed/approved sale value is not identical to realized contractor revenue or delivered equipment.
+
+  - proposition: Cross-party electoral polarization can coexist with cross-party policy continuity around selected donor, foreign-policy, and security priorities.
+    posture: STRONGLY_SUPPORTED_AS_STRUCTURAL_PATTERN
+    scope_lock: Deliberate divide-and-conquer intent is not established merely from this coexistence.
+
+  - proposition: John Fetterman's repeated votes against resolutions seeking to block particular Israel arms sales document policy alignment with continued military support; available evidence does not establish that direct AIPAC payments caused those votes.
+    posture: POLICY_ALIGNMENT_DOCUMENTED_CAUSATION_OPEN
+
+analysis_model:
+  trace:
+    - donor_or_membership_money
+    - PAC_or_superPAC_capacity
+    - direct_contribution_or_independent_expenditure
+    - candidate_primary_or_general_election_effect
+    - legislator_access_and_policy_position
+    - committee_or_floor_vote
+    - appropriation_or_arms_sale_approval
+    - FMS_or_DCS_procurement
+    - contractor_or_industrial_benefit
+    - military_capability_and_harm_exposure
+  required_separations:
+    - direct_contribution_vs_independent_expenditure
+    - support_vs_control
+    - lobbying_vs_bribery
+    - ideology_vs financial_inducement
+    - authorization_vs obligation_vs contract_vs delivery
+    - Government_of_Israel_vs_IDF_vs_Ministry_of_Defense
+    - U.S._contractor_vs_Israeli_defense_firm
+    - policy_benefit_vs quid_pro_quo
+
+core_locks:
+  - AIPAC_is_not_the_Israeli_government
+  - pro_Israel_advocacy_is_not_by_itself_corruption
+  - campaign_finance_can_create_access_incentive_and_primary_pressure_without_proving_vote_purchase
+  - primary_threat_can_matter_without_direct_candidate_receipt
+  - public_aid_can_cycle_into_private_defense_contracts
+  - contractor_benefit_requires_contract_level_trace_before assigning exact_gain
+  - Democrats_and_Republicans_must_be_audited_symmetrically
+  - cross_party_consensus_does_not_erase_real_party_differences
+  - observed_cross_party_consensus_does_not_prove_deliberate_divide_and_conquer_strategy
+
+cross_links:
+  - UNUM-Lattice-News-Intake/reviews/AIPAC_PAC_IDF_CONTRACT_AND_CROSS_PARTY_INFLUENCE_AUDIT_2024_2026.yaml
+  - UNUM-Lattice-News-Intake/reviews/COERCIVE_SURVIVAL_OLIGARCHIC_POWER_ECOLOGY_HYPOTHESIS_1971_2026.yaml
+  - UNUM-Lattice-News-Intake/reviews/CULTURE_NETWORK_INSTITUTION_ACCOUNTABILITY_DELEGITIMIZATION_MODEL_1970S_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
