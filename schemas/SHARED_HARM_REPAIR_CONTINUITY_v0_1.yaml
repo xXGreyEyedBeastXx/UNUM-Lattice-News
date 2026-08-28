@@ -1,0 +1,120 @@
+schema: unum-lattice-news/shared-harm-repair-continuity/v0.1
+status: ACTIVE_BASELINE
+as_of: 2026-08-28
+purpose: >-
+  Give harms, affected populations, contributor records, accountability responses, and material repair a stable identity across the Lattice ecology.
+  Prevent duplicate victim counts, perpetrator-centered closure, and the mistaken equation of punishment with restoration.
+
+shared_harm_record:
+  shared_harm_id: harm-slug
+  label: ""
+  status: candidate | documented | high_confidence | corrected | superseded | resolved_partial | resolved_material
+  time_window:
+    start: null
+    end: null
+  geography_or_system_scope: []
+  event_ids: []
+  claim_ids: []
+  affected_population_ids: []
+  affected_ecology_ids: []
+  harm_types: []
+  direct_material_losses: []
+  continuing_losses: []
+  evidence_lineage: []
+  confidence: unknown
+  uncertainty: []
+  missingness: []
+
+counting:
+  canonical_counting_seat: ""
+  count_once: true
+  known_duplicate_records_or_routes: []
+  population_overlap_notes: []
+  mortality_or_case_estimate_method: null
+  lower_bound: null
+  upper_bound: null
+  point_estimate: null
+  unit: null
+  do_not_sum_across: []
+
+contributors:
+  - contributor_id: actor-or-institution-id
+    contribution_record_ids: []
+    relation_types: []
+    contribution_scope: ""
+    causal_confidence: unknown
+    attribution_fraction: unknown
+    attribution_method: null
+    direct_control_or_authority: []
+    enabling_capacity: []
+    knowledge_or_notice: []
+    response_after_notice: null
+    retained_gain_or_insulation: []
+    limitations: []
+
+accountability_state:
+  investigation: unknown
+  adjudication: unknown
+  sanctions_or_penalty: unknown
+  institutional_reform: unknown
+  removal_of_repeat_harm_capacity: unknown
+  transparency_or_disclosure: unknown
+  apology_or_acknowledgment: unknown
+  notes: []
+
+repair_target:
+  principle: >-
+    Accountability is incomplete as a human-facing measure when the responsible actor is processed but the injured relation remains materially unrepaired.
+  repair_domains:
+    immediate_physical_safety: unknown
+    medical_care_and_rehabilitation: unknown
+    food_and_water_security: unknown
+    shelter_and_housing: unknown
+    livelihood_and_income: unknown
+    mobility_and_access: unknown
+    family_or_community_reunification: unknown
+    return_or_resettlement: unknown
+    land_or_property_restoration: unknown
+    legal_status_rights_or_agency: unknown
+    debt_or_financial_restitution: unknown
+    compensation_or_reparations: unknown
+    ecological_remediation: unknown
+    infrastructure_restoration: unknown
+    truth_record_and_information_access: unknown
+    cultural_or_place_continuity: unknown
+    prevention_of_repeat_harm: unknown
+  repair_actor_ids: []
+  repair_actions: []
+  support_during_accountability_process: []
+  residual_unrepaired_harm: []
+  repair_confidence: unknown
+  evidence: []
+
+closure_test:
+  original_harm_stopped: unknown
+  continuing_harm_stopped: unknown
+  affected_population_materially_supported: unknown
+  loss_restored_or_compensated: unknown
+  coercive_gate_removed_or_narrowed: unknown
+  repeat_harm_capacity_reduced: unknown
+  ecological_or_public_system_recovered: unknown
+  closure_state: OPEN | PARTIAL_REPAIR | MATERIAL_REPAIR | STRUCTURAL_REPAIR | DISPUTED | UNKNOWN
+
+required_separations:
+  - punishment_of_actor != repair_of_affected_population
+  - conviction_or_sanction != cessation_of_harm
+  - ceasefire != safe_return_or_reconstruction
+  - compensation != full_restoration
+  - apology != restitution
+  - cleanup != erasure_of_original_exposure
+  - policy_reversal != automatic_repair_of_prior_losses
+  - contributor_presence != equal_contributor_share
+  - shared_harm_id != collective_guilt
+  - absence_of_complete_repair != automatic_new_harm_by_original_actor
+
+nonduplication_rule: >-
+  One underlying death, displacement, exposure, deprivation, ecological loss, or other harm remains one underlying harm even when multiple actors contributed,
+  multiple specialists analyze it, multiple sources document it, or multiple accountability institutions address it. Contributor responsibility is recorded separately.
+
+tiny_lock: >-
+  Count the wound once. Trace every contributor separately. Do not call the case closed until you have also asked what happened to the person, community, or ecology that carried the harm.
