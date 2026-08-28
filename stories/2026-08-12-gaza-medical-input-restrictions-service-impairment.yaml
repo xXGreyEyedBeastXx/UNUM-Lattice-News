@@ -1,0 +1,34 @@
+story_id: story-2026-08-12-gaza-medical-input-restrictions-service-impairment
+title: Restrictions on critical inputs impair Gaza health and humanitarian service capacity
+date: 2026-08-12
+status: reviewed
+investigation_state: CONFIRMED_AT_SERVICE_CAPACITY_HARM_EDGE
+claim_posture: multisource_supported
+summary: >-
+  MSF reported that restrictions on engine oil, generator parts and other critical supplies delayed aid and impaired services
+  dependent on hospital generators, ambulances, water pumps and water trucks. WHO HeRAMS monitoring independently documents
+  major continuing gaps in operational health-service availability and barriers to provision across Gaza.
+what_changed:
+  - restrictions were documented as a realized service-capacity constraint rather than only a future risk
+  - system-level health and humanitarian service impairment crossed into confirmed harm
+nodes:
+  - Gaza_health_system
+  - Israeli_authorities_controlling_entry
+  - MSF
+  - WHO_HeRAMS
+evidence_effects:
+  - CAPACITY
+  - REALIZED_OUTCOME
+  - SCOPE_LIMITING
+established_facts:
+  - critical_input_access_constraints
+  - material_impairment_of_health_and_humanitarian_service_capacity
+  - continuing_health_service_availability_gaps
+not_established:
+  - every_individual_patient_death_caused_by_one_denied_item
+  - intent_to_cause_specific_patient_death
+  - complete_criminal_or_international_crime_classification_from_service_impairment_alone
+sources:
+  - UNUM-Lattice-News-Intake/claims/gaza-medical-oxygen-spare-parts-restrictions-2026-08.yaml
+confirmed_harm_ref: UNUM-Lattice-News-Proven-Harm/confirmed/GAZA_MEDICAL_INPUT_RESTRICTION_SERVICE_IMPAIRMENT_2026-08.yaml
+reporter_rule: report_service_level_impairment_as_confirmed_do_not_project_it_onto_unsupported_patient_level_causation
