@@ -1,0 +1,92 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: ice-protected-access-point-coercion-2025-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/ICE_PROTECTED_ACCESS_POINTS_DUE_PROCESS_AND_HOME_ENTRY_2025_2026.yaml
+
+scope: >-
+  Document the movement of immigration-enforcement exposure into schools, immigration courts/hearings, homes,
+  and other rights-access points, while keeping exact constitutional, statutory, criminal, and terrorism
+  classifications claim-specific.
+
+promoted_claims:
+  - proposition: DHS deliberately rescinded the prior bright-line protected-areas policy in January 2025, increasing officer discretion to conduct enforcement in or near schools, churches, healthcare facilities and similar locations.
+    posture: CONFIRMED_PRIMARY_DOCUMENT
+    effects: [AUTHORITY_DELTA, DIRECTION, CAPACITY]
+
+  - proposition: ICE enforcement has occurred immediately outside school environments, creating direct arrest exposure in front of children and families.
+    posture: CONFIRMED_CASE_PATTERN_AT_PROXIMITY_EDGE
+    effects: [REALIZED_OUTCOME, CAPACITY]
+    scope_limit: Current durable record does not generalize this to routine classroom entry or systematic student targeting.
+
+  - proposition: ICE carried out courthouse/hearing arrests after immigration proceedings, including after government-requested dismissals that could expose respondents to expedited-removal pathways.
+    posture: MULTISOURCE_SUPPORTED
+    effects: [REALIZED_OUTCOME, DIRECTION, CAPACITY]
+
+  - proposition: Courts have constrained portions of this enforcement architecture, including a 2026 New York order limiting routine immigration-court arrests and a Fifth Circuit ruling requiring bond hearings for covered detention beyond 90 days.
+    posture: ADJUDICATED_CONSTRAINT_RESISTANCE_AS_REPORTED
+    effects: [CONSTRAINT_RESISTANCE, CLAIM_DEFEATING, ACCOUNTABILITY_DELTA]
+
+  - proposition: More than 100 immigration judges were removed after the administration returned to office, reducing adjudicatory capacity while cases surged and prompting public independence/due-process concerns from UN human-rights experts.
+    posture: CURRENTLY_REPORTED_INSTITUTIONAL_CHANGE
+    effects: [CAPACITY, AUTHORITY_DELTA, RELIABILITY_MODIFYING]
+
+  - proposition: Federal legal-services support serving about 20,000 unaccompanied migrant children expired in July 2026 without renewal, increasing exposure to immigration proceedings without legal assistance.
+    posture: CURRENTLY_REPORTED_POLICY_OUTCOME
+    effects: [CONSTRAINT_DELTA, REALIZED_OUTCOME, CAPACITY]
+
+  - proposition: ICE adopted an internal policy authorizing forcible entry into a residence using an administrative I-205 warrant for a person with a final removal order, without a judicial home-entry warrant.
+    posture: AUTHENTICATED_INTERNAL_POLICY
+    effects: [AUTHORITY_DELTA, DIRECTION, CAPACITY]
+
+  - proposition: The administrative-warrant home-entry authority was used in real operations and is under active constitutional challenge.
+    posture: REALIZED_AND_LITIGATED
+    effects: [REALIZED_OUTCOME, CONSTRAINT_RESISTANCE]
+
+mechanism_state:
+  classifier: PROTECTED_ACCESS_POINT_COERCION
+  state: STRONGLY_SUPPORTED
+  model:
+    - remove_or_weaken_safe_zone_constraints
+    - expose_required_or_ordinary_civil_access_points_to_enforcement
+    - make attendance_presence_or_home_security carry detention_risk
+    - complicate_hearing_counsel_review_or_family_continuity
+    - create_population_level_chilling_effect
+  interpretation: >-
+    Rights-access points are causal infrastructure. Enforcement positioned at these nodes can alter behavior across a
+    population even when only a subset of people are directly arrested.
+
+state_terror_relation:
+  state: MATERIAL_SUPPORTING_EDGE_NOT_FINAL_CLASSIFICATION
+  finding: >-
+    The combination of population-level intimidation messaging with coercive exposure at schools, courts/hearings,
+    homes and other protective institutions materially strengthens a state-terror hypothesis. Final classification
+    still requires exact linkage to sufficiently systemic dangerous/unlawful conduct and organizational coercive intent.
+
+legal_scope:
+  - immigration_court_is_civil_not_criminal_trial
+  - civil_status_does_not_erase_Fifth_Amendment_due_process
+  - no_general_government_appointed_counsel_right_in_civil_immigration_proceedings
+  - administrative_warrant_and_judicial_home_entry_warrant_are_not_equivalent
+  - constitutionality_of_the_2025_I205_home_entry_policy_remains_under_active_litigation
+
+open_edges:
+  - actual_school_building_entries_vs_nearby_arrests
+  - healthcare_and_church_enforcement_realization
+  - courthouse_arrest_case_outcomes_and_expediated_removal_rates
+  - chilling_effect_on_hearing_attendance_school_attendance_healthcare_and_victim_reporting
+  - immigration_judge_replacement_and_case_outcome_effects
+  - child_legal_aid_loss_to_removal_outcome_mapping
+  - I205_home_entry_case_by_case_constitutional_rulings_and_command_chain
+  - organizational_intent_to_use_access_point_fear_as_broader_population_coercion
+
+locks:
+  - protected_access_point_is_not_incidental_location_when_it_conditions_rights_exercise
+  - court_order_limiting_policy_is_evidence_of_constraint_not_evidence_policy_never_existed
+  - state_status_does_not_resolve_constitutionality
+  - due_process_violation_criminality_and_terrorism_are_separate_claim_seats
+  - proximity_to_school_does_not_equal_proved_classroom_raid
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
