@@ -1,0 +1,47 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: poverty-enforcement-and-coercive-survival-feedback-loop-2024-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/POVERTY_ENFORCEMENT_AND_SURVIVAL_ACCESS_CHAIN_2024_2026.yaml
+
+core_relation: >-
+  Where access to basic survival needs is constrained, commodified, or underprovided, and the state then penalizes predictable survival conduct or nonpayment,
+  formal rules can create a self-reinforcing poverty loop even without an explicit policy declaring poverty itself unlawful.
+
+mechanism:
+  - constrained_access_to_housing_water_food_healthcare_or_counsel
+  - inability_to_pay_or_qualify
+  - survival_conduct_or_nonpayment
+  - enforcement_fine_fee_debt_or_detention
+  - collateral_barriers_to_work_housing_transport_credit_or_benefits
+  - reduced_future_access
+  - increased_poverty_and_dependency
+  - increased_coercive_leverage_of_resource_holders_and_state_gatekeepers
+
+promoted_evidence:
+  - Grants Pass v Johnson permits Eighth-Amendment enforcement of generally applicable public-camping ordinances; it does not declare homeless status criminal.
+  - DOJ materials document fines-and-fees mechanisms that can trap low-income people in debt and incarceration cycles.
+  - EPA estimates 12.1 to 19.2 million U.S. households lack affordable access to water services.
+  - 2026 national housing research reports a shortage of about 7.2 million affordable and available rental homes for extremely low-income households.
+  - State water-right systems can grant durable legal use rights to public and private users while the underlying water remains public.
+
+structural_corruption_test: >-
+  Trace whether money, lobbying, contracts, personnel networks, or institutional incentives repeatedly strengthen property/corporate/creditor/enforcement protections
+  while weakening practical survival access, legal assistance, collective bargaining power, debt relief, or bodily autonomy for lower-income people.
+
+locks:
+  - formal_legality_does_not_resolve_distributional_effect
+  - formal_equal_rule_does_not_imply_equal_practical_burden
+  - public_resource_allocation_is_not_automatically_corruption
+  - corporate_involvement_is_not_automatically_capture
+  - homelessness_status_criminalization_must_be_distinguished_from_enforcement_against_survival_conduct
+  - policy_effect_protection_intent_capture_and_criminal_corruption_are_separate_seats
+  - event_zeroing_is_prohibited
+
+cross_links:
+  - UNUM-Lattice-News-Intake/reviews/COERCIVE_SURVIVAL_OLIGARCHIC_POWER_ECOLOGY_HYPOTHESIS_1971_2026.yaml
+  - UNUM-Lattice-News-Intake/reviews/CULTURE_NETWORK_INSTITUTION_ACCOUNTABILITY_DELEGITIMIZATION_MODEL_1970S_2026.yaml
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
