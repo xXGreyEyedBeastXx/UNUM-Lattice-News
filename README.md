@@ -196,7 +196,7 @@ Collected or discovered items remain non-authoritative until reviewed. Intake ca
 
 The durable Lattice should not become a pile of disconnected domain silos. Specialist repositories deepen a question and return the earned result with its source lineage intact.
 
-Two high-centrality anchors now sit directly beside the News pipeline:
+Three high-centrality anchors now sit directly beside the News pipeline:
 
 ```text
 UNUM-Lattice-News-Geopolitics
@@ -208,6 +208,12 @@ UNUM-Lattice-News-Capital-and-Power
   -> money, ownership, labor, debt, land, trade, taxation, procurement,
      campaign finance, lobbying, contracting, beneficiary/loss-bearing paths,
      public-private flows, and political-economy feedbacks
+
+UNUM-Hierarchy-and-Supremacy-Studies
+  -> ranked-status ideology, unequal entitlement, supremacy propositions,
+     institutional hierarchy, segregation/apartheid logic, citizenship or
+     territorial hierarchy, dominant-group victimhood inversion, and the
+     mechanisms that turn status ranking into material consequence
 ```
 
 These are **specialist routing seats, not alternate truth authorities**.
@@ -220,7 +226,7 @@ Intake / source custody
 -> durable Lattice relation only if earned
 ```
 
-A route copy is not independent corroboration. Geopolitical labels do not assign causal role, and financial association does not establish control, bribery, corruption, or shared command without the relevant edge evidence.
+A route copy is not independent corroboration. Geopolitical labels do not assign causal role, financial association does not establish control or bribery, and a hierarchy/supremacy route does not itself establish extremism, criminality, private motive, or collective guilt.
 
 Important neighboring surfaces remain:
 
