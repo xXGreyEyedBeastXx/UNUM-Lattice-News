@@ -1,0 +1,55 @@
+schema: unum-lattice-news/durable-relation/v0.1
+status: DURABLE_REVIEWED_PARTIAL_PROMOTION
+as_of: 2026-08-27
+id: upward-protection-downward-exposure-structural-corruption-1947-2026
+intake_return_path: UNUM-Lattice-News-Intake/reviews/UPWARD_PROTECTION_DOWNWARD_EXPOSURE_LEGAL_ACCESS_AND_STRUCTURAL_CORRUPTION_AUDIT_1947_2026.yaml
+
+promoted_relations:
+  - proposition: Low-income Americans face a severe civil justice-access deficit, with cost and lack of representation functioning as major barriers.
+    posture: DIRECTLY_DOCUMENTED
+
+  - proposition: Federal policy repeatedly reduced publicly funded civil legal capacity, including Reagan-era proposed abolition/1982 cuts and 1996 funding and activity restrictions.
+    posture: DOCUMENTED_HISTORICAL_PATTERN
+
+  - proposition: Supreme Court arbitration doctrine has materially strengthened enforceability of individualized arbitration/class waivers in consumer and employment disputes.
+    posture: DOCUMENTED_LEGAL_ARCHITECTURE
+
+  - proposition: Labor-law and policy changes have repeatedly reduced some forms of collective worker power, including Taft-Hartley, PATCO consequences, right-to-work replication, and Janus.
+    posture: DOCUMENTED_MULTI_EVENT_PATTERN
+
+  - proposition: Some major 2005 legal reforms increased creditor/business procedural protections while narrowing consumer/debtor or class-based remedies.
+    posture: SUPPORTED_RULE_EFFECT
+
+  - proposition: Citizens United expanded corporate and union independent political spending and narrowed the anti-corruption rationale available to restrict that spending.
+    posture: DOCUMENTED_CONSTITUTIONAL_RULE_CHANGE
+
+structural_corruption_model:
+  working_definition: >-
+    concentrated wealth and organized institutional access repeatedly shape rules, forums, enforcement capacity,
+    or public resources in ways that increase insulation for powerful actors and reduce ordinary people's practical
+    ability to vindicate rights, bargain collectively, aggregate claims, or survive litigation.
+  state: OPEN_WITH_STRONG_SUPPORTING_MECHANISMS
+  note: This is distinct from proving bribery or criminal corruption in every component.
+
+mechanism_chain:
+  - wealth_and_organizational_capacity
+  - lobbying_donor_professional_and_personnel_access
+  - rule_or_forum_change
+  - increased_repeat_player_protection_or_leverage
+  - reduced_collective_or_individual_remedy_capacity
+  - higher_cost_or_lower_expected_value_of_claim
+  - fewer_cases_reach_merits
+  - reduced_deterrence_and_accountability
+  - greater_future_power_asymmetry
+
+locks:
+  - policy_effect_and_corrupt_intent_are_separate
+  - business_friendly_policy_is_not_automatically_corruption
+  - facial_neutrality_does_not_establish_effect_neutrality
+  - legal_access_must_be_measured_as_practical_capacity_not_formal_right_alone
+  - structural_corruption_can_be_real_without_every_component_being_illegal
+  - event_zeroing_is_prohibited
+
+source_custody: UNUM-Lattice-News-Intake
+route_copy_is_not_corroboration: true
+correction_and_demotion: live
