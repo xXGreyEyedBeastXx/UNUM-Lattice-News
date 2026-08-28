@@ -1,4 +1,4 @@
-schema: unum-lattice-news/repository-custody/v0.2
+schema: unum-lattice-news/repository-custody/v0.3
 status: ACTIVE
 updated: 2026-08-27
 purpose: >-
@@ -68,6 +68,39 @@ durable_owner:
     - corrections
 
 specialist_routes:
+  - repository: UNUM-Lattice-News-Geopolitics
+    route_when:
+      - state_to_state_bloc_or_cross_border_power_relation_is_material
+      - war_occupation_annexation_resistance_or_self_defense_causal_role_requires_reconstruction
+      - sovereignty_recognition_partition_border_or_territorial_status_is_material
+      - sanctions_foreign_aid_arms_transfer_alliance_or_security_cooperation_requires_deep_study
+      - strategic_resource_shipping_energy_or_security_corridor_requires_cross_border_analysis
+    locks:
+      - state_status_does_not_assign_defensive_causal_role
+      - transactional_crossing_does_not_establish_ideological_alliance
+      - alliance_does_not_establish_control_or_shared_command
+      - historical_continuity_does_not_establish_one_uninterrupted_conspiracy
+    does_not_own:
+      - replacement_of_news_source_custody
+      - automatic_aggressor_defender_or_legitimacy_verdict
+
+  - repository: UNUM-Lattice-News-Capital-and-Power
+    route_when:
+      - money_ownership_labor_debt_land_trade_or_public_private_resource_flow_is_material
+      - procurement_contracting_defense_industry_subsidy_or_tax_incidence_requires_deep_study
+      - campaign_finance_PAC_superPAC_lobbying_or_access_pressure_requires_deep_study
+      - beneficiary_loss_bearing_externalized_cost_or_terminal_gain_path_requires_reconstruction
+      - market_concentration_bargaining_power_or_necessity_gating_is_material
+    locks:
+      - money_does_not_establish_control
+      - lobbying_does_not_establish_bribery
+      - profit_does_not_establish_exploitation_by_definition
+      - policy_benefit_does_not_establish_quid_pro_quo
+      - ownership_does_not_automatically_establish_operational_causation
+    does_not_own:
+      - replacement_of_news_source_custody
+      - automatic_corruption_extraction_or_illegality_verdict
+
   - repository: UNUM-Laundering-Map
     route_when:
       - rhetoric_or_framing_transforms_the_apparent_causal_or_moral_picture
@@ -161,11 +194,15 @@ satellite_routes:
       - UNUM-Earth-Environmental-Ecology
       - UNUM-Medical
       - UNUM-Governance
+      - UNUM-Lattice-News-Geopolitics
+      - UNUM-Lattice-News-Capital-and-Power
     required_separations:
       - measured_from_modeled
       - environment_system_from_human_health_claim
       - institutional_authority_from_environmental_mechanism
       - uncertainty_in_exact_dose_from_evidence_of_exposure_or_contamination
+      - geopolitical_context_from_harm_proof
+      - capital_flow_from_corruption_or_intent_finding
 
 promotion_states:
   - INTAKE_CANDIDATE
