@@ -1,0 +1,161 @@
+schema: unum-lattice-news/internal-routing/v0.1
+status: ACTIVE
+updated: 2026-08-30
+purpose: >-
+  Replace repository-level separation among Lattice-specific topical satellites with
+  one internal routing grammar. Lenses route questions and evidence without creating
+  independent truth authorities or duplicate source lineages.
+
+prime_laws:
+  - one_active_UNUM_Lattice_News_repository
+  - lens_is_routing_not_verdict
+  - multi_lens_records_are_normal
+  - evidence_lineage_is_shared_not_multiplied_by_route
+  - lifecycle_state_is_not_domain_identity
+  - external_specialist_repository_remains_external_when_distinct_study_body_exists
+  - private_or_sensitive_material_does_not_cross_into_public_core_without_review
+  - adoption_requires_provenance_scope_uncertainty_and_return_path
+
+internal_lenses:
+  GEOPOLITICS:
+    route_when:
+      - cross_border_state_bloc_or_territorial_power_is_material
+      - war_occupation_annexation_resistance_or_self_defense_causal_role_requires_reconstruction
+      - sovereignty_recognition_partition_border_or_territorial_status_is_material
+      - sanctions_foreign_aid_arms_transfer_alliance_or_security_cooperation_is_material
+      - strategic_resource_shipping_energy_or_security_corridor_is_material
+    locks:
+      - state_status_does_not_assign_defensive_causal_role
+      - alliance_does_not_establish_control_or_shared_command
+      - transactional_crossing_does_not_establish_ideological_alliance
+      - historical_continuity_does_not_establish_one_uninterrupted_conspiracy
+
+  CAPITAL_POWER:
+    route_when:
+      - money_ownership_labor_debt_land_trade_tax_or_public_private_flow_is_material
+      - procurement_contracting_defense_industry_subsidy_or_cost_incidence_is_material
+      - campaign_finance_lobbying_or_access_pressure_requires_tracing
+      - beneficiary_loss_bearing_dependency_or_terminal_gain_path_requires_reconstruction
+      - market_concentration_bargaining_power_or_necessity_gating_is_material
+    locks:
+      - payment_or_financial_association_alone_does_not_establish_every_form_of_control
+      - evidenced_financial_power_may_constitute_control_when_terms_or_enforcement_power_travel_with_it
+      - lobbying_does_not_establish_bribery
+      - profit_does_not_establish_exploitation_by_definition
+      - policy_benefit_does_not_establish_quid_pro_quo
+      - ownership_does_not_automatically_establish_every_downstream_operational_decision
+
+  HUMANITARIAN_ENVIRONMENTAL:
+    route_when:
+      - environmental_condition_and_human_welfare_cannot_be_responsibly_separated
+      - climate_water_air_soil_food_or_chemical_exposure_is_material
+      - extraction_waste_disaster_famine_displacement_or_habitability_is_material
+      - war_environment_public_health_or_infrastructure_crossing_is_material
+    locks:
+      - natural_event_does_not_erase_policy_or_infrastructure_contribution
+      - legal_permit_does_not_establish_harmlessness
+      - uncertain_exact_dose_does_not_erase_established_exposure
+      - later_cleanup_does_not_erase_prior_realized_harm
+      - people_are_not_merely_variables_in_environmental_models
+
+  TRAFFICKING:
+    route_when:
+      - trafficking_or_coercive_recruitment_control_relation_is_material
+      - sexual_or_labor_exploitation_requires_trafficking_specific_discrimination
+      - workforce_camp_boomtown_remote_labor_or_supply_chain_risk_architecture_requires_study
+      - trafficking_related_jurisdiction_notice_response_or_mitigation_requires_reconstruction
+    locks:
+      - sex_work_does_not_establish_trafficking
+      - migration_does_not_establish_trafficking
+      - smuggling_does_not_establish_trafficking_automatically
+      - sexual_violence_does_not_establish_trafficking_automatically
+      - missing_person_status_does_not_establish_trafficking
+      - workforce_camp_does_not_establish_trafficking_event
+      - risk_architecture_does_not_establish_realized_trafficking
+      - reported_increase_does_not_establish_true_prevalence_increase_without_measurement_review
+
+  POLICY_MECHANISM:
+    route_when:
+      - law_order_rule_budget_program_or_administrative_change_is_material
+      - stated_purpose_and_actual_mechanism_require_separation
+      - implementation_capacity_attempt_realization_resistance_or_reversal_is_material
+      - distribution_of_benefits_burdens_rights_access_or_exit_requires_review
+    locks:
+      - policy_name_does_not_establish_policy_effect
+      - stated_benevolence_does_not_establish_benefit
+      - formal_legality_does_not_establish_harmlessness
+      - attempted_policy_does_not_equal_realized_implementation
+      - blocked_policy_does_not_erase_attempted_direction
+      - bad_outcome_does_not_automatically_establish_malicious_intent
+
+lifecycle_states:
+  PUBLIC_INTAKE_REVIEW:
+    home: intake/
+    role: public_safe_pre_durable_news_evidence_review
+    restrictions:
+      - no_automatic_public_claim_promotion
+      - no_private_sensitive_or_sealed_material_without_explicit_public_safe_review
+
+  EVIDENCE_SURVIVAL:
+    home: evidence/
+    role: source_identity_lineage_access_history_and_public_safe_reentry
+
+  DURABLE_EVENT:
+    home: stories/
+    role: reviewed_event_or_state_transition_record
+
+  BOUNDED_CLAIM:
+    home: claims/
+    role: claim_specific_evidence_and_posture
+
+  MESH_RELATION:
+    home: lattice/
+    role: recomposed_cross_record_relation_or_causal_ecology
+
+  CONFIRMED_HARM:
+    home: harm/confirmed/
+    role: scoped_high_confidence_harm_edge
+    locks:
+      - one_confirmed_edge_does_not_promote_neighboring_claims
+      - correction_and_demotion_remain_live
+
+  REVIEW:
+    home: reviews/
+    role: bounded_analysis_discriminator_policy_or_crossing_review
+
+  CORRECTION:
+    home: CORRECTIONS.md
+    role: visible_revision_and_return_path
+
+external_specialist_routes:
+  UNUM-Research:
+    role: external_retrieval_request_identity_provenance_routing_and_reentry
+  UNUM-Governance:
+    role: authority_law_procedure_enforcement_oversight_appeal
+  UNUM-Earth-Environmental-Ecology:
+    role: ecological_system_place_scale_environmental_mechanism
+  UNUM-Medical:
+    role: clinical_biological_health_mechanism
+  UNUM-Chemistry:
+    role: contaminant_reaction_composition_material_pathway
+  UNUM-Engineering:
+    role: infrastructure_design_failure_and_technical_mechanism
+  UNUM-Human-Relations:
+    role: interpersonal_dependency_grooming_conformity_and_relational_mechanism
+  UNUM-Hierarchy-and-Supremacy-Studies:
+    role: ranked_status_ideology_and_unequal_entitlement
+  UNUM-Laundering-Map:
+    role: framing_legitimacy_reputation_and_causal_partition_transformation
+  UNUM-Extremism-Watch:
+    role: extremist_movement_ideology_organization_propaganda_and_normalization
+  UNUM-Universal-Translation:
+    role: language_register_translation_and_semantic_loss
+
+former_lattice_satellites:
+  UNUM-Lattice-News-Intake: DONOR_RECOVERY
+  UNUM-Lattice-News-Proven-Harm: DONOR_RECOVERY
+  UNUM-Lattice-News-Humanitarian-Environmentalism: DONOR_RECOVERY
+  UNUM-Lattice-News-Real-Bad-Policy: DONOR_RECOVERY
+  UNUM-Lattice-News-Geopolitics: DONOR_RECOVERY
+  UNUM-Lattice-News-Capital-and-Power: DONOR_RECOVERY
+  UNUM-News-Lattice-Trafficking: DONOR_RECOVERY
