@@ -5,34 +5,41 @@
 
 ## Purpose
 
-`UNUM-Lattice-News` is the active **public evidence, reference, chronology, relation, harm-state, and accountability surface**.
+`UNUM-Lattice-News` is the durable **public evidence, reference, chronology, relation, harm-state, and accountability surface**.
 
-`UNUM-Radical-Love-Revolution` is the separate human-facing synthesis and publication project that can pull forward articles, explanations, practical guidance, humanitarian framing, and other material intended to help people understand and act without requiring them to traverse the full evidence mesh.
+`UNUM-Lattice-News-Backend` is the planned private working surface for intake, evidence custody, review, casework, promotion, and operational routing.
 
-The two surfaces are related but not interchangeable.
+`UNUM-Radical-Love-Revolution` is the separate human-facing synthesis/publication project for articles, explanations, practical guidance, humanitarian framing, and other material intended to help people use what the evidence has established.
+
+These surfaces are related but not interchangeable.
 
 ```text
 external reality
 -> optional UNUM-Research retrieval / provenance head
--> UNUM-Lattice-News/intake public-safe review
--> internal Lattice lenses and/or genuine external specialist study
--> reviewed return with lineage
--> durable UNUM-Lattice-News record / mesh / harm state
+-> UNUM-Lattice-News-Backend working evidence / review
+-> optional external specialist study + return
+-> reviewed public-safe promotion
+-> UNUM-Lattice-News durable public evidence mesh
 -> publication candidate / human-use candidate
 -> UNUM-Radical-Love-Revolution synthesis / article / guidance surface
 ```
 
-The former Lattice-specific satellite repositories are donor/recovery surfaces during consolidation; they are not required waypoints in the active publication route.
+Until Backend is instantiated, existing private Lattice donor repositories may retain working custody. They are transition surfaces, not required permanent waypoints.
 
 ## Core distinction
 
 ```text
-LATTICE NEWS
-= show the evidence
-= show the relation
-= show the uncertainty
-= show the correction path
-= let readers inspect references and deeper machinery
+LATTICE BACKEND
+= investigate / ingest / compare / preserve fuller working evidence
+= keep unresolved and private work out of the public face
+= prepare bounded promotion packets
+
+LATTICE PUBLIC
+= show reviewed evidence
+= show durable relations and claim posture
+= show uncertainty
+= show correction path
+= let readers re-enter the evidence route
 
 RADICAL LOVE REVOLUTION
 = translate what has been learned for broad human use
@@ -40,64 +47,80 @@ RADICAL LOVE REVOLUTION
 = publish readable articles and helpful outputs without forcing the reader through the technical lattice
 ```
 
-Public-facing synthesis does **not** become a new evidence source merely because it is clearer or more readable.
+Promotion or publication does **not** create new corroboration.
 
 ```text
-Radical Love rendition
-!= independent corroboration
-!= replacement for source lineage
-!= authority over later Lattice correction
+Backend -> Public projection != independent source
+Public -> Radical Love rendition != independent corroboration
+clarity != certainty inflation
 ```
 
-Likewise, Lattice News should not become deliberately unreadable merely because deeper specialist machinery exists.
+## Backend -> Public minimum
 
-## Handoff packet
+A promotion should preserve at least:
 
-A candidate crossing from Lattice News into Radical Love Revolution should preserve at least:
+```text
+stable object identity
+exact event / claim / relation / harm edge
+scope and clocks
+source pointers + citation lineage
+internal lenses used
+external specialist returns used
+uncertainty / missingness
+competing model / discriminator when material
+privacy / publication-safety state
+what changed during review
+Backend return path
+Public destination identity
+```
+
+## Public -> Radical Love handoff
+
+A human-facing candidate should preserve at least:
 
 ```text
 topic / human question
 current bounded finding
 who is affected
 what mechanism matters
-best evidence pointers
+best public evidence pointers
 what remains uncertain
 what competing model still matters
 what is merely analogy or interpretation
 what changed recently
 what people most need to understand
 what could materially help
-return path to Lattice evidence / record / relevant specialist result
+return path to Lattice Public and, where appropriate, Backend/specialist review
 ```
 
-The public synthesis may simplify structure, but it should not simplify away the causal edge that makes the claim true.
+The synthesis may simplify structure, but it should not simplify away the causal edge that makes the claim true.
 
 ## Archive relation
 
 `UNUM-Archives/lattice_news` preserves frozen historical publication states and superseded public prose.
 
-That archive is publication memory, not current evidence authority.
-
 ```text
-living evidence / public-reality analysis -> UNUM-Lattice-News
+working/private evidence -> Lattice Backend
+reviewed durable evidence -> Lattice Public
 external retrieval / source request head -> UNUM-Research
-human-facing current synthesis -> Radical Love Revolution
-frozen historical publication state -> Archives
+human-facing synthesis -> Radical Love Revolution
+frozen historical public state -> Archives
 ```
 
 ## Anti-drift locks
 
 ```text
 publication != evidence manufacture
+promotion != corroboration
 clarity != certainty inflation
 emotion != permission to erase causal precision
 technical depth != public usefulness by itself
 repository boundary != causal boundary
 public-facing language != moral laundering
 older article != current authority
-correction in Lattice -> candidate correction in downstream publication
+Public correction -> Backend re-review when needed + downstream correction candidate
 ```
 
 ## Tiny lock
 
-> Keep the evidence exposed. Keep the human explanation humane. Let the deep machinery remain inspectable without making every reader live inside it.
+> Backend does the working. Public exposes what earned durable form. Radical Love makes it human-usable without severing the evidence route.
