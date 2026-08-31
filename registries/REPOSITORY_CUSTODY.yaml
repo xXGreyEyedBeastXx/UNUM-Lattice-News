@@ -1,26 +1,95 @@
-schema: unum-lattice-news/repository-custody/v0.8
+schema: unum-lattice-news/repository-custody/v0.9
 status: ACTIVE
 updated: 2026-08-30
 purpose: >-
-  Provide one machine-readable custody surface for the consolidated public Lattice,
-  its internal lifecycle states and routing lenses, and its genuine external specialist
-  crossings. Former Lattice-specific satellites are donor/recovery surfaces rather than
-  parallel active authorities.
+  Define custody for one Lattice identity expressed through a private Backend working
+  surface and a public durable surface, while preserving true external specialist lifecycles.
 
 prime_laws:
-  - UNUM_Lattice_News_is_one_active_public_reality_mesh
+  - one_Lattice_identity_two_active_surfaces
+  - Backend_owns_working_private_and_pre_durable_custody
+  - Public_owns_reviewed_public_safe_durable_projection
+  - promotion_across_surfaces_is_not_independent_corroboration
   - UNUM_Research_is_the_ecology_wide_external_retrieval_request_and_reentry_head
   - internal_lens_is_not_independent_truth_authority
   - lifecycle_state_is_not_domain_identity
   - external_specialist_repository_owns_genuinely_distinct_domain_study
   - evidence_updates_only_the_claim_edge_variable_or_model_component_it_bears_on
-  - repeated_projection_or_route_copy_is_not_independent_corroboration
   - rhetorical_label_is_evidence_the_label_was_used_not_proof_the_classification_is_true
   - world_state_transition_and_evidence_state_transition_remain_distinct
   - repository_or_folder_boundary_is_not_causal_boundary
   - nothing_crosses_without_provenance_scope_uncertainty_and_return_path
-  - private_sensitive_or_sealed_material_does_not_bulk_cross_into_public_core
-  - former_satellite_material_is_adopted_semantically_not_blind_merged
+  - private_sensitive_or_sealed_material_does_not_cross_to_Public_without_review
+  - donor_material_is_adopted_semantically_not_blind_merged
+
+lattice_surfaces:
+  backend:
+    repository: UNUM-Lattice-News-Backend
+    status: PLANNED_NOT_YET_INSTANTIATED
+    intended_visibility: private
+    role: working_evidence_review_and_promotion_surface
+    owns_when_live:
+      - raw_news_candidates
+      - source_identity_and_survival_custody
+      - private_or_sensitive_evidence_allowed_by_repository_rules
+      - citation_lineage_review
+      - claim_extraction_drafts
+      - chronology_and_clock_review
+      - competing_models_and_discriminators
+      - working_casework_and_investigations
+      - internal_route_queues
+      - promotion_review
+      - harm_promotion_review
+      - migration_and_reconciliation
+      - operational_agents_workflows_and_automation
+    does_not_own:
+      - public_truth_by_repository_presence
+      - automatic_publication
+      - every_external_specialist_domain_study
+
+  public:
+    repository: UNUM-Lattice-News
+    visibility: public
+    role: durable_reviewed_public_reality_mesh
+    owns:
+      - reviewed_public_events
+      - public_safe_source_identity_and_lineage_projection
+      - reviewed_claims_and_claim_posture
+      - chronology_and_clocks
+      - public_state_transitions
+      - harms_and_consequences
+      - causal_and_accountability_relations
+      - recomposed_public_meshes_and_maps
+      - scoped_high_confidence_harm_states
+      - public_briefings
+      - uncertainty_and_missingness
+      - corrections
+    does_not_own:
+      - raw_intake_workbench
+      - unresolved_private_source_custody
+      - sensitive_or_sealed_working_casefiles
+      - generic_ecology_wide_external_research_request_routing
+      - every_specialist_domain_analysis
+
+public_backend_promotion:
+  minimum:
+    - stable_object_identity
+    - source_pointers_and_citation_lineage
+    - exact_claim_event_relation_or_harm_edge_and_scope
+    - relevant_clocks
+    - evidence_effects_when_applicable
+    - uncertainty_and_missingness
+    - strongest_competing_model_or_discriminator_when_material
+    - privacy_and_publication_safety_state
+    - internal_lenses_used
+    - external_specialist_returns_used
+    - backend_return_path
+    - public_destination_identity
+  locks:
+    - candidate_does_not_require_promotion
+    - promotion_is_claim_specific
+    - public_projection_is_not_new_corroboration
+    - correction_or_demotion_can_return_to_Backend_review
 
 research_front_door:
   repository: UNUM-Research
@@ -36,35 +105,24 @@ research_front_door:
     - destination_domain_conclusion
     - automatic_promotion_into_UNUM_Lattice_News
 
-active_lattice:
-  repository: UNUM-Lattice-News
-  visibility: public
-  role: durable_reviewed_public_reality_mesh_plus_public_safe_internal_review_lifecycle
-  owns:
-    - public_safe_news_evidence_staging
-    - reviewed_public_events
-    - reviewed_source_identity_and_lineage_suitable_for_public_custody
-    - reviewed_claims_and_claim_posture
-    - chronology_and_clocks
-    - public_state_transitions
-    - harms_and_consequences
-    - causal_and_accountability_relations
-    - recomposed_meshes_and_maps
-    - scoped_high_confidence_harm_states
-    - uncertainty_and_missingness
-    - corrections
-  does_not_own:
-    - generic_ecology_wide_external_research_request_routing
-    - every_specialist_domain_analysis
-    - private_sensitive_sealed_or_victim_identifying_material_merely_for_centralization
+internal_lenses:
+  registry: registries/LATTICE_INTERNAL_ROUTING.yaml
+  apply_across:
+    - Backend
+    - Public
+  lenses:
+    - GEOPOLITICS
+    - CAPITAL_POWER
+    - HUMANITARIAN_ENVIRONMENTAL
+    - TRAFFICKING
+    - POLICY_MECHANISM
+  rules:
+    - object_may_activate_multiple_lenses
+    - lens_routes_questions_gates_and_discriminators
+    - lens_does_not_duplicate_evidence_lineage
+    - lens_name_does_not_establish_its_named_conclusion
 
-internal_lifecycle:
-  public_intake_review:
-    home: intake/
-    role: public_safe_pre_durable_evidence_review
-  evidence_survival:
-    home: evidence/
-    role: public_safe_source_identity_lineage_access_and_reentry
+public_lifecycle_surfaces:
   durable_event:
     home: stories/
   bounded_claim:
@@ -80,67 +138,34 @@ internal_lifecycle:
       - correction_and_demotion_remain_live
   review:
     home: reviews/
+  public_evidence_projection:
+    home: evidence/
   correction:
     home: CORRECTIONS.md
 
-internal_lenses:
-  registry: registries/LATTICE_INTERNAL_ROUTING.yaml
-  lenses:
-    - GEOPOLITICS
-    - CAPITAL_POWER
-    - HUMANITARIAN_ENVIRONMENTAL
-    - TRAFFICKING
-    - POLICY_MECHANISM
-  rules:
-    - record_may_activate_multiple_lenses
-    - lens_routes_questions_gates_and_discriminators
-    - lens_does_not_duplicate_evidence_lineage
-    - lens_name_does_not_establish_its_named_conclusion
-
 external_specialist_routes:
   - repository: UNUM-Governance
-    route_when:
-      - authority_law_procedure_enforcement_oversight_resistance_or_appeal_is_material
-
+    role: authority_law_procedure_enforcement_oversight_resistance_and_appeal
   - repository: UNUM-Hierarchy-and-Supremacy-Studies
-    route_when:
-      - ranked_group_status_unequal_entitlement_or_supremacy_mechanism_requires_deep_study
-
+    role: ranked_status_unequal_entitlement_and_supremacy_mechanism
   - repository: UNUM-Laundering-Map
-    route_when:
-      - rhetoric_framing_legitimacy_reputation_or_selective_omission_transforms_accountability_read
-
+    role: rhetoric_framing_legitimacy_reputation_and_causal_partition_transformation
   - repository: UNUM-Extremism-Watch
-    route_when:
-      - extremist_movement_ideology_lineage_propaganda_organization_or_normalization_requires_deep_study
-
+    role: extremist_movement_ideology_lineage_propaganda_organization_and_normalization
   - repository: UNUM-Human-Relations
-    route_when:
-      - interpersonal_dependency_grooming_conformity_culture_or_relational_coercion_requires_deep_study
-
+    role: interpersonal_dependency_grooming_conformity_culture_and_relational_coercion
   - repository: UNUM-Universal-Translation
-    route_when:
-      - original_language_register_ambiguity_or_translation_loss_is_material
-
+    role: original_language_register_ambiguity_translation_and_semantic_loss
   - repository: UNUM-Earth-Environmental-Ecology
-    route_when:
-      - environmental_system_place_scale_exposure_or_ecological_mechanism_requires_specialist_study
-
+    role: environmental_system_place_scale_exposure_and_ecological_mechanism
   - repository: UNUM-Medical
-    route_when:
-      - organism_health_clinical_or_biological_mechanism_requires_specialist_study
-
+    role: organism_health_clinical_and_biological_mechanism
   - repository: UNUM-Chemistry
-    route_when:
-      - contaminant_reaction_composition_or_material_pathway_requires_specialist_study
-
+    role: contaminant_reaction_composition_and_material_pathway
   - repository: UNUM-Engineering
-    route_when:
-      - infrastructure_design_failure_mechanism_or_technical_system_requires_specialist_study
-
+    role: infrastructure_design_failure_mechanism_and_technical_system
   - repository: UNUM-Human-AI-Alliance
-    route_when:
-      - human_ai_governance_rights_dependency_or_relational_consequence_requires_specialist_study
+    role: human_ai_governance_rights_dependency_and_relational_consequence
 
 shared_support_routes:
   - repository: UNUM-Timeline-Studies
@@ -154,47 +179,58 @@ shared_support_routes:
 
 former_lattice_satellites:
   - repository: UNUM-Lattice-News-Intake
-    state: DONOR_RECOVERY
-    absorbed_function:
-      - public_safe_intake
-      - evidence_survival
-    privacy_rule: >-
-      Private or sensitive donor material remains private unless a bounded public-safe
-      derivative is reviewed for promotion.
+    current_state: DONOR_PRIVATE_CUSTODY_UNTIL_BACKEND_LIVE
+    likely_destination:
+      - Backend:intake
+      - Backend:evidence
 
   - repository: UNUM-Lattice-News-Proven-Harm
-    state: DONOR_RECOVERY
-    absorbed_function:
-      - harm/confirmed
-      - harm/review
+    current_state: DONOR_RECOVERY
+    likely_destination:
+      - Backend:promotion/harm-review
+      - Public:harm/confirmed
 
   - repository: UNUM-Lattice-News-Humanitarian-Environmentalism
-    state: DONOR_RECOVERY
-    absorbed_function:
-      - internal_lens:HUMANITARIAN_ENVIRONMENTAL
+    current_state: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+    likely_destination:
+      - Backend:routes/HUMANITARIAN_ENVIRONMENTAL
+      - Backend:work/maps_reviews
+      - Public:reviewed_maps_reviews
+      - external_specialists_when_domain_lifecycle_is_stronger
 
   - repository: UNUM-Lattice-News-Real-Bad-Policy
-    state: DONOR_RECOVERY
-    absorbed_function:
-      - internal_lens:POLICY_MECHANISM
+    current_state: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+    likely_destination:
+      - Backend:routes/POLICY_MECHANISM
+      - Backend:work/reviews
+      - Public:reviewed_claims_maps_reviews
+      - UNUM-Governance_when_authority_procedure_lifecycle_is_primary
 
   - repository: UNUM-Lattice-News-Geopolitics
-    state: DONOR_RECOVERY
-    absorbed_function:
-      - internal_lens:GEOPOLITICS
+    current_state: DONOR_RECOVERY
+    likely_destination:
+      - Backend:routes/GEOPOLITICS
+      - Backend:work/maps_reviews
+      - Public:reviewed_maps_reviews
 
   - repository: UNUM-Lattice-News-Capital-and-Power
-    state: DONOR_RECOVERY
-    absorbed_function:
-      - internal_lens:CAPITAL_POWER
+    current_state: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+    likely_destination:
+      - Backend:routes/CAPITAL_POWER
+      - Backend:work/maps_reviews
+      - Public:reviewed_maps_reviews
+      - external_specialist_donation_when_distinct_lifecycle_emerges
 
   - repository: UNUM-News-Lattice-Trafficking
-    state: DONOR_RECOVERY
-    absorbed_function:
-      - internal_lens:TRAFFICKING
+    current_state: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+    likely_destination:
+      - Backend:routes/TRAFFICKING
+      - Backend:work/casework_reviews
+      - Public:reviewed_claims_maps_reviews
+      - external_specialist_donation_when_distinct_lifecycle_emerges
 
 adoption_ledger: migration/LATTICE_SATELLITE_ADOPTION_LEDGER_2026-08-30.yaml
-single_repository_architecture: docs/SINGLE_REPOSITORY_LATTICE_ARCHITECTURE_v0_1.md
+architecture: docs/SINGLE_REPOSITORY_LATTICE_ARCHITECTURE_v0_1.md
 
 publication_routes:
   - repository: UNUM-Radical-Love-Revolution
@@ -207,19 +243,7 @@ publication_routes:
       - publication_does_not_replace_source_lineage
       - publication_clarity_does_not_inflate_certainty
 
-crossing_minimum:
-  - source_pointers_and_citation_lineage
-  - exact_question_claim_or_edge_and_scope
-  - relevant_clocks
-  - evidence_effects_when_applicable
-  - uncertainty_and_missingness
-  - strongest_competing_model_or_discriminator_when_material
-  - privacy_or_publication_safety_state_when_material
-  - evidence_that_would_change_assessment
-  - owner_and_return_path
-
 completion_rule: >-
-  Former satellites cease to be active authorities after their unique current-facing
-  functions have active owners, unique records have been adopted or retained with
-  provenance, privacy has been resolved, pointers have been repaired, and workflows
-  no longer require the old repository as an active write destination.
+  Former satellites cease to be active authorities only after their unique current-facing
+  functions and objects have a live Backend, Public, or external-specialist owner; private
+  custody is resolved; pointers and workflows are repaired; and historical provenance remains re-enterable.
