@@ -1,17 +1,18 @@
-schema: unum-lattice-news/internal-routing/v0.2
+schema: unum-lattice-news/internal-routing/v0.3
 status: ACTIVE
 updated: 2026-08-30
 purpose: >-
-  Provide one routing grammar for Lattice-specific lenses across the planned private
-  Backend and the public durable surface. Lenses route questions and evidence without
-  creating independent truth authorities or duplicate source lineages.
+  Provide one routing grammar for Lattice-specific lenses across the active private Backend
+  and the public durable surface. Lenses route questions and evidence without creating
+  independent truth authorities or duplicate source lineages.
 
 prime_laws:
-  - one_Lattice_identity_two_surfaces
+  - one_Lattice_identity_two_active_surfaces
   - Backend_is_working_surface
   - Public_is_reviewed_projection_surface
   - lens_is_routing_not_verdict
   - multi_lens_objects_are_normal
+  - repository_boundary_does_not_imply_causal_boundary
   - evidence_lineage_is_shared_not_multiplied_by_route_or_promotion
   - lifecycle_state_is_not_domain_identity
   - external_specialist_repository_remains_external_when_distinct_study_body_exists
@@ -21,7 +22,8 @@ prime_laws:
 surface_roles:
   Backend:
     repository: UNUM-Lattice-News-Backend
-    status: PLANNED_NOT_YET_INSTANTIATED
+    status: ACTIVE_PRIVATE_WORKING_SURFACE
+    registry: UNUM-Lattice-News-Backend/registries/LATTICE_INTERNAL_ROUTING.yaml
     role:
       - raw_intake
       - fuller_evidence_custody
@@ -35,6 +37,7 @@ surface_roles:
 
   Public:
     repository: UNUM-Lattice-News
+    status: ACTIVE_PUBLIC_DURABLE_SURFACE
     role:
       - reviewed_events_and_claims
       - public_safe_evidence_projection
@@ -52,11 +55,9 @@ internal_lenses:
       - sovereignty_recognition_partition_border_or_territorial_status_is_material
       - sanctions_foreign_aid_arms_transfer_alliance_or_security_cooperation_is_material
       - strategic_resource_shipping_energy_or_security_corridor_is_material
-    locks:
-      - state_status_does_not_assign_defensive_causal_role
-      - alliance_does_not_establish_control_or_shared_command
-      - transactional_crossing_does_not_establish_ideological_alliance
-      - historical_continuity_does_not_establish_one_uninterrupted_conspiracy
+    classification_cautions:
+      - distinguish_state_status_causal_role_operational_coordination_dependency_and_control
+      - preserve_historical_continuity_without_forcing_one_uninterrupted_causal_story
 
   CAPITAL_POWER:
     default_working_surface: Backend
@@ -67,28 +68,22 @@ internal_lenses:
       - campaign_finance_lobbying_or_access_pressure_requires_tracing
       - beneficiary_loss_bearing_dependency_or_terminal_gain_path_requires_reconstruction
       - market_concentration_bargaining_power_or_necessity_gating_is_material
-    locks:
-      - payment_or_financial_association_alone_does_not_establish_every_form_of_control
-      - evidenced_financial_power_may_constitute_control_when_terms_or_enforcement_power_travel_with_it
-      - lobbying_does_not_establish_bribery
-      - profit_does_not_establish_exploitation_by_definition
-      - policy_benefit_does_not_establish_quid_pro_quo
-      - ownership_does_not_automatically_establish_every_downstream_operational_decision
+    classification_cautions:
+      - distinguish_financial_association_incentive_dependency_terms_enforcement_and_control
+      - classify_profit_extraction_exploitation_and_quid_pro_quo_by_evidence_and_mechanism
 
   HUMANITARIAN_ENVIRONMENTAL:
     default_working_surface: Backend
     public_projection: reviewed_story_claim_map_review_or_mesh
     route_when:
-      - environmental_condition_and_human_welfare_cannot_be_responsibly_separated
+      - environmental_condition_and_human_welfare_are_causally_entangled
       - climate_water_air_soil_food_or_chemical_exposure_is_material
       - extraction_waste_disaster_famine_displacement_or_habitability_is_material
       - war_environment_public_health_or_infrastructure_crossing_is_material
-    locks:
-      - natural_event_does_not_erase_policy_or_infrastructure_contribution
-      - legal_permit_does_not_establish_harmlessness
-      - uncertain_exact_dose_does_not_erase_established_exposure
-      - later_cleanup_does_not_erase_prior_realized_harm
-      - people_are_not_merely_variables_in_environmental_models
+    classification_cautions:
+      - preserve_physical_mechanism_and_policy_or_infrastructure_contribution_when_supported
+      - uncertain_exact_dose_can_coexist_with_established_exposure
+      - later_cleanup_and_prior_realized_harm_are_separate_temporal_states
 
   TRAFFICKING:
     default_working_surface: Backend
@@ -98,15 +93,10 @@ internal_lenses:
       - sexual_or_labor_exploitation_requires_trafficking_specific_discrimination
       - workforce_camp_boomtown_remote_labor_or_supply_chain_risk_architecture_requires_study
       - trafficking_related_jurisdiction_notice_response_or_mitigation_requires_reconstruction
-    locks:
-      - sex_work_does_not_establish_trafficking
-      - migration_does_not_establish_trafficking
-      - smuggling_does_not_establish_trafficking_automatically
-      - sexual_violence_does_not_establish_trafficking_automatically
-      - missing_person_status_does_not_establish_trafficking
-      - workforce_camp_does_not_establish_trafficking_event
-      - risk_architecture_does_not_establish_realized_trafficking
-      - reported_increase_does_not_establish_true_prevalence_increase_without_measurement_review
+    classification_cautions:
+      - distinguish_trafficking_sex_work_smuggling_migration_sexual_violence_missing_person_status_and_risk_architecture
+      - reported_increase_and_true_prevalence_increase_require_measurement_review
+      - victim_and_witness_safety_can_control_publication_scope
 
   POLICY_MECHANISM:
     default_working_surface: Backend
@@ -116,31 +106,25 @@ internal_lenses:
       - stated_purpose_and_actual_mechanism_require_separation
       - implementation_capacity_attempt_realization_resistance_or_reversal_is_material
       - distribution_of_benefits_burdens_rights_access_or_exit_requires_review
-    locks:
-      - policy_name_does_not_establish_policy_effect
-      - stated_benevolence_does_not_establish_benefit
-      - formal_legality_does_not_establish_harmlessness
-      - attempted_policy_does_not_equal_realized_implementation
-      - blocked_policy_does_not_erase_attempted_direction
-      - bad_outcome_does_not_automatically_establish_malicious_intent
+    classification_cautions:
+      - distinguish_policy_label_stated_goal_mechanism_attempt_implementation_and_realized_effect
+      - legality_harm_benefit_intent_and_outcome_are_separate_evidentiary_dimensions
 
 working_lifecycle_targets:
-  RAW_CANDIDATE:
-    target: Backend:intake/candidates
-  SOURCE_SURVIVAL:
-    target: Backend:evidence/sources
-  DRAFT_CLAIM:
-    target: Backend:intake/claim-extraction
-  WORKING_REVIEW:
-    target: Backend:work/reviews
-  WORKING_MAP:
-    target: Backend:work/maps
-  CASEWORK:
-    target: Backend:work/casework
-  PUBLIC_PROMOTION_REVIEW:
-    target: Backend:promotion/public-review
-  HARM_PROMOTION_REVIEW:
-    target: Backend:promotion/harm-review
+  RAW_CANDIDATE: Backend:intake/candidates
+  SOURCE_REVIEW: Backend:intake/source-review
+  SOURCE_SURVIVAL: Backend:evidence/sources
+  DRAFT_CLAIM: Backend:intake/claim-extraction
+  ROUTING_DECISION: Backend:intake/routing
+  REJECTED_OR_DEFERRED: Backend:intake/rejected-deferred
+  INVESTIGATION: Backend:work/investigations
+  CASEWORK: Backend:work/casework
+  WORKING_REVIEW: Backend:work/reviews
+  WORKING_MAP: Backend:work/maps
+  WORKING_CHRONOLOGY: Backend:work/chronologies
+  PUBLIC_PROMOTION_REVIEW: Backend:promotion/public-review
+  HARM_PROMOTION_REVIEW: Backend:promotion/harm-review
+  PROMOTION_PACKET: Backend:promotion/packets
 
 public_lifecycle_targets:
   PUBLIC_PROMOTION_RECEIPT:
@@ -149,53 +133,36 @@ public_lifecycle_targets:
   PUBLIC_EVIDENCE_PROJECTION:
     home: evidence/
     role: reviewed_public_safe_source_identity_lineage_and_reentry
-  DURABLE_EVENT:
-    home: stories/
-  BOUNDED_CLAIM:
-    home: claims/
-  MESH_RELATION:
-    home: lattice/
+  DURABLE_EVENT: stories/
+  BOUNDED_CLAIM: claims/
+  MESH_RELATION: lattice/
   CONFIRMED_HARM:
     home: harm/confirmed/
     locks:
       - one_confirmed_edge_does_not_promote_neighboring_claims
       - correction_and_demotion_remain_live
-  REVIEWED_PUBLIC_REVIEW:
-    home: reviews/
-  CORRECTION:
-    home: CORRECTIONS.md
+  REVIEWED_PUBLIC_REVIEW: reviews/
+  CORRECTION: CORRECTIONS.md
 
 external_specialist_routes:
-  UNUM-Research:
-    role: external_retrieval_request_identity_provenance_routing_and_reentry
-  UNUM-Governance:
-    role: authority_law_procedure_enforcement_oversight_appeal
-  UNUM-Earth-Environmental-Ecology:
-    role: ecological_system_place_scale_environmental_mechanism
-  UNUM-Medical:
-    role: clinical_biological_health_mechanism
-  UNUM-Chemistry:
-    role: contaminant_reaction_composition_material_pathway
-  UNUM-Engineering:
-    role: infrastructure_design_failure_and_technical_mechanism
-  UNUM-Human-Relations:
-    role: interpersonal_dependency_grooming_conformity_and_relational_mechanism
-  UNUM-Hierarchy-and-Supremacy-Studies:
-    role: ranked_status_ideology_and_unequal_entitlement
-  UNUM-Laundering-Map:
-    role: framing_legitimacy_reputation_and_causal_partition_transformation
-  UNUM-Extremism-Watch:
-    role: extremist_movement_ideology_organization_propaganda_and_normalization
-  UNUM-Universal-Translation:
-    role: language_register_translation_and_semantic_loss
-  UNUM-Epstein-Discovery:
-    role: Epstein_specific_evidence_and_casework
+  UNUM-Research: external_retrieval_request_identity_provenance_routing_and_reentry
+  UNUM-Governance: authority_law_procedure_enforcement_oversight_appeal
+  UNUM-Earth-Environmental-Ecology: ecological_system_place_scale_environmental_mechanism
+  UNUM-Medical: clinical_biological_health_mechanism
+  UNUM-Chemistry: contaminant_reaction_composition_material_pathway
+  UNUM-Engineering: infrastructure_design_failure_and_technical_mechanism
+  UNUM-Human-Relations: interpersonal_dependency_grooming_conformity_and_relational_mechanism
+  UNUM-Hierarchy-and-Supremacy-Studies: ranked_status_ideology_and_unequal_entitlement
+  UNUM-Laundering-Map: framing_legitimacy_reputation_and_causal_partition_transformation
+  UNUM-Extremism-Watch: extremist_movement_ideology_organization_propaganda_and_normalization
+  UNUM-Universal-Translation: language_register_translation_and_semantic_loss
+  UNUM-Epstein-Discovery: Epstein_specific_evidence_and_casework
 
 former_lattice_satellites:
-  UNUM-Lattice-News-Intake: DONOR_PRIVATE_CUSTODY_UNTIL_BACKEND_LIVE
-  UNUM-Lattice-News-Proven-Harm: DONOR_SPLIT_BACKEND_REVIEW_PUBLIC_CONFIRMED_STATE
-  UNUM-Lattice-News-Humanitarian-Environmentalism: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
-  UNUM-Lattice-News-Real-Bad-Policy: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
-  UNUM-Lattice-News-Geopolitics: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
-  UNUM-Lattice-News-Capital-and-Power: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
-  UNUM-News-Lattice-Trafficking: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+  UNUM-Lattice-News-Intake: ACTIVE_DONOR_MIGRATION_TO_BACKEND
+  UNUM-Lattice-News-Proven-Harm: ACTIVE_DONOR_SPLIT_BACKEND_REVIEW_PUBLIC_CONFIRMED_STATE
+  UNUM-Lattice-News-Humanitarian-Environmentalism: ACTIVE_DONOR_WORKBENCH_MIGRATION
+  UNUM-Lattice-News-Real-Bad-Policy: ACTIVE_DONOR_WORKBENCH_MIGRATION
+  UNUM-Lattice-News-Geopolitics: ACTIVE_DONOR_WORKBENCH_MIGRATION
+  UNUM-Lattice-News-Capital-and-Power: ACTIVE_DONOR_WORKBENCH_MIGRATION
+  UNUM-News-Lattice-Trafficking: ACTIVE_DONOR_WORKBENCH_MIGRATION
