@@ -1,14 +1,16 @@
 # UNUM-Lattice-News — News Operations v0.2
 
-**Status:** active working operations layer  
-**Updated:** 2026-08-21  
-**Purpose:** unify intake, investigation, evidence, power mapping, harm governance, review, correction, and publication under one traceable operating cycle.
+**Status:** PUBLIC METHOD REFERENCE — BACKEND OWNS LIVE OPERATIONS  
+**Updated:** 2026-08-31  
+**Purpose:** preserve the public-readable investigative method while the live operational machinery, state, agents, queues, review gates, and workflow authority reside in `UNUM-Lattice-News-Backend`.
 
-This file incorporates `docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md` as a mandatory evidence-routing rule and `docs/HARMFUL_INTENT_AND_TRAJECTORY_MODEL_v0_1.md` for intent, knowledge, notice, and persistence where those questions are material.
+This file is not the current operational control surface. It documents methods that may be exposed publicly so readers can understand how Lattice work is structured and reviewed. Where this file and the Backend's live schemas, registries, workflow contracts, or operating contract differ about current operation, Backend is authoritative.
+
+The method below incorporates `docs/EVIDENCE_JURISDICTION_AND_LAUNDERING_TAXONOMY_v0_1.md` as an evidence-routing reference and `docs/HARMFUL_INTENT_AND_TRAJECTORY_MODEL_v0_1.md` for intent, knowledge, notice, and persistence where those questions are material.
 
 ## 1. Operating orientation
 
-UNUM-Lattice-News is not an accusation engine, enemy list, partisan scoring system, or net-morality ledger. It is a public evidence-traced relational analysis surface.
+UNUM-Lattice-News is a public evidence-traced relational analysis surface.
 
 ```text
 Recover what is present.
@@ -24,18 +26,9 @@ Keep the return path open.
 
 No claim, source, actor, institution, ideology, party, movement, government, corporation, donor, victim, witness, or investigator is exempt from the evidence standard.
 
-### Harm-audit scope lock
+### Harm-audit scope
 
-```text
-unrelated beneficial conduct != claim-defeating evidence
-public-service accomplishment != offset for documented harm
-charity != credit against coercion
-positive reputation != reduced causal responsibility
-successful resistance != retroactive defense of the attempted objective
-absence of harmful motive != accidental conduct
-```
-
-A harm audit may be one-sided in subject matter without becoming one-sided in evidence. Evidence that truly weakens, narrows, defeats, reroutes, or changes confidence in a scoped claim remains mandatory.
+A harm audit may focus narrowly on a harmful mechanism without requiring unrelated beneficial conduct to offset documented harm. Evidence that truly weakens, narrows, defeats, reroutes, or changes confidence in the scoped claim remains mandatory.
 
 ---
 
@@ -64,10 +57,10 @@ Map what changes available agency: law, money, employment, force, surveillance, 
 Record consequential operations: election, appointment, lobbying, donation, contract, investment, tariff, regulation, enforcement, detention, prosecution, pardon, merger, subsidy, strike, protest, publication, data transfer, intentional term-setting, pricing/wage/rent/access changes, or other state change.
 
 ### PROJECTION
-Separate what actors say the action means from what it materially does. Public framing, ideology, legal justification, media classification, and symbolic language are evidence surfaces, not automatic outcomes.
+Separate what actors say the action means from what it materially does. Public framing, ideology, legal justification, media classification, and symbolic language are evidence surfaces rather than automatic outcomes.
 
 ### COHERENCE
-Compare stated purpose, incentives, implementation, distribution of harm, distribution of gain/insulation, knowledge/notice where material, typed evidence effects, competing explanations, and observed outcomes. Coherence is not truth by itself.
+Compare stated purpose, incentives, implementation, distribution of harm, distribution of gain/insulation, knowledge/notice where material, typed evidence effects, competing explanations, and observed outcomes. Coherence is one dimension of assessment rather than a substitute for evidence.
 
 ### RE-ENTRY
 Preserve correction, appeal, source challenge, restitution, policy reversal, democratic removal, rehabilitation, archive lineage, and the path by which a future reviewer can reconstruct or revise the conclusion.
@@ -118,9 +111,7 @@ Repeated reporting is not automatically independent corroboration. Track citatio
 
 > **Evidence updates only the edge, claim, variable, or model component it actually bears on.**
 
-Do not treat evidence as globally pro-actor or anti-actor.
-
-Required `evidence_effect.function` values:
+Required `evidence_effect.function` values include:
 
 ```text
 CLAIM_DEFEATING
@@ -137,7 +128,7 @@ RELIABILITY_MODIFYING
 NON_RESPONSIVE
 ```
 
-Every effect should name its target. One evidence item may have multiple effects only through separately declared target/function pairs.
+Every effect should name its target. One evidence item may have multiple effects through separately declared target/function pairs.
 
 ### Direction / attempt / capacity / result / resistance
 
@@ -151,8 +142,6 @@ R = realized result
 S = surviving resistance/constraint
 ```
 
-`A=1, R=0, S=1` means the objective was attempted, not realized, and resistance worked. It does not weaken the historical fact of the attempt.
-
 A blocked attempt can limit realized harm and demonstrated capacity while still supporting persistence of direction. If the actor returns through another mechanism, preserve both the original attempt and the reroute.
 
 ### Competing-model seats
@@ -162,8 +151,6 @@ For consequential interpretations maintain:
 1. **Harm / abuse / capture model** — strongest evidence-supported account of harmful mechanism.
 2. **Alternative / narrowing model** — strongest claim-specific account that changes attribution, mechanism, scope, necessity, motive, magnitude, chronology, relation, knowledge, or reliability.
 3. **Discriminators** — observations that would materially change the scoped edge/model.
-
-Do not use a generalized `counterevidence` bucket for new work. Existing legacy records may retain it until migrated.
 
 Where possible ask:
 
@@ -190,18 +177,11 @@ actual outcome
 
 An actor may intentionally set a wage, price, rent, fee, access condition, eligibility rule, staffing level, enforcement priority, or other consequential term without evidence that the actor desired every downstream deprivation.
 
-```text
-intentional term-setting != harmful-endpoint intent
-lack of harmful-endpoint intent != accidental mechanism
-profit or gain alone != extraction
-traced intentional transfer != accidental merely because motive is disputed
-```
-
 Where extraction or capture is alleged, trace the payer/loss-bearer, mechanism, immediate recipient, productive contribution/costs, counterfactual, surplus or avoided cost, and terminal/reseated beneficiary.
 
 ### Power-conditioned knowledge
 
-Greater power does not prove guilt or actual knowledge. It can increase practical capacity to know, model, receive warning, change course, and repair.
+Greater power can increase practical capacity to know, model, receive warning, change course, and repair without by itself proving guilt or actual knowledge.
 
 Use these investigative states where material and supported:
 
@@ -214,12 +194,6 @@ ACTUAL_KNOWLEDGE
 DELIBERATE_AVOIDANCE_SUPPORTED
 DISPUTED
 ```
-
-`SHOULD_HAVE_KNOWN` requires a stated basis in foreseeability, available information, institutional capacity, duty, or repeated warning.
-
-`DELIBERATE_AVOIDANCE_SUPPORTED` requires evidence of intentional avoidance, suppression, compartmentalization, refusal, or insulation from relevant information. Failure to investigate by itself is not enough.
-
-These are investigative accountability states, not automatic legal findings of negligence, recklessness, willful blindness, or other mens rea categories.
 
 ### Notice and persistence
 
@@ -238,14 +212,7 @@ gain or insulation retained after notice
 repair or refusal to repair
 ```
 
-The first occurrence and a repeated mechanism after credible notice are not epistemically identical.
-
-```text
-foreseeability != desire
-capacity_to_know != actual_knowledge
-credible_notice != proof of secret motive
-credible_notice + capacity_to_correct + persistence -> stronger accountability evidence
-```
+The first occurrence and a repeated mechanism after credible notice are epistemically different states.
 
 ---
 
@@ -269,17 +236,13 @@ MONEY_LAUNDERING_LEGAL_CLAIM
 LITERAL_LAUNDRY
 ```
 
-Do not infer laundering from rhetoric alone. Trace the material transformation, partition, provenance change, accountability effect, and beneficiary.
-
-`MONEY_LAUNDERING_LEGAL_CLAIM` is reserved for an actual legally grounded money-laundering allegation/finding. Use `FINANCIAL_PROVENANCE_OBSCURATION` for obscured funds/ownership where the criminal elements are not established.
-
-`LITERAL_LAUNDRY` means washing clothes/textiles and is not an investigative laundering class.
+Trace the material transformation, partition, provenance change, accountability effect, and beneficiary before classifying laundering.
 
 ---
 
 ## 8. Opacity and privacy
 
-`hidden`, `anonymous`, `dark money`, and `non-disclosed` are not moral verdicts.
+`hidden`, `anonymous`, `dark money`, and `non-disclosed` are descriptive starting points rather than moral verdicts.
 
 Type function where possible:
 
@@ -294,7 +257,7 @@ EVASION_SUPPORTED
 SOURCE_RISK_UNKNOWN
 ```
 
-Transparency pressure should be proportional to power and public consequence. Do not expose vulnerable/private people merely because privacy limits investigative convenience.
+Transparency pressure should be proportional to power and public consequence. Protect vulnerable/private people when privacy serves safety or dignity.
 
 ---
 
@@ -303,14 +266,6 @@ Transparency pressure should be proportional to power and public consequence. Do
 Oversight changes the resistance encountered by power pathways. Track norm-setting, adjudication, enforcement, and independent harm audit separately.
 
 Record actions that strengthen, weaken, bypass, capture, defund, intimidate, remove, or restore courts, inspectors, auditors, ethics offices, watchdogs, journalists, whistleblower channels, unions, and internal review.
-
-Important evidence-jurisdiction lock:
-
-```text
-oversight successfully blocks attempt
--> CONSTRAINT_RESISTANCE / REALIZED_OUTCOME evidence
-!= automatic CLAIM_DEFEATING evidence against direction or attempt
-```
 
 ---
 
@@ -335,9 +290,11 @@ source acquisition
 -> portable investigative packet
 ```
 
+These operational functions now belong in Backend. Public may expose their reviewed outputs and method descriptions.
+
 ---
 
-## 11. Standard investigative packet
+## 11. Standard public-readable investigative packet
 
 ```yaml
 investigation:
@@ -351,45 +308,17 @@ sources:
   testimony: []
   advocacy_or_partisan: []
   unavailable: []
-claims:
-  - id: ""
-    proposition: ""
-    posture: ""
-    source_lineage: []
-    confidence: low|medium|high
-    missingness: []
-evidence_effects:
-  - evidence_ref: ""
-    target: "claim-or-edge-id"
-    function: CLAIM_DEFEATING|SCOPE_LIMITING|DIRECTION|ATTEMPT|CAPACITY|REALIZED_OUTCOME|CONSTRAINT_RESISTANCE|MOTIVE_LIMITING|RELATION_LIMITING|ALTERNATIVE_SUPPORTING|RELIABILITY_MODIFYING|NON_RESPONSIVE
-    effect: ""
-relations:
-  - source_node: ""
-    relation_type: ""
-    target_node: ""
-    evidence: []
-    posture: ""
+claims: []
+evidence_effects: []
+relations: []
 power_map: []
 constraint_agency_map: []
 harm_consequence_beneficiary_map: []
-accountability_state:
-  intentional_action_or_term_setting: unknown
-  intended_gain_cost_reduction_or_capacity_increase: unknown
-  harmful_endpoint_intent: unknown
-  knowledge_state: KNOWLEDGE_UNKNOWN
-  capacity_to_know: unknown
-  foreseeability: unknown
-  credible_notice_events: []
-  capacity_to_correct: unknown
-  response_after_notice: unknown
-  gain_or_insulation_after_notice: []
-  repair_or_mitigation: []
 competing_models:
   harm_model: []
   alternative_model: []
   discriminators: []
 laundering_claims: []
-legacy_counterevidence: [] # migration-only; do not add new undifferentiated items
 corrections: []
 re_entry:
   next_searches: []
@@ -403,7 +332,7 @@ Empty fields are preferable to invented content.
 
 ## 12. Publication and automation boundary
 
-Automation may discover, normalize, cluster, compare, calculate, route, draft, and expose candidate relations. It may not independently publish accusations, convert candidate relations into guilt, convert capacity-to-know into actual knowledge, infer secret harmful motive from continued harm alone, erase uncertainty, use evidence outside its declared jurisdiction, expose protected identities, infer private facts from proximity, or convert threat classification into punitive authority.
+Backend automation may discover, normalize, cluster, compare, calculate, route, draft, and expose candidate relations within its scoped authority. Public projection still requires the relevant review and publication-safety gates.
 
 A deterministic structured packet should remain valid if connective prose is removed.
 
@@ -419,28 +348,32 @@ Power receives priority scrutiny because powerful actors possess greater capacit
 
 ---
 
-## 14. Operations re-entry test
+## 14. Public re-entry test
 
-Before promotion/publication, a fresh reviewer must be able to recover:
+Before public projection, a fresh reviewer should be able to recover:
 
 - bounded question;
 - source lineage;
 - exact claim posture;
-- observed vs inferred;
+- observed versus inferred content;
 - important typed relations;
 - power and consequence;
 - meaningful alternatives;
 - each evidence item's target/function jurisdiction;
-- direction/attempt/capacity/result/resistance without cross-subtraction;
+- direction/attempt/capacity/result/resistance;
 - intentional action/term-setting versus harmful-endpoint intent where material;
 - knowledge, capacity to know, notice, correction capacity, and persistence where material;
-- laundering claims as typed transformations rather than insults;
+- laundering claims as typed transformations;
 - missingness;
 - evidence that would change the assessment;
 - correction/appeal/re-entry path.
 
-If not, the investigation is not ready.
+If those elements cannot be recovered, the material is not ready for durable Public form.
+
+## Authority note
+
+Live operations belong to `UNUM-Lattice-News-Backend`. This file remains on the frontend so the public can inspect the method used to generate and review public Lattice objects.
 
 ## Tiny lock
 
-> Follow power without worshipping it. Follow harm without sanding off the teeth that make it legible. Evidence gets jurisdiction, not a team jersey. And if the laundry contains socks, that is finally allowed to be literal.
+> Backend performs the work. Public exposes the evidence-traced breakdown and enough method for the work to remain inspectable.
