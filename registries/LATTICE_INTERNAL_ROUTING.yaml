@@ -1,23 +1,51 @@
-schema: unum-lattice-news/internal-routing/v0.1
+schema: unum-lattice-news/internal-routing/v0.2
 status: ACTIVE
 updated: 2026-08-30
 purpose: >-
-  Replace repository-level separation among Lattice-specific topical satellites with
-  one internal routing grammar. Lenses route questions and evidence without creating
-  independent truth authorities or duplicate source lineages.
+  Provide one routing grammar for Lattice-specific lenses across the planned private
+  Backend and the public durable surface. Lenses route questions and evidence without
+  creating independent truth authorities or duplicate source lineages.
 
 prime_laws:
-  - one_active_UNUM_Lattice_News_repository
+  - one_Lattice_identity_two_surfaces
+  - Backend_is_working_surface
+  - Public_is_reviewed_projection_surface
   - lens_is_routing_not_verdict
-  - multi_lens_records_are_normal
-  - evidence_lineage_is_shared_not_multiplied_by_route
+  - multi_lens_objects_are_normal
+  - evidence_lineage_is_shared_not_multiplied_by_route_or_promotion
   - lifecycle_state_is_not_domain_identity
   - external_specialist_repository_remains_external_when_distinct_study_body_exists
-  - private_or_sensitive_material_does_not_cross_into_public_core_without_review
-  - adoption_requires_provenance_scope_uncertainty_and_return_path
+  - private_or_sensitive_material_does_not_cross_to_Public_without_review
+  - adoption_and_donation_require_provenance_scope_uncertainty_and_return_path
+
+surface_roles:
+  Backend:
+    repository: UNUM-Lattice-News-Backend
+    status: PLANNED_NOT_YET_INSTANTIATED
+    role:
+      - raw_intake
+      - fuller_evidence_custody
+      - private_sensitive_working_material_when_authorized
+      - draft_claims_and_maps
+      - casework
+      - unresolved_reviews
+      - route_queues
+      - promotion_review
+      - operational_agents_and_workflows
+
+  Public:
+    repository: UNUM-Lattice-News
+    role:
+      - reviewed_events_and_claims
+      - public_safe_evidence_projection
+      - reviewed_maps_and_meshes
+      - scoped_confirmed_harm_states
+      - corrections_and_public_briefings
 
 internal_lenses:
   GEOPOLITICS:
+    default_working_surface: Backend
+    public_projection: reviewed_claim_map_review_or_mesh
     route_when:
       - cross_border_state_bloc_or_territorial_power_is_material
       - war_occupation_annexation_resistance_or_self_defense_causal_role_requires_reconstruction
@@ -31,6 +59,8 @@ internal_lenses:
       - historical_continuity_does_not_establish_one_uninterrupted_conspiracy
 
   CAPITAL_POWER:
+    default_working_surface: Backend
+    public_projection: reviewed_claim_map_review_or_mesh
     route_when:
       - money_ownership_labor_debt_land_trade_tax_or_public_private_flow_is_material
       - procurement_contracting_defense_industry_subsidy_or_cost_incidence_is_material
@@ -46,6 +76,8 @@ internal_lenses:
       - ownership_does_not_automatically_establish_every_downstream_operational_decision
 
   HUMANITARIAN_ENVIRONMENTAL:
+    default_working_surface: Backend
+    public_projection: reviewed_story_claim_map_review_or_mesh
     route_when:
       - environmental_condition_and_human_welfare_cannot_be_responsibly_separated
       - climate_water_air_soil_food_or_chemical_exposure_is_material
@@ -59,6 +91,8 @@ internal_lenses:
       - people_are_not_merely_variables_in_environmental_models
 
   TRAFFICKING:
+    default_working_surface: Backend
+    public_projection: reviewed_story_claim_map_review_or_mesh_when_safe
     route_when:
       - trafficking_or_coercive_recruitment_control_relation_is_material
       - sexual_or_labor_exploitation_requires_trafficking_specific_discrimination
@@ -75,6 +109,8 @@ internal_lenses:
       - reported_increase_does_not_establish_true_prevalence_increase_without_measurement_review
 
   POLICY_MECHANISM:
+    default_working_surface: Backend
+    public_projection: reviewed_story_claim_map_review_or_mesh
     route_when:
       - law_order_rule_budget_program_or_administrative_change_is_material
       - stated_purpose_and_actual_mechanism_require_separation
@@ -88,44 +124,46 @@ internal_lenses:
       - blocked_policy_does_not_erase_attempted_direction
       - bad_outcome_does_not_automatically_establish_malicious_intent
 
-lifecycle_states:
-  PUBLIC_INTAKE_REVIEW:
+working_lifecycle_targets:
+  RAW_CANDIDATE:
+    target: Backend:intake/candidates
+  SOURCE_SURVIVAL:
+    target: Backend:evidence/sources
+  DRAFT_CLAIM:
+    target: Backend:intake/claim-extraction
+  WORKING_REVIEW:
+    target: Backend:work/reviews
+  WORKING_MAP:
+    target: Backend:work/maps
+  CASEWORK:
+    target: Backend:work/casework
+  PUBLIC_PROMOTION_REVIEW:
+    target: Backend:promotion/public-review
+  HARM_PROMOTION_REVIEW:
+    target: Backend:promotion/harm-review
+
+public_lifecycle_targets:
+  PUBLIC_PROMOTION_RECEIPT:
     home: intake/
-    role: public_safe_pre_durable_news_evidence_review
-    restrictions:
-      - no_automatic_public_claim_promotion
-      - no_private_sensitive_or_sealed_material_without_explicit_public_safe_review
-
-  EVIDENCE_SURVIVAL:
+    role: optional_public_manifest_of_crossing_not_raw_review
+  PUBLIC_EVIDENCE_PROJECTION:
     home: evidence/
-    role: source_identity_lineage_access_history_and_public_safe_reentry
-
+    role: reviewed_public_safe_source_identity_lineage_and_reentry
   DURABLE_EVENT:
     home: stories/
-    role: reviewed_event_or_state_transition_record
-
   BOUNDED_CLAIM:
     home: claims/
-    role: claim_specific_evidence_and_posture
-
   MESH_RELATION:
     home: lattice/
-    role: recomposed_cross_record_relation_or_causal_ecology
-
   CONFIRMED_HARM:
     home: harm/confirmed/
-    role: scoped_high_confidence_harm_edge
     locks:
       - one_confirmed_edge_does_not_promote_neighboring_claims
       - correction_and_demotion_remain_live
-
-  REVIEW:
+  REVIEWED_PUBLIC_REVIEW:
     home: reviews/
-    role: bounded_analysis_discriminator_policy_or_crossing_review
-
   CORRECTION:
     home: CORRECTIONS.md
-    role: visible_revision_and_return_path
 
 external_specialist_routes:
   UNUM-Research:
@@ -150,12 +188,14 @@ external_specialist_routes:
     role: extremist_movement_ideology_organization_propaganda_and_normalization
   UNUM-Universal-Translation:
     role: language_register_translation_and_semantic_loss
+  UNUM-Epstein-Discovery:
+    role: Epstein_specific_evidence_and_casework
 
 former_lattice_satellites:
-  UNUM-Lattice-News-Intake: DONOR_RECOVERY
-  UNUM-Lattice-News-Proven-Harm: DONOR_RECOVERY
-  UNUM-Lattice-News-Humanitarian-Environmentalism: DONOR_RECOVERY
-  UNUM-Lattice-News-Real-Bad-Policy: DONOR_RECOVERY
-  UNUM-Lattice-News-Geopolitics: DONOR_RECOVERY
-  UNUM-Lattice-News-Capital-and-Power: DONOR_RECOVERY
-  UNUM-News-Lattice-Trafficking: DONOR_RECOVERY
+  UNUM-Lattice-News-Intake: DONOR_PRIVATE_CUSTODY_UNTIL_BACKEND_LIVE
+  UNUM-Lattice-News-Proven-Harm: DONOR_SPLIT_BACKEND_REVIEW_PUBLIC_CONFIRMED_STATE
+  UNUM-Lattice-News-Humanitarian-Environmentalism: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+  UNUM-Lattice-News-Real-Bad-Policy: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+  UNUM-Lattice-News-Geopolitics: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+  UNUM-Lattice-News-Capital-and-Power: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
+  UNUM-News-Lattice-Trafficking: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
