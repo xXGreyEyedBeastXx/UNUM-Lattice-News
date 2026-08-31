@@ -1,0 +1,93 @@
+schema: unum-lattice-news/source-record/v0.1
+status: ACTIVE_SCHEMA
+purpose: durable_public_safe_source_identity_and_item_provenance
+
+source_record:
+  source_id: ""
+  canonical_name: ""
+  source_type: ""
+  publisher_or_institution: ""
+  jurisdiction: null
+  default_language: null
+  homepage_or_root: null
+  source_class: null
+  public_custody_state: PUBLIC_SAFE
+  notes: []
+  reliability_posture:
+    default: CLAIM_SPECIFIC
+    strengths: []
+    known_limits: []
+  custody:
+    folder: ""
+    full_text_storage_default: METADATA_AND_BOUNDED_EXCERPTS_ONLY
+  locks:
+    - source_reputation_does_not_create_claim_truth
+    - primary_source_does_not_create_neutrality
+    - official_source_does_not_create_independent_adjudication
+    - mailbox_delivery_does_not_create_corroboration
+    - private_or_sensitive_source_material_does_not_bulk_promote_into_public_core
+
+item_record:
+  item_id: ""
+  source_id: ""
+  title: ""
+  author_or_issuer: null
+  publication_or_issuance_date: null
+  first_seen: null
+  first_accessed: null
+  original_url: null
+  stable_identifiers: []
+  source_language: null
+  source_class: null
+  access_state: AVAILABLE
+  public_custody_state: PUBLIC_SAFE
+  discovery_paths: []
+  lineage_parent: null
+  correction_history: []
+  bounded_excerpts: []
+  lawful_local_snapshot:
+    status: NONE
+    basis: null
+    path: null
+    hashes: []
+  derived_claim_ids: []
+  related_primary_records: []
+  related_reporting: []
+  internal_lenses: []
+  external_specialist_routes: []
+  uncertainty: []
+  missingness: []
+
+allowed_public_custody_states:
+  - PUBLIC_SAFE
+  - PRIVATE_OR_SENSITIVE_KEEP_EXTERNAL
+  - UNKNOWN_PRIVACY_STATE_HOLD
+
+allowed_access_states:
+  - AVAILABLE
+  - CHANGED
+  - CORRECTED
+  - RETRACTED
+  - REMOVED
+  - PAYWALLED
+  - ACCESS_DENIED
+  - LINK_ROTTED
+  - MIRROR_ONLY
+  - LOCAL_LAWFUL_COPY_AVAILABLE
+  - UNVERIFIED_ARCHIVE_COPY
+
+future_time_postures:
+  - PAST_EVENT
+  - CURRENT_STATE
+  - FUTURE_SCHEDULED
+  - FUTURE_FORECAST
+  - FUTURE_SCENARIO
+  - FUTURE_STATED_INTENT
+  - FUTURE_POLICY_TRAJECTORY
+
+adoption_lineage:
+  donor_schema: UNUM-Lattice-News-Intake/schemas/SOURCE_RECORD_v0_1.yaml
+  adaptation:
+    - moved_from_private_intake_specific_namespace_to_core_lattice_namespace
+    - added_public_custody_state
+    - replaced_satellite_specialist_routes_with_internal_lenses_plus_external_specialist_routes
