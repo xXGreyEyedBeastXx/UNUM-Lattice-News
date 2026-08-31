@@ -1,8 +1,8 @@
-schema: unum-lattice-news/repository-custody/v0.9
+schema: unum-lattice-news/repository-custody/v1.0
 status: ACTIVE
 updated: 2026-08-30
 purpose: >-
-  Define custody for one Lattice identity expressed through a private Backend working
+  Define custody for one Lattice identity expressed through an active private Backend working
   surface and a public durable surface, while preserving true external specialist lifecycles.
 
 prime_laws:
@@ -25,10 +25,10 @@ prime_laws:
 lattice_surfaces:
   backend:
     repository: UNUM-Lattice-News-Backend
-    status: PLANNED_NOT_YET_INSTANTIATED
-    intended_visibility: private
+    status: ACTIVE_PRIVATE_WORKING_SURFACE
+    visibility: private
     role: working_evidence_review_and_promotion_surface
-    owns_when_live:
+    owns:
       - raw_news_candidates
       - source_identity_and_survival_custody
       - private_or_sensitive_evidence_allowed_by_repository_rules
@@ -49,6 +49,7 @@ lattice_surfaces:
 
   public:
     repository: UNUM-Lattice-News
+    status: ACTIVE_PUBLIC_DURABLE_SURFACE
     visibility: public
     role: durable_reviewed_public_reality_mesh
     owns:
@@ -72,6 +73,7 @@ lattice_surfaces:
       - every_specialist_domain_analysis
 
 public_backend_promotion:
+  schema: UNUM-Lattice-News-Backend/schemas/PUBLIC_PROMOTION_PACKET_v0_1.yaml
   minimum:
     - stable_object_identity
     - source_pointers_and_citation_lineage
@@ -106,7 +108,8 @@ research_front_door:
     - automatic_promotion_into_UNUM_Lattice_News
 
 internal_lenses:
-  registry: registries/LATTICE_INTERNAL_ROUTING.yaml
+  backend_registry: UNUM-Lattice-News-Backend/registries/LATTICE_INTERNAL_ROUTING.yaml
+  public_registry: registries/LATTICE_INTERNAL_ROUTING.yaml
   apply_across:
     - Backend
     - Public
@@ -123,12 +126,9 @@ internal_lenses:
     - lens_name_does_not_establish_its_named_conclusion
 
 public_lifecycle_surfaces:
-  durable_event:
-    home: stories/
-  bounded_claim:
-    home: claims/
-  mesh_relation:
-    home: lattice/
+  durable_event: stories/
+  bounded_claim: claims/
+  mesh_relation: lattice/
   confirmed_harm:
     home: harm/confirmed/
     promotion_only: true
@@ -136,12 +136,9 @@ public_lifecycle_surfaces:
       - high_confidence_is_claim_specific
       - neighboring_motive_intent_legality_membership_or_magnitude_claims_do_not_auto_promote
       - correction_and_demotion_remain_live
-  review:
-    home: reviews/
-  public_evidence_projection:
-    home: evidence/
-  correction:
-    home: CORRECTIONS.md
+  review: reviews/
+  public_evidence_projection: evidence/
+  correction: CORRECTIONS.md
 
 external_specialist_routes:
   - repository: UNUM-Governance
@@ -166,6 +163,8 @@ external_specialist_routes:
     role: infrastructure_design_failure_mechanism_and_technical_system
   - repository: UNUM-Human-AI-Alliance
     role: human_ai_governance_rights_dependency_and_relational_consequence
+  - repository: UNUM-Epstein-Discovery
+    role: Epstein_specific_evidence_and_casework
 
 shared_support_routes:
   - repository: UNUM-Timeline-Studies
@@ -179,51 +178,51 @@ shared_support_routes:
 
 former_lattice_satellites:
   - repository: UNUM-Lattice-News-Intake
-    current_state: DONOR_PRIVATE_CUSTODY_UNTIL_BACKEND_LIVE
-    likely_destination:
+    current_state: ACTIVE_DONOR_MIGRATION_TO_BACKEND
+    destinations:
       - Backend:intake
       - Backend:evidence
 
   - repository: UNUM-Lattice-News-Proven-Harm
-    current_state: DONOR_RECOVERY
-    likely_destination:
+    current_state: ACTIVE_DONOR_SPLIT_LIFECYCLE
+    destinations:
       - Backend:promotion/harm-review
       - Public:harm/confirmed
 
   - repository: UNUM-Lattice-News-Humanitarian-Environmentalism
-    current_state: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
-    likely_destination:
+    current_state: ACTIVE_DONOR_WORKBENCH_MIGRATION
+    destinations:
       - Backend:routes/HUMANITARIAN_ENVIRONMENTAL
       - Backend:work/maps_reviews
       - Public:reviewed_maps_reviews
       - external_specialists_when_domain_lifecycle_is_stronger
 
   - repository: UNUM-Lattice-News-Real-Bad-Policy
-    current_state: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
-    likely_destination:
+    current_state: ACTIVE_DONOR_WORKBENCH_MIGRATION
+    destinations:
       - Backend:routes/POLICY_MECHANISM
       - Backend:work/reviews
       - Public:reviewed_claims_maps_reviews
       - UNUM-Governance_when_authority_procedure_lifecycle_is_primary
 
   - repository: UNUM-Lattice-News-Geopolitics
-    current_state: DONOR_RECOVERY
-    likely_destination:
+    current_state: ACTIVE_DONOR_WORKBENCH_MIGRATION
+    destinations:
       - Backend:routes/GEOPOLITICS
       - Backend:work/maps_reviews
       - Public:reviewed_maps_reviews
 
   - repository: UNUM-Lattice-News-Capital-and-Power
-    current_state: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
-    likely_destination:
+    current_state: ACTIVE_DONOR_WORKBENCH_MIGRATION
+    destinations:
       - Backend:routes/CAPITAL_POWER
       - Backend:work/maps_reviews
       - Public:reviewed_maps_reviews
       - external_specialist_donation_when_distinct_lifecycle_emerges
 
   - repository: UNUM-News-Lattice-Trafficking
-    current_state: DONOR_WORKBENCH_UNTIL_BACKEND_LIVE
-    likely_destination:
+    current_state: ACTIVE_DONOR_WORKBENCH_MIGRATION
+    destinations:
       - Backend:routes/TRAFFICKING
       - Backend:work/casework_reviews
       - Public:reviewed_claims_maps_reviews
