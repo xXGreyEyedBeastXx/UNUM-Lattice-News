@@ -1,0 +1,172 @@
+schema: unum-lattice-news/satellite-adoption-ledger/v0.1
+status: ACTIVE_RECOVERY_AND_ADOPTION
+as_of: 2026-08-30
+purpose: >-
+  Track semantic adoption of former Lattice-specific repositories into one active
+  UNUM-Lattice-News repository without blind copying, provenance loss, privacy
+  violation, or multiplication of evidence lineages.
+
+adoption_states:
+  - ADOPT_AS_IS
+  - ADAPT_AND_MERGE
+  - MERGE_INTO_EXISTING_OBJECT
+  - KEEP_AS_PROVENANCE_ONLY
+  - KEEP_PRIVATE_AND_POINT
+  - SUPERSEDED_AFTER_RECOVERY
+  - REJECT_AS_DUPLICATE_OR_OBSOLETE
+  - NEEDS_REVIEW
+
+repositories:
+  UNUM-Lattice-News-Intake:
+    former_role: news_specific_pre_durable_evidence_review_and_source_survival
+    target_role:
+      - intake/public_safe_review
+      - evidence/source_identity_and_lineage
+      - UNUM-Research_for_external_request_identity_and_private_or_sensitive_retrieval
+    high_value_functions:
+      - source_first_survival_model
+      - source_registry
+      - item_level_RECORD_yaml
+      - citation_lineage_and_duplicate_review
+      - claim_extraction
+      - clock_separation
+      - candidate_and_specialist_routing
+    observed_surfaces:
+      - sources/README.md
+      - sources/REGISTRY.yaml
+      - sources/*/SOURCE.yaml
+      - sources/*/items/*/*/RECORD.yaml
+      - claims/
+      - candidates/
+      - reviews/
+      - routing/
+    privacy_gate: REQUIRED
+    default_adoption: NEEDS_REVIEW
+    notes:
+      - public_source_metadata_can_be_adapted_into_evidence
+      - mailbox_or_private_discovery_material_must_not_be_bulk_promoted_to_public_core
+      - claim_objects_already_represented_in_core_should_merge_by_identity_not_duplicate
+
+  UNUM-Lattice-News-Proven-Harm:
+    former_role: downstream_high_confidence_harm_ledger
+    target_role:
+      - harm/confirmed
+      - harm/review
+    high_value_functions:
+      - exact_harm_promotion_gate
+      - scoped_proof_states
+      - confirmed_index
+      - correction_and_demotion_route
+    observed_surfaces:
+      - confirmed/INDEX.yaml
+      - confirmed/HOUSTON_WITNESS_CONFINEMENT_2026-07_08.yaml
+      - confirmed/US_LETHAL_VESSEL_STRIKE_DEATHS_2026-08.yaml
+      - confirmed/GAZA_MEDICAL_INPUT_RESTRICTION_SERVICE_IMPAIRMENT_2026-08.yaml
+      - confirmed/KALANDIA_TRAINING_CENTRE_SEIZURE_ACCESS_DISRUPTION_2026-08-25.yaml
+      - intake/PROMOTION_REVIEW_QUEUE_2026-08-27.yaml
+      - intake/GLOBAL_RESOURCE_AND_SURVIVAL_HARM_PROMOTION_QUEUE_2026-08-28.yaml
+      - reviews/ACCOUNTABILITY_IMPAIRMENT_AND_EXACT_HARM_GATE_2026-08-27.md
+    default_adoption: ADAPT_AND_MERGE
+    notes:
+      - several confirmed edges already have matching durable stories in core
+      - preserve proof_state_without_copying_neighboring_unresolved_claims
+
+  UNUM-Lattice-News-Humanitarian-Environmentalism:
+    former_role: humanitarian_environmental_crossing_aperture
+    target_role:
+      - internal_lens:HUMANITARIAN_ENVIRONMENTAL
+      - maps
+      - reviews
+      - external_routes_to_Earth_Medical_Governance_and_other_specialists
+    observed_surfaces:
+      - CAUSAL_ROLE_AND_STRUCTURAL_CONTEXT_GATE_v0_1.md
+      - maps/CLIMATE_WATER_FOSSIL_WAR_AND_SURVIVAL_EXPOSURE_CROSSING_2026-08-28.md
+      - intake/NEWS_ROUTE_QUEUE_2026-08-27.yaml
+      - intake/LATE_LIGHT_HUMANITARIAN_ENVIRONMENTAL_REVIEW_2026-08-27.yaml
+      - reviews/GLOBAL_OCEAN_SST_HUMAN_DEPENDENCY_RETURN_2026-08-27.yaml
+      - reviews/DRC_EBOLA_HEALTH_SYSTEM_AND_HUMANITARIAN_RETURN_2026-08-27.yaml
+    default_adoption: ADAPT_AND_MERGE
+    notes:
+      - subject_identity_becomes_lens_not_folder_silo
+      - Earth_and_Medical_mechanism_authority_remains_external
+
+  UNUM-Lattice-News-Real-Bad-Policy:
+    former_role: policy_harm_investigation_aperture
+    target_role:
+      - internal_lens:POLICY_MECHANISM
+      - reviews
+      - claims
+      - lattice
+    observed_surfaces:
+      - intake/POLICY_REVIEW_QUEUE_2026-08-27.yaml
+      - intake/POWELL_PROJECT2025_POLICY_LINEAGE_REVIEW_2026-08-27.yaml
+      - intake/RESOURCE_CONTROL_AND_COERCIVE_ACCESS_POLICY_QUEUE_2026-08-28.yaml
+      - intake/CONSERVATIVE_POWER_ECOLOGY_POLICY_IMPLEMENTATION_CROSSWALK_2026-08-27.yaml
+      - reviews/EEOC_FEDERAL_SECTOR_COMPLAINT_RULE_ACCESS_REVIEW_2026-08-27.md
+      - reviews/DUE_PROCESS_PRIVATE_BENEFIT_AND_WAR_AUTHORITY_ROUTE_2026-08-27.md
+      - reviews/PRESIDENTIAL_INFORMATION_ASYMMETRY_AND_PRIVATE_BENEFIT_2026-08-27.md
+    default_adoption: ADAPT_AND_MERGE
+    notes:
+      - working_repository_title_is_not_preserved_as_evidentiary_category
+      - merge_with_existing_story_claim_and_lattice_objects_when_same_identity_exists
+
+  UNUM-Lattice-News-Geopolitics:
+    former_role: geopolitical_specialist_routing_seat
+    target_role:
+      - internal_lens:GEOPOLITICS
+      - maps
+      - routes
+      - reviews
+    observed_surfaces:
+      - routing/ACTIVE_STUDY_QUEUE_2026-08-28.yaml
+      - maps/RESOURCE_WAR_SCARCITY_AND_STATE_CAPITAL_CROSSINGS_2026-08-28.md
+    default_adoption: ADAPT_AND_MERGE
+    notes:
+      - use_lens_for_cross_border_context_without_creating_duplicate_event_corpus
+
+  UNUM-Lattice-News-Capital-and-Power:
+    former_role: political_economy_specialist_routing_seat
+    target_role:
+      - internal_lens:CAPITAL_POWER
+      - maps
+      - routes
+      - reviews
+    observed_surfaces:
+      - routing/ACTIVE_STUDY_QUEUE_2026-08-28.yaml
+      - maps/HEALTH_INSURANCE_TIERING_AND_CARE_ACCESS_BARRIERS_2026-08-28.md
+      - maps/MOBILITY_DEPENDENCY_COMPULSORY_COST_STACK_2026-08-28.md
+      - maps/MANUFACTURED_PRECARITY_RESPONSIBILITY_INVERSION_AND_CONTEMPT_FEEDBACK_2026-08-28.md
+    default_adoption: ADAPT_AND_MERGE
+    notes:
+      - several maps naturally cross Medical Governance Human_Relations and policy lenses
+      - capital_power_is_a_traversal_lens_not_a_claim_of_wrongdoing
+
+  UNUM-News-Lattice-Trafficking:
+    former_role: trafficking_specialist_routing_seat
+    target_role:
+      - internal_lens:TRAFFICKING
+      - reviews
+      - maps
+      - research/casework_when_public_safe
+      - external_routes_to_Governance_Human_Relations_Epstein_and_other_true_specialists
+    observed_surfaces:
+      - 00_RESEARCH_ASSISTANT_FRONT_DOOR.md
+      - casework/EXTRACTION_MAN_CAMPS_TRAFFICKING_RESEARCH_SEED_2026-08-28.md
+    default_adoption: ADAPT_AND_MERGE
+    privacy_gate: REQUIRED_FOR_VICTIM_OR_SURVIVOR_DETAIL
+    notes:
+      - trafficking_classification_remains_exact_and_claim_specific
+      - Epstein_specific_corpus_remains_in_UNUM_Epstein_Discovery
+
+cross_repository_reconciliation_required:
+  - search_for_inbound_links_to_former_satellite_paths
+  - search_for_duplicate_claim_and_story_identity
+  - preserve_source_lineage_when_merging
+  - type_private_or_sensitive_material_before_public_promotion
+  - update_active_front_doors_after_adoption
+  - verify_no_workflow_still_writes_to_old_satellite_as_authority
+
+completion_rule: >-
+  A satellite may be treated as historical/recovery-only only after every unique
+  current-facing function has a new owner and every unique object is adopted,
+  pointed, retained as provenance, or explicitly rejected with reason.
