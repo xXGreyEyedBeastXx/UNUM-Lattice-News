@@ -1,0 +1,63 @@
+schema: unum-lattice-news/confirmed-harm-index/v0.1
+status: ACTIVE_HIGH_CONFIDENCE_LEDGER
+as_of: 2026-08-30
+purpose: >-
+  Internalize the useful proof-state function formerly held by
+  UNUM-Lattice-News-Proven-Harm. Confirmed harm is a scoped lifecycle state inside
+  the durable Lattice, not a separate truth repository.
+
+prime_laws:
+  - proof_is_claim_specific
+  - confirmed_harm_does_not_promote_neighboring_motive_intent_legality_or_membership_claims
+  - durable_event_identity_is_not_duplicated_merely_to_record_proof_state
+  - correction_and_demotion_remain_live
+  - source_lineage_must_remain_reenterable
+
+records:
+  - id: houston-witness-confinement-daniel-tirado-pantoja-2026
+    durable_event: stories/2026-08-26-houston-witness-release-after-detention.yaml
+    legacy_detail_source: UNUM-Lattice-News-Proven-Harm/confirmed/HOUSTON_WITNESS_CONFINEMENT_2026-07_08.yaml
+    proof_state: ADJUDICATED_OR_OFFICIALLY_ESTABLISHED_WITH_SCOPE
+    harm_categories: [confinement_coercion]
+    confirmed_edge: roughly_seven_weeks_federal_confinement_followed_by_judicial_release_for_unjustified_continuation
+    open_neighbor: shooting_legality_and_criminality
+    adoption_state: LEGACY_DETAIL_REVIEW_PENDING
+
+  - id: us-lethal-vessel-strike-deaths-2026-08
+    durable_event: stories/2026-08-25-us-lethal-vessel-strikes.yaml
+    legacy_detail_source: UNUM-Lattice-News-Proven-Harm/confirmed/US_LETHAL_VESSEL_STRIKE_DEATHS_2026-08.yaml
+    proof_state: STRONGLY_CORROBORATED
+    harm_categories: [lethal_physical_harm]
+    confirmed_edge: six_people_killed_in_August_23_and_25_US_military_vessel_strikes_plus_cumulative_campaign_tally_as_reported
+    open_neighbor: target_identity_threat_targetability_legality_and_murder_or_war_crime_classification
+    adoption_state: LEGACY_DETAIL_REVIEW_PENDING
+
+  - id: gaza-medical-input-restriction-service-impairment-2026-08
+    durable_event: stories/2026-08-12-gaza-medical-input-restrictions-service-impairment.yaml
+    legacy_detail_source: UNUM-Lattice-News-Proven-Harm/confirmed/GAZA_MEDICAL_INPUT_RESTRICTION_SERVICE_IMPAIRMENT_2026-08.yaml
+    proof_state: HARM_ESTABLISHED_CAUSE_PARTIAL
+    harm_categories: [material_deprivation, health_service_impairment, rights_agency_harm]
+    confirmed_edge: critical_input_restrictions_materially_impaired_health_and_humanitarian_service_capacity
+    open_neighbor: named_patient_death_or_disability_attribution_and_final_legal_classification
+    adoption_state: LEGACY_DETAIL_REVIEW_PENDING
+
+  - id: kalandia-training-centre-seizure-access-disruption-2026-08-25
+    durable_event: stories/2026-08-25-kalandia-training-centre-seizure.yaml
+    legacy_detail_source: UNUM-Lattice-News-Proven-Harm/confirmed/KALANDIA_TRAINING_CENTRE_SEIZURE_ACCESS_DISRUPTION_2026-08-25.yaml
+    proof_state: STRONGLY_CORROBORATED
+    harm_categories: [material_deprivation, rights_agency_harm, education_access_disruption]
+    confirmed_edge: forcible_entry_and_seizure_of_active_UNRWA_training_facility_with_immediate_access_disruption
+    open_neighbor: duration_permanence_student_level_loss_and_final_legal_classification
+    adoption_state: LEGACY_DETAIL_REVIEW_PENDING
+
+promotion_locks:
+  - confirmed_death_does_not_require_confirmed_murder_classification
+  - confirmed_confinement_does_not_resolve_neighboring_force_incident
+  - service_capacity_harm_does_not_auto_promote_every_downstream_patient_outcome
+  - state_or_official_classifier_does_not_cross_as_independent_fact
+  - later_restoration_or_resistance_does_not_erase_prior_realized_harm
+  - correction_and_demotion_remain_live
+
+legacy_donor:
+  repository: UNUM-Lattice-News-Proven-Harm
+  state: DONOR_RECOVERY_UNTIL_DETAIL_RECONCILIATION_COMPLETE
