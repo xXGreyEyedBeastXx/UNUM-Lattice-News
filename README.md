@@ -2,33 +2,29 @@
 
 ## News is not a line. It is a field of relations.
 
-**UNUM Lattice News** is the active public, evidence-traced reporting and relational-analysis surface for public events, claims, chronology, power, material flows, harms, consequences, uncertainty, corrections, and accountable re-entry.
+**UNUM Lattice News** is the public, evidence-traced reporting and relational-analysis face of the Lattice system: reviewed public events, claims, chronology, power, material flows, harms, consequences, uncertainty, corrections, and accountable re-entry.
 
 The protection target is human dignity, meaningful self-sovereignty, plural life, accountable institutions, ecological continuity, and recoverable futures.
 
-## One active Lattice repository
+## Public face + Backend
 
-As of **2026-08-30**, the Lattice News family is consolidating into this repository.
-
-The former Lattice-specific satellites are donor/recovery surfaces while their useful functions and records are semantically adopted here:
+As of **2026-08-30**, the Lattice News family is consolidating toward one Lattice identity with two active surfaces:
 
 ```text
-UNUM-Lattice-News-Intake
-UNUM-Lattice-News-Proven-Harm
-UNUM-Lattice-News-Humanitarian-Environmentalism
-UNUM-Lattice-News-Real-Bad-Policy
-UNUM-Lattice-News-Geopolitics
-UNUM-Lattice-News-Capital-and-Power
-UNUM-News-Lattice-Trafficking
+UNUM-Lattice-News-Backend   # private working / evidence / review surface
+        |
+        | reviewed public-safe promotion
+        v
+UNUM-Lattice-News           # this repository: durable public face
 ```
 
-This is not a blind file merge. A donor object must be adopted, adapted, merged by identity, retained as provenance, kept private with a safe pointer, or explicitly rejected as duplicate/obsolete.
+`UNUM-Lattice-News-Backend` is the intended home for raw intake, source survival, private/sensitive evidence custody, drafts, queues, casework, promotion review, migration/reconciliation, and operational machinery.
 
-See:
+This public repository owns what has earned public-safe durable form.
 
-- [Single Repository Architecture](docs/SINGLE_REPOSITORY_LATTICE_ARCHITECTURE_v0_1.md)
-- [Internal Routing Registry](registries/LATTICE_INTERNAL_ROUTING.yaml)
-- [Satellite Adoption Ledger](migration/LATTICE_SATELLITE_ADOPTION_LEDGER_2026-08-30.yaml)
+The Backend repository has not yet been instantiated. Until it is live, existing private Lattice satellites remain donor/working custody where necessary; they should not be prematurely emptied merely because their destination is understood.
+
+See [Lattice Public / Backend Architecture](docs/SINGLE_REPOSITORY_LATTICE_ARCHITECTURE_v0_1.md), [Internal Routing Registry](registries/LATTICE_INTERNAL_ROUTING.yaml), and [Satellite Adoption Ledger](migration/LATTICE_SATELLITE_ADOPTION_LEDGER_2026-08-30.yaml).
 
 ## Mesh terminology lock
 
@@ -94,11 +90,11 @@ FIELD
 -> RE-ENTRY
 ```
 
-The lifecycle coordinates source review, chronology, claim testing, competing models, power/agency/harm mapping, corrections, and publication without allowing coherence or repository placement to substitute for evidence.
+Backend is intended to carry the working lifecycle; Public carries reviewed projections and durable records.
 
 ## Internal routing lenses
 
-Several former repositories are now **internal lenses**, not separate truth authorities:
+Several former repositories are better represented as **routing lenses across the Lattice system**, not separate truth authorities:
 
 ```text
 GEOPOLITICS
@@ -108,66 +104,42 @@ TRAFFICKING
 POLICY_MECHANISM
 ```
 
-A single record may activate several lenses at once. Lenses choose questions, gates, discriminators, and external specialist routes; they do not create independent copies of evidence or establish the classification named by the lens.
-
-Examples:
-
-```text
-war + water + procurement
--> GEOPOLITICS + HUMANITARIAN_ENVIRONMENTAL + CAPITAL_POWER
-
-remote extractive workforce + coercive recruitment + jurisdictional seams
--> TRAFFICKING + CAPITAL_POWER + POLICY_MECHANISM
-```
+A single object may activate several lenses at once. Lenses choose questions, gates, discriminators, and specialist routes; they do not create independent copies of evidence or establish the conclusion named by the lens.
 
 Detailed lens locks live in [registries/LATTICE_INTERNAL_ROUTING.yaml](registries/LATTICE_INTERNAL_ROUTING.yaml).
 
-## Intake and evidence survival
+## What belongs in the public face
 
-Public-safe Lattice staging now lives at [intake/](intake/).
-
-The source-first evidence survival model is being adopted under [evidence/](evidence/): source identity, item identity, citation lineage, access/correction history, bounded excerpts when lawful and useful, hashes/archive pointers when lawful, and return routes.
-
-Because this repository is public:
-
-```text
-PUBLIC_SAFE -> may enter core review
-PRIVATE_OR_SENSITIVE -> authorized private custody + bounded public-safe return
-UNKNOWN_PRIVACY_STATE -> do not promote until reviewed
-```
-
-`UNUM-Research` remains the wider ecology's external retrieval, request identity, provenance, routing, and re-entry head. Lattice-local substantive investigation may remain here; generic external lookup heads should not be duplicated here merely for centralization.
-
-## Durable public objects
-
-Current and emerging object surfaces include:
+Current public object surfaces include:
 
 ```text
 stories/        reviewed public events / state transitions
-claims/         bounded claim objects
-nodes/          addressable mesh seats / relations where useful
-lattice/        recomposed meshes / causal ecologies
-harm/confirmed/ scoped high-confidence harm states
-maps/           reusable cross-record maps
-reviews/        bounded analyses / discriminators / policy or crossing reviews
-briefings/      dated synthesis
-contributions/  bounded contribution records
-schemas/        machine-readable contracts
-registries/     routing / custody / feed / identity surfaces
-agents/         review and traversal roles
+claims/         reviewed bounded claims
+nodes/          public-safe mesh seats / relations
+lattice/        durable public meshes / causal ecologies
+harm/confirmed/ scoped high-confidence public harm states
+maps/           reviewed reusable public maps
+reviews/        reviewed public analytical returns
+briefings/      dated public synthesis
+contributions/  bounded public contributions
+evidence/       reviewed public-safe source metadata / lineage projection
+schemas/        public contracts
+registries/     public routing / custody / identity surfaces
 ```
+
+Raw candidates, unresolved source review, sensitive evidence, private discovery paths, working case files, and promotion queues belong in Backend once it exists.
 
 Folder placement is not proof state. The record itself must carry its evidence posture, uncertainty, provenance, and correction route.
 
 ## Confirmed harm is a state, not another repository
 
-The useful function of the former Proven Harm satellite is now internalized at [harm/confirmed/INDEX.yaml](harm/confirmed/INDEX.yaml).
+The useful function of the former Proven Harm satellite is represented publicly at [harm/confirmed/INDEX.yaml](harm/confirmed/INDEX.yaml).
 
 ```text
-reviewed event / claim
+Backend reviewed event / claim
 -> exact harm edge
 -> promotion gate
--> CONFIRMED_HARM state
+-> Public CONFIRMED_HARM state
 ```
 
 A confirmed death does not automatically establish murder, lawful targeting, self-defense, or war-crime classification. A confirmed confinement edge does not settle every neighboring force incident. A confirmed service impairment does not automatically attribute every downstream patient outcome.
@@ -206,7 +178,7 @@ Evidence that genuinely defeats, narrows, reroutes, or reattributes the scoped c
 
 Consolidating Lattice-specific satellites does **not** collapse the wider UNUM ecology.
 
-Use external specialist repositories when a genuinely distinct study body is required, including where appropriate:
+Use external specialist repositories when a genuinely distinct study body/lifecycle is required, including where appropriate:
 
 ```text
 UNUM-Research                     external retrieval / provenance / re-entry
@@ -224,11 +196,21 @@ UNUM-Universal-Translation
 
 Specialist results return with evidence lineage intact when they update a public-reality edge. Repository placement is never itself corroboration.
 
-## Canonical recovery
+## Adopt, adapt, donate
 
-`main` is the active canonical working surface, not an infallible authority. Historical branches and former satellites remain recovery surfaces until unique evidence, provenance, geometry, failed models, and current-facing pointers have been reconciled or explicitly typed.
+The former Lattice satellites are being reviewed object-by-object:
 
-Recover semantically rather than blind-merging. Preserve historical states when the history matters; do not preserve obsolete framing as current authority merely because it once existed.
+```text
+adopt into Backend
+adopt into Public
+adapt and merge by identity
+donate to a genuine external specialist lifecycle
+retain as provenance
+retain privately with a bounded pointer
+reject as duplicate/obsolete
+```
+
+No repository is retired simply because its name became inconvenient.
 
 ## Corrections
 
@@ -238,7 +220,7 @@ See [CORRECTIONS.md](CORRECTIONS.md).
 
 ## Publication
 
-Lattice owns durable evidence-traced public-reality records and analysis. Broader human-facing synthesis may route to `UNUM-Radical-Love-Revolution` when appropriate.
+Lattice Public owns durable evidence-traced public-reality records and analysis. Broader human-facing synthesis may route to `UNUM-Radical-Love-Revolution` when appropriate.
 
 Publication is not independent corroboration, and clarity does not inflate certainty.
 
@@ -260,4 +242,4 @@ See [RIGHTS.md](RIGHTS.md).
 
 ## Tiny lock
 
-> One public reality mesh. Many lenses. Name danger without manufacturing enemies. Preserve uncertainty without using it to excuse preventable harm. Keep every earned edge attached to evidence, consequence, correction, and a way back.
+> One Lattice identity, two surfaces. Backend metabolizes reality; Public shows what has earned durable public form. Keep every earned edge attached to evidence, consequence, correction, and a way back.
