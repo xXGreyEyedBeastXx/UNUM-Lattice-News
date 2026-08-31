@@ -18,11 +18,11 @@ UNUM-Lattice-News-Backend   # private working / evidence / review surface
 UNUM-Lattice-News           # this repository: durable public face
 ```
 
-`UNUM-Lattice-News-Backend` is the intended home for raw intake, source survival, private/sensitive evidence custody, drafts, queues, casework, promotion review, migration/reconciliation, and operational machinery.
+`UNUM-Lattice-News-Backend` is the active private home for raw intake, source survival, private/sensitive evidence custody, drafts, queues, casework, promotion review, migration/reconciliation, and operational machinery.
 
 This public repository owns what has earned public-safe durable form.
 
-The Backend repository has not yet been instantiated. Until it is live, existing private Lattice satellites remain donor/working custody where necessary; they should not be prematurely emptied merely because their destination is understood.
+The Backend repository is now live. Existing private Lattice satellites remain donor/working custody only while their unique objects and responsibilities are being adopted, adapted, donated, or preserved as provenance; they should not be prematurely emptied during reconciliation.
 
 See [Lattice Public / Backend Architecture](docs/SINGLE_REPOSITORY_LATTICE_ARCHITECTURE_v0_1.md), [Internal Routing Registry](registries/LATTICE_INTERNAL_ROUTING.yaml), and [Satellite Adoption Ledger](migration/LATTICE_SATELLITE_ADOPTION_LEDGER_2026-08-30.yaml).
 
@@ -90,7 +90,7 @@ FIELD
 -> RE-ENTRY
 ```
 
-Backend is intended to carry the working lifecycle; Public carries reviewed projections and durable records.
+Backend carries the working lifecycle; Public carries reviewed projections and durable records.
 
 ## Internal routing lenses
 
@@ -127,7 +127,7 @@ schemas/        public contracts
 registries/     public routing / custody / identity surfaces
 ```
 
-Raw candidates, unresolved source review, sensitive evidence, private discovery paths, working case files, and promotion queues belong in Backend once it exists.
+Raw candidates, unresolved source review, sensitive evidence, private discovery paths, working case files, and promotion queues belong in Backend.
 
 Folder placement is not proof state. The record itself must carry its evidence posture, uncertainty, provenance, and correction route.
 
