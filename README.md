@@ -2,9 +2,33 @@
 
 ## News is not a line. It is a field of relations.
 
-**UNUM Lattice News** is a public, evidence-traced reporting and analysis surface focused on technology, concentrated power, human dignity, self-sovereignty, democratic accountability, ecological continuity, and the environments and material conditions that sustain life.
+**UNUM Lattice News** is the active public, evidence-traced reporting and relational-analysis surface for public events, claims, chronology, power, material flows, harms, consequences, uncertainty, corrections, and accountable re-entry.
 
-The purpose is not to preserve the status quo simply because it already exists. The protection target is human dignity, meaningful self-sovereignty, plural life, accountable institutions, and recoverable futures.
+The protection target is human dignity, meaningful self-sovereignty, plural life, accountable institutions, ecological continuity, and recoverable futures.
+
+## One active Lattice repository
+
+As of **2026-08-30**, the Lattice News family is consolidating into this repository.
+
+The former Lattice-specific satellites are donor/recovery surfaces while their useful functions and records are semantically adopted here:
+
+```text
+UNUM-Lattice-News-Intake
+UNUM-Lattice-News-Proven-Harm
+UNUM-Lattice-News-Humanitarian-Environmentalism
+UNUM-Lattice-News-Real-Bad-Policy
+UNUM-Lattice-News-Geopolitics
+UNUM-Lattice-News-Capital-and-Power
+UNUM-News-Lattice-Trafficking
+```
+
+This is not a blind file merge. A donor object must be adopted, adapted, merged by identity, retained as provenance, kept private with a safe pointer, or explicitly rejected as duplicate/obsolete.
+
+See:
+
+- [Single Repository Architecture](docs/SINGLE_REPOSITORY_LATTICE_ARCHITECTURE_v0_1.md)
+- [Internal Routing Registry](registries/LATTICE_INTERNAL_ROUTING.yaml)
+- [Satellite Adoption Ledger](migration/LATTICE_SATELLITE_ADOPTION_LEDGER_2026-08-30.yaml)
 
 ## Mesh terminology lock
 
@@ -35,70 +59,124 @@ enter anywhere
 -> project a dated public account
 ```
 
-The mesh interpretation controls whenever older wording accidentally encourages investigators to treat nodes, legal entities, accounting categories, jurisdictions, program labels, or market labels as causal walls.
-
 See [MESH_MODEL.md](MESH_MODEL.md) and [docs/HARM_MESH_OPERATING_MODEL_v0_1.md](docs/HARM_MESH_OPERATING_MODEL_v0_1.md).
-
-## What we do
-
-This repository can collect and connect:
-
-- primary documents and official statements;
-- investigative reporting;
-- legal and regulatory records;
-- scientific and technical research;
-- observed consequences;
-- institutional, financial, technological, and infrastructural relationships;
-- competing interpretations and claim-specific counterevidence;
-- uncertainty, missing evidence, and unresolved questions;
-- corrections and later developments.
-
-The aim is not to force every event into one theory. It is to keep important relations from disappearing merely because they were reported in separate places, disciplines, jurisdictions, institutions, legal entities, accounting categories, ownership shells, or moments in time.
 
 ## Evidence posture
 
-Reports should distinguish among:
+Keep claim posture scoped. Useful states include:
 
-- **Observed** — directly documented events or consequences.
-- **Stated** — claims publicly made by an identified person or institution.
-- **Supported inference** — conclusions derived from named evidence.
-- **Potential** — a capability could produce harm under identifiable conditions.
-- **Possible** — a supported causal route exists in the available evidence.
-- **Probable / likely** — evidence and trajectory justify a stronger likelihood assessment within a stated scope and horizon.
-- **Alleged** — a sourced claim that has not been independently established.
-- **Disputed** — credible sources materially disagree.
-- **Unknown** — available evidence is insufficient.
+- **Observed** — directly documented event or consequence.
+- **Stated** — an identified actor or institution made the claim.
+- **Adjudicated** — established within the scope of a competent adjudicative record.
+- **Supported inference** — derived from named evidence.
+- **Potential** — a capability could produce the outcome under identifiable conditions.
+- **Possible** — a supported causal route exists.
+- **Probable / likely** — evidence and trajectory support stronger likelihood within a stated scope and horizon.
+- **Alleged** — sourced but not independently established.
+- **Disputed / ambiguous** — material evidence or interpretation conflicts.
+- **Unknown** — evidence is insufficient.
 
-Threat assessment is not enemy designation. A documented capability is not proof of intent. A stated benevolent intention is not proof of harmless operation. Uncertainty is not proof of safety.
+Threat assessment is not enemy designation. Capability is not proof of intent. Benevolent stated intent is not proof of harmless operation. Uncertainty is not proof of safety.
 
-Likelihood, consequence, and confidence should remain separate wherever threat assessments are made.
+Evidence updates only the exact claim, edge, variable, or model component it actually bears on.
 
-## Harm-audit orientation
+## Investigative lifecycle
 
-The current accountability lane may intentionally investigate harmful conduct, harmful machinery, concentrated power, coercion, deprivation, corruption/capture hypotheses, civilian or ecological consequence, and accountability failure without constructing a balanced moral biography of every actor.
-
-```text
-unrelated beneficial conduct != counterevidence
-positive reputation != reduced causal responsibility
-claim-specific falsification remains mandatory
-```
-
-Evidence that directly weakens, narrows, defeats, or reattributes a scoped claim must remain visible. Unrelated good news is not required as moral balance.
-
-## Regime context and causal-role orientation
-
-Political events do not occur in a blank field.
-
-Where a persistent authoritarian, fascist, coercive, occupation, emergency-power, or democratic-erosion context has been independently reviewed, preserve it as prior condition without allowing the regime label to substitute for proof of a local claim.
+The active operations layer is [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md).
 
 ```text
-persistent verified context != blank slate
-regime label != proof of every local claim
-surviving resistance != erasure of attempted authoritarian direction
-whole-regime classification dispute != erasure of supported fascist field presence
+FIELD
+-> STRUCTURE
+-> CONSTRAINT
+-> TRANSFORM
+-> PROJECTION
+-> COHERENCE
+-> RE-ENTRY
 ```
 
-For war, occupation, policing, protest, rebellion, detention, emergency force, terrorism/extremism designation, or self-defense claims, reconstruct causal role before assigning aggressor/defender labels.
+The lifecycle coordinates source review, chronology, claim testing, competing models, power/agency/harm mapping, corrections, and publication without allowing coherence or repository placement to substitute for evidence.
+
+## Internal routing lenses
+
+Several former repositories are now **internal lenses**, not separate truth authorities:
+
+```text
+GEOPOLITICS
+CAPITAL_POWER
+HUMANITARIAN_ENVIRONMENTAL
+TRAFFICKING
+POLICY_MECHANISM
+```
+
+A single record may activate several lenses at once. Lenses choose questions, gates, discriminators, and external specialist routes; they do not create independent copies of evidence or establish the classification named by the lens.
+
+Examples:
+
+```text
+war + water + procurement
+-> GEOPOLITICS + HUMANITARIAN_ENVIRONMENTAL + CAPITAL_POWER
+
+remote extractive workforce + coercive recruitment + jurisdictional seams
+-> TRAFFICKING + CAPITAL_POWER + POLICY_MECHANISM
+```
+
+Detailed lens locks live in [registries/LATTICE_INTERNAL_ROUTING.yaml](registries/LATTICE_INTERNAL_ROUTING.yaml).
+
+## Intake and evidence survival
+
+Public-safe Lattice staging now lives at [intake/](intake/).
+
+The source-first evidence survival model is being adopted under [evidence/](evidence/): source identity, item identity, citation lineage, access/correction history, bounded excerpts when lawful and useful, hashes/archive pointers when lawful, and return routes.
+
+Because this repository is public:
+
+```text
+PUBLIC_SAFE -> may enter core review
+PRIVATE_OR_SENSITIVE -> authorized private custody + bounded public-safe return
+UNKNOWN_PRIVACY_STATE -> do not promote until reviewed
+```
+
+`UNUM-Research` remains the wider ecology's external retrieval, request identity, provenance, routing, and re-entry head. Lattice-local substantive investigation may remain here; generic external lookup heads should not be duplicated here merely for centralization.
+
+## Durable public objects
+
+Current and emerging object surfaces include:
+
+```text
+stories/        reviewed public events / state transitions
+claims/         bounded claim objects
+nodes/          addressable mesh seats / relations where useful
+lattice/        recomposed meshes / causal ecologies
+harm/confirmed/ scoped high-confidence harm states
+maps/           reusable cross-record maps
+reviews/        bounded analyses / discriminators / policy or crossing reviews
+briefings/      dated synthesis
+contributions/  bounded contribution records
+schemas/        machine-readable contracts
+registries/     routing / custody / feed / identity surfaces
+agents/         review and traversal roles
+```
+
+Folder placement is not proof state. The record itself must carry its evidence posture, uncertainty, provenance, and correction route.
+
+## Confirmed harm is a state, not another repository
+
+The useful function of the former Proven Harm satellite is now internalized at [harm/confirmed/INDEX.yaml](harm/confirmed/INDEX.yaml).
+
+```text
+reviewed event / claim
+-> exact harm edge
+-> promotion gate
+-> CONFIRMED_HARM state
+```
+
+A confirmed death does not automatically establish murder, lawful targeting, self-defense, or war-crime classification. A confirmed confinement edge does not settle every neighboring force incident. A confirmed service impairment does not automatically attribute every downstream patient outcome.
+
+Correction and demotion remain live.
+
+## Causal-role orientation
+
+For war, occupation, policing, protest, rebellion, detention, emergency force, terrorism/extremism designation, or self-defense claims, reconstruct causal sequence before inheriting labels:
 
 ```text
 prior condition
@@ -108,145 +186,63 @@ prior condition
 -> later escalation / cessation / repair
 ```
 
-Do not infer defense from state status or aggression from resistance. A responder may later commit an independent harmful or aggressive act; classify that later edge separately without rewriting who initiated an earlier coercive relation.
+State status does not assign defensive status. Resistance status does not confer automatic innocence. A responder may later commit an independently harmful act; classify that edge without rewriting an earlier causal sequence.
 
-See:
+See [docs/REGIME_CONTEXT_AND_CAUSAL_ROLE_GATE_v0_1.md](docs/REGIME_CONTEXT_AND_CAUSAL_ROLE_GATE_v0_1.md).
 
-- [docs/REGIME_CONTEXT_AND_CAUSAL_ROLE_GATE_v0_1.md](docs/REGIME_CONTEXT_AND_CAUSAL_ROLE_GATE_v0_1.md)
-- [schemas/REGIME_CONTEXT_PASSPORT_v0_1.yaml](schemas/REGIME_CONTEXT_PASSPORT_v0_1.yaml)
-- [schemas/AGGRESSION_DEFENSE_RESISTANCE_PASSPORT_v0_1.yaml](schemas/AGGRESSION_DEFENSE_RESISTANCE_PASSPORT_v0_1.yaml)
-- [agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md](agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md)
+## Harm-audit orientation
 
-## Protection target
+A harm audit may focus on harmful conduct, coercion, deprivation, concentrated power, capture hypotheses, civilian/ecological consequence, and accountability failure without constructing a balanced moral biography of every actor.
 
-This repository gives particular attention to threats and pressures affecting:
+```text
+unrelated beneficial conduct != claim-defeating evidence
+positive reputation != reduced causal responsibility
+claim-specific falsification remains mandatory
+```
 
-- human dignity;
-- bodily, mental, cognitive, and relational self-sovereignty;
-- meaningful consent, refusal, exit, and appeal;
-- democratic and institutional accountability;
-- plural human and nonhuman life;
-- ecological continuity and life-support systems;
-- information and reality integrity;
-- recoverable futures rather than permanent emergency rule.
+Evidence that genuinely defeats, narrows, reroutes, or reattributes the scoped claim remains mandatory.
 
-## Operations
+## External specialist routes
 
-The repository-wide investigative operating layer is [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md), interpreted through the mesh rules in [docs/HARM_MESH_OPERATING_MODEL_v0_1.md](docs/HARM_MESH_OPERATING_MODEL_v0_1.md).
+Consolidating Lattice-specific satellites does **not** collapse the wider UNUM ecology.
 
-It connects the existing editorial and intake rules to a single recoverable lifecycle for field context, structure, constraint, transform, projection, coherence review, and re-entry. It also defines linked power, agency/constraint, and harm/consequence/beneficiary maps; typed missingness; competing causal models and discriminators; opacity/privacy handling; oversight as conductance control; and the boundary between automated research support and consequential public claims.
+Use external specialist repositories when a genuinely distinct study body is required, including where appropriate:
 
-The operations layer does not override source-specific evidence, `EDITORIAL_STANDARD.md`, privacy rules, corrections, or human review requirements. It coordinates them.
+```text
+UNUM-Research                     external retrieval / provenance / re-entry
+UNUM-Governance                   authority / law / procedure / enforcement / appeal
+UNUM-Earth-Environmental-Ecology  ecological mechanism / place / scale / observation
+UNUM-Medical                      clinical / biological / health mechanism
+UNUM-Chemistry                    contaminant / reaction / material pathway
+UNUM-Engineering                  infrastructure / design / technical mechanism
+UNUM-Human-Relations              relational coercion / dependency / grooming / conformity
+UNUM-Hierarchy-and-Supremacy-Studies
+UNUM-Laundering-Map
+UNUM-Extremism-Watch
+UNUM-Universal-Translation
+```
 
-## Canonical recovery and branch reconciliation
+Specialist results return with evidence lineage intact when they update a public-reality edge. Repository placement is never itself corroboration.
 
-`main` is the active canonical working surface, not an infallible authority. Historical branches remain recovery surfaces until their unique evidence, provenance, geometry, or failed models have been reconciled or explicitly typed.
+## Canonical recovery
 
-Canonical replacement and recovery rules are documented in:
+`main` is the active canonical working surface, not an infallible authority. Historical branches and former satellites remain recovery surfaces until unique evidence, provenance, geometry, failed models, and current-facing pointers have been reconciled or explicitly typed.
 
-- [docs/CANONICAL_MAIN_PROMOTION_PROTOCOL_v0_1.md](docs/CANONICAL_MAIN_PROMOTION_PROTOCOL_v0_1.md)
-- [docs/CANONICAL_PROMOTION_RECEIPT_2026-08-13.md](docs/CANONICAL_PROMOTION_RECEIPT_2026-08-13.md)
-- [docs/CANONICAL_RECONCILIATION_LEDGER_2026-08-13.md](docs/CANONICAL_RECONCILIATION_LEDGER_2026-08-13.md)
-- [docs/RECONCILIATION_CHECKPOINT_2026-08-13.md](docs/RECONCILIATION_CHECKPOINT_2026-08-13.md)
-
-Recovery agents:
-
-- [agents/CANONICAL_RECONCILIATION_STEWARD_v0_1.md](agents/CANONICAL_RECONCILIATION_STEWARD_v0_1.md)
-- [agents/PROVENANCE_CLAIM_INTEGRITY_AGENT_v0_1.md](agents/PROVENANCE_CLAIM_INTEGRITY_AGENT_v0_1.md)
-- [agents/LATTICE_RESURFACING_AGENT_v0_2.md](agents/LATTICE_RESURFACING_AGENT_v0_2.md)
-- [agents/HARM_MESH_TRAVERSAL_AGENT_v0_1.md](agents/HARM_MESH_TRAVERSAL_AGENT_v0_1.md)
-- [agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md](agents/CAUSAL_ROLE_AND_REGIME_CONTEXT_AUDITOR_v0_1.md)
-
-Historical material should be recovered semantically rather than blind-merged. Preserve old states as evidence; do not preserve obsolete framing as permanent authority.
+Recover semantically rather than blind-merging. Preserve historical states when the history matters; do not preserve obsolete framing as current authority merely because it once existed.
 
 ## Corrections
 
 Errors, missing context, contradictory evidence, changed conditions, and overstated conclusions should be corrected visibly.
 
-Corrections should preserve what changed, why it changed, and what remains unresolved rather than silently rewriting the record.
-
 See [CORRECTIONS.md](CORRECTIONS.md).
 
-## News intake and review
+## Publication
 
-`UNUM-Lattice-News-Intake` is now the preferred upstream seat for new discovery, source verification, citation-lineage review, claim extraction, state-transition drafting, regime-context review, competing-model work, and proposed routing before a record earns durable placement here.
+Lattice owns durable evidence-traced public-reality records and analysis. Broader human-facing synthesis may route to `UNUM-Radical-Love-Revolution` when appropriate.
 
-```text
-external public reality
--> UNUM-Lattice-News-Intake
--> review / verification / causal-role and regime-context gates
--> reviewed crossing packet
--> UNUM-Lattice-News
-```
+Publication is not independent corroboration, and clarity does not inflate certainty.
 
-The older in-repository RSS/Atom collector remains valid implementation history and may continue to produce review-only artifacts, but new intake should preferentially land in the dedicated Intake repository rather than treating raw candidates as durable Lattice records.
-
-Collected or discovered items remain non-authoritative until reviewed. Intake cannot manufacture or publish consequential guilt, harm, ideology, motive, causation, aggression/defense role, or moral verdict from a headline, repository name, institutional status, designation, or rhetorical label.
-
-- Dedicated intake: `UNUM-Lattice-News-Intake`
-- Operations layer: [docs/NEWS_OPERATIONS_v0_2.md](docs/NEWS_OPERATIONS_v0_2.md)
-- Repository custody: [registries/REPOSITORY_CUSTODY.yaml](registries/REPOSITORY_CUSTODY.yaml)
-- Legacy feed registry: [registries/FEEDS.json](registries/FEEDS.json)
-- Legacy collector boundary: [docs/NEWS_INTAKE_WORKFLOW_v0_1.md](docs/NEWS_INTAKE_WORKFLOW_v0_1.md)
-- Spread model: [docs/SPREAD_SURFACE_MODEL_v0_1.md](docs/SPREAD_SURFACE_MODEL_v0_1.md)
-- Automation roadmap: [docs/NEWS_AUTOMATION_ROADMAP_v0_1.md](docs/NEWS_AUTOMATION_ROADMAP_v0_1.md)
-- Alignment audit: [docs/LATTICE_REALITY_SURFACE_ALIGNMENT_AUDIT_2026-08-27.md](docs/LATTICE_REALITY_SURFACE_ALIGNMENT_AUDIT_2026-08-27.md)
-
-## Specialist routing anchors
-
-The durable Lattice should not become a pile of disconnected domain silos. Specialist repositories deepen a question and return the earned result with its source lineage intact.
-
-Four high-centrality anchors now sit directly beside the News pipeline:
-
-```text
-UNUM-Lattice-News-Geopolitics
-  -> power across borders, states, blocs, territories, wars, occupations,
-     recognition, sanctions, alliances, foreign aid, arms transfers,
-     security cooperation, strategic corridors, and sovereignty disputes
-
-UNUM-Lattice-News-Capital-and-Power
-  -> money, ownership, labor, debt, land, trade, taxation, procurement,
-     campaign finance, lobbying, contracting, beneficiary/loss-bearing paths,
-     public-private flows, and political-economy feedbacks
-
-UNUM-News-Lattice-Trafficking
-  -> trafficking, coercive recruitment/control, sexual or labor exploitation,
-     workforce-camp and boomtown risk architecture, jurisdictional seams,
-     institutional notice/response, and project-level prevention/mitigation
-
-UNUM-Hierarchy-and-Supremacy-Studies
-  -> ranked-status ideology, unequal entitlement, supremacy propositions,
-     institutional hierarchy, segregation/apartheid logic, citizenship or
-     territorial hierarchy, dominant-group victimhood inversion, and the
-     mechanisms that turn status ranking into material consequence
-```
-
-These are **specialist routing seats, not alternate truth authorities**.
-
-```text
-Intake / source custody
--> specialist question
--> specialist map / discriminator / deeper trace
--> return with exact evidence lineage + uncertainty
--> durable Lattice relation only if earned
-```
-
-A route copy is not independent corroboration. Geopolitical labels do not assign causal role, financial association does not establish control or bribery, a trafficking-risk condition does not establish a trafficking event or trafficking intent, and a hierarchy/supremacy route does not itself establish extremism, criminality, private motive, or collective guilt.
-
-Important neighboring surfaces remain:
-
-```text
-UNUM-Governance
-UNUM-Laundering-Map
-UNUM-Extremism-Watch
-UNUM-Human-Relations
-UNUM-Universal-Translation
-UNUM-Lattice-News-Proven-Harm
-UNUM-Lattice-News-Real-Bad-Policy
-UNUM-Lattice-News-Humanitarian-Environmentalism
-```
-
-The Lattice is the crossing surface where results from these seats can recompose into a multi-domain causal account without pretending that a repository boundary is a causal boundary.
+See [PUBLICATION_ROUTING.md](PUBLICATION_ROUTING.md).
 
 ## Participation
 
@@ -264,4 +260,4 @@ See [RIGHTS.md](RIGHTS.md).
 
 ## Tiny lock
 
-> Name danger without manufacturing enemies. Preserve uncertainty without using it to excuse preventable harm. Follow power, consequence, kinship, transformation, causal role, resistance, and the living systems that bear the cost.
+> One public reality mesh. Many lenses. Name danger without manufacturing enemies. Preserve uncertainty without using it to excuse preventable harm. Keep every earned edge attached to evidence, consequence, correction, and a way back.
