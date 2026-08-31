@@ -1,24 +1,28 @@
 # Publication Routing — Lattice News and Radical Love Revolution
 
 **Status:** ACTIVE ROUTING CONTRACT  
-**As of:** 2026-08-28
+**As of:** 2026-08-30
 
 ## Purpose
 
-`UNUM-Lattice-News` remains a **public evidence, reference, chronology, relation, and accountability surface**.
+`UNUM-Lattice-News` is the active **public evidence, reference, chronology, relation, harm-state, and accountability surface**.
 
-`UNUM-Radical-Love-Revolution` is the separate public-facing synthesis and publication project that can pull forward articles, explanations, practical guidance, humanitarian framing, and other material intended to help people understand and act without requiring them to traverse the full research mesh.
+`UNUM-Radical-Love-Revolution` is the separate human-facing synthesis and publication project that can pull forward articles, explanations, practical guidance, humanitarian framing, and other material intended to help people understand and act without requiring them to traverse the full evidence mesh.
 
 The two surfaces are related but not interchangeable.
 
 ```text
 external reality
--> UNUM-Lattice-News-Intake
--> specialist sorting / deeper question seats
--> UNUM-Lattice-News durable evidence mesh
+-> optional UNUM-Research retrieval / provenance head
+-> UNUM-Lattice-News/intake public-safe review
+-> internal Lattice lenses and/or genuine external specialist study
+-> reviewed return with lineage
+-> durable UNUM-Lattice-News record / mesh / harm state
 -> publication candidate / human-use candidate
 -> UNUM-Radical-Love-Revolution synthesis / article / guidance surface
 ```
+
+The former Lattice-specific satellite repositories are donor/recovery surfaces during consolidation; they are not required waypoints in the active publication route.
 
 ## Core distinction
 
@@ -63,7 +67,7 @@ what is merely analogy or interpretation
 what changed recently
 what people most need to understand
 what could materially help
-return path to Lattice / Intake / specialist evidence
+return path to Lattice evidence / record / relevant specialist result
 ```
 
 The public synthesis may simplify structure, but it should not simplify away the causal edge that makes the claim true.
@@ -75,7 +79,8 @@ The public synthesis may simplify structure, but it should not simplify away the
 That archive is publication memory, not current evidence authority.
 
 ```text
-living evidence / research -> Lattice ecosystem
+living evidence / public-reality analysis -> UNUM-Lattice-News
+external retrieval / source request head -> UNUM-Research
 human-facing current synthesis -> Radical Love Revolution
 frozen historical publication state -> Archives
 ```
