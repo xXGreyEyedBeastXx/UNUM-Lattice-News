@@ -1,10 +1,12 @@
-# Lattice Evidence and Source Survival Layer
+# Lattice Public Evidence Projection
 
-**Status:** ACTIVE / PUBLIC-SAFE SOURCE MEMORY
+**Status:** ACTIVE / REVIEWED PUBLIC-SAFE SOURCE MEMORY
 
-This directory adopts the strongest architectural feature of the former `UNUM-Lattice-News-Intake`: treating sources as durable, addressable evidence objects rather than disposable URLs.
+The complete working source-survival lifecycle is intended to live in `UNUM-Lattice-News-Backend` once that private repository exists.
 
-## Intended shape
+This public directory preserves only the part of the evidence route that is appropriate and useful for public re-entry: reviewed source identity, lineage, correction/access state, bounded lawful excerpts when needed, and pointers connecting public records back to their evidentiary basis.
+
+## Public shape
 
 ```text
 evidence/
@@ -15,13 +17,12 @@ evidence/
         <year>/
           <item-id>/
             RECORD.yaml
-            EXCERPTS.md      # bounded excerpts only when lawful and useful
-            ACCESS_LOG.yaml  # optional retrieval / correction history
-            HASHES.yaml      # optional, when a lawful snapshot exists
-            ROUTES.yaml      # optional claim / story / specialist pointers
+            EXCERPTS.md      # bounded, lawful, publication-appropriate only
+            ACCESS_LOG.yaml  # when useful to public correction/re-entry
+            ROUTES.yaml      # public claim / story / map pointers
 ```
 
-Existing source material should be adopted only after privacy, copyright, identity, and duplication review. Do not bulk-copy the former private Intake source tree into this public repository.
+Backend may retain richer working metadata, discovery paths, sensitivity-controlled material, draft reliability notes, internal hashes/snapshots where lawful, and unresolved review state.
 
 ## Source identity is not endorsement
 
@@ -37,47 +38,17 @@ mailbox_delivery != independent_corroboration
 
 One underlying record carried through multiple channels remains one evidentiary lineage unless materially independent evidence is added.
 
-Preserve discovery paths separately from corroboration.
-
-## Re-entry fields
-
-Where available, a consequential source object should preserve:
-
-- canonical source identity;
-- author / publisher / institution;
-- original URL or stable identifier;
-- publication / issuance time;
-- first-seen and access times;
-- source class, language, and jurisdiction;
-- correction / revision / retraction state;
-- archive or mirror pointers when lawful;
-- bounded excerpts when needed and lawful;
-- lawful hashes or snapshot pointers when available;
-- claim / story / route identities derived from it;
-- citation lineage to other reporting of the same underlying record.
-
-## Access-state vocabulary
-
-```text
-AVAILABLE
-CHANGED
-CORRECTED
-RETRACTED
-REMOVED
-PAYWALLED
-ACCESS_DENIED
-LINK_ROTTED
-MIRROR_ONLY
-LOCAL_LAWFUL_COPY_AVAILABLE
-UNVERIFIED_ARCHIVE_COPY
-```
-
-Source disappearance does not prove falsity. Source persistence does not prove truth.
+Promotion from Backend to Public is a projection of the same lineage, not new corroboration.
 
 ## Public/private membrane
 
-Only public-safe evidence metadata and lawful public-safe derivatives belong here. Sensitive or private custody remains outside the public core and crosses by bounded packet when necessary.
+```text
+working / sensitive / unresolved evidence -> Backend
+reviewed public-safe evidence projection -> Public evidence/
+```
+
+Until Backend exists, private donor repositories may retain working custody. Do not bulk-copy them here.
 
 ## Tiny lock
 
-> Preserve enough of the evidence route that reality can be re-entered even when the original link cannot.
+> Public preserves the inspectable evidence route. Backend preserves the fuller working memory.
