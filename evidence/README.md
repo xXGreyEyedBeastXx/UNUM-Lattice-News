@@ -2,7 +2,7 @@
 
 **Status:** ACTIVE / REVIEWED PUBLIC-SAFE SOURCE MEMORY
 
-The complete working source-survival lifecycle is intended to live in `UNUM-Lattice-News-Backend` once that private repository exists.
+The complete working source-survival lifecycle lives in `UNUM-Lattice-News-Backend`.
 
 This public directory preserves only the part of the evidence route that is appropriate and useful for public re-entry: reviewed source identity, lineage, correction/access state, bounded lawful excerpts when needed, and pointers connecting public records back to their evidentiary basis.
 
@@ -47,7 +47,11 @@ working / sensitive / unresolved evidence -> Backend
 reviewed public-safe evidence projection -> Public evidence/
 ```
 
-Until Backend exists, private donor repositories may retain working custody. Do not bulk-copy them here.
+Former private donor repositories may still retain unreconciled historical or working custody during migration. Do not bulk-copy donor evidence here. Reconcile it into Backend custody first, then project only the reviewed public-safe portion.
+
+## Consolidation rule
+
+Public evidence should not become a reason to preserve old Lattice satellite repositories. If a donor contains required evidence machinery, move/adapt that machinery into Backend; if it contains reviewed public evidence worth retaining, project the relevant result here with provenance and correction paths intact.
 
 ## Tiny lock
 
