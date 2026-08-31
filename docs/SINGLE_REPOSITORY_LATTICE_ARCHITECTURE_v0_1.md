@@ -1,6 +1,6 @@
-# UNUM Lattice News — Public / Backend Architecture v0.2
+# UNUM Lattice News — Public / Backend Architecture v0.3
 
-**Status:** ACTIVE MIGRATION TARGET  
+**Status:** ACTIVE ARCHITECTURE / MIGRATION IN PROGRESS  
 **Updated:** 2026-08-30
 
 ## Purpose
@@ -8,16 +8,14 @@
 UNUM Lattice News is consolidating from a family of narrowly separated Lattice repositories into **one Lattice system with two active surfaces**:
 
 ```text
-UNUM-Lattice-News-Backend   # private working/evidence surface
+UNUM-Lattice-News-Backend   # active private working/evidence surface
         |
         | reviewed public-safe promotion
         v
-UNUM-Lattice-News           # public durable evidence/reporting surface
+UNUM-Lattice-News           # active public durable evidence/reporting surface
 ```
 
-This supersedes the earlier one-public-repository target. The correction preserves the same consolidation goal while giving private, sensitive, provisional, and operational material a real home instead of forcing it through a public membrane.
-
-The consolidation remains semantic, not a blind file move.
+The Backend now exists. The consolidation remains semantic rather than a blind file move.
 
 ```text
 recover donor function
@@ -25,12 +23,12 @@ recover donor function
 -> adopt / adapt / donate
 -> preserve provenance and return path
 -> verify privacy / evidence state / links
--> retire duplicate active authority only when replacement is live
+-> retire duplicate active authority only when replacement is live and verified
 ```
 
 ## Two surfaces, one Lattice identity
 
-The public and backend repositories are not competing truth authorities.
+The public and backend repositories are two custody/lifecycle surfaces of the same Lattice News center.
 
 ```text
 BACKEND
@@ -53,30 +51,30 @@ PUBLIC
 = public briefings and inspectable analysis
 ```
 
-A backend object does not become public merely because it exists. A public projection does not become independent corroboration merely because it crossed repositories.
+Backend existence alone does not earn public projection. Public projection changes reviewed custody and expression while preserving the underlying evidence lineage unless new evidence is actually added.
 
-## Prime distinction
+## Repository boundaries, lenses, and specialist lifecycles
 
-Repository boundaries and routing lenses do different jobs.
+These are different architectural dimensions:
 
 ```text
 Lattice Public / Backend split
-  = visibility + lifecycle boundary
+  = visibility + lifecycle + custody membrane
 
 external specialist repository
-  = genuinely distinct domain study authority
+  = genuinely distinct study lifecycle / instruments / authority
 
 internal Lattice lens
-  = traversal/routing grammar across either Lattice surface
+  = traversal and classification grammar across Lattice work
 ```
 
-Geopolitics, capital/power, humanitarian-environmental analysis, trafficking, and policy-mechanism review therefore remain **Lattice routing lenses**, not separate truth systems.
+Geopolitics, capital/power, humanitarian-environmental analysis, trafficking, and policy-mechanism review are now treated as **Lattice routing lenses**, able to cross the same working object without forcing separate evidence copies.
 
-Medical, Earth/Environmental Ecology, Governance, Human Relations, Chemistry, Engineering, Translation, Extremism Watch, Laundering Map, Hierarchy/Supremacy Studies, and other wider UNUM repositories remain external specialist owners when the substantive study has its own lifecycle.
+Medical, Earth/Environmental Ecology, Governance, Human Relations, Chemistry, Engineering, Translation, Extremism Watch, Laundering Map, Hierarchy/Supremacy Studies, Epstein Discovery, and other wider UNUM repositories remain external specialist owners when a substantive study develops its own lifecycle.
 
 `UNUM-Research` remains the ecology-wide external retrieval, request identity, provenance, routing, and re-entry head.
 
-## Target backend architecture
+## Active Backend architecture
 
 ```text
 UNUM-Lattice-News-Backend/
@@ -107,7 +105,7 @@ UNUM-Lattice-News-Backend/
 │   ├── harm-review/
 │   └── packets/
 │
-├── routes/                 # internal lenses + specialist crossings
+├── routes/
 ├── operations/
 ├── agents/
 ├── workflows/
@@ -117,9 +115,21 @@ UNUM-Lattice-News-Backend/
 └── archive/
 ```
 
-Backend may contain private or sensitivity-controlled material only within the actual authorization/privacy rules of that repository. "Private repository" does not erase the need for dignity, source protection, lawful custody, or minimization.
+Only folders that gain durable content need to be instantiated. Backend may contain private or sensitivity-controlled material only within actual authorization/privacy rules. Private custody still requires dignity, source protection, lawful custody, and minimization.
 
-## Target public architecture
+### Already seeded
+
+As of this update, Backend contains:
+
+- an active front door;
+- Backend source/provenance schema;
+- Backend -> Public promotion packet schema;
+- active Lattice internal routing registry;
+- Intake-derived source identity registry under `evidence/sources/`;
+- Intake-derived specialist return ledger under `routes/`;
+- intake, work, promotion, and migration lifecycle front doors.
+
+## Active Public architecture
 
 ```text
 UNUM-Lattice-News/
@@ -127,25 +137,24 @@ UNUM-Lattice-News/
 ├── README.md
 ├── EDITORIAL_STANDARD.md
 ├── CORRECTIONS.md
-│
-├── stories/                # reviewed public events/state transitions
-├── claims/                 # reviewed bounded claims
-├── nodes/                  # public-safe addressable mesh seats
-├── lattice/                # durable public meshes/causal ecologies
+├── stories/
+├── claims/
+├── nodes/
+├── lattice/
 ├── harm/
-│   └── confirmed/          # scoped public high-confidence harm states
-├── maps/                   # reviewed reusable public maps
-├── reviews/                # reviewed public analytical returns
-├── briefings/              # dated synthesis
-├── contributions/          # bounded public contributions
-├── evidence/               # reviewed public source metadata / lineage projection
+│   └── confirmed/
+├── maps/
+├── reviews/
+├── briefings/
+├── contributions/
+├── evidence/
 ├── schemas/
 ├── registries/
 ├── docs/
-└── archive/                # only when historical public state matters
+└── archive/
 ```
 
-The public repository should **not** become the raw intake workbench.
+Public remains the durable reviewed projection surface; raw working intake and unresolved sensitive casework route through Backend.
 
 ## Public/backend promotion membrane
 
@@ -167,18 +176,13 @@ backend return pointer
 public destination identity
 ```
 
-Promotion is object- and claim-specific.
+The active grammar lives at `UNUM-Lattice-News-Backend/schemas/PUBLIC_PROMOTION_PACKET_v0_1.yaml`.
 
-```text
-backend source record -> public source metadata projection
-backend candidate -> may never promote
-backend review -> may narrow / merge / reject
-backend confirmed-harm review -> public CONFIRMED_HARM state only if earned
-```
+Promotion is object- and claim-specific. Candidates can remain Backend-only, reviews can narrow or merge objects, and scoped harm can enter the public `CONFIRMED_HARM` state only when the exact edge earns it.
 
 ## Internal routing lenses
 
-A Lattice object may carry multiple lenses on either surface:
+A Lattice object may carry multiple lenses:
 
 ```text
 GEOPOLITICS
@@ -188,7 +192,7 @@ TRAFFICKING
 POLICY_MECHANISM
 ```
 
-A lens selects questions and discriminators; it does not create an independent evidence lineage or establish the conclusion named by the lens.
+A lens selects questions, relationships, and discriminators. It can overlap another lens and does not multiply the underlying evidence lineage.
 
 Examples:
 
@@ -202,7 +206,7 @@ remote extractive workforce + coercive recruitment + jurisdictional gaps
 
 ## Adopt, adapt, donate
 
-Every donor object should be classified by what lifecycle it actually needs:
+Every donor object is classified by the lifecycle it actually needs:
 
 ```text
 ADOPT_BACKEND
@@ -220,39 +224,21 @@ NEEDS_REVIEW
 
 ### Adopt
 
-Use when the function genuinely belongs to the Lattice system.
-
-Examples:
-- source survival -> Backend;
-- public event ledger -> Public;
-- harm promotion gate -> Backend;
-- confirmed scoped harm state -> Public.
+Use when the function genuinely belongs to the Lattice center: source survival in Backend, public event records in Public, harm promotion review in Backend, scoped confirmed harm in Public.
 
 ### Adapt
 
-Use when useful machinery exists but its old repository-specific assumptions should be removed.
-
-Examples:
-- Geopolitics repository queue -> common Backend route queue with `GEOPOLITICS` lens;
-- Capital-and-Power maps -> shared map grammar with multi-lens metadata;
-- Real-Bad-Policy review -> policy-mechanism review without verdict-bearing repository identity.
+Use when useful machinery exists but its old repository-specific assumptions should change. Geopolitics queues can become shared Backend routes carrying the `GEOPOLITICS` lens; capital/power maps can use common map grammar with multi-lens metadata; policy review can retain policy-mechanism analysis without inheriting a verdict-bearing repository title.
 
 ### Donate
 
-Use when an object has developed a lifecycle that belongs to a genuine specialist repository.
+Use when an object has developed a stronger specialist lifecycle: clinical mechanism to Medical, ecological mechanism to Earth/Environmental Ecology, authority/procedure study to Governance, relational coercion study to Human Relations, reusable generic tooling to Tools/Utilities, and so on.
 
-Examples:
-- clinical mechanism -> Medical;
-- ecological mechanism -> Earth/Environmental Ecology;
-- authority/procedure/enforcement study -> Governance;
-- trafficking-specific relational coercion may route to Human Relations when the study becomes fundamentally relational rather than news-specific;
-- reusable generic tooling -> Tools/Utilities.
-
-Donation preserves the Lattice return edge; it does not erase where the question came from.
+Donation preserves the Lattice question, evidence route, and expected return edge.
 
 ## Former satellite disposition
 
-The existing Lattice satellites remain donor/recovery surfaces until Backend exists and each unique function/object has a live destination:
+The existing Lattice satellites are now active donor/recovery surfaces while Backend receives their shared working functions:
 
 ```text
 UNUM-Lattice-News-Intake
@@ -264,7 +250,7 @@ UNUM-Lattice-News-Capital-and-Power
 UNUM-News-Lattice-Trafficking
 ```
 
-Do not retire a private donor merely because the public repository now understands its function. Backend custody must exist first for material that should remain working/private.
+Backend existence removes the former custody blocker. It does **not** by itself authorize retiring a donor: each unique object/function still needs a verified destination, privacy/custody resolution, pointer repair, and workflow re-routing.
 
 ## Completion condition
 
@@ -277,6 +263,12 @@ A satellite is ready to become historical/recovery-only when:
 5. active agents/workflows no longer write to the old repository as authority;
 6. the old front door points clearly to the new lifecycle.
 
+## Center direction
+
+Lattice is now serving as the first practical **center-formation** experiment: use temporary differentiation to discover real functions, then consolidate shared lifecycle machinery into a small number of meaningful custody surfaces while donating mature specialist bodies outward.
+
+Repository count can fall while relational and evidentiary richness increases.
+
 ## Tiny lock
 
-> One Lattice identity, two surfaces. Backend metabolizes reality; Public shows what has earned durable public form. Donate only when another lifecycle is genuinely stronger.
+> One Lattice identity, two active surfaces. Backend metabolizes working reality; Public preserves what has earned durable public form. Donate when another lifecycle is genuinely stronger; keep the return path alive.
