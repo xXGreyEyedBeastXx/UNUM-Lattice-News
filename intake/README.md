@@ -1,55 +1,33 @@
-# Lattice Public Intake
+# Lattice Public Intake Projection
 
-**Status:** ACTIVE / PUBLIC-SAFE PRE-DURABLE REVIEW STAGE
+**Status:** TRANSITIONAL / NO RAW WORKING INTAKE
 
-This directory is the internal replacement for the active function formerly separated into `UNUM-Lattice-News-Intake`.
+The active working intake lifecycle is intended to live in `UNUM-Lattice-News-Backend` once that private repository exists.
 
-It is **not** a place where a discovered headline becomes a durable claim by being collected.
+This public directory should not become a substitute Backend.
 
-```text
-public discovery
--> source identity / lineage review
--> bounded claim extraction
--> clock separation
--> evidence-effect / competing-model review
--> privacy and publication-safety check
--> durable story / claim / relation only when earned
-```
-
-## Public repository membrane
-
-Because `UNUM-Lattice-News` is public, material belongs here only when it is suitable for public custody.
-
-Do not place private mailbox content, sealed material, private victim-identifying detail, confidential source material, restricted personal data, or uncertain-sensitivity material here merely for convenience.
+Use it only for public-safe intake manifests, promotion receipts, or other reviewed objects whose publication itself is useful.
 
 ```text
-PUBLIC_SAFE -> may stage here
-PRIVATE_OR_SENSITIVE -> authorized private custody + bounded return packet
-UNKNOWN_PRIVACY_STATE -> hold outside public core until reviewed
+raw discovery / source review / draft claim / private evidence
+-> Backend
+
+reviewed public-safe promotion receipt or manifest
+-> Public intake/ when useful
+
+reviewed durable event / claim / map / harm state
+-> its durable Public home
 ```
 
-`UNUM-Research` remains the wider ecology's external-retrieval/request/re-entry head. This directory owns only Lattice-local public-news evidence staging.
+Until Backend is instantiated, existing private donor repositories may temporarily retain working custody.
 
-## Intake does not manufacture verdicts
+## Locks
 
-Discovery does not establish guilt, harm, motive, ideology, causation, aggression/defense role, trafficking, corruption, or policy effect.
-
-A candidate may be rejected, deferred, narrowed, rerouted, merged with an existing identity, or promoted claim-by-claim.
-
-## Useful intake object classes
-
-```text
-candidate
-source_review
-claim_extraction
-chronology_or_clock_review
-citation_lineage_review
-competing_model_review
-specialist_route_request
-promotion_review
-rejected_or_deferred_candidate
-```
+- A headline or candidate does not become a durable claim by being collected.
+- Private, sealed, victim-identifying, confidential, or sensitivity-uncertain material does not belong here.
+- A public promotion receipt is not independent corroboration of the underlying evidence.
+- `UNUM-Research` remains the wider ecology's external retrieval/request/re-entry head.
 
 ## Tiny lock
 
-> Intake is where evidence earns a durable address, not where a headline earns a verdict.
+> Public intake shows what crossed the membrane; Backend does the metabolizing.
