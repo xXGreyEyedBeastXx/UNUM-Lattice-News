@@ -7,11 +7,11 @@
 
 `UNUM-Lattice-News` is the durable **public evidence, reference, chronology, relation, harm-state, and accountability surface**.
 
-`UNUM-Lattice-News-Backend` is the planned private working surface for intake, evidence custody, review, casework, promotion, and operational routing.
+`UNUM-Lattice-News-Backend` is the active private working surface for intake, evidence custody, review, casework, promotion, migration, and operational routing.
 
 `UNUM-Radical-Love-Revolution` is the separate human-facing synthesis/publication project for articles, explanations, practical guidance, humanitarian framing, and other material intended to help people use what the evidence has established.
 
-These surfaces are related but not interchangeable.
+Together these surfaces form a traversable publication lifecycle while retaining their different custody and transformation roles.
 
 ```text
 external reality
@@ -24,9 +24,9 @@ external reality
 -> UNUM-Radical-Love-Revolution synthesis / article / guidance surface
 ```
 
-Until Backend is instantiated, existing private Lattice donor repositories may retain working custody. They are transition surfaces, not required permanent waypoints.
+Existing private Lattice donor repositories may retain working custody while their unique objects are reconciled. They are transition surfaces, not required permanent waypoints.
 
-## Core distinction
+## Surface roles
 
 ```text
 LATTICE BACKEND
@@ -47,12 +47,22 @@ RADICAL LOVE REVOLUTION
 = publish readable articles and helpful outputs without forcing the reader through the technical lattice
 ```
 
-Promotion or publication does **not** create new corroboration.
+## Transformation accounting
+
+Crossing a surface changes custody, review state, or expression. It does not automatically change the number of independent evidence lineages.
 
 ```text
-Backend -> Public projection != independent source
-Public -> Radical Love rendition != independent corroboration
-clarity != certainty inflation
+Backend -> Public
+class: reviewed projection / custody change
+corroboration effect: inherited from underlying evidence, not multiplied by the crossing
+
+Public -> Radical Love
+class: synthesis / translation / publication transformation
+corroboration effect: inherited from the cited public evidence route
+
+clarity
+class: accessibility / expression quality
+certainty effect: changes only when evidence or valid inference changes
 ```
 
 ## Backend -> Public minimum
@@ -74,6 +84,8 @@ Backend return path
 Public destination identity
 ```
 
+The active packet grammar lives at `UNUM-Lattice-News-Backend/schemas/PUBLIC_PROMOTION_PACKET_v0_1.yaml`.
+
 ## Public -> Radical Love handoff
 
 A human-facing candidate should preserve at least:
@@ -86,7 +98,7 @@ what mechanism matters
 best public evidence pointers
 what remains uncertain
 what competing model still matters
-what is merely analogy or interpretation
+what is analogy, interpretation, or transformation
 what changed recently
 what people most need to understand
 what could materially help
@@ -107,19 +119,17 @@ human-facing synthesis -> Radical Love Revolution
 frozen historical public state -> Archives
 ```
 
-## Anti-drift locks
+## Anti-drift classifications
 
-```text
-publication != evidence manufacture
-promotion != corroboration
-clarity != certainty inflation
-emotion != permission to erase causal precision
-technical depth != public usefulness by itself
-repository boundary != causal boundary
-public-facing language != moral laundering
-older article != current authority
-Public correction -> Backend re-review when needed + downstream correction candidate
-```
+- Publication transforms presentation; evidentiary support still comes from the underlying lineage.
+- Promotion transforms custody/review state; it preserves the same underlying evidence identity unless new evidence is actually added.
+- Clarity can increase accessibility while certainty remains unchanged.
+- Emotion can be evidentially relevant to human consequence without erasing causal precision.
+- Technical depth and public usefulness are related dimensions that can vary independently.
+- Repository boundaries organize custody and lifecycle; causal relations may cross them.
+- Public-facing language should preserve accountability rather than cosmetically soften material harms.
+- Older articles remain historical states unless separately maintained as current authority.
+- A Public correction can trigger Backend re-review and downstream correction while preserving the historical route.
 
 ## Tiny lock
 
