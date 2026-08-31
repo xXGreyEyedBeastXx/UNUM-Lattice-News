@@ -1,10 +1,10 @@
-schema: unum-lattice-news/satellite-adoption-ledger/v0.2
+schema: unum-lattice-news/satellite-adoption-ledger/v0.3
 status: ACTIVE_RECOVERY_ADOPTION_AND_DONATION
 as_of: 2026-08-30
 purpose: >-
   Track semantic consolidation of Lattice-specific repositories into one Lattice identity
-  split between a private Backend working surface and a public durable surface, while
-  donating objects to true external specialist lifecycles when that is the stronger home.
+  split between an active private Backend working surface and a public durable surface,
+  while donating objects to true external specialist lifecycles when that is the stronger home.
 
 possible_dispositions:
   - ADOPT_BACKEND
@@ -21,14 +21,22 @@ possible_dispositions:
 
 backend_state:
   repository: UNUM-Lattice-News-Backend
-  status: PLANNED_NOT_YET_INSTANTIATED
+  status: ACTIVE_PRIVATE_WORKING_SURFACE
+  initialized: 2026-08-30
+  seeded:
+    - README.md
+    - schemas/SOURCE_RECORD_v0_2.yaml
+    - schemas/PUBLIC_PROMOTION_PACKET_v0_1.yaml
+    - registries/LATTICE_INTERNAL_ROUTING.yaml
+    - evidence/sources/REGISTRY.yaml
   rule: >-
-    Do not retire private donor custody before Backend exists and the relevant objects
-    have a verified destination.
+    Donor retirement now depends on verified object migration, donation, pointer repair,
+    privacy/custody resolution, and workflow re-routing rather than Backend existence alone.
 
 repositories:
   UNUM-Lattice-News-Intake:
     former_role: news_specific_pre_durable_evidence_review_and_source_survival
+    state: ACTIVE_DONOR_MIGRATION
     primary_destination: Backend
     public_projection: Public:evidence_and_promotion_receipts
     high_value_functions:
@@ -49,9 +57,16 @@ repositories:
       - reviews/
       - routing/
       - schemas/SOURCE_RECORD_v0_1.yaml
-    already_adapted:
+    adopted_or_adapted:
       - Public:schemas/SOURCE_RECORD_v0_1.yaml
       - Public:evidence/README.md
+      - Backend:schemas/SOURCE_RECORD_v0_2.yaml
+      - Backend:evidence/sources/REGISTRY.yaml
+    next_recovery:
+      - source folders and materially used item records
+      - candidate batches as provenance plus normalized current objects
+      - claim extraction and duplicate review machinery
+      - routing queues that still contain live work
     privacy_gate: REQUIRED
     default_disposition: ADAPT_AND_MERGE_BACKEND
     notes:
@@ -61,6 +76,7 @@ repositories:
 
   UNUM-Lattice-News-Proven-Harm:
     former_role: downstream_high_confidence_harm_ledger
+    state: ACTIVE_DONOR_SPLIT_LIFECYCLE
     primary_destination: SPLIT_LIFECYCLE
     backend_destination:
       - promotion/harm-review
@@ -83,29 +99,23 @@ repositories:
       - reviews/ACCOUNTABILITY_IMPAIRMENT_AND_EXACT_HARM_GATE_2026-08-27.md
     already_adapted:
       - Public:harm/confirmed/INDEX.yaml
+      - Backend:schemas/PUBLIC_PROMOTION_PACKET_v0_1.yaml
+    next_recovery:
+      - promotion queues
+      - exact harm review gates
+      - correction and demotion return machinery
     default_disposition: NEEDS_REVIEW
-    notes:
-      - confirmed_public_edge_and_working_promotion_review_have_different_lifecycles
-      - detailed_records_should_merge_with_existing_public_story_identity
 
   UNUM-Lattice-News-Humanitarian-Environmentalism:
     former_role: humanitarian_environmental_crossing_aperture
+    state: ACTIVE_DONOR_WORKBENCH_MIGRATION
     primary_destination: Backend:internal_lens:HUMANITARIAN_ENVIRONMENTAL
-    possible_public_destinations:
-      - reviewed_maps
-      - reviewed_crossing_reviews
-      - public_claim_or_mesh_updates
     donation_candidates:
-      UNUM-Earth-Environmental-Ecology:
-        when: ecological_mechanism_place_scale_or_environmental_observation_becomes_primary_lifecycle
-      UNUM-Medical:
-        when: organism_health_clinical_or_biological_mechanism_becomes_primary_lifecycle
-      UNUM-Governance:
-        when: authority_regulation_response_oversight_or_remedy_becomes_primary_lifecycle
-      UNUM-Chemistry:
-        when: contaminant_reaction_or_material_pathway_becomes_primary_lifecycle
-      UNUM-Engineering:
-        when: infrastructure_design_or_failure_mechanism_becomes_primary_lifecycle
+      UNUM-Earth-Environmental-Ecology: ecological_mechanism_place_scale_or_environmental_observation
+      UNUM-Medical: organism_health_clinical_or_biological_mechanism
+      UNUM-Governance: authority_regulation_response_oversight_or_remedy
+      UNUM-Chemistry: contaminant_reaction_or_material_pathway
+      UNUM-Engineering: infrastructure_design_or_failure_mechanism
     observed_surfaces:
       - CAUSAL_ROLE_AND_STRUCTURAL_CONTEXT_GATE_v0_1.md
       - maps/CLIMATE_WATER_FOSSIL_WAR_AND_SURVIVAL_EXPOSURE_CROSSING_2026-08-28.md
@@ -117,17 +127,11 @@ repositories:
 
   UNUM-Lattice-News-Real-Bad-Policy:
     former_role: policy_harm_investigation_aperture
+    state: ACTIVE_DONOR_WORKBENCH_MIGRATION
     primary_destination: Backend:internal_lens:POLICY_MECHANISM
-    possible_public_destinations:
-      - reviewed_claims
-      - reviewed_policy_maps
-      - reviewed_public_reviews
-      - durable_mesh_updates
     donation_candidates:
-      UNUM-Governance:
-        when: authority_procedure_enforcement_appeal_or_institutional_capacity_is_primary_lifecycle
-      UNUM-Lattice-News-Backend:
-        when: public_policy_news_and_consequence_review_remains_primary
+      UNUM-Governance: authority_procedure_enforcement_appeal_or_institutional_capacity
+      UNUM-Lattice-News-Backend: public_policy_news_and_consequence_review
     observed_surfaces:
       - intake/POLICY_REVIEW_QUEUE_2026-08-27.yaml
       - intake/POWELL_PROJECT2025_POLICY_LINEAGE_REVIEW_2026-08-27.yaml
@@ -138,38 +142,26 @@ repositories:
       - reviews/PRESIDENTIAL_INFORMATION_ASYMMETRY_AND_PRIVATE_BENEFIT_2026-08-27.md
     default_disposition: ADAPT_AND_MERGE_BACKEND
     notes:
-      - working_repository_title_is_not_preserved_as_evidentiary_category
+      - working_repository_title_is_historical_handle_not_evidentiary_category
 
   UNUM-Lattice-News-Geopolitics:
     former_role: geopolitical_specialist_routing_seat
+    state: ACTIVE_DONOR_WORKBENCH_MIGRATION
     primary_destination: Backend:internal_lens:GEOPOLITICS
-    possible_public_destinations:
-      - reviewed_maps
-      - reviewed_crossing_reviews
-      - public_claim_or_mesh_updates
     observed_surfaces:
       - routing/ACTIVE_STUDY_QUEUE_2026-08-28.yaml
       - maps/RESOURCE_WAR_SCARCITY_AND_STATE_CAPITAL_CROSSINGS_2026-08-28.md
     default_disposition: ADAPT_AND_MERGE_BACKEND
-    notes:
-      - lens_keeps_cross_border_discrimination_without_duplicate_event_corpus
 
   UNUM-Lattice-News-Capital-and-Power:
     former_role: political_economy_specialist_routing_seat
+    state: ACTIVE_DONOR_WORKBENCH_MIGRATION
     primary_destination: Backend:internal_lens:CAPITAL_POWER
-    possible_public_destinations:
-      - reviewed_maps
-      - reviewed_crossing_reviews
-      - public_claim_or_mesh_updates
     donation_candidates:
-      UNUM-Governance:
-        when: public_finance_regulation_procurement_or_authority_lifecycle_is_primary
-      UNUM-Human-Relations:
-        when: dependency_bargaining_asymmetry_or_interpersonal_control_lifecycle_is_primary
-      UNUM-Medical:
-        when: health_mechanism_or_clinical_access_study_becomes_primary
-      UNUM-Earth-Environmental-Ecology:
-        when: extraction_or_resource_flow_study_becomes_ecological_mechanism_first
+      UNUM-Governance: public_finance_regulation_procurement_or_authority_lifecycle
+      UNUM-Human-Relations: dependency_bargaining_asymmetry_or_interpersonal_control
+      UNUM-Medical: health_mechanism_or_clinical_access_study
+      UNUM-Earth-Environmental-Ecology: extraction_or_resource_flow_as_ecological_mechanism
     observed_surfaces:
       - routing/ACTIVE_STUDY_QUEUE_2026-08-28.yaml
       - maps/HEALTH_INSURANCE_TIERING_AND_CARE_ACCESS_BARRIERS_2026-08-28.md
@@ -179,20 +171,13 @@ repositories:
 
   UNUM-News-Lattice-Trafficking:
     former_role: trafficking_specialist_routing_seat
+    state: ACTIVE_DONOR_WORKBENCH_MIGRATION
     primary_destination: Backend:internal_lens:TRAFFICKING
-    possible_public_destinations:
-      - reviewed_claims
-      - reviewed_maps
-      - public_case_synthesis_when_safe
     donation_candidates:
-      UNUM-Human-Relations:
-        when: grooming_dependency_isolation_or_interpersonal_control_becomes_primary_lifecycle
-      UNUM-Governance:
-        when: law_jurisdiction_enforcement_oversight_or_remedy_becomes_primary_lifecycle
-      UNUM-Epstein-Discovery:
-        when: object_is_Epstein_specific_evidence_or_casework
-      UNUM-Lattice-News-Backend:
-        when: trafficking_news_public_policy_or_cross_domain_casework_remains_primary
+      UNUM-Human-Relations: grooming_dependency_isolation_or_interpersonal_control
+      UNUM-Governance: law_jurisdiction_enforcement_oversight_or_remedy
+      UNUM-Epstein-Discovery: Epstein_specific_evidence_or_casework
+      UNUM-Lattice-News-Backend: trafficking_news_public_policy_or_cross_domain_casework
     observed_surfaces:
       - 00_RESEARCH_ASSISTANT_FRONT_DOOR.md
       - casework/EXTRACTION_MAN_CAMPS_TRAFFICKING_RESEARCH_SEED_2026-08-28.md
@@ -200,7 +185,8 @@ repositories:
     default_disposition: ADAPT_AND_MERGE_BACKEND
 
 cross_repository_reconciliation_required:
-  - instantiate_Backend_before_retiring_private_working_donors
+  - migrate_Intake_source_folders_and_live_item_records_by_identity
+  - recover_Proven_Harm_review_and_promotion_machinery_into_Backend
   - search_for_inbound_links_to_former_satellite_paths
   - search_for_duplicate_claim_story_map_and_source_identity
   - preserve_source_lineage_when_merging
